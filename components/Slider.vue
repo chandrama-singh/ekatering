@@ -1,16 +1,17 @@
 <template>
-   <section class="pb-8 bg-top bg-cover bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;h=450&amp;q=80&amp;blend=1e293b&amp;sat=30&amp;blend-mode=multiply')">
+   <section class="pb-8 bg-top bg-cover bg-no-repeat bgimg" >
         <div class="container px-4 mx-auto">
-          <div class="py-12 text-center">
-            <div class="max-w-lg mx-auto mb-8">
-              <h2 class="text-3xl md:text-4xl mb-4 text-white font-bold font-heading">
-                <span>The quick</span>
-                <span class="text-purple-600">brown fox</span>
-                <span>jumps over the lazy dog.</span>
+          <div class="pt-20 pl-40 text-left">
+            <div class=" mx-auto mb-8">
+              <h2 class="text-3xl md:text-4xl mb-4 text-purple-600 font-bold font-heading">
+                <span>Welcome to</span>
+                <span class="text-purple-600">eKatering</span>
+               
               </h2>
-              <p class="text-blueGray-400 leading-relaxed">The quick brown fox jumps over the lazy dog.</p>
+              <p class="text-blueGray-400 leading-relaxed">A one-stop-online shop for your home/event
+and private chef business.</p>
             </div>
-            <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">Check Now</a><a class="block sm:inline-block py-4 px-8 text-xs text-blueGray-100 hover:text-blueGray-200 text-center font-semibold leading-none border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">Documentation</a></div>
+            <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">Join Us</a></div>
           </div>
           <div class="flex flex-wrap items-center justify-center max-w-4xl mx-auto pt-12 pb-4">
             <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
@@ -81,5 +82,7 @@ export default {
 </script>
 
 <style>
-
+.bgimg{
+  background-image: url('@/assets/banner_1.png');
+}
 </style>
