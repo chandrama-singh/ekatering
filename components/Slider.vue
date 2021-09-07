@@ -1,14 +1,16 @@
 <template>
    <section class="pb-8 bg-top bg-cover bg-no-repeat bgimg" >
         <div class="container px-4 mx-auto">
-          <div class="pt-20 pl-40 text-left">
+          <div class="pt-20 pl-4 text-left">
             <div class=" mx-auto mb-8">
-              <h2 class="text-3xl md:text-4xl mb-4 text-purple-600 font-bold font-heading">
-                <span>Welcome to</span>
-                <span class="text-purple-600">eKatering</span>
-               
+              <h2 class="text-3xl md:text-4xl mb-4 mt-12 text-purple-600 font-bold font-heading">
+                <span>Welcome to</span><br>
+                <div class="flex">
+                  <img src="@/assets/hero-icon.png">
+                <span class="text-purple-900 text-8xl">eKatering</span>
+               </div>
               </h2>
-              <p class="text-blueGray-400 leading-relaxed">A one-stop-online shop for your home/event
+              <p class="text-purple-600 text-2xl">A one-stop-online shop for your home/event
 and private chef business.</p>
             </div>
             <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">Join Us</a></div>

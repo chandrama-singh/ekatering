@@ -1,6 +1,6 @@
 <template>
   <div>
-      <section class="py-12 md:py-32 overflow-x-hidden bg-gray-100">
+      <section class="py-12 md:py-32 overflow-x-hidden">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">

@@ -1,6 +1,6 @@
 <template>
-<div>
-    <h2 class="text-center text-purple-900 mt-10 mb-10 text-5xl lg:text-5xl font-bold font-heading">Our Facilities</h2>
+<div class="bg-gray-50">
+    <h2 class="text-center pt-10 text-purple-900 mt-10 mb-10 text-5xl lg:text-5xl font-bold font-heading">Our Facilities</h2>
   <section class="pt-20 pb-12 md:pb-8">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-3">
