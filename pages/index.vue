@@ -1,6 +1,6 @@
 <template>
   <div class=""> 
-    
+    <TopBar/>
       <Header/>
     
       <Slider/>
@@ -107,6 +107,7 @@
 </template>
 
 <script>
+import TopBar from '../components/TopBar.vue'
 import Header from '../components/Header.vue'
 import Slider from '../components/Slider.vue'
 import Work from '../components/Work.vue'
@@ -118,6 +119,7 @@ import Footer from '../components/Footer.vue'
 
 export default {
   components: { 
+    TopBar,
     Subscribe,
     Header,
     Slider,

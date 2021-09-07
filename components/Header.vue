@@ -1,9 +1,9 @@
 <template>
-  <section>
+  <section class="bgcolor">
         <div class="container px-4 mx-auto">
           <nav class="flex items-center py-6">
             <a class="text-3xl font-semibold leading-none" href="#">
-              <img class="h-10" src="metis-assets/logos/metis/metis.svg" alt="" width="auto">
+              <img class="h-10" src="../assets/logo.png" alt="" width="auto">
             </a>
             <div class="lg:hidden ml-auto">
               <button class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
@@ -14,15 +14,15 @@
               </button>
             </div>
             <ul class="hidden lg:flex items-center space-x-12 ml-auto mr-12">
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Home</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Director Message</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">About Us</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Time Table</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Download</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Admission</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Contact</a></li>
+              <li><nuxt-link to="/" class="text-sm text-white hover:text-blueGray-500" >Home</nuxt-link></li>
+              <li><nuxt-link to="/about" class="text-sm text-white hover:text-blueGray-500" >About Us</nuxt-link></li>
+              <li><nuxt-link to="/training" class="text-sm text-white hover:text-blueGray-500" >Training</nuxt-link></li>
+              <li><nuxt-link to="/consultations" class="text-sm text-white hover:text-blueGray-500" >Consultations</nuxt-link></li>
+              <li><nuxt-link to="/features" class="text-sm text-white hover:text-blueGray-500" >Features</nuxt-link></li>
+              <li><nuxt-link to="/faq" class="text-sm text-white hover:text-blueGray-500" >FAQ</nuxt-link></li>
+              <li><nuxt-link to="/contactus" class="text-sm text-white hover:text-blueGray-500" >Contact</nuxt-link></li>
             </ul>
-            <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Log In</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Sign Up</a></div>
+            
           </nav>
         </div>
         <div class="hidden navbar-menu relative z-50">
@@ -40,16 +40,15 @@
             </div>
             <div>
               <ul>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Home</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Director Message</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">About Us</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Time Table</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600"  href="#">Download</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Time Table</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Admission</a></li>
-                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Time Table</a></li>
+                <li class="mb-1"><nuxt-link to="/" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Home</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/about" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">About Us</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/consultations" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Consultations</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/features" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600" >Features</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/faq" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">FAQ</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/contactus" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Contact</nuxt-link></li>
               </ul>
-              <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Sign Up</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Log In</a></div>
+              
             </div>
             <div class="mt-auto">
               <p class="my-4 text-xs text-blueGray-400">
@@ -78,5 +77,7 @@ export default {
 </script>
 
 <style>
-
+.bgcolor{
+    background-color: #652D90;
+}
 </style>
