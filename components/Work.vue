@@ -1,6 +1,6 @@
 <template>
 <div>
-<h2 class="text-center text-blue-500 mt-10 mb-10 text-5xl lg:text-5xl font-bold font-heading">How it Works</h2>
+<h2 class="text-center text-purple-900 mt-10 mb-10 text-5xl lg:text-5xl font-bold font-heading">How it Works</h2>
   <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap mb-16 lg:mb-28">
@@ -9,7 +9,7 @@
                 <!-- <span class="text-lg font-bold text-blue-500">How it works</span> -->
                 <h2 class=" mb-10 text-3xl lg:text-4xl font-bold font-heading">Build and launch without problems</h2>
                 <p class="mb-10 text-xl text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing. Dolor sit amet consectetur adipisicing elit. Aliquid harum ducimus adipisci animi quidem nesciunt similique ex enim accusantium voluptate. Consectetur adipisicing harum ducimus adipisci.</p>
-                <a class="inline-block px-12 py-5 text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#">How it works?</a>
+                <a class="inline-block px-12 py-5 text-white font-bold bg-purple-500 hover:bg-purple-600 rounded-full transition duration-200" href="#">How it works?</a>
               </div>
             </div>
             <img class="lg:absolute top-0 right-5 lg:w-1/2 w-full h-96 lg:h-144 object-cover" src="https://images.pexels.com/photos/7148031/pexels-photo-7148031.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="">

@@ -10,8 +10,8 @@
       
       <div class="flex-grow"></div>
       <div class="hidden lg:block ">
-          <nuxt-link to="" class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" >Log In</nuxt-link>
-          <nuxt-link to="" class="mr-2 inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" >Sign Up</nuxt-link>
+          <nuxt-link to="" class="mr-2 inline-block px-4 py-3 text-xs text-purple-600 hover:text-purple-700 font-semibold leading-none border border-purple-200 hover:border-purple-300 rounded" >Log In</nuxt-link>
+          <nuxt-link to="" class="mr-2 inline-block px-4 py-3 text-xs font-semibold leading-none bg-purple-600 hover:bg-purple-700 text-white rounded" >Sign Up</nuxt-link>
           </div>
     </section>
   
