@@ -1,12 +1,13 @@
 <template>
   <section class="py-10 2xl:py-10 bg-gray-800">
         <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -mx-4 pb-24 mb-16 border-b border-gray-400">
+          <div class="flex flex-wrap -mx-4 pb-20 mb-12 border-b border-gray-400">
             <div class="w-full lg:w-2/5 px-4 mb-16 lg:mb-0">
-              <span class="text-lg text-purple-400 font-bold">We&apos;re Zospace</span>
-              <h2 class="max-w-sm mt-8 mb-12 text-5xl text-white font-bold font-heading">Thank you for your time</h2>
-              <p class="mb-16 text-gray-300">The brown fox jumps over the lazy dog.</p>
-              <div><a class="inline-block mb-4 sm:mb-0 sm:mr-4 py-4 px-12 text-white font-bold bg-purple-500 hover:bg-purple-600 rounded-full transition duration-200" href="#">Active demo</a><a class="inline-block px-12 py-4 text-white font-bold border border-gray-200 hover:border-white rounded-full" href="#">Contact</a></div>
+              <!-- <span class="text-md text-purple-400 font-bold">We&apos;re Zospace</span> -->
+              <h2 class="max-w-sm mt-8 mb-8 text-4xl text-white font-bold font-heading">EkAtering</h2>
+              <p class="mb-10 text-gray-300">The brown fox jumps over the lazy dog.</p>
+              <div><nuxt-link to="/about" class="inline-block mb-4 sm:mb-0 sm:mr-4 py-4 px-10 text-white font-bold bg-purple-500 hover:bg-purple-600 rounded-full transition duration-200" >Read More</nuxt-link>
+              </div>
             </div>
             <div class="w-full lg:w-3/5 px-4">
               <div class="flex flex-wrap -mx-4">
@@ -50,7 +51,7 @@
             </div>
           </div>
           <div class="md:flex justify-between">
-            <p class="text-lg text-gray-200 md:mb-0">&copy; 2021 Shuffle. All rights reserved.</p>
+            <p class="text-lg text-gray-200 item-center ">&copy; 2021 Osizone Services Pvt. Ltd.. All rights reserved.</p>
             <div class="flex items-center">
               <!-- <a class="inline-block text-white mr-2" href="#">
                 <img class="h-12" src="zospace-assets/logos/facebook.svg" alt="">

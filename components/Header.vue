@@ -36,8 +36,24 @@
             <ul class="hidden lg:flex items-center space-x-12 ml-auto mr-12">
               <li><nuxt-link to="/" class="text-sm text-white hover:text-blueGray-500" >Home</nuxt-link></li>
               <li><nuxt-link to="/about" class="text-sm text-white hover:text-blueGray-500" >About Us</nuxt-link></li>
-              <li><nuxt-link to="/training" class="text-sm text-white hover:text-blueGray-500" >Training</nuxt-link></li>
-              <li><nuxt-link to="/consultations" class="text-sm text-white hover:text-blueGray-500" >Consultations</nuxt-link></li>
+              <li><nuxt-link to="/training" class="text-sm text-white hover:text-blueGray-500" >Training </nuxt-link>
+                 <ul class="sub-menu">
+                                  <li><nuxt-link to="/fullstack">eKatering Online Training</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
+                                   <li><nuxt-link to="/windowapp">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
+                              </ul>
+              </li>
+              <li><nuxt-link to="/consultations" class="text-sm text-white hover:text-blueGray-500" >Consultations</nuxt-link>
+                 <ul class="sub-menu">
+                                  <li><nuxt-link to="/fullstack">eKatering CONSULTANCY SERVICES</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Local Authority Food Registration</nuxt-link></li>
+                                   <li><nuxt-link to="/fullstack">Documented Food Safety Management System (FSMS)</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Virtual Remote Inspection (VRI)</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Safer Food Better Business (SFBB)</nuxt-link></li>
+                                   <li><nuxt-link to="/fullstack">Food Standard</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Legal Advice</nuxt-link></li>
+                              </ul>
+              </li>
               <li><nuxt-link to="/features" class="text-sm text-white hover:text-blueGray-500" >Features</nuxt-link></li>
               <li><nuxt-link to="/faq" class="text-sm text-white hover:text-blueGray-500" >FAQ</nuxt-link></li>
               <li><nuxt-link to="/contactus" class="text-sm text-white hover:text-blueGray-500" >Contact</nuxt-link></li>
@@ -47,7 +63,7 @@
         </div>
         <div class="hidden navbar-menu relative z-50">
           <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <nav class=" fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div class="flex items-center mb-8">
               <a class="mr-auto text-3xl font-semibold leading-none" href="#">
                 <img class="h-10" src="metis-assets/logos/metis/metis.svg" alt="" width="auto">
@@ -62,8 +78,24 @@
               <ul>
                 <li class="mb-1"><nuxt-link to="/" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Home</nuxt-link></li>
                 <li class="mb-1"><nuxt-link to="/about" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">About Us</nuxt-link></li>
-                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training</nuxt-link></li>
-                <li class="mb-1"><nuxt-link to="/consultations" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Consultations</nuxt-link></li>
+                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training <span class="caret"></span></nuxt-link>
+                     <ul class="sub-menu">
+                                  <li><nuxt-link to="/fullstack">eKatering Online Training</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
+                                   <li><nuxt-link to="/windowapp">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
+                              </ul>
+                </li>
+                <li class="mb-1"><nuxt-link to="/consultations" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Consultations</nuxt-link>
+                     <ul class="sub-menu">
+                                  <li><nuxt-link to="/fullstack">eKatering CONSULTANCY SERVICES</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Local Authority Food Registration</nuxt-link></li>
+                                   <li><nuxt-link to="/fullstack">Documented Food Safety Management System (FSMS)</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Virtual Remote Inspection (VRI)</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Safer Food Better Business (SFBB)</nuxt-link></li>
+                                   <li><nuxt-link to="/fullstack">Food Standard</nuxt-link></li>
+                                  <li><nuxt-link to="/mobileapp">Legal Advice</nuxt-link></li>
+                              </ul>
+                </li>
                 <li class="mb-1"><nuxt-link to="/features" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600" >Features</nuxt-link></li>
                 <li class="mb-1"><nuxt-link to="/faq" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">FAQ</nuxt-link></li>
                 <li class="mb-1"><nuxt-link to="/contactus" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Contact</nuxt-link></li>
@@ -103,5 +135,56 @@ export default {
 }
 .headbg{
     background-color: #34174A;
+}
+
+
+.sub-menu > li {
+  display: block;
+  position: relative;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+ul > li > .sub-menu > li:hover > a {
+  color: #fff;
+  background: #652D90;
+}
+
+li:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  /* display: absolute; */
+  
+}
+.sub-menu{
+    position: absolute;
+  top: 20%;
+  /* left: 100%; */
+  z-index: 911;
+  float: left;
+  min-width: 220px;
+  padding: 0px 0px;
+  text-align: left;
+  list-style: none;
+  background-color: #34174A;
+  background-clip: padding-box;
+  opacity: 0;
+  border-radius: 0px;
+  visibility: hidden;
+  -webkit-transition: opacity .4s ease, visibility .4s ease;
+  transition: opacity .4s ease, visibility .4s ease;
+  -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.1);
+}
+.sub-menu > li > a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 30px;
+  display: block;
+  line-height: 26px;
+  white-space: nowrap;
+  position: relative;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 </style>
