@@ -14,7 +14,7 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
                 <h2 class="mb-3 text-gray-200 hover:text-gray-100">FOOD ORDERING</h2>
                 <hr class="mb-3"/>
-                  <ul class="text-lg">
+                  <ul class="text-md">
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Hello</a></li>
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Story</a></li>
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Pricing</a></li>
@@ -26,7 +26,7 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
                  <h2 class="mb-3 text-gray-200 hover:text-gray-100">RESTAURANT SERVICES</h2>
                 <hr class="mb-3"/>
-                  <ul class="text-lg">
+                  <ul class="text-md">
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Newsletter</a></li>
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Features</a></li>
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">How it works</a></li>
@@ -38,7 +38,7 @@
                 <div class="w-full lg:w-1/3 px-4">
                  <h2 class="mb-3 text-gray-200 hover:text-gray-100">PARTNER & SUPPORT</h2>
                 <hr class="mb-3"/>
-                  <ul class="text-lg">
+                  <ul class="text-md">
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">New account</a></li>
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Log in</a></li>
                     <li class="mb-2"><a class="text-gray-200 hover:text-gray-100" href="#">Testimonials</a></li>

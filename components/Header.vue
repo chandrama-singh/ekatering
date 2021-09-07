@@ -11,8 +11,8 @@
       
       <div class="flex-grow"></div>
       <div class="hidden lg:block ">
-          <nuxt-link to="" class="mr-2 inline-block px-4 py-3 text-xs text-white hover:text-purple-700 font-semibold leading-none" >Login</nuxt-link>
-          <nuxt-link to="" class="mr-2 inline-block px-4 py-3 text-xs font-semibold leading-none" >Sign Up</nuxt-link>
+          <nuxt-link to="/signin" class="mr-2 inline-block px-4 py-3 text-xs text-white hover:text-purple-700 font-semibold leading-none" >Login</nuxt-link>
+          <nuxt-link to="/signup" class="mr-2 inline-block px-4 py-3 text-xs font-semibold leading-none" >Sign Up</nuxt-link>
           </div>
     </section>
   
@@ -36,7 +36,9 @@
             <ul class="hidden lg:flex items-center space-x-12 ml-auto mr-12">
               <li><nuxt-link to="/" class="text-sm text-white hover:text-blueGray-500" >Home</nuxt-link></li>
               <li><nuxt-link to="/about" class="text-sm text-white hover:text-blueGray-500" >About Us</nuxt-link></li>
-              <li><nuxt-link to="/training" class="text-sm text-white hover:text-blueGray-500" >Training </nuxt-link>
+              <li><nuxt-link to="/training" class="text-sm text-white hover:text-blueGray-500" >Training <i class="caret"></i>
+              
+              </nuxt-link>
                  <ul class="sub-menu">
                                   <li><nuxt-link to="/fullstack">eKatering Online Training</nuxt-link></li>
                                   <li><nuxt-link to="/mobileapp">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
@@ -78,7 +80,7 @@
               <ul>
                 <li class="mb-1"><nuxt-link to="/" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Home</nuxt-link></li>
                 <li class="mb-1"><nuxt-link to="/about" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">About Us</nuxt-link></li>
-                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training <span class="caret"></span></nuxt-link>
+                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training </nuxt-link>
                      <ul class="sub-menu">
                                   <li><nuxt-link to="/fullstack">eKatering Online Training</nuxt-link></li>
                                   <li><nuxt-link to="/mobileapp">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
