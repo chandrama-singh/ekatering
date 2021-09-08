@@ -9,7 +9,7 @@
           <div class="flex flex-wrap mb-16 lg:mb-28">
             <div class="w-full lg:w-1/2 mb-16 lg:mb-0">
               <div class="max-w-md">
-                <!-- <span class="text-lg font-bold text-blue-500">How it works</span> -->
+                
                 <h2 class="mb-10 text-purple-900 text-3xl lg:text-4xl font-bold font-heading">Why eKatering?</h2>
                 <ul class="list-disc ml-12">
                   <li>The only mobile app specifically created for home/event catering and private chef businesses.</li>
@@ -21,7 +21,7 @@
                 </ul>
               </div>
             </div>
-            <img class="lg:absolute top-0 right-5 lg:w-1/2 w-full h-96 lg:h-144 object-cover" src="https://images.pexels.com/photos/7148031/pexels-photo-7148031.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="">
+            <img class="lg:absolute top-0 right-5 lg:w-1/2 pr-22 pl-12 w-full h-full lg:h-144 object-cover" src="@/assets/food.jpg" alt="">
           </div>
          
         </div>

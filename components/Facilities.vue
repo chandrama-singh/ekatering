@@ -1,6 +1,6 @@
 <template>
 <div class="bg-gray-50">
-    <h2 class="text-center pt-10 text-purple-900 mt-10 mb-10 text-5xl lg:text-5xl font-bold font-heading">Our Facilities</h2>
+    <h2 class="text-center pt-10 text-purple-900 mt-10 mb-4 text-5xl lg:text-5xl font-bold font-heading">Our Facilities</h2>
   <section class="pt-20 pb-12 md:pb-8">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-3">
@@ -12,9 +12,13 @@
                   </svg>
                 </div>
                 <div class="mt-4">
-                  <h3 class="mb-3 text-xl font-semibold font-heading">Easy to customize</h3>
-                  <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
-                </div>
+                  <h3 class="mb-3 text-xl font-semibold font-heading">eKatering Mobile App</h3>
+                  <ul class="list-disc text-blueGray-400 leading-loose">
+                    <li>Pay 0% commission on your orders.</li>
+                    <li>Get 100% of your orders paid directly into your chosen account.</li>
+                    <li>Be part of a new platform specifically designated for home/event and private chef catering businesses.</li>
+                    <li>Promote your home/event and private chef catering business.</li>
+                  </ul></div>
               </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
@@ -25,8 +29,13 @@
                   </svg>
                 </div>
                 <div class="mt-4">
-                  <h3 class="mb-3 text-xl font-semibold font-heading">Outstanding look</h3>
-                  <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
+                  <h3 class="mb-3 text-xl font-semibold font-heading">CONSULTATION</h3>
+                  <ul class="list-disc text-blueGray-400 leading-loose">
+                    <li>Get professional advice and guidance on how to start a home/event and private chef catering business.</li>
+                    <li>Allow the professionals to assist you in complying with food safety and standard regulations.</li>
+                    <li>Be prepared and confident before your local authority inspection.</li>
+
+                  </ul>
                 </div>
               </div>
             </div>
@@ -38,12 +47,17 @@
                   </svg>
                 </div>
                 <div class="mt-4">
-                  <h3 class="mb-3 text-xl font-semibold font-heading">Flexible software</h3>
-                  <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
+                  <h3 class="mb-3 text-xl font-semibold font-heading">TRAINING</h3>
+                  <ul class="list-disc text-blueGray-400 leading-loose">
+                    <li>Be in charge of your training programme.</li>
+                    <li>Get trained on food safety and food allergen specifically tailored for home/event caterers and private chefs..</li>
+                    <li>Be confident in your food safety and food allergen knowledge.</li>
+                    <li>Promote your home/event and private chef catering business.</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-purple-600 rounded-full text-white">
                   <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -55,8 +69,8 @@
                   <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
                 </div>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+            </div> -->
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-purple-600 rounded-full text-white">
                   <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -68,8 +82,8 @@
                   <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
                 </div>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+            </div> -->
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-purple-600 rounded-full text-white">
                   <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -81,8 +95,8 @@
                   <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
                 </div>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+            </div> -->
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-purple-600 rounded-full text-white">
                   <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -94,8 +108,8 @@
                   <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
                 </div>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+            </div> -->
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-purple-600 rounded-full text-white">
                   <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -107,8 +121,8 @@
                   <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
                 </div>
               </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+            </div> -->
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-purple-600 rounded-full text-white">
                   <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -120,7 +134,7 @@
                   <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
