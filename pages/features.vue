@@ -1,15 +1,14 @@
 <template>
   <div>
       <Header/>
-      <Slider/>
-      <Featers/>
+      <FtBanner/>
       <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
-import Slider from '../components/Slider.vue'
+import FtBanner from '../components/feature/FtBanner.vue'
 import Featers from '../components/Features.vue'
 import Footer from '../components/Footer.vue'
 export default {
@@ -17,7 +16,7 @@ export default {
     
     components:{
         Header,
-        Slider,
+        FtBanner,
         Featers,
         Footer,
     }

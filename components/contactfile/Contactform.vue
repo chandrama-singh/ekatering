@@ -44,7 +44,7 @@
                     <h3 class="mb-10 text-2xl font-bold font-heading">Send a message!</h3>
                     <input class="mb-4 w-full px-12 py-4 bg-white border font-bold placeholder-gray-300 rounded-full focus:outline-none" type="email" placeholder="Your Email ID">
                     <input class="mb-4 w-full px-12 py-4 bg-white border font-bold placeholder-gray-300 rounded-full focus:outline-none" type="text" placeholder="Subject">
-                    <textarea class="w-full mb-6 px-12 py-4 bg-white border font-bold placeholder-gray-300 rounded-3xl resize-none focus:outline-none" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <textarea class="w-full mb-6 px-12 py-4 bg-white border font-bold placeholder-gray-300 rounded-3xl resize-none focus:outline-none" name="" id="" cols="20" rows="6" placeholder="Your message"></textarea>
                     <div class="flex mb-10">
                       <input type="checkbox">
                       <p class="pl-4 max-w-xs text-sm text-gray-300">By singning up, you agree to our Terms, Data Policy and Cookies.</p>

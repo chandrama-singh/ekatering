@@ -1,21 +1,21 @@
 <template>
   <div>
       <Header/>
-      <Slider/>
+      <ConsBanner/>
       <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
-import Slider from '../components/Slider.vue'
+import ConsBanner from '../components/consultation/ConsBanner.vue'
 import Footer from '../components/Footer.vue'
 export default {
     name: 'consultations',
     
     components:{
         Header,
-        Slider,
+        ConsBanner,
         Footer,
     }
 

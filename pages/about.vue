@@ -2,6 +2,7 @@
   <div>
       <Header/>
       <TitleBanner/>
+      <AboutUs/>
       <Card/>
       <Footer/>
   </div>

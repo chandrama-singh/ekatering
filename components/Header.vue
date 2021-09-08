@@ -49,20 +49,20 @@
               
               </nuxt-link>
                  <ul class="sub-menu">
-                                  <li><nuxt-link to="/fullstack">eKatering Online Training</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
-                                   <li><nuxt-link to="/windowapp">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
+                                  <li><nuxt-link to="training/onlinetraining">eKatering Online Training</nuxt-link></li>
+                                  <li><nuxt-link to="training/foodallergen">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
+                                   <li><nuxt-link to="training/foodsafety">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
                               </ul>
               </li>
               <li><nuxt-link to="/consultations" class="text-sm text-white hover:text-blueGray-500" >Consultations <i class="fas fa-caret-down"></i></nuxt-link>
                  <ul class="sub-menu">
-                                  <li><nuxt-link to="/fullstack">eKatering CONSULTANCY SERVICES</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Local Authority Food Registration</nuxt-link></li>
-                                   <li><nuxt-link to="/fullstack">Documented Food Safety Management System (FSMS)</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Virtual Remote Inspection (VRI)</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Safer Food Better Business (SFBB)</nuxt-link></li>
-                                   <li><nuxt-link to="/fullstack">Food Standard</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Legal Advice</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/consultancy">eKatering CONSULTANCY SERVICES</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/foodregistration">Local Authority Food Registration</nuxt-link></li>
+                                   <li><nuxt-link to="consultation/fsms">Documented Food Safety Management System (FSMS)</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/vri">Virtual Remote Inspection (VRI)</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/sfbb">Safer Food Better Business (SFBB)</nuxt-link></li>
+                                   <li><nuxt-link to="consultation/foodstandard">Food Standard</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/legaladvice">Legal Advice</nuxt-link></li>
                               </ul>
               </li>
               <li><nuxt-link to="/features" class="text-sm text-white hover:text-blueGray-500" >Features</nuxt-link></li>
@@ -91,20 +91,20 @@
                 <li class="mb-1"><nuxt-link to="/about" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">About Us</nuxt-link></li>
                 <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training </nuxt-link>
                      <ul class="sub-menu">
-                                  <li><nuxt-link to="/fullstack">eKatering Online Training</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
-                                   <li><nuxt-link to="/windowapp">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
+                                  <li><nuxt-link to="training/onlinetraining">eKatering Online Training</nuxt-link></li>
+                                  <li><nuxt-link to="training/foodallergen">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
+                                   <li><nuxt-link to="training/foodsafety">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
                               </ul>
                 </li>
                 <li class="mb-1"><nuxt-link to="/consultations" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Consultations</nuxt-link>
                      <ul class="sub-menu">
-                                  <li><nuxt-link to="/fullstack">eKatering CONSULTANCY SERVICES</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Local Authority Food Registration</nuxt-link></li>
-                                   <li><nuxt-link to="/fullstack">Documented Food Safety Management System (FSMS)</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Virtual Remote Inspection (VRI)</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Safer Food Better Business (SFBB)</nuxt-link></li>
-                                   <li><nuxt-link to="/fullstack">Food Standard</nuxt-link></li>
-                                  <li><nuxt-link to="/mobileapp">Legal Advice</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/consultancy">eKatering CONSULTANCY SERVICES</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/foodregistration">Local Authority Food Registration</nuxt-link></li>
+                                   <li><nuxt-link to="consultation/fsms">Documented Food Safety Management System (FSMS)</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/vri">Virtual Remote Inspection (VRI)</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/sfbb">Safer Food Better Business (SFBB)</nuxt-link></li>
+                                   <li><nuxt-link to="consultation/foodstandard">Food Standard</nuxt-link></li>
+                                  <li><nuxt-link to="consultation/legaladvice">Legal Advice</nuxt-link></li>
                               </ul>
                 </li>
                 <li class="mb-1"><nuxt-link to="/features" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600" >Features</nuxt-link></li>

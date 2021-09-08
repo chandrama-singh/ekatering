@@ -22,7 +22,7 @@
         <div class="w-full lg:w-3/5 px-4">
           <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
-              <h2 class="mb-3 text-gray-200 hover:text-gray-100">
+              <h2 class="mb-4 text-gray-200 hover:text-gray-100">
                 FOOD ORDERING
               </h2>
               <hr class="mb-3" />
@@ -58,7 +58,7 @@
               </ul>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
-              <h2 class="mb-3 text-gray-200 hover:text-gray-100">
+              <h2 class="mb-4 text-gray-200 hover:text-gray-100">
                 RESTAURANT SERVICES
               </h2>
               <hr class="mb-3" />
@@ -92,7 +92,7 @@
               </ul>
             </div>
             <div class="w-full lg:w-1/3 px-4">
-              <h2 class="mb-3 text-gray-200 hover:text-gray-100">
+              <h2 class="mb-4 text-gray-200 hover:text-gray-100">
                 PARTNER & SUPPORT
               </h2>
               <hr class="mb-3" />
@@ -100,32 +100,32 @@
                 <li class="mb-2">
                   <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
                     >New account</nuxt-link>
-                  >
+                  
                 </li>
                 <li class="mb-2">
                   <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
                     >Log in</nuxt-link>
-                  >
+                  
                 </li>
                 <li class="mb-2">
                   <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
                     >Online Training</nuxt-link>
-                  >
+                  
                 </li>
                 <li class="mb-2">
                   <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
                     >Contact</nuxt-link>
-                  >
+                  
                 </li>
                 <li class="mb-2">
                   <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
                     >Consultancy Services</nuxt-link>
-                  >
+                  
                 </li>
                 <li>
                   <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
                     >Cookies</nuxt-link>
-                  >
+                  
                 </li>
               </ul>
             </div>

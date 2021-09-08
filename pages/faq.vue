@@ -1,7 +1,7 @@
 <template>
   <div>
       <Header/>
-      <Slider/>
+      <FaqBanner/>
       <Faq/>
       <Footer/>
   </div>
@@ -9,15 +9,15 @@
 
 <script>
 import Header from '../components/Header.vue'
-import Slider from '../components/Slider.vue'
-import Faq from '../components/Faq.vue'
+import FaqBanner from '../components/faq/FaqBanner.vue'
+import Faq from '@/components/Faq.vue'
 import Footer from '../components/Footer.vue'
 export default {
     name: 'faq',
     
     components:{
         Header,
-        Slider,
+        FaqBanner,
         Faq,
         Footer,
     }
