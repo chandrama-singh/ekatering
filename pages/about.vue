@@ -1,21 +1,24 @@
 <template>
   <div>
       <Header/>
-      <Slider />
+      <TitleBanner/>
+      <Card/>
       <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
-import Slider from '../components/Slider.vue'
+import TitleBanner from '../components/about/TitleBanner.vue'
 import Footer from '../components/Footer.vue'
+import Card from '../components/about/Card.vue'
 export default {
     name: 'aboutus',
     
     components:{
         Header,
-        Slider,
+        TitleBanner,
+        Card,
         Footer,
     }
 
