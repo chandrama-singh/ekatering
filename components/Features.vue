@@ -45,8 +45,8 @@
                  <nuxt-link to="/consultations" class="pl-12 text-pirple-900">Know More ></nuxt-link>
               </div>
             </div>
-            <div class="relative w-full lg:w-1/2 my-12 lg:my-0">
-              <img class="relative mx-auto rounded-xl w-full z-10" src="@/assets/food1.jpg" alt="">
+            <div class="relative w-full lg:w-1/2 my-12 lg:my-0 transform transition duration-500 hover:scale-110">
+              <img class="relative mx-auto rounded-xl w-full z-10" src="@/assets/food1.png" alt="">
               <img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt="">
               <img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt="">
             </div>

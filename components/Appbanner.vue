@@ -8,7 +8,7 @@
               </h2>
               <p class="text-white leading-relaxed">Download the eKatering app on your platform.</p>
             </div>
-            <div class="flex"><img src="@/assets/play-store.png" alt="image" class=" mb-8 mr-4">
+            <div class="flex cursor-pointer"><img src="@/assets/play-store.png" alt="image" class=" mb-8 mr-4">
             <img src="@/assets/apple-store.png" alt="image" class=" mb-8"></div>
           </div>
           

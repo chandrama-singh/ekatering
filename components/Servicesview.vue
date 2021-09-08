@@ -19,6 +19,9 @@
                 
                 <h3 class="mb-2 font-bold font-heading">Full suite of Consultations</h3>
                 <p class="text-sm text-blueGray-400">We have Consultations for all parts of your catering business.</p>
+                <center>
+                  <button class="justify-center mt-2 btn cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white rounded-lg"><nuxt-link to="/consultations">Read More</nuxt-link></button>
+                </center>
               </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
@@ -26,6 +29,10 @@
                 
                 <h3 class="mb-2 font-bold font-heading">See our full features</h3>
                 <p class="text-sm text-blueGray-400">Get to know the next level of eKatering.</p>
+               
+                <center>
+                  <button class="justify-center mt-2 btn cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white rounded-lg"><nuxt-link to="/features">Read More</nuxt-link></button>
+                </center>
                 <br/>
               </div>
             </div>
@@ -34,6 +41,9 @@
                 
                 <h3 class="mb-2 font-bold font-heading">About Us</h3>
                 <p class="text-sm text-blueGray-400">Get to know the biggest news in eKatering.</p>
+                 <center>
+                  <button class="justify-center mt-2 btn cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white rounded-lg"><nuxt-link to="/about">Read More</nuxt-link></button>
+                </center>
                 <br/>
               </div>
             </div>
