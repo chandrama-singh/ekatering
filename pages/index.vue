@@ -7,6 +7,7 @@
       <Work/>
       <Facilities/>
       <Features />
+      <FooterContact/>
       <Appbanner/>
       <Servicesview/>
       <Footer />
@@ -24,6 +25,7 @@ import Subscribe from '../components/Subscribe.vue'
 import Footer from '../components/Footer.vue'
 import Appbanner from '../components/Appbanner.vue'
 import Servicesview from '../components/Servicesview.vue'
+import FooterContact from '../components/FooterContact.vue'
 
 export default {
   components: { 
@@ -38,6 +40,7 @@ export default {
     Appbanner,
     Servicesview,
     Servicesview,
+    FooterContact,
 
   },}
 

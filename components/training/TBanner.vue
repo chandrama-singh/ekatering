@@ -18,7 +18,7 @@ export default {
 <style>
 .titlebg
 {
-    background-image: url('@/assets/aboutbanner.png');
+    background-image: url('@/assets/Training-Banner.png');
 }
 
 </style>

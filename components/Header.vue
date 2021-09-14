@@ -32,7 +32,7 @@
         <div class="container px-4 mx-auto">
           <nav class="flex items-center py-6">
             <a class="text-3xl font-semibold leading-none" href="#">
-              <img class="h-10" src="../assets/logo.png" alt="" width="auto">
+              <img class="h-10" src="../assets/footer.png" alt="" width="auto">
             </a>
             <div class="lg:hidden ml-auto">
               <button class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
