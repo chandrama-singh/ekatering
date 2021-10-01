@@ -12,8 +12,10 @@
       <Subscribe/>
       <!-- <Features /> -->
       <FooterContact/>
-    <Faq/>
+=
       <!-- <Servicesview/> -->
+      <Faq/>
+
       <Footer />
     </div>
 </template>
