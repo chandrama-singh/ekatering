@@ -19,13 +19,27 @@
               <li><nuxt-link to="/training" class="text-md text-purple-600 hover:text-purple-900" >Training 
               
               </nuxt-link>
+              <span class="absolute pt-3 pl-2">
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 1.64014L7 7.64014L1 1.64014" stroke="#6D28D9" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </span>
                  <ul class="sub-menu">
                                   <li><nuxt-link to="training/onlinetraining">eKatering Online Training</nuxt-link></li>
                                   <li><nuxt-link to="training/foodallergen">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
                                    <li><nuxt-link to="training/foodsafety">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
                               </ul>
+                              
               </li>
+              
+                
+              
               <li><nuxt-link to="/consultations" class="text-md text-purple-600 hover:text-purple-900" >Consultations <i class="fas fa-caret-down"></i></nuxt-link>
+               <span class="absolute pt-3 pl-2">
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 1.64014L7 7.64014L1 1.64014" stroke="#6D28D9" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </span>
                  <ul class="sub-menu">
                                   <li><nuxt-link to="consultation/consultancy">eKatering CONSULTANCY SERVICES</nuxt-link></li>
                                   <li><nuxt-link to="consultation/foodregistration">Local Authority Food Registration</nuxt-link></li>
@@ -60,7 +74,9 @@
               <ul>
                 <li class="mb-1"><nuxt-link to="/" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Home</nuxt-link></li>
                 <li class="mb-1"><nuxt-link to="/about" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">About Us</nuxt-link></li>
-                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training </nuxt-link>
+                <li class="mb-1"><nuxt-link to="/training" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Training 
+                
+                </nuxt-link>
                      <ul class="sub-menu">
                                   <li><nuxt-link to="training/onlinetraining">eKatering Online Training</nuxt-link></li>
                                   <li><nuxt-link to="training/foodallergen">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
@@ -128,7 +144,7 @@ export default {
 }
 ul > li > .sub-menu > li:hover > a {
   color: #fff;
-  background: #652D90;
+  background: #34174A;
 }
 
 li:hover > .sub-menu {
@@ -147,7 +163,7 @@ li:hover > .sub-menu {
   padding: 0px 0px;
   text-align: left;
   list-style: none;
-  background-color: #34174A;
+  background-color: #652D90;
   background-clip: padding-box;
   opacity: 0;
   border-radius: 0px;
