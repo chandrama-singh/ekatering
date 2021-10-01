@@ -1,14 +1,16 @@
 <template>
   <div class=""> 
+    <section class="bgimg">
       <Header/>
-    
-      <Slider/>
-
+      <AboutUs/>
+    </section>  
+      <WhyBest/>
+      <WhyKetaring/>
+      <Appbanner/>
       <Work/>
-      <Facilities/>
+      <!-- <Facilities/> -->
       <Features />
       <FooterContact/>
-      <Appbanner/>
       <Servicesview/>
       <Footer />
     </div>
@@ -45,3 +47,8 @@ export default {
   },}
 
 </script>
+<style scoped>
+.bgimg{
+  background-image: url('@/assets/bg.png');
+}
+</style>
