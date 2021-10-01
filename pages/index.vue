@@ -8,8 +8,9 @@
       <WhyKetaring/>
       <Appbanner/>
       <Work/>
-      <!-- <Facilities/> -->
-      <Features />
+      <Pocket/>
+      <Subscribe/>
+      <!-- <Features /> -->
       <FooterContact/>
       <Servicesview/>
       <Footer />
