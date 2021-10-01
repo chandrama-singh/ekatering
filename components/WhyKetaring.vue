@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden mt-6">
+  <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden mt-6 ">
     <p></p>
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">

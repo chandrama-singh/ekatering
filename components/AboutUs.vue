@@ -1,6 +1,6 @@
 <template>
-   <section class="pb-8 " >
-        <div class="container px-4 mx-auto">
+   <section class="pb-8" >
+        <div class="container px-4 mx-auto py-20">
           <div class="pt-20 pl-4 text-left">
             <div class=" mx-auto mb-8">
               <h2 class="text-3xl md:text-4xl mb-4 mt-12 text-purple-600 font-bold font-heading">

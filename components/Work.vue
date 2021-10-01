@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-50">
     <h2
-      class="text-center pt-20 text-black mt-10 mb-4 text-5xl lg:text-5xl font-bold font-heading"
+      class="text-center pt-20 text-black mb-4 text-5xl lg:text-5xl font-bold font-heading"
     >
       How It Works
     </h2>
