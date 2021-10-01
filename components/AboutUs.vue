@@ -7,10 +7,10 @@
                 <!-- <span></span><br> -->
                 <div class="flex">
                   <!-- <img src="@/assets/hero-icon.png"> -->
-                <span class="text-purple-900 text-5xl max-w-3xl">YOUR CATERING BUSINESS, OUR ASSISTANCE !</span>
+                <span class="text-purple-900 text-5xl max-w-3xl font-poppins leading">YOUR CATERING BUSINESS, OUR ASSISTANCE !</span>
                </div>
               </h2>
-              <p class="text-purple-600 text-2xl max-w-3xl">We offer a step-by-step solution to Home/Events Caterers and Private Chefs to open and run their food business online while complying with food safety and standard regulations.</p>
+              <p class="text-purple-600 text-2xl max-w-3xl font-poppins">We offer a step-by-step solution to Home/Events Caterers and Private Chefs to open and run their food business online while complying with food safety and standard regulations.</p>
             </div>
             <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">Get Started</a></div>
           </div>
