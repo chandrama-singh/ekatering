@@ -26,17 +26,17 @@
             </p>
           </div>
           <br />
-          <div class="ml-6">
-            <a
-              class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded"
-              href="#"
-              >Get Started</a
-            >
+          <div class="text-center">
+            <img
+          class=" ml-25 pl-22 lg:h-full "
+          src="@/assets/icon_1.png"
+          alt=""
+        />
           </div>
         </div>
         <img
-          class="lg:absolute top-0 right-5 lg:w-2/5 pr-22 pl-12 w-full h-full lg:h-144 object-cover "
-          src="@/assets/food.jpg"
+          class="lg:absolute top-0 right-5 lg:w-2/5 pr-22 pl-12  lg:h-100 object-cover "
+          src="@/assets/why-img.png"
           alt=""
         />
       </div>

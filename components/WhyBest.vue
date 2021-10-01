@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden mt-6">
+  <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden bgabout">
     <p></p>
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">
@@ -31,8 +31,8 @@
           <div class="ml-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">Get Started</a></div>
         </div>
         <img
-          class="lg:absolute top-0 right-5 lg:w-2/5 pr-22 pl-12 w-full h-full lg:h-144 object-cover "
-          src="@/assets/food.jpg"
+          class="lg:absolute top-4 mt-16 right-2 lg:w-2/5  lg:h-100 object-cover "
+          src="@/assets/about-img.png"
           alt=""
         />
       </div>
@@ -44,4 +44,10 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.bgabout{
+     background-image: url('@/assets/bg_1.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+</style>
