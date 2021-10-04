@@ -2,7 +2,7 @@
   <div>
       <section class="bgcolor">
       <Header/>
-      <Signin/>
+      <Login/>
       </section>
       <Footer/>
   </div>
@@ -10,14 +10,15 @@
 
 <script>
 import Header from '../components/Header.vue'
-import Signin from '@/components/Signin.vue'
+// import Signin from '@/components/Signin.vue'
+import Login from '@/components/Login.vue'
 import Footer from '../components/Footer.vue'
 export default {
     name: 'signin',
 
     components:{
         Header,
-        Signin,
+        Login,
         Footer,
     },
 
