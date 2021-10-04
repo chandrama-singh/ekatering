@@ -3,7 +3,7 @@
   <section class="bgcolor">
       <Header/>
       <TBanner/>
-      <Level2/>
+      <FoodStandard/>
       <Passion/>
     </section>
       <Footer/>
@@ -13,17 +13,23 @@
 <script>
 import Header from '../components/Header.vue'
 import TBanner from '../components/training/TBanner.vue'
-import Level2 from '@/components/training/Level2.vue'
+import FoodStandard from '@/components/FoodStandard.vue'
 
 import Passion from '@/components/training/Passion.vue'
 import Footer from '../components/Footer.vue'
 export default {
-    name: 'training',
+    name: 'Food Standard',
+
+    data(){
+        return{
+            name:'Food Standard'
+        }
+    },
     
     components:{
         Header,
         TBanner,
-        Level2,
+        FoodStandard,
        
         Passion,
         Footer,

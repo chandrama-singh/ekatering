@@ -3,7 +3,7 @@
   <section class="bgcolor">
       <Header/>
       <TBanner/>
-      <Level2/>
+      <Sfbb/>
       <Passion/>
     </section>
       <Footer/>
@@ -13,7 +13,7 @@
 <script>
 import Header from '../components/Header.vue'
 import TBanner from '../components/training/TBanner.vue'
-import Level2 from '@/components/training/Level2.vue'
+import Sfbb from '@/components/Sfbb.vue'
 
 import Passion from '@/components/training/Passion.vue'
 import Footer from '../components/Footer.vue'
@@ -23,7 +23,7 @@ export default {
     components:{
         Header,
         TBanner,
-        Level2,
+        Sfbb,
        
         Passion,
         Footer,

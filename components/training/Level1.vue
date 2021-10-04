@@ -76,7 +76,7 @@
 				<td class="p-4 w-1/2 text-black">3:52</td>
 			</tr>
       <tr class="flex w-full mb-2">
-				<td class="p-4 w-1/2">Totel</td>
+				<td class="p-4 w-1/2">Total</td>
 				<td class="p-4 w-1/2 text-black">18:4</td>
 			</tr>
 		</tbody>
