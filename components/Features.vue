@@ -1,59 +1,99 @@
 <template>
-  <div>
-      <section class="py-12 md:py-32 overflow-x-hidden">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap lg:flex-nowrap">
-            <div class="w-full lg:w-1/2">
-              <div class="py-6 lg:pr-32">
-                <div class="mb-4">
-                  <h2 class="text-4xl mt-3 font-bold font-heading">Key Features</h2>
-                </div>
-                <div class="flex items-start py-4">
-                  <div class="w-8 mr-5 text-purple-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="mb-2 text-xl font-semibold font-heading">Food Business Registration</h3>
-                    <p class="text-blueGray-400 leading-loose">Before you can trade as a home/event caterer or a private chef, you must register with your local authority.</p>
-                  </div>
-                </div>
-                <div class="flex items-start py-4">
-                  <div class="w-8 mr-5 text-purple-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="mb-2 text-xl font-semibold font-heading">Food Safety Management</h3>
-                    <p class="text-blueGray-400 leading-loose">A documented Food Safety Management System (FSMS) is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat.</p>
-                  </div>
-                </div>
-                <div class="flex items-start py-4">
-                  <div class="w-8 mr-5 text-purple-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="mb-2 text-xl font-semibold font-heading">Virtual Remote Inspection</h3>
-                    <p class="text-blueGray-400 leading-loose">VRI is the way forward in this changing world that we live in. This service applies to small catering kitchens such as those used by home/event caterers and private chefs.</p>
-                  </div>
-                 
-                </div>
-                 <nuxt-link to="/consultations" class="pl-12 text-pirple-900">Know More ></nuxt-link>
+  <section>
+    <!------------------------------------------------------------------------------------------------------>
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+      <h2 class="text-3xl mb-10 font-semibold font-heading">
+        eKatering Features
+      </h2>
+       <h4 class="text-2xl mb-2 mt-6 font-semibold font-heading">
+        eKatering Mobile App
+      </h4>
+      <!-- <p class="mb-4 text-gray-400 leading-relaxed">
+        SFBB is a simple documented food safety management system for the following:
+      </p> -->
+      <div class="flex">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>Pay 0% commission on your orders.</li>
+          <li>Get 100% of your orders paid directly into your chosen account.</li>
+          <li>Be part of a new platform specifically designated for home/event and private chef catering businesses.</li>
+          <li>Promote your home/event and private chef catering business.</li>
+          <li>Increase your visibility from one recognised platform specifically designed for your home/event and private chef catering business.</li>
+          <li>Increase your customer orders.</li>
+          <li>Reassure customers that your food is prepared and cooked in an inspected kitchen that complies with food safety and standard regulations.</li>
+          <li>Allow customers to review your food and service.</li>
+          <li>Make food ordering easy for your customers.</li>
+          <li>Build and run a professional home/event and private chef business.</li>
+          <li>Be in control of your home/event and private chef business.</li>
+        </ul>
+      </div>
+      <div class="flex mt-10 ml-8">
+              <div class="">
+               <img class="relative mx-auto rounded-xl h-12 w-full z-10 mr-2"  src="@/assets/apple-store.png"/>
+              </div>
+              <div>
+                <img class=" ml-2 relative mx-auto rounded-xl h-12 w-full z-10"  src="@/assets/play-store.png"/>
               </div>
             </div>
-            <div class="relative w-full lg:w-1/2 my-12 lg:my-0 transform transition duration-500 hover:scale-110">
-              <img class="relative mx-auto rounded-xl w-full z-10" src="@/assets/food1.png" alt="">
-              <img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt="">
-              <img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-  </div>
+    </div>
+    <!---------------------------------------------------------------------------->
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+       <h4 class="text-2xl mb-2 mt-4 font-semibold font-heading">
+         Why do I need a VRI?
+      </h4>
+      <!-- <p class="mb-4 text-gray-400 leading-relaxed">
+        SFBB is a simple documented food safety management system for the following:
+      </p> -->
+      <div class="flex">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>To ensure you sell safe food.</li>
+          <li>To ensure you comply with current food safety regulations.</li>
+          <li>To ensure everything is in place before your food safety officer visit your kitchen.</li>
+          <li>To ensure you receive the highest Food Hygiene Rating Scheme (FHRS) award</li>
+          
+        </ul>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------->
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+       <h4 class="text-2xl mb-2 mt-4 font-semibold font-heading">
+         CONSULTATION
+      </h4>
+      <!-- <p class="mb-4 text-gray-400 leading-relaxed">
+        SFBB is a simple documented food safety management system for the following:
+      </p> -->
+      <div class="flex">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>Get professional advice and guidance on how to start a home/event and private chef catering business.</li>
+          <li>Allow the professionals to assist you in complying with food safety and standard regulations.</li>
+          <li>Be prepared and confident before your local authority inspection.</li>
+          <li>Put things in place to ensure you achieve the highest Food Hygiene Rating Scheme (FHRS) award by your local authority inspector.</li>
+          <li>Ensure you have all the correct documented food safety management system in place applicable to your food business.</li>
+          <li>Be confident in your systems to ensure safe food.</li>     
+          <li>Receive professional help with food safety and standard enforcement issues.</li>   
+          <li>Ensure you comply with UK manufacturing and importing regulations.</li>  
+        </ul>
+      </div>
+    </div>
+     <!---------------------------------------------------------------------------->
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+       <h4 class="text-2xl mb-2 mt-4 font-semibold font-heading">
+         TRAINING
+      </h4>
+      <!-- <p class="mb-4 text-gray-400 leading-relaxed">
+        SFBB is a simple documented food safety management system for the following:
+      </p> -->
+      <div class="flex">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>Be in charge of your training programme.</li>
+          <li>Get trained on food safety and food allergen specifically tailored for home/event caterers and private chefs..</li>
+          <li>Be confident in your food safety and food allergen knowledge.</li>
+          <li>Know what to expect from your local authority food inspector.</li>
+          <li>Be confident during your food safety and standard inspection.</li>
+          <li>Know what is legally expected of you as a home/event and private chef catering business owner.</li>     
+        </ul>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
