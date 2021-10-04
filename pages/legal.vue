@@ -1,9 +1,9 @@
 <template>
-  <div>
+<div>
   <section class="bgcolor">
       <Header/>
       <TBanner/>
-      <Features/>
+      <Legal/>
       <Passion/>
     </section>
       <Footer/>
@@ -13,16 +13,18 @@
 <script>
 import Header from '../components/Header.vue'
 import TBanner from '../components/training/TBanner.vue'
-import Featers from '../components/Features.vue'
-import Passion from '../components/training/Passion.vue'
+import Legal from '@/components/Legal.vue'
+
+import Passion from '@/components/training/Passion.vue'
 import Footer from '../components/Footer.vue'
 export default {
-    name: 'features',
+    name: 'legal',
     
     components:{
         Header,
         TBanner,
-        Featers,
+        Legal,
+       
         Passion,
         Footer,
     }
@@ -31,5 +33,7 @@ export default {
 </script>
 
 <style>
-
+.bgcolor{
+        background-color: #EEF3FC;
+    }
 </style>
