@@ -29,8 +29,14 @@
 							d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 					</svg>
                 </div>
-				<label class="text-sm font-bold text-gray-700 tracking-wide">Email</label>
-				<input class=" w-full text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="mail@gmail.com" >
+				<label class="text-sm font-bold text-gray-700 tracking-wide">Name</label>
+				<input class=" w-full text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="text" placeholder="Enter Your Name" >
+            </div>
+            <div class="mt-8 content-center">
+				<label class="text-sm font-bold text-gray-700 tracking-wide">
+					Email
+				</label>
+				<input class="w-full content-center text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="mail@gmail.com" >
             </div>
 			<div class="mt-8 content-center">
 				<label class="text-sm font-bold text-gray-700 tracking-wide">
@@ -38,7 +44,13 @@
 				</label>
 				<input class="w-full content-center text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="password" placeholder="Enter your password" >
             </div>
-			<div class="flex items-center justify-between">
+            <div class="mt-8 content-center">
+				<label class="text-sm font-bold text-gray-700 tracking-wide">
+					Confirm Password
+				</label>
+				<input class="w-full content-center text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="password" placeholder="Re-Enter password" >
+            </div>
+			<!-- <div class="flex items-center justify-between">
 					<div class="flex items-center">
 						<input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 bg-indigo-500 focus:ring-indigo-400 border-gray-300 rounded">
 						<label for="remember_me" class="ml-2 block text-sm text-gray-900">
@@ -50,16 +62,16 @@
 								Forgot your password?
 					</a>
 				</div>
-			</div>
+			</div> -->
 			<div>
 				<button type="submit" class="w-full flex justify-center bg-indigo-500 text-gray-100 p-4  rounded-lg tracking-wide
                                 font-semibold  focus:outline-none focus:shadow-outline hover:bg-indigo-600 shadow-lg cursor-pointer transition ease-in duration-300">
-                    Sign in
+                    Sign Up
                 </button>
 			</div>
 			<p class="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
-				<span>Don't have an account?</span>
-				<a href="#" class="text-indigo-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300">Sign up</a>
+				<span>Already have an account?</span>
+				<a href="#" class="text-indigo-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300">Sign In</a>
 			</p>
       	<div class="flex flex-row justify-center items-center space-x-3">
 			<span class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg  text-white  bg-blue-900 hover:shadow-lg cursor-pointer transition ease-in duration-300"><img class="w-4 h-4" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0xNS45OTcgMy45ODVoMi4xOTF2LTMuODE2Yy0uMzc4LS4wNTItMS42NzgtLjE2OS0zLjE5Mi0uMTY5LTMuMTU5IDAtNS4zMjMgMS45ODctNS4zMjMgNS42Mzl2My4zNjFoLTMuNDg2djQuMjY2aDMuNDg2djEwLjczNGg0LjI3NHYtMTAuNzMzaDMuMzQ1bC41MzEtNC4yNjZoLTMuODc3di0yLjkzOWMuMDAxLTEuMjMzLjMzMy0yLjA3NyAyLjA1MS0yLjA3N3oiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"></span>

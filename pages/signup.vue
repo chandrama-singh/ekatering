@@ -1,7 +1,9 @@
 <template>
   <div>
+      <section class="bgcolor">
       <Header/>
       <SignUp/>
+      </section>
       <Footer/>
   </div>
 </template>
@@ -23,5 +25,7 @@ export default {
 </script>
 
 <style>
-
+ .bgcolor{
+        background-color: #EEF3FC;
+    }
 </style>
