@@ -1,7 +1,9 @@
 <template>
   <div>
+      <section class="bgcolor">
       <Header/>
       <Signin/>
+      </section>
       <Footer/>
   </div>
 </template>
@@ -22,6 +24,8 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style scoped>
+    .bgcolor{
+        background-color: #EEF3FC;
+    }
+</style>>

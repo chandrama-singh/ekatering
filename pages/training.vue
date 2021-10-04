@@ -1,8 +1,13 @@
 <template>
-  <div>
+<div>
+  <section class="bgcolor">
       <Header/>
       <TBanner/>
       <TrainingAbout/>
+      <TwhyKetring/>
+      <Cost/>
+      <Passion/>
+    </section>
       <Footer/>
   </div>
 </template>
@@ -11,6 +16,9 @@
 import Header from '../components/Header.vue'
 import TBanner from '../components/training/TBanner.vue'
 import TrainingAbout from '@/components/training/TrainingAbout.vue'
+import TwhyKetring from '@/components/training/TwhyKetring.vue'
+import Cost from '@/components/training/Cost.vue'
+import Passion from '@/components/training/Passion.vue'
 import Footer from '../components/Footer.vue'
 export default {
     name: 'training',
@@ -19,6 +27,9 @@ export default {
         Header,
         TBanner,
         TrainingAbout,
+        TwhyKetring,
+        Cost,
+        Passion,
         Footer,
     }
 
@@ -26,5 +37,7 @@ export default {
 </script>
 
 <style>
-
+.bgcolor{
+        background-color: #EEF3FC;
+    }
 </style>
