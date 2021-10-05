@@ -132,9 +132,9 @@
           </div>
         </div>
       </div>
-      <div class="md:flex justify-between">
+      <div class="md:flex justify-between item-center">
         <p class="text-lg text-gray-200 item-center ">
-          &copy; 2021 Osizone Services Pvt. Ltd.. All rights reserved.
+          &copy; 2021 <nuxt-link to="https://www.osizone.com/">Osizone Services Pvt.</nuxt-link> Ltd.. All rights reserved.
         </p>
       </div>
     </div>
