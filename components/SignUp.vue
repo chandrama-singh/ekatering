@@ -9,8 +9,8 @@
 	<div class="absolute opacity-60 inset-0 z-0"></div>
   	<div class="max-w-md w-full space-y-8  p-10 bg-white rounded-xl z-10">
 		<div class="text-center mb-10">
-			<h2 class="mt-6 text-3xl font-bold text-gray-900">
-				SignUp
+			<h2 class="mt-6 text-3xl font-bold text-gray-900 fontpoppin">
+				Welcome !
 			</h2>
 			<!-- <p class="mt-2 text-sm text-gray-600">Please sign in to your account</p> -->
 		</div>
@@ -100,4 +100,8 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.fontpoppin{
+    font-family: poppins;
+}
+</style>

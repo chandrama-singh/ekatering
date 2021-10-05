@@ -26,8 +26,8 @@
                 </span>
                  <ul class="sub-menu">
                                   <li><nuxt-link to="training/onlinetraining">eKatering Online Training</nuxt-link></li>
-                                  <li><nuxt-link to="training/foodallergen">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
-                                   <li><nuxt-link to="training/foodsafety">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
+                                  <li><nuxt-link to="/tr_level_1">Food Allergen for Caterers and Private Chefs Level 1</nuxt-link></li>
+                                   <li><nuxt-link to="/tr_level_2">Food Safety for Caterers and Private Chefs - Level 2</nuxt-link></li>
                               </ul>
                               
               </li>
@@ -42,17 +42,17 @@
                 </span>
                  <ul class="sub-menu">
                                   <li><nuxt-link to="consultation/consultancy">eKatering CONSULTANCY SERVICES</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/foodregistration">Local Authority Food Registration</nuxt-link></li>
-                                   <li><nuxt-link to="consultation/fsms">Documented Food Safety Management System (FSMS)</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/vri">Virtual Remote Inspection (VRI)</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/sfbb">Safer Food Better Business (SFBB)</nuxt-link></li>
-                                   <li><nuxt-link to="consultation/foodstandard">Food Standard</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/legaladvice">Legal Advice</nuxt-link></li>
+                                  <li><nuxt-link to="/authorityfood">Local Authority Food Registration</nuxt-link></li>
+                                   <li><nuxt-link to="/fsms">Documented Food Safety Management System (FSMS)</nuxt-link></li>
+                                  <li><nuxt-link to="/vir">Virtual Remote Inspection (VRI)</nuxt-link></li>
+                                  <li><nuxt-link to="/sfbb">Safer Food Better Business (SFBB)</nuxt-link></li>
+                                   <li><nuxt-link to="/foodstandard">Food Standard</nuxt-link></li>
+                                  <li><nuxt-link to="/legal">Legal Advice</nuxt-link></li>
                               </ul>
               </li>
               <li><nuxt-link to="/features" class="text-md text-purple-600 hover:text-purple-900" >Features</nuxt-link></li>
               <li><nuxt-link to="/contactus" class="text-md text-purple-600 hover:text-purple-900" >Contact</nuxt-link></li>
-              <li><button class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300" type="login">Login</button></li>
+              <li><button class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300" type="login">Login </button></li>
             </ul>
             
           </nav>
