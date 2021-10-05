@@ -86,16 +86,16 @@
                 <li class="mb-1"><nuxt-link to="/consultations" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Consultations</nuxt-link>
                      <ul class="sub-menu">
                                   <li><nuxt-link to="consultation/consultancy">eKatering CONSULTANCY SERVICES</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/foodregistration">Local Authority Food Registration</nuxt-link></li>
-                                   <li><nuxt-link to="consultation/fsms">Documented Food Safety Management System (FSMS)</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/vri">Virtual Remote Inspection (VRI)</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/sfbb">Safer Food Better Business (SFBB)</nuxt-link></li>
-                                   <li><nuxt-link to="consultation/foodstandard">Food Standard</nuxt-link></li>
-                                  <li><nuxt-link to="consultation/legaladvice">Legal Advice</nuxt-link></li>
+                                  <li><nuxt-link to="/authorityfood">Local Authority Food Registration</nuxt-link></li>
+                                   <li><nuxt-link to="/fsms">Documented Food Safety Management System (FSMS)</nuxt-link></li>
+                                  <li><nuxt-link to="/vir">Virtual Remote Inspection (VRI)</nuxt-link></li>
+                                  <li><nuxt-link to="/sfbb">Safer Food Better Business (SFBB)</nuxt-link></li>
+                                   <li><nuxt-link to="/foodstandard">Food Standard</nuxt-link></li>
+                                  <li><nuxt-link to="/legal">Legal Advice</nuxt-link></li>
                               </ul>
                 </li>
                 <li class="mb-1"><nuxt-link to="/features" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600" >Features</nuxt-link></li>
-                <li class="mb-1"><nuxt-link to="/faq" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">FAQ</nuxt-link></li>
+                <!-- <li class="mb-1"><nuxt-link to="/faq" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">FAQ</nuxt-link></li> -->
                 <li class="mb-1"><nuxt-link to="/contactus" class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600">Contact</nuxt-link></li>
               </ul>
               
