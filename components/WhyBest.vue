@@ -3,11 +3,11 @@
     <p></p>
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">
-          <!-- <img
+          <img
           class="lg:absolute top-4 mt-16 right-2 lg:w-2/5  lg:h-100 object-cover "
-          src="@/assets/catering-service.jpg"
+          src="@/assets/about-img.png"
           alt=""
-        /> -->
+        />
         <div class="w-full lg:w-3/5  lg:mb-0">
           <div class="max-w-7xl">
             <h2

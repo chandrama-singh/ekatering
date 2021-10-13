@@ -2,7 +2,14 @@
   <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden mt-6 ">
     <p></p>
     <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap mb-16 lg:mb-28">
+      <div class="flex flex-wrap mb-10 lg:mb-16">
+         <div class="lg:w-2/5 px-10 ">
+         <img
+          class="lg:relative top-0 left-2 lg:h-100 "
+          src="@/assets/why-img.png"
+          alt=""
+        />
+        </div>
         <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
           <div class="max-w-7xl ">
             <h2
@@ -26,19 +33,15 @@
             </p>
           </div>
           <br />
-          <div class="text-center">
+          <center>
             <img
           class=" ml-25 pl-22 lg:h-full "
           src="@/assets/icon_1.png"
           alt=""
         />
-          </div>
+          </center>
         </div>
-        <img
-          class="lg:absolute top-0 right-5 lg:w-2/5 pr-22 pl-12  lg:h-100 object-cover "
-          src="@/assets/why-img.png"
-          alt=""
-        />
+       
       </div>
     </div>
   </section>
