@@ -1,9 +1,8 @@
 <template>
-  <div>
+  <div class="bgcolor">
       <Header/>
       <TitleBanner/>
       <AboutUs/>
-      <Card/>
       <Footer/>
   </div>
 </template>
@@ -27,5 +26,7 @@ export default {
 </script>
 
 <style>
-
+.bgcolor{
+    background-color: #F3FCEE;
+}
 </style>

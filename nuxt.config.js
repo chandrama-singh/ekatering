@@ -52,7 +52,7 @@ export default {
     authenticationType: 'Bearer',
 
     // Token name for the cookie which will be set in case of authentication
-    tokenName: 'apollo-token',
+    tokenName: 'katering-token',
 
     // [deprecated] Enable the graphql-tag/loader to parse *.gql/*.graphql files
     includeNodeModules: true,
