@@ -31,14 +31,17 @@
               <img class="mx-auto" src="~assets/a1.png" alt="">
             </div>
           </div> -->
+      
         <span class="rotate flex ml-4 mb-4">
         <img
           class=" lg:absolute pb-2 top-0 lg:my-40 sm:mt-10 lg:w-3/5   object-cover"
           src="@/assets/a2.png"
           alt=""
         />
-        
+       
         </span>
+        
+       
         <span class="">
         <img
           class=" lg:absolute pb-4 top-12 pt-2 lg:my-40 sm:mt-10 right-4 mr-28   object-cover"
@@ -46,6 +49,7 @@
           alt=""
         />
         </span>
+        
         <!-- <img
           class=" lg:absolute pb-4 top-0 lg:my-40 sm:mt-10 right-2 object-cover items-center"
           src="@/assets/abfood.png"
@@ -65,7 +69,7 @@ export default {
 .bgimg{
   background-image: url('@/assets/banner_1.png');
 }
-.rotate { width:100px; height:100px; margin-top:150px; transform-origin:200% center; position:relative; animation:rotate 6s linear infinite; }
+.rotate { width:100px; height:100px; margin-top:120px; transform-origin:200% center; position:relative; animation:rotate 6s linear infinite; }
 .rotate:before { content:''; position:absolute; height:100%; width:100%;  animation:rotate 6s linear reverse infinite; }
 @keyframes rotate { 100% { transform:rotate(-360deg); } }
 

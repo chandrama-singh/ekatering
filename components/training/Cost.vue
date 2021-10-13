@@ -29,13 +29,13 @@
                 <p class="ml-8 text-purple-900 text-center font-bold">
                   Food Safety for Caterers and Private Chefs - Level 2
                 </p>
-                <div class="ml-32 mt-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">More Info</a></div>
+                <div class="ml-32 mt-6"><nuxt-link to="/tr_level_2" class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" >More Info</nuxt-link></div>
               </div>
               <div>
                 <p class="ml-8 text-purple-900 text-center font-bold">
                   Food Allergen for Caterers and Private Chefs - Level 1
                 </p>
-                <div class="ml-32 mt-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="#">More Info</a></div>
+                <div class="ml-32 mt-6"><nuxt-link to="/tr_level_1" class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" >More Info</nuxt-link></div>
               </div>
             </div>
           </div>

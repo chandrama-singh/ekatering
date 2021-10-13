@@ -2,9 +2,9 @@
   <section>
     <div class="container px-4 mx-auto">
       <nav class="flex items-center py-4">
-        <a class="text-3xl font-semibold leading-none" href="#">
+        <nuxt-link class="text-3xl font-semibold leading-none" to="/">
           <img class="h-20" src="../assets/logo.png" alt="" width="auto" />
-        </a>
+        </nuxt-link>
         <div class="lg:hidden ml-auto">
           <button
             class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
@@ -162,14 +162,14 @@
         class=" fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
       >
         <div class="flex items-center mb-8">
-          <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+          <nuxt-link class="mr-auto text-3xl font-semibold leading-none" to="/">
             <img
               class="h-10"
               src="metis-assets/logos/metis/metis.svg"
               alt=""
               width="auto"
             />
-          </a>
+          </nuxt-link>
           <button @click="changeMenu" class="navbar-close">
             <svg
               class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500"

@@ -5,11 +5,13 @@
         <div class="w-full lg:w-2/5 px-4 mb-16 lg:mb-0">
           <!-- <span class="text-md text-purple-400 font-bold">We&apos;re Zospace</span> -->
            <div class="sizelogo">
+             <nuxt-link to="/">
                   <img src="@/assets/footer.png">
+                </nuxt-link>
                 <!-- <span class="text-purple-900 text-6xl">eKatering</span> -->
                </div>
           <p class="mb-10 text-gray-300 align-justify">
-            Akatering is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat.
+            Ekatering is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat.
           </p>
           <!-- <div>
             <nuxt-link
@@ -134,7 +136,7 @@
       </div>
       <div class="md:flex justify-between item-center">
         <p class="text-lg text-gray-200 item-center ">
-          &copy; 2021 <nuxt-link to="https://www.osizone.com/">Osizone Services Pvt.</nuxt-link> Ltd.. All rights reserved.
+          &copy; 2021 <nuxt-link to="/">Ekatering Services</nuxt-link>.. All rights reserved.
         </p>
       </div>
     </div>
