@@ -1,7 +1,7 @@
 <template>
-   <section class="pb-8" >
-        <div class="container px-4 mx-auto py-6">
-          <div class="pt-20 pl-4 text-left">
+
+        <div class="container px-4 mx-auto py-4 lg:py-20 ">
+          <div class=" pt-4 lg:pt-16 pl-4 text-left">
             <div class=" mx-auto mb-8">
               <h2 class="text-3xl md:text-4xl mb-4 mt-12 text-purple-600 font-bold font-heading">
                 <!-- <span></span><br> -->
@@ -32,13 +32,12 @@
             </div>
           </div> -->
         <img
-          class="lg:absolute top-4 lg:mt-40 sm:mt-10 right-2 lg:w-2/5  lg:h-100 object-cover"
+          class="lg:absolute pb-4 top-0 lg:my-40 sm:mt-10 right-2 lg:w-2/5   object-cover"
           src="@/assets/about-img.png"
           alt=""
         />
         </div>
-        
-      </section>
+
 </template>
 
 <script>

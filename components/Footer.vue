@@ -11,13 +11,13 @@
           <p class="mb-10 text-gray-300 align-justify">
             Akatering is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat.
           </p>
-          <div>
+          <!-- <div>
             <nuxt-link
               to="/about"
               class="inline-block mb-4 sm:mb-0 sm:mr-4 py-4 px-10 text-white font-bold bg-purple-500 hover:bg-purple-600 rounded-full transition duration-200"
               >Read More</nuxt-link
             >
-          </div>
+          </div> -->
         </div>
         <div class="w-full lg:w-3/5 px-4">
           <div class="flex flex-wrap -mx-4">

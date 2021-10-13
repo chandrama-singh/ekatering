@@ -28,6 +28,58 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  //apollo
+  apollo: {
+    clientConfigs: {
+      default: {
+        //httpEndpoint: 'https://ekatering.com/api/graphql',
+         httpEndpoint: 'http://localhost:4000/graphql',
+      }
+    },
+    /**
+     * default 'apollo' definition
+     */
+    defaultOptions: {
+      // See 'apollo' definition
+      // For example: default query options
+      $query: {
+        loadingKey: 'loading',
+        fetchPolicy: 'cache-and-network',
+      },
+    },
+
+    // Sets the authentication type for any authorized request.
+    authenticationType: 'Bearer',
+
+    // Token name for the cookie which will be set in case of authentication
+    tokenName: 'apollo-token',
+
+    // [deprecated] Enable the graphql-tag/loader to parse *.gql/*.graphql files
+    includeNodeModules: true,
+
+    // Cookie parameters used to store authentication token
+    cookieAttributes: {
+      /**
+        * Define when the cookie will be removed. Value can be a Number
+        * which will be interpreted as days from time of creation or a
+        * Date instance. If omitted, the cookie becomes a session cookie.
+        */
+      expires: 30,
+
+      /**
+        * Define the path where the cookie is available. Defaults to '/'
+        */
+      path: '/',
+
+      /**
+        * A Boolean indicating if the cookie transmission requires a
+        * secure protocol (https). Defaults to false.
+        */
+      secure: false,
+    }
+
+  },
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss

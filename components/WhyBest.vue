@@ -3,7 +3,12 @@
     <p></p>
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">
-        <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
+          <!-- <img
+          class="lg:absolute top-4 mt-16 right-2 lg:w-2/5  lg:h-100 object-cover "
+          src="@/assets/catering-service.jpg"
+          alt=""
+        /> -->
+        <div class="w-full lg:w-3/5  lg:mb-0">
           <div class="max-w-7xl">
             <h2
               class="mb-6 text-black text-3xl lg:text-4xl font-bold font-heading ml-6 font-poppins"
@@ -30,11 +35,7 @@
           </div><br/>
           <div class="ml-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-medium bg-purple-600 hover:bg-purple-700 rounded font-poppins leading-7 tracking-wide" href="#">Get Started</a></div>
         </div>
-        <img
-          class="lg:absolute top-4 mt-16 right-2 lg:w-2/5  lg:h-100 object-cover "
-          src="@/assets/about-img.png"
-          alt=""
-        />
+      
       </div>
     </div>
   </section>
