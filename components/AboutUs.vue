@@ -1,6 +1,6 @@
 <template>
-<section class="overflow-hidden">
-        <div class="container px-4 mx-auto py-4 lg:py-20 flex">
+<section class="overflow-hidden lg:py-0 sm:py-20">
+        <div class="container px-4 mx-auto py-4 lg:py-20 sm:py-20 flex flex-wrap">
           <div class=" pt-4 lg:pt-16 pl-4 text-left ">
             <div class=" mx-auto mb-8">
               <h2 class="text-3xl md:text-4xl mb-4 mt-12 text-purple-600 font-bold font-heading">
@@ -34,7 +34,7 @@
       
         <span class="rotate flex ml-4 mb-4">
         <img
-          class=" lg:absolute pb-2 top-0 lg:my-40 sm:mt-10 lg:w-3/5   object-cover"
+          class=" lg:absolute sm:relative pb-2 top-0 lg:my-40 sm:my-4 sm:mt-10 lg:w-3/5 sm:w-full   object-cover"
           src="@/assets/a2.png"
           alt=""
         />
@@ -44,7 +44,7 @@
        
         <span class="">
         <img
-          class=" lg:absolute pb-4 top-12 pt-2 lg:my-40 sm:mt-10 right-4 mr-28   object-cover"
+          class=" lg:absolute sm:relative pb-4 lg:top-12 sm:top-0 pt-2 lg:my-40 sm:mt-10 right-4 lg:mr-28 sm:mr-0   object-cover"
           src="@/assets/abfood.png"
           alt=""
         />

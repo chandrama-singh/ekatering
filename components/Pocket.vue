@@ -1,5 +1,6 @@
 <template>
       <section class="py-32 md:py-32 overflow-x-hidden  bg-img">
+        <!-- <img class="absolute mx-auto left-0 -mt-80 z-10" src="@/assets/h1.png" alt=""> -->
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">

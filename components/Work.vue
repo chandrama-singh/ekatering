@@ -134,6 +134,7 @@
               <h5 class="text-xl mt-5 font-semibold text-purple-600">Legal Advice</h5>
               
             </div>
+            <img class="absolute mx-auto right-0 -mt-80 z-10" src="@/assets/h2.png" alt="">
           </div>
         </div>
       </section>
