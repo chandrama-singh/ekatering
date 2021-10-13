@@ -1,10 +1,68 @@
 <template>
-<div>
-  <h2 class=" mb-10 text-center text-purple-900 pt-4 text-3xl lg:text-4xl font-bold font-heading">About Ekatring</h2>
-  <p class="px-12 mt-10">Before you set up your food business, you must ensure you are competent to run a food business. This will give your Environmental Health Officer (EHO) or Food Safety Officer (FSO) the confidence and evidence that you know what you are doing. When you are inspected, you will be asked about this and questioend on food safety and food standard-related issues to asses your knowledge.</p>
-  <p class="px-12 mt-4">The level of training you have must be appropriate for the level of work activity being undertaken. eKatering has developed practical eLearning training specifically for home/event caterers and private chefs. The eKatering online training, Food Safety for Caterers and Private Chefs - Level 2 and Food Allergen for Caterers and Private Chefs - Level 1 are eLearning courses that can also be useful to other small catering businesses such as restaurants and takeaways.</p>
-  
-</div>
+<section>
+  <section class="pt-20 pb-12 md:pb-8">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
+              <div class="flex flex-wrap items-start">
+                <div class="mr-6 p-3 text-white">
+                  <img src="~assets/ab1.png" class="h-24 w-30"/>
+                </div>
+                <div class="mt-4">
+                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Easy to customize</h3> -->
+                  <p class="text-blueGray-400 leading-loose text-justify">eKatering is made up of qualified Chartered Environmental Health Practitioners, with a wealth of experience in local authority food safety, standard inspection and enforcement. Also, eKatering has highly qualified Food Safety Consultants with extensive experience in the private food industry.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
+              <div class="flex flex-wrap items-start">
+                <div class="mr-6 p-3 text-white">
+                   <img src="~assets/ab3.png" class="h-24 w-30"/>
+                </div>
+                <div class="mt-4">
+                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Flexible software</h3> -->
+                  <p class="text-blueGray-400 leading-loose text-justify">eKatering is a one-stop online shop for your Home/Event and private chef catering business. The consultancy and training team is operated by highly experienced and qualified individuals, who will work with existing and new home/event and private chef catering businesses to imrpove food safety and food standard.</p>
+                </div>
+              </div>
+            </div>
+             <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
+              <div class="flex flex-wrap items-start">
+                <div class="mr-6 p-3 text-white">
+                   <img src="~assets/ab4.png" class="h-24 w-30"/>
+                </div>
+                <div class="mt-4">
+                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Key Elements</h3> -->
+                  <p class="text-blueGray-400 leading-loose text-justify">With the combination of local authority and the private sector food safety and food standard experience, eKatering also provides various consultancy services to assist other food businesses such as restaurants and takeaway to ensure you achieve the highest Food Hygiene Rating Scheme (FHRS) award.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
+              <div class="flex flex-wrap items-start">
+                <div class="mr-6 p-3 text-white">
+                   <img src="~assets/ab2.png" class="h-24 w-30"/>
+                </div>
+                <div class="mt-4">
+                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Outstanding look</h3> -->
+                  <p class="text-blueGray-400 leading-loose text-justify">The eKatering mobile app is the first app designed specifically for Home/Event caterers and private chefs to sell their food and services. This app promotes home catering businesses as well as giving assurance to customers that their food has been prepared in a clean and safe kitchen. An important element of eKatering is the professional and technical knowledge it also proivdes to Home/Event catering and private chef businesses on how to comply with current regulations and promote food safety.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
+              <div class="flex flex-wrap items-start">
+                <div class="mr-6 p-3 text-white">
+                   <img src="~assets/ab5.png" class="h-24 w-30"/>
+                </div>
+                <div class="mt-4">
+                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Easy to customize</h3> -->
+                  <p class="text-blueGray-400 leading-loose text-justify">The expertise of the eKatering team can also work with food manufacturers and importers to ensure compliance with UK food safety and standard regulations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</section>
 </template>
 
 <script>
@@ -14,5 +72,7 @@ export default {
 </script>
 
 <style>
-
+.bgimg{
+  background-image: url('@/assets/banner_1.png');
+}
 </style>

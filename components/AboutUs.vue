@@ -1,68 +1,43 @@
 <template>
-<section>
-  <section class="pt-20 pb-12 md:pb-8">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -mx-3">
-            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-              <div class="flex flex-wrap items-start">
-                <div class="mr-6 p-3 text-white">
-                  <img src="~assets/ab1.png" class="h-24 w-30"/>
-                </div>
-                <div class="mt-4">
-                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Easy to customize</h3> -->
-                  <p class="text-blueGray-400 leading-loose text-justify">eKatering is made up of qualified Chartered Environmental Health Practitioners, with a wealth of experience in local authority food safety, standard inspection and enforcement. Also, eKatering has highly qualified Food Safety Consultants with extensive experience in the private food industry.</p>
-                </div>
-              </div>
+
+        <div class="container px-4 mx-auto py-4 lg:py-20 ">
+          <div class=" pt-4 lg:pt-16 pl-4 text-left">
+            <div class=" mx-auto mb-8">
+              <h2 class="text-3xl md:text-4xl mb-4 mt-12 text-purple-600 font-bold font-heading">
+                <!-- <span></span><br> -->
+                <div class="flex">
+                  <!-- <img src="@/assets/hero-icon.png"> -->
+                <span class="text-black text-5xl max-w-3xl font-poppins leading font-semibold">YOUR CATERING BUSINESS, OUR ASSISTANCE !</span>
+               </div>
+              </h2>
+              <p class="text-gray-900 text-xl max-w-3xl font-poppins">We offer a step-by-step solution to Home/Events Caterers and Private Chefs to open and run their food business online while complying with food safety and standard regulations.</p>
             </div>
-            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-              <div class="flex flex-wrap items-start">
-                <div class="mr-6 p-3 text-white">
-                   <img src="~assets/ab3.png" class="h-24 w-30"/>
-                </div>
-                <div class="mt-4">
-                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Flexible software</h3> -->
-                  <p class="text-blueGray-400 leading-loose text-justify">eKatering is a one-stop online shop for your Home/Event and private chef catering business. The consultancy and training team is operated by highly experienced and qualified individuals, who will work with existing and new home/event and private chef catering businesses to imrpove food safety and food standard.</p>
-                </div>
-              </div>
-            </div>
-             <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-              <div class="flex flex-wrap items-start">
-                <div class="mr-6 p-3 text-white">
-                   <img src="~assets/ab4.png" class="h-24 w-30"/>
-                </div>
-                <div class="mt-4">
-                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Key Elements</h3> -->
-                  <p class="text-blueGray-400 leading-loose text-justify">With the combination of local authority and the private sector food safety and food standard experience, eKatering also provides various consultancy services to assist other food businesses such as restaurants and takeaway to ensure you achieve the highest Food Hygiene Rating Scheme (FHRS) award.</p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-              <div class="flex flex-wrap items-start">
-                <div class="mr-6 p-3 text-white">
-                   <img src="~assets/ab2.png" class="h-24 w-30"/>
-                </div>
-                <div class="mt-4">
-                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Outstanding look</h3> -->
-                  <p class="text-blueGray-400 leading-loose text-justify">The eKatering mobile app is the first app designed specifically for Home/Event caterers and private chefs to sell their food and services. This app promotes home catering businesses as well as giving assurance to customers that their food has been prepared in a clean and safe kitchen. An important element of eKatering is the professional and technical knowledge it also proivdes to Home/Event catering and private chef businesses on how to comply with current regulations and promote food safety.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-              <div class="flex flex-wrap items-start">
-                <div class="mr-6 p-3 text-white">
-                   <img src="~assets/ab5.png" class="h-24 w-30"/>
-                </div>
-                <div class="mt-4">
-                  <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Easy to customize</h3> -->
-                  <p class="text-blueGray-400 leading-loose text-justify">The expertise of the eKatering team can also work with food manufacturers and importers to ensure compliance with UK food safety and standard regulations.</p>
-                </div>
-              </div>
-            </div>
+            <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="/signup">Get Started</a></div>
           </div>
+          <!-- <div class="flex flex-wrap items-center justify-center max-w-4xl mx-auto pt-12 pb-4">
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
+              <img class="mx-auto" src="metis-assets/logos/brands/tesla.svg" alt="">
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
+              <img class="mx-auto" src="metis-assets/logos/brands/facebook.svg" alt="">
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
+              <img class="mx-auto" src="metis-assets/logos/brands/marvel.svg" alt="">
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
+              <img class="mx-auto" src="metis-assets/logos/brands/nike.svg" alt="">
+            </div>
+            <div class="hidden md:block w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
+              <img class="mx-auto" src="metis-assets/logos/brands/airbnb.svg" alt="">
+            </div>
+          </div> -->
+        <img
+          class="lg:absolute pb-4 top-0 lg:my-40 sm:mt-10 right-2 lg:w-2/5   object-cover"
+          src="@/assets/about-img.png"
+          alt=""
+        />
         </div>
-      </section>
-</section>
+
 </template>
 
 <script>

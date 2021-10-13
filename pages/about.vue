@@ -10,6 +10,7 @@
 <script>
 import Header from '../components/Header.vue'
 import TitleBanner from '../components/about/TitleBanner.vue'
+import AboutUs from '../components/about/AboutUs.vue'
 import Footer from '../components/Footer.vue'
 import Card from '../components/about/Card.vue'
 export default {
@@ -19,6 +20,7 @@ export default {
         Header,
         TitleBanner,
         Card,
+        AboutUs,
         Footer,
     }
 
