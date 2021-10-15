@@ -1,10 +1,10 @@
 <template>
       <section class="py-32 md:py-32 overflow-x-hidden  bg-img">
-        <!-- <img class="absolute mx-auto left-0 -mt-80 z-10" src="@/assets/h1.png" alt=""> -->
+        <img class="absolute mx-auto left-0 -mt-80 h-54 z-10" src="@/assets/h1.png" alt="">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">
-              <div class="py-12 lg:pl-32">
+              <div class="py-20 lg:pl-32">
                 <div class="mb-4">
                   <h2 class="text-4xl mt-3 font-bold font-heading mb-4">katerers in your pocket</h2>
                   <p class="text-gray-700 leading-relaxed">See menus and photos for nearby katerers and bookmark your favorite places on the go.!</p>
@@ -51,6 +51,14 @@
             </div>
           </div>
         </div>
+        <!-- <span class="">
+          <div id="triangle-bottomleft" class="absolute left-0 w-1/2 h-32 bg-gray-200 bg-transparent">
+          
+          </div>
+          <div id="triangle-bottomright" class="absolute right-0 w-1/2 h-32 bg-gray-200">
+          
+          </div>
+        </span> -->
       </section>
 </template>
 
@@ -61,8 +69,19 @@ export default {
 </script>
 
 <style>
+#triangle-bottomleft {
+     
+      border-bottom: 100px solid rgb(155, 155, 155);
+      border-right: 700px solid transparent;
+    }
+#triangle-bottomright {
+     
+      border-bottom: 100px solid rgb(155, 155, 155);
+      border-left: 700px solid transparent;
+    }
 .bg-img{
-     background-image: url('@/assets/bg_4.png');
+     /* background-image: url('@/assets/bg_4.png'); */
+     background-image: url('@/assets/bg_h1.png');
      background-size: cover;
      background-repeat: no-repeat;
      /* width: full;
