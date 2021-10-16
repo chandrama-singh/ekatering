@@ -12,7 +12,7 @@
               </h2>
               <p class="text-gray-900 text-xl max-w-3xl font-poppins">We offer a step-by-step solution to Home/Events Caterers and Private Chefs to open and run their food business online while complying with food safety and standard regulations.</p>
             </div>
-            <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" href="/signup">Get Started</a></div>
+            <div><nuxt-link class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-purple-600 hover:bg-purple-700 rounded" to="/joinusform">Get Started</nuxt-link></div>
           </div>
           <!-- <div class="saturn flex items-center justify-center max-w-4xl mx-auto pt-12 pb-4 ">
             <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
