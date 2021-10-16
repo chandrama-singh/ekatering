@@ -2,7 +2,7 @@
   <div>
       <section class="bgcolor">
       <Header/>
-      <JoinUsForm/>
+      <PaymentUs/>
       </section>
       <Footer/>
   </div>
@@ -10,14 +10,14 @@
 
 <script>
 import Header from '../components/Header.vue'
-import JoinUsForm from '../components/JoinUsForm.vue'
+import PaymentUs from '../components/PaymentUs.vue'
 import Footer from '../components/Footer.vue'
 export default {
     name: 'signup',
 
     components:{
         Header,
-        JoinUsForm,
+        PaymentUs,
         Footer,
     },
 
