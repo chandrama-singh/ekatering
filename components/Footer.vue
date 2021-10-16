@@ -21,115 +21,54 @@
             >
           </div> -->
         </div>
+         
         <div class="w-full lg:w-3/5 px-4">
           <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
               <h2 class="mb-4 text-gray-200 hover:text-gray-100">
-                FOOD ORDERING
+                Discover
               </h2>
               <hr class="mb-3" />
               <ul class="text-md">
                 <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100" href="#"
-                    >Food Safety for Caterers</a
-                  >
+                  <nuxt-link class="text-gray-200 hover:text-gray-100" to="/"
+                    >Home</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100" href="#"
-                    >Food Standard</a
-                  >
+                  <nuxt-link class="text-gray-200 hover:text-gray-100" to="/contactus"
+                    >Contact Us</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100" href="#"
-                    >Pricing</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100" href="#"
-                    >Food Registration</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100" href="#"
-                    >Food Safety Managements</a
-                  >
-                </li>
-                <li>
-                  <a class="text-gray-200 hover:text-gray-100" href="#">Blog</a>
+                  <nuxt-link class="text-gray-200 hover:text-gray-100" to="/about"
+                    >About Us</nuxt-link>
                 </li>
               </ul>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
               <h2 class="mb-4 text-gray-200 hover:text-gray-100">
-                RESTAURANT SERVICES
+                Support
               </h2>
               <hr class="mb-3" />
               <ul class="text-md">
                 <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100"
-                    >Training</a
-                  >
+                  <nuxt-link to="/faq" class="text-gray-200 hover:text-gray-100"
+                    >FAQs</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100"
-                    >Features</a
-                  >
+                  <nuxt-link to="/privacy" class="text-gray-200 hover:text-gray-100"
+                    >Privacy Policy</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100"
-                    >Why Choose Us</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100">FAQ</a>
-                </li>
-                <li class="mb-2">
-                  <a class="text-gray-200 hover:text-gray-100"
-                    >Consultations</a
-                  >
-                </li>
-                <li>
-                  <a class="text-gray-200 hover:text-gray-100">Team</a>
+                  <nuxt-link to="/cookies" class="text-gray-200 hover:text-gray-100">Cookies Policy</nuxt-link>
                 </li>
               </ul>
             </div>
             <div class="w-full lg:w-1/3 px-4">
               <h2 class="mb-4 text-gray-200 hover:text-gray-100">
-                PARTNER & SUPPORT
+                Contact
               </h2>
               <hr class="mb-3" />
-              <ul class="text-md">
-                <li class="mb-2">
-                  <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
-                    >New account</nuxt-link>
-                  
-                </li>
-                <li class="mb-2">
-                  <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
-                    >Log in</nuxt-link>
-                  
-                </li>
-                <li class="mb-2">
-                  <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
-                    >Online Training</nuxt-link>
-                  
-                </li>
-                <li class="mb-2">
-                  <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
-                    >Contact</nuxt-link>
-                  
-                </li>
-                <li class="mb-2">
-                  <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
-                    >Consultancy Services</nuxt-link>
-                  
-                </li>
-                <li>
-                  <nuxt-link to="" class="text-gray-200 hover:text-gray-100"
-                    >Cookies</nuxt-link>
-                  
-                </li>
-              </ul>
+              
             </div>
           </div>
         </div>
