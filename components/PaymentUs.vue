@@ -49,7 +49,7 @@
                   <span class="ml-1 text-xs">By signing up, you agree to our <a class="text-purple-600 font-bold hover:text-purple-700" href="#">Terms,</a><a class="text-purple-600 font-bold hover:text-purple-700" href="#">Data Policy</a> and <a class="text-purple-600 font-bold hover:text-purple-700" href="#">Cookies Policy.</a></span>
                 </label>
               </div>
-              <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl transition duration-200">Buy Monthly Plan</button>
+              <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-xl rounded-t-xl transition duration-200">Buy Monthly Plan</button>
             </form>
             <p class="text-xs text-gray-400">Already have an account? <a class="text-purple-600 hover:underline" href="#">Sign In</a></p>
           </div>
