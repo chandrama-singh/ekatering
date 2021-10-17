@@ -1,102 +1,78 @@
 <template>
-  <section class="relative pt-10 pb-5 2xl:pb-40 overflow-hidden ">
-    <p></p>
-    <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap mb-16 lg:mb-28">
-        <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
-          <div class="max-w-8xl ">
-            <div class="relative min-h-screen flex flex-wrap justify-center  py-8 px-4 sm:px-6 lg:px-8  ">
-	<div class="absolute opacity-60 inset-0 z-0"></div>
-  	<div class="max-w-md w-full space-y-8  p-10 bg-white rounded-xl z-10">
-		<div class="text-center mb-10">
-			<h2 class="mt-4 pb-2 text-xl font-semibold text-purple-800  fontpoppin">
-				Register Your Business
-			</h2>
-			<hr/>
-		</div>
-	
-		<div class="flex-wrap items-center justify-between space-x-2">
-            <h2 class="mt-6 pb-4 text-xl font-semibold text-gray-900 fontpoppin">
-				Payment
-			</h2><br/>
-             <div>
-			<div class="flex justify-between">
-                <label class=" text-sm font-bold text-gray-700 tracking-wide">Product Title : </label>
-                <label class="text-sm font-bold text-gray-700 tracking-wide">Name</label>
-            </div>
-            <div class="flex justify-between">
-                <label class="text-sm font-bold text-gray-700 tracking-wide">Price : </label>
-                <label class="text-sm font-bold text-gray-700 tracking-wide">Name</label>
-            </div>
-            <div class="flex justify-between">
-                <label class="text-sm font-bold text-gray-700 tracking-wide">Total : </label>
-                <label class="text-sm font-bold text-gray-700 tracking-wide">Name</label>
-            </div>
-           </div>
-		</div>
-		<form class="mt-8 space-y-6" action="#" method="POST">
-			<input type="hidden" name="remember" value="true">
-			<div class="relative">
-				<!-- <div class="absolute right-0 mt-10 pr-2"><svg xmlns="http://www.w3.org/2000/svg"
-						class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-					</svg>
-                </div> -->
-				<label class="text-sm font-bold text-gray-700 tracking-wide">Card Holder Name</label>
-				<input class=" w-full text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="text" placeholder="Enter Your Name" >
-            </div>
-            <div class="mt-8 content-center">
-				<label class="text-sm font-bold text-gray-700 tracking-wide">
-					Card Details
-				</label>
-				<input class="w-full content-center text-base py-2 px-2 border border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="" >
-            </div>
-			
-            <div class="mt-8 content-center">
-                <input type="checkbox" name="terms_and_conditions" value="1"  />
-				<label class="text-sm font-bold text-gray-700 tracking-wide">
-					I have read, understood and agree to the Terms and Conditions
-				</label>
-				
-            </div>
-			<!-- <div class="flex items-center justify-between">
-					<div class="flex items-center">
-						<input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 bg-indigo-500 focus:ring-indigo-400 border-gray-300 rounded">
-						<label for="remember_me" class="ml-2 block text-sm text-gray-900">
-                            Remember me
-                        </label>
-					</div>
-				<div class="text-sm">
-					<a href="#" class="font-medium text-indigo-500 hover:text-indigo-500">
-								Forgot your password?
-					</a>
-				</div>
-			</div> -->
-			<div>
-				<button type="submit" class="w-full flex justify-center bg-indigo-500 text-gray-100 p-4  rounded-lg tracking-wide
-                                font-semibold  focus:outline-none focus:shadow-outline hover:bg-indigo-600 shadow-lg cursor-pointer transition ease-in duration-300">
-                   Make payment and submit application
-                </button>
-			</div>
-			
-      	
-		</form>
-     
-	</div>
-        
-</div>
-          </div>
-          
+  <section>
+
+  <div class="py-20 bg-gray-50 ">
+    <div class="container mx-auto px-4">
+      <div class="mb-16 max-w-2xl mx-auto text-center">
+        <div class="max-w-lg mx-auto">
+          <span class="text-purple-600 font-bold">Dolor sit amet consectutar</span>
+          <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">All the tools you need in one workspace.</h2>
+          <p class="mb-8 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <img
-          class="lg:absolute top-0 right-5 lg:w-2/5 pr-22 pl-4  lg:h-100 object-cover "
-          src="@/assets/why-img.png"
-          alt=""
-        />
+        <div class="flex flex-wrap justify-center">
+          <label class="md:mr-4 w-full sm:w-auto flex items-center mr-8 mb-2">
+            <input type="radio" name="billing" value="1">
+            <span class="mx-2 font-semibold">Monthly Billing</span>
+            <span class="inline-flex items-center justify-center w-12 h-10 bg-purple-600 text-white font-semibold rounded-lg">$59</span>
+          </label>
+          <label class="flex w-full sm:w-auto items-center mb-2">
+            <input type="radio" name="billing" value="2">
+            <span class="mx-2 font-semibold">Annual Billing</span>
+            <span class="inline-flex items-center justify-center w-12 h-10 bg-purple-600 text-white font-semibold rounded-lg">$99</span>
+          </label>
+        </div>
+      </div>
+      <div class="flex flex-wrap bg-white rounded shadow">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <div class="px-6 py-8 lg:px-8 text-center">
+            <span class="text-gray-400">Sign In</span>
+            <h4 class="mb-8 text-2xl font-heading">Finish your payment</h4>
+            <form class="mb-4" action="">
+              <div class="flex mb-4 px-4 bg-gray-50 rounded">
+                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="email" placeholder="pat@shuffle.com">
+                <svg class="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                </svg>
+              </div>
+              <div class="flex mb-6 px-4 bg-gray-50 rounded">
+                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="password" placeholder="Enter your password">
+                <button class="ml-4">
+                  <svg class="h-6 w-6 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-left mb-5 text-sm text-gray-400">
+                <label class="flex">
+                  <input type="checkbox" name="terms" value="1">
+                  <span class="ml-1 text-xs">By signing up, you agree to our <a class="text-purple-600 font-bold hover:text-purple-700" href="#">Terms,</a><a class="text-purple-600 font-bold hover:text-purple-700" href="#">Data Policy</a> and <a class="text-purple-600 font-bold hover:text-purple-700" href="#">Cookies Policy.</a></span>
+                </label>
+              </div>
+              <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl transition duration-200">Buy Monthly Plan</button>
+            </form>
+            <p class="text-xs text-gray-400 text-xs">Already have an account? <a class="text-purple-600 hover:underline" href="#">Sign In</a></p>
+          </div>
+        </div>
+        <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">
+          <img class="w-full md:max-w-xs mx-auto my-auto" src="atis-assets/illustrations/men-on-chair-light-purple.png" alt="">
+          <h3 class="mb-4 max-w-sm mx-auto text-center text-xl text-white">
+            Best for
+            <span class="font-bold">freelance developers</span>
+            who need to save their time.
+          </h3>
+          <div class="text-center">
+            <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>
+            <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>
+            <button class="inline-block mr-2 w-2 h-2 bg-white rounded-full"></button>
+            <button class="inline-block w-2 h-2 bg-purple-400 rounded-full"></button>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+
+</section>
 </template>
 
 <script>
