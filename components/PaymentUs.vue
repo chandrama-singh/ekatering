@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="flex flex-wrap bg-white rounded shadow">
-        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11">
           <div class="px-6 py-8 lg:px-8 text-center">
             <span class="text-gray-400">Sign In</span>
             <h4 class="mb-8 text-2xl font-heading">Finish your payment</h4>
