@@ -31,7 +31,7 @@
         <div class="grid gap-8 grid-cols-1">
           <div class="flex flex-col">
             <div class="flex flex-col sm:flex-row items-center">
-              <h2 class="font-semibold text-lg mr-auto">Business Info</h2>
+              <h2 class="font-semibold text-lg mr-auto">Fill Your Business Details with Documents</h2>
               <div class="w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0"></div>
             </div>
             <div class="mt-5">
@@ -43,7 +43,7 @@
                     ></label
                   >
                   <div class="flex items-center py-6">
-                    <div
+                    <!-- <div
                       class="
                         w-12
                         h-12
@@ -59,7 +59,7 @@
                         src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                         alt="Avatar Upload"
                       />
-                    </div>
+                    </div> -->
                     <label class="cursor-pointer">
                       <span
                         class="
@@ -114,7 +114,7 @@
                       >Business Mail <abbr title="required">*</abbr></label
                     >
                     <input
-                      placeholder="Email ID"
+                      placeholder="Business Email ID"
                       class="
                         appearance-none
                         block
@@ -166,7 +166,7 @@
                 <!------------------------------------------------>
                 <div class="flex-auto w-full mb-1 text-xs space-y-2">
                   <label class="font-semibold text-gray-600 py-2"
-                    >Business Address 1</label
+                    >Business Address</label
                   >
                   <textarea
                     required=""
@@ -179,7 +179,7 @@
                       h-28
                       appearance-none
                       block
-                      w-full
+                    
                       bg-grey-lighter
                       text-grey-darker
                       border border-grey-lighter
@@ -187,17 +187,17 @@
                       py-4
                       px-4
                     "
-                    placeholder="Enter business address line 1"
+                    placeholder="address line 1"
                     spellcheck="false"
                   ></textarea>
-                  <p class="text-xs text-gray-400 text-left my-3">
+                  <!-- <p class="text-xs text-gray-400 text-left my-3">
                     You inserted 0 characters
-                  </p>
+                  </p> -->
                 </div>
                 <div class="flex-auto w-full mb-1 text-xs space-y-2">
-                  <label class="font-semibold text-gray-600 py-2"
+                  <!-- <label class="font-semibold text-gray-600 py-2"
                     >Business Address 1</label
-                  >
+                  > -->
                   <textarea
                     required=""
                     name="message"
@@ -209,7 +209,7 @@
                       h-28
                       appearance-none
                       block
-                      w-full
+                    
                       bg-grey-lighter
                       text-grey-darker
                       border border-grey-lighter
@@ -217,12 +217,12 @@
                       py-4
                       px-4
                     "
-                    placeholder="Enter business address line 2"
+                    placeholder="address line 2"
                     spellcheck="false"
                   ></textarea>
-                  <p class="text-xs text-gray-400 text-left my-3">
+                  <!-- <p class="text-xs text-gray-400 text-left my-3">
                     You inserted 0 characters
-                  </p>
+                  </p> -->
                 </div>
 
                 <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
@@ -330,12 +330,12 @@
                 <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
                   <div class="w-full flex flex-col mb-3">
                     <label class="text-xs font-semibold text-gray-600 pt-2 pb-2"
-                      >Proof of address<abbr class="hidden" title="required"
+                      >Proof of address<abbr title="required"
                         >*</abbr
                       ></label
                     >
-                    <div class="flex items-center py-6">
-                      <div
+                    <div class="flex items-center pt-2 pb-6">
+                      <!-- <div
                         class="
                           w-12
                           h-12
@@ -351,7 +351,7 @@
                           src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                           alt="Avatar Upload"
                         />
-                      </div>
+                      </div> -->
                       <label class="cursor-pointer">
                         <span
                           class="
@@ -377,13 +377,13 @@
                   <div class="w-full flex flex-col mb-3">
                     <label class="text-xs font-semibold text-gray-600 pt-2"
                       >Local Authority Food Registration Letter<abbr
-                        class="hidden"
+                        
                         title="required"
                         >*</abbr
                       ></label
                     >
-                    <div class="flex items-center py-6">
-                      <div
+                    <div class="flex items-center pt-2 pb-6">
+                      <!-- <div
                         class="
                           w-12
                           h-12
@@ -399,7 +399,7 @@
                           src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                           alt="Avatar Upload"
                         />
-                      </div>
+                      </div> -->
                       <label class="cursor-pointer">
                         <span
                           class="
@@ -428,13 +428,13 @@
                   <div class="w-full flex flex-col mb-3">
                     <label class="text-xs font-semibold text-gray-600 pt-2"
                       >Food Hygiene Rating Scheme (FHRS) award letter<abbr
-                        class="hidden"
+                    
                         title="required"
                         >*</abbr
                       ></label
                     >
-                    <div class="flex items-center py-6">
-                      <div
+                    <div class="flex items-center pt-2 pb-6">
+                      <!-- <div
                         class="
                           w-12
                           h-12
@@ -450,7 +450,7 @@
                           src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                           alt="Avatar Upload"
                         />
-                      </div>
+                      </div> -->
                       <label class="cursor-pointer">
                         <span
                           class="
@@ -476,12 +476,12 @@
                   <div class="w-full flex flex-col mb-3">
                     <label class="text-xs font-semibold text-gray-600 pt-2"
                       >FHRS Next Inspection Due Date (call your local authority
-                      to get this date):<abbr class="hidden" title="required"
+                      to get this date):<abbr title="required"
                         >*</abbr
                       ></label
                     >
                     <div class="flex items-center py-6">
-                      <div
+                      <!-- <div
                         class="
                           w-12
                           h-12
@@ -497,27 +497,26 @@
                           src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                           alt="Avatar Upload"
                         />
-                      </div>
-                      <label class="cursor-pointer">
-                        <span
-                          class="
-                            focus:outline-none
-                            text-white text-sm
-                            py-2
-                            px-4
-                            rounded-full
-                            bg-green-400
-                            hover:bg-green-500 hover:shadow-lg
-                          "
-                          >Browse</span
-                        >
+                      </div> -->
+                      
+                    
                         <input
-                          type="date"
-                          class="hidden"
-                          :multiple="multiple"
-                          :accept="accept"
+                          placeholder="DD/MM/YYYY"
+                      class="
+                        appearance-none
+                        block
+                        w-full
+                        bg-grey-lighter
+                        text-grey-darker
+                        border border-grey-lighter
+                        rounded-lg
+                        px-4
+                      "
+                      type="datetime"
+                      
+                      id="datetime"
                         />
-                      </label>
+                      
                     </div>
                   </div>
                 </div>
