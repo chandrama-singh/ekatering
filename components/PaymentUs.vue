@@ -5,20 +5,20 @@
     <div class="container mx-auto px-4">
       <div class="mb-16 max-w-2xl mx-auto text-center">
         <div class="max-w-lg mx-auto">
-          <span class="text-purple-600 font-bold">Dolor sit amet consectutar</span>
-          <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">All the tools you need in one workspace.</h2>
-          <p class="mb-8 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <!-- <span class="text-purple-600 font-bold">Dolor sit amet consectutar</span> -->
+          <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">eKatering Subscription</h2>
+          <p class="mb-8 text-gray-500">Home/Event caterers and Private Chefs can turn their passion into cash</p>
         </div>
         <div class="flex flex-wrap justify-center">
           <label class="md:mr-4 w-full sm:w-auto flex items-center mr-8 mb-2">
             <input type="radio" name="billing" value="1">
             <span class="mx-2 font-semibold">Monthly Billing</span>
-            <span class="inline-flex items-center justify-center w-12 h-10 bg-purple-600 text-white font-semibold rounded-lg">$59</span>
+            <span class="inline-flex items-center justify-center w-16 h-10 bg-purple-600 text-white font-semibold rounded-lg">£19.99</span>
           </label>
           <label class="flex w-full sm:w-auto items-center mb-2">
             <input type="radio" name="billing" value="2">
-            <span class="mx-2 font-semibold">Annual Billing</span>
-            <span class="inline-flex items-center justify-center w-12 h-10 bg-purple-600 text-white font-semibold rounded-lg">$99</span>
+            <span class="mx-2 font-semibold">One time Payment</span>
+            <span class="inline-flex items-center justify-center w-16 h-10 bg-purple-600 text-white font-semibold rounded-lg">£49.99</span>
           </label>
         </div>
       </div>
@@ -51,22 +51,22 @@
               </div>
               <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl transition duration-200">Buy Monthly Plan</button>
             </form>
-            <p class="text-xs text-gray-400 text-xs">Already have an account? <a class="text-purple-600 hover:underline" href="#">Sign In</a></p>
+            <p class="text-xs text-gray-400">Already have an account? <a class="text-purple-600 hover:underline" href="#">Sign In</a></p>
           </div>
         </div>
         <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">
-          <img class="w-full md:max-w-xs mx-auto my-auto" src="atis-assets/illustrations/men-on-chair-light-purple.png" alt="">
+          <img class="w-full md:max-w-xs mx-auto my-auto" src="~assets/why-img.png" alt="">
           <h3 class="mb-4 max-w-sm mx-auto text-center text-xl text-white">
             Best for
             <span class="font-bold">freelance developers</span>
             who need to save their time.
           </h3>
-          <div class="text-center">
+          <!-- <div class="text-center">
             <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>
             <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>
             <button class="inline-block mr-2 w-2 h-2 bg-white rounded-full"></button>
             <button class="inline-block w-2 h-2 bg-purple-400 rounded-full"></button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
