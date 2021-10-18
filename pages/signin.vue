@@ -9,17 +9,14 @@
 </template>
 
 <script>
-import Header from '../components/Header.vue'
 // import Signin from '@/components/Signin.vue'
 import Login from '@/components/Login.vue'
-import Footer from '../components/Footer.vue'
 export default {
     name: 'signin',
+     layout:"default",
 
     components:{
-        Header,
         Login,
-        Footer,
     },
 
 }

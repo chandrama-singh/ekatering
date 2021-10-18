@@ -1,6 +1,6 @@
 <template>
-  <div class=""> 
-    
+  <div class="">
+
       <section class="relative">
         <nav class="flex justify-between border-b">
           <a class="hidden xl:flex items-center px-12 border-r" href="#">
@@ -209,7 +209,7 @@
           </nav>
         </div>
       </section>
-    
+
       <section class="relative bg-gray-100 overflow-x-hidden">
         <nav class="flex justify-between bg-gray-100 border-b">
           <div class="px-12 py-8 flex w-full items-center">
@@ -368,7 +368,7 @@
           </nav>
         </div>
       </section>
-    
+
       <section class="relative">
         <nav class="flex justify-between border-b">
           <div class="px-12 py-8 flex w-full items-center">
@@ -542,7 +542,7 @@
           </nav>
         </div>
       </section>
-    
+
       <section class="py-20 bg-gray-100 overflow-x-hidden">
         <div class="relative container px-4 mx-auto">
           <div class="relative max-w-4xl mx-auto">
@@ -569,7 +569,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="py-20 bg-gray-100 overflow-x-hidden">
         <div class="relative container px-4 mx-auto">
           <div class="absolute inset-0 bg-blue-200 my-24 -ml-4"></div>
@@ -637,7 +637,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="py-20 bg-gray-100">
         <div class="container mx-auto px-4">
           <div class="max-w-4xl mx-auto">
@@ -700,7 +700,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="py-20 bg-gray-100 overflow-x-hidden">
         <div class="container px-4 mx-auto">
           <div class="px-4 py-20 sm:p-10 bg-cover bg-no-repeat" style="background-image: url('yofte-assets/images/placeholder-surfing.png');">
@@ -718,7 +718,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="py-20 overflow-x-hidden">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap -mx-8">
@@ -826,7 +826,7 @@
           <div class="mt-20 text-center"><a class="inline-block bg-blue-300 hover:bg-blue-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase" href="#">More</a></div>
         </div>
       </section>
-    
+
       <section class="bg-gray-100">
         <div class="relative container mx-auto px-4 h-128 md:h-192">
           <div class="absolute inset-0 flex items-end w-full bg-center bg-no-repeat bg-cover" style="background-image: url('yofte-assets/images/placeholder-marta-wave.png');">
@@ -838,7 +838,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="py-20 bg-blue-800">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap -mx-4 pb-6 lg:pb-16 border-b border-gray-400">
@@ -933,6 +933,7 @@
 
 <script>
 export default {
+   layout:"default",
 
 }
 </script>

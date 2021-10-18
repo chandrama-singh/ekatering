@@ -28,14 +28,20 @@
             <span class="text-gray-400">Sign In</span>
             <h4 class="mb-8 text-2xl font-heading">Finish your payment</h4>
             <form class="mb-4" action="">
+               <div class="flex mb-4 px-4 bg-gray-50 rounded">
+                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="text" placeholder="user_name" v-model="formData.username">
+                <svg class="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                </svg>
+              </div>
               <div class="flex mb-4 px-4 bg-gray-50 rounded">
-                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="email" placeholder="pat@shuffle.com">
+                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="email" placeholder="pat@shuffle.com" v-model="formData.email">
                 <svg class="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
                 </svg>
               </div>
               <div class="flex mb-6 px-4 bg-gray-50 rounded">
-                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="password" placeholder="Enter your password">
+                <input class="w-full py-4 text-xs placeholder-gray-400 font-semibold leading-none bg-gray-50 focus:outline-none" type="password" placeholder="Enter your password" v-model="formData.password">
                 <button class="ml-4">
                   <svg class="h-6 w-6 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -50,8 +56,10 @@
                 </label>
               </div>
               <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-xl rounded-t-xl transition duration-200">Buy Monthly Plan</button>
+
             </form>
             <p class="text-xs text-gray-400">Already have an account? <a class="text-purple-600 hover:underline" href="#">Sign In</a></p>
+             <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl transition duration-200" @click="onSubmit">Buy Monthly Plan</button>
           </div>
         </div>
         <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">
@@ -76,7 +84,51 @@
 </template>
 
 <script>
+import { REGISTER_USER } from '@/graphql/query'
 export default {
+  data(){
+    return {
+      formData:{
+        email:null,
+        username:null,
+        password:null,
+      },
+      loading:false,
+      showAlert:false,
+
+    }
+  },
+   methods: {
+      async onSubmit() {
+        this.loading = true;
+        this.showAlert = false;
+        console.log( this.formData)
+        console.log(this.$apollo)
+
+        try {
+          const res = await this.$apollo.mutate({
+            mutation: REGISTER_USER,
+            variables: {
+              data: this.formData
+            }
+          })
+
+          console.log(res);
+
+          await this.$apolloHelpers.onLogin(res.data.result.token, undefined, {
+            expires: 30
+          });
+
+          this.$store.commit('setUser', {user: res.data.result.user, isLogin: false});
+        } catch (error) {
+          console.log(error);
+          this.message = error.message;
+          this.showAlert = true;
+          this.type = "danger";
+        }
+        this.loading = false;
+      },
+   }
 
 }
 </script>

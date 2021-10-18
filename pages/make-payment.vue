@@ -1,24 +1,19 @@
 <template>
   <div>
       <section class="bgcolor">
-      <Header/>
       <PaymentUs/>
       </section>
-      <Footer/>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
 import PaymentUs from '../components/PaymentUs.vue'
-import Footer from '../components/Footer.vue'
 export default {
     name: 'signup',
+     layout:"default",
 
     components:{
-        Header,
         PaymentUs,
-        Footer,
     },
 
 }

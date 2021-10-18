@@ -3,7 +3,7 @@
     <div class="container px-4 mx-auto">
       <nav class="flex items-center py-4">
         <nuxt-link class="text-3xl font-semibold leading-none" to="/">
-          <img class="h-20" src="../assets/logo.png" alt="" width="auto" />
+          <img class="h-20" src="../../assets/logo.png" alt="" width="auto" />
         </nuxt-link>
         <div class="lg:hidden ml-auto">
           <button

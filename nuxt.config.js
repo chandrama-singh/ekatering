@@ -26,7 +26,49 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+      {
+        path: '~/components/Content/'
+      },
+      {
+        path: '~/components/Coupon/'
+      },
+      {
+        path: '~/components/Course/'
+      },
+      {
+        path: '~/components/Footer/'
+      },
+      {
+        path: '~/components/Header/'
+      },
+      {
+        path: '~/components/HomePage/'
+      },
+      {
+        path: '~/components/ListActions/'
+      },
+      {
+        path: '~/components/Loader/'
+      },
+      {
+        path: '~/components/Package/'
+      },
+      {
+        path: '~/components/Profile/'
+      },
+      {
+        path: '~/components/Setting/'
+      },
+
+      {
+        path: '~/components/User/'
+      },
+
+    ]
+  },
 
   //apollo
   apollo: {
@@ -54,7 +96,7 @@ export default {
     // Token name for the cookie which will be set in case of authentication
     tokenName: 'katering-token',
 
-    // [deprecated] Enable the graphql-tag/loader to parse *.gql/*.graphql files
+    // [deprecated] Enable the graphql-tag/loader to parse *.graphql/*.graphql files
     includeNodeModules: true,
 
     // Cookie parameters used to store authentication token
@@ -88,7 +130,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    
+
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

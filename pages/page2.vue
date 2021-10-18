@@ -1,6 +1,6 @@
 <template>
-  <div class=""> 
-    
+  <div class="">
+
       <section>
         <div class="container px-4 mx-auto">
           <nav class="flex items-center py-6">
@@ -71,7 +71,7 @@
           </nav>
         </div>
       </section>
-    
+
       <section class="pb-8 bg-top bg-cover bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;h=450&amp;q=80&amp;blend=1e293b&amp;sat=30&amp;blend-mode=multiply')">
         <div class="container px-4 mx-auto">
           <nav class="flex justify-between items-center py-6">
@@ -163,7 +163,7 @@
           </nav>
         </div>
       </section>
-    
+
       <section class="py-20">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-3">
@@ -229,7 +229,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="py-20 bg-blueGray-800">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap justify-center items-center -mx-3">
@@ -256,7 +256,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="relative">
         <div class="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-50"></div>
         <div class="container px-4 mx-auto">
@@ -343,6 +343,7 @@
 
 <script>
 export default {
+   layout:"default",
 
 }
 </script>
