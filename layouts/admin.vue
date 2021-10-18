@@ -38,12 +38,12 @@
             title: 'Admin Users',
             icon: 'fas fa-user-shield',
             child: [{
-            href: '/admin/payments',
+            href: '#',
             title: 'Add User',
             icon: 'fas fa-user-plus'
            },
            {
-            href: '/admin/service-payment',
+            href: '/admin/list-admin',
             title: 'List Users',
             icon: 'fas fa-user-shield'
            },
