@@ -44,62 +44,78 @@
     data() {
       return {
         menu: [{
-            href: '/user/dashboard',
+            href: '/caterers/dashboard',
             title: 'Dashboard',
             icon: 'fa fa-tachometer-alt'
           },
+           {
+            href: '/caterers/profile',
+            title: 'Profile',
+            icon: 'fa fa-cogs',
+          },
           {
-            title: 'Orders',
+            href: '/caterers/category',
+            title: 'Assign Category',
+            icon: 'fa fa-cogs',
+          },
+          {
+            href: '/caterers/payments',
+            title: 'Payments',
+            icon: 'fa fa-rupee-sign'
+          },
+          {
+            href: '/caterers/subscription',
+            title: 'Subscription',
+            icon: 'fa fa-rupee-sign'
+          },
+          {
+            title: 'Products',
             icon: 'fa fa-graduation-cap',
             child: [{
-                href: '/user/courses',
-                title: 'Pending Orders',
+                href: '/caterers/addproducts',
+                title: 'Add Product',
                 icon: 'fa fa-graduation-cap'
               },
               {
-                href: '/user/workshops',
-                title: 'Dilivered Orders',
+                href: '/caterers/products',
+                title: 'List Products',
                 icon: 'fa fa-graduation-cap'
               },
-              {
-                href: '/user/trainings',
-                title: 'On Processing',
+               {
+                href: '#',
+                title: 'Manage Categories',
                 icon: 'fa fa-graduation-cap'
               },
             ]
           },
-            {
-            href: '/user/products',
-            title: 'Product',
-            icon: 'fa fa-rupee-sign'
-          },
-          {
-            href: '/user/ledgers',
-            title: 'My Earning',
-            icon: 'fa fa-rupee-sign'
-          },
 
-          {
-            href: '/user/tools',
-            title: 'Promotional Tools',
-            icon: 'fa fa-tools'
-          },
-          {
-            href: '/user/training',
-            title: 'Training',
-            icon: 'fa fa-ad'
-          },
-          {
-            href: '/user/services',
+{
             title: 'Services',
-            icon: 'fa fa-satellite-dish'
+            icon: 'fa fa-graduation-cap',
+            child: [{
+                href: '#',
+                title: 'Add Service',
+                icon: 'fa fa-graduation-cap'
+              },
+              {
+                href: '#',
+                title: 'List Services',
+                icon: 'fa fa-graduation-cap'
+              },
+              {
+                href: '#',
+                title: 'Manage Categories',
+                icon: 'fa fa-graduation-cap'
+              },
+            ]
           },
+         {
+           href: '/caterers/orders',
+           title: 'Orders',
+           icon: 'fa fa-graduation-cap'
+         },
 
-          {
-            href: '/user/profile',
-            title: 'Profile',
-            icon: 'fa fa-cogs',
-          }
+         
         ],
         collapsed: false,
         selectedTheme: '',
