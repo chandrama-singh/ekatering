@@ -1,7 +1,7 @@
 @@ -0,0 +1,146 @@
 <template>
   <div id="demo" :class="[{'collapsed' : collapsed}, {'onmobile' : isOnMobile}]">
-    <MainHeader />
+    <UserHeader />
     <div class="demo">
       <Nuxt />
       <sidebar-menu :menu="menu" :collapsed="collapsed" :theme="selectedTheme" width="280px" :show-one-child="true" @toggle-collapse="onToggleCollapse" :hideToggle="true" @item-click="onItemClick">
@@ -35,80 +35,91 @@
             icon: 'fa fa-tachometer-alt'
           },
           {
-            href: '/admin/packages',
-            title: 'Packages',
-            icon: 'fa fa-gift'
-          },
-          {
-            href: '/admin/courses',
-            title: 'Courses',
-            icon: 'fa fa-graduation-cap'
-          },
-           {
-            href: '/admin/coupons',
-            title: 'Coupons',
-            icon: 'fa fa-tag'
-          },
-
-
-          {
-            href: '/admin/tools',
-            title: 'Tools',
-            icon: 'fa fa-tools'
-          },
-          {
-            title: 'Payments',
-            icon: 'fa fa-file-invoice-dollar',
+            title: 'Admin Users',
+            icon: 'fas fa-user-shield',
             child: [{
             href: '/admin/payments',
-            title: 'Payments',
-            icon: 'fa fa-file-invoice-dollar'
+            title: 'Add User',
+            icon: 'fas fa-user-plus'
            },
            {
             href: '/admin/service-payment',
-            title: 'Service Payment',
-            icon: 'fa fa-tasks'
+            title: 'List Users',
+            icon: 'fas fa-user-shield'
            },
             ]
           },
 
+         {
+            title: 'Caterers',
+            icon: 'fas fa-utensils',
+            child: [{
+            href: '/admin/applications',
+            title: 'View Applications',
+            icon: 'fas fa-clock'
+           },
            {
-            title: 'Ledgers',
-            icon: 'fa fa-book',
-            child: [
-          {
-            href: '/admin/ledgers',
-            title: 'Ledgers',
-            icon: 'fa fa-book'
-          },
-          {
-            href: '/admin/audits',
-            title: 'Audits',
-            icon: 'fa fa-book'
-          },
+            href: '/admin/catererslist',
+            title: 'View Caterers',
+            icon: 'fas fa-utensils'
+           },
             ]
-          },
-          {
-            href: '/admin/promotional',
-            title: 'Live Training',
-            icon: 'fa fa-ad'
-          },
-          {
-            href: '/admin/services',
-            title: 'Services',
-            icon: 'fa fa-satellite-dish'
-          },
-          {
-            href: '/admin/users',
-            title: 'Users',
-            icon: 'fa fa-user-graduate'
           },
 
           {
-          href: '/admin/settings',
-          title: 'Settings',
-            icon: 'fa fa-cogs',
-          }
+            title: 'Consultation',
+            icon: 'fas fa-hands-helping',
+            child: [{
+            href: '/admin/consultation-orders',
+            title: 'View Consultation Orders',
+            icon: 'fas fa-shopping-cart'
+           },
+            ]
+          },
+
+          {
+            title: 'Training',
+            icon: 'fas fa-chalkboard-teacher',
+            child: [{
+            href: '/admin/training-orders',
+            title: 'View Training Orders',
+            icon: 'fas fa-shopping-cart'
+           },
+            ]
+          },
+
+          // {
+          //   title: 'Payments',
+          //   icon: 'fa fa-file-invoice-dollar',
+          //   child: [{
+          //   href: '/admin/payments',
+          //   title: 'Payments',
+          //   icon: 'fa fa-file-invoice-dollar'
+          //  },
+          //  {
+          //   href: '/admin/service-payment',
+          //   title: 'Service Payment',
+          //   icon: 'fa fa-tasks'
+          //  },
+          //   ]
+          // },
+
+          //  {
+          //   title: 'Ledgers',
+          //   icon: 'fa fa-book',
+          //   child: [
+          // {
+          //   href: '/admin/ledgers',
+          //   title: 'Ledgers',
+          //   icon: 'fa fa-book'
+          // },
+          // {
+          //   href: '/admin/audits',
+          //   title: 'Audits',
+          //   icon: 'fa fa-book'
+          // },
+          //   ]
+          // },
         ],
         collapsed: false,
         // selectedTheme: 'white-theme',
