@@ -15,7 +15,7 @@
                 <div class="flex items-start justify-between">
                   <div class="flex flex-col space-y-2">
                     <span class="text-gray-50">Total number of Registered caterers:</span>
-                    <span class="text-lg font-semibold">100</span>
+                    <span class="text-lg text-white font-semibold">100</span>
                   </div>
                   <div class="bg-gray-50 rounded-full p-4"><i class="fas fa-utensils"></i></div>
                 </div>
@@ -26,7 +26,7 @@
                 <div class="flex items-start justify-between">
                   <div class="flex flex-col space-y-2">
                     <span class="text-gray-50">Total Training courses purchased:</span>
-                    <span class="text-lg font-semibold">100</span>
+                    <span class="text-lg text-white font-semibold">100</span>
                   </div>
                   <div class="bg-gray-50 rounded-full p-4"><i class="fas fa-user-graduate"></i></div>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="flex items-start justify-between">
                   <div class="flex flex-col space-y-2">
                     <span class="text-gray-50">Total consultations purchased:</span>
-                    <span class="text-lg font-semibold">100</span>
+                    <span class="text-lg text-white font-semibold">100</span>
                   </div>
                   <div class="bg-gray-50 rounded-full p-6"><i class="fas fa-hands-helping"></i></div>
                 </div>
@@ -50,7 +50,7 @@
                 <div class="flex items-start justify-between">
                   <div class="flex flex-col space-y-2">
                     <span class="text-gray-50">Total customer users:</span>
-                    <span class="text-lg font-semibold">100</span>
+                    <span class="text-lg text-white font-semibold">100</span>
                   </div>
                   <div class="bg-gray-50 rounded-full p-6"><i class="fas fa-users"></i></div>
                 </div>
