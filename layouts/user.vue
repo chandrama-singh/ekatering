@@ -54,7 +54,7 @@
             icon: 'fa fa-cogs',
           },
           {
-            href: '/caterers/category',
+            href: '/caterers/add-category',
             title: 'Assign Category',
             icon: 'fa fa-cogs',
           },

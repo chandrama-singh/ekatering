@@ -196,6 +196,81 @@
             </div>
         </div>
     </div>
+    <!--Model component -->
+<div class="flex justify-center h-screen items-center bg-gray-200 antialiased" id=add-admin>
+      <div class="flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto rounded-lg border border-gray-300 shadow-xl">
+        <div
+          class="flex flex-row justify-between p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg"
+        >
+          <p class="font-semibold text-gray-800">Add New Admin User</p>
+          <svg
+            class="w-6 h-6 cursor-pointer"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </div>
+        <div class="flex flex-col px-6 py-5 bg-gray-50">
+          <p class="mb-2 font-semibold text-gray-700">Enter Full Name</p>
+          <input
+            type="name"
+            name=""
+            placeholder="Enter Full Name"
+            class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
+            id=""
+          >
+
+<p class="mb-2 font-semibold text-gray-700">Email Id</p>
+          <input
+            type="email"
+            name=""
+            placeholder="Enter Full Name"
+            class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
+            id=""
+          >
+
+          <div class="flex flex-col sm:flex-row items-center mb-5 sm:space-x-5">
+            <div class="w-full sm:w-1/2">
+              <p class="mb-2 font-semibold text-gray-700">Choose Password</p>
+              <input
+                type="password"
+                name=""
+                class="w-full p-5 bg-white border border-gray-200 rounded shadow-sm appearance-none"
+                id=""
+              >
+            </div>
+            <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
+              <p class="mb-2 font-semibold text-gray-700">Confirm Password</p>
+              <input
+                type="password"
+                name=""
+                class="w-full p-5 bg-white border border-gray-200 rounded shadow-sm appearance-none"
+                id=""
+              >
+            
+            </div>
+          </div>
+          <hr />
+
+        </div>
+        <div
+          class="flex flex-row items-center justify-between p-5 bg-white border-t border-gray-200 rounded-bl-lg rounded-br-lg"
+        >
+          <button class="font-semibold text-gray-600">Cancel</button>
+          <button class="px-4 py-2 text-white font-semibold bg-blue-500 rounded">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
 </body>
 
 </template>

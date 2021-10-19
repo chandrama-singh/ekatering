@@ -38,26 +38,10 @@
             <nuxt-link
               to="/training"
               class="text-md text-purple-600 hover:text-purple-900"
-              >Training
+              >Training<i class="fas fa-caret-down"></i
+            >
             </nuxt-link>
-            <span class="absolute pt-3 pl-2">
-              <svg
-                width="14"
-                height="9"
-                viewBox="0 0 14 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 1.64014L7 7.64014L1 1.64014"
-                  stroke="#6D28D9"
-                  stroke-opacity="0.6"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
+            
             <ul class="sub-menu">
               <li>
                 <nuxt-link to="training/onlinetraining"
@@ -82,26 +66,11 @@
             <nuxt-link
               to="/consultations"
               class="text-md text-purple-600 hover:text-purple-900"
-              >Consultations <i class="fas fa-caret-down"></i
-            ></nuxt-link>
-            <span class="absolute pt-3 pl-2">
-              <svg
-                width="14"
-                height="9"
-                viewBox="0 0 14 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 1.64014L7 7.64014L1 1.64014"
-                  stroke="#6D28D9"
-                  stroke-opacity="0.6"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
+              >Consultations 
+              <i class="fas fa-caret-down"></i
+            >
+            </nuxt-link>
+            
             <ul class="sub-menu">
               <li>
                 <nuxt-link to="consultation/consultancy"

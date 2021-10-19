@@ -38,7 +38,7 @@
             title: 'Admin Users',
             icon: 'fas fa-user-shield',
             child: [{
-            href: '#',
+            href: '#add-admin',
             title: 'Add User',
             icon: 'fas fa-user-plus'
            },

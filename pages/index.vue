@@ -16,7 +16,7 @@
       <!-- <Servicesview/> -->
       <Faq/>
 
-      <Footer />
+      
     </div>
 </template>
 
