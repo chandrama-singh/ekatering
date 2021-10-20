@@ -21,7 +21,7 @@
                     <input placeholder="Search"
                         class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none" />
                 </div>
-                <button class="bg-green-300 ml-4 px-4"><i class="fas fa-plus pr-2"></i>Add New Admin</button>
+                <Nuxt-Link to="/admin/list-admin#add-admin"><button class="bg-green-300 ml-4 px-4"><i class="fas fa-plus pr-2"></i>Add New Admin</button></Nuxt-Link>
             </div>
             
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">

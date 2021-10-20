@@ -22,7 +22,7 @@
           class="
             p-4
             transition-shadow
-            bg-purple-600
+            bg-gradient-to-r from-purple-600 to-indigo-300
             border
             rounded-lg
             shadow-sm
@@ -46,7 +46,7 @@
           class="
             p-4
             transition-shadow
-            bg-purple-600
+            bg-gradient-to-r from-purple-600 to-indigo-300
             border
             rounded-lg
             shadow-sm
@@ -70,7 +70,7 @@
           class="
             p-4
             transition-shadow
-            bg-purple-600
+            bg-gradient-to-r from-purple-600 to-indigo-300
             border
             rounded-lg
             shadow-sm
@@ -82,7 +82,7 @@
               <span class="text-gray-50">Total consultations purchased:</span>
               <span class="text-lg text-white font-semibold">100</span>
             </div>
-            <div class="bg-gray-50 rounded-full p-6">
+            <div class="bg-gray-50 rounded-full p-4">
               <i class="fas fa-hands-helping"></i>
             </div>
           </div>
@@ -92,7 +92,7 @@
           class="
             p-4
             transition-shadow
-            bg-purple-600
+            bg-gradient-to-r from-purple-600 to-indigo-300
             border
             rounded-lg
             shadow-sm
@@ -104,7 +104,7 @@
               <span class="text-gray-50">Total customer users:</span>
               <span class="text-lg text-white font-semibold">100</span>
             </div>
-            <div class="bg-gray-50 rounded-full p-6">
+            <div class="bg-gray-50 rounded-full p-4">
               <i class="fas fa-users"></i>
             </div>
           </div>
@@ -113,7 +113,7 @@
     </div>
 
     <!-- Table see (https://tailwindui.com/components/application-ui/lists/tables) -->
-    <h3 class="mt-6 text-xl">Users</h3>
+    <h3 class="mt-6 text-xl font-bold">Users</h3>
     <div class="flex flex-col mt-6">
       <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
