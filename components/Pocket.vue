@@ -1,6 +1,6 @@
 <template>
       <section class="py-32 md:py-32 overflow-x-hidden  bg-img">
-        <img class="absolute mx-auto left-0 -mt-80 h-54 z-10" src="@/assets/h1.png" alt="">
+        <img class="left-img absolute mx-auto left-0 -mt-80 h-54 z-10" src="@/assets/h1.png" alt="">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">
@@ -87,5 +87,15 @@ export default {
      /* width: full;
      height: full; */
      height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .left-img {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .left-img {
+    visibility: hidden;
+  }
 }
 </style>

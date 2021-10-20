@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      class="absolute mx-auto right-0 -mt-40 z-10"
+      class="right-img absolute mx-auto right-0 -mt-40 z-10"
       src="@/assets/h3.png"
       alt=""
     />

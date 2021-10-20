@@ -32,7 +32,7 @@
             </div>
           </div> -->
       
-        <span class="rotate flex ml-4 mb-4">
+        <span class="imgrotets rotate flex ml-4 mb-4">
         <img
           class=" lg:absolute sm:relative pb-2 top-0 lg:my-40 sm:my-4 sm:mt-10 lg:w-3/5 sm:w-full   object-cover"
           src="@/assets/a2.png"
@@ -122,5 +122,16 @@ export default {
 @keyframes myOrbit {
     from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgrotets {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .imgrotets {
+    visibility: hidden;
+  }
 }
 </style>
