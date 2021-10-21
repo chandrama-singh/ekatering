@@ -1,6 +1,6 @@
 <template>
   <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden bgabout">
-    <p></p>
+    
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">
           <img

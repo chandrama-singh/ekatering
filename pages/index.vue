@@ -1,8 +1,8 @@
 <template>
-  <div class="overflow-hidden">
+  <div>
     <section class="bgimg">
       <Header/>
-      <AboutUs class="overflow-hidden"/>
+      <AboutUs/>
     </section>
       <WhyBest/>
       <WhyKetaring/>

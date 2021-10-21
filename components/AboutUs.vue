@@ -8,7 +8,7 @@
                 <div class="flex">
                   <!-- <img src="@/assets/hero-icon.png"> -->
                 <span class="text-black text-5xl max-w-3xl font-poppins leading font-semibold">Your Catering Business, our assistance !</span>
-               </div>
+               </div> 
               </h2>
               <p class="text-gray-900 text-xl max-w-3xl font-poppins">We offer a step-by-step solution to Home/Events Caterers and Private Chefs to open and run their food business online while complying with food safety and standard regulations.</p>
             </div>
