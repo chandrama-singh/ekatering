@@ -11,7 +11,7 @@
             >
               If you are Home/Event Caterer or a Private Chef explor your business.
             </h2>
-            <div class="pl-5"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-purple-900 text-center font-semibold leading-none bg-white rounded" href="#">Get Started</a></div>
+            <div class="pl-5"><Nuxt-Link to="/plans" class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-purple-900 text-center font-semibold leading-none bg-white rounded">Get Started</Nuxt-Link></div>
           </div>
         </div>
         <img

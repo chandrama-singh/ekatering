@@ -65,10 +65,16 @@
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         How much does it cost?
       </h2>
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class="mb-4 text-gray-800 leading-relaxed">
         Our legal advice starts from £50
       </p>
     </div>
+    <div class="flex justify-center"><Nuxt-Link to="/contactus"><button
+          class="inline-block mt-6  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
+        >
+          Contact us
+        </button></Nuxt-Link>
+        </div>
     <!------------------------------------------------------------------------------------------------------>
     
     <!---------------------------------------------------------------------------->

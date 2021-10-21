@@ -1,10 +1,10 @@
 <template>
   <div>
       <section class="bgcolor">
-      <Header/>
+    
       <SignUp/>
       </section>
-      <Footer/>
+      
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
 <div>
   <section class="bgcolor">
-      <Header/>
+      
       <TBanner/>
       <PrivacyPolicy/>
       <Passion/>
     </section>
-      <Footer/>
+      
   </div>
 </template>
 

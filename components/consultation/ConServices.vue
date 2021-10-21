@@ -27,9 +27,9 @@
                 <img src="~assets/con1.png"/>
 
               </div>
-              <h6 class="text-xl mt-5 font-semibold text-purple-600">
+              <Nuxt-Link to="/authorityfood"><h6 class="text-xl mt-5 font-semibold text-purple-600">
                 Local Authority Food Business Registration
-              </h6>
+              </h6></Nuxt-Link>
               
             </div>
             <div class="w-full lg:w-3/12 px-4 text-center">
@@ -37,9 +37,9 @@
                 <img src="~assets/con2.png"/>
 
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-purple-600">
+             <Nuxt-Link to="/fsms"> <h5 class="text-xl mt-5 font-semibold text-purple-600">
                 Documented Food Safety Management System
-              </h5>
+              </h5></Nuxt-Link>
               
             </div>
             <div class="w-full lg:w-3/12 px-4 text-center">
@@ -50,8 +50,8 @@
              
 
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-purple-600">Virtual/Remote Inspection
-</h5>
+              <Nuxt-Link to="/vir"><h5 class="text-xl mt-5 font-semibold text-purple-600">Virtual/Remote Inspection
+</h5></Nuxt-Link>
               
             </div>
           </div>
@@ -64,9 +64,9 @@
 
               
               </div>
-              <h6 class="text-xl mt-5 font-semibold text-purple-600">
+              <Nuxt-Link to="/sfbb"><h6 class="text-xl mt-5 font-semibold text-purple-600">
                 Safer Food Better Business Pack
-              </h6>
+              </h6></Nuxt-Link>
               
             </div>
             <div class="w-full lg:w-3/12 px-4 text-center">
@@ -74,9 +74,9 @@
                 <img src="~assets/con5.png"/>
 
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-purple-600">  
+              <Nuxt-Link to="/foodstandard"><h5 class="text-xl mt-5 font-semibold text-purple-600">  
                Food Standard
-              </h5>
+              </h5></Nuxt-Link>
               
             </div>
             <div class="w-full lg:w-3/12 px-4 text-center">
@@ -84,7 +84,7 @@
                 <img src="~assets/con6.png"/>
 
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-purple-600">Legal Advice</h5>
+             <Nuxt-Link to="/legal"> <h5 class="text-xl mt-5 font-semibold text-purple-600">Legal Advice</h5></Nuxt-Link>
               
             </div>
           </div>

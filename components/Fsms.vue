@@ -59,7 +59,7 @@
         Full HACCP documentation with monitoring template forms
       </h2>
       <div class="flex">
-        <ul class="ml-6 text-gray-400 text-justify list-disc">
+        <ul class="ml-6 text-gray-600 text-justify list-disc">
           <li>From £450 for 1 product</li>
           <li>From £800 for 2 products</li>
         </ul>
@@ -73,7 +73,7 @@
         template forms
       </h2>
       <div class="flex">
-        <ul class="ml-6 text-gray-400 text-justify list-disc">
+        <ul class="ml-6 text-gray-600 text-justify list-disc">
           <li>From £450 for any additional product</li>
           <li>From £700 for one product</li>
         </ul>
@@ -85,8 +85,8 @@
           <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
           <!-- <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
           <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-          <button class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Contact Us</button>
-        </div>
+         <Nuxt-Link to="/contactus"> <button class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Contact Us</button>
+     </Nuxt-Link>   </div>
       </section>
     <!---------------------------------------------------------------------------->
 

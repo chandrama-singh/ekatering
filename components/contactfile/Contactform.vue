@@ -1,66 +1,169 @@
 <template>
-<section>
-	<div class="bg-purple-400 py-20">
-		<div class="container mx-auto flex flex-col md:flex-row my-6 md:my-24">
-			<div class="flex flex-col w-full lg:w-1/3 p-8">
-			
-				<p class="text-3xl md:text-5xl my-4 leading-relaxed md:leading-snug">Leave us a feedback!</p>
-				<p class="text-sm md:text-base leading-snug">
-					Please provide your valuable feedback...
-				</p>
-			</div>
-			<div class="flex flex-col w-full lg:w-2/3 justify-center">
-				<div class="container w-full px-4">
-					<div class="flex flex-wrap justify-center">
-						<div class="w-full lg:w-6/12 px-4">
-							<div
-								class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
-								<div class="flex-auto p-5 lg:p-10">
-									<h4 class="text-2xl mb-4 text-black font-semibold">Have a suggestion?</h4>
-									<form id="feedbackForm" action="" method="">
+  <section class="relative pt-10 pb-5 2xl:pb-40 overflow-hidden">
+    
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap mb-16 lg:mb-28">
+        <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
+          <div class="max-w-7xl">
+            <div
+              class="
+                relative
+                min-h-screen
+                flex flex-wrap
+                justify-center
+                py-8
+                px-4
+                sm:px-6
+                lg:px-8
+              "
+            >
+              <div class="absolute opacity-60 inset-0 z-0"></div>
+              <div
+                class="max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10"
+              >
+                <div class="text-center mb-10">
+                  <h2 class="mt-6 text-3xl font-bold text-gray-900">
+                    Contact Us
+                  </h2>
+                  <!-- <p class="mt-2 text-sm text-gray-600">Please sign in to your account</p> -->
+                </div>
 
-<div class="relative w-full mb-3">
-<input type="name" name="fullname" id="name" class="border-0 px-3 py-3 rounded text-sm shadow w-full
-                    bg-gray-300 placeholder-black text-gray-800 outline-none focus:bg-gray-400" placeholder="Enter Your Full Name"
-                        style="transition: all 0.15s ease 0s;" required />
-</div>
+                <!-- <div class="flex items-center justify-center space-x-2">
+			<span class="h-px w-16 bg-gray-300"></span>
+			<span class="text-gray-500 font-normal">OR</span>
+			<span class="h-px w-16 bg-gray-300"></span>
+		</div> -->
+                <form class="mt-8 space-y-6" action="#" method="POST">
+                  <div class="relative">
+                    <label class="text-sm font-bold text-gray-700 tracking-wide"
+                      >Name</label
+                    >
+                    <input
+                      class="
+                        w-full
+                        text-base
+                        py-2
+                        px-2
+                        border border-gray-300
+                        focus:outline-none focus:border-indigo-500
+                      "
+                      type=""
+                      placeholder="Your Full Name"
+                    />
+                  </div>
+                  <div class="relative">
+                    <label class="text-sm font-bold text-gray-700 tracking-wide"
+                      >Email</label
+                    >
+                    <input
+                      class="
+                        w-full
+                        text-base
+                        py-2
+                        px-2
+                        border border-gray-300
+                        focus:outline-none focus:border-indigo-500
+                      "
+                      type=""
+                      placeholder="mail@gmail.com"
+                    />
+                  </div>
+                  <div class="mt-8 content-center">
+                    <label
+                      class="text-sm font-bold text-gray-700 tracking-wide"
+                    >
+                      Contact Number
+                    </label>
+                    <input
+                      class="
+                        w-full
+                        content-center
+                        text-base
+                        py-2
+                        px-2
+                        border border-gray-300
+                        focus:outline-none focus:border-indigo-500
+                      "
+                      type="contact"
+                      placeholder="Your Contact Number"
+                    />
+                  </div>
 
-										<div class="relative w-full mb-3">
-                      
-											<input type="email" name="email" id="email" class="border-0 px-3 py-3 rounded text-sm shadow w-full
-                    bg-gray-300 placeholder-black text-gray-800 outline-none focus:bg-gray-400" placeholder="Enter Your Email"
-                        style="transition: all 0.15s ease 0s;" required />
-                    </div>
-											<div class="relative w-full mb-3">
-												<textarea maxlength="300" name="feedback" id="feedback" rows="4"
-                        cols="80"
-                        class="border-0 px-3 py-3 bg-gray-300 placeholder-black text-gray-800 rounded text-sm shadow focus:outline-none w-full"
-                        placeholder="Type Message..." required></textarea>
-											</div>
-											<div class="text-center mt-6">
-												<button id="feedbackBtn"
-                        class="bg-purple-600 text-white text-center mx-auto active:bg-yellow-400 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                        type="submit" style="transition: all 0.15s ease 0s;">Submit
-                      </button>
-											</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<div class="mt-8 content-center">
+                    <label
+                      class="text-sm font-bold text-gray-700 tracking-wide"
+                    >
+                      Reasone for Contact
+                    </label>
+                    <input
+                      class="
+                        w-full
+                        content-center
+                        text-base
+                        py-2
+                        px-2
+                        border border-gray-300
+                        focus:outline-none focus:border-indigo-500
+                      "
+                      type="text"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div>
+                    <button
+                      type="submit"
+                      class="
+                        w-full
+                        flex
+                        justify-center
+                        bg-purple-800
+                        text-gray-100
+                        p-4
+                        rounded-lg
+                        tracking-wide
+                        font-semibold
+                        focus:outline-none focus:shadow-outline
+                        hover:bg-purple-900
+                        shadow-lg
+                        cursor-pointer
+                        transition
+                        ease-in
+                        duration-300
+                      "
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  
+                    
+                 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="
+            lg:absolute
+            top-0
+            right-5
+            lg:w-2/5
+            pr-22
+            pl-4
+            lg:h-100
+            object-cover
+          "
+          src="@/assets/contact-side-img.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

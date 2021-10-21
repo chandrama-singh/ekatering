@@ -144,11 +144,11 @@
           Coaching and completion of a food allergen assessment chart
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <button
+       <Nuxt-Link to="/contactus"> <button
           class="inline-block mt-6  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
         >
-          Purchase For
-        </button>
+          From £ 5.00 per product , Contact us
+        </button></Nuxt-Link>
       </div>
     </section>
     <!---------------------------------------------------------------------------->
@@ -163,7 +163,7 @@
         <button
           class="inline-block mt-6  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
         >
-          Purchase For
+          From £ 250.00 per product , Contact us
         </button>
       </div>
     </section>

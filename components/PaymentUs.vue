@@ -25,7 +25,7 @@
       <div class="flex flex-wrap bg-white rounded shadow">
         <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11">
           <div class="px-6 py-8 lg:px-8 text-center">
-            <span class="text-gray-400">Sign In</span>
+            <span class="text-gray-400">Sign Up</span>
             <h4 class="mb-8 text-2xl font-heading">Finish your payment</h4>
             <form class="mb-4" action="">
                <div class="flex mb-4 px-4 bg-gray-50 rounded">
@@ -52,14 +52,14 @@
               <div class="text-left mb-5 text-sm text-gray-400">
                 <label class="flex">
                   <input type="checkbox" name="terms" value="1">
-                  <span class="ml-1 text-xs">By signing up, you agree to our <a class="text-purple-600 font-bold hover:text-purple-700" href="#">Terms,</a><a class="text-purple-600 font-bold hover:text-purple-700" href="#">Data Policy</a> and <a class="text-purple-600 font-bold hover:text-purple-700" href="#">Cookies Policy.</a></span>
+                  <span class="ml-1 text-xs">By signing up, you agree to our <Nuxt-Link to="/privacy" class="text-purple-600 font-bold hover:text-purple-700">Terms,</Nuxt-Link><Nuxt-Link to="/privacy" class="text-purple-600 font-bold hover:text-purple-700">Data Policy</Nuxt-Link> and <Nuxt-Link to="/cookies" class="text-purple-600 font-bold hover:text-purple-700">Cookies Policy.</Nuxt-Link></span>
                 </label>
               </div>
-              <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-xl rounded-t-xl transition duration-200">Buy Monthly Plan</button>
+              <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-xl rounded-t-xl transition duration-200" @click="onSubmit">Buy Monthly Plan</button>
 
             </form>
-            <p class="text-xs text-gray-400">Already have an account? <a class="text-purple-600 hover:underline" href="#">Sign In</a></p>
-             <button class="block w-full p-4 text-center text-white font-bold leading-none bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl transition duration-200" @click="onSubmit">Buy Monthly Plan</button>
+            <p class="text-xs text-gray-400">Already have an account? <Nuxt-Link to="/signin" class="text-purple-600 hover:underline">Sign In</Nuxt-Link></p>
+             
           </div>
         </div>
         <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">

@@ -103,7 +103,7 @@
         <button
           class="inline-block mt-6 py-4 px-16 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
         >
-          Purchase For
+          Purchase for £ 30.00
         </button>
       </div>
     </section>

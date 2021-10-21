@@ -102,7 +102,7 @@ At the end of the course, you are required to complete a multiple-choice TEST an
         <div class="w-full max-w-5xl mx-auto text-center px-2 py-12">
           <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
           <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">Food Allergen for Caterers and Private Chefs Level 1</h2>
-         <button class="inline-block mt-6 py-4 px-16 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Purchase For</button>
+         <button class="inline-block mt-6 py-4 px-16 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Purchase for £ 15.00</button>
           
         </div>
       </section>

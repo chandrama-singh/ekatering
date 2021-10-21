@@ -4,7 +4,7 @@
           <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
           <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
           <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/>
-          <button class="inline-block mt-6  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Get Started</button>
+          <Nuxt-Link to="/plans"><button class="inline-block mt-6  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Get Started</button></Nuxt-Link>
         </div>
       </section>
 </template>

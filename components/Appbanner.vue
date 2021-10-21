@@ -8,7 +8,7 @@
               </h2>
               <!-- <p class="text-white leading-relaxed">Download the eKatering app on your platform.</p> -->
             </div>
-            <div><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-purple-900 text-center leading-none bg-white rounded" href="#">Get Started</a></div>
+            <div><Nuxt-Link to="/plans" class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-purple-900 text-center leading-none bg-white rounded">Get Started</Nuxt-Link></div>
           </div>
          
           <div class="flex lg:w-1/3 sm:full">

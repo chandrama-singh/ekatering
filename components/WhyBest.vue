@@ -33,7 +33,7 @@
               and Private Chefs can turn their passion into cash.
             </p>
           </div><br/>
-          <div class="ml-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-medium bg-purple-600 hover:bg-purple-700 rounded font-poppins leading-7 tracking-wide" href="#">Get Started</a></div>
+          <div class="ml-6"><Nuxt-Link to="/plans" class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-medium bg-purple-600 hover:bg-purple-700 rounded font-poppins leading-7 tracking-wide">Get Started</Nuxt-Link></div>
         </div>
       
       </div>

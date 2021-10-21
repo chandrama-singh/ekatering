@@ -61,9 +61,11 @@
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         FSA food registration link:
       </h2>
-      <p class="mb-4 text-purple-800 leading-relaxed"><a href="">https://www.gov.uk/food-business-registration</a></p>
+      <p class="mb-4 text-purple-800 leading-relaxed"><a href="https://www.gov.uk/food-business-registration
+">https://www.gov.uk/food-business-registration</a></p>
       <p class="mb-4 text-gray-400 leading-relaxed">
-        If you require further assistance or advice, do not hesitate to contact us with your enquiry.
+        If you require further assistance or advice, do not hesitate to <Nuxt-Link to="/contactus">
+       <span class="text-purple-900">contact us</span></Nuxt-Link> with your enquiry.
       </p>
     </div>
     <!---------------------------------------------------------------------------->
@@ -76,7 +78,7 @@
         <button
           class="inline-block mt-6 py-4 px-16 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
         >
-          Purchase For
+          Purchase for £ 20.00
         </button>
       </div>
     </section>
