@@ -1,5 +1,5 @@
 <template>
-<section class="overflow-hidden lg:py-0 sm:py-20">
+<section class="overflow-hidden lg:py-0 sm:py-20 xl:py-30 2xl:py-40">
         <div class="container px-4 mx-auto py-4 lg:py-20 sm:py-20 flex flex-wrap">
           <div class=" pt-4 lg:pt-16 pl-4 text-left ">
             <div class=" mx-auto mb-8">
