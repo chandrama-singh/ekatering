@@ -39,7 +39,7 @@
             <nuxt-link
               to="/training"
               class="text-md text-purple-600 hover:text-purple-900"
-              >Training<i class="fas fa-caret-down"></i
+              >Training<i class="ml-2 fas fa-caret-down"></i
             >
             </nuxt-link>
 

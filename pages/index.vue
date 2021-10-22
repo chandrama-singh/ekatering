@@ -4,7 +4,7 @@
       <Header/>
       <AboutUs/>
     </section>
-      <WhyBest/>
+      <WhyBest class="px-14"/>
       <WhyKetaring/>
       <Appbanner/>
       <Work/>

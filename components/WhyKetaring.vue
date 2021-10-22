@@ -35,7 +35,7 @@
           <br />
           <center>
             <img
-          class=" ml-25 pl-22 lg:h-full "
+          class=" ml-25 pl-22 h-full "
           src="@/assets/icon_1.png"
           alt=""
         />
