@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden lg:py-10 sm:py-20 xl:py-30 2xl:py-40">
-    <div class="container px-4 mx-auto py-4 lg:py-20 sm:py-20 flex flex-wrap">
+    <div class=" px-4 mx-auto py-4 lg:py-20 sm:py-20 flex flex-wrap">
       <div class="pt-4 lg:pt-16 px-12 text-left">
         <div class="mx-auto mb-8">
           <h2
@@ -90,12 +90,13 @@
         </div> -->
 
 
-
+  <div class="">
        <img
-          class="rotating lg:absolute h-2/3 pb-4 top-0 lg:my-40 sm:mt-10 right-2 object-cover"
+          class="rotating lg:relative pb-4 top-0 px-4 lg:my-10 sm:mt-6 right-4 mr-10 object-cover"
           src="@/assets/heroimg1.png"
           alt=""
         /> 
+        </div>
     </div>
   </section>
 </template>
@@ -135,7 +136,7 @@ export default {};
      * object follow.
      */
   position: absolute;
-  left: 315px;
+  left: 300px;
   top: 143px;
 
   /*
@@ -240,6 +241,11 @@ export default {};
   -ms-animation: rotating 8s linear infinite;
   -o-animation: rotating 8s linear infinite;
   animation: rotating 8s linear infinite;
+}
+.rotating {
+  width:320px;
+  height: 320px;
+  
 }
 
 </style>

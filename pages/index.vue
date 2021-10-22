@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
     <section class="bgimg">
       <Header/>
       <AboutUs/>
     </section>
-      <WhyBest class="px-14"/>
+      <WhyBest/>
       <WhyKetaring/>
       <Appbanner/>
       <Work/>
