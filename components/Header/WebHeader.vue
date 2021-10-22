@@ -8,6 +8,7 @@
         <div class="lg:hidden ml-auto">
           <button
             class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
+            @click="changeMenu"
           >
             <svg
               class="fill-current h-4 w-4"
@@ -41,7 +42,7 @@
               >Training<i class="fas fa-caret-down"></i
             >
             </nuxt-link>
-            
+
             <ul class="sub-menu">
               <li>
                 <nuxt-link to="training/onlinetraining"
@@ -66,11 +67,11 @@
             <nuxt-link
               to="/consultations"
               class="text-md text-purple-600 hover:text-purple-900"
-              >Consultations 
+              >Consultations
               <i class="fas fa-caret-down"></i
             >
             </nuxt-link>
-            
+
             <ul class="sub-menu">
               <li>
                 <nuxt-link to="consultation/consultancy"
@@ -123,40 +124,15 @@
         </ul>
       </nav>
     </div>
-    <div v-click-outside="hide" class="hidden navbar-menu relative z-50">
+    <div  v-if="openMenu" class="navbar-menu lg:hidden relative z-50">
       <div
         class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"
       ></div>
       <nav
         class=" fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
       >
-        <div class="flex items-center mb-8">
-          <nuxt-link class="mr-auto text-3xl font-semibold leading-none" to="/">
-            <img
-              class="h-10"
-              src="metis-assets/logos/metis/metis.svg"
-              alt=""
-              width="auto"
-            />
-          </nuxt-link>
-          <button @click="changeMenu" class="navbar-close">
-            <svg
-              class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div v-if="openMenu">
+
+        <div v-click-outside="hide" class="bg-purple-600">
           <ul>
             <li class="mb-1">
               <nuxt-link
@@ -278,7 +254,8 @@ import ClickOutside from "vue-click-outside";
 export default {
   data() {
     return {
-      openMenu: false
+      openMenu: false,
+      burgerClick:false
     };
   },
   directives: {
@@ -287,12 +264,19 @@ export default {
   methods: {
     changeMenu() {
       console.log("clicked change menu");
-      this.openMenu = !this.openMenu;
-      console.log(this.openMenu);
+      this.openMenu = true;
+      this.burgerClick=true;
+      console.log("openMenu",this.openMenu);
     },
     hide() {
-      this.openMenu = false;
+      if(this.burgerClick==false)
+      {
+         this.openMenu = false;
       console.log(this.openMenu);
+      }
+      this.burgerClick=false;
+       console.log("burgerClick",this.burgerClick);
+
     }
   },
   computed: {}
