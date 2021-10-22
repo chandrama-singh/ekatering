@@ -22,7 +22,7 @@
              <li>PDF certificates</li>
              <li>food-hygiene</li>
             </ul>
-            <div class="absolute right-5 mt-10">
+            <div class="lg:absolute sm:relative right-5 mt-10">
                 <img
           class="lg:relative lg:w-2/5 lg:h-100"
           src="@/assets/f1.png"

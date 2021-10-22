@@ -18,7 +18,7 @@
               <!-- <img src="@/assets/hero-icon.png"> -->
               <span
                 class="
-                  text-black text-5xl
+                  text-black sm:text-center lg:text-left text-5xl
                   max-w-3xl
                   font-poppins
                   leading

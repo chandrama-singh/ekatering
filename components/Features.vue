@@ -31,7 +31,7 @@
                <img class="relative mx-auto rounded-xl h-12 w-full z-10 mr-2"  src="@/assets/apple-store.png"/>
               </div>
               <div>
-                <img class=" ml-2 relative mx-auto rounded-xl h-12 w-full z-10"  src="@/assets/play-store.png"/>
+              <img class=" ml-2 relative mx-auto rounded-xl h-10 w-full z-10"  src="@/assets/play-store.png"/>
               </div>
             </div>
     </div>
