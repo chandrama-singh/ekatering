@@ -4,14 +4,14 @@
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">
-              <div class="py-20 lg:pl-32">
+              <div class="py-20 ">
                 <div class="mb-4">
                   <h2 class="text-4xl mt-3 font-bold font-heading mb-4">katerers in your pocket</h2>
                   <p class="text-gray-700 leading-relaxed">See menus and photos for nearby katerers and bookmark your favorite places on the go.!</p>
                   <p class="text-gray-700 leading-relaxed">Download the eKatering app on your platform........</p>
                 </div>
                 <div class="flex items-start py-4">
-                  <div class="mr-4">
+                  <div class="">
                    <img class="relative mx-auto rounded-xl h-16 w-full z-10"  src="@/assets/apple-store.png"/>
                   </div>
                   <div>

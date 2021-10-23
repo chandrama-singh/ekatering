@@ -10,8 +10,8 @@
           alt=""
         />
         </div>
-        <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
-          <div class="max-w-7xl ">
+        <div class="w-full lg:w-3/5 mb-16 lg:mb-0 ">
+          <div class=" ">
             <h2
               class="mb-6 text-black text-3xl lg:text-4xl font-bold font-heading px-2"
             >
