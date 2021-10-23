@@ -313,7 +313,7 @@ li:hover > .sub-menu {
   /* left: 100%; */
   z-index: 911;
   float: left;
-  min-width: full;
+  /* min-width: auto; */
   padding: 0px 0px;
   text-align: left;
   list-style: none;
