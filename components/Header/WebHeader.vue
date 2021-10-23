@@ -1,5 +1,5 @@
 <template>
-  <section class="px-6">
+  <section class="">
     <div class="px-4 mx-auto">
       <nav class="flex items-center py-4">
         <nuxt-link class="text-3xl font-semibold leading-none" to="/">
