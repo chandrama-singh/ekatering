@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="bg-gray-50 border-2 border-red-500">
     <h2
       class="text-center pt-20 text-black mb-4 text-5xl lg:text-5xl font-bold font-heading"
     >

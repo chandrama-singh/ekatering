@@ -1,12 +1,13 @@
 <template>
-  <section class="overflow-hidden lg:py-10 sm:py-20 xl:py-30 2xl:py-40">
-    <div class=" px-4 mx-auto py-4 lg:py-20 sm:py-20 flex flex-wrap">
-      <div class="pt-4 lg:pt-16 px-12 text-left">
+  <section class="overflow-hidden lg:py-10 sm:py-10 xl:py-30 2xl:py-40 border-2 border-red-500">
+    <div class=" px-4 py-4 lg:py-20 sm:py-10 flex flex-wrap">
+      <div class="pt-4 lg:pt-16 lg:px-12 sm:px-4 text-left">
         <div class="mx-auto mb-8">
           <h2
             class="
               text-3xl
               md:text-4xl
+              sm:text-2xl
               mb-4
               mt-12
               text-purple-600
@@ -54,23 +55,7 @@
           >
         </div>
       </div>
-      <!-- <div class="saturn flex items-center justify-center max-w-4xl mx-auto pt-12 pb-4 ">
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
-              <img class="mx-auto" src="~assets/a1.png" alt="">
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
-              <img class="mx-auto" src="~assets/a2.png" alt="">
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
-              <img class="mx-auto" src="~assets/a3.png" alt="">
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
-              <img class="mx-auto" src="~assets/a4.png" alt="">
-            </div>
-            <div class="hidden md:block w-1/2 md:w-1/3 lg:w-1/5 px-3 mb-8">
-              <img class="mx-auto" src="~assets/a1.png" alt="">
-            </div>
-          </div> -->
+      
 
       <!-- <span class="imgrotets rotate flex ml-4 mb-4">
         <img
