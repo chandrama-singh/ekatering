@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden lg:py-10 sm:py-10 xl:py-30 2xl:py-40 ">
-    <div class="lg:px-14 xl:px-7 py-4 lg:py-20 sm:py-10 flex flex-wrap">
+    <div class="lg:px-14 xl:px-10 py-4 lg:py-20 sm:py-10 flex flex-wrap">
       <div class="pt-4 lg:pt-16 lg:px-12 sm:px-4 text-left">
         <div class="mx-auto mb-8">
           <h2
@@ -77,7 +77,7 @@
 
   <div class="">
        <img
-          class="rotating lg:relative pb-4 top-0 px-4 lg:my-10 sm:mt-6  lg:right-4 sm:right-2  lg:mr-10 sm:mr-0 object-cover"
+          class="rotating lg:relative top-0  lg:my-10 sm:mt-6 sm:right-2 lg:right-4 lg:mr-10 sm:mr-0  xl:w-full xl:h-full"
           src="@/assets/heroimg1.png"
           alt=""
         /> 
@@ -198,6 +198,24 @@ export default {};
   
 }
 }
+@media only screen and (min-width: 1280px) {
+  .rotating {
+  width:320px;
+  height: 320px;
+
+
+  }
+}
+
+
+@media only screen and (min-width: 1536px) {
+  .rotating {
+  width:90%;
+margin-top: -80px;
+margin-left: 40px;
+
+  }
+}
 
 
 
@@ -237,10 +255,10 @@ export default {};
   -o-animation: rotating 8s linear infinite;
   animation: rotating 8s linear infinite;
 }
-.rotating {
+/* .rotating {
   width:320px;
   height: 320px;
   
-}
+} */
 
 </style>
