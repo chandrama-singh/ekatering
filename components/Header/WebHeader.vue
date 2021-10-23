@@ -129,10 +129,10 @@
         class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"
       ></div>
       <nav
-        class=" fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        class=" fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6  border-r overflow-y-auto"
       >
 
-        <div v-click-outside="hide" class="bg-purple-600">
+        <div v-click-outside="hide" class="bg-purple-600 left-0">
           <ul>
             <li class="mb-1">
               <nuxt-link
