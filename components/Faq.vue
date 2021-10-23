@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden">
+  <section class="overflow-hidden">
     <img
       class="right-img absolute mx-auto right-0 -mt-40 z-10"
       src="@/assets/h3.png"
@@ -265,7 +265,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>

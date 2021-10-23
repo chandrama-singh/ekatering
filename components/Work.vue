@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 ">
+  <section class="bg-gray-50 ">
     <h2
       class="text-center pt-20 text-black mb-4 text-5xl lg:text-5xl font-bold font-heading"
     >
@@ -139,7 +139,7 @@
         </div>
       </section>
     
-  </div>
+  </section>
 </template>
 
 <script>

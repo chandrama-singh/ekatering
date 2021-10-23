@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="overflow-hidden">
     <div class="px-4 mx-auto">
       <nav class="flex items-center py-4">
         <nuxt-link class="text-3xl font-semibold leading-none" to="/">
@@ -75,7 +75,7 @@
             <ul class="sub-menu">
               <li>
                 <nuxt-link to="consultation/consultancy"
-                  >eKatering CONSULTANCY SERVICES</nuxt-link
+                  >eKatering consultancy Services</nuxt-link
                 >
               </li>
               <li>
