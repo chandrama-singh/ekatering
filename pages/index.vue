@@ -12,7 +12,6 @@
       <Subscribe/>
       <!-- <Features /> -->
       <FooterContact/>
-=
       <!-- <Servicesview/> -->
       <Faq/>
 
