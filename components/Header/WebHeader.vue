@@ -20,7 +20,7 @@
             </svg>
           </button>
         </div>
-        <ul class="hidden lg:flex items-center space-x-12 ml-auto mr-12">
+        <ul class="hidden lg:flex items-center space-x-12 ml-auto ">
           <li>
             <nuxt-link
               to="/"
