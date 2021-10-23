@@ -1,8 +1,8 @@
 <template>
   <section class="pt-10 bg-gray-800">
-    <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap -mx-4 border-b border-gray-400">
-        <div class="w-full lg:w-2/5 px-4 mb-16 lg:mb-0">
+    <div class=" px-4 mx-auto">
+      <div class="flex flex-wrap  border-b border-gray-400">
+        <div class="lg:w-2/5 px-4 mb-16 lg:mb-0">
           <!-- <span class="text-md text-purple-400 font-bold">We&apos;re Zospace</span> -->
           <div class="sizelogo">
             <nuxt-link to="/">
@@ -23,7 +23,7 @@
           </div> -->
         </div>
 
-        <div class="w-full lg:w-3/5 px-4">
+        <div class="lg:w-3/5 px-4">
           <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-16 lg:mb-0">
               <h2 class="mb-4 text-gray-200 hover:text-gray-100">Discover</h2>
@@ -166,6 +166,6 @@ export default {};
 
 <style>
 .sizelogo {
-  width: 500px;
+  width: 100px;
 }
 </style>

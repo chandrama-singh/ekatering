@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <!-- <WebHeader/> -->
+    <WebHeader/>
 
       <Nuxt />
       <Footer/>
