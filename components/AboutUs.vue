@@ -197,11 +197,21 @@ export default {};
   .imgrotets {
     visibility: hidden;
   }
+  .rotating {
+  width:260px;
+  height: 260;
+  
+}
 }
 @media only screen and (max-width: 400px) {
   .imgrotets {
     visibility: hidden;
   }
+  .rotating {
+  width:220px;
+  height: 220px;
+  
+}
 }
 
 
