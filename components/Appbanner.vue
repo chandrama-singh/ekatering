@@ -1,5 +1,5 @@
 <template>
-   <section class="pb-8 bg-top bg-cover bg-no-repeat bgimage border-2 border-red-500" >
+   <section class="pb-8 bg-top bg-cover bg-no-repeat bgimage " >
         <div class="container py-10 px-12 mx-auto flex flex-wrap"> 
           <div class="text-left lg:w-2/3 sm:full">
             <div class=" mx-auto mb-4">

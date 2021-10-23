@@ -1,5 +1,5 @@
 <template>
-  <section class="overflow-hidden lg:py-10 sm:py-10 xl:py-30 2xl:py-40 border-2 border-red-500">
+  <section class="overflow-hidden lg:py-10 sm:py-10 xl:py-30 2xl:py-40 ">
     <div class=" px-4 py-4 lg:py-20 sm:py-10 flex flex-wrap">
       <div class="pt-4 lg:pt-16 lg:px-12 sm:px-4 text-left">
         <div class="mx-auto mb-8">
@@ -77,7 +77,7 @@
 
   <div class="">
        <img
-          class="rotating lg:relative pb-4 top-0 px-4 lg:my-10 sm:mt-6 right-4 mr-10 object-cover"
+          class="rotating lg:relative pb-4 top-0 px-4 lg:my-10 sm:mt-6  lg:right-4 sm:right-2  lg:mr-10 sm:mr-0 object-cover"
           src="@/assets/heroimg1.png"
           alt=""
         /> 
