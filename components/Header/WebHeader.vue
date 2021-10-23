@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden">
-    <div class="px-4 mx-auto">
+    <div class="px-4 lg:px-24 mx-auto">
       <nav class="flex items-center py-4">
         <nuxt-link class="text-3xl font-semibold leading-none" to="/">
           <img class="h-20" src="../../assets/logo.png" alt="" width="auto" />

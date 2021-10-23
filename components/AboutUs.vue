@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden lg:py-10 sm:py-10 xl:py-30 2xl:py-40 ">
-    <div class=" px-4 py-4 lg:py-20 sm:py-10 flex flex-wrap">
+    <div class="lg:px-14 xl:px-7 py-4 lg:py-20 sm:py-10 flex flex-wrap">
       <div class="pt-4 lg:pt-16 lg:px-12 sm:px-4 text-left">
         <div class="mx-auto mb-8">
           <h2

@@ -1,7 +1,7 @@
 <template>
   <section class="pt-20 pb-5 2xl:pb-40 overflow-hidden bgabout ">
-    
-    <div class="px-4 mx-auto">
+    <img class="left-img1 absolute mx-auto left-0 -mt-24 h-54 z-10" src="@/assets/Ellipse 25.png" alt="">
+    <div class="lg:px-20 py-24 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">
           <img
           class="lg:absolute  right-2 lg:w-2/5  lg:h-100 object-cover "
@@ -57,8 +57,25 @@ export default {};
 
 <style>
 .bgabout{
-     background-image: url('@/assets/bg_1.png');
+     background-image: url('@/assets/bg1.png');
      background-size: cover;
      background-repeat: no-repeat;
+}
+
+.left-img1{
+
+width:110px;
+
+  @media only screen and (max-width: 600px) {
+  .left-img1 {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .left-img1 {
+    visibility: hidden;
+  }
+}
+
 }
 </style>

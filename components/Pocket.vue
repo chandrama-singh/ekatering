@@ -1,12 +1,12 @@
 <template>
-      <section class="py-32 md:py-32 overflow-hidden  bg-img ">
+      <section class="py-52 overflow-hidden bg-img">
         <img class="left-img absolute mx-auto left-0 -mt-80 h-54 z-10" src="@/assets/h1.png" alt="">
-        <div class="container px-4 mx-auto">
+        <div class="container px-4 lg:px-16 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">
               <div class="py-20 ">
                 <div class="mb-4">
-                  <h2 class="text-4xl mt-3 font-bold font-heading mb-4">katerers in your pocket</h2>
+                  <h2 class="text-4xl mt-3 font-bold font-heading mb-4">Katerers in Your Pocket</h2>
                   <p class="text-gray-700 leading-relaxed">See menus and photos for nearby katerers and bookmark your favorite places on the go.!</p>
                   <p class="text-gray-700 leading-relaxed">Download the eKatering app on your platform........</p>
                 </div>
@@ -44,7 +44,7 @@
                  
               </div>
             </div>
-            <div class="relative w-full lg:w-1/2 my-12 lg:my-0 transform transition duration-500 hover:scale-110">
+            <div class="relative w-full lg:w-1/2 mt-12 transform transition duration-500 hover:scale-110">
               <img class="relative mx-auto rounded-xl w-full z-10" src="@/assets/icon_4.png" alt="">
               <!-- <img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt="">
               <img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""> -->
@@ -88,6 +88,10 @@ export default {
      height: full; */
      height: 100%;
 }
+.left-img{
+  height: 75%;
+}
+
 @media only screen and (max-width: 600px) {
   .left-img {
     visibility: hidden;
