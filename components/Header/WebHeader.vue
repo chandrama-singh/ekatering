@@ -183,7 +183,7 @@
               <ul class="sub-menu">
                 <li>
                   <nuxt-link to="consultation/consultancy"
-                    >eKatering CONSULTANCY SERVICES</nuxt-link
+                    >eKatering consultancy Services</nuxt-link
                   >
                 </li>
                 <li>
@@ -227,7 +227,7 @@
             </li>
           </ul>
         </div>
-        <div class="mt-auto">
+        <!-- <div class="mt-auto">
           <p class="my-4 text-xs text-blueGray-400">
             <span>Get in Touch</span>
             <a class="text-blue-600 hover:text-blue-600 underline" href="#"
@@ -243,7 +243,7 @@
           <a class="inline-block px-1" href="#">
             <img src="metis-assets/icons/instagram-blue.svg" alt="" />
           </a>
-        </div>
+        </div> -->
       </nav>
     </div>
   </section>
@@ -313,7 +313,7 @@ li:hover > .sub-menu {
   /* left: 100%; */
   z-index: 911;
   float: left;
-  min-width: 220px;
+  min-width: full;
   padding: 0px 0px;
   text-align: left;
   list-style: none;
