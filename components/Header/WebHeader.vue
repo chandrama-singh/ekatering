@@ -35,6 +35,34 @@
               >About</nuxt-link
             >
           </li>
+
+
+
+<li>
+          
+             
+              Dash
+            
+
+            <ul class="sub-menu">
+              <li>
+                <nuxt-link to="admin/dashboard"
+                  >Admin</nuxt-link
+                >
+              </li>
+              <li>
+                <nuxt-link to="caterers/dashboard"
+                  >User</nuxt-link
+                >
+              </li>
+             
+            </ul>
+          </li>
+
+
+
+
+
           <li>
             <nuxt-link
               to="/training"
@@ -63,6 +91,11 @@
               </li>
             </ul>
           </li>
+
+
+
+
+
           <li>
             <nuxt-link
               to="/consultations"
@@ -148,6 +181,8 @@
                 >About Us</nuxt-link
               >
             </li>
+           
+           
             <li class="mb-1">
               <nuxt-link
                 to="/training"
