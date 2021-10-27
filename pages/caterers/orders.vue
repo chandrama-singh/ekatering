@@ -39,7 +39,7 @@
                                 </th>
                                 <th
                                     class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                    Product
+                                    Product ID
                                 </th>
                                 <th
                                     class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
@@ -68,7 +68,7 @@
                                     <p class="text-gray-900 whitespace-no-wrap">demo@mail.com</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <p class="text-gray-900 font-semibold whitespace-no-wrap">Product Title</p>
+                                    <p class="text-gray-900 font-semibold whitespace-no-wrap">02421</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 
@@ -100,7 +100,7 @@
                                     <p class="text-gray-900 whitespace-no-wrap">demo@mail.com</p>
                                 </td>
                                                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <p class="text-gray-900 font-semibold whitespace-no-wrap">Product Title</p>
+                                    <p class="text-gray-900 font-semibold whitespace-no-wrap">03331</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 

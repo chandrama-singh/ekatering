@@ -164,7 +164,7 @@
                       tracking-wider
                     "
                   >
-                    Product
+                    Product ID
                   </th>
                   <th
                     class="
@@ -222,7 +222,7 @@
                     class="px-5 py-5 border-b border-gray-200 bg-white text-sm"
                   >
                     <p class="text-gray-900 font-semibold whitespace-no-wrap">
-                      Product Title
+                      014312
                     </p>
                   </td>
                   <td
@@ -283,7 +283,7 @@
                     class="px-5 py-5 border-b border-gray-200 bg-white text-sm"
                   >
                     <p class="text-gray-900 font-semibold whitespace-no-wrap">
-                      Product Title
+                      02332
                     </p>
                   </td>
                   <td
