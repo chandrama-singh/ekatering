@@ -100,14 +100,14 @@ export default {};
   margin-top: 120px;
   transform-origin: 200% center;
   position: relative;
-  animation: rotate 6s linear infinite;
+  animation: rotate 12s linear infinite;
 }
 .rotate:before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  animation: rotate 6s linear reverse infinite;
+  animation: rotate 12s linear reverse infinite;
 }
 @keyframes rotate {
   100% {
@@ -249,11 +249,11 @@ margin-left: 40px;
   }
 }
 .rotating {
-  -webkit-animation: rotating 8s linear infinite;
-  -moz-animation: rotating 8s linear infinite;
-  -ms-animation: rotating 8s linear infinite;
-  -o-animation: rotating 8s linear infinite;
-  animation: rotating 8s linear infinite;
+  -webkit-animation: rotating 12s linear infinite;
+  -moz-animation: rotating 12s linear infinite;
+  -ms-animation: rotating 12s linear infinite;
+  -o-animation: rotating 12s linear infinite;
+  animation: rotating 12s linear infinite;
 }
 /* .rotating {
   width:320px;
