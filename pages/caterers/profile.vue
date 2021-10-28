@@ -1,6 +1,6 @@
 <template>
   
-<div class="w-full relative mt-4 shadow-2xl rounded my-24 overflow-hidden">
+<div class="w-full relative  shadow-2xl rounded overflow-hidden">
   <div class="top h-64 w-full bg-blue-600 overflow-hidden relative" >
     <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
     <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
@@ -9,77 +9,143 @@
       <h4 class="text-sm font-semibold">Joined Since '19</h4>
     </div>
   </div>
-  <div class="grid grid-cols-12 bg-white ">
+  <div class="grid grid-cols-12 bg-white h-full max-h-full">
 
-    <div class="col-span-12 w-full px-3 py-6 justify-center flex space-x-4 border-b border-solid md:space-x-0 md:space-y-4 md:flex-col md:col-span-2 md:justify-start ">
+    <div class=" col-span-12 w-full px-2 py-6 justify-center flex space-x-2 border-b border-solid md:space-x-0 md:space-y-2 md:flex-col md:col-span-2 md:justify-start ">
 
-      <a href="#" class="text-sm p-2 bg-purple-900 text-white text-center rounded font-bold">Basic Information</a>
+      <a v-on:click="toggleTabs(1)" v-bind:class="{' bg-gray-800': openTab !== 1, 'text-white bg-pink-600': openTab === 1}" class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200">Basic Information</a>
 
-      <a href="#" class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200">Documentations</a>
+      <a v-on:click="toggleTabs(2)" v-bind:class="{' bg-gray-800': openTab !== 2, 'text-white bg-pink-600': openTab === 2}" class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200">Documentations</a>
 
-      <a href="#" class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200">Advance</a>
+      <a v-on:click="toggleTabs(3)" v-bind:class="{' bg-gray-800': openTab !== 3, 'text-white bg-pink-600': openTab === 3}" class="text-sm p-2 bg-indigo-200 text-center rounded font-semibold hover:bg-indigo-700 hover:text-gray-200">Advance</a>
 
+   </div>
+<!------------------------------------Basics----------------------------->
+    <div  class=" col-span-8 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 ">
+      <!------------------------------------Basics----------------------------->
+      <div class="px-2" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
+        <section class=" bg-blueGray-50">
+<div class="w-full lg:w-full px-4  mt-6">
+  <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
+    <!-- <div class="rounded-t bg-white mb-0 px-6 py-6">
+      <div class="text-center flex justify-between">
+        <h6 class="text-blueGray-700 text-xl font-bold">
+          My account
+        </h6>
+        <button class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+          Settings
+        </button>
+      </div>
+    </div> -->
+    <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+      <form>
+        <h6 class="text-blueGray-400  text-lg mt-3 mb-6 font-bold uppercase">
+          Basic Information
+        </h6>
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Username
+              </label>
+              <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Enter User Name">
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Email address
+              </label>
+              <input type="email" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="User Email ID">
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Business Name
+              </label>
+              <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Business Name">
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Business Mail
+              </label>
+              <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Business Mail">
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-6 border-b-1 border-blueGray-300">
+
+        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+          Contact Information
+        </h6>
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-12/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Address
+              </label>
+              <textarea type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows="4" placeholder="Address"></textarea>
+            </div>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                City
+              </label>
+              <input type="email" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" Placeholder="City">
+            </div>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Country
+              </label>
+              <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" Placeholder="Country">
+            </div>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                Postal Code
+              </label>
+              <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Code">
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-6 border-b-1 border-blueGray-300 mb-4">
+
+       <div class="w-full item-center justify-center flex">
+         <center>
+          <button class="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+          Save
+        </button>
+        <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+          Cancel
+        </button>
+        </center>
+       </div>
+      </form>
     </div>
-
-    <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 md:col-span-10">
-      <div class="px-4 pt-4">
-        <form action="#" class="flex flex-col space-y-8">
-
-          <div>
-            <h3 class="text-2xl font-semibold">Basic Information</h3>
-            <hr>
-          </div>
-
-          <div class="form-item">
-            <label class="text-xl ">Full Name</label>
-            <input type="text" value="" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" disabled>
-          </div>
-
-          <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-
-            <div class="form-item w-full">
-              <label class="text-xl ">Username</label>
-              <input type="text" value="antonia" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " disabled>
-            </div>
-
-            <div class="form-item w-full">
-              <label class="text-xl ">Email</label>
-              <input type="text" value="antoniaph@gmail.com" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200  " disabled>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="text-2xl font-semibold ">More About Me</h3>
-            <hr>
-          </div>
-
-          <div class="form-item w-full">
-            <label class="text-xl ">Biography</label>
-            <textarea cols="30" rows="10" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus nobis odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eveniet fugiat? Explicabo assumenda dignissimos quisquam perspiciatis corporis sint commodi cumque rem tempora!</textarea>
-          </div>
-
-          <div>
-            <h3 class="text-2xl font-semibold">My Social Media</h3>
-            <hr>
-          </div>
-
-          <div class="form-item">
-            <label class="text-xl ">Instagram</label>
-            <input type="text" value="https://instagram.com/" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200  " disabled>
-          </div>
-          <div class="form-item">
-            <label class="text-xl ">Facebook</label>
-            <input type="text" value="https://facebook.com/" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" disabled>
-          </div>
-          <div class="form-item">
-            <label class="text-xl ">Twitter</label>
-            <input type="text" value="https://twitter.com/" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200  " disabled>
-          </div>
-
-        </form>
+  </div>
+  
+</div>
+</section>
+      </div>
+      <!------------------------------------Document----------------------------->
+       <div class="px-4 pt-4" v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 3}">
+        Documents
+      </div>
+      <!------------------------------------Advanced----------------------------->
+       <div class="px-4 pt-4" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
+        Advanced
       </div>
     </div>
-
+<!------------------------------------Documentation----------------------------->
 
   </div>
 </div>
@@ -87,8 +153,20 @@
 </template>
 
 <script>
+
 export default {
-layout:'user'
+layout:'user',
+
+ data() {
+    return {
+      openTab: 1
+    }
+  },
+  methods: {
+    toggleTabs: function(tabNumber){
+      this.openTab = tabNumber
+    }
+  }
 }
 </script>
 
