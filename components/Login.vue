@@ -10,7 +10,7 @@
   	<div class="max-w-md w-full space-y-8  p-10 bg-white rounded-xl z-10">
 		<div class="text-center mb-10">
 			<h2 class="mt-6 text-3xl font-bold text-gray-900">
-				SignIn
+				Log In
 			</h2>
 			<!-- <p class="mt-2 text-sm text-gray-600">Please sign in to your account</p> -->
 		</div>

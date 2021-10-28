@@ -35,19 +35,10 @@
             icon: 'fa fa-tachometer-alt'
           },
           {
+            href: '/admin/list-admin',
             title: 'Admin Users',
             icon: 'fas fa-user-shield',
-            child: [{
-            href: '#add-admin',
-            title: 'Add User',
-            icon: 'fas fa-user-plus'
-           },
-           {
-            href: '/admin/list-admin',
-            title: 'List Users',
-            icon: 'fas fa-user-shield'
-           },
-            ]
+            
           },
 
          {
@@ -67,25 +58,17 @@
           },
 
           {
-            title: 'Consultation',
-            icon: 'fas fa-hands-helping',
-            child: [{
             href: '/admin/consultation-orders',
-            title: 'View Consultation Orders',
-            icon: 'fas fa-shopping-cart'
-           },
-            ]
+            title: 'Consultation Orders',
+            icon: 'fas fa-hands-helping',
+           
           },
 
           {
-            title: 'Training',
+             href: '/admin/training-orders',
+            title: 'Training Orders',
             icon: 'fas fa-chalkboard-teacher',
-            child: [{
-            href: '/admin/training-orders',
-            title: 'View Training Orders',
-            icon: 'fas fa-shopping-cart'
-           },
-            ]
+           
           },
 
           // {

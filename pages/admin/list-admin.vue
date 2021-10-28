@@ -21,7 +21,7 @@
                     <input placeholder="Search"
                         class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none" />
                 </div>
-                <Nuxt-Link to="/admin/list-admin#add-admin"><button class="bg-green-300 ml-4 px-4"><i class="fas fa-plus pr-2"></i>Add New Admin</button></Nuxt-Link>
+                <button v-on:click.stop.prevent="toggleModal()" class="bg-green-300 ml-4 px-4"><i class="fas fa-plus pr-2"></i>Add New Admin</button>
             </div>
             
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -197,13 +197,13 @@
         </div>
     </div>
     <!--Model component -->
-<div class="flex justify-center h-screen items-center bg-gray-200 antialiased" id=add-admin>
+<div v-if="showModal"  class=" fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
       <div class="flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto rounded-lg border border-gray-300 shadow-xl">
         <div
           class="flex flex-row justify-between p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg"
         >
           <p class="font-semibold text-gray-800">Add New Admin User</p>
-          <svg
+          <svg v-on:click="toggleModal()"
             class="w-6 h-6 cursor-pointer"
             fill="none"
             stroke="currentColor"
@@ -232,7 +232,7 @@
           <input
             type="email"
             name=""
-            placeholder="Enter Full Name"
+            placeholder="Enter Email ID"
             class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
             id=""
           >
@@ -264,13 +264,14 @@
         <div
           class="flex flex-row items-center justify-between p-5 bg-white border-t border-gray-200 rounded-bl-lg rounded-br-lg"
         >
-          <button class="font-semibold text-gray-600">Cancel</button>
-          <button class="px-4 py-2 text-white font-semibold bg-blue-500 rounded">
+          <button v-on:click="toggleModal()" class="font-semibold text-gray-600">Cancel</button>
+          <button v-on:click="toggleModal()" class="px-4 py-2 text-white font-semibold bg-blue-500 rounded">
             Save
           </button>
         </div>
       </div>
     </div>
+    <div v-if="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
 </body>
 
 </template>
@@ -278,6 +279,17 @@
 <script>
 export default {
    layout:"admin",
+    
+    data() {
+    return {
+      showModal: false
+    }
+  },
+  methods:{
+       toggleModal: function(){
+      this.showModal = !this.showModal;
+    },
+  }
 
 }
 </script>
