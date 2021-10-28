@@ -65,7 +65,7 @@
 
           <li>
             <nuxt-link
-              to="/training"
+              to="#"
               class="text-md text-purple-600 hover:text-purple-900"
               >Training<i class="ml-2 fas fa-caret-down"></i
             >
@@ -73,7 +73,7 @@
 
             <ul class="sub-menu">
               <li>
-                <nuxt-link to="training/onlinetraining"
+                <nuxt-link to="/training"
                   >eKatering Online Training</nuxt-link
                 >
               </li>
@@ -98,7 +98,7 @@
 
           <li>
             <nuxt-link
-              to="/consultations"
+              to="#"
               class="text-md text-purple-600 hover:text-purple-900"
               >Consultations
               <i class="fas fa-caret-down"></i

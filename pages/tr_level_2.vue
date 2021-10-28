@@ -2,7 +2,7 @@
 <div>
   <section class="bgcolor">
       
-      <TBanner/>
+      <TBanner title="Online Training Level 2"/>
       <Level2/>
       <Passion/>
     </section>

@@ -14,7 +14,7 @@
                   <div class="">
                    <img class="relative mx-auto rounded-xl h-16 w-full z-10"  src="@/assets/apple-store.png"/>
                   </div>
-                  <div>
+                  <div class="ml-2">
                    <img class="relative mx-auto rounded-xl h-16 w-full z-10"  src="@/assets/play-store.png"/>
                     </div>
                 </div>

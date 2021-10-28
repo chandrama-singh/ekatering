@@ -2,7 +2,7 @@
   <div>
   <section class="bgcolor">
       
-      <TBanner/>
+      <TBanner title="Features"/>
       <Features/>
       <Passion/>
     </section>
