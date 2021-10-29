@@ -64,7 +64,7 @@
 				</div>
 			</div> -->
 			<div>
-				<button @click="onRegister" class="w-full flex justify-center bg-indigo-500 text-gray-100 p-4  rounded-lg tracking-wide
+				<button @click="onRegister()" class="w-full flex justify-center bg-indigo-500 text-gray-100 p-4  rounded-lg tracking-wide
                                 font-semibold  focus:outline-none focus:shadow-outline hover:bg-indigo-600 shadow-lg cursor-pointer transition ease-in duration-300">
                     Sign Up
                 </button>

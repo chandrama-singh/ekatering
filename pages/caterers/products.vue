@@ -36,12 +36,12 @@
                           Products
                         </div>
                         <!--------------------------Categories--------------------------------->
-                        <div class="px-2" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
-                          Products
+                        <div class="px-2" v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
+                          Categories
                         </div>
                         <!--------------------------Discount--------------------------------->
-                        <div class="px-2" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
-                          Products
+                        <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
+                          Discount
                         </div>
                     </div>
                     <div class="w-full px-5 py-3 max-h-screen overflow-y-auto">
@@ -50,7 +50,13 @@
                           Products
                         </div>
                         <!--------------------------Categories--------------------------------->
+                        <div class="px-2" v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
+                          Categories
+                        </div>
                         <!--------------------------Discount--------------------------------->
+                        <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
+                          Discount
+                        </div>
                     </div>
                 </div>
 
@@ -63,6 +69,17 @@
 <script>
 export default {
   layout: "user",
+
+  data() {
+    return {
+      openTab: 1
+    }
+  },
+  methods: {
+    toggleTabs: function(tabNumber){
+      this.openTab = tabNumber
+    }
+  }
 };
 </script>
 
