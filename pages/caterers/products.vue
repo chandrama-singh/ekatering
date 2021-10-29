@@ -30,14 +30,14 @@
                 
 
                 <div class="w-full md:w-4/5 max-h-screen">
-                    <div class="top flex items-center px-5 h-16 bg-purple-400 text-white text-2xl">
+                    <div class="top flex items-center px-5 h-16 bg-gray-700 text-white text-2xl">
                         <!--------------------------Products--------------------------------->
                         <div class="px-2 flex-1" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
                           <span>New Category</span>
                           <span class="float-right">
-                           <button class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <!-- <button class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          Setting
-        </button>
+        </button> -->
                            <button class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          + New Product
         </button></span>
@@ -74,17 +74,17 @@
       <table class="w-full">
         <thead>
           <tr class="text-md font-semibold tracking-wide text-left text-white bg-gray-800  border-b border-gray-600">
+            <th class="px-4 py-2">Product ID</th>
             <th class="px-4 py-2">Name</th>
             <th class="px-4 py-2">Status</th>
             <th class="px-4 py-2">Price</th>
-            <th class="px-4 py-2">Product Type</th>
-            <th class="px-4 py-2">Modiefy</th>
-            <th class="px-4 py-2">Published</th>
+            <!-- <th class="px-4 py-2">Product Type</th> -->
             <th class="px-4 py-2">Action</th>
           </tr>
         </thead>
         <tbody class="bg-white">
            <tr class="text-gray-700">
+              <td class="px-4 py-3 text-ms font-semibold border">22</td>
             <td class="px-4 py-3 border">
               <div class="flex items-center text-sm">
                 <div class="relative w-8 h-8 mr-3 rounded-full md:block">
@@ -100,21 +100,17 @@
             <td class="px-4 py-3 text-xs border">
               <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> Acceptable </span>
             </td>
-            <td class="px-4 py-3 text-ms font-semibold border">22</td>
+           
             <td class="px-4 py-3 text-sm border">
               Acceptable 
             </td>
+           
             <td class="px-4 py-3 text-sm border">
-               Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               
+               <nuxt-link to="">Edit</nuxt-link>
             </td>
           </tr>
           <tr class="text-gray-700">
+             <td class="px-4 py-3 text-ms font-semibold border">22</td>
             <td class="px-4 py-3 border">
               <div class="flex items-center text-sm">
                 <div class="relative w-8 h-8 mr-3 rounded-full md:block">
@@ -130,21 +126,14 @@
             <td class="px-4 py-3 text-xs border">
               <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> Acceptable </span>
             </td>
-            <td class="px-4 py-3 text-ms font-semibold border">22</td>
+             <td class="px-4 py-3 text-ms font-semibold border">22</td>
+           
             <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               
+               <nuxt-link to="">Edit</nuxt-link>
             </td>
           </tr>
           <tr class="text-gray-700">
+             <td class="px-4 py-3 text-ms font-semibold border">22</td>
             <td class="px-4 py-3 border">
               <div class="flex items-center text-sm">
                 <div class="relative w-8 h-8 mr-3 rounded-full md:block">
@@ -160,21 +149,14 @@
             <td class="px-4 py-3 text-xs border">
               <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> Acceptable </span>
             </td>
-            <td class="px-4 py-3 text-ms font-semibold border">22</td>
+             <td class="px-4 py-3 text-ms font-semibold border">22</td>
+           
             <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               
+               <nuxt-link to="">Edit</nuxt-link>
             </td>
           </tr>
-         <tr class="text-gray-700">
+           <tr class="text-gray-700">
+             <td class="px-4 py-3 text-ms font-semibold border">22</td>
             <td class="px-4 py-3 border">
               <div class="flex items-center text-sm">
                 <div class="relative w-8 h-8 mr-3 rounded-full md:block">
@@ -190,21 +172,12 @@
             <td class="px-4 py-3 text-xs border">
               <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm"> Acceptable </span>
             </td>
-            <td class="px-4 py-3 text-ms font-semibold border">22</td>
+             <td class="px-4 py-3 text-ms font-semibold border">22</td>
+           
             <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-              Acceptable 
-            </td>
-            <td class="px-4 py-3 text-sm border">
-               
+               <nuxt-link to="">Edit</nuxt-link>
             </td>
           </tr>
-          
         </tbody>
       </table>
     </div>
