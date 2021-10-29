@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav style="height: 58px;" aria-label="top bar" class="flex-none flex justify-between border-b bg-white">
+    <nav style="height: 58px;" aria-label="top bar" class="flex-none flex justify-between border-b bg-gray-300">
       <div class="flex items-center">
         <div class="flex items-center md:hidden">
           <button @click="openClose" class="text-gray-800 focus:outline-none md:hidden ">
