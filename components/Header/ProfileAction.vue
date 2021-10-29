@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="user">
     <button title="user" v-click-outside="closeDropdown" @click="isOpen = !isOpen" class="h-full w-full rounded-full border focus:outline-none focus:shadow-outline">
     <img v-if="user.photo" class="h-10 w-10 rounded-full mx-auto" :src="user.photo" />
     <img v-else class="h-10 w-10 rounded-full mx-auto" src="/profile.jpg" />

@@ -1,5 +1,5 @@
 <template>
-      <div class="flex items-center justify-start">
+      <div v-if="user" class="flex items-center justify-start">
           <img v-if="user.photo"  class="w-10 rounded-full my-2" :src="user.photo" alt="user-photo" />
           <img  v-else class="w-10 rounded-full my-2" src="/user_avatar.png" alt="" />
           <div class="px-4">

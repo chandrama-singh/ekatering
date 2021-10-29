@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white mb-6 p-6 w-full justify-center items-center overflow-hidden rounded border-1 border-gray-600 shadow-sm">
+  <div v-if="user" class="bg-white mb-6 p-6 w-full justify-center items-center overflow-hidden rounded border-1 border-gray-600 shadow-sm">
     <div class="relative shadow mx-auto mt-6 h-48 w-48 -my-12 border-white rounded-full overflow-hidden border-4">
       <input type="file" ref="profile" accept="image/*" v-show="false" @change="previewProfile" />
       <img v-if="user.photo" class="object-cover w-full h-full" :src="user.photo" @click="selectProfile" />
