@@ -9,8 +9,6 @@ export const GET_CONFIG = graphql`
         websiteUrl
         description
         logo
-        dashboardPic
-        testimonials
     }
   }
 `;
@@ -23,6 +21,19 @@ mutation Mutation($data: UserInput!) {
         id
         username
         email
+        first_name
+        last_name
+        email
+        photo
+        bio
+        facebook
+        instagram
+        twitter
+        mobile
+        role
+        isVerified
+        createdAt
+        updatedAt
       }
     }
   }
@@ -55,6 +66,19 @@ mutation LoginUserMutation($password: String!, $email: String!) {
         id
         username
         email
+        first_name
+        last_name
+        email
+        photo
+        bio
+        facebook
+        instagram
+        twitter
+        mobile
+        role
+        isVerified
+        createdAt
+        updatedAt
       }
     }
   }
@@ -80,6 +104,29 @@ mutation LoginUserMutation($password: String!, $email: String!) {
   }
 }
 */
+
+export const GET_ME = graphql`
+  query me {
+    me {
+      id
+        username
+        email
+        first_name
+        last_name
+        email
+        photo
+        bio
+        facebook
+        instagram
+        twitter
+        mobile
+        role
+        isVerified
+        createdAt
+        updatedAt
+    }
+  }
+`;
 
 
 export const VERIFY_USER = graphql`
@@ -125,15 +172,6 @@ mutation ResetUserPasswordMutation($reqId: String!, $password: String!) {
 }
 */
 
-export const GET_ME = graphql`
-  query me {
-    me {
-      id
-      username
-      email
-    }
-  }
-`;
 
 
 

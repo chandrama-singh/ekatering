@@ -1,10 +1,8 @@
 
-import { GET_ME} from '~/graphql/query'
+import { GET_ME, GET_CONFIG } from '~/graphql/query'
 
 export const state = () => ({
-  user: {
-    role: "user"
-  },
+  user:null,
 
   isAuthenticated: false,
   isOpen: false,
@@ -24,12 +22,12 @@ export const mutations = {
     state.isAuthenticated = true;
     state.user = param.user;
 
-    // if(param.isLogin){
-    //   this.$router.push({path: `/${param.user.role}/dashboard`})
-    //   // this.$router.push('/')
-    // }else{
-    //   this.$router.push('/#packages')
-    // }
+    if(param.isLogin){
+      this.$router.push({path: `/${param.user.role}/dashboard`})
+      // this.$router.push('/')
+    }else{
+      this.$router.push('/')
+    }
   },
 
   setSetting(state, setting) {
@@ -54,34 +52,50 @@ export const mutations = {
 
 }
 
-// export const actions = {
-//   async nuxtServerInit({ commit }, context) {
-//     let client = context.app.apolloProvider.defaultClient
+export const actions = {
+  async nuxtServerInit({ commit }, context) {
+    let client = context.app.apolloProvider.defaultClient
+    try {
+      const { data } = await client.query({ query: GET_CONFIG });
+      console.log("setting in store", data);
+      commit("setSetting", data.getConfig);
+    } catch (error) {
+      console.log(error);
+    }
 
-//     const token = this.$apolloHelpers.getToken();
-//     if (token) {
-//       try {
-//         const { data } = await client.query({ query: GET_ME })
-//         commit('setUser', {user: data.me, isLogin: false})
-//       } catch (error) {
-//         commit('logoutUser')
-//         console.log(error);
-//       }
-//     }
-//     else {
-//       commit('logoutUser')
-//     }
-//   },
+    const token = this.$apolloHelpers.getToken();
+    if (token) {
+      try {
+        const { data } = await client.query({ query: GET_ME })
+        console.log("getme in store", data);
+        commit('setUser', {user: data.me, isLogin: false})
+      } catch (error) {
+        commit('logoutUser')
+        console.log(error);
+      }
+    }
+    else {
+      commit('logoutUser')
+    }
+  },
 
-//   async loadMe({ commit }) {
-//     let client = this.app.apolloProvider.defaultClient
-//     try {
-//       const { data } = await client.query({ query: GET_ME })
-//       commit('setUser', {user: data.me, isLogin: false})
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   },
+  async loadMe({ commit }) {
+    let client = this.app.apolloProvider.defaultClient
+    try {
+      const { data } = await client.query({ query: GET_ME })
+      commit('setUser', {user: data.me, isLogin: false})
+    } catch (error) {
+      console.log(error);
+    }
+  },
 
-
-// }
+  async loadSetting({ commit }) {
+    let client = this.app.apolloProvider.defaultClient
+    try {
+      const { data } = await client.query({ query: GET_CONFIG });
+      commit("setSetting", data.getConfig);
+    } catch (error) {
+      console.log(error);
+    }
+  },
+}

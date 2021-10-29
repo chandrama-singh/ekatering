@@ -94,7 +94,7 @@ export default {
     authenticationType: 'Bearer',
 
     // Token name for the cookie which will be set in case of authentication
-    tokenName: 'katering-token',
+    tokenName: 'apollo-token',
 
     // [deprecated] Enable the graphql-tag/loader to parse *.graphql/*.graphql files
     includeNodeModules: true,
@@ -129,9 +129,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-
-  ],
+  modules: ['@nuxtjs/apollo'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
