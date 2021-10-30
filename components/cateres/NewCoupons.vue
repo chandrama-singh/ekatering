@@ -6,7 +6,7 @@
                 <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
                     <div class="bg-gray-300 w-full h-full sm:flex md:block">
                         <button id="button-1" v-on:click="toggleTabs(1)" v-bind:class="{' bg-purple-200': openTab !== 1, 'text-white bg-purple-600': openTab === 1}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
-                            <span>New Category</span>
+                            <span>New Discount</span>
                         </button>
                         <!-- <button id="button-2" v-on:click="toggleTabs(2)" v-bind:class="{' bg-purple-200': openTab !== 2, 'text-white bg-purple-600': openTab === 2}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
                             <span><i class="fa fa-envelope w-6"></i>New Category</span>
@@ -31,14 +31,14 @@
             <div class="w-full px-4">
               <div class="relative flex flex-col min-w-0 break-words w-full mb-6 ">
                 <div class="flex-auto">
-                  <h4 class="text-xl font-semibold">Basic Info</h4>
+                  <h4 class="text-xl font-semibold">New Coupons</h4>
                  
                   <div class="relative w-full mb-3 mt-8">
-                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" for="full-name">Name</label>
+                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" for="full-name">Discount Code</label>
                     <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Full Name">
                   </div>
                   <div class="relative w-full mb-3">
-                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" for="email">Slug</label>
+                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" for="email">Discount Percentage</label>
                     <input type="email" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Email">
                   </div>
                   

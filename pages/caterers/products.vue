@@ -127,8 +127,8 @@
                         <div class="px-2 flex-1 " v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
                           <span>Categories</span>
                            <span class="float-right">
-                           <button class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
-         Setting
+                           <button @click="isShow = !isShow" class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+         Back
         </button>
                            <button  @click="isShow = !isShow" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          + New Categories
@@ -138,10 +138,10 @@
                         <div class="px-2 flex-1 " v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
                           <span>Discount</span>
                            <span class="float-right">
-                           <button class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
-         Setting
+                           <button  @click="isShow1 = !isShow1" class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+         Back
         </button>
-                           <button class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <button   @click="isShow1 = !isShow1" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          + New Discount
         </button></span>
                         </div>
@@ -272,8 +272,8 @@
                         </div>
                         <!--------------------------Discount--------------------------------->
                         <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                          Discount 222
-                           
+                         <span v-show="!isShow1" class="CategoryCard">Add New Coupons</span>
+                          <NewCoupons v-show="isShow1" class="CategoryPage"/>
                         </div>
                     </div>
                 </div>
@@ -286,11 +286,13 @@
 
 <script>
 import NewCategory from '@/components/cateres/NewCategory.vue'
+import NewCoupons from '@/components/cateres/NewCoupons.vue'
 export default {
   layout: "user",
 
   components:{
     NewCategory,
+    NewCoupons
   },
 
   data() {
@@ -298,13 +300,12 @@ export default {
       openTab: 1,
        showModal: false,
         isShow: false,
+        isShow1: false,
         
     }
   },
   methods: {
-    AddCategories(){
-      this.$router.push('/caterers/new-category/');
-    },
+    
     toggleTabs: function(tabNumber){
       this.openTab = tabNumber
     },
