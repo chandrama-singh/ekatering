@@ -277,7 +277,7 @@
                         </div>
                         <!--------------------------Discount--------------------------------->
                         <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                          <div class="item-center text-center py-10 justify-items-center" v-show1="!isShow1" >
+                          <div class="item-center text-center py-10 justify-items-center" v-show="!isShow1" >
                             <center><div class="border border-gray-800 max-w-xl items-center py-10">
                             <span class="text-lg font-semibold">No Discount Exist</span><br/>
                           <span>Create discount code your customers can use at checkout</span>

@@ -53,11 +53,11 @@
             title: 'Profile',
             icon: 'fa fa-cogs',
           },
-          {
-            href: '/caterers/add-category',
-            title: 'Assign Category',
-            icon: 'fa fa-cogs',
-          },
+          // {
+          //   href: '/caterers/add-category',
+          //   title: 'Assign Category',
+          //   icon: 'fa fa-cogs',
+          // },
           {
             href: '/caterers/payments',
             title: 'Payments',
@@ -66,39 +66,39 @@
           {
             href: '/caterers/subscription',
             title: 'Subscription',
-            icon: 'fa fa-rupee-sign'
+             icon: 'fas fa-user-shield',
           },
           {
             title: 'Products',
             href: '/caterers/products',
-            icon: 'fa fa-graduation-cap',
+           icon: 'fas fa-chalkboard-teacher',
             
           },
 
-{
-            title: 'Services',
-            icon: 'fa fa-graduation-cap',
-            child: [{
-                href: '#',
-                title: 'Add Service',
-                icon: 'fa fa-graduation-cap'
-              },
-              {
-                href: '#',
-                title: 'List Services',
-                icon: 'fa fa-graduation-cap'
-              },
-              {
-                href: '#',
-                title: 'Manage Categories',
-                icon: 'fa fa-graduation-cap'
-              },
-            ]
-          },
+// {
+//             title: 'Services',
+//             icon: 'fa fa-graduation-cap',
+//             child: [{
+//                 href: '#',
+//                 title: 'Add Service',
+//                 icon: 'fa fa-graduation-cap'
+//               },
+//               {
+//                 href: '#',
+//                 title: 'List Services',
+//                 icon: 'fa fa-graduation-cap'
+//               },
+//               {
+//                 href: '#',
+//                 title: 'Manage Categories',
+//                 icon: 'fa fa-graduation-cap'
+//               },
+//             ]
+//           },
          {
            href: '/caterers/orders',
            title: 'Orders',
-           icon: 'fa fa-graduation-cap'
+           icon: 'fas fa-hands-helping',
          },
 
          
