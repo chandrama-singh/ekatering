@@ -1,4 +1,3 @@
-@@ -0,0 +1,146 @@
 <template>
   <div id="demo" :class="[{'collapsed' : collapsed}, {'onmobile' : isOnMobile}]">
     <UserHeader />
