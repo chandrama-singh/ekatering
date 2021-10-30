@@ -130,7 +130,7 @@
                            <button class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          Setting
         </button>
-                           <button class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <button  @click="isShow = !isShow" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          + New Categories
         </button></span>
                         </div>
@@ -267,11 +267,13 @@
                         </div>
                         <!--------------------------Categories--------------------------------->
                         <div class="" v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
-                           <NewCategory class=""/>
+                          <span v-show="!isShow" class="CategoryCard">Add New Categories</span>
+                          <NewCategory v-show="isShow" class="CategoryPage"/>
                         </div>
                         <!--------------------------Discount--------------------------------->
                         <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                          Discount
+                          Discount 222
+                           
                         </div>
                     </div>
                 </div>
@@ -294,10 +296,15 @@ export default {
   data() {
     return {
       openTab: 1,
-       showModal: false
+       showModal: false,
+        isShow: false,
+        
     }
   },
   methods: {
+    AddCategories(){
+      this.$router.push('/caterers/new-category/');
+    },
     toggleTabs: function(tabNumber){
       this.openTab = tabNumber
     },

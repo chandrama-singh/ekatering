@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="isShow">
     <div class="w-full flex justify-center max-h-screen">
         <div class="w-full">
             <div class="w-full flex flex-col md:flex-row  overflow-hidden shadow-xl"> 
@@ -25,7 +25,7 @@
                     <div class="w-full px-5 py-3 max-h-screen overflow-y-auto">
                       <!--------------------------Products--------------------------------->
                         <div class="" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
-                          <section class="container-fluid mx-auto font-mono">
+                          <section class="container-fluid mx-auto font-mono" >
   <div class="w-full mb-8 overflow-hidden ">
     <div class="w-full overflow-y-auto">
             <div class="w-full px-4">
@@ -43,6 +43,9 @@
                   </div>
                   
                   <div class="text-center mt-6">
+                     <button v-show="!isShow" class="bg-red-800 text-white active:bg-red-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                      Back
+                    </button>
                     <button class="bg-blue-800 text-white active:bg-blue-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                       Create
                     </button>
@@ -55,13 +58,7 @@
 </section>
                         </div>
                         <!--------------------------Categories--------------------------------->
-                        <div class="px-2" v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
-                           Documents
-                        </div>
-                        <!--------------------------Discount--------------------------------->
-                        <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                          Discount
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -79,13 +76,18 @@ export default {
  
   data() {
     return {
-      openTab: 1
+      openTab: 1,
+      isShow:True,
+      
     }
   },
   methods: {
     toggleTabs: function(tabNumber){
       this.openTab = tabNumber
-    }
+    },
+    GoBack(){
+      this.$rounter.push('/caterers/products');
+    },
   }
 };
 </script>
