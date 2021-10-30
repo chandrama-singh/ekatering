@@ -127,10 +127,10 @@
                         <div class="px-2 flex-1 " v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
                           <span>Categories</span>
                            <span class="float-right">
-                           <button @click="isShow = !isShow" class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <button v-show="isShow" @click="isShow = !isShow" class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          Back
         </button>
-                           <button  @click="isShow = !isShow" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <button v-show="!isShow"  @click="isShow = !isShow" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          + New Categories
         </button></span>
                         </div>
@@ -138,10 +138,10 @@
                         <div class="px-2 flex-1 " v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
                           <span>Discount</span>
                            <span class="float-right">
-                           <button  @click="isShow1 = !isShow1" class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <button v-show="isShow1"  @click="isShow1 = !isShow1" class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          Back
         </button>
-                           <button   @click="isShow1 = !isShow1" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                           <button v-show="!isShow1"  @click="isShow1 = !isShow1" class="bg-pink-600 text-white float-right active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          + New Discount
         </button></span>
                         </div>

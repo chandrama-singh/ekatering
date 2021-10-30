@@ -70,23 +70,9 @@
           },
           {
             title: 'Products',
+            href: '/caterers/products',
             icon: 'fa fa-graduation-cap',
-            child: [{
-                href: '/caterers/addproducts',
-                title: 'Add Product',
-                icon: 'fa fa-graduation-cap'
-              },
-              {
-                href: '/caterers/products',
-                title: 'List Products',
-                icon: 'fa fa-graduation-cap'
-              },
-               {
-                href: '#',
-                title: 'Manage Categories',
-                icon: 'fa fa-graduation-cap'
-              },
-            ]
+            
           },
 
 {

@@ -38,8 +38,9 @@
                     <input type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Full Name">
                   </div>
                   <div class="relative w-full mb-3">
-                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" for="email">Slug</label>
-                    <input type="email" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Email">
+                    <label class="block  text-blueGray-600 text-xs font-bold mb-2" for="email">Description</label>
+                    <textarea type="text" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Description">
+                    </textarea>
                   </div>
                   
                   <div class="text-center mt-6">
