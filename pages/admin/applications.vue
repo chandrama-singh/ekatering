@@ -67,7 +67,7 @@
                                     <p class="text-gray-900 whitespace-no-wrap">Jan 21, 2020</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <span
+                                    <span @click.stop.prevent="ViewCateres"
                                         class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
                                         <span aria-hidden
                                             class="absolute inset-0 bg-gray-400 cursor-pointer opacity-50 rounded-full"></span>
@@ -288,6 +288,16 @@
 export default {
    layout:"admin",
 
+    data(){
+        return{
+
+        }
+    },
+    methods:{
+        ViewCateres(){
+            this.$router.push('/admin/viewcateres');
+        }
+    }
 }
 </script>
 
