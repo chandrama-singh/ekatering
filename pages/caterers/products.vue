@@ -33,7 +33,7 @@
                     <div class="top flex items-center px-5 h-16 bg-gray-700 text-white text-2xl">
                         <!--------------------------Products--------------------------------->
                         <div class="px-2 flex-1" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
-                          <span>New Category</span>
+                          <span>Product List</span>
                           <span class="float-right">
                            <!-- <button class="bg-blue-600 text-white  active:bg-blue-600 font-bold  text-sm px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
          Setting
@@ -75,14 +75,14 @@
             id=""
           >
 
-<!-- <p class="mb-2 font-semibold text-gray-700">Email Id</p>
+<p class="mb-2 font-semibold text-gray-700">Product Category</p>
           <input
-            type="email"
+            type="text"
             name=""
-            placeholder="Enter Email ID"
+            placeholder="Product Category"
             class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
             id=""
-          > -->
+          >
 
           <div class="flex flex-col sm:flex-row items-center mb-5 sm:space-x-5">
             <div class="w-full sm:w-1/2">
@@ -146,7 +146,7 @@
         </button></span>
                         </div>
                     </div>
-                    <div class="w-full max-h-screen overflow-y-auto">
+                    <div class="w-full max-h-screen overflow-y-auto bg-purple-50">
                       <!--------------------------Products--------------------------------->
                         <div class="" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
                           <section class="container-fluid mx-auto font-mono">
@@ -157,7 +157,7 @@
           <tr class="text-md font-semibold tracking-wide text-left text-white bg-gray-800  border-b border-gray-600">
             <th class="px-4 py-2">Product ID</th>
             <th class="px-4 py-2">Name</th>
-            <th class="px-4 py-2">Status</th>
+            <th class="px-4 py-2">Category</th>
             <th class="px-4 py-2">Price</th>
             <!-- <th class="px-4 py-2">Product Type</th> -->
             <th class="px-4 py-2">Action</th>
@@ -267,12 +267,22 @@
                         </div>
                         <!--------------------------Categories--------------------------------->
                         <div class="" v-bind:class="{'hidden': openTab !== 2, 'block': openTab === 2}">
-                          <span v-show="!isShow" class="CategoryCard">Add New Categories</span>
-                          <NewCategory v-show="isShow" class="CategoryPage"/>
+                          <div class="item-center text-center py-10 justify-items-center" v-show="!isShow" >
+                            <center><div class="border border-gray-800 max-w-xl items-center py-10">
+                            <span class="text-lg font-semibold">No Categories Exist</span><br/>
+                          <span>Categories are used  to organize your products</span>
+                            </div></center>
+                          </div>
+                          <NewCategory v-show="isShow"/>
                         </div>
                         <!--------------------------Discount--------------------------------->
                         <div class="px-2" v-bind:class="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                         <span v-show="!isShow1" class="CategoryCard">Add New Coupons</span>
+                          <div class="item-center text-center py-10 justify-items-center" v-show1="!isShow1" >
+                            <center><div class="border border-gray-800 max-w-xl items-center py-10">
+                            <span class="text-lg font-semibold">No Discount Exist</span><br/>
+                          <span>Create discount code your customers can use at checkout</span>
+                            </div></center>
+                          </div>
                           <NewCoupons v-show="isShow1" class="CategoryPage"/>
                         </div>
                     </div>
