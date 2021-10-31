@@ -66,6 +66,47 @@
           </svg>
         </div>
         <div class="flex flex-col px-6 py-5 bg-gray-50 text-sm">
+          <p class="mb-2 font-semibold text-gray-700">Product Banner</p>
+          <div class="flex items-center py-3">
+             
+                    <div
+                      class="
+                        w-96
+                        h-24
+                        mr-4
+                        flex-none
+                        rounded-xl
+                        border
+                        overflow-hidden
+                      "
+                    >
+                      <img
+                        class="w-96 h-24 mr-4 object-cover"
+                        src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                        alt="Avatar Upload"
+                      />
+                    </div>
+                    <label class="cursor-pointer">
+                      <span
+                        class="
+                          focus:outline-none
+                          text-white text-sm
+                          py-2
+                          px-4
+                          rounded-full
+                          bg-green-400
+                          hover:bg-green-500 hover:shadow-lg
+                        "
+                        >Browse</span
+                      >
+                      <input
+                        type="file"
+                        class="hidden"
+                        :multiple="multiple"
+                        :accept="accept"
+                      />
+                    </label>
+                  </div>
           <p class="mb-2 font-semibold text-gray-700">Product Name</p>
           <input
             type="text"
