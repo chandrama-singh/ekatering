@@ -72,7 +72,7 @@
                     <div
                       class="
                         w-96
-                        h-24
+                        h-16
                         mr-4
                         flex-none
                         rounded-xl
@@ -81,7 +81,7 @@
                       "
                     >
                       <img
-                        class="w-96 h-24 mr-4 object-cover"
+                        class="w-96 h-16 mr-4 object-cover"
                         src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                         alt="Avatar Upload"
                       />
@@ -112,7 +112,7 @@
             type="text"
             name=""
             placeholder="Enter Full Name"
-            class="p-4 mb-5 bg-white border border-gray-200 rounded shadow-sm"
+            class="p-3 mb-4 bg-white border border-gray-200 rounded shadow-sm"
             id=""
           >
 
@@ -121,7 +121,7 @@
             type="text"
             name=""
             placeholder="Product Category"
-            class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
+            class="p-3 mb-4 bg-white border border-gray-200 rounded shadow-sm"
             id=""
           >
 
@@ -132,7 +132,7 @@
                 type="text"
                 name=""
                 placeholder="Product ID"
-                class="w-full p-4 bg-white border border-gray-200 rounded shadow-sm appearance-none"
+                class="w-full p-3 bg-white border border-gray-200 rounded shadow-sm appearance-none"
                 id=""
               >
             </div>
@@ -142,7 +142,7 @@
                 type="text"
                 name=""
                 placeholder="Product Price"
-                class="w-full p-4 bg-white border border-gray-200 rounded shadow-sm appearance-none"
+                class="w-full p-3 bg-white border border-gray-200 rounded shadow-sm appearance-none"
                 id=""
               >
             
