@@ -3,6 +3,7 @@
 
       <TitleBanner/>
       <AboutUs/>
+      <Subscribe/>
 
   </div>
 </template>
@@ -10,6 +11,7 @@
 <script>
 import TitleBanner from '../components/about/TitleBanner.vue'
 import AboutUs from '../components/about/AboutUs.vue'
+import Subscribe from '../components/Subscribe.vue'
 import Card from '../components/about/Card.vue'
 export default {
     name: 'aboutus',
@@ -19,6 +21,7 @@ export default {
         TitleBanner,
         Card,
         AboutUs,
+        Subscribe,
 
     }
 

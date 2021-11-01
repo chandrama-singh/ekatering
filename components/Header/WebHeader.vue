@@ -32,36 +32,9 @@
             <nuxt-link
               to="/about"
               class="text-md text-purple-600 hover:text-purple-900"
-              >About</nuxt-link
+              >About Us</nuxt-link
             >
           </li>
-
-
-
-<li>
-          
-             
-              Dash
-            
-
-            <ul class="sub-menu">
-              <li>
-                <nuxt-link to="admin/dashboard"
-                  >Admin</nuxt-link
-                >
-              </li>
-              <li>
-                <nuxt-link to="caterers/dashboard"
-                  >User</nuxt-link
-                >
-              </li>
-             
-            </ul>
-          </li>
-
-
-
-
 
           <li>
             <nuxt-link
@@ -91,10 +64,6 @@
               </li>
             </ul>
           </li>
-
-
-
-
 
           <li>
             <nuxt-link
@@ -138,6 +107,13 @@
               to="/features"
               class="text-md text-purple-600 hover:text-purple-900"
               >Features</nuxt-link
+            >
+          </li>
+           <li>
+            <nuxt-link
+              to="/faq"
+              class="text-md text-purple-600 hover:text-purple-900"
+              >FAQs</nuxt-link
             >
           </li>
           <li>
