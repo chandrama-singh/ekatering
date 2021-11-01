@@ -75,11 +75,11 @@
         <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">
           Registration advise and completion with a local authority
         </h2>
-        <button
+        <Nuxt-Link to="/localauth-form/localauthform"><button
           class="inline-block mt-6 py-4 px-16 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
         >
           Purchase for £ 20.00
-        </button>
+        </button></Nuxt-Link>
       </div>
     </section>
      <!---------------------------------------------------------------------------->
