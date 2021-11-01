@@ -1,7 +1,6 @@
 <template>
 <div>
   <section class="bgcolor">
-      
       <TBanner title="AUTHORITY FOOD"/>
       <AuthorityFood/>
       <Passion/>

@@ -5,14 +5,17 @@
         Food Safety for Caterers and Private Chefs - Level 2
       </h2>
       <p class="mb-4 text-gray-400 leading-relaxed">
-        Welcome to eKatering online training. This course offers all caterers,
-        including private chefs the knowledge to ensure that they store,
-        prepare, cook and deliver or serve food safely. It also equps the
-        trainee with adequate food safety knowledge to a level appropriate to
-        their work activity and as such gives you the confidence in running a
-        food business. The main advantage of completing the course online is
-        that you are in control of your learning and you can go back and review
-        any module at any time.
+        Welcome to eKatering online training.
+      </p>
+      <p class="mb-4 text-gray-400 leading-relaxed">
+        Our <b>online food safety course</b> offers all caterers, including
+        private chefs the knowledge to ensure that they store, prepare, cook and
+        deliver or serve food safely. It also equips the trainee with adequate
+        food safety knowledge to a level appropriate for their work activity.As
+        such, it gives you the confidence you need to run a food business. The
+        main advantage of completing the course online is that you are in
+        control of your learning and you can go back and review any module at
+        any time within <b>1 month</b> of purchasing the course.
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
@@ -23,7 +26,7 @@
           <thead class="flex text-gray-800 w-full font-bold">
             <tr class="flex w-full mb-2">
               <th class="p-4 w-1/2">There are 7 modules in total, this:</th>
-              <th class="p-4 w-1/2">(Duration in hr/mins)</th>
+              <!-- <th class="p-4 w-1/2">(Duration in hr/mins)</th> -->
             </tr>
           </thead>
           <!-- Remove the nasty inline CSS fixed height on production and replace it with a CSS class — this is just for demonstration purposes! -->
@@ -31,44 +34,38 @@
             class=" flex flex-col items-center justify-between overflow-hidden w-full text-gray-400"
           >
             <tr class="flex w-full">
-              <td class="p-4 w-1/2">Module 1 - Food Safety</td>
-              <td class="p-4 w-1/2 text-black">4:37</td>
+              <td class="p-2 w-1/2"><b>Module 1</b> - Food Safety</td>
+              <!-- <td class="p-4 w-1/2 text-black">4:37</td> -->
             </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">Module 2 - General Food Hygiene</td>
-              <td class="p-4 w-1/2 text-black">5:39</td>
+            <tr class="flex w-full">
+              <td class="p-2 w-1/2"><b>Module 2</b> - General Food Hygiene</td>
+              <!-- <td class="p-4 w-1/2 text-black">5:39</td> -->
             </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">Module 3 - Kitchen Practises</td>
-              <td class="p-4 w-1/2 text-black">15:45</td>
+            <tr class="flex w-full">
+              <td class="pl-2 w-1/2"><b>Module 3</b> - Kitchen Practises</td>
+              <!-- <td class="p-4 w-1/2 text-black">15:45</td> -->
             </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">
-                Module 4 - Food Handlers
+            <tr class="flex w-full">
+              <td class="pl-2 w-1/2"><b>Module 4</b> - Food Handlers</td>
+              <!-- <td class="p-4 w-1/2 text-black">3:22</td> -->
+            </tr>
+            <tr class="flex w-full">
+              <td class="pl-2 w-1/2">
+                <b>Module 5</b> - Cleaning and Disinfection
               </td>
-              <td class="p-4 w-1/2 text-black">3:22</td>
+              <!-- <td class="p-4 w-1/2 text-black">3:49</td> -->
             </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">
-                Module 5 - Cleaning and Disinfection
-              </td>
-              <td class="p-4 w-1/2 text-black">3:49</td>
+            <tr class="flex w-full">
+              <td class="pl-2 w-1/2"><b>Module 6</b> - Food Safety Hazards</td>
+              <!-- <td class="p-4 w-1/2 text-black">9:11</td> -->
             </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">Module 6 - Food Safety Hazards</td>
-              <td class="p-4 w-1/2 text-black">9:11</td>
+            <tr class="flex w-full">
+              <td class="pl-2 w-1/2"><b>Module 7</b> - The Law</td>
+              <!-- <td class="p-4 w-1/2 text-black">4:09</td> -->
             </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">Module 7 - The Law</td>
-              <td class="p-4 w-1/2 text-black">4:09</td>
-            </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">TEST - Multiple choice</td>
-              <td class="p-4 w-1/2 text-black">9:16</td>
-            </tr>
-            <tr class="flex w-full mb-2">
-              <td class="p-4 w-1/2">Total</td>
-              <td class="p-4 w-1/2 text-black">55:8</td>
+            <tr class="flex w-full">
+              <td class="pl-2 w-1/2"><b>TEST</b> - Multiple choice</td>
+              <!-- <td class="p-4 w-1/2 text-black">9:16</td> -->
             </tr>
           </tbody>
         </table>
@@ -79,17 +76,17 @@
             alt=""
           />
         </div>
-      </div>
+      </div><br/>
       <p class="mb-4 text-gray-400 leading-relaxed">
         The course is interactive, practical and allows you to assess your
-        knowlede through the different activities in each module. This will help
-        you retain important information and knowledge required during food
-        preparation. 
+        knowledge through different activities in each module to ensure you
+        retain important information and knowledge required during food
+        preparation.
       </p>
       <p class="mb-4 text-gray-400 leading-relaxed">
-       At the end of the course, you are required to complete a
-        multiple-choice TEST and achieve no less than 85% to receive a PDF
-        certificate, evidencing the completion of the course.
+        At the end of the <b>online food safety courseUK</b>, you are required to
+        complete a multiple-choice TEST and achieve no less than 85% to receive
+        a PDF certificate.
       </p>
     </div>
     <!---------------------------------------------------------------------------->
@@ -107,15 +104,21 @@
         </button>
       </div>
     </section>
-     <!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
     <section class="py-4 px-2">
-        <div class="w-full max-w-5xl mx-auto text-center">
-          <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
-          <!-- <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
+      <div class="w-full max-w-5xl mx-auto text-center">
+        <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
+        <!-- <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
           <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-         <Nuxt-Link to="/contactus"> <button class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Contact Us</button>
-     </Nuxt-Link>   </div>
-      </section>
+        <Nuxt-Link to="/contactus">
+          <button
+            class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
+          >
+            Contact Us
+          </button>
+        </Nuxt-Link>
+      </div>
+    </section>
     <!---------------------------------------------------------------------------->
   </section>
 </template>

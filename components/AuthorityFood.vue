@@ -4,7 +4,7 @@
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Local Authority Food Registration
       </h2>
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class=" text-gray-400 leading-relaxed">
         Before you can trade as a home/event caterer or a private chef, you must
         register with your local authority. Ideally, this should be done at
         least 28 days before trading. If you have already started trading
@@ -17,7 +17,7 @@
       <!-- <h2 class="text-3xl mb-2 font-semibold font-heading">
         Why train with eKatering?
       </h2> -->
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class=" text-gray-400 leading-relaxed">
         You will need to register your home/event and private chef catering
         business if you:
       </p>
@@ -38,7 +38,7 @@
           />
         </div> -->
       </div>
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class="text-gray-400 leading-relaxed font-bold underline">
         You may be fined, imprisoned for up to 2 years, or both if you run a
         food business without registering.
       </p>
@@ -48,7 +48,7 @@
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Registration
       </h2>
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class="text-gray-400 leading-relaxed">
         The service is free. Simply follow the Food Standard Agency (FSA) link
         below and enter your postcode. This will take you directly to your local
         authority registration page. Once on the food registration page,
