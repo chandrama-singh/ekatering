@@ -29,7 +29,7 @@ export default {
   },
   methods:{
     GotoRegisterPage(){
-      this.$router.push("/finalsubmit");
+      this.$router.push("/plans");
     }
   }
 

@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="Legal Advice"/>
+      <TBanner title="LEGAL ADVICE"/>
       <Legal/>
       <Passion/>
     </section>

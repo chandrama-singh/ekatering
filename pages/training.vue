@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="Online Training"/>
+      <TBanner title="ONLINE TRAINING "/>
       <TrainingAbout/>
       <TwhyKetring/>
       <Cost/>

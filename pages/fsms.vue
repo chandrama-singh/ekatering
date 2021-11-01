@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="Food Safety Management System"/>
+      <TBanner title="FOOD SAFETY MANAGEMENT SYSTEM"/>
       <Fsms/>
       <Passion/>
     </section>
