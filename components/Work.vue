@@ -14,8 +14,8 @@
       How It Works
     </h2>
     <p class="text-black text-2xl max-w-full p-4 text-center">
-      Full Suite of Consultations and Training<br />
-      Start Your Learning with our Training and Consultations Services
+      Full Suite of Consultation and Training<br />
+      Start Your Learning with our Training and Consultation Services
     </p>
     <section class="pb-10 relative block bg-blueGray-800">
       <div class="container mx-auto px-4 lg:pt-12 lg:pb-20">
@@ -3852,7 +3852,7 @@
 
             </div>
             <h5 class="text-xl mt-5 font-semibold text-purple-600">
-              Documentated Food Safety Managements System
+              Documentated Food Safety Management System
             </h5>
           </div>
           <div class="w-full lg:w-3/12 px-4 text-center">
@@ -6337,7 +6337,7 @@
                d="m 15540.7,12973.5 729.5,-25.4 29.8,-235.7 -379.7,-98.7 -403.6,179.9 24,179.9" /></g></g></g></g></g></svg>
             </div>
             <h6 class="text-xl mt-5 font-semibold text-purple-600">
-              Virtual / Remote Inspection
+              Virtual Remote Inspection(VRI)
             </h6>
           </div>
           <div class="w-full lg:w-3/12 px-4 text-center">

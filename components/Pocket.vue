@@ -6,8 +6,8 @@
             <div class="w-full lg:w-1/2">
               <div class="py-20 ">
                 <div class="mb-4">
-                  <h2 class="text-4xl mt-3 font-bold font-heading mb-4">Katerers in Your Pocket</h2>
-                  <p class="text-gray-700 leading-relaxed">See menus and photos for nearby katerers and bookmark your favorite places on the go.!</p>
+                  <h2 class="text-4xl mt-3 font-bold font-heading mb-4">eKaterers in Your Pocket</h2>
+                  <p class="text-gray-700 leading-relaxed">See menus and photos for nearby ekaterers and bookmark your favorite home/event caterer and private chef.</p>
                   <p class="text-gray-700 leading-relaxed">Download the eKatering app on your platform........</p>
                 </div>
                 <div class="flex items-start py-4">

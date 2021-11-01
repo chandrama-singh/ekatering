@@ -11,7 +11,7 @@
             <!-- <span class="text-purple-900 text-6xl">eKatering</span> -->
           </div>
           <p class="mb-10 text-white align-justify">
-            Ekatering is a systematic approach to controlling food safety
+            ekatering is a systematic approach to controlling food safety
             hazards within a food business to ensure that food is safe to eat.
           </p>
           <!-- <div>
@@ -153,7 +153,7 @@
       </div>
 
       <p class="text-sm text-gray-200 py-2 text-center">
-        &copy; 2021 <nuxt-link to="/">eKatering Services</nuxt-link>.. All
+        &copy; 2021 <nuxt-link to="/">eKatering Limited</nuxt-link>.. All
         rights reserved.
       </p>
     </div>

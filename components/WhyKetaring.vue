@@ -22,7 +22,7 @@
               and private chef businesses. The only food ordering platform that
               charges 0% commission. Increase visibility and get more customers
               and increase income. Support of your catering business from
-              registration totrading. 
+              registration to trading. 
             </p>
             <br />
             <p class="px-2 text-gray-900 text-justify">

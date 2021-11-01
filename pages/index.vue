@@ -11,9 +11,9 @@
       <Pocket/>
       <Subscribe/>
       <!-- <Features /> -->
-      <FooterContact/>
+      <FooterContact class="mb-10"/>
       <!-- <Servicesview/> -->
-      <Faq/>
+      <!-- <Faq/> -->
 
       
     </div>

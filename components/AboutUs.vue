@@ -50,7 +50,7 @@
               hover:bg-purple-700
               rounded
             "
-            to="/plans"
+            to="/"
             >Get Started</nuxt-link
           >
         </div>
