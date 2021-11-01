@@ -1,11 +1,11 @@
 <template>
   <section>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
       <h2 class="text-3xl mb-10 font-semibold font-heading">
         eKatering Features
       </h2>
-       <h4 class="text-2xl mb-2 mt-6 font-semibold font-heading">
+       <h4 class="text-2xl mb-2 mt-3 font-semibold font-heading">
         eKatering Mobile App
       </h4>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
@@ -13,8 +13,8 @@
       </p> -->
       <div class="flex">
         <ul class="ml-6 text-gray-400 text-justify list-disc">
-          <li>Pay 0% commission on your orders.</li>
-          <li>Get 100% of your orders paid directly into your chosen account.</li>
+          <li>Pay <span class="font-semibold text-xl">0%</span> commission on your orders.</li>
+          <li>Get <span class="font-semibold text-xl">100%</span> of your orders paid directly into your chosen account.</li>
           <li>Be part of a new platform specifically designated for home/event and private chef catering businesses.</li>
           <li>Promote your home/event and private chef catering business.</li>
           <li>Increase your visibility from one recognised platform specifically designed for your home/event and private chef catering business.</li>
@@ -36,26 +36,10 @@
             </div>
     </div>
     <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-       <h4 class="text-2xl mb-2 mt-4 font-semibold font-heading">
-         Why do I need a VRI?
-      </h4>
-      <!-- <p class="mb-4 text-gray-400 leading-relaxed">
-        SFBB is a simple documented food safety management system for the following:
-      </p> -->
-      <div class="flex">
-        <ul class="ml-6 text-gray-400 text-justify list-disc">
-          <li>To ensure you sell safe food.</li>
-          <li>To ensure you comply with current food safety regulations.</li>
-          <li>To ensure everything is in place before your food safety officer visit your kitchen.</li>
-          <li>To ensure you receive the highest Food Hygiene Rating Scheme (FHRS) award</li>
-          
-        </ul>
-      </div>
-    </div>
+   
     <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-       <h4 class="text-2xl mb-2 mt-4 font-semibold font-heading">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
+       <h4 class="text-2xl mb-2 mt-2 font-semibold font-heading">
          CONSULTATION
       </h4>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
@@ -75,8 +59,8 @@
       </div>
     </div>
      <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-       <h4 class="text-2xl mb-2 mt-4 font-semibold font-heading">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
+       <h4 class="text-2xl mb-2 mt-2 font-semibold font-heading">
          TRAINING
       </h4>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">

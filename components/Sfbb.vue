@@ -10,9 +10,9 @@
         standard regulations and produce safe food. It is a practical and
         simplified form of a documented food safety management system. For every
         business that sells food, even if you are not cooking any food, you must
-        have this in place. It's the LAW. 
+        have this in place.<span class="font-bold bg-yellow-200 text-black"> It's the LAW. </span>
       </p>
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class="text-gray-400 leading-relaxed">
           The FSA has produced different types
         of SFBB packs, to suit different cuisines. It has also produced specific
         packs for retail food businesses as well as catering businesses.
@@ -28,20 +28,20 @@
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         What is SFBB ?
       </h2>
-       <p class="mb-4 text-gray-400 leading-relaxed">
+       <p class=" text-gray-400 leading-relaxed">
         SFBB is a simple documented food safety management system for the following:
       </p>
-      <div class="flex">
-        <ul class="ml-6 text-gray-400 text-justify list-disc">
-          <li>Home/event caterers</li>
-          <li>Private chefs</li>
-          <li>Small catering businesses</li>
-          <li>Restaurants</li>
-          <li>Takeaways</li>
-          <li>Childminders</li>
+      <div class="flex ">
+        <ul class="ml-6 text-gray-700 text-justify list-disc">
+          <li class="font-bold">Home/event caterers</li>
+          <li class="font-bold">Private chefs</li>
+          <li class="font-bold">Small catering businesses</li>
+          <li class="font-bold">Restaurants</li>
+          <li class="font-bold">Takeaways</li>
+          <li class="font-bold">Childminders</li>
         </ul>
       </div>
-      <p class="mt-6 mb-4 text-gray-400 leading-relaxed">
+      <p class="mt-6 text-gray-400 leading-relaxed">
         The 4 C's principles of the pack are chilling, cooking, cross-contamination and cleaning.
       </p>
     </div>

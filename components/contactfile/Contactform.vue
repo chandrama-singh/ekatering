@@ -1,7 +1,7 @@
 <template>
   <section class="relative pt-10 pb-5 2xl:pb-40 overflow-hidden">
     <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap mb-16 lg:mb-28">
+      <div class="flex flex-wrap mb-6 lg:mb-6">
         <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
           <div class="max-w-7xl">
             <div
@@ -35,7 +35,7 @@
                 <form class="mt-8 space-y-6" action="#" method="POST">
                   <div class="relative">
                     <label class="text-sm font-bold text-gray-700 tracking-wide"
-                      >Name</label
+                      >Name<span class="text-red-500"> *</span></label
                     >
                     <input
                       class="
@@ -52,7 +52,7 @@
                   </div>
                   <div class="relative">
                     <label class="text-sm font-bold text-gray-700 tracking-wide"
-                      >Email</label
+                      >Email<span class="text-red-500"> *</span></label
                     >
                     <input
                       class="
@@ -71,7 +71,7 @@
                     <label
                       class="text-sm font-bold text-gray-700 tracking-wide"
                     >
-                      Contact Number
+                      Contact Number<span class="text-red-500"> *</span>
                     </label>
                     <input
                       class="
@@ -115,7 +115,7 @@
                   </div>
 
                   <div class="mt-4 content-center">
-                    <input
+                    <textarea
                       class="
                         w-full
                         content-center
@@ -126,8 +126,8 @@
                         focus:outline-none focus:border-indigo-500
                       "
                       type="contact"
-                      placeholder="Mention your Reasion"
-                    />
+                      placeholder="Message"
+                    ></textarea>
                   </div>
 
                   <div>
@@ -226,12 +226,18 @@
           </svg>
         </div>
       </div>
+      <Passion/>
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+import Passion from '@/components/training/Passion.vue'
+export default {
+  components:{
+    Passion,
+  }
+};
 </script>
 
 <style></style>

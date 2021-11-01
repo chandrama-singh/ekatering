@@ -13,7 +13,7 @@
     </div>
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
       <!-- <h2 class="text-3xl mb-2 font-semibold font-heading">
         Why train with eKatering?
       </h2> -->
