@@ -2,8 +2,8 @@
   <section class="py-10 bg-white">
       <div class="min-h-screen flex items-center justify-center px-4">
     
-    <div class="max-w-4xl  bg-white w-full rounded-lg shadow-xl border-2 border-purple-400">
-        <div class="p-4 border-b flex justify-between bg-purple-400 text-white">
+    <div class="max-w-4xl  bg-blue-50 w-full rounded-lg shadow-xl border-2 border-purple-400">
+        <div class="p-4 border-b flex justify-between bg-purple-500 text-white">
             <h2 class="text-2xl font-semibold">
                 Office Use only
             </h2>
