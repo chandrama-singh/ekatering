@@ -131,7 +131,7 @@
           console.log(data)
 
           await this.$apolloHelpers.onLogin(data.loginUser.token, undefined, {
-            expires: 1
+            expires: 7
           });
 
           this.$store.commit('setUser', {user: data.loginUser.user, isLogin: true});

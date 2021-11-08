@@ -216,6 +216,7 @@
                               duration-150
                             "
                             placeholder="User Email ID"
+                            v-model="myself.email"
                           />
                         </div>
                       </div>
@@ -252,6 +253,7 @@
                               duration-150
                             "
                             placeholder="Business Name"
+                            v-model="myself.business_name"
                           />
                         </div>
                       </div>
@@ -288,6 +290,7 @@
                               duration-150
                             "
                             placeholder="Business Mail"
+                            v-model="myself.business_email"
                           />
                         </div>
                       </div>

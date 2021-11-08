@@ -54,6 +54,8 @@ mutation LoginUserMutation($password: String!, $email: String!) {
         twitter
         mobile
         role
+        business_name
+        business_email
         isVerified
         createdAt
         updatedAt
