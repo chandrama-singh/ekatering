@@ -10,10 +10,6 @@
           <p class="mb-6 text-gray-500">
             Choose which sevice you want and pay as mentioned
           </p>
-          <!-- <div class="inline-block py-1 px-1 bg-white rounded-lg">
-          <button class="mr-1 text-sm py-2 px-4 text-gray-500 hover:text-gray-900 font-bold">Monthly</button>
-          <button class="text-sm py-2 px-4 text-gray-900 bg-gray-50 rounded-lg shadow font-bold">Yearly</button>
-        </div> -->
         </div>
         <div class="flex flex-wrap -mx-4">
            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
