@@ -15,34 +15,13 @@ export const GET_CONFIG = graphql`
 
 export const REGISTER_USER = graphql`
 mutation Mutation($data: UserInput!) {
-    registerUser(data: $data) {
-      token
-      user {
-        id
-        username
-        email
-        first_name
-        last_name
-        email
-        photo
-        bio
-        facebook
-        instagram
-        twitter
-        mobile
-        role
-        isVerified
-        createdAt
-        updatedAt
-      }
-    }
+    registerUser(data: $data) 
   }
   `;
 /*
 //Register Data Input
   {
     "data": {
-      "username":"insided",
       "email": "osizone01@gmail.com",
       "password": "12345678"
     }
@@ -64,7 +43,6 @@ mutation LoginUserMutation($password: String!, $email: String!) {
       token
       user {
         id
-        username
         email
         first_name
         last_name

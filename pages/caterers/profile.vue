@@ -1,6 +1,6 @@
 <template>
   <div class="w-full relative shadow-2xl rounded overflow-hidden">
-    <div class="top h-64 w-full bg-blue-600 overflow-hidden relative">
+    <div v-if="myself" class="top h-64 w-full bg-blue-600 overflow-hidden relative">
       <img
         src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
         alt=""
@@ -21,8 +21,8 @@
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
           class="h-24 w-24 object-cover rounded-full"
         />
-        <h1 class="text-2xl font-semibold">Antonia Howell</h1>
-        <h4 class="text-sm font-semibold">Joined Since '19</h4>
+        <h1 class="text-2xl font-semibold">{{myself.email}}</h1>
+        <h4 class="text-sm font-semibold">Joined Since {{myself.createdAt}}</h4>
       </div>
     </div>
     <div class="grid grid-cols-12 bg-white h-full max-h-full">
@@ -732,6 +732,12 @@ export default {
     return {
       openTab: 1,
     };
+  },
+  computed:{
+    myself(){
+      return this.$store.state.user
+    }
+
   },
   methods: {
     toggleTabs: function (tabNumber) {

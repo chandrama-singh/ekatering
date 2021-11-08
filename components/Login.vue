@@ -117,6 +117,8 @@
     methods: {
       async onLogin() {
         this.loading = true;
+        console.log(this.email);
+        console.log(this.password);
         try {
           const { data } = await this.$apollo.mutate({
             mutation: LOGIN_USER,

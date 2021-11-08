@@ -29,12 +29,13 @@
 									id="email"
 									type="email"
 									placeholder="Enter Email Address..."
+									v-model="email"
 								/>
 							</div>
 							<div class="mb-6 text-center">
 								<button
 									class="w-full px-4 py-2 font-bold text-white bg-purple-500 rounded-full hover:bg-purple-700 focus:outline-none focus:shadow-outline"
-									type="button"
+									type="button" @click="sendResetLink"
 								>
 									Reset Password
 								</button>
@@ -57,6 +58,9 @@
 								</Nuxt-Link>
 							</div>
 						</form>
+						    <t-alert :variant="type" :show="showAlert">
+              {{ message }}
+            </t-alert>
 					</div>
 				</div>
 			</div>
@@ -65,10 +69,54 @@
 </template>
 
 <script>
-export default {
-layout:'default'
-}
+  import {
+    FORGOT_PASSWORD
+  } from "@/graphql/query";
+  export default {
+    layout: 'main',
+    data() {
+      return {
+        email: null,
+        showAlert: false,
+        message: "",
+        type: null,
+        isSent: false,
+        loading: false
+
+      };
+    },
+
+    methods: {
+      async sendResetLink() {
+        this.loading = true;
+        if (this.email) {
+          try {
+            const {
+              data
+            } = await this.$apollo.mutate({
+              mutation: FORGOT_PASSWORD,
+              variables: {
+                email: this.email
+              },
+            });
+
+            this.message = data.result
+            this.isSent = true;
+
+          } catch (error) {
+            console.log(error)
+            this.message = error.message;
+            this.type = "danger"
+            this.showAlert = true
+          }
+        }
+        this.loading = false;
+      }
+    }
+  }
+
 </script>
+
 
 <style>
 
