@@ -181,6 +181,7 @@
                             "
                             placeholder="Enter User Name"
                           />
+                         
                         </div>
                       </div>
                       <div class="w-full lg:w-6/12 px-4">
@@ -344,6 +345,7 @@
                             "
                             rows="4"
                             placeholder="Address"
+                            v-model="myself.address"
                           ></textarea>
                         </div>
                       </div>
@@ -380,6 +382,7 @@
                               duration-150
                             "
                             Placeholder="City"
+                            v-model="myself.city"
                           />
                         </div>
                       </div>
@@ -416,6 +419,7 @@
                               duration-150
                             "
                             Placeholder="Country"
+                            v-model="myself.country"
                           />
                         </div>
                       </div>
@@ -452,6 +456,7 @@
                               duration-150
                             "
                             placeholder="Code"
+                            v-model="myself.code"
                           />
                         </div>
                       </div>
@@ -462,8 +467,9 @@
                     <div class="w-full item-center justify-center flex">
                       <center>
                         <button
+                        @click="Onsave()"
                           class="
-                            bg-blue-500
+                            bg-green-500
                             text-white
                             active:bg-blue-600
                             font-bold
@@ -508,6 +514,30 @@
                           type="button"
                         >
                           Cancel
+                        </button>
+                         <button
+                          class="
+                            bg-blue-500
+                            text-white
+                            active:bg-red-600
+                            font-bold
+                            uppercase
+                            text-xs
+                            px-4
+                            py-2
+                            rounded
+                            shadow
+                            hover:shadow-md
+                            outline-none
+                            focus:outline-none
+                            mr-1
+                            ease-linear
+                            transition-all
+                            duration-150
+                          "
+                          type="button"
+                        >
+                          Edit
                         </button>
                       </center>
                     </div>
@@ -733,6 +763,7 @@ export default {
 
   data() {
     return {
+
       openTab: 1,
     };
   },
@@ -746,6 +777,9 @@ export default {
     toggleTabs: function (tabNumber) {
       this.openTab = tabNumber;
     },
+    Onsave(){
+
+    }
   },
 };
 </script>
