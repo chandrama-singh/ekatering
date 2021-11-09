@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-1 max-h-full p-5 overflow-hidden overflow-y-scroll">
+  <main class="flex-1 max-h-full p-5 overflow-hidden ">
     <!-- Main content header -->
     <div
       class="
