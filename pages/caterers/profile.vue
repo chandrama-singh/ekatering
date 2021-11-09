@@ -21,7 +21,7 @@
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
           class="h-24 w-24 object-cover rounded-full"
         />
-        <h1 class="text-2xl font-semibold">{{myself.email}}</h1>
+        <h1 class="text-2xl font-semibold">{{myself.business_name}}</h1>
         <h4 class="text-sm font-semibold">Joined Since {{ myself.createdAt | moment('MMMM Do YYYY') }}</h4>
       </div>
     </div>
