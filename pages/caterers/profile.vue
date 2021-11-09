@@ -496,9 +496,9 @@
                       </div>
                     </div>
 
-                    <hr class="mt-6 border-b-1 border-blueGray-300 mb-4" />
+                    <!-- <hr class="mt-6 border-b-1 border-blueGray-300 mb-4" /> -->
 
-                    <div class="w-full item-center justify-center flex">
+                    <!-- <div class="w-full item-center justify-center flex">
                       <center>
                         <button
                         @click="Onsave()"
@@ -574,7 +574,8 @@
                           Edit
                         </button>
                       </center>
-                    </div>
+                    </div> -->
+
                   </form>
                 </div>
               </div>
