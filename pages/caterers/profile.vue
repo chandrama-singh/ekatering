@@ -184,7 +184,7 @@
                             "
                             htmlfor="grid-password"
                           >
-                            Username
+                            Full Name
                           </label>
                           <input
                             type="text"
@@ -204,6 +204,7 @@
                               transition-all
                               duration-150
                             "
+                            disabled
                             placeholder="Enter User Name"
                           />
                          
@@ -241,9 +242,11 @@
                               transition-all
                               duration-150
                             "
+                            disabled
                             placeholder="User Email ID"
                             v-model="myself.email"
                           />
+                          
                         </div>
                       </div>
                       <div class="w-full lg:w-6/12 px-4">
@@ -278,6 +281,7 @@
                               transition-all
                               duration-150
                             "
+                            disabled
                             placeholder="Business Name"
                             v-model="myself.business_name"
                           />
@@ -315,6 +319,7 @@
                               transition-all
                               duration-150
                             "
+                            disabled
                             placeholder="Business Mail"
                             v-model="myself.business_email"
                           />
@@ -370,6 +375,7 @@
                             "
                             rows="4"
                             placeholder="Address"
+                            disabled
                             v-model="myself.address"
                           ></textarea>
                         </div>
@@ -389,7 +395,7 @@
                             City
                           </label>
                           <input
-                            type="email"
+                            type="text"
                             class="
                               border-0
                               px-3
@@ -406,6 +412,7 @@
                               transition-all
                               duration-150
                             "
+                            disabled
                             Placeholder="City"
                             v-model="myself.city"
                           />
@@ -444,6 +451,7 @@
                               duration-150
                             "
                             Placeholder="Country"
+                            disabled
                             v-model="myself.country"
                           />
                         </div>
@@ -463,7 +471,7 @@
                             Postal Code
                           </label>
                           <input
-                            type="text"
+                            type="number"
                             class="
                               border-0
                               px-3
@@ -480,6 +488,7 @@
                               transition-all
                               duration-150
                             "
+                            disabled
                             placeholder="Code"
                             v-model="myself.code"
                           />
