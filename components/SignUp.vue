@@ -98,6 +98,7 @@
 
       </div>
     </div>
+     <Loading v-if="loading" />
   </section>
 </template>
 

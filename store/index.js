@@ -64,6 +64,7 @@ export const actions = {
     }
 
     const token = this.$apolloHelpers.getToken();
+    console.log("store token",token);
     if (token) {
       try {
         const { data } = await client.query({ query: GET_ME })

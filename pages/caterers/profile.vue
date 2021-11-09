@@ -22,7 +22,7 @@
           class="h-24 w-24 object-cover rounded-full"
         />
         <h1 class="text-2xl font-semibold">{{myself.email}}</h1>
-        <h4 class="text-sm font-semibold">Joined Since {{myself.createdAt}}</h4>
+        <h4 class="text-sm font-semibold">Joined Since {{ myself.createdAt | moment('MMMM Do YYYY') }}</h4>
       </div>
     </div>
     <div class="grid grid-cols-12 bg-white h-full max-h-full">
@@ -90,7 +90,41 @@
             font-semibold
             hover:bg-indigo-700 hover:text-gray-200
           "
-          >Advance</a
+          >Change Password</a
+        >
+         <a
+          v-on:click="toggleTabs(4)"
+          v-bind:class="{
+            ' bg-gray-800': openTab !== 4,
+            'text-white bg-pink-600': openTab === 4,
+          }"
+          class="
+            text-sm
+            p-2
+            bg-indigo-200
+            text-center
+            rounded
+            font-semibold
+            hover:bg-indigo-700 hover:text-gray-200
+          "
+          >Edit Profile</a
+        >
+         <a
+          v-on:click="toggleTabs(5)"
+          v-bind:class="{
+            ' bg-gray-800': openTab !== 5,
+            'text-white bg-pink-600': openTab === 5,
+          }"
+          class="
+            text-sm
+            p-2
+            bg-indigo-200
+            text-center
+            rounded
+            font-semibold
+            hover:bg-indigo-700 hover:text-gray-200
+          "
+          >Edit Social</a
         >
       </div>
       <!------------------------------------Basics----------------------------->
@@ -123,16 +157,7 @@
                   border-0
                 "
               >
-                <!-- <div class="rounded-t bg-white mb-0 px-6 py-6">
-      <div class="text-center flex justify-between">
-        <h6 class="text-blueGray-700 text-xl font-bold">
-          My account
-        </h6>
-        <button class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
-          Settings
-        </button>
-      </div>
-    </div> -->
+              
                 <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
                   <form>
                     <h6
@@ -744,20 +769,40 @@
             </table>
           </div>
         </div>
-        <!------------------------------------Advanced----------------------------->
+        <!------------------------------------Change Password----------------------------->
         <div
           class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
         >
-          Advanced
+          <PasswordChange/>
+         
         </div>
-      </div>
-      <!------------------------------------Documentation----------------------------->
+     
+       <!------------------------------------Edit Profile----------------------------->
+        <div
+          class="px-4 pt-4"
+          v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+        >
+          <ProfileEdit/>
+         
+        </div>
+         <!------------------------------------Edit Social Links----------------------------->
+        <div
+          class="px-4 pt-4"
+          v-bind:class="{ hidden: openTab !== 5, block: openTab === 5 }"
+        >
+         
+          <SocialContacts/>
+        </div>
+     
+      
     </div>
+     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   layout: "user",
 

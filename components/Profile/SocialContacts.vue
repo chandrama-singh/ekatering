@@ -23,9 +23,15 @@
             <!-- <t-toggle class="ml-6" /> -->
         </div>
         <div class="p-6 border-t flex justify-end">
-            <PrimaryButton title="Update" :uppercase="true" :isLoading="loading" :color="'green-800'" @click="updateContact" type="button">
-            </PrimaryButton>
+            	<button
+									class="w-full px-4 py-2 font-bold text-white bg-purple-500 rounded-full hover:bg-purple-700 focus:outline-none focus:shadow-outline"
+									type="button" @click="updateContact"
+								>
+								Update
+								</button>
+
         </div>
+         <Loading v-if="loading" />
     </div>
 </template>
 

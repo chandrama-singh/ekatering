@@ -36,19 +36,21 @@
           </div>
           <p v-if="!isPasswordMatch" class="text-red-500 my-2">Password is not matched</p>
         </div>
+        	<button
+									class="w-full px-4 py-2 font-bold text-white bg-purple-500 rounded-full hover:bg-purple-700 focus:outline-none focus:shadow-outline"
+									type="button" @click="resetPassword"
+								>
+									Reset Password
+								</button>
 
-        <PrimaryButton title="Reset password" color="green-800" :isLoading="loading" @click="resetPassword" type="button"
-          class="w-full">
-          <template v-slot:icon>
-            <i class="fas fa-chevron-right text-white"></i>
-          </template>
-        </PrimaryButton>
+      
       </form>
     </div>
     <div class="flex flex-col bg-white px-10 py-8 rounded w-full" v-else>
       <img src="/email-sent.svg" class="mb-4" />
       <p class="my-2 text-lg text-green-600 text-center font-bold">Your password is successfully changed!!</p>
     </div>
+     <Loading v-if="loading" />
 
   </div>
 </template>

@@ -97,6 +97,7 @@
 
       </div>
     </div>
+     <Loading v-if="loading" />
   </section>
 </template>
 
@@ -110,8 +111,8 @@
         message: null,
         showAlert: false,
         type: null,
-        email: null,
-        password: null
+        email: 'insided04@gmail.com',
+        password: '12345678'
       }
     },
     methods: {

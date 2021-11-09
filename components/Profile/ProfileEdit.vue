@@ -10,7 +10,7 @@
         click to change profile photo
       </p>
     </div>
-    <form action="#" class="flex flex-col bg-white space-y-6">
+    <div  class="flex flex-col bg-white space-y-6">
       <div>
         <label class="block text-lg mb-2" for="name">Username</label>
         <t-input type="text" v-model="user.username" disabled />
@@ -41,13 +41,16 @@
         <t-textarea type="text" name="text" id="" placeholder="write about yourself" v-model="user.bio" />
       </div>
       <div>
-        <PrimaryButton title="Update Detail" :uppercase="true" :isLoading="loading" :color="'green-800'" @click="onSubmit" type="button">
-          <template v-slot:icon>
-            <i class="fas fa-chevron-right text-white"></i>
-          </template>
-        </PrimaryButton>
+        	<button
+									class="w-full px-4 py-2 font-bold text-white bg-purple-500 rounded-full hover:bg-purple-700 focus:outline-none focus:shadow-outline"
+									type="button" @click="onSubmit"
+								>
+								Update Detail
+								</button>
+      
       </div>
-    </form>
+    </div>
+     <Loading v-if="loading" />
   </div>
 </template>
 <script>

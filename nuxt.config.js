@@ -16,14 +16,31 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/style.css',
-  ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  
+     /*
+      ** Global CSS
+      */
+     css: [
+      
+         '@/node_modules/vue-file-agent/dist/vue-file-agent.css',
+         '@/assets/css/style.css',
+         '@/node_modules/ag-grid-community/dist/styles/ag-grid.css',
+         '@/node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css',
+     ],
+     /*
+      ** Plugins to load before mounting the App
+      */
+     plugins: [
+         '~/plugins/vue-tailwind.js',
+         { src: "~/plugins/vee-validate"},
+         { src: '~/plugins/vue-toastification.js',ssr: false },
+         { src: '~/plugins/ag-grid-client.js',ssr: false },
+         { src: '~/plugins/vue-file-agent.js',ssr: false },
+         { src: '~/plugins/click-outside', ssr: false },
+         { src: '~/plugins/vue-dialog', ssr: false },
+         { src: '~/plugins/vue-moment',ssr: false },
+     ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
@@ -128,10 +145,20 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
+  vue: {
+    config: {
+        productionTip: false,
+        devtools: true
+    }
+},
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/apollo'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    transpile: [
+        'vee-validate'
+    ]
+},
 }

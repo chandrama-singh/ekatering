@@ -20,15 +20,15 @@
                     </div>
                 </div>
             </a>
-            <nuxt-link :to=linkProfile class="flex items-center px-4 py-2 border-b border-black hover:bg-red-500">
+            <nuxt-link :to=linkProfile class="flex items-center px-4 py-2 border-b border-black hover:bg-purple-500">
                 <i class="fas fa-user-circle text-lg mr-4"></i>
                 <p>MY PROFILE</p>
             </nuxt-link>
-            <nuxt-link to="/user/dashboard" class="flex items-center px-4 py-2 border-b border-black hover:bg-red-500" v-if="user.role==='user'">
+            <nuxt-link to="/user/dashboard" class="flex items-center px-4 py-2 border-b border-black hover:bg-purple-500" v-if="user.role==='user'">
                 <i class="fas fa-cog text-lg mr-4"></i>
                 <p>DASHBOARD</p>
             </nuxt-link>
-            <div  class="flex items-center px-4 py-2 hover:bg-red-500" @click="logout">
+            <div  class="flex items-center px-4 py-2 hover:bg-purple-500" @click="logout">
                 <i class="fas fa-sign-out-alt text-lg mr-4"></i>
                 <p>LOG OUT</p>
             </div>
@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import ClickOutside from "vue-click-outside";
 export default {
     data() {
         return {
@@ -45,6 +46,9 @@ export default {
 			user:this.$store.state.user
         }
 	},
+     directives: {
+    ClickOutside
+  },
 	computed:{
 		linkProfile(){
 			return "/"+this.user.role+"/profile"
@@ -57,7 +61,8 @@ export default {
         logout(){
             this.$apolloHelpers.onLogout();
       this.$store.commit('logoutUser')
-    }
+    },
+    
 	}
 }
 </script>

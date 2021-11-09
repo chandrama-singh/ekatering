@@ -89,21 +89,23 @@ export const GET_ME = graphql`
   query me {
     me {
       id
-        username
-        email
-        first_name
-        last_name
-        email
-        photo
-        bio
-        facebook
-        instagram
-        twitter
-        mobile
-        role
-        isVerified
-        createdAt
-        updatedAt
+      id
+      email
+      first_name
+      last_name
+      email
+      photo
+      bio
+      facebook
+      instagram
+      twitter
+      mobile
+      role
+      business_name
+      business_email
+      isVerified
+      createdAt
+      updatedAt
     }
   }
 `;
