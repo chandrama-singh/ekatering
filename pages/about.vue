@@ -2,7 +2,7 @@
   <div class="bgcolor">
 
       <TitleBanner/>
-      <AboutUs/>
+      <AboutPage/>
       <Subscribe/>
 
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 import TitleBanner from '../components/about/TitleBanner.vue'
-import AboutUs from '../components/about/AboutUs.vue'
+import AboutPage from '../components/about/AboutPage.vue'
 import Subscribe from '../components/Subscribe.vue'
 import Card from '../components/about/Card.vue'
 export default {
@@ -20,7 +20,7 @@ export default {
 
         TitleBanner,
         Card,
-        AboutUs,
+        AboutPage,
         Subscribe,
 
     }
