@@ -15,7 +15,7 @@ export const GET_CONFIG = graphql`
 
 export const REGISTER_USER = graphql`
 mutation Mutation($data: UserInput!) {
-    registerUser(data: $data) 
+    registerUser(data: $data)
   }
   `;
 /*
@@ -44,6 +44,7 @@ mutation LoginUserMutation($password: String!, $email: String!) {
       user {
         id
         email
+        fullName
         first_name
         last_name
         email
@@ -91,6 +92,7 @@ export const GET_ME = graphql`
       id
       id
       email
+      fullName
       first_name
       last_name
       email
@@ -106,6 +108,15 @@ export const GET_ME = graphql`
       isVerified
       createdAt
       updatedAt
+      address{
+        address_line_1
+        address_line_2
+        country
+        town
+        latitude
+        longitude
+        postcode
+      }
     }
   }
 `;
@@ -160,6 +171,12 @@ mutation ResetUserPasswordMutation($reqId: String!, $password: String!) {
 export const UPDATE_USER = graphql`
   mutation updateUser($data: UserUpdateInput!) {
     result: updateUser(data: $data)
+  }
+`;
+
+export const UPDATE_USER_ADDRESS = graphql`
+  mutation updateUserAddress($data: AddressInput!) {
+    result: updateUserAddress(data: $data)
   }
 `;
 

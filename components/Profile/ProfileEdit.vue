@@ -56,17 +56,17 @@
     </div>
     <div class="flex flex-col bg-white space-y-6">
       <div>
-        <label class="block text-lg mb-2" for="name">Username</label>
-        <t-input type="text" v-model="user.username" />
+        <label class="block text-lg mb-2" for="name">First Name</label>
+        <t-input type="text" v-model="user.first_name" />
       </div>
       <div>
-        <label class="block text-lg mb-2" for="name">Full Name</label>
+        <label class="block text-lg mb-2" for="name">Last Name</label>
         <t-input
           type="text"
           name="name"
-          id=""
+          id="name"
           placeholder="name"
-          v-model="user.name"
+          v-model="user.last_name"
         />
       </div>
       <div>
@@ -74,10 +74,34 @@
         <t-input
           type="email"
           name="email"
-          id=""
+          :disabled=true
+          id="email"
           placeholder="email"
           v-model="user.email"
-          
+          class="bg-gray-100"
+
+        />
+      </div>
+        <div>
+        <label class="block text-lg mb-2" for="email">Business Name</label>
+        <t-input
+          type="text"
+          name="businessname"
+          id="businessename"
+          placeholder="email"
+          v-model="user.business_name"
+
+        />
+      </div>
+        <div>
+        <label class="block text-lg mb-2" for="email">Business Email</label>
+        <t-input
+          type="email"
+          name="businessemail"
+          id="businessemail"
+          placeholder="business email"
+          v-model="user.business_email"
+
         />
       </div>
       <div>
@@ -85,38 +109,38 @@
         <t-input
           type="text"
           name="mobile"
-          id=""
-          placeholder="mobile no +91"
+          id="mobile"
+          placeholder="mobile number"
           v-model="user.mobile"
         />
       </div>
-      <div>
-        <label class="block text-lg mb-2">UPI Address</label>
+       <div>
+        <label class="block text-lg mb-2" for="mobile">Whatsapp </label>
         <t-input
           type="text"
-          name="upi"
-          id="upi"
-          placeholder="UPI username or number"
-          v-model="user.upi"
-        />
-        <t-input
-          type="text"
-          name="upiname"
-          id="upiType"
-          placeholder="Provider like (GooglePay, Paytm, PhonePay)"
-          v-model="user.upiType"
+          name="whatsapp"
+          id="whatsapp"
+          placeholder="whatsapp"
+          v-model="user.whatsapp"
         />
       </div>
       <div>
-        <label class="block text-lg mb-2" for="bank">Bank Details</label>
-        <t-textarea
-          type="text"
-          id="bank"
-          name="bank"
-          placeholder="Enter your bank detail with ifsc code"
-          v-model="user.bankDetail"
-        />
+        <label class="block text-lg mb-2">Gender</label>
+       <div class="flex">
+  <label class="flex items-center">
+    <t-radio name="gender" v-model="user.gender" value="Male" checked />
+    <span class="ml-3 text-sm">Male</span>
+  </label>
+  <label class="flex items-center ml-3">
+    <t-radio name="gender" v-model="user.gender" value="Female" />
+    <span class="ml-3 text-sm">Female</span>
+  </label>
+
+</div>
+
+
       </div>
+
       <div>
         <label class="block text-lg mb-2" for="description">Bio</label>
         <t-textarea
@@ -157,8 +181,12 @@ export default {
     return {
       profile: null,
       loading: false,
-      user: this.$store.state.user,
     };
+  },
+  computed:{
+    user(){
+      return {...this.$store.state.user};
+    }
   },
 
   methods: {
@@ -179,13 +207,16 @@ export default {
     async onSubmit() {
       this.loading = true;
       var formData = {
-        name: this.user.name,
+        first_name: this.user.first_name,
+        last_name: this.user.last_name,
         mobile: this.user.mobile,
+        whatsapp: this.user.whatsapp,
         bio: this.user.bio,
-        upi: this.user.upi,
-        upiType: this.user.upiType,
-        bankDetail: this.user.bankDetail,
+        gender: this.user.gender,
+        business_name: this.user.business_name,
+        business_email: this.user.business_email,
       };
+      console.log("submit form", formData)
       try {
         const res = await this.$apollo.mutate({
           mutation: UPDATE_USER,

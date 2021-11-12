@@ -245,7 +245,7 @@
               >
 
               <span class="px-4 py-2">
-                Go to the JOIN USand follow the steps.
+                Go to the JOIN US and follow the steps.
               </span>
             </details>
             <details class="mb-4 cursor-pointer">

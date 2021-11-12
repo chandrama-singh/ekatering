@@ -41,12 +41,29 @@ import {UPDATE_USER_SOCIAL} from '@/graphql/query';
 export default {
     data() {
         return {
-            links: this.$store.state.user,
             loading: false
         }
     },
+    computed:{
+      user(){
+        return {...this.$store.state.user}
+      },
+      links(){
+        if(this.user){
+        return {
+          facebook:this.user.facebook,
+          instagram:this.user.instagram,
+          twitter:this.user.twitter
+        }
+      }
+      else{
+        return null
+      }
+      }
+    },
     methods:{
     async updateContact(){
+
         try {
             this.loading = true;
             const res = await this.$apollo.mutate({

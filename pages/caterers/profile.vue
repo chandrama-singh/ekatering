@@ -18,6 +18,12 @@
         "
       >
         <img
+         v-if="myself.photo"
+         :src="myself.photo"
+          class="h-24 w-24 object-cover rounded-full"
+        />
+         <img
+        v-else
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
           class="h-24 w-24 object-cover rounded-full"
         />
@@ -39,7 +45,7 @@
           md:space-x-0 md:space-y-2 md:flex-col md:col-span-2 md:justify-start
         "
       >
-        <a
+          <a
           v-on:click="toggleTabs(1)"
           v-bind:class="{
             ' bg-gray-800': openTab !== 1,
@@ -54,7 +60,7 @@
             font-semibold
             hover:bg-indigo-700 hover:text-gray-200
           "
-          >Basic Information</a
+          >Edit Profile</a
         >
 
         <a
@@ -72,10 +78,10 @@
             font-semibold
             hover:bg-indigo-700 hover:text-gray-200
           "
-          >Documentations</a
+          >Change Password</a
         >
 
-        <a
+         <a
           v-on:click="toggleTabs(3)"
           v-bind:class="{
             ' bg-gray-800': openTab !== 3,
@@ -90,8 +96,9 @@
             font-semibold
             hover:bg-indigo-700 hover:text-gray-200
           "
-          >Change Password</a
+          >Edit Social</a
         >
+
          <a
           v-on:click="toggleTabs(4)"
           v-bind:class="{
@@ -107,9 +114,10 @@
             font-semibold
             hover:bg-indigo-700 hover:text-gray-200
           "
-          >Edit Profile</a
+          >Change Address</a
         >
-         <a
+
+        <a
           v-on:click="toggleTabs(5)"
           v-bind:class="{
             ' bg-gray-800': openTab !== 5,
@@ -124,7 +132,7 @@
             font-semibold
             hover:bg-indigo-700 hover:text-gray-200
           "
-          >Edit Social</a
+          >Upload Documents</a
         >
       </div>
       <!------------------------------------Basics----------------------------->
@@ -137,455 +145,44 @@
         "
       >
         <!------------------------------------Basics----------------------------->
+         <!------------------------------------Edit Profile----------------------------->
         <div
-          class="px-2"
+          class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
         >
-          <section class="bg-blueGray-50">
-            <div class="w-full lg:w-full px-4 mt-6">
-              <div
-                class="
-                  relative
-                  flex flex-col
-                  min-w-0
-                  break-words
-                  w-full
-                  mb-6
-                  shadow-lg
-                  rounded-lg
-                  bg-blueGray-100
-                  border-0
-                "
-              >
-              
-                <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                  <form>
-                    <h6
-                      class="
-                        text-blueGray-400 text-lg
-                        mt-3
-                        mb-6
-                        font-bold
-                        uppercase
-                      "
-                    >
-                      Basic Information
-                    </h6>
-                    <div class="flex flex-wrap">
-                      <div class="w-full lg:w-6/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Full Name
-                          </label>
-                          <input
-                            type="text"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            disabled
-                            placeholder="Enter User Name"
-                          />
-                         
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-6/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Email address
-                          </label>
-                          <input
-                            type="email"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            disabled
-                            placeholder="User Email ID"
-                            v-model="myself.email"
-                          />
-                          
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-6/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Business Name
-                          </label>
-                          <input
-                            type="text"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            disabled
-                            placeholder="Business Name"
-                            v-model="myself.business_name"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-6/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Business Mail
-                          </label>
-                          <input
-                            type="text"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            disabled
-                            placeholder="Business Mail"
-                            v-model="myself.business_email"
-                          />
-                        </div>
-                      </div>
-                    </div>
+          <ProfileEdit/>
 
-                    <hr class="mt-6 border-b-1 border-blueGray-300" />
+        </div>
 
-                    <h6
-                      class="
-                        text-blueGray-400 text-sm
-                        mt-3
-                        mb-6
-                        font-bold
-                        uppercase
-                      "
-                    >
-                      Contact Information
-                    </h6>
-                    <div class="flex flex-wrap">
-                      <div class="w-full lg:w-12/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Address
-                          </label>
-                          <textarea
-                            type="text"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            rows="4"
-                            placeholder="Address"
-                            disabled
-                            v-model="myself.address"
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-4/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            City
-                          </label>
-                          <input
-                            type="text"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            disabled
-                            Placeholder="City"
-                            v-model="myself.city"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-4/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Country
-                          </label>
-                          <input
-                            type="text"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            Placeholder="Country"
-                            disabled
-                            v-model="myself.country"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-4/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="
-                              block
-                              uppercase
-                              text-blueGray-600 text-xs
-                              font-bold
-                              mb-2
-                            "
-                            htmlfor="grid-password"
-                          >
-                            Postal Code
-                          </label>
-                          <input
-                            type="number"
-                            class="
-                              border-0
-                              px-3
-                              py-3
-                              placeholder-blueGray-300
-                              text-blueGray-600
-                              bg-white
-                              rounded
-                              text-sm
-                              shadow
-                              focus:outline-none focus:ring
-                              w-full
-                              ease-linear
-                              transition-all
-                              duration-150
-                            "
-                            disabled
-                            placeholder="Code"
-                            v-model="myself.code"
-                          />
-                        </div>
-                      </div>
-                    </div>
+        <!------------------------------------Change Password----------------------------->
+        <div
+          class="px-4 pt-4"
+          v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+        >
+          <PasswordChange/>
 
-                    <!-- <hr class="mt-6 border-b-1 border-blueGray-300 mb-4" /> -->
+        </div>
 
-                    <!-- <div class="w-full item-center justify-center flex">
-                      <center>
-                        <button
-                        @click="Onsave()"
-                          class="
-                            bg-green-500
-                            text-white
-                            active:bg-blue-600
-                            font-bold
-                            uppercase
-                            text-xs
-                            px-4
-                            py-2
-                            rounded
-                            shadow
-                            hover:shadow-md
-                            outline-none
-                            focus:outline-none
-                            mr-1
-                            ease-linear
-                            transition-all
-                            duration-150
-                          "
-                          type="button"
-                        >
-                          Save
-                        </button>
-                        <button
-                          class="
-                            bg-red-500
-                            text-white
-                            active:bg-red-600
-                            font-bold
-                            uppercase
-                            text-xs
-                            px-4
-                            py-2
-                            rounded
-                            shadow
-                            hover:shadow-md
-                            outline-none
-                            focus:outline-none
-                            mr-1
-                            ease-linear
-                            transition-all
-                            duration-150
-                          "
-                          type="button"
-                        >
-                          Cancel
-                        </button>
-                         <button
-                          class="
-                            bg-blue-500
-                            text-white
-                            active:bg-red-600
-                            font-bold
-                            uppercase
-                            text-xs
-                            px-4
-                            py-2
-                            rounded
-                            shadow
-                            hover:shadow-md
-                            outline-none
-                            focus:outline-none
-                            mr-1
-                            ease-linear
-                            transition-all
-                            duration-150
-                          "
-                          type="button"
-                        >
-                          Edit
-                        </button>
-                      </center>
-                    </div> -->
 
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
+         <!------------------------------------Edit Social Links----------------------------->
+        <div
+          class="px-4 pt-4"
+          v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+        >
+
+          <SocialContacts/>
+        </div>
+         <!------------------------------------Address----------------------------->
+         <div
+          class="px-4 pt-4"
+          v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+        >
+         <AddressEdit/>
         </div>
         <!------------------------------------Document----------------------------->
         <div
           class="px-4 pt-4"
-          v-bind:class="{ hidden: openTab !== 2, block: openTab === 3 }"
+          v-bind:class="{ hidden: openTab !== 5, block: openTab === 5 }"
         >
           <div class="px-6">
             <table class="min-w-full table-auto">
@@ -779,33 +376,8 @@
             </table>
           </div>
         </div>
-        <!------------------------------------Change Password----------------------------->
-        <div
-          class="px-4 pt-4"
-          v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
-        >
-          <PasswordChange/>
-         
-        </div>
-     
-       <!------------------------------------Edit Profile----------------------------->
-        <div
-          class="px-4 pt-4"
-          v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
-        >
-          <ProfileEdit/>
-         
-        </div>
-         <!------------------------------------Edit Social Links----------------------------->
-        <div
-          class="px-4 pt-4"
-          v-bind:class="{ hidden: openTab !== 5, block: openTab === 5 }"
-        >
-         
-          <SocialContacts/>
-        </div>
-     
-      
+
+
     </div>
      </div>
   </div>

@@ -17,12 +17,12 @@ export default {
   },
 
 
-  
+
      /*
       ** Global CSS
       */
      css: [
-      
+
          '@/node_modules/vue-file-agent/dist/vue-file-agent.css',
          '@/assets/css/style.css',
          '@/node_modules/ag-grid-community/dist/styles/ag-grid.css',
@@ -91,8 +91,8 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        //httpEndpoint: 'https://ekatering.com/api/graphql',
-         httpEndpoint: 'http://localhost:4000/graphql',
+        httpEndpoint: 'http://ekatering.co.uk:4000/graphql',
+         //httpEndpoint: 'http://localhost:4000/graphql',
       }
     },
     /**
