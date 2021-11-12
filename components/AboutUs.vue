@@ -25,7 +25,7 @@
                   leading
                   font-semibold
                 "
-                >Your Catering Business, our assistance !</span
+                >Your Catering Business, Our Assistance!</span
               >
             </div>
           </h2>

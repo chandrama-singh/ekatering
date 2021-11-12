@@ -15,21 +15,15 @@
             <h2
               class="mb-6 text-black text-3xl lg:text-4xl font-bold font-heading px-2"
             >
-              Why eKatering ?
+              Why eKatering?
             </h2>
             <p class="px-2 max-w-6xl text-gray-900 text-justify">
-              The only mobile app specifically created for home/event catering
-              and private chef businesses. The only food ordering platform that
-              charges 0% commission. Increase visibility and get more customers
-              and increase income. Support of your catering business from
-              registration to trading. 
+              The only mobile app specifically created for home/event catering and private chef businesses. We are a food ordering platform that charges a 0% commission. We help you increase visibility, get more customers and increase income. We are here to support your catering business from registration to trading. 
             </p>
             <br />
             <p class="px-2 text-gray-900 text-justify">
-              The only platform that guarantees
-              customers safe, authentic, home-cooked food, prepared in an
-              inspected home kitchen and has been awarded a minimum of 3 for the
-              Food Hygiene Rating Scheme (FHRS).
+              The only platform that guarantees customers safe, authentic, home-cooked food, prepared in an inspected home kitchen and has been awarded a minimum of 3 for the Food Hygiene Rating Scheme (FHRS).
+
             </p>
           </div>
           <br />

@@ -14,7 +14,7 @@
                 
               "
             >
-              If you are Home/Event Caterer or a Private Chef explor your
+              If you are Home/Event Caterer or a Private Chef explore your
               business.
             </h2>
            <div class="inline-block"> <Nuxt-Link

@@ -11,7 +11,7 @@
         font-bold font-heading
       "
     >
-      How It Works
+      How It Works?
     </h2>
     <p class="text-black text-2xl max-w-full p-4 text-center">
       Full Suite of Consultation and Training<br />

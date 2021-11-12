@@ -4,7 +4,7 @@
           <div class="text-left lg:w-2/3 sm:full">
             <div class=" mx-auto mb-4">
               <h2 class="text-3xl max-w-3xl pt-16 mb-2 text-white font-semibold font-heading py-2 uppercase ">
-               If you are a Home/Event Caterer or a Private Chef explor your business.
+               If you are a Home/Event Caterer or a Private Chef explore your business.
               </h2>
               <!-- <p class="text-white leading-relaxed">Download the eKatering app on your platform.</p> -->
             </div>
