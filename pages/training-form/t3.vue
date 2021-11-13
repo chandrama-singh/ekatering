@@ -13,122 +13,45 @@
         <div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
-                   Module 1
-                   
+                   Food Allergen for Caterers Private Chefs Level 1
                 </p>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
-                   Module 1
-                   <span></span>
+                   Purchase 7th June 2021
                 </p>
-                  <p class="text-gray-600 ">
+            </div>
+            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+                <p class="text-gray-600 ">
+                   <span class="font-bold"> Module 1</span>
+                   <br/><span>Lorem ipsum</span>
+                </p>
+                  <p class="text-gray-600 text-center">
                    Duration
                 </p>
             </div>
-            
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+        <!--------------------------------------->
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
-                   Last Name
+                    <span class="font-bold">Module 2</span>
+                   <br/><span>Lorem ipsum</span>
                 </p>
-                 <input
-                      placeholder="Enter Last Name"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      required="required"
-                      type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
-                    />
+                  <p class="text-gray-600 text-center">
+                   Duration
+                </p>
             </div>
-             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+        <!--------------------------------------->
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
-                    Email<span class="text-red-500">*</span>
+                   <span class="font-bold">Module 3</span>
+                   <br/><span>Lorem ipsum</span>
                 </p>
-                 <input
-                      placeholder="Email"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      required="required"
-                      type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
-                    />
-            </div>
-             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Password
+                  <p class="text-gray-600 text-center">
+                   Duration
                 </p>
-                 <input
-                      placeholder="Enter Password"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      required="required"
-                      type="password"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
-                    />
             </div>
-            
-         <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Password Confirmation
-                </p>
-                 <input
-                      placeholder="Re-Enter Password "
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      required="required"
-                      type="password"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
-                    />
-            </div>
-            
         <!--------------------------------------->
     
-             <!-- <div class="p-4 border-b flex justify-center py-6">
-                        <button type="submit"
-                            class="inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
-                            Submit
-                        </button>
-        </div> -->
         </div>
     </div>
   
