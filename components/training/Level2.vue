@@ -7,7 +7,7 @@
       <p class="mb-4 text-gray-400 leading-relaxed">
         Welcome to eKatering online training.
       </p>
-      <p class="mb-4 text-gray-400 leading-relaxed">
+      <p class="mb-2 text-gray-400 leading-relaxed">
         This course offers all caterers, including private chefs the knowledge
         to ensure that they store, prepare, cook and deliver or serve food
         safely. It also equips the trainee with adequate food safety knowledge
@@ -20,12 +20,12 @@
     </div>
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <div class="flex">
         <table class="text-left w-full">
           <thead class="flex text-gray-800 w-full font-bold">
             <tr class="flex w-full mb-2">
-              <th class="p-4 w-1/2 text-gray-400 leading-relaxed">
+              <th class=" w-1/2 text-gray-400 leading-relaxed">
                 There are 7 modules in total, this:
               </th>
               <!-- <th class="p-4 w-1/2">(Duration in hr/mins)</th> -->
@@ -43,46 +43,52 @@
             "
           >
             <tr class="flex w-full">
-              <td class="p-2 w-1/2"><b>Module 1</b> - Food Safety</td>
+              <td class="px-2 w-full mb-2">
+                <span class="w-1/3"><b>Module 1</b></span> <span class="w-1/3"> -</span> <span class="w-1/3"> Food Safety</span></td>
               <!-- <td class="p-4 w-1/2 text-black">4:37</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="p-2 w-1/2"><b>Module 2</b> - General Food Hygiene</td>
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+               <span class="w-1/3"><b>Module 2</b> </span> <span class="w-1/3">-</span>  <span class="w-1/3">General Food Hygiene</span></td>
               <!-- <td class="p-4 w-1/2 text-black">5:39</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="pl-2 w-1/2"><b>Module 3</b> - Kitchen Practises</td>
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+               <span class="w-1/3"><b>Module 3</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Kitchen Practises</span></td>
               <!-- <td class="p-4 w-1/2 text-black">15:45</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="pl-2 w-1/2">
-                <b>Module 4</b> - Food Handlers – Personal Hygiene
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+                 <span class="w-1/3"><b>Module 4</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Food Handlers – Personal Hygiene</span>
               </td>
               <!-- <td class="p-4 w-1/2 text-black">3:22</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="pl-2 w-1/2">
-                <b>Module 5</b> - Cleaning and Disinfection
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+                 <span class="w-1/3"><b>Module 5</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Cleaning and Disinfection</span>
               </td>
               <!-- <td class="p-4 w-1/2 text-black">3:49</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="pl-2 w-1/2"><b>Module 6</b> - Food Safety Hazards</td>
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+               <span class="w-1/3"><b>Module 6</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Food Safety Hazards</span></td>
               <!-- <td class="p-4 w-1/2 text-black">9:11</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="pl-2 w-1/2"><b>Module 7</b> - The Law</td>
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+               <span class="w-1/3"><b>Module 7</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">The Law</span></td>
               <!-- <td class="p-4 w-1/2 text-black">4:09</td> -->
             </tr>
-            <tr class="flex w-full">
-              <td class="pl-2 w-1/2"><b>TEST</b> - Multiple choice</td>
+            <tr class="flex w-full mb-2">
+              <td class="px-2 w-1/2">
+               <span class="w-1/3"><b>TEST</b></span>  <span class="w-1/3">- </span> <span class="w-1/3">Multiple choice</span></td>
               <!-- <td class="p-4 w-1/2 text-black">9:16</td> -->
             </tr>
           </tbody>
         </table>
         <div class="absolute right-5 mt-10">
           <img
-            class="lg:relative lg:w-2/5 lg:h-100"
+            class="lg:relative lg:w-4/5 lg:h-100"
             src="@/assets/icon_top.png"
             alt=""
           />
@@ -102,7 +108,7 @@
     </div>
 
     <section>
-      <div class="w-full max-w-5xl mx-auto text-center px-2 py-12">
+      <div class="w-full max-w-5xl mx-auto text-center px-2 py-4">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
           Food Safety for Caterers and Private Chefs Level 2
