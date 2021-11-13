@@ -244,6 +244,7 @@ export default {
         console.log(res.data.result);
       } catch (error) {
         console.log(error);
+         this.loading = false;
       }
     },
   },

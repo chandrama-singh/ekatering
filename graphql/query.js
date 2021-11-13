@@ -60,6 +60,20 @@ mutation LoginUserMutation($password: String!, $email: String!) {
         isVerified
         createdAt
         updatedAt
+        address{
+          address_line_1
+          address_line_2
+          country
+          town
+          latitude
+          longitude
+          postcode
+        }
+        documents{
+          address_proof
+          food_registration_letter
+          fhrs_letter
+        }
       }
     }
   }
@@ -116,6 +130,11 @@ export const GET_ME = graphql`
         latitude
         longitude
         postcode
+      }
+      documents{
+        address_proof
+        food_registration_letter
+        fhrs_letter
       }
     }
   }
@@ -195,6 +214,23 @@ export const UPDATE_USER_SOCIAL = graphql`
 export const UPDATE_USER_PROFILE = graphql`
   mutation uploadUserPhoto($file: Upload!) {
     result: uploadUserPhoto(file: $file)
+  }
+`;
+
+export const UPDATE_USER_ADDRESS_PROOF = graphql`
+  mutation uploadUserAddressProof($file: Upload!) {
+    result: uploadUserAddressProof(file: $file)
+  }
+`;
+
+export const UPDATE_USER_FOOD_REGISTRATION = graphql`
+  mutation uploadUserFoodRegistrationLetter($file: Upload!) {
+    result: uploadUserFoodRegistrationLetter(file: $file)
+  }
+`;
+export const UPDATE_USER_FHRS_LETTER = graphql`
+  mutation uploadUserFHRSLetter($file: Upload!) {
+    result: uploadUserFHRSLetter(file: $file)
   }
 `;
 
