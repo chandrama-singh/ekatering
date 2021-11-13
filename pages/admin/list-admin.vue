@@ -224,7 +224,7 @@
             type="name"
             name=""
             placeholder="Enter Full Name"
-            class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
+            class="p-2 mb-5 bg-white border border-gray-200 rounded shadow-sm"
             id=""
           >
 
@@ -233,7 +233,7 @@
             type="email"
             name=""
             placeholder="Enter Email ID"
-            class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm"
+            class="p-2 mb-5 bg-white border border-gray-200 rounded shadow-sm"
             id=""
           >
 
@@ -243,7 +243,7 @@
               <input
                 type="password"
                 name=""
-                class="w-full p-5 bg-white border border-gray-200 rounded shadow-sm appearance-none"
+                class="w-full p-2 bg-white border border-gray-200 rounded shadow-sm appearance-none"
                 id=""
               >
             </div>
@@ -252,7 +252,7 @@
               <input
                 type="password"
                 name=""
-                class="w-full p-5 bg-white border border-gray-200 rounded shadow-sm appearance-none"
+                class="w-full p-2 bg-white border border-gray-200 rounded shadow-sm appearance-none"
                 id=""
               >
             
