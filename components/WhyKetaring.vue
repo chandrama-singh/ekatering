@@ -17,14 +17,44 @@
             >
               Why eKatering?
             </h2>
-            <p class="px-2 max-w-6xl text-gray-900 text-justify">
-              The only mobile app specifically created for home/event catering and private chef businesses. We are a food ordering platform that charges a 0% commission. We help you increase visibility, get more customers and increase income. We are here to support your catering business from registration to trading. 
-            </p>
-            <br />
-            <p class="px-2 text-gray-900 text-justify">
-              The only platform that guarantees customers safe, authentic, home-cooked food, prepared in an inspected home kitchen and has been awarded a minimum of 3 for the Food Hygiene Rating Scheme (FHRS).
+            <ul class="list-disc">
+            <li class="px-2 max-w-6xl text-gray-900 text-justify">
+              The only mobile app specifically created for home/event catering and private chef businesses!
+            </li>
+            <li class="px-2 text-gray-900 text-justify">
+              The only food ordering platform that charges 0% commission!
+            </li>
 
-            </p>
+ <li class="px-2 text-gray-900 text-justify">
+            Get 100% of your orders paid directly into your chosen account!
+            </li>
+
+            <li class="px-2 text-gray-900 text-justify">
+            Increase visibility and increase income!
+            </li>
+
+            <li class="px-2 text-gray-900 text-justify">
+            Build your confidence as a home/event and private chef catering business owner.
+            </li>
+
+            <li class="px-2 text-gray-900 text-justify">
+          Makes food ordering easy for your customers and allow customers to review your food and service.
+            </li>
+
+            <li class="px-2 text-gray-900 text-justify">
+        The only platform that guarantees customers safe, authentic, home-cooked food prepared in an inspected home kitchen and achieve a minimum of 3 for the Food Hygiene Rating Scheme.
+            </li>
+
+            <li class="px-2 text-gray-900 text-justify">
+          We will support your catering business from registration to trading. This includes professional advice, guidance and training options.
+            </li>
+
+            <li class="px-2 text-gray-900 text-justify">
+         We will ensure you have the correct documented food safety management system in place applicable to your food business and ensure you comply with UK manufacturing and importing regulations.
+            </li>
+
+
+            </ul>
           </div>
           <br />
           <center>

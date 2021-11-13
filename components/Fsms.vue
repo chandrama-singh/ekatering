@@ -5,12 +5,8 @@
         Documented Food Safety Management System (FSMS)
       </h2>
       <p class=" text-gray-400 leading-relaxed">
-        A documented Food Safety Management System (FSMS) is a systematic
-        approach to controlling food safety hazards within a food business to
-        ensure that food is safe to eat. All businesses are required to put in
-        place, implement and maintain a documented FSMS based on the principles
-        of "Hazard Analysis Critical Control Point" (HACCP). <span class="underline font-bold">This is a legal
-        requirement for all food businesses.</span>
+       Welcome to eKatering Food Safety Consultancy. 
+A documented Food Safety Management System (FSMS) is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat. All businesses are required to put in place, implement and maintain a documented FSMS based on the principles of "Hazard Analysis Critical Control Point" (HACCP). <span class="underline font-bold">This is a legal requirement for all food businesses.</span>
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
@@ -19,17 +15,10 @@
         What is HACCP?
       </h2>
       <p class=" text-gray-400 leading-relaxed">
-        HACCP is a management system in which food safety is addressed by
-        analyzing and controlling biological, chemical, and physical hazards
-        from raw ingredients to the final dish and the delivery or service of
-        the dish. It looks at each process step.
+        HACCP is a management system in which food safety is addressed by analysing and controlling biological, chemical, and physical hazards from raw ingredients to the final dish and the delivery or service of the dish. It looks at each process step.
       </p>
       <p class=" text-gray-400 leading-relaxed">
-        eKatering experienced staff will talk you through your process and
-        provide a documented food safety management system for your catering and
-        manufacturing business and home/event caterers who wish to sell food to
-        another business. Depending on the size of your event catering business,
-        you may be required to have a HACCP.
+        eKatering experienced staff will talk you through your process and provide a documented food safety management system for your catering and manufacturing business and home/ event caterers who wish to sell food to another business. Depending on the size of your event catering business, you may be required to have a HACCP.
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
@@ -41,13 +30,11 @@
         <ul class="ml-6 text-gray-400 text-justify list-disc">
           <li>To ensure you sell safe food.</li>
           <li>
-            To ensure everything is in place before your food safety officer
-            visit your food business.
+          To ensure everything is in place before your food safety officer visit your food business.
           </li>
           <li>To ensure you comply with food safety regulations.</li>
           <li>
-            To ensure you receive the highest Food Hygiene Rating Scheme (FHRS)
-            award
+          To ensure you receive the highest Food Hygiene Rating Scheme (FHRS) award.
           </li>
         </ul>
       </div>

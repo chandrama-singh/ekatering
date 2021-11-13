@@ -3,7 +3,9 @@
         <div class="w-full max-w-5xl mx-auto text-center border rounded-lg px-2 py-12 bg-purple-300">
           <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
           <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
-          <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kick start your digital journey.</span>
+          <span class="text-sm">IF YOU ARE A HOME/ EVENT CATERER OR A PRIVATE CHEF
+TURN YOUR PASSION INTO CASH
+</span>
           <form class="w-full max-w-xl mx-auto py-4 mt-4">
             <div class="flex flex-wrap mb-4">
               <!-- <div class="w-full md:w-2/3">

@@ -16,11 +16,11 @@
               Why We Are Best For You?
             </h2>
             <p class="px-2 max-w-6xl text-gray-900 text-justify font-poppins leading-7 tracking-wide">
-              Since the pandemic, our way of living has changed. The percentage of people working from home has increased. This has provided them with an opportunity to buy home-cooked, nutritional, interesting, and authentic food prepared in a kitchen that complies with food safety regulations. This way, homeworking customers can also support their community financially by using local home catering businesses.
+              Since the pandemic, our way of living has changed. The percentage of home working has increased. This has provided an opportunity for those working at home to buy home-cooked, nutritional, interesting, and authentic food prepared in a kitchen that complies with food safety regulations. Homeworking customers can also support their community financially by using local home catering businesses.
             </p>
             <br/>
             <p class="px-2 text-gray-900 text-justify font-poppins leading-7 tracking-wide">
-              For those individuals, especially those in the hospitality sector, running a home catering business (Home/Event caterers and Private Chefs) can earn income for their household without the overhead expenses of running a takeaway or restaurant. Home/Event caterers and Private Chefs can turn their passion into cash.
+              For those individuals, especially those in the hospitality sector, running a home catering business (Home/ Event caterers and Private Chefs) can provide income for their household without the overhead expenses of running a takeaway or restaurant. Home/ Event caterers and Private Chefs can turn their passion into cash.
             </p>
           </div><br/>
           <div class="px-2"><Nuxt-Link to="/plans" class="block

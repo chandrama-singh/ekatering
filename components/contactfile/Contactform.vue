@@ -107,12 +107,34 @@
                       type="text"
                       placeholder=""
                     >
-                      <option>eKatering Subscription</option>
+                      <option>Home/event caterer – join us</option>
+                      <option>Private Chef –join us</option>
+                      <option>Food Safety Consultancy</option>
+                      <option>Food Standard Consultancy</option>
                       <option>Training</option>
-                      <option>Consultation</option>
-                      <option>Other</option>
+                      <option>General Enquiry</option>
                     </select>
                   </div>
+
+
+                  <div class="relative">
+                    <label class="text-sm font-bold text-gray-700 tracking-wide"
+                      >NAME OF BUSINESS/ESTABLISHMENT<span class="text-red-500"> *</span></label
+                    >
+                    <input
+                      class="
+                        w-full
+                        text-base
+                        py-2
+                        px-2
+                        border border-gray-300
+                        focus:outline-none focus:border-indigo-500
+                      "
+                      type=""
+                      placeholder=""
+                    />
+                  </div>
+
 
                   <div class="mt-4 content-center">
                     <textarea
@@ -226,17 +248,17 @@
           </svg>
         </div>
       </div>
-      <Passion/>
+      <Passion />
     </div>
   </section>
 </template>
 
 <script>
-import Passion from '@/components/training/Passion.vue'
+import Passion from "@/components/training/Passion.vue";
 export default {
-  components:{
+  components: {
     Passion,
-  }
+  },
 };
 </script>
 
