@@ -1,6 +1,5 @@
 <template>
 <div>
-
     <div
       class="
         min-h-screen
@@ -30,13 +29,28 @@
         "
       >
         <div class="grid gap-8 grid-cols-1">
-          <div class="flex flex-col">
-            <div class="flex flex-col sm:flex-row items-center">
-              <h2 class="font-semibold text-lg mr-auto">Register your business</h2>
+          <div class="flex flex-col ">
+            <div class="flex flex-col sm:flex-row items-center text-center border-b-2 ">
+              <h2 class="font-semibold text-lg mr-auto text-center pb-4">Register your business</h2>
               <div class="w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0"></div>
             </div>
             <div class="mt-5">
               <div class="form">
+                <div class="md:space-y-2 mb-3">
+                  <label class="text-xs font-semibold text-gray-600 py-2"
+                    >Catering Category<abbr class="hidden" title="required"
+                      >*</abbr
+                    ></label
+                  >
+                  <div class="flex items-center py-2 w-2/4">
+                    <select id="country" name="country" autocomplete="country"
+                                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>Head office</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                  </div>
+                </div>
                 <div class="md:space-y-2 mb-3">
                   <label class="text-xs font-semibold text-gray-600 py-2"
                     >Business Logo<abbr class="hidden" title="required"
@@ -137,33 +151,7 @@
                     </p>
                   </div>
                 </div>
-                <!-- <div class="mb-3 space-y-2 w-full text-xs">
-							<label class=" font-semibold text-gray-600 py-2">Business  Website</label>
-							<div class="flex flex-wrap items-stretch w-full mb-4 relative">
-								<div class="flex">
-									<span class="flex  leading-normal bg-grey-lighter border-1 rounded-r-none border border-r-0 border-blue-300 px-3 whitespace-no-wrap text-grey-dark text-sm w-12 h-10 bg-blue-300 justify-center items-center  text-xl rounded-lg text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                   </span>
-								</div>
-								<input type="text" class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border border-l-0 h-10 border-grey-light rounded-lg rounded-l-none px-3 relative focus:border-blue focus:shadow" placeholder="https://">
-                  </div>
-							</div> -->
-                <!------------------------------------------------->
-                <!-- <div class="mb-3 space-y-2 w-full text-xs">
-							<label class=" font-semibold text-gray-600 py-2">Business  Website</label>
-								<div class="w-full flex flex-col mb-3">
-										<label class="font-semibold text-gray-600 py-2">Location<abbr title="required">*</abbr></label>
-										<select class="block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4 md:w-full " required="required" name="integration[city_id]" id="integration_city_id">
-                  <option value="">Seleted location</option>
-                  <option value="">Cochin,KL</option>
-                  <option value="">Mumbai,MH</option>
-                  <option value="">Bangalore,KA</option>
-                </select>
-										<p class="text-sm text-red-500 hidden mt-3" id="error">Please fill out this field.</p>
-									</div>
-							</div> -->
+              
                 <!------------------------------------------------>
                 <div class="flex-auto w-full mb-1 text-xs space-y-2">
                   <label class="font-semibold text-gray-600 py-2"
@@ -519,112 +507,13 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact Number<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Contact Number"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address1"
-                    />
-                  </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact Email<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Contact Email"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address2"
-                    />
-                    <p class="text-sm text-red-500 hidden mt-3" id="error">
-                      Please fill out this field.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact First Name<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="First Name"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address1"
-                    />
-                  </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact Last Name<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Last Name"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address2"
-                    />
-                    <p class="text-sm text-red-500 hidden mt-3" id="error">
-                      Please fill out this field.
-                    </p>
-                  </div>
-                </div>
-
-                <p class="text-xs text-red-500 text-right my-3">
+                <!-- <p class="text-xs text-red-500 text-right my-3">
                   Required fields are marked with an asterisk
                   <abbr title="Required field">*</abbr>
-                </p>
-                
+                </p> -->
+                 <input type="checkbox" class="mr-2" />I have read, understood
+                and agree to the Terms and Conditions
+
               </div>
             </div>
           </div>
@@ -632,11 +521,9 @@
       </div>
     </div>
 
-
-    <!-- Payment Section  -->
-
-
-<section class="py-1 bg-blueGray-50">
+    <!-- Payment Section  --><!-- Payment Section  --><!-- Payment Section  -->
+    <!-- Payment Section  --><!-- Payment Section  --><!-- Payment Section  -->
+<section class="py-1 bg-blueGray-100">
     <div class="w-full lg:w-8/12 px-4 mx-auto mt-4">
       <div
         class="
@@ -648,16 +535,28 @@
           mb-6
           shadow-lg
           rounded-lg
-          bg-blueGray-100
+          bg-blue-50
           border-0
         "
       >
-        <div class="rounded-t bg-white mb-0 px-6 py-6">
-          <div class="text-center flex justify-center">
-            <h6 class="text-blueGray-700 text-xl font-bold">Checkout</h6>
+        <div class="rounded-t bg-purple-500 mb-0 px-6 py-6">
+          <div class="text-center flex justify-center text-white">
+            <h6 class="text-blueGray-700 text-xl font-bold">CHECKOUT</h6>
           </div>
         </div>
-
+   <div class="text-center flex justify-center mt-3">
+           <ul class="flex">
+            <li class="mx-2">
+              <img class="w-24" src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/computop.png" alt="" />
+            </li>
+            <li class="mx-2">
+              <img class="w-24" src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/verified-by-visa.png" alt="" />
+            </li>
+            <li class="ml-5">
+              <img class="w-14" src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/mastercard-id-check.png" alt="" />
+            </li>
+          </ul>
+        </div>
         <div
           class="
             flex flex-wrap
@@ -732,7 +631,7 @@
           <form>
             <div class="flex flex-wrap">
               <div class="w-full lg:w-12/12 px-4">
-                <div class="relative w-full mb-3 text-center">
+                <div class="relative w-full mb-3 text-left">
                   <label
                     class="
                       block
@@ -768,7 +667,7 @@
                   />
                 </div>
 
-                <div class="relative w-full mb-3 text-center">
+                <div class="relative w-full mb-3 text-left">
                   <label
                     class="
                       block
@@ -819,26 +718,42 @@
                       >
                         MM / YY
                       </label>
-                      <input
-                        type="text"
-                        placeholder="MM / YY"
-                        class="
-                          border-0
-                          px-3
-                          py-3
-                          placeholder-blueGray-300
-                          text-blueGray-600
-                          bg-white
-                          rounded
-                          text-sm
-                          shadow
-                          focus:outline-none focus:ring
-                          w-full
-                          ease-linear
-                          transition-all
-                          duration-150
-                        "
-                      />
+                      <span class="flex">
+                       <select
+                  name=""
+                  id=""
+                  class="form-select appearance-none block w-full px-5 py-2 border rounded-lg bg-white shadow-lg placeholder-gray-400 text-gray-700 focus:ring focus:outline-none"
+                  x-model="expired.month"
+                >
+                  <option value="" selected disabled>MM</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <select
+                  name=""
+                  id=""
+                  class="form-select appearance-none block w-full px-5 py-2 border rounded-lg bg-white shadow-lg placeholder-gray-400 text-gray-700 focus:ring focus:outline-none"
+                  x-model="expired.year"
+                >
+                  <option value="" selected disabled>YY</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                </select>
+                </span>
                     </div>
                   </div>
                   <div class="w-full lg:w-6/12 px-4">
@@ -877,9 +792,7 @@
                     </div>
                   </div>
                 </div>
-                <input type="checkbox" class="mr-2" />I have read, understood
-                and agree to the Terms and Conditions
-
+               
                 <button
                   class="
                     inline-block

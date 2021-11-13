@@ -4,7 +4,7 @@
     <div class="max-w-4xl  bg-blue-50 w-full rounded-lg shadow-xl border-2 border-purple-400 ">
         <div class="p-4 border-b flex justify-between bg-purple-500 text-white">
             <h2 class="text-2xl font-semibold">
-                LOCAL AUTHORITY REGISTRATION  - Consultation
+                My Account
             </h2>
             <!-- <p class="text-sm text-white">
                 Ref: #025/2020
@@ -13,10 +13,33 @@
         <div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
-                   Name<span class="text-red-500">*</span>
+                   First Name
                 </p>
                  <input
-                      placeholder="Enter Name"
+                      placeholder="Enter First Name"
+                      class="
+                        appearance-none
+                        block
+                        w-full
+                        bg-grey-lighter
+                        text-grey-darker
+                        border border-grey-lighter
+                        rounded-lg
+                        h-10
+                        px-4
+                      "
+                      required="required"
+                      type="text"
+                      name="integration[shop_name]"
+                      id="integration_shop_name"
+                    />
+            </div>
+            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+                <p class="text-gray-600 ">
+                   Last Name
+                </p>
+                 <input
+                      placeholder="Enter Last Name"
                       class="
                         appearance-none
                         block
@@ -59,10 +82,10 @@
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
-                    Phone
+                    Password
                 </p>
                  <input
-                      placeholder="Contact Number"
+                      placeholder="Enter Password"
                       class="
                         appearance-none
                         block
@@ -75,18 +98,18 @@
                         px-4
                       "
                       required="required"
-                      type="email"
+                      type="password"
                       name="integration[shop_name]"
                       id="integration_shop_name"
                     />
             </div>
             
          <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-              <p class="text-gray-600 ">
-                    Message
+                <p class="text-gray-600 ">
+                    Password Confirmation
                 </p>
-              <textarea
-                      placeholder="Message"
+                 <input
+                      placeholder="Re-Enter Password "
                       class="
                         appearance-none
                         block
@@ -95,13 +118,14 @@
                         text-grey-darker
                         border border-grey-lighter
                         rounded-lg
-                        h-20
+                        h-10
                         px-4
                       "
                       required="required"
-                      type="text"
-                     rows="8"
-                    ></textarea>
+                      type="password"
+                      name="integration[shop_name]"
+                      id="integration_shop_name"
+                    />
             </div>
             
         <!--------------------------------------->

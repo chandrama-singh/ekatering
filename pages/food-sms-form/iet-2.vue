@@ -59,7 +59,7 @@
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
                 <p class="text-gray-600 ">
-                   Name (Required)
+                   Name <span class="text-red-600 font-bold">*</span>
                 </p>
                  <input
                       placeholder="Enter Name"
@@ -106,7 +106,7 @@
             <!--------------------------------------------------------------------------------------->
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
                 <p class="text-gray-600 ">
-                    Phone number (required)
+                    Phone number <span class="text-red-600 font-bold">*</span>
                 </p>
                  <input
                       placeholder="Phone Number"
@@ -129,7 +129,7 @@
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
                 <p class="text-gray-600 ">
-                   Email Address (required)
+                   Email Address <span class="text-red-600 font-bold">*</span>
                 </p>
                  <input
                       placeholder="Email Address"
