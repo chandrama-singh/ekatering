@@ -7,7 +7,7 @@
           <div class="max-w-7xl">
             <h2
               class="
-                mb-6
+                mb-2
                 text-black text-3xl
                 lg:text-4xl
                 font-bold font-heading
@@ -18,19 +18,19 @@
             <p class="max-w-6xl text-gray-900 text-justify">
               All our fees are noted in:
             </p>
-            <br />
-            <p class="ml-8 text-justify text-purple-900 font-bold">
+           
+            <p class="ml-4 text-justify text-purple-900 font-bold cursor-pointer">
               <Nuxt-Link to="/tr_level_2"
                 >Food Safety for Caterers and Private Chefs - Level 2</Nuxt-Link
               >
             </p>
-            <p class="ml-8 text-justify text-purple-900 font-bold">
+            <p class="ml-4 text-justify text-purple-900 font-bold cursor-pointer">
               <Nuxt-Link to="/tr_level_1">
                 Food Allergen for Caterers and Private Chefs - Level
                 1</Nuxt-Link
               >
             </p>
-            <p class="ml-8 mt-2 max-w-6xl text-gray-900 text-justify">
+            <p class="ml-4 mt-2 max-w-6xl text-gray-900 text-justify">
               If you require further assistance or advice, do not hesitate to
               <Nuxt-Link to="/contactus" class="text-purple-800"
                 >contact us</Nuxt-Link
@@ -57,7 +57,7 @@
                   xl:my-px xl:px-px xl:w-1/2
                 "
               >
-                <p class="ml-4 text-purple-900 text-center font-bold">
+                <p class="ml-2 text-purple-900 text-center font-bold">
                   Food Safety for Caterers and Private Chefs - Level 2
                 </p>
                 <center>
@@ -80,7 +80,7 @@
               </div>
 
               <div
-                class="
+                class="mt-2
                   w-full
                   overflow-hidden
                   md:my-px md:px-px md:w-1/2
@@ -88,7 +88,7 @@
                   xl:my-px xl:px-px xl:w-1/2
                 "
               >
-                <p class="ml-8 text-purple-900 text-center font-bold">
+                <p class="ml-2 text-purple-900 text-center font-bold">
                   Food Allergen for Caterers and Private Chefs - Level 1
                 </p>
                 <center>

@@ -6,11 +6,11 @@
       </h2>
       <p class=" text-gray-400 leading-relaxed">
        Welcome to eKatering Food Safety Consultancy. 
-A documented Food Safety Management System (FSMS) is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat. All businesses are required to put in place, implement and maintain a documented FSMS based on the principles of "Hazard Analysis Critical Control Point" (HACCP). <span class="underline font-bold">This is a legal requirement for all food businesses.</span>
+A documented Food Safety Management System (FSMS) is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to eat. All businesses are required to put in place, implement and maintain a documented FSMS based on the principles of "Hazard Analysis Critical Control Point" (HACCP).<br/> <span class="underline font-bold">This is a legal requirement for all food businesses.</span>
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-1 font-semibold font-heading">
         What is HACCP?
       </h2>
@@ -22,7 +22,7 @@ A documented Food Safety Management System (FSMS) is a systematic approach to co
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-1 font-semibold font-heading">
         Why do I need a documented FSMS?
       </h2>
@@ -41,8 +41,8 @@ A documented Food Safety Management System (FSMS) is a systematic approach to co
     </div>
     <!---------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-3xl mb-1 font-semibold font-heading">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
+      <h2 class="text-3xl mb-1 font-semibold font-heading capitalize">
         Full HACCP documentation with monitoring template forms
       </h2>
       <div class="flex">
@@ -54,7 +54,7 @@ A documented Food Safety Management System (FSMS) is a systematic approach to co
     </div>
     <!---------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-1 font-semibold font-heading">
         Visit to manufacturing site and full HACCP documentation with monitoring
         template forms

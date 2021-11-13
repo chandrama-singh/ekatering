@@ -9,7 +9,7 @@
       </p>
     </div>
    
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <!-- <h2 class="text-3xl mb-2 font-semibold font-heading">
         Why train with eKatering?
       </h2> -->
@@ -32,17 +32,17 @@
       </p>
     </div>
     <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Registration
       </h2>
       <p class="text-gray-400 leading-relaxed">
-        This service is free. Simply follow the Food Standard Agency (FSA) link below and enter your postcode. . This will take you directly to your local authority registration page. Once on the food registration page, complete the Food Registration form online and submit it.
+        This service is free. Simply follow the Food Standard Agency (FSA) link below and enter your postcode. This will take you directly to your local authority registration page. Once on the food registration page, complete the Food Registration form online and submit it.
       </p>
     </div>
     <!---------------------------------------------------------------------------->
     <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         FSA food registration link:
       </h2>
@@ -55,7 +55,7 @@ If you require further assistance or advice, do not hesitate to <Nuxt-Link to="/
     </div>
     <!---------------------------------------------------------------------------->
     <section>
-      <div class="w-full max-w-5xl mx-auto text-center px-2 py-12">
+      <div class="w-full max-w-5xl mx-auto text-center px-2 py-4">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">
           Registration advise and completion with a local authority
