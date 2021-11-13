@@ -4,39 +4,28 @@
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Food Allergen for Caterers and Private Chefs - Level 1
       </h2>
-      <p class="mb-4 text-gray-400 leading-relaxed">Welcome to eKatering online training.</p>
-    
-      <p class="mb-4 text-gray-400 leading-relaxed">
-This course is an introductory course specifically designed for caterers and private chefs. If you handle open food, prepare, cook and serve, it is highly recommended that you complete this training. This course aims to prepare you for the management of food allergens when handling open food. The main advantage of completing the course online is that you are in control and you can go back and review your learning at any time within 1 month of purchasing the course.
+      <p class="mb-2 text-gray-400 leading-relaxed">
+        Welcome to eKatering online training.
+      </p>
 
+      <p class="text-gray-400 leading-relaxed">
+        This course is an introductory course specifically designed for caterers
+        and private chefs. If you handle open food, prepare, cook and serve, it
+        is highly recommended that you complete this training. This course aims
+        to prepare you for the management of food allergens when handling open
+        food. The main advantage of completing the course online is that you are
+        in control and you can go back and review your learning at any time
+        within 1 month of purchasing the course.
       </p>
     </div>
 
-    
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <!-- <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Why train with eKatering?
-      </h2> -->
-      <!-- <p class="mb-4 text-gray-400 leading-relaxed">
-        As a home/event caterer and private chef, we strongly recommend you
-        train with us because this course has been specifically tailored for you
-        by professional eKatering staff with a wealth of experience in the
-        industry. Furthermore, the courses offer all catering businesses the
-        following:
-      </p> -->
-<p class="mb-4 font-bold text-gray-400 leading-relaxed">There are 6 modules in total, this:</p>
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-4">
+      <p class="mb-4 font-bold text-gray-400 leading-relaxed">
+        There are 6 modules in total, this:
+      </p>
 
       <div class="flex">
-
-
         <table class="text-left w-full">
-          <!-- <thead class="flex text-gray-800 w-full font-bold">
-            <tr class="flex w-full mb-2">
-              <th class="p-4 w-1/2">There are 6 modules in total, this:</th>
-              <th class="p-4 w-1/2">(Duration in hr/mins)</th>
-            </tr>
-          </thead> -->
-          <!-- Remove the nasty inline CSS fixed height on production and replace it with a CSS class — this is just for demonstration purposes! -->
           <tbody
             class="
               flex flex-col
@@ -81,22 +70,27 @@ This course is an introductory course specifically designed for caterers and pri
             </tr>
           </tbody>
         </table>
-        <div class="absolute right-5 mt-10">
+        <div class="absolute right-10 mt-10">
           <img
-            class="lg:relative lg:w-2/5 lg:h-100"
+            class="lg:relative lg:w-full lg:h-100"
             src="@/assets/icon_top.png"
             alt=""
           />
         </div>
       </div>
       <p class="my-4 text-gray-400 leading-relaxed">
-        The course is interactive, practical and allows you to assess your knowledge through different activities in each module. This will help you retain important information and knowledge required during food preparation.
+        The course is interactive, practical and allows you to assess your
+        knowledge through different activities in each module. This will help
+        you retain important information and knowledge required during food
+        preparation.
       </p>
       <p class="mb-4 text-gray-400 leading-relaxed">
-        At the end of the course, you are required to complete a multiple-choice TEST and achieve no less than 85% to receive a PDF certificate, evidencing the completion of the course.
+        At the end of the course, you are required to complete a multiple-choice
+        TEST and achieve no less than 85% to receive a PDF certificate,
+        evidencing the completion of the course.
       </p>
     </div>
-    
+
     <section>
       <div class="w-full max-w-5xl mx-auto text-center px-2 py-12">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->

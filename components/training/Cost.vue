@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pt-20 pb-5 2xl:pb-40 overflow-hidden mt-6">
+  <section class="relative pt-4 pb-5 2xl:pb-40 overflow-hidden">
     <p></p>
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-16 lg:mb-28">
@@ -11,24 +11,31 @@
                 text-black text-3xl
                 lg:text-4xl
                 font-bold font-heading
-                ml-6
               "
             >
               How much does it cost?
             </h2>
-            <p class="ml-6 max-w-6xl text-gray-900 text-justify">
+            <p class="max-w-6xl text-gray-900 text-justify">
               All our fees are noted in:
             </p>
             <br />
             <p class="ml-8 text-justify text-purple-900 font-bold">
-              <Nuxt-Link to="/tr_level_2" >Food Safety for Caterers and Private Chefs - Level 2</Nuxt-Link>
+              <Nuxt-Link to="/tr_level_2"
+                >Food Safety for Caterers and Private Chefs - Level 2</Nuxt-Link
+              >
             </p>
             <p class="ml-8 text-justify text-purple-900 font-bold">
-             <Nuxt-Link to="/tr_level_1"> Food Allergen for Caterers and Private Chefs - Level 1</Nuxt-Link>
+              <Nuxt-Link to="/tr_level_1">
+                Food Allergen for Caterers and Private Chefs - Level
+                1</Nuxt-Link
+              >
             </p>
             <p class="ml-8 mt-2 max-w-6xl text-gray-900 text-justify">
               If you require further assistance or advice, do not hesitate to
-              <Nuxt-Link to="/contactus" class="text-purple-800">contact us</Nuxt-Link> with your enquiry.
+              <Nuxt-Link to="/contactus" class="text-purple-800"
+                >contact us</Nuxt-Link
+              >
+              with your enquiry.
             </p>
 
             <div
@@ -50,7 +57,7 @@
                   xl:my-px xl:px-px xl:w-1/2
                 "
               >
-                <p class="ml-8 text-purple-900 text-center font-bold">
+                <p class="ml-4 text-purple-900 text-center font-bold">
                   Food Safety for Caterers and Private Chefs - Level 2
                 </p>
                 <center>

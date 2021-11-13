@@ -55,7 +55,9 @@
               <!-- <td class="p-4 w-1/2 text-black">15:45</td> -->
             </tr>
             <tr class="flex w-full">
-              <td class="pl-2 w-1/2"><b>Module 4</b> - Food Handlers – Personal Hygiene</td>
+              <td class="pl-2 w-1/2">
+                <b>Module 4</b> - Food Handlers – Personal Hygiene
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">3:22</td> -->
             </tr>
             <tr class="flex w-full">
@@ -88,13 +90,17 @@
       </div>
       <br />
       <p class="mb-4 text-gray-400 leading-relaxed">
-        The course is interactive, practical and allows you to assess your knowledge through different activities in each module to ensure you retain important information and knowledge required during food preparation.
+        The course is interactive, practical and allows you to assess your
+        knowledge through different activities in each module to ensure you
+        retain important information and knowledge required during food
+        preparation.
       </p>
       <p class="mb-4 text-gray-400 leading-relaxed">
-        At the end of the course, you are required to complete a multiple-choice TEST and achieve no less than 85% to receive a PDF certificate.
+        At the end of the course, you are required to complete a multiple-choice
+        TEST and achieve no less than 85% to receive a PDF certificate.
       </p>
     </div>
-    
+
     <section>
       <div class="w-full max-w-5xl mx-auto text-center px-2 py-12">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
@@ -120,7 +126,7 @@
         </button>
       </div>
     </section>
-   
+
     <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
