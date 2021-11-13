@@ -72,9 +72,85 @@
         
     </td>
   </tr> 
- 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">Force Majeure Event
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means an event beyond the reasonable control of either Party including but not limited to strikes, lock-outs or other industrial disputes (whether involving the workforce of the Party or a third party), failure of a material utility service or transport network, act of God, war, riot, act of terrorism, civil commotion, epidemic or pandemic, malicious damage by a third party, compliance with any law or governmental order, rule, regulation or direction by a third party, material accident, breakdown of plant or machinery, fire, flood or storm.</p>
+        
+    </td>
+  </tr> 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">Goods/Products
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means the dishes, menu items, services and products provided by your Catering business or Private Chef’s service.</p>
+        
+    </td>
+  </tr> 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">IPRs
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means any and all intellectual property rights of any nature anywhere in the world whether registered, unregistered, registrable or otherwise, including any Trademark.</p>
+        
+    </td>
+  </tr> 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">E-Katering Order Platform
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means any of the eKatering website (www.eKatering.co.uk) and its affiliated websites), mobile applications and ordering platforms.</p>
+        
+    </td>
+  </tr> 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">Order
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means an order for Goods placed by a Customer on the E-Katering Order Platform.</p>
+        
+    </td>
+  </tr> 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">Business Information
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means the information about your business and includes the information about your Goods, services, menu, address, opening hours, delivery radius and contact details, and may, at our request, include a complete set of records to trace the supply chain of all Goods and services you provide.</p>
+        
+    </td>
+  </tr> 
+<!-- each row -->
+<!-- each row -->
+ <tr class="bg-white border-b  border border-gray-800">
+    <td class="px-4 py-2 font-semibold w-1/5 border border-gray-800">Trademark
+</td>
+    <td class="px-2 py-2 w-4/5">
+        <p class="px-4 py-2">Means the words “eKatering”, the Colour Ray Logo and any other registered or unregistered trademarks and logos used by us or any Affiliates, separately and in combination (whether registered or not), and references to “our Trademark” are references to the Trademark.</p>
+        
+    </td>
+  </tr> 
 <!-- each row -->
 </table>
+<div class="container mx-auto px-4 bottom-0 p-4 mt-2">
+      <h2 class="text-xl mb-2 font-semibold font-heading">
+       	SECTION B. GENERAL TERMS
+      </h2>
+      <p class=" text-gray-400 leading-relaxed">
+        Capitalised words in the Agreement have the following meanings:
+      </p>
       <div class="flex ml-6">
         <ul class="ml-6 text-gray-400 text-justify list-disc">
           <li>Professional advice based on information and documents provided by the Business.
@@ -85,72 +161,66 @@
 
         
       </div>
+</div>
     </div>
     <!---------------------------------------------------------------------------->
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-xl mb-2 font-semibold font-heading">
-        2. Service
+       1. COMMERCIAL AGENCY
       </h2>
       <p class="text-gray-400 leading-relaxed">
-        E-Katering Ltd will assist Business in accordance with the scope of services with noted fees provided on the Platform. Services not included on the Platform may be performed by eKatering at the request of Business for noted fees. From the date of payment, and the completion of all requested downloads, E-Katering will provide you the Business with the said service within 28 working days maximum or before the required date.
-      </p>
-    </div>
-    <!---------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-xl mb-2 font-semibold font-heading">
-        3. Fee
-      </h2>
-      <p class="text-gray-400 leading-relaxed">
-        E-Katering Ltd will assist Business in accordance with the scope of services. Services not included in Scope of Services may be performed by E-Katering Ltd at the request of Business for noted fees. 
-      </p>
-    </div>
-    <!---------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-xl mb-2 font-semibold font-heading">
-        4. Limited Services/Confidential Information 
-      </h2>
-      <p class="text-gray-400 leading-relaxed">
-        E-Katering Ltd expressly agrees not to divulge, publish or communicate any information regarding the  Businesses or their financial conditions to any person without the express written consent of the  Businesses. All information obtained by E-Katering Ltd during this engagement and all suggestions and recommendations received by the Businesses shall remain the property of the Businesses and E-Katering Ltd shall keep all such matters confidential.
-      </p>
-    </div>
-    <!---------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-xl mb-2 font-semibold font-heading">
-        5. Term
-      </h2>
-      <p class="text-lg text-gray-800 mb-2 font-semibold font-heading">
-        5.1 Consultancy Services
-      </p>
-      <p class="text-gray-400 leading-relaxed">
-        The term of engagement shall begin on the date of full payment of noted fees and shall terminate at any stage with (28) days notice by the Businesses. In the event of early termination, no refund of the fee paid will be due unless termination is for the failure of E-Katering Ltd to perform the services purchased and agreed with by the Business in which event the fee to which will be due from the  Business.
-      </p>
-    </div>
-    <!---------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------->
-     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-lg text-gray-800 mb-2 font-semibold font-heading">
-        5.2 Online Training Services 
-      </h2>
-      <p class="text-gray-400 leading-relaxed">
-        The term of engagement for all E-Katering Ltd online training shall begin on the date of purchase by the General Users and shall terminate a month after. All training subscription period is for one month. It is the General User’s responsibility to ensure they complete the course, test and save a copy of their certificate before their monthly subscription is terminated. eKatering will not be responsible for any refund or extension of the subscription term.
-      </p>
-    </div>
-    <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
-    <p class=" text-gray-400 leading-relaxed">
-        <b>6.</b> If it becomes necessary to enforce any of the terms of this agreement the defaulting party agrees to pay all reasonable costs or fees incurred therein.
-      </p>
-    </div>
-     <!---------------------------------------------------------------------------->
-    <!-- <section class="py-4 px-2">
-        <div class="w-full max-w-5xl mx-auto text-center">
+       1.1.	You appoint us as your commercial agent to: </p>
+        <div class="flex ml-6">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>Conclude, through the E-Katering Order Platform, legally binding contracts for the sale of Goodsto Customers on your behalf. This means that, although we will conclude these contracts on your behalf, they will actually in each case be made between you and a Customer, and will take effect when an Order is placed by a Customeron the E-Katering Order Platform; and
+</li>
+          <li>tell third parties (including Customers) that we are your authorised agent</li>
          
-         <Nuxt-Link to="/contactus"> <button class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Contact Us</button>
-     </Nuxt-Link>   </div>
-      </section> -->
+        </ul>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------->
+     <div class="container mx-auto px-4 bottom-0 p-4 mt-4">
+      <h2 class="text-xl mb-2 font-semibold font-heading">
+       2. OUR OBLIGATIONS
+      </h2>
+      <p class="text-gray-400 leading-relaxed">
+       2.1. We will provide you: </p>
+        <div class="flex ml-6">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>An order processing service by means of the E-Katering Order Platform which enables Customers to place Orders on the E-Katering Order Platform for Goods to be supplied by you; and
+</li>
+          <li>other services as may be agreed from time to time,
+(together, the “Services”)      
+</li>
+         
+        </ul>
+        </div>
+        <p class="text-gray-400 leading-relaxed mt-2">
+       2.2. We during non-promotional campaigns, we will charge you the Registration and Monthly Subscription Fees in the following manner  : </p>
+        
+        <div class="flex ml-6 mt-2">
+        <ul class="ml-6 text-gray-400 text-justify list-disc">
+          <li>Registration Fee: £49.99 (non refundable) </li>
+          <li>Monthly subscription charge: £19.99      
+</li>
+         
+        </ul> </div>
+         <p class="text-gray-400 leading-relaxed">
+       2.3. When there are promotional campaignsoffered by E-Katering, then the Caterers will be charged accordingly.</p>
+     
+    
+     </div>
+    <!---------------------------------------------------------------------------->
+     <!---------------------------------------------------------------------------->
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+      <h2 class="text-xl mb-2 font-semibold font-heading">
+       3. REVIEWS
+      </h2>
+      <p class="text-gray-400 leading-relaxed">
+      3.1   We may display on the E-KateringOrder Platformratings and comments ("Reviews") provided by Customers about you or an Orderdealt with by you. We have no responsibility or liability to you for any Reviews, and we are not able to remove or edit any Reviews unless the Reviews are defamatory or objectionable. We will only do so only in accordance with applicable legislation. You will not yourself post, cause or allow any other party to post any Reviews about your own business that are misleading, deceptive, fraudulent or otherwise breach any guidelines for Reviews published by us.
+      </p>
+    </div>
     <!---------------------------------------------------------------------------->
   </section>
 </template>
