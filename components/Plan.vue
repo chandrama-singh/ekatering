@@ -83,7 +83,7 @@
               <h4 class="mb-2 text-2xl font-bold text-white font-heading">
                 eKatering Subscription
               </h4>
-              <span class="text-4xl font-bold">£49.99</span>
+              <span class="text-4xl font-bold">£0</span>
               <p class="mt-3 mb-6 text-gray-50 leading-loose">
                 At registration, you are required to submit a few pieces of
                 documentation. Checks will be done to verify all documentation.
