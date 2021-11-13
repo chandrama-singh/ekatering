@@ -92,7 +92,7 @@
                     <label
                       class="text-sm font-bold text-gray-700 tracking-wide"
                     >
-                      Reasone for Contact
+                      Reason for Contact
                     </label>
                     <select
                       class="
