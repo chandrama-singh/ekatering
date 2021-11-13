@@ -1,11 +1,11 @@
 <template>
   <section>
     <section class="pt-20 pb-12 md:pb-8">
-      <div class="container px-4 mx-auto">
+      <div class=" px-8 mx-auto">
         <div class="flex flex-wrap -mx-3">
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
             <div class="flex items-start">
-              <div class="w-1/5">
+              <div class="w-1/5 mt-2">
                 <img src="~assets/ab1.png" class="h-24 w-30" />
               </div>
               <div class="w-4/5">
@@ -21,13 +21,13 @@
           </div>
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
             <div class="flex flex-wrap items-start">
-              <div class="w-1/5">
+              <div class="w-1/5 mt-2">
                 <img src="~assets/ab3.png" class="h-24 w-30" />
               </div>
               <div class="w-4/5">
                 <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Flexible software</h3> -->
                 <p class="text-blueGray-400 leading-loose text-justify">
-                  eKatering is a one stop-shop for your home/event and private
+                  eKatering is a one-stop-shop for your home/event and private
                   chef catering business. The
                   <nuxt-link
                     to="/consultation/consultancy/"
@@ -48,8 +48,8 @@
           </div>
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
             <div class="flex flex-wrap items-start">
-              <div class="w-1/5">
-                <img src="~assets/ab4.png" class="h-24 w-30" />
+              <div class="w-1/5 mt-2">
+                <img src="~assets/ab5.png" class="h-24 w-30" />
               </div>
               <div class="w-4/5">
                 <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Key Elements</h3> -->
@@ -74,8 +74,8 @@
           </div>
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
             <div class="flex flex-wrap items-start">
-              <div class="w-1/5">
-                <img src="~assets/ab2.png" class="h-24 w-30" />
+              <div class="w-1/5 pl-4 mt-2">
+                <img src="~assets/ab2.png" class="h-24 w-31" />
               </div>
               <div class="w-4/5">
                 <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Outstanding look</h3> -->
