@@ -225,4 +225,8 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.right-img{
+  width:30%;
+}
+</style>

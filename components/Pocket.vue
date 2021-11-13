@@ -15,9 +15,9 @@
                 </div>
                 <div class="flex items-start py-4">
                   <div class="">
-                   <img class="relative mx-auto rounded-xl h-16 w-full z-10"  src="@/assets/apple-store.png"/>
+                   <img class="relative mx-auto rounded-xl h-20 w-full z-10"  src="@/assets/apple-store.png"/>
                   </div>
-                  <div class="ml-2">
+                  <div class="ml-2 mt-2">
                    <img class="relative mx-auto rounded-xl h-16 w-full z-10"  src="@/assets/play-store.png"/>
                     </div>
                 </div>

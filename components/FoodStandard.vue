@@ -7,7 +7,7 @@
       </p>
     </div>
 
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         What is Food Standard?
       </h2>
@@ -16,7 +16,7 @@
       </p>
     </div>
 
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Food Standard for home/event caterers and private chefs
       </h2>
@@ -31,9 +31,9 @@
       </p>
     </div>
 
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Food Standard for manufacturers
+        Food Standard for Manufacturers
       </h2>
       <p class="text-gray-400 leading-relaxed">
         If you import food directly from outside the UK, you must comply with current regulations that apply to certain foodstuffs, import restrictions and further requirements on labelling, packaging and product composition.
@@ -41,16 +41,16 @@
       <p class="text-gray-400 leading-relaxed">eKatering will assist you to ensure compliance with all current regulations.</p>
     </div>
 
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Food Standard for importers
+        Food Standard for Importers
       </h2>
       <p class="text-gray-400 leading-relaxed">
         If you are an importer of Product of Animal Origen  (POAO) or Food Not Of Animal Origin (FNAO) you are required by law to comply with current regulations. Non-compliance can be very costly for your business. Complying with these regulations ensure the food you import and put into the UK market is safe for customers.
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <!-- <h2 class="text-3xl mb-2 font-semibold font-heading">
         What is SFBB ?
       </h2> -->
@@ -77,7 +77,7 @@
     </div>
     <!---------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
+    <div class="container mx-auto px-4 bottom-0 p-4">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Why do I need a Food Standard?
       </h2>
@@ -104,7 +104,7 @@
       <div class="w-full max-w-5xl mx-auto text-center">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
-          Coaching and completion of a food allergen assessment chart
+          Coaching and Completion of a Food Allergen Assessment Chart
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
         <Nuxt-Link to="/contactus">
@@ -133,8 +133,8 @@
       <div class="w-full max-w-5xl mx-auto text-center">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
-          Manufacturers and importers Full review, assessment and advice on
-          documentation and procedure
+          Manufacturers and Importers Full Review, Assessment and Advice on
+          Documentation and Procedure
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
         <Nuxt-Link to="/contactus"><button

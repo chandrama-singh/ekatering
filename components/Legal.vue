@@ -2,7 +2,7 @@
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Legal Advice - Food safety and food standard
+        Legal Advice - Food Safety and Food Standard
       </h2>
       <p class="mb-4 mt-4 text-gray-400 leading-relaxed">
         Once your food business is operating and trading, you cannot avoid food
@@ -27,9 +27,9 @@
       </p>
     </div>
 
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Why do I need legal advice?
+        Why do I need Legal Advice?
       </h2>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
         SFBB is a simple documented food safety management system for the following:
@@ -51,9 +51,9 @@
     </div>
     <!---------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        How much does it cost?
+        How much does it Cost?
       </h2>
       <p class="mb-2 text-gray-800 leading-relaxed">
         All our Fee are noted in <nuxt-link to="/fees" class="text-purple-800"

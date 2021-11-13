@@ -2,10 +2,10 @@
   <section>
     <!------------------------------------------------------------------------------------------------------>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
-      <h2 class="text-3xl mb-10 font-semibold font-heading">
+      <h2 class="text-3xl mb-6 font-semibold font-heading">
         eKatering Features
       </h2>
-       <h4 class="text-2xl mb-2 mt-3 font-semibold font-heading">
+       <h4 class="text-2xl mb-2  font-semibold font-heading">
         eKatering Mobile App
       </h4>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
@@ -26,21 +26,21 @@
           <li>Be in control of your home/event and private chef business.</li>
         </ul>
       </div>
-      <div class="flex mt-10 ml-8">
-              <div class="">
-               <img class="relative mx-auto rounded-xl h-12 w-full z-10 mr-2"  src="@/assets/apple-store.png"/>
-              </div>
-              <div>
-              <img class=" ml-2 relative mx-auto rounded-xl h-10 w-full z-10"  src="@/assets/play-store.png"/>
-              </div>
-            </div>
+      <div class="flex items-start py-4">
+                  <div class="">
+                   <img class="relative mx-auto rounded-xl h-20 w-full z-10"  src="@/assets/apple-store.png"/>
+                  </div>
+                  <div class="ml-2 mt-2">
+                   <img class="relative mx-auto rounded-xl h-16 w-full z-10"  src="@/assets/play-store.png"/>
+                    </div>
+                </div>
     </div>
     <!---------------------------------------------------------------------------->
    
     <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
-       <h4 class="text-2xl mb-2 mt-2 font-semibold font-heading">
-         CONSULTATION
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
+       <h4 class="text-2xl mb-2  font-semibold font-heading capitalize">
+         Consultation
       </h4>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
         SFBB is a simple documented food safety management system for the following:
@@ -59,9 +59,9 @@
       </div>
     </div>
      <!---------------------------------------------------------------------------->
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-2">
-       <h4 class="text-2xl mb-2 mt-2 font-semibold font-heading">
-         TRAINING
+    <div class="container mx-auto px-4 bottom-0 p-4 ">
+       <h4 class="text-2xl mb-2 font-semibold font-heading capitalize">
+         Training
       </h4>
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
         SFBB is a simple documented food safety management system for the following:
