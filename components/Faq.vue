@@ -133,7 +133,7 @@
               </summary>
 
               <span class="px-4 py-2">
-                Go to: eKatering Consultation – <nuxt-link to="/authorityfood">Food Registration</nuxt-link>
+                Go to: eKatering Consultation – <nuxt-link to="/authorityfood" class="text-purple-800">Food Registration</nuxt-link>
                   
                 
               </span>
@@ -159,10 +159,10 @@
                 <ul class="pl-10 list-disc">
                   <li>
                     eKatering Consultation – 
-                    <nuxt-link to="/consultation/consultancy">Consultation </nuxt-link>
+                    <nuxt-link to="/consultation/consultancy" class="text-purple-800">Consultation </nuxt-link>
                   </li>
                   <li>
-                    eKatering Training – <nuxt-link to="/training">Training</nuxt-link>
+                    eKatering Training – <nuxt-link to="/training" class="text-purple-800">Training</nuxt-link>
                   </li>
                 </ul>
               </span>
@@ -182,7 +182,7 @@
               </summary>
 
               <span class="px-4 py-2">
-                You can request your local authority to do a rerating visit. Some local authorities charge for this service. We strongly recommend you use our <nuxt-link to="/consultation/consultancy">Consultation </nuxt-link> service before approaching your local authority for a rerating inspection. We will be able to ensure you have everything in place before the rerating inspection.
+                You can request your local authority to do a rerating visit. Some local authorities charge for this service. We strongly recommend you use our <nuxt-link to="/consultation/consultancy" class="text-purple-800">Consultation </nuxt-link> service before approaching your local authority for a rerating inspection. We will be able to ensure you have everything in place before the rerating inspection.
               </span>
             </details>
             <details class="mb-4 cursor-pointer">
@@ -191,8 +191,8 @@
               </summary>
 
               <span class="px-4 py-2">
-                Have a look at our different consultation services. To improve
-                your award, we recommend you opt for Option 2 or 4 under Fees.
+                Have a look at our different <nuxt-link to="/consultation/consultancy" class="text-purple-800">Consultation </nuxt-link> services. To improve
+                your award, we recommend you opt for Option 2 or 4 under <Nuxt-Link to="/fees" class="text-purple-800"> Fees.</Nuxt-Link>
               </span>
             </details>
             <details class="mb-4 cursor-pointer">
@@ -202,19 +202,16 @@
               </summary>
 
               <span class="px-4 py-2">
-                Go to the JOIN US and follow the steps.
+                Go to the <Nuxt-Link to="/plans" class="text-purple-800"> JOIN US</Nuxt-Link> and follow the steps.
               </span>
             </details>
             <details class="mb-4 cursor-pointer">
               <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                Do I need to be a home/event caterer or a private chef to use
-                the consultation and training services provided by eKatering?
+                Do I need to be a home/ event caterer or a private chef to use the consultation and training services provided by eKatering?
               </summary>
 
               <span class="px-4 py-2">
-                No. The consultation and training services provided by eKatering
-                is tailored for all food businesses and not just for home/event
-                caterers and private chef.
+               No. The <nuxt-link to="/consultation/consultancy" class="text-purple-800">Consultation </nuxt-link> and <nuxt-link to="/training" class="text-purple-800">Training</nuxt-link> services provided by eKatering is tailored for all food businesses and not just for home/event caterers and private chef.
               </span>
             </details>
           </div>

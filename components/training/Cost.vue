@@ -20,19 +20,20 @@
               All our fees are noted in:
             </p>
             <br />
-            <p class="ml-8 text-purple-900 text-justify font-bold">
-              Food Safety for Caterers and Private Chefs - Level 2
+            <p class="ml-8 text-justify text-purple-900 font-bold">
+              <Nuxt-Link to="/tr_level_2" >Food Safety for Caterers and Private Chefs - Level 2</Nuxt-Link>
             </p>
-            <p class="ml-8 text-purple-900 text-justify font-bold">
-              Food Allergen for Caterers and Private Chefs - Level 1
+            <p class="ml-8 text-justify text-purple-900 font-bold">
+             <Nuxt-Link to="/tr_level_1"> Food Allergen for Caterers and Private Chefs - Level 1</Nuxt-Link>
             </p>
             <p class="ml-8 mt-2 max-w-6xl text-gray-900 text-justify">
               If you require further assistance or advice, do not hesitate to
-              contact us with your enquiry.
+              <Nuxt-Link to="/contactus" class="text-purple-800">contact us</Nuxt-Link> with your enquiry.
             </p>
 
             <div
-              class="mt-4
+              class="
+                mt-4
                 flex flex-wrap
                 overflow-hidden
                 md:-mx-px
@@ -87,7 +88,7 @@
                   <Nuxt-Link
                     to="/tr_level_1"
                     class="
-                    inline-flex
+                      inline-flex
                       px-8
                       py-4
                       text-xs text-white text-center
