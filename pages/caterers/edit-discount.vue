@@ -1,16 +1,16 @@
 <template>
   <section>
-      <EditProduct/>
+      <EditCoupons/>
   </section>
 </template>
 
 <script>
-import EditProduct from '~/components/Product/EditProduct';
+import EditCoupons from '~/components/cateres/EditCoupons'
 export default {
      layout: "user",
 
      components:{
-         EditProduct,
+         EditCoupons,
      }
 
 }

@@ -74,13 +74,9 @@
               >
                 <span><i class="fa fa-bookmark w-6"></i>Discounts</span>
               </button>
-              <!-- <button id="button-4" onclick="showView(4)" class="w-full flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
-                            <span><i class="fa fa-trash w-6"></i>Orders</span>
-                            
-                        </button> -->
+              
             </div>
           </div>
-
           <div class="w-full md:w-4/5 max-h-screen">
             <div
               class="
@@ -615,7 +611,7 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                               <button
+                               <button @click.stop.prevent="ProductEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -1053,7 +1049,8 @@
                           </tr>
                         </thead>
                         <tbody class="bg-white">
-                          <tr class="text-gray-700">
+                          <tr class="text-gray-700"  v-show="!isShowCT"
+                    @click="isShowCT = !isShowCT">
                             <td class="px-4 py-3 text-ms font-semibold border">
                               22
                             </td>
@@ -1078,6 +1075,8 @@
 
                             <td class="px-4 py-3 text-sm border">
                               <button
+                              
+                             
                     class="
                       bg-blue-600
                       text-white
@@ -1209,6 +1208,7 @@
                   <!------------------------------------Category Table---------------------------------->
                 </div>
                 <NewCategory v-show="isShow" />
+                <EditCategory v-show="isShowCT"/>
               </div>
               <!--------------------------Discount--------------------------------->
               <div
@@ -1355,6 +1355,7 @@
 
                             <td class="px-4 py-3 text-sm border">
                               <button
+                              @click="CouponEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -1424,12 +1425,14 @@
 <script>
 import NewCategory from "@/components/cateres/NewCategory.vue";
 import NewCoupons from "@/components/cateres/NewCoupons.vue";
+import EditCategory from "@/components/cateres/EditCategory.vue";
 export default {
   layout: "user",
 
   components: {
     NewCategory,
     NewCoupons,
+    EditCategory
   },
 
   data() {
@@ -1438,6 +1441,7 @@ export default {
       showModal: false,
       isShow: false,
       isShow1: false,
+      isShowCT: false,
     };
   },
   methods: {
@@ -1447,6 +1451,15 @@ export default {
     toggleModal: function () {
       this.showModal = !this.showModal;
     },
+    ProductEdit(){
+      this.$router.push("../caterers/edit-product/");
+    },
+    CategoryEdit(){
+      this.$router.push("../caterers/edit-category/");
+    },
+    CouponEdit(){
+      this.$router.push("../caterers/edit-discount/");
+    }
   },
 };
 </script>
