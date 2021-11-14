@@ -18,22 +18,7 @@ mutation Mutation($data: UserInput!) {
     registerUser(data: $data)
   }
   `;
-/*
-//Register Data Input
-  {
-    "data": {
-      "email": "osizone01@gmail.com",
-      "password": "12345678"
-    }
-  }
 
-  // Register Output
-  {
-  "data": {
-    "registerUser": "A verification link has been sent to your email account"
-       }
-  }
-*/
 
 
 
@@ -78,27 +63,7 @@ mutation LoginUserMutation($password: String!, $email: String!) {
     }
   }
   `;
-/*
-//Login Data Input
-  {
-  "password": null,
-  "email": null
-}
 
-  // Register Output
- {
-  "data": {
-    "loginUser": {
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InJvbGUiOiJ1c2VyIiwiZW1haWwiOiJvc2l6b25lMDFAZ21haWwuY29tIn0sImlhdCI6MTYzNDA4MjQ0MSwiZXhwIjoxNjM0MTY4ODQxLCJzdWIiOiI2MTY2MWMwY2MwNDExZDNiZmNhNWVmOWIifQ.LGk--6gxygj73om4dZbIfCxSUImi0V2Zffy3xMCPFsQ",
-      "user": {
-        "id": "61661c0cc0411d3bfca5ef9b",
-        "username": "insided",
-        "email": "osizone01@gmail.com"
-      }
-    }
-  }
-}
-*/
 
 export const GET_ME = graphql`
   query me {
@@ -146,12 +111,7 @@ mutation VerifyUserMutation($verifyUserId: String!) {
     verifyUser(id: $verifyUserId)
   }
   `;
-/*
- //  VERIFY_USER Input
- {
-  "verifyUserId": null
-}
-*/
+
 
 
 
@@ -160,13 +120,7 @@ mutation RequestResetUserPasswordMutation($email: String!) {
     requestResetUserPassword(email: $email)
   }
   `;
-/*
-//RESET_USER_PASSWORD Input
- {
-  "email": null
-}
 
-*/
 
 
 
@@ -176,13 +130,6 @@ mutation ResetUserPasswordMutation($reqId: String!, $password: String!) {
     resetUserPassword(reqId: $reqId, password: $password)
   }
   `;
-/*
-//RESET_USER_PASSWORD Input
-
- {  "reqId": null,
-  "password": nulll
-}
-*/
 
 
 
@@ -259,6 +206,118 @@ export const DELETE_USER = graphql`
     result: deleteUser(id: $id)
   }
 `;
+
+export const GET_ALL_CATEGORY = graphql`
+  query categories {
+    categories {
+      id
+      title
+      description
+      slug
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_PUBLISHED_CATEGORY = graphql`
+  query publishedCategories {
+    publishedCategories {
+      id
+      title
+      description
+      slug
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_CATEGORY_BY_ID = graphql`
+  query category($id: ID!) {
+    category(id: $id) {
+      id
+      title
+      description
+      slug
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_CATEGORY_BY_SLUG = graphql`
+  query categoryBySlug($id: ID!) {
+    categoryBySlug(id: $id) {
+      id
+      title
+      description
+      slug
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const ADD_NEW_CATEGORY = graphql`
+  mutation addCategory($data: CategoryInput!) {
+    result: addCategory(data: $data)
+  }
+`;
+
+export const UPDATE_CATEGORY_STATUS = graphql`
+  mutation changeCategoryStatus($id: ID!, $status: String!) {
+    result: changeCategoryStatus(id: $id, status: $status)
+  }
+`;
+
+export const UPDATE_CATEGORY = graphql`
+  mutation updateCategory($id: ID!, $data: CategoryInput!) {
+    result: updateCategory(id: $id, data: $data)
+  }
+`;
+
+
+export const GET_ALL_COUPON = graphql`
+  query coupons {
+    coupons {
+      id
+      code
+      discount
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_COUPON_BY_ID = graphql`
+  query coupon($id: ID!) {
+    coupon(id: $id) {
+      id
+      code
+      discount
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const ADD_NEW_COUPON = graphql`
+  mutation addCoupon($data: CouponInput!) {
+    result: addCoupon(data: $data)
+  }
+`;
+
+export const DELETE_COUPON = graphql`
+  mutation deleteCoupon($id: ID!) {
+    result: deleteCoupon(id: $id)
+  }
+`;
+
 
 
 
