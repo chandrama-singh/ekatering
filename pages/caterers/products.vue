@@ -824,12 +824,98 @@
                       <span>Categories are used to organize your products</span>
                     </div>
                   </center>
+                  <!------------------------------------Category Table---------------------------------->
+                  <section class="container-fluid mx-auto font-mono">
+                  <div class="w-full mb-8 overflow-hidden shadow-lg">
+                    <div class="w-full overflow-x-auto">
+                      <table class="w-full">
+                        <thead>
+                          <tr
+                            class="
+                              text-md
+                              font-semibold
+                              tracking-wide
+                              text-center text-white
+                              bg-gray-800
+                              border-b border-gray-600
+                            "
+                          >
+                            <th class="px-4 py-2">Category ID</th>
+                            <th class="px-4 py-2">Title</th>
+                            <th class="px-4 py-2">Description</th>
+                            
+                            <th class="px-4 py-2">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                          <tr class="text-gray-700">
+                            <td class="px-4 py-3 text-ms font-semibold border">
+                              22
+                            </td>
+                           
+                            <td class="px-4 py-3 text-xs border">
+                              <span
+                                class="
+                                  px-2
+                                  py-1
+                                  font-semibold
+                                  leading-tight
+                                  text-green-700
+                                  bg-green-100
+                                  rounded-sm
+                                "
+                              >
+                                Acceptable
+                              </span>
+                            </td>
+
+                            <td class="px-4 py-3 text-sm border">Acceptable</td>
+
+                            <td class="px-4 py-3 text-sm border">
+                              <nuxt-link to="/edit-product">Edit</nuxt-link>
+                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                            </td>
+                          </tr>
+                          <tr class="text-gray-700">
+                            <td class="px-4 py-3 text-ms font-semibold border">
+                              22
+                            </td>
+                           
+                            <td class="px-4 py-3 text-xs border">
+                              <span
+                                class="
+                                  px-2
+                                  py-1
+                                  font-semibold
+                                  leading-tight
+                                  text-green-700
+                                  bg-green-100
+                                  rounded-sm
+                                "
+                              >
+                                Acceptable
+                              </span>
+                            </td>
+
+                            <td class="px-4 py-3 text-sm border">Acceptable</td>
+
+                            <td class="px-4 py-3 text-sm border">
+                              <nuxt-link to="/edit-product">Edit</nuxt-link>
+                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                  <!------------------------------------Category Table---------------------------------->
                 </div>
                 <NewCategory v-show="isShow" />
               </div>
               <!--------------------------Discount--------------------------------->
               <div
-                class="px-2"
+                class=""
                 v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
               >
                 <div
@@ -849,6 +935,92 @@
                       >
                     </div>
                   </center>
+                  <!------------------------------------Discount Table---------------------------------->
+                  <section class="container-fluid mx-auto font-mono">
+                  <div class="w-full mb-8 overflow-hidden shadow-lg">
+                    <div class="w-full overflow-x-auto">
+                      <table class="w-full">
+                        <thead>
+                          <tr
+                            class=" text-center
+                              text-md
+                              font-semibold
+                              tracking-wide
+                               text-white
+                              bg-gray-800
+                              border-b border-gray-600
+                            "
+                          >
+                            <th class="px-4 py-2">Coupon ID</th>
+                            <th class="px-4 py-2">Coupon Code</th>
+                            <th class="px-4 py-2">Discount Percentage</th>
+                            
+                            <th class="px-4 py-2">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                          <tr class="text-gray-700">
+                            <td class="px-4 py-3 text-ms font-semibold border">
+                              22
+                            </td>
+                           
+                            <td class="px-4 py-3 text-xs border">
+                              <span
+                                class="
+                                  px-2
+                                  py-1
+                                  font-semibold
+                                  leading-tight
+                                  text-green-700
+                                  bg-green-100
+                                  rounded-sm
+                                "
+                              >
+                                Acceptable
+                              </span>
+                            </td>
+
+                            <td class="px-4 py-3 text-sm border">Acceptable</td>
+
+                            <td class="px-4 py-3 text-sm border">
+                              <nuxt-link to="/edit-product">Edit</nuxt-link>
+                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                            </td>
+                          </tr>
+                          <tr class="text-gray-700">
+                            <td class="px-4 py-3 text-ms font-semibold border">
+                              22
+                            </td>
+                           
+                            <td class="px-4 py-3 text-xs border">
+                              <span
+                                class="
+                                  px-2
+                                  py-1
+                                  font-semibold
+                                  leading-tight
+                                  text-green-700
+                                  bg-green-100
+                                  rounded-sm
+                                "
+                              >
+                                Acceptable
+                              </span>
+                            </td>
+
+                            <td class="px-4 py-3 text-sm border">Acceptable</td>
+
+                            <td class="px-4 py-3 text-sm border">
+                              <nuxt-link to="/edit-product">Edit</nuxt-link>
+                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                  <!------------------------------------Discount Table---------------------------------->
                 </div>
                 <NewCoupons v-show="isShow1" class="CategoryPage" />
               </div>
