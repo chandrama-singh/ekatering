@@ -199,6 +199,7 @@
 
                             <td class="px-4 py-3 text-sm border">
                               <button
+                              @click.stop.prevent="ProductEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -312,6 +313,7 @@
 
                             <td class="px-4 py-3 text-sm border">
                                <button
+                               @click.stop.prevent="ProductEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -425,6 +427,7 @@
 
                             <td class="px-4 py-3 text-sm border">
                                <button
+                               @click.stop.prevent="ProductEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -483,6 +486,12 @@
 
 <script>
 export default {
+    methods:{
+         ProductEdit(){
+      this.$router.push("../caterers/edit-product/");
+    },
+    
+    }
 
 }
 </script>

@@ -62,6 +62,7 @@
 
                             <td class="px-4 py-3 text-sm border">
                               <button
+                               @click="CouponEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -196,6 +197,13 @@
 
 <script>
 export default {
+
+    methods:{
+        
+    CouponEdit(){
+      this.$router.push("../caterers/edit-discount/");
+    }
+    }
 
 }
 </script>

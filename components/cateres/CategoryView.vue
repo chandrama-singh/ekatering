@@ -60,7 +60,7 @@
                             <td class="px-4 py-3 text-sm border">
                               <button
                               
-                             
+                             @click="CategoryEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -135,6 +135,7 @@
 
                             <td class="px-4 py-3 text-sm border">
                                <button
+                               @click="CategoryEdit()"
                     class="
                       bg-blue-600
                       text-white
@@ -195,6 +196,13 @@
 <script>
 export default {
 
+methods:{
+    
+    CategoryEdit(){
+      this.$router.push("../caterers/edit-category/");
+    },
+   
+}
 }
 </script>
 
