@@ -1,62 +1,27 @@
 <template>
   <section>
-       <div
+    <div class="w-full flex justify-center max-h-screen">
+        <div class="w-full">
+            <div class="w-full flex flex-col md:flex-row  overflow-hidden shadow-xl">
+                <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
+                    <div class="bg-gray-300 w-full h-full sm:flex md:block">
+                        <button id="button-1" v-on:click="toggleTabs(1)" v-bind:class="{' bg-purple-200': openTab !== 1, 'text-white bg-purple-600': openTab === 1}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
+                            <span>New Product</span>
+                        </button>
 
-                class="
-                  fixed
-                  inset-0
-                  z-50
-                  outline-none
-                  focus:outline-none
-                  justify-center
-                  items-center
-                  flex
-                  overflow-y-scroll
-                "
-              >
-       <div
-                  class="
-                    flex flex-col
-                    w-11/12
-                    sm:w-5/6
-                    lg:w-1/2
-                    max-w-2xl
-                    mx-auto
-                    rounded-lg
-                    border border-gray-300
-                    shadow-xl
-                  "
-                >
-                  <div
-                    class="
-                      flex flex-row
-                      text-center
-                      justify-between
-                      p-4
-                      bg-purple-500
-                      border-b border-gray-200
-                      rounded-tl-lg rounded-tr-lg
-                    "
-                  >
-                    <p class="font-semibold text-lg text-center text-white">
-                      ADD Product
-                    </p>
-                    <svg
-                      v-on:click="toggleModal()"
-                      class="w-6 h-6 cursor-pointer"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      ></path>
-                    </svg>
-                  </div>
+                    </div>
+                </div>
+     <div class="w-full md:w-4/5 max-h-screen">
+                    <div class="w-full px-5 py-3 max-h-screen overflow-y-auto">
+                      <!--------------------------Products--------------------------------->
+                        <div class="" v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
+                          <section class="container-fluid mx-auto font-mono" >
+  <div class="w-full mb-8 overflow-hidden ">
+    <div class="w-full overflow-y-auto">
+            <div class="w-full px-4">
+              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 ">
+                <div class="flex-auto">
+
                   <div class="flex flex-col px-6 bg-gray-50 text-sm">
                     <p class=" font-semibold text-gray-700">
                       Product Banner
@@ -264,6 +229,16 @@
                   </div>
                 </div>
        </div>
+            </div>
+    </div>
+  </div>
+  </section>
+                        </div>
+                    </div>
+     </div>
+            </div>
+        </div>
+    </div>
   </section>
 </template>
 

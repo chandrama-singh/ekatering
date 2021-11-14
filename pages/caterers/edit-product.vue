@@ -1,7 +1,8 @@
 <template>
   <section>
+   
       <EditProduct/>
-  </section>
+  </section>   
 </template>
 
 <script>
