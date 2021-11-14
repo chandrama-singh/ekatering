@@ -598,7 +598,7 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="">Edit</nuxt-link>
+                              <nuxt-link to="/edit-product">Edit</nuxt-link>
                             </td>
                           </tr>
                           <tr class="text-gray-700">

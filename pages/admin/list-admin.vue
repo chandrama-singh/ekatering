@@ -139,8 +139,14 @@
                                     <span
                                         class="relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight">
                                         <span aria-hidden
-                                            class="absolute inset-0 bg-red-400 opacity-50 rounded-full"></span>
-                                        <span class="relative cursor-pointer">delete</span>
+                                            class="absolute inset-0 bg-red-500 opacity-50 rounded-full"></span>
+                                        <span class="relative cursor-pointer">Delete</span>
+                                    </span>
+                                    <span
+                                        class="relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight">
+                                        <span aria-hidden
+                                            class="absolute inset-0 bg-blue-500 opacity-50 rounded-full"></span>
+                                        <span class="relative cursor-pointer">Edit</span>
                                     </span>
                                 </td>
                             </tr>
