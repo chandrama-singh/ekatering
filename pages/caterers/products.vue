@@ -138,7 +138,6 @@
                   fixed
                   inset-0
                   z-50
-                  
                   outline-none
                   focus:outline-none
                   justify-center
@@ -190,15 +189,15 @@
                       ></path>
                     </svg>
                   </div>
-                  <div class="flex flex-col px-6 py-5 bg-gray-50 text-sm">
-                    <p class="mb-2 font-semibold text-gray-700">
+                  <div class="flex flex-col px-6 bg-gray-50 text-sm">
+                    <p class=" font-semibold text-gray-700">
                       Product Banner
                     </p>
-                    <div class="flex items-center py-3">
+                    <div class="flex items-center py-2">
                       <div
                         class="
-                          w-48
-                          h-48
+                          w-28
+                          h-28
                           mr-4
                           flex-none
                           rounded-xl
@@ -207,7 +206,7 @@
                         "
                       >
                         <img
-                          class="w-48 h-48 mr-4 object-cover"
+                          class="w-28 h-28 mr-4 object-cover"
                           src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
                           alt="Avatar Upload"
                         />
@@ -233,32 +232,67 @@
                         />
                       </label>
                     </div>
-                    <p class="mb-2 font-semibold text-gray-700">Product Name</p>
-                    <input
-                      type="text"
-                      name=""
-                      placeholder="Enter Full Name"
+                    <div
                       class="
-                        p-3
-                        mb-4
-                        bg-white
-                        border border-gray-200
-                        rounded
-                        shadow-sm
+                        flex flex-col
+                        sm:flex-row
+                        items-center
+                        mb-2
+                        sm:space-x-5
                       "
-                      id=""
-                    />
+                    >
+                      <div class="w-full sm:w-1/2">
+                        <p class="mb-2 font-semibold text-gray-700">
+                          Product Name
+                        </p>
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="Product Name"
+                          class="
+                            w-full
+                            p-1
+                            bg-white
+                            border border-gray-200
+                            rounded
+                            shadow-sm
+                            appearance-none
+                          "
+                          id=""
+                        />
+                      </div>
+                      <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
+                        <p class="mb-2 font-semibold text-gray-700">
+                          Product Category
+                        </p>
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="Product category"
+                          class="
+                            w-full
+                            p-1
+                            bg-white
+                            border border-gray-200
+                            rounded
+                            shadow-sm
+                            appearance-none
+                          "
+                          id=""
+                        />
+                      </div>
+                    </div>
 
-                    <p class="mb-2 font-semibold text-gray-700">
+                    <p class="mb-1 font-semibold text-gray-700">
                       Product Description
                     </p>
                     <input
-                      type="textarea"
+                      type="textbox"
                       name=""
                       placeholder="Enter Product Description"
                       class="
-                        py-8
-                        mb-4
+                        py-6
+                        mb-2
                         bg-white
                         border border-gray-200
                         rounded
@@ -267,30 +301,13 @@
                       id=""
                     />
 
-                    <p class="mb-2 font-semibold text-gray-700">
-                      Product Category
-                    </p>
-                    <input
-                      type="text"
-                      name=""
-                      placeholder="Product Category"
-                      class="
-                        p-3
-                        mb-4
-                        bg-white
-                        border border-gray-200
-                        rounded
-                        shadow-sm
-                      "
-                      id=""
-                    />
 
                     <div
                       class="
                         flex flex-col
                         sm:flex-row
                         items-center
-                        mb-5
+                        mb-2
                         sm:space-x-5
                       "
                     >
@@ -304,7 +321,7 @@
                           placeholder="Product ID"
                           class="
                             w-full
-                            p-3
+                            p-1
                             bg-white
                             border border-gray-200
                             rounded
@@ -324,7 +341,7 @@
                           placeholder="Product Price"
                           class="
                             w-full
-                            p-3
+                            p-1
                             bg-white
                             border border-gray-200
                             rounded
@@ -355,7 +372,7 @@
                         px-4
                         py-2
                         text-white
-                        font-semibold
+                        
                         bg-red-500
                         rounded
                         mr-4
@@ -369,7 +386,7 @@
                         px-4
                         py-2
                         text-white
-                        font-semibold
+                        
                         bg-purple-500
                         rounded
                       "
@@ -598,7 +615,54 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="/edit-product">Edit</nuxt-link>
+                               <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                           <tr class="text-gray-700">
@@ -664,7 +728,54 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="">Edit</nuxt-link>
+                              <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                           <tr class="text-gray-700">
@@ -730,7 +841,54 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="">Edit</nuxt-link>
+                               <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                           <tr class="text-gray-700">
@@ -796,7 +954,54 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="">Edit</nuxt-link>
+                               <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                         </tbody>
@@ -872,8 +1077,54 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="/edit-product">Edit</nuxt-link>
-                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                              <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                           <tr class="text-gray-700">
@@ -900,8 +1151,54 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="/edit-product">Edit</nuxt-link>
-                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                               <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                         </tbody>
@@ -983,8 +1280,54 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="/edit-product">Edit</nuxt-link>
-                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                              <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                           <tr class="text-gray-700">
@@ -1011,8 +1354,54 @@
                             <td class="px-4 py-3 text-sm border">Acceptable</td>
 
                             <td class="px-4 py-3 text-sm border">
-                              <nuxt-link to="/edit-product">Edit</nuxt-link>
-                               <nuxt-link to="/edit-product">Delete</nuxt-link>
+                              <button
+                    class="
+                      bg-blue-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="
+                      bg-red-600
+                      text-white
+                      
+                      active:bg-blue-600
+                      font-bold
+                      text-sm
+                      px-2
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                  >
+                    Delete
+                  </button>
                             </td>
                           </tr>
                         </tbody>
