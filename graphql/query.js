@@ -319,6 +319,97 @@ export const DELETE_COUPON = graphql`
 `;
 
 
+export const GET_ALL_PRODUCT = graphql`
+  query products {
+    products {
+      id
+      title
+      description
+      slug
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_PUBLISHED_PRODUCT = graphql`
+  query publishedCategories {
+    publishedCategories {
+      id
+      name
+      slug
+      banner
+      images
+      description
+      price
+      mrp
+      category
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_PRODUCT_BY_ID = graphql`
+  query category($id: ID!) {
+    category(id: $id) {
+      id
+      name
+      slug
+      banner
+      images
+      description
+      price
+      mrp
+      category
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_PRODUCT_BY_SLUG = graphql`
+  query categoryBySlug($id: ID!) {
+    categoryBySlug(id: $id) {
+      id
+      name
+      slug
+      banner
+      images
+      description
+      price
+      mrp
+      category
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const ADD_NEW_PRODUCT = graphql`
+  mutation addProduct($data: ProductInput!) {
+    result: addProduct(data: $data)
+  }
+`;
+
+export const UPDATE_PRODUCT_STATUS = graphql`
+  mutation changeProductStatus($id: ID!, $status: String!) {
+    result: changeProductStatus(id: $id, status: $status)
+  }
+`;
+
+export const UPDATE_PRODUCT = graphql`
+  mutation updateProduct($id: ID!, $data: ProductInput!) {
+    result: updateProduct(id: $id, data: $data)
+  }
+`;
+
+
+
 
 
 

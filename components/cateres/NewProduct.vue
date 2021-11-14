@@ -1,7 +1,7 @@
 <template>
   <section>
        <div
-               
+
                 class="
                   fixed
                   inset-0
@@ -240,7 +240,7 @@
                         px-4
                         py-2
                         text-white
-                        
+
                         bg-red-500
                         rounded
                         mr-4
@@ -254,7 +254,7 @@
                         px-4
                         py-2
                         text-white
-                        
+
                         bg-purple-500
                         rounded
                       "
@@ -267,12 +267,59 @@
   </section>
 </template>
 
-<script>
-export default {
 
-}
+<script>
+  import {
+    ADD_NEW_PRODUCT } from '@/graphql/query'
+  export default {
+    layout: "user",
+    data() {
+      return {
+        openTab: 1,
+        loading: false,
+        message: null,
+        showAlert: false,
+        type: null,
+        formData: {
+          title: null,
+          description: null
+        }
+
+      }
+    },
+
+    methods: {
+ toggleModal: function(tabNumber){
+   this.$parent.toggleModal();
+
+    },
+    GoBack(){
+      this.$rounter.push('/caterers/products');
+    },
+      async onSubmit() {
+        this.loading = true;
+        try {
+          const {data} = await this.$apollo.mutate({
+            mutation: ADD_NEW_PRODUCT,
+            variables: {
+              data: this.formData
+            },
+          })
+          console.log(data);
+        // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
+
+        } catch (error) {
+          this.message = error.message;
+          this.showAlert = true;
+          this.type = "danger";
+           console.log(error);
+        }
+        this.loading = false;
+      }
+    }
+  }
+
 </script>
 
 <style>
-
 </style>
