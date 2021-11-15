@@ -2,7 +2,7 @@
   <div class="flex mt-2">
     <button @click="preview" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
 
-          <i class="fas fa-eye"></i>
+          <i class="fas fa-pencil-alt"></i>
 
     </button>
 	   <ActionButton color="red-700" :outline="true"  @click="preview">

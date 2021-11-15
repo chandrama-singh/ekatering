@@ -183,7 +183,7 @@
 import { GET_CATEGORY_BY_ID, UPDATE_CATEGORY_STATUS } from "@/graphql/query";
 
 export default {
-  layout: "none",
+  layout: "user",
   //middleware: 'authAdmin',
 
   data() {
