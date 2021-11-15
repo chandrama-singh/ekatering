@@ -235,12 +235,21 @@
         </div>
       </div>
     </div>
+    <!-------------------------------------------------------------->
+    <Subscription/>
   </section>
 </template>
 
 <script>
+import Subscription from "@/components/cateres/Subscription.vue"
+
 export default {
-layout:'user'
+layout:'user',
+
+components:{
+  Subscription
+
+}
 }
 </script>
 
