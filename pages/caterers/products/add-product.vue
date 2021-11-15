@@ -58,12 +58,13 @@
                             min-w-0
                             break-words
                             w-full
-                            mb-6
+                            mb-4
                           "
                         >
-                          <div class="flex-auto py-2">
+                          <div class="flex-auto py-2 rounded-lg">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
                                <!------------------------Info Value-------------------------------->
+                             <span>
                               <div
                                 class="
                                   flex flex-col
@@ -71,6 +72,7 @@
                                   items-center
                                   mb-2
                                   sm:space-x-5
+                                  py-4
                                 "
                               >
                                 <div class="w-full sm:w-1/2">
@@ -134,10 +136,12 @@
                                   border border-gray-200
                                   rounded
                                   shadow-sm
+                                  w-full
                                 "
                                 id="product-description"
                                 v-model="formData.description"
                               />
+                             
                               <!------------------------Buttons-------------------------------->         
                             <div
                               class="
@@ -147,8 +151,6 @@
                                 items-center
                                 justify-center
                                 p-4
-                                bg-white
-                                border-t border-gray-200
                                 rounded-bl-lg rounded-br-lg
                               "
                             >
@@ -166,6 +168,7 @@
                                 Cancel
                               </button>
                               <button
+
                                 v-on:click="onSubmit()"
                                 class="
                                   px-4
@@ -179,8 +182,10 @@
                               </button>
                             </div>
             <!------------------------Buttons END--------------------------------> 
+             </span>
              <!------------------------Info Value-------------------------------->
              <!------------------------Banner -------------------------------->
+             <span>
                               <p class="font-semibold text-gray-700">
                                 Product Banner
                               </p>
@@ -211,6 +216,7 @@
   </div>
 
 </div>      
+
             <!------------------------Buttons-------------------------------->         
                             <div
                               class="
@@ -220,8 +226,7 @@
                                 items-center
                                 justify-center
                                 p-4
-                                bg-white
-                                border-t border-gray-200
+                               
                                 rounded-bl-lg rounded-br-lg
                               "
                             >
@@ -251,10 +256,12 @@
                                 Next
                               </button>
                             </div>
+                  </span>
             <!------------------------Buttons END--------------------------------> 
                <!------------------------Banner END-------------------------------->
              
               <!------------------------Price -------------------------------->
+                            <span>
                               <div
                                 class="
                                   flex flex-col
@@ -307,9 +314,7 @@
                                   />
                                 </div>
                               </div>
-                            </div>
-             <!------------------------Price END-------------------------------->
-           <!------------------------Buttons-------------------------------->         
+            <!------------------------Buttons-------------------------------->         
                             <div
                               class="
                                 flex
@@ -318,8 +323,7 @@
                                 items-center
                                 justify-center
                                 p-4
-                                bg-white
-                                border-t border-gray-200
+                               
                                 rounded-bl-lg rounded-br-lg
                               "
                             >
@@ -349,7 +353,11 @@
                                 Save
                               </button>
                             </div>
-            <!------------------------Buttons END-------------------------------->  
+                          </span>
+            <!------------------------Buttons END--------------------------------> 
+                            </div>
+             <!------------------------Price END-------------------------------->
+           
                           </div>
                         </div>
                       </div>
