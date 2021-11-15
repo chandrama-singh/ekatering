@@ -17,8 +17,9 @@
         "
       >
         <div class="rounded-t bg-purple-500 mb-0 px-6 py-6">
-          <div class="text-left flex  text-white">
+          <div class="text-left flex-wrap  text-white ">
             <h6 class="text-blueGray-700 text-xl font-bold">Review Your Subscription</h6>
+            <p>To keep enjoying your eKatering Subscription, make your payment now</p>
           </div>
         </div>
        
