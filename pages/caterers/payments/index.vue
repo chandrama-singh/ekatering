@@ -23,7 +23,7 @@
 
     <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
-        :rowData="products" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+        :rowData="payments" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
     </div>
   </div>
@@ -49,8 +49,8 @@
       };
     },
     apollo: {
-      products: {
-        query: GET_ALL_PRODUCT,
+      payments: {
+        query: GET_ALL_PAYMENT,
         error(error) {
           console.log(error)
         }
@@ -143,11 +143,11 @@
         );
       },
       refetchData() {
-        this.$apollo.queries.products.refetch()
+        this.$apollo.queries.payments.refetch()
       }
     },
     created() {
-      this.$apollo.queries.products.refetch()
+      this.$apollo.queries.payments.refetch()
     },
   };
 
