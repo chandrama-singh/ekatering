@@ -25,6 +25,7 @@
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
         :rowData="payments" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
+      
     </div>
   </div>
 </template>
