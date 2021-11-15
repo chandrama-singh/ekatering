@@ -14,7 +14,7 @@
     <div class="w-full flex justify-center max-h-screen">
       <div class="w-full">
         <div class="w-full flex flex-col md:flex-row overflow-hidden shadow-xl">
-          <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
+          <!-- <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
             <div class="bg-gray-300 w-full h-full sm:flex md:block">
               <button
                 id="button-1"
@@ -39,9 +39,9 @@
                 <span>New Product</span>
               </button>
             </div>
-          </div>
-          <div class="w-full md:w-4/5 max-h-screen">
-            <div class="w-full px-5 py-3 max-h-screen overflow-y-auto">
+          </div> -->
+          <div class="w-full  ">
+            <div class="w-full px-5 py-3 ">
               <!--------------------------Products--------------------------------->
               <div
                 class=""

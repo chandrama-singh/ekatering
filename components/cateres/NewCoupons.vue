@@ -3,11 +3,11 @@
     <div class="w-full flex justify-center max-h-screen">
         <div class="w-full">
             <div class="w-full flex flex-col md:flex-row  overflow-hidden shadow-xl">
-                <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
-                    <div class="bg-gray-300 w-full h-full sm:flex md:block">
-                        <button id="button-1" v-on:click="toggleTabs(1)" v-bind:class="{' bg-purple-200': openTab !== 1, 'text-white bg-purple-600': openTab === 1}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
+                <!-- <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
+                    <div class="bg-gray-300 w-full h-full sm:flex md:block"> -->
+                        <!-- <button id="button-1" v-on:click="toggleTabs(1)" v-bind:class="{' bg-purple-200': openTab !== 1, 'text-white bg-purple-600': openTab === 1}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
                             <span>New Discount</span>
-                        </button>
+                        </button> -->
                         <!-- <button id="button-2" v-on:click="toggleTabs(2)" v-bind:class="{' bg-purple-200': openTab !== 2, 'text-white bg-purple-600': openTab === 2}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
                             <span><i class="fa fa-envelope w-6"></i>New Category</span>
 
@@ -17,8 +17,8 @@
                             <span><i class="fa fa-trash w-6"></i>Orders</span>
 
                         </button> -->
-                    </div>
-                </div>
+                    <!-- </div>
+                </div> -->
 
 
                 <div class="w-full md:w-4/5 max-h-screen">
