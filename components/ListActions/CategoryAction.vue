@@ -5,11 +5,7 @@
           <i class="fas fa-eye"></i>
 
     </button>
-	   <ActionButton color="red-700" :outline="true"  @click="preview">
-        <template v-slot:icon>
-          <i class="fas fa-eye"></i>
-        </template>
-      </ActionButton>
+
   </div>
 </template>
 <script>
@@ -17,19 +13,19 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      CouponId: "",
+      CategoryId: "",
     };
   },
   methods: {
     preview() {
 	this.$root.$router.push({
-    path: `/caterers/coupons/details/${this.CouponId }`
+    path: `/caterers/categories/details/${this.CategoryId }`
 })
 
     },
   },
   created() {
-    this.CouponId = this.params.node.data.id;
+    this.CategoryId = this.params.node.data.id;
   },
 })
 </script>

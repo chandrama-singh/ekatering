@@ -5,11 +5,7 @@
           <i class="fas fa-eye"></i>
 
     </button>
-	   <ActionButton color="red-700" :outline="true"  @click="preview">
-        <template v-slot:icon>
-          <i class="fas fa-eye"></i>
-        </template>
-      </ActionButton>
+
   </div>
 </template>
 <script>

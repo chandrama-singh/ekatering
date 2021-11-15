@@ -72,7 +72,19 @@
             title: 'Products',
             href: '/caterers/products',
            icon: 'fas fa-chalkboard-teacher',
-            
+
+          },
+           {
+            title: 'Categories',
+            href: '/caterers/categories',
+           icon: 'fas fa-chalkboard-teacher',
+
+          },
+           {
+            title: 'Coupons',
+            href: '/caterers/coupons',
+           icon: 'fas fa-chalkboard-teacher',
+
           },
 
 // {
@@ -101,7 +113,7 @@
            icon: 'fas fa-hands-helping',
          },
 
-         
+
         ],
         collapsed: false,
         selectedTheme: '',

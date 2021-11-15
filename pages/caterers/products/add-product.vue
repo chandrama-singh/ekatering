@@ -1,5 +1,16 @@
 <template>
   <section>
+     <div class="bg-white p-2 border-b border-gray-300 pr-4 flex items-center justify-between">
+        <div class="flex items-center">
+          <t-button to="/caterers/products/" type="button" variant="secoundry"
+            class="py-3 border-r focus:ring-0 focus:bg-green-400 ">
+            <span class="fas fa-arrow-left"> Go Back</span>
+          </t-button>
+          <h2 class="text-lg font-semibold mx-6">Add New Product
+          </h2>
+        </div>
+
+      </div>
     <div class="w-full flex justify-center max-h-screen">
       <div class="w-full">
         <div class="w-full flex flex-col md:flex-row overflow-hidden shadow-xl">

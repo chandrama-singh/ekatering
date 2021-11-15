@@ -323,9 +323,17 @@ export const GET_ALL_PRODUCT = graphql`
   query products {
     products {
       id
-      title
-      description
+      name
       slug
+      banner
+      images
+      description
+      price
+      mrp
+      category{
+        title
+        description
+      }
       status
       createdAt
       updatedAt
@@ -344,7 +352,10 @@ export const GET_PUBLISHED_PRODUCT = graphql`
       description
       price
       mrp
-      category
+      category{
+        title
+        description
+      }
       status
       createdAt
       updatedAt
@@ -363,7 +374,10 @@ export const GET_PRODUCT_BY_ID = graphql`
       description
       price
       mrp
-      category
+      category{
+        title
+        description
+      }
       status
       createdAt
       updatedAt
@@ -382,7 +396,10 @@ export const GET_PRODUCT_BY_SLUG = graphql`
       description
       price
       mrp
-      category
+      category{
+        title
+        description
+      }
       status
       createdAt
       updatedAt
@@ -405,6 +422,110 @@ export const UPDATE_PRODUCT_STATUS = graphql`
 export const UPDATE_PRODUCT = graphql`
   mutation updateProduct($id: ID!, $data: ProductInput!) {
     result: updateProduct(id: $id, data: $data)
+  }
+`;
+
+
+export const UPDATE_PRODUCT_BANNER = graphql`
+  mutation uploadProductBanner($file: Upload!,$id: ID!,) {
+    result: uploadProductBanner(file: $file, id: $id)
+  }
+`;
+
+
+export const GENERATE_PAYMENT = graphql`mutation generatePayment($packageId: String!, $coupon:String){
+	response: generatePayment(packageId: $packageId, coupon: $coupon){
+		id
+		amount
+		currency
+		receipt
+		status
+	  }
+  }`;
+
+export const PAYMENT_DONE = graphql`mutation paymentDone($razorpay_payment_id: String!, $razorpay_order_id: String!, $razorpay_signature: String!, $packageId: String!){
+    response: paymentDone(
+      razorpay_payment_id: $razorpay_payment_id,
+      razorpay_order_id: $razorpay_order_id,
+      razorpay_signature: $razorpay_signature,
+      packageId: $packageId
+    )
+    }`;
+
+export const SERVICE_PAYMENT_DONE = graphql`mutation servicePaymentDone($razorpay_payment_id: String!, $razorpay_order_id: String!, $razorpay_signature: String!, $serviceId: String!){
+	response: servicePaymentDone(
+	  razorpay_payment_id: $razorpay_payment_id,
+	  razorpay_order_id: $razorpay_order_id,
+	  razorpay_signature: $razorpay_signature,
+    serviceId: $serviceId
+	)
+  }`;
+
+export const GENERATE_SERVICE_PAYMENT = graphql`mutation generateServicePayment($serviceId: String!, $coupon: String){
+    response: generateServicePayment(serviceId: $serviceId, coupon: $coupon){
+      id
+      amount
+      currency
+      receipt
+      status
+      }
+    }`;
+
+
+export const GET_ALL_PAYMENT = graphql`
+  query payments {
+    payments {
+      id
+      orderId
+      amount
+      package{
+        id
+        title
+      }
+      user{
+        id
+      name
+      email
+      photo
+      bio
+      mobile
+      role
+      isVerified
+      createdAt
+      updatedAt
+      }
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const GET_PAYMENT_BY_ID = graphql`
+  query payment($id: ID!) {
+    payment(id: $id) {
+      id
+      orderId
+      amount
+      package{
+        id
+        title
+        description
+        price
+        activeIncome
+        passiveIncome
+        status
+        createdAt
+      }
+      user{
+        id
+        name
+        email
+        photo
+      }
+      status
+      createdAt
+      updatedAt
+    }
   }
 `;
 
