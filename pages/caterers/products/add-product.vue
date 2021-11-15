@@ -61,8 +61,126 @@
                             mb-6
                           "
                         >
-                          <div class="flex-auto">
+                          <div class="flex-auto py-2">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
+                               <!------------------------Info Value-------------------------------->
+                              <div
+                                class="
+                                  flex flex-col
+                                  sm:flex-row
+                                  items-center
+                                  mb-2
+                                  sm:space-x-5
+                                "
+                              >
+                                <div class="w-full sm:w-1/2">
+                                  <p class="mb-2 font-semibold text-gray-700">
+                                    Product Name
+                                  </p>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    placeholder="Product Name"
+                                    class="
+                                      w-full
+                                      p-1
+                                      px-2
+                                      bg-white
+                                      border border-gray-200
+                                      rounded
+                                      shadow-sm
+                                      appearance-none
+                                    "
+                                    id="product-name"
+                                    v-model="formData.name"
+                                  />
+                                </div>
+                                <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
+                                  <p class="mb-2 font-semibold text-gray-700">
+                                    Product Category
+                                  </p>
+                                  <input
+                                    type="text"
+                                    name=""
+                                    placeholder="Product category"
+                                    class="
+                                      w-full
+                                      p-1
+                                      px-2
+                                      bg-white
+                                      border border-gray-200
+                                      rounded
+                                      shadow-sm
+                                      appearance-none
+                                    "
+                                    id="product-category"
+                                    v-model="formData.category"
+                                  />
+                                </div>
+                              </div>
+
+                              <p class="mb-1 font-semibold text-gray-700">
+                                Product Description
+                              </p>
+                              <input
+                                type="textbox"
+                                name=""
+                                placeholder="Enter Product Description"
+                                class="
+                                  py-6
+                                  px-2
+                                  mb-2
+                                  bg-white
+                                  border border-gray-200
+                                  rounded
+                                  shadow-sm
+                                "
+                                id="product-description"
+                                v-model="formData.description"
+                              />
+                              <!------------------------Buttons-------------------------------->         
+                            <div
+                              class="
+                                flex
+                                text-lg
+                                flex-row
+                                items-center
+                                justify-center
+                                p-4
+                                bg-white
+                                border-t border-gray-200
+                                rounded-bl-lg rounded-br-lg
+                              "
+                            >
+                              <button
+                                v-on:click="toggleTabs()"
+                                class="
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-red-500
+                                  rounded
+                                  mr-4
+                                "
+                              >
+                                Cancel
+                              </button>
+                              <button
+                                v-on:click="onSubmit()"
+                                class="
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-purple-500
+                                  rounded
+                                "
+                              >
+                                Next
+                              </button>
+                            </div>
+            <!------------------------Buttons END--------------------------------> 
+             <!------------------------Info Value-------------------------------->
+             <!------------------------Banner -------------------------------->
                               <p class="font-semibold text-gray-700">
                                 Product Banner
                               </p>
@@ -92,79 +210,51 @@
     <p>Click to change banner</p>
   </div>
 
-</div>
-                              <div
+</div>      
+            <!------------------------Buttons-------------------------------->         
+                            <div
+                              class="
+                                flex
+                                text-lg
+                                flex-row
+                                items-center
+                                justify-center
+                                p-4
+                                bg-white
+                                border-t border-gray-200
+                                rounded-bl-lg rounded-br-lg
+                              "
+                            >
+                              <button
+                                v-on:click="toggleTabs()"
                                 class="
-                                  flex flex-col
-                                  sm:flex-row
-                                  items-center
-                                  mb-2
-                                  sm:space-x-5
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-red-500
+                                  rounded
+                                  mr-4
                                 "
                               >
-                                <div class="w-full sm:w-1/2">
-                                  <p class="mb-2 font-semibold text-gray-700">
-                                    Product Name
-                                  </p>
-                                  <input
-                                    type="text"
-                                    name=""
-                                    placeholder="Product Name"
-                                    class="
-                                      w-full
-                                      p-1
-                                      bg-white
-                                      border border-gray-200
-                                      rounded
-                                      shadow-sm
-                                      appearance-none
-                                    "
-                                    id="product-name"
-                                    v-model="formData.name"
-                                  />
-                                </div>
-                                <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
-                                  <p class="mb-2 font-semibold text-gray-700">
-                                    Product Category
-                                  </p>
-                                  <input
-                                    type="text"
-                                    name=""
-                                    placeholder="Product category"
-                                    class="
-                                      w-full
-                                      p-1
-                                      bg-white
-                                      border border-gray-200
-                                      rounded
-                                      shadow-sm
-                                      appearance-none
-                                    "
-                                    id="product-category"
-                                    v-model="formData.category"
-                                  />
-                                </div>
-                              </div>
-
-                              <p class="mb-1 font-semibold text-gray-700">
-                                Product Description
-                              </p>
-                              <input
-                                type="textbox"
-                                name=""
-                                placeholder="Enter Product Description"
+                                Back
+                              </button>
+                              <button
+                                v-on:click="onSubmit()"
                                 class="
-                                  py-6
-                                  mb-2
-                                  bg-white
-                                  border border-gray-200
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-purple-500
                                   rounded
-                                  shadow-sm
                                 "
-                                id="product-description"
-                                v-model="formData.description"
-                              />
-
+                              >
+                                Next
+                              </button>
+                            </div>
+            <!------------------------Buttons END--------------------------------> 
+               <!------------------------Banner END-------------------------------->
+             
+              <!------------------------Price -------------------------------->
                               <div
                                 class="
                                   flex flex-col
@@ -218,6 +308,8 @@
                                 </div>
                               </div>
                             </div>
+             <!------------------------Price END-------------------------------->
+           <!------------------------Buttons-------------------------------->         
                             <div
                               class="
                                 flex
@@ -242,7 +334,7 @@
                                   mr-4
                                 "
                               >
-                                Cancel
+                                Back
                               </button>
                               <button
                                 v-on:click="onSubmit()"
@@ -257,6 +349,7 @@
                                 Save
                               </button>
                             </div>
+            <!------------------------Buttons END-------------------------------->  
                           </div>
                         </div>
                       </div>
