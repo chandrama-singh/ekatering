@@ -45,7 +45,7 @@
               <!--------------------------Products--------------------------------->
               <div
                 class=""
-                v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+               
               >
                 <section class="container-fluid mx-auto font-mono">
                   <div class="w-full mb-8 overflow-hidden">
@@ -64,7 +64,7 @@
                           <div class="flex-auto py-2 rounded-lg">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
                                <!------------------------Info Value-------------------------------->
-                             <span>
+                             <span >
                               <div
                                 class="
                                   flex flex-col
@@ -140,8 +140,7 @@
                                 "
                                 id="product-description"
                                 v-model="formData.description"
-                              />
-                             
+                              />   
                               <!------------------------Buttons-------------------------------->         
                             <div
                               class="
@@ -167,9 +166,7 @@
                               >
                                 Cancel
                               </button>
-                              <button
-
-                                v-on:click="onSubmit()"
+                              <button                     
                                 class="
                                   px-4
                                   py-2
@@ -261,7 +258,7 @@
                <!------------------------Banner END-------------------------------->
              
               <!------------------------Price -------------------------------->
-                            <span>
+                            <span >
                               <div
                                 class="
                                   flex flex-col
@@ -399,6 +396,7 @@ export default {
   },
 
   methods: {
+    
     toggleTabs: function () {
       this.$parent.toggleTabs(1);
     },

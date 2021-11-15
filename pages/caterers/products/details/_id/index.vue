@@ -3,7 +3,7 @@
     <div class="w-full flex justify-center max-h-screen">
       <div class="w-full">
         <div class="w-full flex flex-col md:flex-row overflow-hidden shadow-xl">
-          <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
+          <!-- <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
             <div class="bg-gray-300 w-full h-full sm:flex md:block">
               <button
                 id="button-1"
@@ -28,9 +28,9 @@
                 <span>New Product</span>
               </button>
             </div>
-          </div>
-          <div class="w-full md:w-4/5 max-h-screen">
-            <div class="w-full px-5 py-3 max-h-screen overflow-y-auto">
+          </div> -->
+          <div class="w-full ">
+            <div class="w-full px-5 py-3 ">
               <!--------------------------Products--------------------------------->
               <div
                 class=""
@@ -38,7 +38,7 @@
               >
                 <section class="container-fluid mx-auto font-mono">
                   <div class="w-full mb-8 overflow-hidden">
-                    <div class="w-full overflow-y-auto">
+                    <div class="w-full ">
                       <div class="w-full px-4">
                         <div
                           class="
@@ -52,42 +52,14 @@
                         >
                           <div class="flex-auto">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
-                              <p class="font-semibold text-gray-700">
-                                Product Banner
-                              </p>
-                              <div class="flex flex-wrap justify-center">
-                                 <input
-                                  type="file"
-                                  ref="banner"
-                                  accept="image/*"
-                                  v-show="false"
-                                  @change="previewBanner"
-                                />
-  <div class="w-8/12 sm:w-6/12 px-4">
-   <img
-     v-if="bannerImage"
-      alt="..."
-      class="rounded max-w-full h-auto align-middle border-none"
-      :src="bannerImage"
-       @click="selectBanner"
-    />
-    <img
-     v-else
-      src="https://mdbootstrap.com/img/new/standard/city/026.jpg"
-      alt="..."
-      class="rounded max-w-full h-auto align-middle border-none"
-       @click="selectBanner"
-    />
-    <p>Click to change banner</p>
-  </div>
-
-</div>
+     <!---------------------------------------Info--------------------->
                               <div
                                 class="
                                   flex flex-col
                                   sm:flex-row
                                   items-center
-                                  mb-2
+                                  mb-2 
+                                  py-2
                                   sm:space-x-5
                                 "
                               >
@@ -153,7 +125,118 @@
                                 id="product-description"
                                 v-model="formData.description"
                               />
+                               <div
+                              class="
+                                flex
+                                text-lg
+                                flex-row
+                                items-center
+                                justify-center
+                                p-4
+                                bg-white
+                                border-t border-gray-200
+                                rounded-bl-lg rounded-br-lg
+                              "
+                            >
+                              <button
+                                v-on:click="toggleTabs()"
+                                class="
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-red-500
+                                  rounded
+                                  mr-4
+                                "
+                              >
+                                Cancel
+                              </button>
+                              <button
+                                v-on:click="onSubmit()"
+                                class="
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-purple-500
+                                  rounded
+                                "
+                              >
+                                Next
+                              </button>
+                            </div>
+      <!---------------------------------------Info--------------------->
+    <!---------------------------------------Banner--------------------->
+                              <p class="font-semibold text-gray-700">
+                                Product Banner
+                              </p>
+                              <div class="flex flex-wrap justify-center">
+                                 <input
+                                  type="file"
+                                  ref="banner"
+                                  accept="image/*"
+                                  v-show="false"
+                                  @change="previewBanner"
+                                />
+  <div class="w-8/12 sm:w-6/12 px-4">
+   <img
+     v-if="bannerImage"
+      alt="..."
+      class="rounded max-w-full h-auto align-middle border-none"
+      :src="bannerImage"
+       @click="selectBanner"
+    />
+    <img
+     v-else
+      src="https://mdbootstrap.com/img/new/standard/city/026.jpg"
+      alt="..."
+      class="rounded max-w-full h-auto align-middle border-none"
+       @click="selectBanner"
+    />
+    <p>Click to change banner</p>
+  </div>
 
+</div>
+          <div
+                              class="
+                                flex
+                                text-lg
+                                flex-row
+                                items-center
+                                justify-center
+                                p-4
+                                bg-white
+                                border-t border-gray-200
+                                rounded-bl-lg rounded-br-lg
+                              "
+                            >
+                              <button
+                                v-on:click="toggleTabs()"
+                                class="
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-red-500
+                                  rounded
+                                  mr-4
+                                "
+                              >
+                                Cancel
+                              </button>
+                              <button
+                                v-on:click="onSubmit()"
+                                class="
+                                  px-4
+                                  py-2
+                                  text-white
+                                  bg-purple-500
+                                  rounded
+                                "
+                              >
+                                Next
+                              </button>
+                            </div>
+    <!---------------------------------------banner--------------------->
+<!---------------------------------------Price--------------------->
                               <div
                                 class="
                                   flex flex-col
@@ -206,6 +289,7 @@
                                   />
                                 </div>
                               </div>
+                              <!---------------------------------------Price--------------------->
                             </div>
                             <div
                               class="
