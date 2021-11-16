@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader pageTitle="Payment">
+    <PageHeader pageTitle="Orders">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
@@ -25,7 +25,7 @@
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
         :rowData="payments" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
-      
+
     </div>
   </div>
 </template>

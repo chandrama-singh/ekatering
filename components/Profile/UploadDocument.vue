@@ -134,7 +134,7 @@
                       "
                       @click="selectFhrs"
                     >
-                      Open Link
+                      Upload file
                     </button>
                   </td>
                   <td class="px-16 py-2">

@@ -51,7 +51,7 @@
                   </svg>
                   <span>Food Safety for Caterers and Private Chefs - Level 2</span>
                 </li>
-               
+
               </ul>
               <Nuxt-Link to="/make-payment"
                 class="
@@ -69,7 +69,7 @@
                   transition
                   duration-200
                 "
-              
+
                 >Buy Now</Nuxt-Link
               >
             </div>
@@ -130,8 +130,8 @@
                   </svg>
                   <span>Food Hygiene Rating Scheme award letter</span>
                 </li>
-               
-                
+
+
               </ul>
               <Nuxt-Link to="/make-payment"
                 class="
@@ -143,18 +143,18 @@
                   rounded-xl
                   bg-white
                   hover:bg-gray-50
-                  
+
                   font-bold
                   leading-loose
                   transition
                   duration-200
                 "
-                
+
                 >Buy Now</Nuxt-Link
               >
             </div>
           </div>
-         
+
           <div class="w-full lg:w-1/3 px-4">
             <div class="p-8 bg-white shadow-lg rounded">
               <h4 class="mb-2 text-2xl font-bold font-heading">Consultations</h4>
@@ -209,7 +209,7 @@
                   </svg>
                   <span>Legal Advice, etc...</span>
                 </li>
-                
+
               </ul>
               <Nuxt-Link to="/make-payment"
                 class="
@@ -227,7 +227,7 @@
                   transition
                   duration-200
                 "
-                
+
                 >Buy Now</Nuxt-Link
               >
             </div>
@@ -235,6 +235,7 @@
         </div>
       </div>
     </div>
+    <StripeCheckout/>
     <!-------------------------------------------------------------->
     <Subscription/>
   </section>

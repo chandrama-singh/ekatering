@@ -59,43 +59,29 @@
             >
           </div>
         </div>
-        <t-button
-          type="button"
-          variant="success"
-          v-if="category.status"
-          v-on:click="changeStatus(true)"
-        >
-          ENABLE
-        </t-button>
+
         <t-button
           type="button"
           variant="error"
-          v-else
+           v-if="category.status"
+
           v-on:click="changeStatus(false)"
         >
           DISABLE
         </t-button>
+          <t-button
+          type="button"
+          variant="success"
+            v-else
+          v-on:click="changeStatus(true)"
+        >
+          ENABLE
+        </t-button>
       </div>
       <div class="w-full">
-        <div class="w-full md:w-4/5 max-h-screen">
-          <div class="w-full px-5 py-3 max-h-screen overflow-y-auto">
-            <!--------------------------Products--------------------------------->
 
             <section class="container-fluid mx-auto font-mono">
-              <div class="w-full mb-8 overflow-hidden">
-                <div class="w-full overflow-y-auto">
-                  <div class="w-full px-4">
-                    <div
-                      class="
-                        relative
-                        flex flex-col
-                        min-w-0
-                        break-words
-                        w-full
-                        mb-6
-                      "
-                    >
-                      <div class="flex-auto">
+                      <div class="flex-auto p-12 max-w-xl mx-auto">
                         <div class="relative w-full mb-3 mt-8">
                           <label
                             class="
@@ -162,17 +148,48 @@
                             placeholder="Description"
                           >
                           </textarea>
+
+    <button @click="updateCategory" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+        Update
+    </button>
+
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </section>
+            <div v-if="showAlert">
 
-            <!--------------------------Categories--------------------------------->
-          </div>
+    <div v-if="type=='success'" class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <div class="flex items-center justify-center w-12 bg-green-500">
+            <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+            </svg>
         </div>
+
+        <div class="px-4 py-2 -mx-3">
+            <div class="mx-3">
+                <span class="font-semibold text-green-500 dark:text-green-400">Success</span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">{{message}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div v-else class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <div class="flex items-center justify-center w-12 bg-red-500">
+            <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.36667C10.8167 3.36667 3.3667 10.8167 3.3667 20C3.3667 29.1833 10.8167 36.6333 20 36.6333C29.1834 36.6333 36.6334 29.1833 36.6334 20C36.6334 10.8167 29.1834 3.36667 20 3.36667ZM19.1334 33.3333V22.9H13.3334L21.6667 6.66667V17.1H27.25L19.1334 33.3333Z"/>
+            </svg>
+        </div>
+
+        <div class="px-4 py-2 -mx-3">
+            <div class="mx-3">
+                <span class="font-semibold text-red-500 dark:text-red-400">Error</span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">{{error}}</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
       </div>
     </div>
   </div>
@@ -180,7 +197,7 @@
 
 
 <script>
-import { GET_CATEGORY_BY_ID, UPDATE_CATEGORY_STATUS } from "@/graphql/query";
+import { GET_CATEGORY_BY_ID, UPDATE_CATEGORY_STATUS,UPDATE_CATEGORY } from "@/graphql/query";
 
 export default {
   layout: "user",
@@ -249,6 +266,7 @@ export default {
       this.$dialog
         .confirm(message, options)
         .then(async function () {
+          console.log("data",value)
           try {
             const res = await self.$apollo.mutate({
               mutation: UPDATE_CATEGORY_STATUS,
@@ -274,6 +292,31 @@ export default {
           console.log(error);
         });
     },
+    async updateCategory(){
+          let formData={title:this.category.title,description:this.category.description}
+      try {
+        console.log(formData);
+            const res = await this.$apollo.mutate({
+              mutation: UPDATE_CATEGORY,
+              variables: {
+                id: this.category.id,
+                data: formData,
+              },
+            });
+            console.log(res);
+            this.reloadCategory(); // reload category from parent
+            //show success by notification
+            this.message = res.data.result;
+            this.showAlert = true;
+            this.type = "success";
+          } catch (error) {
+            console.log(error);
+            this.message = error.message;
+            this.showAlert = true;
+            this.type = "danger";
+          }
+
+    }
   },
   created() {
     let cid = this.$route.params.id;

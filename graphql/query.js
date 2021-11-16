@@ -270,7 +270,7 @@ export const ADD_NEW_CATEGORY = graphql`
 `;
 
 export const UPDATE_CATEGORY_STATUS = graphql`
-  mutation changeCategoryStatus($id: ID!, $status: String!) {
+  mutation changeCategoryStatus($id: ID!, $status: Boolean!) {
     result: changeCategoryStatus(id: $id, status: $status)
   }
 `;
@@ -409,7 +409,10 @@ export const GET_PRODUCT_BY_SLUG = graphql`
 
 export const ADD_NEW_PRODUCT = graphql`
   mutation addProduct($data: ProductInput!) {
-    result: addProduct(data: $data)
+    result: addProduct(data: $data){
+      id
+      name
+    }
   }
 `;
 
@@ -422,6 +425,12 @@ export const UPDATE_PRODUCT_STATUS = graphql`
 export const UPDATE_PRODUCT = graphql`
   mutation updateProduct($id: ID!, $data: ProductInput!) {
     result: updateProduct(id: $id, data: $data)
+  }
+`;
+
+export const UPDATE_PRODUCT_PRICE = graphql`
+  mutation updateProductPrice($id: ID!, $data: PriceInput!) {
+    result: updateProductPrice(id: $id, data: $data)
   }
 `;
 

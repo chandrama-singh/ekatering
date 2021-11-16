@@ -13,10 +13,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      { src: 'https://js.stripe.com/v3' },
+    ],
   },
 
-
+  env: {
+    SITE_NAME: process.env.SITE_NAME,
+    STRIPE_PK: process.env.STRIPE_PK,
+  },
 
      /*
       ** Global CSS
@@ -34,6 +40,7 @@ export default {
      plugins: [
          '~/plugins/vue-tailwind.js',
          { src: "~/plugins/vee-validate"},
+         { src: '~/plugins/vue-stripe.js', ssr: false },
          { src: '~/plugins/vue-toastification.js',ssr: false },
          { src: '~/plugins/ag-grid-client.js',ssr: false },
          { src: '~/plugins/vue-file-agent.js',ssr: false },

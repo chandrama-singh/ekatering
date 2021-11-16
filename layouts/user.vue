@@ -54,15 +54,10 @@
             icon: 'far fa-id-badge',
           },
           // {
-          //   href: '/caterers/add-category',
-          //   title: 'Assign Category',
-          //   icon: 'fa fa-cogs',
+          //   href: '/caterers/payments',
+          //   title: 'Payments',
+          //   icon: 'fas fa-pound-sign'
           // },
-          {
-            href: '/caterers/payments',
-            title: 'Payments',
-            icon: 'fas fa-pound-sign'
-          },
           {
             href: '/caterers/subscription',
             title: 'Subscription',
