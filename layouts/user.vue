@@ -82,26 +82,12 @@
 
           },
 
-// {
-//             title: 'Services',
-//             icon: 'fa fa-graduation-cap',
-//             child: [{
-//                 href: '#',
-//                 title: 'Add Service',
-//                 icon: 'fa fa-graduation-cap'
-//               },
-//               {
-//                 href: '#',
-//                 title: 'List Services',
-//                 icon: 'fa fa-graduation-cap'
-//               },
-//               {
-//                 href: '#',
-//                 title: 'Manage Categories',
-//                 icon: 'fa fa-graduation-cap'
-//               },
-//             ]
-//           },
+          {
+            title: 'Services',
+            icon: 'fa fa-graduation-cap',
+            href: '/caterers/services',
+          },
+            
          {
            href: '/caterers/orders',
            title: 'Orders',
