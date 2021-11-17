@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader pageTitle="Services">
+    <PageHeader pageTitle="Products">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
@@ -18,7 +18,7 @@
           </div>
         </div>
         <button @click="addProduct" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
-        Add Service
+        Add Products
     </button>
       </template>
     </PageHeader>
@@ -33,7 +33,7 @@
 
 <script>
   import {
-    GET_ALL_SERVICES
+    GET_ALL_PRODUCT
   } from '@/graphql/query'
   import moment from "moment-timezone";
   import PaymentAction from '@/components/ListActions/PaymentAction';
@@ -52,7 +52,7 @@
     },
     apollo: {
       products: {
-        query: GET_ALL_SERVICES,
+        query: GET_ALL_PRODUCT,
         error(error) {
           console.log(error)
         }
