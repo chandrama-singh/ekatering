@@ -1,6 +1,9 @@
 <template>
   <div class="w-full relative shadow-2xl rounded overflow-hidden">
-    <div v-if="myself" class="top h-64 w-full bg-blue-600 overflow-hidden relative">
+    <div
+      v-if="myself"
+      class="top h-64 w-full bg-blue-600 overflow-hidden relative"
+    >
       <img
         src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
         alt=""
@@ -18,17 +21,19 @@
         "
       >
         <img
-         v-if="myself.photo"
-         :src="myself.photo"
+          v-if="myself.photo"
+          :src="myself.photo"
           class="h-24 w-24 object-cover rounded-full"
         />
-         <img
-        v-else
+        <img
+          v-else
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
           class="h-24 w-24 object-cover rounded-full"
         />
-        <h1 class="text-2xl font-semibold">{{myself.business_name}}</h1>
-        <h4 class="text-sm font-semibold">Joined Since {{ myself.createdAt | moment('MMMM Do YYYY') }}</h4>
+        <h1 class="text-2xl font-semibold">{{ myself.business_name }}</h1>
+        <h4 class="text-sm font-semibold">
+          Joined Since {{ myself.createdAt | moment("MMMM Do YYYY") }}
+        </h4>
       </div>
     </div>
     <div class="grid grid-cols-12 bg-white h-full max-h-full">
@@ -45,7 +50,7 @@
           md:space-x-0 md:space-y-2 md:flex-col md:col-span-2 md:justify-start
         "
       >
-          <a
+        <a
           v-on:click="toggleTabs(1)"
           v-bind:class="{
             ' bg-gray-800': openTab !== 1,
@@ -81,7 +86,7 @@
           >Change Password</a
         >
 
-         <a
+        <a
           v-on:click="toggleTabs(3)"
           v-bind:class="{
             ' bg-gray-800': openTab !== 3,
@@ -99,7 +104,7 @@
           >Edit Social</a
         >
 
-         <a
+        <a
           v-on:click="toggleTabs(4)"
           v-bind:class="{
             ' bg-gray-800': openTab !== 4,
@@ -145,13 +150,12 @@
         "
       >
         <!------------------------------------Basics----------------------------->
-         <!------------------------------------Edit Profile----------------------------->
+        <!------------------------------------Edit Profile----------------------------->
         <div
           class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
         >
-          <ProfileEdit/>
-
+          <ProfileEdit />
         </div>
 
         <!------------------------------------Change Password----------------------------->
@@ -159,65 +163,54 @@
           class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
         >
-          <PasswordChange/>
-
+          <PasswordChange />
         </div>
 
-
-         <!------------------------------------Edit Social Links----------------------------->
+        <!------------------------------------Edit Social Links----------------------------->
         <div
           class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
         >
-
-          <SocialContacts/>
+          <SocialContacts />
         </div>
-         <!------------------------------------Address----------------------------->
-         <div
+        <!------------------------------------Address----------------------------->
+        <div
           class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
         >
-         <AddressEdit/>
+          <AddressEdit />
         </div>
         <!------------------------------------Document----------------------------->
         <div
           class="px-4 pt-4"
           v-bind:class="{ hidden: openTab !== 5, block: openTab === 5 }"
         >
-        <UploadDocument/>
-
+          <UploadDocument />
         </div>
-
-
+      </div>
     </div>
-     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   layout: "user",
 
   data() {
     return {
-
       openTab: 1,
     };
   },
-  computed:{
-    myself(){
-      return this.$store.state.user
-    }
-
+  computed: {
+    myself() {
+      return this.$store.state.user;
+    },
   },
   methods: {
     toggleTabs: function (tabNumber) {
       this.openTab = tabNumber;
     },
-    Onsave(){
-
-    }
+    Onsave() {},
   },
 };
 </script>

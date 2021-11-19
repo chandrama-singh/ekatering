@@ -54,6 +54,27 @@
         click to change profile photo
       </p>
     </div>
+
+
+    <div class="flex flex-col items-start justify-start mb-4">
+        <div class="flex flex-col">
+          <label class="block text-lg mb-2" for="name">Choose Your Role</label>
+            <label class="inline-flex items-center mt-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" checked><span class="ml-2 text-gray-700">Home Chef</span>
+            </label>
+
+            <label class="inline-flex items-center mt-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600" checked><span class="ml-2 text-gray-700">Event Caterers</span>
+            </label>
+
+            <label class="inline-flex items-center mt-3">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-pink-600" checked><span class="ml-2 text-gray-700">Private Chef</span>
+            </label>
+        </div>
+    </div>
+
+
+
     <div class="flex flex-col bg-white space-y-6">
       <div>
         <label class="block text-lg mb-2" for="name">First Name</label>
