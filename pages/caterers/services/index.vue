@@ -55,7 +55,7 @@
             </button>
           </div>
         </div>
-        <button
+        <Nuxt-Link to="services/add-services"> <button
           @click="addService"
           class="
             px-4
@@ -77,14 +77,143 @@
           "
         >
           Add Service
-        </button>
+        </button></Nuxt-Link>
       </template>
     </PageHeader>
+
+<div class="mx-6">
+      <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
+        :rowData="products" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+      </ag-grid-vue>
+    </div>
+
+
   </div>
 </template>
 
+
 <script>
-export default {
-  layout: "user",
-};
+  import {
+    GET_ALL_PRODUCT
+  } from '@/graphql/query'
+  import moment from "moment-timezone";
+  import PaymentAction from '@/components/ListActions/PaymentAction';
+  import UserProfile from '@/components/User/UserProfile';
+
+  export default {
+    layout:'user',
+    //middleware: 'authAdmin',
+    data() {
+      return {
+        columnDefs: null,
+        rowData: null,
+        context: null,
+        gridOptions: {},
+      };
+    },
+    apollo: {
+      products: {
+        query: GET_ALL_PRODUCT,
+        error(error) {
+          console.log(error)
+        }
+      }
+    },
+    beforeMount() {
+      this.gridOptions = {
+        rowHeight: 56,
+      };
+      this.columnDefs = [{
+          headerName: 'User',
+          field: 'name',
+          sortable: true,
+          filter: true,
+          checkboxSelection: true,
+          cellRendererFramework: UserProfile,
+          minWidth: 300,
+
+        },
+        {
+          headerName: 'MRP',
+          field: 'mrp',
+          sortable: true,
+          filter: true,
+          minWidth: 300,
+
+        },
+        {
+          headerName: 'Price',
+          field: 'price',
+          sortable: true,
+          filter: true,
+        },
+        {
+          headerName: 'Date',
+          field: 'createdAt',
+          sortable: true,
+          minWidth: 180,
+          cellRenderer: (cell) => {
+            return moment(cell.data.createdAt).format("DD MMM YYYY HH:mm A");
+          },
+          filter: "agDateColumnFilter",
+          filterParams: {
+            buttons: ['reset'],
+            comparator: function (filterLocalDateAtMidnight, cellValue) {
+              if (cellValue == null) {
+                return 0;
+              }
+              let cellDate = moment(cellValue).format("L");
+              let compareDate = moment(filterLocalDateAtMidnight).format("L");
+              if (Date.parse(cellDate) < Date.parse(compareDate)) {
+                return -1;
+              } else if (Date.parse(cellDate) > Date.parse(compareDate)) {
+                return 1;
+              } else {
+                return 0;
+              }
+            }
+          }
+        },
+
+        {
+          headerName: 'Status',
+          field: 'status',
+          sortable: true,
+          filter: true,
+          maxWidth: 140,
+          cellRenderer: (cell) => {
+            if (cell.data.status == "DRAFT") {
+              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">DRAFT</span>';
+            }
+            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">UnPaid</span>';
+          },
+        },
+
+        {
+          headerName: 'Actions',
+          field: 'action',
+          cellRendererFramework: PaymentAction,
+          minWidth: 100,
+        },
+      ];
+    },
+
+    methods: {
+        addProduct(){
+      this.$router.push('/caterers/products/add-product');
+    },
+      onFilterTextChange() {
+        this.gridOptions.api.setQuickFilter(
+          document.getElementById("filter-text-box").value
+        );
+      },
+      refetchData() {
+        this.$apollo.queries.products.refetch()
+      }
+    },
+    created() {
+      this.$apollo.queries.products.refetch()
+    },
+  };
+
 </script>
