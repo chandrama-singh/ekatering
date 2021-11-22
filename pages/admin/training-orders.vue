@@ -1,14 +1,14 @@
 <template>
-       
+
        <body class="antialiased font-sans bg-gray-200">
     <div class="container mx-auto px-4 sm:px-8">
         <div class="py-8">
             <div>
-                <h2 class="text-2xl font-semibold leading-tight"> Taining Payments</h2>
+                <h2 class="text-2xl font-semibold leading-tight"> Training Payments</h2>
             </div>
             <div class="my-2 flex sm:flex-row flex-col">
                 <div class="flex flex-row mb-1 sm:mb-0">
-                    
+
                 </div>
                 <div class="block relative">
                     <span class="h-full absolute inset-y-0 left-0 flex items-center pl-2">
@@ -23,7 +23,7 @@
                 </div>
                 <!-- <button class="bg-green-300 ml-4 px-4"><i class="fas fa-plus pr-2"></i>Add New Admin</button> -->
             </div>
-            
+
             <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                 <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
                     <table class="min-w-full leading-normal">
@@ -49,7 +49,7 @@
                                     class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                     Action
                                 </th>
-                               
+
                             </tr>
                         </thead>
                         <tbody>
@@ -75,7 +75,7 @@
                                     <p class="text-gray-900 font-semibold whitespace-no-wrap">Training Title</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                
+
                                         <p class="text-gray-900 whitespace-no-wrap">20/12/2021</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -85,10 +85,10 @@
                                             class="absolute inset-0 bg-gray-400 cursor-pointer opacity-50 rounded-full"></span>
                                         <span class="relative cursor-pointer">Statement</span>
                                     </span>
-                                   
+
                                 </td>
                             </tr>
-   
+
 <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                     <div class="flex items-center">
@@ -111,7 +111,7 @@
                                     <p class="text-gray-900 font-semibold whitespace-no-wrap">Training Title</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                
+
                                         <p class="text-gray-900 whitespace-no-wrap">20/12/2021</p>
                                 </td>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -121,11 +121,11 @@
                                             class="absolute inset-0 bg-gray-400 cursor-pointer opacity-50 rounded-full"></span>
                                         <span class="relative cursor-pointer">Statement</span>
                                     </span>
-                                   
+
                                 </td>
                             </tr>
 
-                            
+
                         </tbody>
                     </table>
                     <div

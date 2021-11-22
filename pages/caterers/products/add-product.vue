@@ -159,27 +159,23 @@
                                       v-model="formData.name"
                                     />
                                   </div>
-                                  <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
+                                  <div v-if="categories" class="w-full sm:w-1/2 mt-2 sm:mt-0">
                                     <p class="mb-2 font-semibold text-gray-700">
                                       Product Category
                                     </p>
-                                    <input
-                                      type="text"
-                                      name=""
-                                      placeholder="Product category"
-                                      class="
-                                        w-full
-                                        p-1
-                                        px-2
-                                        bg-white
-                                        border border-gray-200
-                                        rounded
-                                        shadow-sm
-                                        appearance-none
-                                      "
-                                      id="product-category"
-                                      v-model="formData.category"
-                                    />
+                                    <multiselect
+                                      v-model="selectedCategory"
+                                      class="mb-3"
+                                      track-by="title"
+                                      label="title"
+                                      placeholder="Select one"
+                                      :options="categories"
+                                      :searchable="false"
+                                      :allow-empty="false"
+                                    >
+                                    </multiselect>
+
+
                                   </div>
                                 </div>
 
@@ -431,7 +427,8 @@
 
 
 <script>
-import { ADD_NEW_PRODUCT, UPDATE_PRODUCT_BANNER,UPDATE_PRODUCT_PRICE } from "@/graphql/query";
+import { GET_ALL_CATEGORY,ADD_NEW_PRODUCT, UPDATE_PRODUCT_BANNER,UPDATE_PRODUCT_PRICE } from "@/graphql/query";
+import Multiselect from 'vue-multiselect'
 export default {
   layout: "user",
   data() {
@@ -441,6 +438,7 @@ export default {
       message: null,
       showAlert: false,
       step:1,
+      selectedCategory:'',
       product:{id:null, name:''},
       type: null,
       formData: {
@@ -457,7 +455,16 @@ export default {
       bannerImage: "",
     };
   },
+    components: { Multiselect },
 
+  apollo: {
+      categories: {
+        query: GET_ALL_CATEGORY,
+        error(error) {
+          console.log(error)
+        }
+      }
+    },
   methods: {
     toggleTabs: function () {
       this.$parent.toggleTabs(1);
@@ -498,7 +505,7 @@ export default {
     },
     async onSubmit() {
       this.loading = true;
-      // this.formData.mrp = parseInt(this.formData.mrp);
+       this.formData.category = this.selectedCategory.id;
       // this.formData.price = parseInt(this.formData.price);
       console.log(this.formData);
       try {

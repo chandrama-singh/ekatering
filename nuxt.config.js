@@ -27,8 +27,9 @@ export default {
      /*
       ** Global CSS
       */
-     css: [
 
+     css: [
+         "vue-multiselect/dist/vue-multiselect.min.css",
          '@/node_modules/vue-file-agent/dist/vue-file-agent.css',
          '@/assets/css/style.css',
          '@/node_modules/ag-grid-community/dist/styles/ag-grid.css',
