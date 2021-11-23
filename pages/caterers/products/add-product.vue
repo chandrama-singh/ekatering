@@ -271,6 +271,55 @@
                                     <p>Click to change banner</p>
                                   </div>
                                 </div>
+                                 <!------------------------Multiple image upload-------------------------------->
+                                 <!-- scroll area -->
+          <section class=" overflow-auto p-8 w-full h-full flex flex-col">
+            <header class="border-dashed border-2 border-gray-400 py-12 flex flex-col justify-center items-center">
+              <label
+  class="
+    w-64
+    flex flex-col
+    items-center
+    px-4
+    py-6
+    bg-white
+    rounded-md
+    shadow-md
+    tracking-wide
+    uppercase
+    border border-blue
+    cursor-pointer
+    hover:bg-purple-600 hover:text-white
+    text-purple-600
+    ease-linear
+    transition-all
+    duration-150
+  "
+   @click="selectProductImage"
+>
+  <i class="fas fa-cloud-upload-alt fa-3x"></i>
+  <span class="mt-2 text-base leading-normal">Select a file</span>
+
+</label>
+<input  ref="productImage"
+                                    accept="image/*"
+                                    type="file"
+                                    v-show="false"
+                                    @change="uploadImage" />
+            </header>
+
+            <h1 class="pt-8 pb-3 font-semibold sm:text-lg text-gray-900">
+              Uploaded
+            </h1>
+
+            <ul id="gallery" class="flex flex-1 flex-wrap -m-1">
+              <li v-for="(item,index) in productImage " :key="index"  class="h-full w-full text-center flex flex-col justify-center items-center">
+                <img class="mx-auto w-32" :src="item" alt="no data" />
+                <span class="text-small text-gray-500">No files selected</span>
+              </li>
+            </ul>
+          </section>
+
 
                                 <!------------------------Buttons-------------------------------->
                                 <div
@@ -427,7 +476,7 @@
 
 
 <script>
-import { GET_ALL_CATEGORY,ADD_NEW_PRODUCT, UPDATE_PRODUCT_BANNER,UPDATE_PRODUCT_PRICE } from "@/graphql/query";
+import { GET_ALL_CATEGORY,ADD_NEW_PRODUCT, UPDATE_PRODUCT_BANNER, UPDATE_PRODUCT_IMAGES, UPDATE_PRODUCT_PRICE } from "@/graphql/query";
 import Multiselect from 'vue-multiselect'
 export default {
   layout: "user",
@@ -452,6 +501,9 @@ export default {
         mrp:0
       },
       banner: "",
+      productImage:[],
+
+      productImageFile: [],
       bannerImage: "",
     };
   },
@@ -475,16 +527,10 @@ export default {
     selectBanner() {
       this.$refs.banner.click();
     },
-    previewBanner(event) {
-      this.banner = event.target.files[0];
-      if (this.banner.size > 1024 * 1024) {
-        alert("File too big (> 1MB)");
-      } else {
-        this.bannerImage = URL.createObjectURL(this.banner);
-        this.loading = true;
-        this.updateBanner();
-      }
+     selectProductImage() {
+      this.$refs.productImage.click();
     },
+
     async updateBanner() {
       console.log(this.banner);
       try {
@@ -497,6 +543,44 @@ export default {
         });
         this.loading = false;
          this.step=3;
+        console.log(res.data.result);
+      } catch (error) {
+        console.log(error);
+        this.loading = false;
+      }
+    },
+     previewBanner(event) {
+      this.banner = event.target.files[0];
+      if (this.banner.size > 1024 * 1024) {
+        alert("File too big (> 1MB)");
+      } else {
+        this.bannerImage = URL.createObjectURL(this.banner);
+        this.loading = true;
+        this.updateBanner();
+      }
+    },
+     uploadImage(event) {
+      this.productImageFile = event.target.files[0];
+      if (this.productImageFile.size > 1024 * 1024) {
+        alert("File too big (> 1MB)");
+      } else {
+       // this.bannerImage = URL.createObjectURL(this.banner);
+        this.loading = true;
+        this.uploadProduct();
+      }
+    },
+      async uploadProduct() {
+      console.log(this.productImageFile);
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_PRODUCT_IMAGES,
+          variables: {
+            file: this.productImageFile,
+            id:this.product.id
+          },
+        });
+        this.loading = false;
+       this.productImage.push(res.data.result);
         console.log(res.data.result);
       } catch (error) {
         console.log(error);

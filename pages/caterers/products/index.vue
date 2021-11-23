@@ -36,7 +36,7 @@
     GET_ALL_PRODUCT
   } from '@/graphql/query'
   import moment from "moment-timezone";
-  import PaymentAction from '@/components/ListActions/PaymentAction';
+  import ProductAction from '@/components/ListActions/ProductAction';
   import UserProfile from '@/components/User/UserProfile';
 
   export default {
@@ -131,7 +131,7 @@
         {
           headerName: 'Actions',
           field: 'action',
-          cellRendererFramework: PaymentAction,
+          cellRendererFramework: ProductAction,
           minWidth: 100,
         },
       ];

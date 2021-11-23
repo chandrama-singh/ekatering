@@ -441,6 +441,12 @@ export const UPDATE_PRODUCT_BANNER = graphql`
   }
 `;
 
+export const UPDATE_PRODUCT_IMAGES = graphql`
+  mutation uploadProductImages($file: Upload!,$id: ID!,) {
+    result: uploadProductImages(file: $file, id: $id)
+  }
+`;
+
 
 export const GENERATE_PAYMENT = graphql`mutation generatePayment($packageId: String!, $coupon:String){
 	response: generatePayment(packageId: $packageId, coupon: $coupon){
