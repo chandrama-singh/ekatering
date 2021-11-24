@@ -1,142 +1,410 @@
 <template>
-   <section class="pb-20 bg-gray-50">
-    <div
-      class="
-        min-h-screen
-        flex
-        justify-center
-        bg-center
-        py-12
-        px-4
-        sm:px-6
-        lg:px-8
-        bg-no-repeat bg-cover
-        relative
-        items-center
-      "
-    >
-      <div class="absolute opacity-60 inset-0 z-0"></div>
+  <div>
+    <!-- Caterers Basic Details -->
+
+    <section class="bg-gray-50">
       <div
         class="
-          max-w-xl
-          w-full
-          space-y-8
-          py-6
-          bg-purple-500
-          rounded-xl
-          shadow-lg
-          z-10
+          
+          min-h-screen
+          flex
+          justify-center
+          bg-center
+          py-12
+          px-4
+          sm:px-6
+          lg:px-8
+          bg-no-repeat bg-cover
+          relative
+          items-center
         "
       >
-        <div class="grid gap-8 grid-cols-1 ">
-          <div class="flex flex-col ">
-            <div class="flex flex-col sm:flex-row items-center text-center px-10">
-              <h2 class="font-semibold text-lg mr-auto text-center text-white">Cateres Business Details</h2>
-              <div class="w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0"></div>
-            </div>
-            <div class="mt-5 bg-white px-10">
-              <div class="form">
-                <div class="md:space-y-2 mb-3">
-                  <label class="text-xs font-semibold text-gray-600 py-2"
-                    >Business Logo<abbr class="hidden" title="required"
-                      >*</abbr
-                    ></label
-                  >
-                  <div class="flex items-center py-2">
-                    <div
-                      class="
-                        w-12
-                        h-12
-                        mr-4
-                        flex-none
-                        rounded-xl
-                        border
-                        overflow-hidden
-                      "
-                    >
-                      <img
-                        class="w-12 h-12 mr-4 object-cover"
-                        src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
-                        alt="Avatar Upload"
-                      />
-                    </div>
-                    <!-- <label class="cursor-pointer">
-                      <span
-                        class="
-                          focus:outline-none
-                          text-white text-sm
-                          py-2
-                          px-4
-                          rounded-full
-                          bg-green-400
-                          hover:bg-green-500 hover:shadow-lg
-                        "
-                        >Browse</span
+        <div class="absolute opacity-60 inset-0 z-0"></div>
+        <div
+          class="w-full space-y-8 py-6 bg-purple-500 rounded-xl shadow-lg z-10"
+        >
+          <div class="grid gap-8 grid-cols-1">
+            <div class="flex flex-col">
+              <div
+                class="flex flex-col sm:flex-row items-center text-center px-10"
+              >
+                <h2
+                  class="font-semibold text-lg mr-auto text-center text-white"
+                >
+                  Caterer Basic Details
+                </h2>
+                <div class="w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0"></div>
+              </div>
+              <div class="mt-5 bg-white px-10">
+                <div class="form">
+                  <div class="md:flex flex-row md:space-x-4 w-full text-xs">
+                    <div class="mb-3 space-y-2 w-full text-xs">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >First Name <abbr title="required">*</abbr></label
                       >
                       <input
-                        type="file"
-                        class="hidden"
-                        :multiple="multiple"
-                        :accept="accept"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        required="required"
+                        type="text"
                       />
-                    </label> -->
+                    </div>
+                    <div class="mb-3 space-y-2 w-full text-xs">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Last Name <abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        required="required"
+                        type="text"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="md:flex flex-row md:space-x-4 w-full text-xs">
-                  <div class="mb-3 space-y-2 w-full text-xs">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Business Name <abbr title="required">*</abbr></label
-                    >
+
+                  <div class="flex-auto w-full mb-1 text-xs space-y-2">
+                    <label class="font-semibold text-gray-600 py-2">Role</label>
                     <input
-                      placeholder="Business Name"
+                      required=""
+                      id=""
                       class="
+                        w-full
                         appearance-none
                         block
-                        w-full
                         bg-grey-lighter
                         text-grey-darker
                         border border-grey-lighter
                         rounded-lg
-                        h-10
+                        py-4
                         px-4
                       "
-                      required="required"
-                      type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      disabled
                     />
-                    <p class="text-red text-xs hidden">
-                      Please fill out this field.
-                    </p>
                   </div>
-                  <div class="mb-3 space-y-2 w-full text-xs">
+
+                  <div class="flex-auto w-full mb-1 text-xs space-y-2">
                     <label class="font-semibold text-gray-600 py-2"
-                      >Business Mail <abbr title="required">*</abbr></label
+                      >Address</label
                     >
-                    <input
-                      placeholder="Business Email ID"
+                    <textarea
+                      required=""
+                      name="message"
+                      id=""
                       class="
+                        w-full
+                        min-h-[100px]
+                        max-h-[300px]
+                        h-28
                         appearance-none
                         block
-                        w-full
                         bg-grey-lighter
                         text-grey-darker
                         border border-grey-lighter
                         rounded-lg
-                        h-10
+                        py-4
                         px-4
                       "
-                      required="required"
-                      type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
-                    />
-                    <p class="text-red text-xs hidden">
-                      Please fill out this field.
-                    </p>
+                      disabled
+                    ></textarea>
+                  </div>
+
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Town<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Country<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >PostCode<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Contact No.<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Email<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Gender<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                      />
+                    </div>
                   </div>
                 </div>
-                <!-- <div class="mb-3 space-y-2 w-full text-xs">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Caterers Basic Details -->
+
+    <!-- Caterers Business Details -->
+    <section class="bg-gray-50">
+      <div
+        class="
+          
+          min-h-screen
+          flex
+          justify-center
+          bg-center
+          py-12
+          px-4
+          sm:px-6
+          lg:px-8
+          bg-no-repeat bg-cover
+          relative
+          items-center
+        "
+      >
+        <div class="absolute opacity-60 inset-0 z-0"></div>
+        <div
+          class="w-full space-y-8 py-6 bg-purple-500 rounded-xl shadow-lg z-10"
+        >
+          <div class="grid gap-8 grid-cols-1">
+            <div class="flex flex-col">
+              <div
+                class="flex flex-col sm:flex-row items-center text-center px-10"
+              >
+                <h2
+                  class="font-semibold text-lg mr-auto text-center text-white"
+                >
+                  Caterer Business Details
+                </h2>
+                <div class="w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0"></div>
+              </div>
+              <div class="mt-5 bg-white px-10">
+                <div class="form">
+                  <div class="md:space-y-2 mb-3">
+                    <label class="text-xs font-semibold text-gray-600 py-2"
+                      >Business Logo<abbr class="hidden" title="required"
+                        >*</abbr
+                      ></label
+                    >
+                    <div class="flex items-center py-2">
+                      <div
+                        class="
+                          w-12
+                          h-12
+                          mr-4
+                          flex-none
+                          rounded-xl
+                          border
+                          overflow-hidden
+                        "
+                      >
+                        <img
+                          class="w-12 h-12 mr-4 object-cover"
+                          src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                          alt="Avatar Upload"
+                        />
+                      </div>
+                      <label class="cursor-pointer">
+                        <span
+                          class="
+                            focus:outline-none
+                            text-white text-sm
+                            py-2
+                            px-4
+                            rounded-full
+                            bg-green-400
+                            hover:bg-green-500 hover:shadow-lg
+                          "
+                          >View</span
+                        >
+                        <button
+                          class="hidden"
+                          :multiple="multiple"
+                          :accept="accept"
+                        />
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="md:flex flex-row md:space-x-4 w-full text-xs">
+                    <div class="mb-3 space-y-2 w-full text-xs">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Business Name <abbr title="required">*</abbr></label
+                      >
+                      <input
+                        placeholder="Business Name"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        required="required"
+                        type="text"
+                        name="integration[shop_name]"
+                        id="integration_shop_name"
+                      />
+                      <p class="text-red text-xs hidden">
+                        Please fill out this field.
+                      </p>
+                    </div>
+                    <div class="mb-3 space-y-2 w-full text-xs">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Business Mail <abbr title="required">*</abbr></label
+                      >
+                      <input
+                        placeholder="Business Email ID"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        required="required"
+                        type="text"
+                        name="integration[shop_name]"
+                        id="integration_shop_name"
+                      />
+                      <p class="text-red text-xs hidden">
+                        Please fill out this field.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- <div class="mb-3 space-y-2 w-full text-xs">
 							<label class=" font-semibold text-gray-600 py-2">Business  Website</label>
 							<div class="flex flex-wrap items-stretch w-full mb-4 relative">
 								<div class="flex">
@@ -149,8 +417,8 @@
 								<input type="text" class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border border-l-0 h-10 border-grey-light rounded-lg rounded-l-none px-3 relative focus:border-blue focus:shadow" placeholder="https://">
                   </div>
 							</div> -->
-                <!------------------------------------------------->
-                <!-- <div class="mb-3 space-y-2 w-full text-xs">
+                  <!------------------------------------------------->
+                  <!-- <div class="mb-3 space-y-2 w-full text-xs">
 							<label class=" font-semibold text-gray-600 py-2">Business  Website</label>
 								<div class="w-full flex flex-col mb-3">
 										<label class="font-semibold text-gray-600 py-2">Location<abbr title="required">*</abbr></label>
@@ -163,325 +431,323 @@
 										<p class="text-sm text-red-500 hidden mt-3" id="error">Please fill out this field.</p>
 									</div>
 							</div> -->
-                <!------------------------------------------------>
-                <div class="flex-auto w-full mb-1 text-xs space-y-2">
-                  <label class="font-semibold text-gray-600 py-2"
-                    >Business Address</label
-                  >
-                  <textarea
-                    required=""
-                    name="message"
-                    id=""
-                    class="
-                      w-full
-                      min-h-[100px]
-                      max-h-[300px]
-                      h-28
-                      appearance-none
-                      block
-                    
-                      bg-grey-lighter
-                      text-grey-darker
-                      border border-grey-lighter
-                      rounded-lg
-                      py-4
-                      px-4
-                    "
-                    placeholder="address line 1"
-                    spellcheck="false"
-                  ></textarea>
-                  <!-- <p class="text-xs text-gray-400 text-left my-3">
+                  <!------------------------------------------------>
+                  <div class="flex-auto w-full mb-1 text-xs space-y-2">
+                    <label class="font-semibold text-gray-600 py-2"
+                      >Business Address</label
+                    >
+                    <textarea
+                      required=""
+                      name="message"
+                      id=""
+                      class="
+                        w-full
+                        min-h-[100px]
+                        max-h-[300px]
+                        h-28
+                        appearance-none
+                        block
+                        bg-grey-lighter
+                        text-grey-darker
+                        border border-grey-lighter
+                        rounded-lg
+                        py-4
+                        px-4
+                      "
+                      disabled
+                      placeholder="address line 1"
+                      spellcheck="false"
+                    ></textarea>
+                    <!-- <p class="text-xs text-gray-400 text-left my-3">
                     You inserted 0 characters
                   </p> -->
-                </div>
-                <div class="flex-auto w-full mb-1 text-xs space-y-2">
-                  <!-- <label class="font-semibold text-gray-600 py-2"
+                  </div>
+                  <div class="flex-auto w-full mb-1 text-xs space-y-2">
+                    <!-- <label class="font-semibold text-gray-600 py-2"
                     >Business Address 1</label
                   > -->
-                  <textarea
-                    required=""
-                    name="message"
-                    id=""
-                    class="
-                      w-full
-                      min-h-[100px]
-                      max-h-[300px]
-                      h-28
-                      appearance-none
-                      block
-                    
-                      bg-grey-lighter
-                      text-grey-darker
-                      border border-grey-lighter
-                      rounded-lg
-                      py-4
-                      px-4
-                    "
-                    placeholder="address line 2"
-                    spellcheck="false"
-                  ></textarea>
-                  <!-- <p class="text-xs text-gray-400 text-left my-3">
+                    <textarea
+                      required=""
+                      name="message"
+                      id=""
+                      class="
+                        w-full
+                        min-h-[100px]
+                        max-h-[300px]
+                        h-28
+                        appearance-none
+                        block
+                        bg-grey-lighter
+                        text-grey-darker
+                        border border-grey-lighter
+                        rounded-lg
+                        py-4
+                        px-4
+                      "
+                      disabled
+                      placeholder="address line 2"
+                      spellcheck="false"
+                    ></textarea>
+                    <!-- <p class="text-xs text-gray-400 text-left my-3">
                     You inserted 0 characters
                   </p> -->
-                </div>
+                  </div>
 
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Business Town<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Business Town"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address1"
-                    />
-                  </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Business Country<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Business Country"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address2"
-                    />
-                    <p class="text-sm text-red-500 hidden mt-3" id="error">
-                      Please fill out this field.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Business PostCode<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Business Postcode"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address1"
-                    />
-                  </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Business Contact No.<abbr title="required"
-                        >*</abbr
-                      ></label
-                    >
-                    <input
-                      placeholder="Business Contact Number"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address2"
-                    />
-                    <p class="text-sm text-red-500 hidden mt-3" id="error">
-                      Please fill out this field.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="text-xs font-semibold text-gray-600 pt-2 pb-2"
-                      >Proof of address<abbr title="required"
-                        >*</abbr
-                      ></label
-                    >
-                    <div class="flex items-center pt-2 pb-6">
-                      <div
-                        class="
-                          w-12
-                          h-12
-                          mr-4
-                          flex-none
-                          rounded-xl
-                          border
-                          overflow-hidden
-                        "
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Business Town<abbr title="required">*</abbr></label
                       >
-                        <img
-                          class="w-12 h-12 mr-4 object-cover"
-                          src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
-                          alt="Avatar Upload"
-                        />
-                      </div>
-                      <!-- <label class="cursor-pointer">
-                        <span
-                          class="
-                            focus:outline-none
-                            text-white text-sm
-                            py-2
-                            px-4
-                            rounded-full
-                            bg-green-400
-                            hover:bg-green-500 hover:shadow-lg
-                          "
-                          >Browse</span
-                        >
-                        <input
-                          type="file"
-                          class="hidden"
-                          :multiple="multiple"
-                          :accept="accept"
-                        />
-                      </label> -->
+                      <input
+                        placeholder="Business Town"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address1"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Business Country<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        placeholder="Business Country"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address2"
+                      />
+                      <p class="text-sm text-red-500 hidden mt-3" id="error">
+                        Please fill out this field.
+                      </p>
                     </div>
                   </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="text-xs font-semibold text-gray-600 pt-2"
-                      >Local Authority Food Registration Letter<abbr
-                        
-                        title="required"
-                        >*</abbr
-                      ></label
-                    >
-                    <div class="flex items-center pt-2 pb-6">
-                      <div
-                        class="
-                          w-12
-                          h-12
-                          mr-4
-                          flex-none
-                          rounded-xl
-                          border
-                          overflow-hidden
-                        "
-                      >
-                        <img
-                          class="w-12 h-12 mr-4 object-cover"
-                          src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
-                          alt="Avatar Upload"
-                        />
-                      </div>
-                      <!-- <label class="cursor-pointer">
-                        <span
-                          class="
-                            focus:outline-none
-                            text-white text-sm
-                            py-2
-                            px-4
-                            rounded-full
-                            bg-green-400
-                            hover:bg-green-500 hover:shadow-lg
-                          "
-                          >Browse</span
-                        >
-                        <input
-                          type="file"
-                          class="hidden"
-                          :multiple="multiple"
-                          :accept="accept"
-                        />
-                      </label> -->
-                    </div>
-                  </div>
-                </div>
 
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="text-xs font-semibold text-gray-600 pt-2"
-                      >Food Hygiene Rating Scheme (FHRS) award letter<abbr
-                    
-                        title="required"
-                        >*</abbr
-                      ></label
-                    >
-                    <div class="flex items-center pt-2 pb-6">
-                      <div
-                        class="
-                          w-12
-                          h-12
-                          mr-4
-                          flex-none
-                          rounded-xl
-                          border
-                          overflow-hidden
-                        "
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Business PostCode<abbr title="required">*</abbr></label
                       >
-                        <img
-                          class="w-12 h-12 mr-4 object-cover"
-                          src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
-                          alt="Avatar Upload"
-                        />
-                      </div>
-                      <!-- <label class="cursor-pointer">
-                        <span
-                          class="
-                            focus:outline-none
-                            text-white text-sm
-                            py-2
-                            px-4
-                            rounded-full
-                            bg-green-400
-                            hover:bg-green-500 hover:shadow-lg
-                          "
-                          >Browse</span
-                        >
-                        <input
-                          type="file"
-                          class="hidden"
-                          :multiple="multiple"
-                          :accept="accept"
-                        />
-                      </label> -->
+                      <input
+                        placeholder="Business Postcode"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address1"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Business Contact No.<abbr title="required"
+                          >*</abbr
+                        ></label
+                      >
+                      <input
+                        placeholder="Business Contact Number"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address2"
+                      />
+                      <p class="text-sm text-red-500 hidden mt-3" id="error">
+                        Please fill out this field.
+                      </p>
                     </div>
                   </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="text-xs font-semibold text-gray-600 pt-2"
-                      >FHRS Next Inspection Due Date (call your local authority
-                      to get this date):<abbr title="required"
-                        >*</abbr
-                      ></label
-                    >
-                    <div class="flex items-center py-6">
-                      <!-- <div
+
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label
+                        class="text-xs font-semibold text-gray-600 pt-2 pb-2"
+                        >Proof of address<abbr title="required">*</abbr></label
+                      >
+                      <div class="flex items-center pt-2 pb-6">
+                        <div
+                          class="
+                            w-12
+                            h-12
+                            mr-4
+                            flex-none
+                            rounded-xl
+                            border
+                            overflow-hidden
+                          "
+                        >
+                          <img
+                            class="w-12 h-12 mr-4 object-cover"
+                            src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                            alt="Avatar Upload"
+                          />
+                        </div>
+                        <label class="cursor-pointer">
+                          <span
+                            class="
+                              focus:outline-none
+                              text-white text-sm
+                              py-2
+                              px-4
+                              rounded-full
+                              bg-green-400
+                              hover:bg-green-500 hover:shadow-lg
+                            "
+                            >View</span
+                          >
+                          <button
+                            class="hidden"
+                            :multiple="multiple"
+                            :accept="accept"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="text-xs font-semibold text-gray-600 pt-2"
+                        >Local Authority Food Registration Letter<abbr
+                          title="required"
+                          >*</abbr
+                        ></label
+                      >
+                      <div class="flex items-center pt-2 pb-6">
+                        <div
+                          class="
+                            w-12
+                            h-12
+                            mr-4
+                            flex-none
+                            rounded-xl
+                            border
+                            overflow-hidden
+                          "
+                        >
+                          <img
+                            class="w-12 h-12 mr-4 object-cover"
+                            src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                            alt="Avatar Upload"
+                          />
+                        </div>
+                        <label class="cursor-pointer">
+                          <span
+                            class="
+                              focus:outline-none
+                              text-white text-sm
+                              py-2
+                              px-4
+                              rounded-full
+                              bg-green-400
+                              hover:bg-green-500 hover:shadow-lg
+                            "
+                            >View</span
+                          >
+                          <button
+                            class="hidden"
+                            :multiple="multiple"
+                            :accept="accept"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="text-xs font-semibold text-gray-600 pt-2"
+                        >Food Hygiene Rating Scheme (FHRS) award letter<abbr
+                          title="required"
+                          >*</abbr
+                        ></label
+                      >
+                      <div class="flex items-center pt-2 pb-6">
+                        <div
+                          class="
+                            w-12
+                            h-12
+                            mr-4
+                            flex-none
+                            rounded-xl
+                            border
+                            overflow-hidden
+                          "
+                        >
+                          <img
+                            class="w-12 h-12 mr-4 object-cover"
+                            src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                            alt="Avatar Upload"
+                          />
+                        </div>
+                        <label class="cursor-pointer">
+                          <span
+                            class="
+                              focus:outline-none
+                              text-white text-sm
+                              py-2
+                              px-4
+                              rounded-full
+                              bg-green-400
+                              hover:bg-green-500 hover:shadow-lg
+                            "
+                            >View</span
+                          >
+                          <button
+                            class="hidden"
+                            :multiple="multiple"
+                            :accept="accept"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="text-xs font-semibold text-gray-600 pt-2"
+                        >FHRS Next Inspection Due Date (call your local
+                        authority to get this date):<abbr title="required"
+                          >*</abbr
+                        ></label
+                      >
+                      <div class="flex items-center py-6">
+                        <!-- <div
                         class="
                           w-12
                           h-12
@@ -498,196 +764,202 @@
                           alt="Avatar Upload"
                         />
                       </div> -->
-                      
-                    
+
                         <input
                           placeholder="DD/MM/YYYY"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        px-4
-                      "
-                      type="datetime"
-                      
-                      id="datetime"
+                          class="
+                            appearance-none
+                            block
+                            w-full
+                            bg-grey-lighter
+                            text-grey-darker
+                            border border-grey-lighter
+                            rounded-lg
+                            px-4
+                          "
+                          disabled
+                          type="datetime"
+                          id="datetime"
                         />
-                      
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact Number<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Contact Number"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address1"
-                    />
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Contact Number<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        placeholder="Contact Number"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address1"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Contact Email<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        placeholder="Contact Email"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address2"
+                      />
+                      <p class="text-sm text-red-500 hidden mt-3" id="error">
+                        Please fill out this field.
+                      </p>
+                    </div>
                   </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact Email<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Contact Email"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address2"
-                    />
-                    <p class="text-sm text-red-500 hidden mt-3" id="error">
-                      Please fill out this field.
-                    </p>
-                  </div>
-                </div>
 
-                <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact First Name<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="First Name"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address1"
-                    />
+                  <div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Contact First Name<abbr title="required"
+                          >*</abbr
+                        ></label
+                      >
+                      <input
+                        placeholder="First Name"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address1"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col mb-3">
+                      <label class="font-semibold text-gray-600 py-2"
+                        >Contact Last Name<abbr title="required">*</abbr></label
+                      >
+                      <input
+                        placeholder="Last Name"
+                        class="
+                          appearance-none
+                          block
+                          w-full
+                          bg-grey-lighter
+                          text-grey-darker
+                          border border-grey-lighter
+                          rounded-lg
+                          h-10
+                          px-4
+                        "
+                        disabled
+                        type="text"
+                        name="integration[street_address]"
+                        id="integration_street_address2"
+                      />
+                      <p class="text-sm text-red-500 hidden mt-3" id="error">
+                        Please fill out this field.
+                      </p>
+                    </div>
                   </div>
-                  <div class="w-full flex flex-col mb-3">
-                    <label class="font-semibold text-gray-600 py-2"
-                      >Contact Last Name<abbr title="required">*</abbr></label
-                    >
-                    <input
-                      placeholder="Last Name"
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      type="text"
-                      name="integration[street_address]"
-                      id="integration_street_address2"
-                    />
-                    <p class="text-sm text-red-500 hidden mt-3" id="error">
-                      Please fill out this field.
-                    </p>
-                  </div>
-                </div>
 
-                <!-- <p class="text-xs text-red-500 text-right my-3">
+                  <!-- <p class="text-xs text-red-500 text-right my-3">
                   Required fields are marked with an asterisk
                   <abbr title="Required field">*</abbr>
                 </p> -->
-                <div
-                  class="
-                    mt-5
-                    mb-2
-                    text-right
-                    md:space-x-3 md:block
-                    flex flex-col-reverse
-                    item-center
-                  "
-                >
-                  <button
+                  <div
                     class="
+                      mt-5
                       mb-2
-                      md:mb-0
-                      bg-white
-                      px-5
-                      py-2
-                      text-sm
-                      shadow-sm
-                      font-medium
-                      tracking-wider
-                      border
-                      text-gray-600
-                      rounded-full
-                      hover:shadow-lg hover:bg-gray-100
+                      text-right
+                      md:space-x-3 md:block
+                      flex flex-col-reverse
+                      item-center
                     "
                   >
-                    Back
-                  </button>
-                  <button
-                    class="
-                      mb-2
-                      md:mb-0
-                      bg-green-400
-                      px-5
-                      py-2
-                      text-sm
-                      shadow-sm
-                      font-medium
-                      tracking-wider
-                      text-white
-                      rounded-full
-                      hover:shadow-lg hover:bg-green-500
-                    "
-                  >
-                    Print
-                  </button>
+                    <button
+                      class="
+                        mb-2
+                        md:mb-0
+                        bg-white
+                        px-5
+                        py-2
+                        text-sm
+                        shadow-sm
+                        font-medium
+                        tracking-wider
+                        border
+                        text-gray-600
+                        rounded-full
+                        hover:shadow-lg hover:bg-gray-100
+                      "
+                    >
+                      Back
+                    </button>
+                    <button
+                      class="
+                        mb-2
+                        md:mb-0
+                        bg-green-400
+                        px-5
+                        py-2
+                        text-sm
+                        shadow-sm
+                        font-medium
+                        tracking-wider
+                        text-white
+                        rounded-full
+                        hover:shadow-lg hover:bg-green-500
+                      "
+                    >
+                      Print
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- End Caterers Business Details -->
+  </div>
 </template>
 
 <script>
 export default {
-
-}
+  layout: "none",
+};
 </script>
 
 <style>
-
 </style>
