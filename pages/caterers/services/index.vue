@@ -124,7 +124,7 @@
         rowHeight: 56,
       };
       this.columnDefs = [{
-          headerName: 'User',
+          headerName: 'Title',
           field: 'name',
           sortable: true,
           filter: true,

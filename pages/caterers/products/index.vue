@@ -63,7 +63,7 @@
         rowHeight: 56,
       };
       this.columnDefs = [{
-          headerName: 'User',
+          headerName: 'Product Name',
           field: 'name',
           sortable: true,
           filter: true,

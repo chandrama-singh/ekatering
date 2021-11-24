@@ -46,87 +46,291 @@
                         >
                           <div class="flex-auto py-2 rounded-lg">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
-
                               <!-- component -->
-<div class="w-full py-6">
-  <div class="flex">
-    <div class="w-1/4">
-      <div class="relative mb-2">
-        <div class="w-10 h-10 mx-auto bg-green-500 rounded-full text-lg text-white flex items-center">
-          <span class="text-center text-white w-full">
-            <svg class="w-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-              <path class="heroicon-ui" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm14 8V5H5v6h14zm0 2H5v6h14v-6zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-            </svg>
-          </span>
-        </div>
-      </div>
+                              <div class="w-full py-6">
+                                <div class="flex">
+                                  <div class="w-1/4">
+                                    <div class="relative mb-2">
+                                      <div
+                                        class="
+                                          w-10
+                                          h-10
+                                          mx-auto
+                                          bg-green-500
+                                          rounded-full
+                                          text-lg text-white
+                                          flex
+                                          items-center
+                                        "
+                                      >
+                                        <span
+                                          class="text-center text-white w-full"
+                                        >
+                                          <svg
+                                            class="w-full fill-current"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            height="24"
+                                          >
+                                            <path
+                                              class="heroicon-ui"
+                                              d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm14 8V5H5v6h14zm0 2H5v6h14v-6zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </div>
+                                    </div>
 
-      <div class="text-xs text-center md:text-base">Add Basic Detail</div>
-    </div>
+                                    <div
+                                      class="text-xs text-center md:text-base"
+                                    >
+                                      Add Basic Detail
+                                    </div>
+                                  </div>
 
-    <div class="w-1/4">
-      <div class="relative mb-2">
-        <div class="absolute flex align-center items-center align-middle content-center" style="width: calc(100% - 2.5rem - 1rem); top: 50%; transform: translate(-50%, -50%)">
-          <div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-            <div class="w-0 bg-green-300 py-1 rounded" style="width: 100%;"></div>
-          </div>
-        </div>
+                                  <div class="w-1/4">
+                                    <div class="relative mb-2">
+                                      <div
+                                        class="
+                                          absolute
+                                          flex
+                                          align-center
+                                          items-center
+                                          align-middle
+                                          content-center
+                                        "
+                                        style="
+                                          width: calc(100% - 2.5rem - 1rem);
+                                          top: 50%;
+                                          transform: translate(-50%, -50%);
+                                        "
+                                      >
+                                        <div
+                                          class="
+                                            w-full
+                                            bg-gray-200
+                                            rounded
+                                            items-center
+                                            align-middle align-center
+                                            flex-1
+                                          "
+                                        >
+                                          <div
+                                            class="
+                                              w-0
+                                              bg-green-300
+                                              py-1
+                                              rounded
+                                            "
+                                            style="width: 100%"
+                                          ></div>
+                                        </div>
+                                      </div>
 
-        <div class="w-10 h-10 mx-auto bg-green-500 rounded-full text-lg text-white flex items-center">
-          <span class="text-center text-white w-full">
-            <svg class="w-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-              <path class="heroicon-ui" d="M19 10h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2h-2a1 1 0 0 1 0-2h2V8a1 1 0 0 1 2 0v2zM9 12A5 5 0 1 1 9 2a5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm8 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h5a5 5 0 0 1 5 5v2z"/>
-            </svg>
-          </span>
-        </div>
-      </div>
+                                      <div
+                                        class="
+                                          w-10
+                                          h-10
+                                          mx-auto
+                                          bg-green-500
+                                          rounded-full
+                                          text-lg text-white
+                                          flex
+                                          items-center
+                                        "
+                                      >
+                                        <span
+                                          class="text-center text-white w-full"
+                                        >
+                                          <svg
+                                            class="w-full fill-current"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            height="24"
+                                          >
+                                            <path
+                                              class="heroicon-ui"
+                                              d="M19 10h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2h-2a1 1 0 0 1 0-2h2V8a1 1 0 0 1 2 0v2zM9 12A5 5 0 1 1 9 2a5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm8 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h5a5 5 0 0 1 5 5v2z"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </div>
+                                    </div>
 
-      <div class="text-xs text-center md:text-base">Add Images</div>
-    </div>
+                                    <div
+                                      class="text-xs text-center md:text-base"
+                                    >
+                                      Add Images
+                                    </div>
+                                  </div>
 
-    <div class="w-1/4">
-      <div class="relative mb-2">
-        <div class="absolute flex align-center items-center align-middle content-center" style="width: calc(100% - 2.5rem - 1rem); top: 50%; transform: translate(-50%, -50%)">
-          <div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-            <div class="w-0 bg-green-300 py-1 rounded" style="width: 33%;"></div>
-          </div>
-        </div>
+                                  <div class="w-1/4">
+                                    <div class="relative mb-2">
+                                      <div
+                                        class="
+                                          absolute
+                                          flex
+                                          align-center
+                                          items-center
+                                          align-middle
+                                          content-center
+                                        "
+                                        style="
+                                          width: calc(100% - 2.5rem - 1rem);
+                                          top: 50%;
+                                          transform: translate(-50%, -50%);
+                                        "
+                                      >
+                                        <div
+                                          class="
+                                            w-full
+                                            bg-gray-200
+                                            rounded
+                                            items-center
+                                            align-middle align-center
+                                            flex-1
+                                          "
+                                        >
+                                          <div
+                                            class="
+                                              w-0
+                                              bg-green-300
+                                              py-1
+                                              rounded
+                                            "
+                                            style="width: 33%"
+                                          ></div>
+                                        </div>
+                                      </div>
 
-        <div class="w-10 h-10 mx-auto bg-white border-2 border-gray-200 rounded-full text-lg text-white flex items-center">
-          <span class="text-center text-gray-600 w-full">
-            <svg class="w-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-              <path class="heroicon-ui" d="M9 4.58V4c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v.58a8 8 0 0 1 1.92 1.11l.5-.29a2 2 0 0 1 2.74.73l1 1.74a2 2 0 0 1-.73 2.73l-.5.29a8.06 8.06 0 0 1 0 2.22l.5.3a2 2 0 0 1 .73 2.72l-1 1.74a2 2 0 0 1-2.73.73l-.5-.3A8 8 0 0 1 15 19.43V20a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.58a8 8 0 0 1-1.92-1.11l-.5.29a2 2 0 0 1-2.74-.73l-1-1.74a2 2 0 0 1 .73-2.73l.5-.29a8.06 8.06 0 0 1 0-2.22l-.5-.3a2 2 0 0 1-.73-2.72l1-1.74a2 2 0 0 1 2.73-.73l.5.3A8 8 0 0 1 9 4.57zM7.88 7.64l-.54.51-1.77-1.02-1 1.74 1.76 1.01-.17.73a6.02 6.02 0 0 0 0 2.78l.17.73-1.76 1.01 1 1.74 1.77-1.02.54.51a6 6 0 0 0 2.4 1.4l.72.2V20h2v-2.04l.71-.2a6 6 0 0 0 2.41-1.4l.54-.51 1.77 1.02 1-1.74-1.76-1.01.17-.73a6.02 6.02 0 0 0 0-2.78l-.17-.73 1.76-1.01-1-1.74-1.77 1.02-.54-.51a6 6 0 0 0-2.4-1.4l-.72-.2V4h-2v2.04l-.71.2a6 6 0 0 0-2.41 1.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-            </svg>
-          </span>
-        </div>
-      </div>
+                                      <div
+                                        class="
+                                          w-10
+                                          h-10
+                                          mx-auto
+                                          bg-white
+                                          border-2 border-gray-200
+                                          rounded-full
+                                          text-lg text-white
+                                          flex
+                                          items-center
+                                        "
+                                      >
+                                        <span
+                                          class="
+                                            text-center text-gray-600
+                                            w-full
+                                          "
+                                        >
+                                          <svg
+                                            class="w-full fill-current"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            height="24"
+                                          >
+                                            <path
+                                              class="heroicon-ui"
+                                              d="M9 4.58V4c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v.58a8 8 0 0 1 1.92 1.11l.5-.29a2 2 0 0 1 2.74.73l1 1.74a2 2 0 0 1-.73 2.73l-.5.29a8.06 8.06 0 0 1 0 2.22l.5.3a2 2 0 0 1 .73 2.72l-1 1.74a2 2 0 0 1-2.73.73l-.5-.3A8 8 0 0 1 15 19.43V20a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.58a8 8 0 0 1-1.92-1.11l-.5.29a2 2 0 0 1-2.74-.73l-1-1.74a2 2 0 0 1 .73-2.73l.5-.29a8.06 8.06 0 0 1 0-2.22l-.5-.3a2 2 0 0 1-.73-2.72l1-1.74a2 2 0 0 1 2.73-.73l.5.3A8 8 0 0 1 9 4.57zM7.88 7.64l-.54.51-1.77-1.02-1 1.74 1.76 1.01-.17.73a6.02 6.02 0 0 0 0 2.78l.17.73-1.76 1.01 1 1.74 1.77-1.02.54.51a6 6 0 0 0 2.4 1.4l.72.2V20h2v-2.04l.71-.2a6 6 0 0 0 2.41-1.4l.54-.51 1.77 1.02 1-1.74-1.76-1.01.17-.73a6.02 6.02 0 0 0 0-2.78l-.17-.73 1.76-1.01-1-1.74-1.77 1.02-.54-.51a6 6 0 0 0-2.4-1.4l-.72-.2V4h-2v2.04l-.71.2a6 6 0 0 0-2.41 1.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </div>
+                                    </div>
 
-      <div class="text-xs text-center md:text-base">Set Pricing</div>
-    </div>
+                                    <div
+                                      class="text-xs text-center md:text-base"
+                                    >
+                                      Set Pricing
+                                    </div>
+                                  </div>
 
-    <div class="w-1/4">
-      <div class="relative mb-2">
-        <div class="absolute flex align-center items-center align-middle content-center" style="width: calc(100% - 2.5rem - 1rem); top: 50%; transform: translate(-50%, -50%)">
-          <div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-            <div class="w-0 bg-green-300 py-1 rounded" style="width: 0%;"></div>
-          </div>
-        </div>
+                                  <div class="w-1/4">
+                                    <div class="relative mb-2">
+                                      <div
+                                        class="
+                                          absolute
+                                          flex
+                                          align-center
+                                          items-center
+                                          align-middle
+                                          content-center
+                                        "
+                                        style="
+                                          width: calc(100% - 2.5rem - 1rem);
+                                          top: 50%;
+                                          transform: translate(-50%, -50%);
+                                        "
+                                      >
+                                        <div
+                                          class="
+                                            w-full
+                                            bg-gray-200
+                                            rounded
+                                            items-center
+                                            align-middle align-center
+                                            flex-1
+                                          "
+                                        >
+                                          <div
+                                            class="
+                                              w-0
+                                              bg-green-300
+                                              py-1
+                                              rounded
+                                            "
+                                            style="width: 0%"
+                                          ></div>
+                                        </div>
+                                      </div>
 
-        <div class="w-10 h-10 mx-auto bg-white border-2 border-gray-200 rounded-full text-lg text-white flex items-center">
-          <span class="text-center text-gray-600 w-full">
-            <svg class="w-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-              <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"/>
-            </svg>
-          </span>
-        </div>
-      </div>
+                                      <div
+                                        class="
+                                          w-10
+                                          h-10
+                                          mx-auto
+                                          bg-white
+                                          border-2 border-gray-200
+                                          rounded-full
+                                          text-lg text-white
+                                          flex
+                                          items-center
+                                        "
+                                      >
+                                        <span
+                                          class="
+                                            text-center text-gray-600
+                                            w-full
+                                          "
+                                        >
+                                          <svg
+                                            class="w-full fill-current"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            height="24"
+                                          >
+                                            <path
+                                              class="heroicon-ui"
+                                              d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </div>
+                                    </div>
 
-      <div class="text-xs text-center md:text-base">Finished</div>
-    </div>
-  </div>
-</div>
+                                    <div
+                                      class="text-xs text-center md:text-base"
+                                    >
+                                      Finished
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <!------------------------Info Value-------------------------------->
-                              <div v-if="step==1">
+                              <div v-if="step == 1">
                                 <div
                                   class="
                                     flex flex-col
@@ -159,7 +363,10 @@
                                       v-model="formData.name"
                                     />
                                   </div>
-                                  <div v-if="categories" class="w-full sm:w-1/2 mt-2 sm:mt-0">
+                                  <div
+                                    v-if="categories"
+                                    class="w-full sm:w-1/2 mt-2 sm:mt-0"
+                                  >
                                     <p class="mb-2 font-semibold text-gray-700">
                                       Product Category
                                     </p>
@@ -174,8 +381,6 @@
                                       :allow-empty="false"
                                     >
                                     </multiselect>
-
-
                                   </div>
                                 </div>
 
@@ -211,7 +416,6 @@
                                     rounded-bl-lg rounded-br-lg
                                   "
                                 >
-
                                   <button
                                     class="
                                       px-4
@@ -229,7 +433,7 @@
                               </div>
                               <!------------------------Info Value-------------------------------->
                               <!------------------------Banner -------------------------------->
-                              <div v-if="step==2">
+                              <div v-if="step == 2">
                                 <p class="font-semibold text-gray-700">
                                   Product Banner
                                 </p>
@@ -271,55 +475,107 @@
                                     <p>Click to change banner</p>
                                   </div>
                                 </div>
-                                 <!------------------------Multiple image upload-------------------------------->
-                                 <!-- scroll area -->
-          <section class=" overflow-auto p-8 w-full h-full flex flex-col">
-            <header class="border-dashed border-2 border-gray-400 py-12 flex flex-col justify-center items-center">
-              <label
-  class="
-    w-64
-    flex flex-col
-    items-center
-    px-4
-    py-6
-    bg-white
-    rounded-md
-    shadow-md
-    tracking-wide
-    uppercase
-    border border-blue
-    cursor-pointer
-    hover:bg-purple-600 hover:text-white
-    text-purple-600
-    ease-linear
-    transition-all
-    duration-150
-  "
-   @click="selectProductImage"
->
-  <i class="fas fa-cloud-upload-alt fa-3x"></i>
-  <span class="mt-2 text-base leading-normal">Select a file</span>
+                                <!------------------------Multiple image upload-------------------------------->
+                                <!-- scroll area -->
+                                <p class="font-semibold text-gray-700">
+                                  More Images
+                                </p>
+                                <section
+                                  class="
+                                    overflow-auto
+                                    p-8
+                                    w-full
+                                    h-full
+                                    flex flex-col
+                                  "
+                                >
+                                  <header
+                                    class="
+                                      border-dashed border-2 border-gray-400
+                                      py-12
+                                      flex flex-col
+                                      justify-center
+                                      items-center
+                                    "
+                                  >
+                                    <label
+                                      class="
+                                        w-64
+                                        flex flex-col
+                                        items-center
+                                        px-4
+                                        py-6
+                                        bg-white
+                                        rounded-md
+                                        shadow-md
+                                        tracking-wide
+                                        uppercase
+                                        border border-blue
+                                        cursor-pointer
+                                        hover:bg-purple-600 hover:text-white
+                                        text-purple-600
+                                        ease-linear
+                                        transition-all
+                                        duration-150
+                                      "
+                                      @click="selectProductImage"
+                                    >
+                                      <i
+                                        class="fas fa-cloud-upload-alt fa-3x"
+                                      ></i>
+                                      <span
+                                        class="mt-2 text-base leading-normal"
+                                        >Select More Images</span
+                                      >
+                                    </label>
+                                    <input
+                                      ref="productImage"
+                                      accept="image/*"
+                                      type="file"
+                                      v-show="false"
+                                      @change="uploadImage"
+                                    />
+                                  </header>
 
-</label>
-<input  ref="productImage"
-                                    accept="image/*"
-                                    type="file"
-                                    v-show="false"
-                                    @change="uploadImage" />
-            </header>
+                                  <h1
+                                    class="
+                                      pt-8
+                                      pb-3
+                                      font-semibold
+                                      sm:text-lg
+                                      text-gray-900
+                                    "
+                                  >
+                                    Uploaded
+                                  </h1>
 
-            <h1 class="pt-8 pb-3 font-semibold sm:text-lg text-gray-900">
-              Uploaded
-            </h1>
-
-            <ul id="gallery" class="flex flex-1 flex-wrap -m-1">
-              <li v-for="(item,index) in productImage " :key="index"  class="h-full w-full text-center flex flex-col justify-center items-center">
-                <img class="mx-auto w-32" :src="item" alt="no data" />
-                <span class="text-small text-gray-500">No files selected</span>
-              </li>
-            </ul>
-          </section>
-
+                                  <ul
+                                    id="gallery"
+                                    class="flex flex-1 flex-wrap -m-1"
+                                  >
+                                    <li
+                                      v-for="(item, index) in productImage"
+                                      :key="index"
+                                      class="
+                                        h-full
+                                        w-full
+                                        text-center
+                                        flex flex-col
+                                        justify-center
+                                        items-center
+                                      "
+                                    >
+                                      <img
+                                        class="mx-auto w-32"
+                                        :src="item"
+                                        alt="no data"
+                                      />
+                                      <span class="text-small text-gray-500"
+                                        >No files selected</span
+                                      >
+                                    </li>
+                                  </ul>
+                                </section>
 
                                 <!------------------------Buttons-------------------------------->
                                 <div
@@ -364,7 +620,7 @@
                               <!------------------------Banner END-------------------------------->
 
                               <!------------------------Price -------------------------------->
-                              <div v-if="step==3">
+                              <div v-if="step == 3">
                                 <div
                                   class="
                                     flex flex-col
@@ -417,6 +673,51 @@
                                     />
                                   </div>
                                 </div>
+
+                                <!-- Toggle option -->
+                                <div class="flex justify-start">
+                                  <label
+                                    for="toogleButton"
+                                    class="flex items-center cursor-pointer"
+                                  >
+                                    <div class="px-2 text-xl font-bold">
+                                      Will you deliver
+                                    </div>
+                                    <!-- toggle -->
+                                    <div class="relative">
+                                      <input
+                                        id="toogleButton"
+                                        type="checkbox"
+                                        class="hidden"
+                                      />
+                                      <!-- path -->
+                                      <div
+                                        class="
+                                          toggle-path
+                                          bg-gray-200
+                                          w-9
+                                          h-5
+                                          rounded-full
+                                          shadow-inner
+                                        "
+                                      ></div>
+                                      <!-- crcle -->
+                                      <div
+                                        class="
+                                          toggle-circle
+                                          absolute
+                                          w-3.5
+                                          h-3.5
+                                          bg-white
+                                          rounded-full
+                                          shadow
+                                          inset-y-0
+                                          left-0
+                                        "
+                                      ></div>
+                                    </div>
+                                  </label>
+                                </div>
                                 <!------------------------Buttons-------------------------------->
                                 <div
                                   class="
@@ -430,7 +731,7 @@
                                   "
                                 >
                                   <button
-                                    v-on:click="step==2"
+                                    v-on:click="step == 2"
                                     class="
                                       px-4
                                       py-2
@@ -476,8 +777,14 @@
 
 
 <script>
-import { GET_ALL_CATEGORY,ADD_NEW_PRODUCT, UPDATE_PRODUCT_BANNER, UPDATE_PRODUCT_IMAGES, UPDATE_PRODUCT_PRICE } from "@/graphql/query";
-import Multiselect from 'vue-multiselect'
+import {
+  GET_ALL_CATEGORY,
+  ADD_NEW_PRODUCT,
+  UPDATE_PRODUCT_BANNER,
+  UPDATE_PRODUCT_IMAGES,
+  UPDATE_PRODUCT_PRICE,
+} from "@/graphql/query";
+import Multiselect from "vue-multiselect";
 export default {
   layout: "user",
   data() {
@@ -486,9 +793,9 @@ export default {
       loading: false,
       message: null,
       showAlert: false,
-      step:1,
-      selectedCategory:'',
-      product:{id:null, name:''},
+      step: 1,
+      selectedCategory: "",
+      product: { id: null, name: "" },
       type: null,
       formData: {
         name: "",
@@ -496,27 +803,27 @@ export default {
         category: "",
         status: "DRAFT",
       },
-      priceData:{
-        price:0,
-        mrp:0
+      priceData: {
+        price: 0,
+        mrp: 0,
       },
       banner: "",
-      productImage:[],
+      productImage: [],
 
       productImageFile: [],
       bannerImage: "",
     };
   },
-    components: { Multiselect },
+  components: { Multiselect },
 
   apollo: {
-      categories: {
-        query: GET_ALL_CATEGORY,
-        error(error) {
-          console.log(error)
-        }
-      }
+    categories: {
+      query: GET_ALL_CATEGORY,
+      error(error) {
+        console.log(error);
+      },
     },
+  },
   methods: {
     toggleTabs: function () {
       this.$parent.toggleTabs(1);
@@ -527,7 +834,7 @@ export default {
     selectBanner() {
       this.$refs.banner.click();
     },
-     selectProductImage() {
+    selectProductImage() {
       this.$refs.productImage.click();
     },
 
@@ -538,18 +845,18 @@ export default {
           mutation: UPDATE_PRODUCT_BANNER,
           variables: {
             file: this.banner,
-            id:this.product.id
+            id: this.product.id,
           },
         });
         this.loading = false;
-         this.step=3;
+        this.step = 3;
         console.log(res.data.result);
       } catch (error) {
         console.log(error);
         this.loading = false;
       }
     },
-     previewBanner(event) {
+    previewBanner(event) {
       this.banner = event.target.files[0];
       if (this.banner.size > 1024 * 1024) {
         alert("File too big (> 1MB)");
@@ -559,28 +866,28 @@ export default {
         this.updateBanner();
       }
     },
-     uploadImage(event) {
+    uploadImage(event) {
       this.productImageFile = event.target.files[0];
       if (this.productImageFile.size > 1024 * 1024) {
         alert("File too big (> 1MB)");
       } else {
-       // this.bannerImage = URL.createObjectURL(this.banner);
+        // this.bannerImage = URL.createObjectURL(this.banner);
         this.loading = true;
         this.uploadProduct();
       }
     },
-      async uploadProduct() {
+    async uploadProduct() {
       console.log(this.productImageFile);
       try {
         const res = await this.$apollo.mutate({
           mutation: UPDATE_PRODUCT_IMAGES,
           variables: {
             file: this.productImageFile,
-            id:this.product.id
+            id: this.product.id,
           },
         });
         this.loading = false;
-       this.productImage.push(res.data.result);
+        this.productImage.push(res.data.result);
         console.log(res.data.result);
       } catch (error) {
         console.log(error);
@@ -589,7 +896,7 @@ export default {
     },
     async onSubmit() {
       this.loading = true;
-       this.formData.category = this.selectedCategory.id;
+      this.formData.category = this.selectedCategory.id;
       // this.formData.price = parseInt(this.formData.price);
       console.log(this.formData);
       try {
@@ -600,8 +907,8 @@ export default {
           },
         });
         console.log(data);
-        this.product=data.result
-        this.step=2;
+        this.product = data.result;
+        this.step = 2;
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
         this.message = error.message;
@@ -612,7 +919,7 @@ export default {
       this.loading = false;
     },
 
-     async updatePrice() {
+    async updatePrice() {
       this.loading = true;
       this.priceData.mrp = parseInt(this.priceData.mrp);
       this.priceData.price = parseInt(this.priceData.price);
@@ -622,11 +929,11 @@ export default {
           mutation: UPDATE_PRODUCT_PRICE,
           variables: {
             data: this.priceData,
-            id:this.product.id
+            id: this.product.id,
           },
         });
         console.log(data);
-        this.product=data.result
+        this.product = data.result;
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
@@ -642,4 +949,18 @@ export default {
 </script>
 
 <style>
+.toggle-path {
+  transition: background 0.3s ease-in-out;
+}
+.toggle-circle {
+  top: 0.2rem;
+  left: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+input:checked ~ .toggle-circle {
+  transform: translateX(100%);
+}
+input:checked ~ .toggle-path {
+  background-color: #81e6d9;
+}
 </style>
