@@ -53,11 +53,11 @@
             title: 'Profile',
             icon: 'far fa-id-badge',
           },
-          // {
-          //   href: '/caterers/payments',
-          //   title: 'Payments',
-          //   icon: 'fas fa-pound-sign'
-          // },
+          {
+            href: '/caterers/my-training',
+            title: 'My Training',
+            icon: 'fa fa-graduation-cap'
+          },
           {
             href: '/caterers/subscription',
             title: 'Subscription',
@@ -67,8 +67,14 @@
             title: 'Products',
             href: '/caterers/products',
            icon: 'fas fa-shopping-basket',
-
           },
+
+         {
+            title: 'Services',
+            icon: 'fas fa-shopping-basket',
+            href: '/caterers/services',
+          },
+
            {
             title: 'Categories',
             href: '/caterers/categories',
@@ -80,12 +86,6 @@
             href: '/caterers/coupons',
            icon: 'fas fa-cut',
 
-          },
-
-          {
-            title: 'Services',
-            icon: 'fa fa-graduation-cap',
-            href: '/caterers/services',
           },
             
          {
