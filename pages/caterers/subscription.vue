@@ -130,6 +130,7 @@
                   </svg>
                   <span>Food Hygiene Rating Scheme award letter</span>
                 </li>
+                <t-button @click="makePayment">Purchase</t-button>
 
 
               </ul>
@@ -235,7 +236,15 @@
         </div>
       </div>
     </div>
-    <StripeCheckout/>
+     <stripe-checkout
+      ref="checkoutRef"
+      mode="subscription"
+      :pk="publishableKey"
+      :line-items="lineItems"
+      :success-url="successURL"
+      :cancel-url="cancelURL"
+      @loading="v => loading = v"
+    />
     <!-------------------------------------------------------------->
     <Subscription/>
   </section>
@@ -243,14 +252,36 @@
 
 <script>
 import Subscription from "@/components/cateres/Subscription.vue"
+import { StripeCheckout } from '@vue-stripe/vue-stripe';
 
 export default {
 layout:'user',
+data () {
+    this.publishableKey = "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO";
+    return {
+      loading: false,
+      lineItems: [
+        {
+          price: 'price_1JzZN8BIQ7NOZ6okVrjNZ9FU', // The id of the recurring price you created in your Stripe dashboard
+          quantity: 1,
+        },
+      ],
+      successURL: 'http://localhost:3000',
+      cancelURL: 'http://localhost:3000/login',
+    };
+  },
 
 components:{
-  Subscription
+  Subscription,
+  StripeCheckout,
 
-}
+},
+methods: {
+    makePayment () {
+      // You will be redirected to Stripe's secure checkout page
+      this.$refs.checkoutRef.redirectToCheckout();
+    },
+  },
 }
 </script>
 
