@@ -62,6 +62,12 @@
             icon: 'fas fa-hands-helping',
            
           },
+           {
+            href: '/admin/plan',
+            title: 'Plans',
+            icon: 'fas fa-hands-helping',
+           
+          },
 
           {
              href: '/admin/training-orders',
