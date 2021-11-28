@@ -13,20 +13,20 @@ export const GET_CONFIG = graphql`
   }
 `;
 
-export const REGISTER_USER = graphql`
-mutation Mutation($data: UserInput!) {
-    registerUser(data: $data)
+export const REGISTER_CATERER = graphql`
+mutation Mutation($data: CatererInput!) {
+    registerCaterer(data: $data)
   }
   `;
 
 
 
 
-export const LOGIN_USER = graphql`
-mutation LoginUserMutation($password: String!, $email: String!) {
-    loginUser(password: $password, email: $email) {
+export const LOGIN_CATERER = graphql`
+mutation LoginCatererMutation($password: String!, $email: String!) {
+    result: loginCaterer(password: $password, email: $email) {
       token
-      user {
+      caterer {
         id
         email
         fullName
@@ -66,9 +66,8 @@ mutation LoginUserMutation($password: String!, $email: String!) {
 
 
 export const GET_ME = graphql`
-  query me {
-    me {
-      id
+  query mySelf {
+    mySelf {
       id
       email
       fullName
@@ -106,18 +105,58 @@ export const GET_ME = graphql`
 `;
 
 
-export const VERIFY_USER = graphql`
-mutation VerifyUserMutation($verifyUserId: String!) {
-    verifyUser(id: $verifyUserId)
+export const GET_ALL_CATERER = graphql`
+  query caterers {
+    caterers {
+      id
+      email
+      fullName
+      first_name
+      last_name
+      email
+      photo
+      bio
+      facebook
+      instagram
+      twitter
+      mobile
+      role
+      business_name
+      business_email
+      isVerified
+      createdAt
+      updatedAt
+      address{
+        address_line_1
+        address_line_2
+        country
+        town
+        latitude
+        longitude
+        postcode
+      }
+      documents{
+        address_proof
+        food_registration_letter
+        fhrs_letter
+      }
+    }
+  }
+`;
+
+
+export const VERIFY_CATERER = graphql`
+mutation VerifyCatererMutation($verifyCatererId: String!) {
+    verifyCaterer(id: $verifyCatererId)
   }
   `;
 
 
 
 
-export const REQUEST_RESET_USER_PASSWORD = graphql`
-mutation RequestResetUserPasswordMutation($email: String!) {
-    requestResetUserPassword(email: $email)
+export const REQUEST_RESET_CATERER_PASSWORD = graphql`
+mutation RequestResetCatererPasswordMutation($email: String!) {
+    requestResetCatererPassword(email: $email)
   }
   `;
 
@@ -125,87 +164,91 @@ mutation RequestResetUserPasswordMutation($email: String!) {
 
 
 
-export const RESET_USER_PASSWORD = graphql`
-mutation ResetUserPasswordMutation($reqId: String!, $password: String!) {
-    resetUserPassword(reqId: $reqId, password: $password)
+export const RESET_CATERER_PASSWORD = graphql`
+mutation ResetCatererPasswordMutation($reqId: String!, $password: String!) {
+    resetCatererPassword(reqId: $reqId, password: $password)
   }
   `;
 
 
 
 
-export const UPDATE_USER = graphql`
-  mutation updateUser($data: UserUpdateInput!) {
-    result: updateUser(data: $data)
+export const UPDATE_CATERER = graphql`
+  mutation updateCaterer($data: CatererUpdateInput!) {
+    result: updateCaterer(data: $data)
   }
 `;
 
-export const UPDATE_USER_ADDRESS = graphql`
-  mutation updateUserAddress($data: AddressInput!) {
-    result: updateUserAddress(data: $data)
+export const UPDATE_CATERER_ADDRESS = graphql`
+  mutation updateCatererAddress($data: AddressInput!) {
+    result: updateCatererAddress(data: $data)
   }
 `;
 
-export const UPDATE_USER_EMAIL = graphql`
-  mutation updateUserEmail($id: ID!, $email: String!) {
-    result: updateUserEmail(id: $id, email: $email )
+export const UPDATE_CATERER_EMAIL = graphql`
+  mutation updateCatererEmail($id: ID!, $email: String!) {
+    result: updateCatererEmail(id: $id, email: $email )
   }
 `;
 
-export const UPDATE_USER_SOCIAL = graphql`
-  mutation updateUserSocial($facebook: String, $twitter: String, $instagram: String) {
-    result: updateUserSocial(facebook: $facebook, twitter: $twitter,  instagram: $instagram)
+export const UPDATE_CATERER_SOCIAL = graphql`
+  mutation updateCatererSocial($facebook: String, $twitter: String, $instagram: String) {
+    result: updateCatererSocial(facebook: $facebook, twitter: $twitter,  instagram: $instagram)
   }
 `;
 
-export const UPDATE_USER_PROFILE = graphql`
-  mutation uploadUserPhoto($file: Upload!) {
-    result: uploadUserPhoto(file: $file)
+export const UPDATE_CATERER_PROFILE = graphql`
+  mutation uploadCatererPhoto($file: Upload!) {
+    result: uploadCatererPhoto(file: $file)
   }
 `;
 
-export const UPDATE_USER_ADDRESS_PROOF = graphql`
-  mutation uploadUserAddressProof($file: Upload!) {
-    result: uploadUserAddressProof(file: $file)
+export const UPDATE_CATERER_ADDRESS_PROOF = graphql`
+  mutation uploadCatererAddressProof($file: Upload!) {
+    result: uploadCatererAddressProof(file: $file)
   }
 `;
 
-export const UPDATE_USER_FOOD_REGISTRATION = graphql`
-  mutation uploadUserFoodRegistrationLetter($file: Upload!) {
-    result: uploadUserFoodRegistrationLetter(file: $file)
+export const UPDATE_CATERER_FOOD_REGISTRATION = graphql`
+  mutation uploadCatererFoodRegistrationLetter($file: Upload!) {
+    result: uploadCatererFoodRegistrationLetter(file: $file)
   }
 `;
-export const UPDATE_USER_FHRS_LETTER = graphql`
-  mutation uploadUserFHRSLetter($file: Upload!) {
-    result: uploadUserFHRSLetter(file: $file)
+export const UPDATE_CATERER_FHRS_LETTER = graphql`
+  mutation uploadCatererFHRSLetter($file: Upload!) {
+    result: uploadCatererFHRSLetter(file: $file)
   }
 `;
 
 export const FORGOT_PASSWORD = graphql`
   mutation forgetPassword($email: String!) {
-    result: requestResetUserPassword(email: $email)
+    result: requestResetCatererPassword(email: $email)
   }
 `;
 
 
 
 export const CHANGE_PASSWORD = graphql`
-  mutation changeUserPassword($password: String!) {
-    changeUserPassword(password: $password)
+  mutation changeCatererPassword($password: String!) {
+    changeCatererPassword(password: $password)
   }
 `;
 
 export const VERIFY_EMAIL = graphql`
-  mutation verifyUser($id: ID!) {
-    verifyUser(id: $id)
+  mutation verifyCaterer($id: ID!) {
+    verifyCaterer(id: $id)
   }
 `;
 
-export const DELETE_USER = graphql`
-  mutation deleteUser($id: ID!) {
-    result: deleteUser(id: $id)
+export const DELETE_CATERER = graphql`
+  mutation deleteCaterer($id: ID!) {
+    result: deleteCaterer(id: $id)
   }
 `;
+
+
+////Caterer
+
 
 export const GET_ALL_CATEGORY = graphql`
   query categories {
@@ -540,6 +583,65 @@ export const GET_PAYMENT_BY_ID = graphql`
       status
       createdAt
       updatedAt
+    }
+  }
+`;
+
+export const GET_ALL_PLAN = graphql`
+  query plans {
+    plans {
+      id
+      name
+      price
+      monthlyPrice
+      banner
+      description
+      productID
+      recurringPriceID
+      oneTimePriceID
+      isRecommended
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_PLAN_BY_ID = graphql`
+  query plan($id: ID!) {
+    plan(id: $id) {
+      id
+      name
+      price
+      monthlyPrice
+      banner
+      description
+      productID
+      recurringPriceID
+      oneTimePriceID
+      isRecommended
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const SUBSCRIBE_PLAN = graphql`
+  mutation subscribeCatererPlan($id: ID!,$interval: Boolean!,) {
+    result: subscribeCatererPlan(id: $id, interval: $interval)
+  }
+`;
+
+
+export const VERIFY_PLAN_PAYMENT = graphql`
+  mutation verifyPlanPayment($id: ID!) {
+    verifyPlanPayment(id: $id){
+      planId
+      subscription
+      status
+      customer
+      payment_intent
     }
   }
 `;

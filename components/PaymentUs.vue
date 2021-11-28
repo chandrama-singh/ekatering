@@ -59,7 +59,7 @@
 
             </form>
             <p class="text-xs text-gray-400">Already have an account? <Nuxt-Link to="/signin" class="text-purple-600 hover:underline">Sign In</Nuxt-Link></p>
-             
+
           </div>
         </div>
         <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">
@@ -84,7 +84,7 @@
 </template>
 
 <script>
-import { REGISTER_USER } from '@/graphql/query'
+import { REGISTER_CATERER } from '@/graphql/query'
 export default {
   data(){
     return {
@@ -107,7 +107,7 @@ export default {
 
         try {
           const res = await this.$apollo.mutate({
-            mutation: REGISTER_USER,
+            mutation: REGISTER_CATERER,
             variables: {
               data: this.formData
             }

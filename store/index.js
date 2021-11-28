@@ -7,6 +7,7 @@ export const state = () => ({
   isAuthenticated: false,
   isOpen: false,
   setting: {},
+  currentPlan:'',
 })
 
 export const getters = {
@@ -21,6 +22,7 @@ export const mutations = {
   setUser(state, param) {
     state.isAuthenticated = true;
     state.user = param.user;
+    console.log("setUser",param)
 
     if(param.isLogin){
       this.$router.push({path: `/${param.user.role}/dashboard`})
@@ -29,6 +31,11 @@ export const mutations = {
       this.$router.push('/')
     }
   },
+
+  setCurrentPlan(state, payload) {
+    state.currentPlan = payload;
+  },
+
 
   setSetting(state, setting) {
     state.setting = setting;
@@ -69,7 +76,7 @@ export const actions = {
       try {
         const { data } = await client.query({ query: GET_ME })
         console.log("getme in store", data);
-        commit('setUser', {user: data.me, isLogin: false})
+        commit('setUser', {user: data.mySelf, isLogin: false})
       } catch (error) {
         commit('logoutUser')
         console.log(error);
@@ -84,7 +91,7 @@ export const actions = {
     let client = this.app.apolloProvider.defaultClient
     try {
       const { data } = await client.query({ query: GET_ME })
-      commit('setUser', {user: data.me, isLogin: false})
+      commit('setUser', {user: data.mySelf, isLogin: false})
     } catch (error) {
       console.log(error);
     }

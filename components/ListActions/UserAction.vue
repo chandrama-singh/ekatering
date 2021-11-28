@@ -4,36 +4,36 @@
         <template v-slot:icon>
           <i class="fas fa-eye"></i>
         </template>
-      </ActionButton> 
+      </ActionButton>
       <ActionButton color="green-700" :outline="true" class="ml-4"  @click="addLedger">
         <template v-slot:icon>
           <i class="fas fa-plus"></i>
         </template>
-      </ActionButton> 
+      </ActionButton>
   </div>
 </template>
 <script>
 import Vue from "vue";
-export default Vue.extend({ 
+export default Vue.extend({
   data() {
     return {
-      UserId: "",
+      CatererId: "",
     };
   },
   methods: {
     preview() {
       this.$root.$router.push({
-          path: `/admin/users/details/${this.UserId }`
+          path: `/admin/caterers/details/${this.CatererId }`
       })
     },
     addLedger(){
       this.$root.$router.push({
-          path: `/admin/users/add-ledger/${this.UserId}`
+          path: `/admin/caterers/add-ledger/${this.CatererId}`
       })
     }
   },
   created() {
-    this.UserId = this.params.node.data.id;
+    this.CatererId = this.params.node.data.id;
   },
 })
 </script>

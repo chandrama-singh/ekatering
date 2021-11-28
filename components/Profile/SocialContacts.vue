@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import {UPDATE_USER_SOCIAL} from '@/graphql/query';
+import {UPDATE_CATERER_SOCIAL} from '@/graphql/query';
 
 export default {
     data() {
@@ -67,7 +67,7 @@ export default {
         try {
             this.loading = true;
             const res = await this.$apollo.mutate({
-                mutation: UPDATE_USER_SOCIAL,
+                mutation: UPDATE_CATERER_SOCIAL,
                 variables: this.links
             });
             this.loading = false;

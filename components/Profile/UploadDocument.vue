@@ -167,7 +167,7 @@
 </template>
 
 <script>
-import {  UPDATE_USER_ADDRESS_PROOF,UPDATE_USER_FOOD_REGISTRATION,UPDATE_USER_FHRS_LETTER  } from "@/graphql/query";
+import {  UPDATE_CATERER_ADDRESS_PROOF,UPDATE_CATERER_FOOD_REGISTRATION,UPDATE_CATERER_FHRS_LETTER  } from "@/graphql/query";
 export default {
   data() {
     return {
@@ -232,7 +232,7 @@ export default {
       console.log(this.profile);
       try {
         const res = await this.$apollo.mutate({
-          mutation: UPDATE_USER_ADDRESS_PROOF,
+          mutation: UPDATE_CATERER_ADDRESS_PROOF,
           variables: {
             file: this.address_proof,
           },
@@ -249,7 +249,7 @@ export default {
       console.log(this.profile);
       try {
         const res = await this.$apollo.mutate({
-          mutation: UPDATE_USER_FOOD_REGISTRATION,
+          mutation: UPDATE_CATERER_FOOD_REGISTRATION,
           variables: {
             file: this.food_registration,
           },
@@ -265,7 +265,7 @@ export default {
       console.log(this.profile);
       try {
         const res = await this.$apollo.mutate({
-          mutation: UPDATE_USER_FHRS_LETTER,
+          mutation: UPDATE_CATERER_FHRS_LETTER,
           variables: {
             file: this.fhrs_letter,
           },

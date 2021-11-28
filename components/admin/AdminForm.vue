@@ -1,13 +1,26 @@
 <template>
   <div class="mt-6">
-    <div class="flex flex-col bg-white px-10 py-8 rounded w-full">
+    <div class="flex flex-col bg-white px-10 py-8 rounded w-full" v-if="!isSent">
       <div class="pb-6 border-b">
-            <h4 class="text-base font-medium">Change password</h4>
-            <p class="text-xs">Provide new password to change your account password.</p>
+            <h4 class="text-base font-medium">Add Admin</h4>
+            <p class="text-xs">Provide new admin detail .</p>
         </div>
-      <div>
+      <form>
         <div class="flex flex-col my-6">
           <!-- <label for="email" class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">E-Mail Address:</label> -->
+            <div class="relative mb-4">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <span>
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </span>
+            </div>
+            <t-input id="email" type="email" name="email" class="w-full pl-10" placeholder="email"
+              v-model="email" />
+          </div>
           <div class="relative mb-4">
             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
               <span>
@@ -44,9 +57,9 @@
 								</button>
 
 
-      </div>
+      </form>
     </div>
-    <div class="flex flex-col bg-white px-10 py-8 rounded w-full" v-if="isSent" >
+    <div class="flex flex-col bg-white px-10 py-8 rounded w-full" v-else>
       <img src="/email-sent.svg" class="mb-4" />
       <p class="my-2 text-lg text-green-600 text-center font-bold">Your password is successfully changed!!</p>
     </div>
@@ -61,10 +74,9 @@
     CHANGE_PASSWORD
   } from "@/graphql/query";
   export default {
-    layout: 'main',
     data() {
       return {
-
+        email:'',
         password: null,
         confirmPassword: null,
         isSent: false,

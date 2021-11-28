@@ -196,7 +196,7 @@
   </div>
 </template>
 <script>
-import { UPDATE_USER, UPDATE_USER_PROFILE } from "@/graphql/query";
+import { UPDATE_CATERER, UPDATE_CATERER_PROFILE } from "@/graphql/query";
 export default {
   data() {
     return {
@@ -240,7 +240,7 @@ export default {
       console.log("submit form", formData)
       try {
         const res = await this.$apollo.mutate({
-          mutation: UPDATE_USER,
+          mutation: UPDATE_CATERER,
           variables: {
             data: formData,
           },
@@ -256,7 +256,7 @@ export default {
       console.log(this.profile);
       try {
         const res = await this.$apollo.mutate({
-          mutation: UPDATE_USER_PROFILE,
+          mutation: UPDATE_CATERER_PROFILE,
           variables: {
             file: this.profile,
           },

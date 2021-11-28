@@ -38,7 +38,7 @@
         return {
           isVerified: true,
           error: null,
-          response: data.verifyUser
+          response: data.verifyCaterer
         };
       } catch (err) {
         console.log(err)

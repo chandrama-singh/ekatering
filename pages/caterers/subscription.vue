@@ -11,12 +11,11 @@
             Choose which sevice you want and pay as mentioned
           </p>
         </div>
-        <div class="flex flex-wrap -mx-4">
+        <div v-if="plans" class="flex flex-wrap -mx-4">
            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
             <div class="p-8 bg-white shadow-lg rounded">
-              <h4 class="mb-2 text-2xl font-bold ">Training</h4>
-              <!-- <span class="text-6xl font-bold text-white">$24</span> -->
-              <span class="text-gray-500 text-xs">Prices mention on Taining page</span>
+              <h4 v-if="plans[2]" class="mb-2 text-2xl font-bold ">{{plans[2].name}}</h4>
+             <span class="text-4xl font-bold">£{{plans[2].price/100}}</span>
               <p class="mt-3 mb-6 leading-loose text-gray-500">
                 eKatering has developed practical eLearning training specifically for home/event caterers and private chefs. The eKatering online training modules listed below.
               </p>
@@ -53,7 +52,8 @@
                 </li>
 
               </ul>
-              <Nuxt-Link to="/make-payment"
+                <div
+              @click="goToPayment(plans[2].id)"
                 class="
                   inline-block
                   text-center
@@ -62,24 +62,23 @@
                   w-full
                   rounded-xl
                   bg-purple-600
-                  hover:bg-purple-700
-                  text-white
+                  hover:bg-purple-400
                   font-bold
                   leading-loose
                   transition
                   duration-200
                 "
+                >
+                Buy Now
+                </div>
 
-                >Buy Now</Nuxt-Link
-              >
             </div>
           </div>
+           <client-only>
           <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
             <div class="p-8 bg-purple-600 shadow-lg rounded">
-              <h4 class="mb-2 text-2xl font-bold text-white font-heading">
-                eKatering Subscription
-              </h4>
-              <span class="text-4xl font-bold">£0</span>
+              <h4 v-if="plans[1]" class="mb-2 text-2xl font-bold ">{{plans[1].name}}</h4>
+              <span class="text-4xl font-bold">£{{plans[1].price/100}}</span>
               <p class="mt-3 mb-6 text-gray-50 leading-loose">
                 At registration, you are required to submit a few pieces of
                 documentation. Checks will be done to verify all documentation.
@@ -130,11 +129,10 @@
                   </svg>
                   <span>Food Hygiene Rating Scheme award letter</span>
                 </li>
-                <t-button @click="makePayment">Purchase</t-button>
-
 
               </ul>
-              <Nuxt-Link to="/make-payment"
+              <div
+              @click="goToPayment(plans[1].id)"
                 class="
                   inline-block
                   text-center
@@ -143,22 +141,22 @@
                   w-full
                   rounded-xl
                   bg-white
-                  hover:bg-gray-50
-
+                  hover:bg-gray-200
                   font-bold
                   leading-loose
                   transition
                   duration-200
                 "
-
-                >Buy Now</Nuxt-Link
-              >
+                >
+                Buy Now
+                </div>
             </div>
           </div>
-
+</client-only>
           <div class="w-full lg:w-1/3 px-4">
             <div class="p-8 bg-white shadow-lg rounded">
-              <h4 class="mb-2 text-2xl font-bold font-heading">Consultations</h4>
+             <h4 v-if="plans[0]" class="mb-2 text-2xl font-bold ">{{plans[0].name}}</h4>
+              <span class="text-4xl font-bold">£{{plans[0].price/100}}</span>
               <!-- <span class="text-6xl font-bold">$48</span> -->
               <span class="text-gray-400 text-xs">Price mentioned on Consultations Page</span>
               <p class="mt-3 mb-6 text-gray-500 leading-loose">
@@ -212,7 +210,8 @@
                 </li>
 
               </ul>
-              <Nuxt-Link to="/make-payment"
+                <div
+              @click="goToPayment(plans[0].id)"
                 class="
                   inline-block
                   text-center
@@ -220,67 +219,81 @@
                   px-4
                   w-full
                   rounded-xl
-                  bg-purple-600
-                  hover:bg-purple-700
-                  text-white
+                   bg-purple-600
+                  hover:bg-purple-400
                   font-bold
                   leading-loose
                   transition
                   duration-200
                 "
-
-                >Buy Now</Nuxt-Link
-              >
+                >
+                Buy Now
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-     <stripe-checkout
-      ref="checkoutRef"
-      mode="subscription"
-      :pk="publishableKey"
-      :line-items="lineItems"
-      :success-url="successURL"
-      :cancel-url="cancelURL"
-      @loading="v => loading = v"
-    />
-    <!-------------------------------------------------------------->
-    <Subscription/>
   </section>
 </template>
 
 <script>
-import Subscription from "@/components/cateres/Subscription.vue"
-import { StripeCheckout } from '@vue-stripe/vue-stripe';
+ import {
+    GET_ALL_PLAN
+  } from '@/graphql/query'
 
 export default {
 layout:'user',
 data () {
-    this.publishableKey = "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO";
+
     return {
-      loading: false,
-      lineItems: [
-        {
-          price: 'price_1JzZN8BIQ7NOZ6okVrjNZ9FU', // The id of the recurring price you created in your Stripe dashboard
-          quantity: 1,
-        },
-      ],
-      successURL: 'http://localhost:3000',
-      cancelURL: 'http://localhost:3000/login',
+       loading: false,
     };
   },
 
-components:{
-  Subscription,
-  StripeCheckout,
-
-},
-methods: {
-    makePayment () {
-      // You will be redirected to Stripe's secure checkout page
-      this.$refs.checkoutRef.redirectToCheckout();
+ apollo: {
+      plans: {
+        query: GET_ALL_PLAN,
+        error(error) {
+          console.log(error)
+        }
+      }
     },
+    computed:{
+      planOne(){
+        console.log(plans);
+        if(plans)
+        {
+          return plans[0];
+        }
+        return null;
+      },
+      planTwo(){
+        if(plans)
+        {
+          return plans[1];
+        }
+        return null;
+      },
+      planThree(){
+        if(plans)
+        {
+          return plans[2];
+        }
+        return null;
+      }
+
+    },
+
+methods: {
+
+  goToPayment(id){
+console.log(this.plans)
+     this.$router.push({
+        path: `/make-payment/${id}`,
+      })
+  }
+
   },
 }
 </script>

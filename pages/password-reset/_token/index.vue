@@ -17,7 +17,7 @@
 								>
 									Reset Password
 								</button>
-         
+
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
 
 
 <script>
-  import { RESET_USER_PASSWORD } from "@/graphql/query";
+  import { RESET_CATERER_PASSWORD } from "@/graphql/query";
   export default {
     layout: 'main',
     data() {
@@ -64,7 +64,7 @@
             const {
               data
             } = await this.$apollo.mutate({
-              mutation: RESET_USER_PASSWORD,
+              mutation: RESET_CATERER_PASSWORD,
               variables: {
                 reqId: this.$route.params.token,
                 password: this.password

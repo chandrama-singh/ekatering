@@ -33,81 +33,45 @@
             title: 'Dashboard',
             icon: 'fa fa-tachometer-alt'
           },
-          {
-            href: '/admin/list-admin',
-            title: 'Admin Users',
-            icon: 'fas fa-user-shield',
-            
-          },
+          // {
+          //   href: '/admin/list-admin',
+          //   title: 'Admin Users',
+          //   icon: 'fas fa-user-shield',
 
-         {
-            title: 'Caterers',
-            icon: 'fas fa-utensils',
-            child: [{
-            href: '/admin/applications',
-            title: 'View Applications',
-            icon: 'fas fa-clock'
-           },
-           {
-            href: '/admin/catererslist',
-            title: 'View Caterers',
-            icon: 'fas fa-utensils'
-           },
-            ]
+          // },
+            {
+            href: '/admin/plan',
+            title: 'Plans',
+            icon: 'fas fa-hands-helping',
+
           },
+          {
+            href: '/admin/caterers',
+            title: 'Caterers',
+             icon: 'fas fa-utensils'
+
+          },
+          // {
+          //  href: '/admin/payments',
+          //   title: 'Payments',
+          //   icon: 'fa fa-file-invoice-dollar',
+          // },
 
           {
             href: '/admin/consultation-orders',
             title: 'Consultation Orders',
             icon: 'fas fa-hands-helping',
-           
-          },
-           {
-            href: '/admin/plan',
-            title: 'Plans',
-            icon: 'fas fa-hands-helping',
-           
+
           },
 
           {
              href: '/admin/training-orders',
             title: 'Training Orders',
             icon: 'fas fa-chalkboard-teacher',
-           
+
           },
 
-          // {
-          //   title: 'Payments',
-          //   icon: 'fa fa-file-invoice-dollar',
-          //   child: [{
-          //   href: '/admin/payments',
-          //   title: 'Payments',
-          //   icon: 'fa fa-file-invoice-dollar'
-          //  },
-          //  {
-          //   href: '/admin/service-payment',
-          //   title: 'Service Payment',
-          //   icon: 'fa fa-tasks'
-          //  },
-          //   ]
-          // },
 
-          //  {
-          //   title: 'Ledgers',
-          //   icon: 'fa fa-book',
-          //   child: [
-          // {
-          //   href: '/admin/ledgers',
-          //   title: 'Ledgers',
-          //   icon: 'fa fa-book'
-          // },
-          // {
-          //   href: '/admin/audits',
-          //   title: 'Audits',
-          //   icon: 'fa fa-book'
-          // },
-          //   ]
-          // },
         ],
         collapsed: false,
         // selectedTheme: 'white-theme',
