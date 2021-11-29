@@ -289,7 +289,7 @@ methods: {
   viewDetail(id){
 console.log(this.plans)
      this.$router.push({
-        path: `/view-detail/${id}`,
+        path: `/admin/plans/view-detail/${id}`,
       })
   }
 

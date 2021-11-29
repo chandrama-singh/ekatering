@@ -40,7 +40,7 @@
 
           // },
             {
-            href: '/admin/plan',
+            href: '/admin/plans',
             title: 'Plans',
             icon: 'fas fa-hands-helping',
 
