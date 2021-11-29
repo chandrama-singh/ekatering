@@ -66,7 +66,7 @@
       </p>
     </div>
     <div class="flex justify-center">
-      <Nuxt-Link to="/contactus"
+      <Nuxt-Link to="/fees"
         ><button
           class="
             inline-block

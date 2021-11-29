@@ -72,7 +72,7 @@ A documented Food Safety Management System (FSMS) is a systematic approach to co
           <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
           <!-- <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
           <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-         <Nuxt-Link to="/contactus"> <button class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Contact Us</button>
+         <Nuxt-Link to="/fees"> <button class="inline-block  py-4 px-8 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg">Contact Us</button>
      </Nuxt-Link>   </div>
       </section>
     <!---------------------------------------------------------------------------->

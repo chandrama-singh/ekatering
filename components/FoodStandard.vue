@@ -96,6 +96,9 @@
           </li>
         </ul>
       </div>
+       <p class="text-gray-600 leading-relaxed">
+        Price mention on our <span class="text-purple-600"><Nuxt-Link to="/fees">Fees</Nuxt-Link></span> page. Select option 9.
+      </p>
     </div>
     <!---------------------------------------------------------------------------->
 
@@ -107,7 +110,7 @@
           Coaching and Completion of a Food Allergen Assessment Chart
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/contactus">
+        <Nuxt-Link to="/fees">
           <button
             class="
               inline-block
@@ -137,7 +140,7 @@
           Documentation and Procedure
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/contactus"><button
+        <Nuxt-Link to="/fees"><button
           class="
             inline-block
             mt-6

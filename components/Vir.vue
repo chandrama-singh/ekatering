@@ -109,7 +109,7 @@
     <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         
-        <Nuxt-Link to="/contactus">
+        <Nuxt-Link to="/fees">
           <button
             class="
               inline-block
@@ -124,7 +124,7 @@
               md:rounded-lg
             "
           >
-            Contact Us
+            Purchase
           </button>
         </Nuxt-Link>
       </div>

@@ -36,7 +36,7 @@
             Local authority food <br />registration form advise and completion.
           </td>
           <td class="px-4 py-3">£20</td>
-          <td class="px-4 py-3">Purchase</td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/localauth-form"> Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -45,7 +45,7 @@
             Virtual/remote (VRI) <br />inspection with an inspection report.
           </td>
           <td class="px-4 py-3">£60</td>
-          <td class="px-4 py-3">Purchase</td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/vri-form">Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -55,7 +55,7 @@
             and completion.
           </td>
           <td class="px-4 py-3">£60</td>
-          <td class="px-4 py-3">Purchase</td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/sfbb-form">Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -65,7 +65,7 @@
             Better Business Pack coaching and completion.
           </td>
           <td class="px-4 py-3">£110</td>
-          <td class="px-4 py-3">Purchase</td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/vri-form">Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -111,8 +111,8 @@
             From £800 for two products
           </td>
           <td class="px-4 py-3">
-            <nuxt-link to="/contactus" class="text-purple-600"
-              >Contact us*2</nuxt-link
+            <nuxt-link to="/food-sms-form" class="text-purple-600"
+              >Contact us</nuxt-link
             >
           </td>
         </tr>
@@ -128,7 +128,7 @@
             From £450 for any additional product
           </td>
           <td class="px-4 py-3">
-            <nuxt-link to="/contactus" class="text-purple-600"
+            <nuxt-link to="/food-sms-form" class="text-purple-600"
               >Contact us</nuxt-link
             >
           </td>
@@ -163,7 +163,7 @@
           </td>
           <td class="px-4 py-3">From £50</td>
           <td class="px-4 py-3">
-            <nuxt-link to="/contactus" class="text-purple-600"
+            <nuxt-link to="/legal-advice-form" class="text-purple-600"
               >Contact us</nuxt-link
             >
           </td>
@@ -197,7 +197,7 @@
           </td>
           <td class="px-4 py-3">From £50</td>
           <td class="px-4 py-3">
-            <nuxt-link to="/contactus" class="text-purple-600"
+            <nuxt-link to="/food-standard-form" class="text-purple-600"
               >Contact us</nuxt-link
             >
           </td>

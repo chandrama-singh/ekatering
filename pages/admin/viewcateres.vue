@@ -1,7 +1,6 @@
 <template>
   <div>
     <!-- Caterers Basic Details -->
-
     <section class="bg-gray-50">
       <div
         class="

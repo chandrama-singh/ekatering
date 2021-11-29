@@ -52,6 +52,10 @@
 If you require further assistance or advice, do not hesitate to <Nuxt-Link to="/contactus">
        <span class="text-purple-900">contact us</span></Nuxt-Link> with your enquiry.
       </p>
+      <p class="mb-2 text-gray-800 leading-relaxed">
+        All our Fee are noted in <nuxt-link to="/fees" class="text-purple-800"
+          >Fees</nuxt-link>. Select Option 1.
+      </p>
     </div>
     <!---------------------------------------------------------------------------->
     <section>
@@ -60,7 +64,7 @@ If you require further assistance or advice, do not hesitate to <Nuxt-Link to="/
         <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">
           Registration advise and completion with a local authority
         </h2>
-        <Nuxt-Link to="/localauth-form/localauthform"><button
+        <Nuxt-Link to="/fees"><button
           class="inline-block mt-6 py-4 px-16 leading-none text-white bg-purple-600 hover:bg-purple-700 font-semibold rounded md:rounded-lg"
         >
           Purchase for £ 20.00
