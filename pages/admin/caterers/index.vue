@@ -18,15 +18,15 @@
           </div>
         </div>
 
-         <button @click="AddCategory" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
-        Add Category
-    </button>
+         <!-- <button @click="AddCategory" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+        Add Caterer
+    </button> -->
       </template>
     </PageHeader>
 
     <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
-        :rowData="caterers" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+        :rowData="caterers" :context="context" :gridOptions="gridOptions"  rowHeight=100>
       </ag-grid-vue>
     </div>
   </div>
@@ -36,7 +36,10 @@
   import {
     GET_ALL_CATERER
   } from '@/graphql/query'
-  import CategoryAction from '@/components/ListActions/CategoryAction';
+  import CatererAction from '@/components/ListActions/CatererAction';
+  import Catererprofile from '@/components/grid/Catererprofile';
+  import Name from '@/components/grid/Name';
+  import Contact from '@/components/grid/Contact';
 
 
   export default {
@@ -49,6 +52,13 @@
         context: null,
         gridOptions: {},
       };
+    },
+    components:{
+      Catererprofile,
+      Name,
+      Contact,
+      CatererAction
+
     },
     apollo: {
       caterers: {
@@ -64,17 +74,29 @@
       };
       this.columnDefs = [
         {
-          headerName: 'Full Name',
-          field: 'fullName',
+          headerName: 'Profile',
+          field: 'business_name',
           sortable: true,
           filter: true,
+          cellRendererFramework: Catererprofile,
           minWidth: 300,
+          rowHeight:200
 
         },
         {
-          headerName: 'Email',
-          field: 'email',
+          headerName: 'Name',
+          field: 'fullName',
+           cellRendererFramework: Name,
           sortable: true,
+          minWidth: 300,
+          filter: true,
+        },
+         {
+          headerName: 'Contact',
+          field: 'email',
+           cellRendererFramework: Contact,
+          sortable: true,
+          minWidth: 300,
           filter: true,
         },
 
@@ -95,7 +117,7 @@
         {
           headerName: 'Actions',
           field: 'action',
-          cellRendererFramework: CategoryAction,
+          cellRendererFramework: CatererAction,
           minWidth: 100,
         },
       ];

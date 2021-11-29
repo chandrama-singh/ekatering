@@ -145,6 +145,47 @@ export const GET_ALL_CATERER = graphql`
 `;
 
 
+export const GET_CATERER_BY_ID = graphql`
+  query caterer($id: ID!) {
+    caterer(id: $id) {
+      id
+      email
+      fullName
+      first_name
+      last_name
+      email
+      photo
+      bio
+      facebook
+      instagram
+      twitter
+      mobile
+      role
+      business_name
+      business_email
+      isVerified
+      createdAt
+      updatedAt
+      address{
+        address_line_1
+        address_line_2
+        country
+        town
+        latitude
+        longitude
+        postcode
+      }
+      documents{
+        address_proof
+        food_registration_letter
+        fhrs_letter
+      }
+    }
+  }
+`;
+
+
+
 export const VERIFY_CATERER = graphql`
 mutation VerifyCatererMutation($verifyCatererId: String!) {
     verifyCaterer(id: $verifyCatererId)
