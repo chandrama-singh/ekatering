@@ -18,7 +18,7 @@
               business.
             </h2>
            <div class="inline-block"> <Nuxt-Link
-              to="/plans"
+              to="/signin"
               class="
                 block
                 sm:inline-block

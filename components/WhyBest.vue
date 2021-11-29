@@ -24,7 +24,7 @@
               For those individuals, especially those in the hospitality sector, running a home catering business (Home/Event caterers and Private Chefs) can earn income for their household without the overhead expenses of running a takeaway or restaurant. Home/Event caterers and Private Chefs can turn their passion into cash.
             </p>
           </div><br/>
-          <div class="px-2"><Nuxt-Link to="/plans" class="block
+          <div class="px-2"><Nuxt-Link to="/signin" class="block
               sm:inline-block
               py-4
               px-8

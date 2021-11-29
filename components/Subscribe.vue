@@ -31,7 +31,7 @@ export default {
   },
   methods:{
     GotoRegisterPage(){
-      this.$router.push("/plans");
+      this.$router.push("/signin");
     }
   }
 
