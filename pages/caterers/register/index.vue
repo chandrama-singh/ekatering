@@ -39,13 +39,13 @@
         <div class="flex w-full border">
             <div class="flex w-1/3 mr-2">
              <div class="lg:flex shadow rounded-lg">
-      <div class="bg-gradient-to-r from-yellow-500 to-orange-450 rounded-l-lg lg:w-1/3 h-auto w-auto py-2">
+      <div class="bg-purple-400 rounded-l-lg lg:w-1/3 h-auto w-auto py-10">
           <p class="text-white font-semibold text-xl block origin-left-top transform -rotate-90">STEP 1</p>
       </div>
       <div class="w-full  lg:w-2/3 xl:w-full px-1 bg-white py-5 lg:px-2 lg:py-2 tracking-wide">
         <div class="flex flex-row lg:justify-start justify-center">
           <div class="text-gray-700 font-medium text-sm text-center lg:text-left px-2">
-           <p class="text-md">Enter details like Program name, Duration, Cost, Services included and not included etc. and click on next button.</p>
+           <p class="text-md">Enter details like Store Icon, Select Role, Business Name, Business Email, etc and click on next button.</p>
           </div>
         </div>
 
@@ -55,13 +55,13 @@
             <!----------------2nd card----------------------->
              <div class="flex w-1/3 mr-2">
              <div class="lg:flex shadow rounded-lg">
-      <div class="bg-gradient-to-r from-yellow-500 to-orange-450 rounded-l-lg lg:w-1/3 h-auto w-auto py-2">
+      <div class="bg-purple-400 rounded-l-lg lg:w-1/3 h-auto w-auto py-10">
           <p class="text-white font-semibold text-xl block origin-left-top transform -rotate-90">STEP 2</p>
       </div>
       <div class="w-full  lg:w-2/3 xl:w-full px-1 bg-white py-5 lg:px-2 lg:py-2 tracking-wide">
         <div class="flex flex-row lg:justify-start justify-center">
           <div class="text-gray-700 font-medium text-sm text-center lg:text-left px-2">
-           <p class="text-md">Enter details like Program name, Duration, Cost, Services included and not included etc. and click on next button.</p>
+           <p class="text-md">Enter details like Local Address, Town, Country, PostCode etc. and click on next button.</p>
           </div>
         </div>
 
@@ -72,13 +72,13 @@
              <!----------------3rd card----------------------->
              <div class="flex w-1/3">
              <div class="lg:flex shadow rounded-lg">
-      <div class="bg-gradient-to-r from-yellow-500 to-orange-450 rounded-l-lg lg:w-1/3 h-auto w-auto py-2">
+      <div class="bg-purple-400 rounded-l-lg lg:w-1/3 h-auto w-auto py-10">
           <p class="text-white font-semibold text-xl block origin-left-top transform -rotate-90">STEP 3</p>
       </div>
       <div class="w-full  lg:w-2/3 xl:w-full px-1 bg-white py-5 lg:px-2 lg:py-2 tracking-wide">
         <div class="flex flex-row lg:justify-start justify-center">
           <div class="text-gray-700 font-medium text-sm text-center lg:text-left px-2">
-           <p class="text-md">Enter details like Program name, Duration, Cost, Services included and not included etc. and click on next button.</p>
+           <p class="text-md">Upload Your Documentation like Proof of Address, Locall Authority Food Registration Letter, FHRS Award Letter. and click on next button.</p>
           </div>
         </div>
 
@@ -105,7 +105,7 @@
                     justify-center
                     py-3
                     px-8 font-semibold
-                    bg-gradient-to-r from-yellow-400 to-orange-450
+                    bg-purple-500
                     rounded-lg
                     text-white
                   "

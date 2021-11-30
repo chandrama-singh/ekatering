@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="flex-1">
-			<div class="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-450 mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-white text-center w-full">1</span>
 			</div>
 		</div>
@@ -14,36 +14,36 @@
 
 		<div class="w-1/6 align-center items-center align-middle content-center flex">
 			<div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-			 	<div class="bg-gray-200 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
+			 	<div class="bg-purple-500 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
 			</div>
 		</div>
 
 
 		<div class="flex-1">
-			<div class="w-10 h-10 bg-gray-300 mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-white text-center w-full">2</span>
 			</div>
 		</div>
 
 		<div class="w-1/6 align-center items-center align-middle content-center flex">
 			<div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-			 	<div class="bg-gray-200 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 20%"></div>
+			 	<div class="bg-purple-500 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
 			</div>
 		</div>
     	<div class="flex-1">
-			<div class="w-10 h-10 bg-gray-300 mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-white text-center w-full">3</span>
 			</div>
 		</div>
 
 	<div class="w-1/6 align-center items-center align-middle content-center flex">
 			<div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-			 	<div class="bg-gray-200 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 20%"></div>
+			 	<div class="bg-purple-500 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
 			</div>
 		</div>
 
     	<div class="flex-1">
-			<div class="w-10 h-10 bg-gray-300 border-2 border-grey-light mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 border-2 border-grey-light mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-grey-darker text-center w-full">4</span>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 <!---------------------------Form-------------------------------->
   <div>
       <section class="bgcolor">
-      <div class="py-20 bg-gray-50 ">
+      <div class="py-10 bg-gray-50 ">
     <div class="container mx-auto px-4">
       <div class="mb-16 max-w-2xl mx-auto text-center">
         <div class="max-w-lg mx-auto">
@@ -69,8 +69,9 @@
 
       </div>
       <div  class="flex flex-wrap bg-blue-50 rounded shadow">
-        <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11">
-          <h2  class="mb-2 justify-center text-3xl lg:text-4xl font-bold font-heading">Registration</h2>
+        <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11 text-center">
+          <h2  class="mb-2 justify-center text-3xl lg:text-4xl font-bold font-heading text-center">Registration</h2>
+          <h2  class="mb-2 mt-2 justify-center text-2xl lg:text-3xl font-semibold font-heading text-center">£49.99</h2>
 
         <div class="flex justify-center ">
 

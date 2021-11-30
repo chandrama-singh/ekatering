@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="flex-1">
-			<div class="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-450 mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-white text-center w-full">1</span>
 			</div>
 		</div>
@@ -14,13 +14,13 @@
 
 		<div class="w-1/6 align-center items-center align-middle content-center flex">
 			<div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
-			 	<div class="bg-gray-200 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
+			 	<div class="bg-purple-500 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
 			</div>
 		</div>
 
 
 		<div class="flex-1">
-			<div class="w-10 h-10 bg-gray-300 mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-white text-center w-full">2</span>
 			</div>
 		</div>

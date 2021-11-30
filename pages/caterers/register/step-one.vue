@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="flex-1">
-			<div class="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-450 mx-auto rounded-full text-lg text-white flex items-center">
+			<div class="w-10 h-10 bg-purple-500 to-orange-450 mx-auto rounded-full text-lg text-white flex items-center">
 				<span class="text-white text-center w-full">1</span>
 			</div>
 		</div>
