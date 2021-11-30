@@ -56,38 +56,35 @@
 <div class=" max-w-4xl mx-auto py-10 space-y-6">
 <!---------------------------Form-------------------------------->
 <div>
-  <div class="px-6">
+  <div class="flex flex-col  space-y-6 justify-center">
             <table class="min-w-full table-auto">
               <thead class="justify-between">
                 <tr class="bg-gray-800">
 
-                  <th class="px-16 py-2">
+                  <th class="px-10 py-2">
                     <span class="text-gray-300">Document Name</span>
                   </th>
-                  <th class="px-16 py-2">
+                  <th class="px-10 py-2">
                     <span class="text-gray-300">Upload</span>
                   </th>
-                  <th class="px-16 py-2">
+                  <th class="px-10 py-2">
                     <span class="text-gray-300"></span>
                   </th>
-                   <th class="px-16 py-2">
+                   <th class="px-10 py-2">
                     <span class="text-gray-300">Link</span>
                   </th>
 
-
-
-
                 </tr>
               </thead>
-              <tbody class="bg-gray-200">
+              <tbody class="bg-gray-200 px-4">
                 <tr class="bg-white border-4 border-gray-200">
 
                   <td>
-                    <span class="text-center ml-2 font-semibold"
+                    <span class="text-center pl-4 font-semibold"
                       >Proof of address</span
                     >
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10  py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -103,7 +100,7 @@
                       Upload File
                     </button>
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
                     <div v-if="address_uploaded">Uploaded</div>
                    <input
         type="file"
@@ -115,7 +112,7 @@
                   </td>
 
 
-                 <td class="px-16 py-2">
+                 <td class="px-10 py-2">
                    <a :href="documents.address_proof" target="_blank" class="border-gray-400" v-if="documents">
     <div class="select-none cursor-pointer bg-white rounded-md flex  md:flex-row flex-col md:text-left text-center items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1">
       <div class="py-2 md:mr-16">
@@ -126,14 +123,14 @@
   </a>
                   </td>
                 </tr>
-                <tr class="bg-white border-4 border-gray-200">
+                <tr class="bg-white border-4 border-gray-200 px-2">
 
-                  <td>
-                    <span class="text-center ml-2 font-semibold"
+                  <td class="pl-4">
+                    <span class="text-left font-semibold"
                       >Local Authority Food Registration Letter</span
                     >
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-4 py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -149,7 +146,7 @@
                       Upload File
                     </button>
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
                     <div v-if="food_uploaded">Uploaded</div>
                      <input
         type="file"
@@ -161,7 +158,7 @@
                   </td>
 
 
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
                    <a :href="documents.food_registration_letter" target="_blank" class="border-gray-400" v-if="documents">
     <div class="select-none cursor-pointer bg-white rounded-md flex  md:flex-row flex-col md:text-left text-center items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1">
       <div class="py-2 md:mr-16">
@@ -174,12 +171,12 @@
                 </tr>
                 <tr class="bg-white border-4 border-gray-200">
 
-                  <td>
-                    <span class="text-center ml-2 font-semibold"
+                  <td class="pl-4">
+                    <span class="text-center font-semibold"
                       >Food Hygiene Rating Scheme (FHRS) award letter</span
                     >
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-4 py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -195,7 +192,7 @@
                       Upload file
                     </button>
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
                     <div v-if="fhrs_uploaded">Uploaded</div>
                     <input
         type="file"
@@ -206,7 +203,7 @@
       />
                   </td>
 
-                 <td class="px-16 py-2">
+                 <td class="px-10 py-2">
 
                    <a :href="documents.fhrs_letter" target="_blank" class="border-gray-400" v-if="documents">
     <div class="select-none cursor-pointer bg-white rounded-md flex  md:flex-row flex-col md:text-left text-center items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1">
@@ -220,7 +217,7 @@
                 </tr>
               </tbody>
             </table>
-             <div>
+             <div class="justify-center items-center pl-10">
         <button
           class="
             w-full
