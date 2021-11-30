@@ -20,7 +20,7 @@
 </template>
 <script>
   import {
-    VERIFY_EMAIL
+    VERIFY_CATERER_EMAIL
   } from '@/graphql/query';
   export default {
     layout: 'main',
@@ -30,7 +30,7 @@
         const {
           data
         } = await client.mutate({
-          mutation: VERIFY_EMAIL,
+          mutation: VERIFY_CATERER_EMAIL,
           variables: {
             id: context.route.params.token
           }
@@ -38,7 +38,7 @@
         return {
           isVerified: true,
           error: null,
-          response: data.verifyCaterer
+          response: data.verifyCatererEmail
         };
       } catch (err) {
         console.log(err)

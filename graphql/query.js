@@ -41,8 +41,13 @@ mutation LoginCatererMutation($password: String!, $email: String!) {
         mobile
         role
         business_name
+        business_category{
+          name
+          value
+        }
         business_email
         isVerified
+        isEmailVerified
         createdAt
         updatedAt
         address{
@@ -82,8 +87,13 @@ export const GET_ME = graphql`
       mobile
       role
       business_name
+      business_category{
+        name
+        value
+      }
       business_email
       isVerified
+      isEmailVerified
       createdAt
       updatedAt
       address{
@@ -122,8 +132,13 @@ export const GET_ALL_CATERER = graphql`
       mobile
       role
       business_name
+      business_category{
+        name
+        value
+      }
       business_email
       isVerified
+      isEmailVerified
       createdAt
       updatedAt
       address{
@@ -162,8 +177,13 @@ export const GET_CATERER_BY_ID = graphql`
       mobile
       role
       business_name
+      business_category{
+        name
+        value
+      }
       business_email
       isVerified
+      isEmailVerified
       createdAt
       updatedAt
       address{
@@ -185,16 +205,6 @@ export const GET_CATERER_BY_ID = graphql`
 `;
 
 
-
-export const VERIFY_CATERER = graphql`
-mutation VerifyCatererMutation($verifyCatererId: String!) {
-    verifyCaterer(id: $verifyCatererId)
-  }
-  `;
-
-
-
-
 export const REQUEST_RESET_CATERER_PASSWORD = graphql`
 mutation RequestResetCatererPasswordMutation($email: String!) {
     requestResetCatererPassword(email: $email)
@@ -210,6 +220,14 @@ mutation ResetCatererPasswordMutation($reqId: String!, $password: String!) {
     resetCatererPassword(reqId: $reqId, password: $password)
   }
   `;
+
+  export const PAY_REGISTRATION= graphql`
+mutation acceptRegistrationFee {
+  result:acceptRegistrationFee
+  }
+  `;
+
+
 
 
 
@@ -275,9 +293,19 @@ export const CHANGE_PASSWORD = graphql`
   }
 `;
 
-export const VERIFY_EMAIL = graphql`
-  mutation verifyCaterer($id: ID!) {
+
+export const VERIFY_CATERER = graphql`
+mutation verifyCaterer($id: ID!) {
     verifyCaterer(id: $id)
+  }
+  `;
+
+
+
+
+export const VERIFY_CATERER_EMAIL = graphql`
+  mutation verifyCatererEmail($id: ID!) {
+    verifyCatererEmail(id: $id)
   }
 `;
 

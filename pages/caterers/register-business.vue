@@ -18,7 +18,7 @@
       <div class="absolute opacity-60 inset-0 z-0"></div>
       <div
         class="
-          
+
           w-2/3
           space-y-8
           p-10
@@ -151,7 +151,7 @@
                     </p>
                   </div>
                 </div>
-              
+
                 <!------------------------------------------------>
                 <div class="flex-auto w-full mb-1 text-xs space-y-2">
                   <label class="font-semibold text-gray-600 py-2"
@@ -168,7 +168,7 @@
                       h-28
                       appearance-none
                       block
-                    
+
                       bg-grey-lighter
                       text-grey-darker
                       border border-grey-lighter
@@ -198,7 +198,7 @@
                       h-28
                       appearance-none
                       block
-                    
+
                       bg-grey-lighter
                       text-grey-darker
                       border border-grey-lighter
@@ -366,7 +366,7 @@
                   <div class="w-full flex flex-col mb-3">
                     <label class="text-xs font-semibold text-gray-600 pt-2"
                       >Local Authority Food Registration Letter<abbr
-                        
+
                         title="required"
                         >*</abbr
                       ></label
@@ -417,7 +417,7 @@
                   <div class="w-full flex flex-col mb-3">
                     <label class="text-xs font-semibold text-gray-600 pt-2"
                       >Food Hygiene Rating Scheme (FHRS) award letter<abbr
-                    
+
                         title="required"
                         >*</abbr
                       ></label
@@ -485,8 +485,8 @@
                           alt="Avatar Upload"
                         />
                       </div> -->
-                      
-                    
+
+
                         <input
                           placeholder="DD/MM/YYYY"
                       class="
@@ -500,10 +500,10 @@
                         px-4
                       "
                       type="date"
-                      
+
                       id="datetime"
                         />
-                      
+
                     </div>
                   </div>
                 </div>
@@ -792,7 +792,7 @@
                     </div>
                   </div>
                 </div>
-               
+
                 <button
                   class="
                     inline-block
@@ -820,13 +820,15 @@
   </section>
 
     </div>
-  
-  
+
+
 
 </template>
 
 <script>
 export default {
+   layout:'register',
+    middleware: 'authUser',
 
 }
 </script>

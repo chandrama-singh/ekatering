@@ -25,7 +25,12 @@ export const mutations = {
     console.log("setUser",param)
 
     if(param.isLogin){
-      this.$router.push({path: `/${param.user.role}/dashboard`})
+      if(param.user.isVerified){
+        this.$router.push({path: `/${param.user.role}/dashboard`})
+      }
+      else{
+        this.$router.push({path: `/${param.user.role}/register`})
+      }
       // this.$router.push('/')
     }else{
       this.$router.push('/')

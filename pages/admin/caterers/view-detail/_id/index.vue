@@ -219,7 +219,7 @@
 <script>
  import {
     GET_CATERER_BY_ID,
-      UPDATE_SERVICE_DETAIL,
+
   } from "@/graphql/query";
 export default {
    layout:'admin',
@@ -265,13 +265,13 @@ export default {
           description:this.service.description
         }
         try {
-          const {data} = await this.$apollo.mutate({
-            mutation:  UPDATE_SERVICE_DETAIL,
-            variables: {
-              data: formData,
-              id:this.service.id
-            },
-          })
+          // const {data} = await this.$apollo.mutate({
+          //   mutation:  UPDATE_SERVICE_DETAIL,
+          //   variables: {
+          //     data: formData,
+          //     id:this.service.id
+          //   },
+          // })
           console.log(data)
         } catch (error) {
           this.message = error.message;
