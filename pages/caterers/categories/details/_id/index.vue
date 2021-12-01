@@ -201,7 +201,7 @@ import { GET_CATEGORY_BY_ID, UPDATE_CATEGORY_STATUS,UPDATE_CATEGORY } from "@/gr
 
 export default {
   layout: "user",
-  //middleware: 'authAdmin',
+  middleware: 'authUser',
 
   data() {
     return {

@@ -100,7 +100,7 @@ import { GET_COUPON_BY_ID, DELETE_COUPON } from "@/graphql/query";
 
 export default {
   layout: "user",
-  //middleware: 'authAdmin',
+  middleware: 'authUser',
 
   data() {
     return {

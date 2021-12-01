@@ -48,6 +48,7 @@ mutation LoginCatererMutation($password: String!, $email: String!) {
         business_email
         isVerified
         isEmailVerified
+        isRegistered
         createdAt
         updatedAt
         address{
@@ -94,6 +95,7 @@ export const GET_ME = graphql`
       business_email
       isVerified
       isEmailVerified
+      isRegistered
       createdAt
       updatedAt
       address{
@@ -139,6 +141,7 @@ export const GET_ALL_CATERER = graphql`
       business_email
       isVerified
       isEmailVerified
+      isRegistered
       createdAt
       updatedAt
       address{
@@ -184,6 +187,7 @@ export const GET_CATERER_BY_ID = graphql`
       business_email
       isVerified
       isEmailVerified
+      isRegistered
       createdAt
       updatedAt
       address{
@@ -226,6 +230,20 @@ mutation acceptRegistrationFee {
   result:acceptRegistrationFee
   }
   `;
+
+
+  export const VERIFY_REGISTRATION_PAYMENT = graphql`
+  mutation verifyRegistrationPayment($id: ID!) {
+   response: verifyRegistrationPayment(id: $id){
+      catererId
+      status
+      customer
+      mode
+      payment_intent
+    }
+  }
+`;
+
 
 
 
@@ -709,6 +727,7 @@ export const VERIFY_PLAN_PAYMENT = graphql`
       planId
       subscription
       status
+      mode
       customer
       payment_intent
     }

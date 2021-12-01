@@ -13,19 +13,18 @@
             <div class="flex flex-col mx-auto content-center justify-center">
               <p class="my-3 text-lg ">Take screenshot for future reference</p>
 
-               <span class=" font-bold flex p-3">planId: <p class="mx-3"> {{response.planId}} </p> </span>
-                 <span class=" font-bold flex p-3">mode: <p class="mx-3">  {{response.mode}} </p> </span>
-               <span class=" font-bold flex p-3">subscription: <p class="mx-3"> {{response.subscription}} </p> </span>
-                <span class=" font-bold flex p-3">payment_intent: <p class="mx-3">  {{response.payment_intent}} </p> </span>
+              <span class=" font-bold flex p-3">catererId: <p class="mx-3"> {{response.catererId}} </p> </span>
               <span class=" font-bold flex p-3">status: <p class="mx-3">  {{response.status}} </p> </span>
               <span class=" font-bold flex p-3">customer: <p class="mx-3">  {{response.customer}} </p> </span>
+              <span class=" font-bold flex p-3">payment_intent: <p class="mx-3">  {{response.payment_intent}} </p> </span>
+              <span class=" font-bold flex p-3">mode: <p class="mx-3">  {{response.mode}} </p> </span>
+
 
             </div>
 
             <div class="py-10 text-center">
-                <a href="/caterers/dashboard" class="px-12 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3">
-                    GO BACK TO DASHBOARD
-               </a>
+                <h2>Thanks for Payment! We will review your application soon</h2>
+                <p>After Verification a verification email will be sent to you.</p>
             </div>
         </div>
     </div>
@@ -33,25 +32,27 @@
 </template>
 <script>
   import {
-    VERIFY_PLAN_PAYMENT
+    VERIFY_REGISTRATION_PAYMENT
   } from '@/graphql/query';
   export default {
-    layout: 'main',
+    layout:'register',
+    middleware: 'auth',
     async asyncData(context) {
       let client = context.app.apolloProvider.defaultClient
       try {
         const {
           data
         } = await client.mutate({
-          mutation: VERIFY_PLAN_PAYMENT,
+          mutation: VERIFY_REGISTRATION_PAYMENT,
           variables: {
             id: context.route.params.id
           }
         })
+        console.log(data)
         return {
           isVerified: true,
           error: null,
-          response: data.verifyPlanPayment
+          response: data.response
         };
       } catch (err) {
         console.log(err)

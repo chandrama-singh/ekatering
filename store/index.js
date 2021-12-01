@@ -29,7 +29,13 @@ export const mutations = {
         this.$router.push({path: `/${param.user.role}/dashboard`})
       }
       else{
-        this.$router.push({path: `/${param.user.role}/register`})
+        if(param.user.isRegistered){
+          this.$router.push({path: `/${param.user.role}/waiting_verification`})
+        }
+        else{
+
+          this.$router.push({path: `/${param.user.role}/register`})
+        }
       }
       // this.$router.push('/')
     }else{
@@ -89,26 +95,6 @@ export const actions = {
     }
     else {
       commit('logoutUser')
-    }
-  },
-
-  async loadMe({ commit }) {
-    let client = this.app.apolloProvider.defaultClient
-    try {
-      const { data } = await client.query({ query: GET_ME })
-      commit('setUser', {user: data.mySelf, isLogin: false})
-    } catch (error) {
-      console.log(error);
-    }
-  },
-
-  async loadSetting({ commit }) {
-    let client = this.app.apolloProvider.defaultClient
-    try {
-      const { data } = await client.query({ query: GET_CONFIG });
-      commit("setSetting", data.getConfig);
-    } catch (error) {
-      console.log(error);
     }
   },
 }

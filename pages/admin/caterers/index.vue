@@ -44,7 +44,7 @@
 
   export default {
     layout:'admin',
-    //middleware: 'authAdmin',
+
     data() {
       return {
         columnDefs: null,

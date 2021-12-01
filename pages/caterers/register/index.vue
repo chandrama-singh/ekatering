@@ -120,6 +120,7 @@
 <script>
 export default {
    layout:'register',
+   middleware: 'auth',
     methods:{
     ProgramForm(){
       this.$router.push("/caterers/register/step-one");

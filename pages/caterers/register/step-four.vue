@@ -109,10 +109,11 @@
 <script>
 
 import { StripeCheckout } from '@vue-stripe/vue-stripe'
-import {PAY_REGISTRATION} from "@/graphql/query";
+import {PAY_REGISTRATION, GET_ME} from "@/graphql/query";
 export default {
     name: 'payment',
-     layout:"default",
+     layout:"register",
+     middleware: 'auth',
      data () {
 
     return {
@@ -120,12 +121,21 @@ export default {
        publishableKey : "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",
      sessionId: '',
       loading: false,
+
       showAlert:false,
       lineItems: [ ],
     };
   },
     components:{
          StripeCheckout,
+    },
+     apollo: {
+      mySelf: {
+        query: GET_ME,
+        error(error) {
+          console.log(error)
+        }
+      }
     },
     methods: {
     async makePayment () {
@@ -137,10 +147,15 @@ export default {
           })
 
           console.log(data);
+          if(data.result!=null)
+          {
           this.sessionId=data.result;
-
-
           this.$refs.checkoutRef.redirectToCheckout();
+           }
+           else{
+             alert("Either you are already registered or getting some error")
+
+           }
           //this.goToWorkout();
 
         } catch (error) {
@@ -155,6 +170,11 @@ export default {
       // You will be redirected to Stripe's secure checkout page
 
     },
+
+    checkForm(){
+
+
+    }
 
 
   },

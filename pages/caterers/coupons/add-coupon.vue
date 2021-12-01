@@ -84,6 +84,7 @@
   import { ADD_NEW_COUPON} from '@/graphql/query'
   export default {
     layout: 'user',
+    middleware: 'authUser',
     data() {
       return {
           openTab: 1,

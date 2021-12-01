@@ -787,6 +787,7 @@ import {
 import Multiselect from "vue-multiselect";
 export default {
   layout: "user",
+  middleware: 'authUser',
   data() {
     return {
       openTab: 1,

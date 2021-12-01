@@ -39,7 +39,7 @@
 
   export default {
     layout:'user',
-    middleware: 'auth',
+   middleware: 'authUser',
     data() {
       return {
         columnDefs: null,

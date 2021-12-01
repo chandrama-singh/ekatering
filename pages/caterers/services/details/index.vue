@@ -1,10 +1,11 @@
 <template>
-  
+<div>Service Detail</div>
 </template>
 
 <script>
 export default {
-layout:"user"
+layout:"user",
+middleware: 'authUser',
 }
 </script>
 

@@ -79,6 +79,7 @@
     ADD_NEW_CATEGORY } from '@/graphql/query'
   export default {
     layout: "user",
+    middleware: 'authUser',
     data() {
       return {
         openTab: 1,

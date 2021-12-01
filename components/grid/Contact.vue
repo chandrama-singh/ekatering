@@ -4,15 +4,15 @@
       v-if="user"
       class="bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4"
     >
-      <div class="flex-1 pl-1 md:mr-16">
-        <div @click="preview" class="font-medium dark:text-white">
-          {{ user.address.city }} {{ user.address.country }}
-        </div>
-        <div @click="preview" class="font-semibold dark:text-white">
-          {{ user.mobile }}
+      <div v-if="user.address" class="flex-1 pl-1 md:mr-16">
+        <div v-if="user.address.town"  class="font-medium dark:text-white">
+          {{ user.address.town }} {{ user.address.country }}
         </div>
 
       </div>
+       <div class="font-semibold dark:text-white">
+          {{ user.mobile }}
+        </div>
     </div>
   </div>
 </template>

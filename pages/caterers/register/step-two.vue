@@ -157,7 +157,7 @@
           type="button"
           @click="onSubmit"
         >
-          Update Detail
+          Submit and GoNext
         </button>
       </div>
       <div>
@@ -174,9 +174,9 @@
             focus:outline-none focus:shadow-outline
           "
           type="button"
-          @click="next3"
+          @click="next1"
         >
-          Next
+          Go Back
         </button>
       </div>
     </div>
@@ -190,6 +190,7 @@
 import {  UPDATE_CATERER_ADDRESS} from "@/graphql/query";
 export default {
    layout:'register',
+   middleware: 'auth',
   data() {
     return {
       profile: null,
@@ -199,7 +200,8 @@ export default {
   computed:{
     address(){
       return {...this.$store.state.user.address};
-    }
+    },
+
   },
 
   methods: {
@@ -225,20 +227,21 @@ export default {
           },
         });
         console.log(res.data.result);
+         this.$router.push("/caterers/register/step-three");
       } catch (error) {
         console.log(error);
       }
       this.loading = false;
     },
-    next3(){
-            this.$router.push("/caterers/register/step-three");
-        }
+    next1(){
+            this.$router.push("/caterers/register/step-one");
+        },
+
 
 
   },
 
-  created() {
-    this.user = this.$store.state.user;
-  },
+
+
 };
 </script>

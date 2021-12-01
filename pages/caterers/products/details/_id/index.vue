@@ -58,7 +58,7 @@
                                   flex flex-col
                                   sm:flex-row
                                   items-center
-                                  mb-2 
+                                  mb-2
                                   py-2
                                   sm:space-x-5
                                 "
@@ -350,6 +350,7 @@
 import { ADD_NEW_PRODUCT,UPDATE_PRODUCT_BANNER } from "@/graphql/query";
 export default {
   layout: "user",
+  middleware: 'authUser',
   data() {
     return {
       openTab: 1,

@@ -125,7 +125,7 @@
 
   export default {
     layout: "default",
-    middleware: 'authAdmin',
+    middleware: 'authUser',
     data() {
       return {
 

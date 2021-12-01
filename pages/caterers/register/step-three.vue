@@ -233,7 +233,26 @@
           type="button"
           @click="next4"
         >
-          Next
+          Save and GoNext
+        </button>
+      </div>
+      <div class="justify-center items-center pl-10">
+        <button
+          class="
+            w-full
+            px-4
+            py-2
+            font-bold
+            text-white
+            bg-purple-500
+            rounded-full
+            hover:bg-purple-700
+            focus:outline-none focus:shadow-outline
+          "
+          type="button"
+          @click="next2"
+        >
+          GoBack
         </button>
       </div>
           </div>
@@ -247,6 +266,7 @@
 import {  UPDATE_CATERER_ADDRESS_PROOF,UPDATE_CATERER_FOOD_REGISTRATION,UPDATE_CATERER_FHRS_LETTER  } from "@/graphql/query";
 export default {
    layout:'register',
+   middleware: 'auth',
   data() {
     return {
       address_proof: null,
@@ -264,6 +284,7 @@ export default {
       return {...this.$store.state.user.documents};
     }
   },
+
 
   methods: {
     selectAddressProof() {
@@ -340,6 +361,7 @@ export default {
         this.loading = false;
         console.log(res.data.result);
         this.food_uploaded=true;
+
       } catch (error) {
         console.log(error);
          this.loading = false;
@@ -362,13 +384,28 @@ export default {
          this.loading = false;
       }
     },
-    next4(){
-            this.$router.push("/caterers/register/step-four");
-        }
+    next4() {
+      if (this.documents.address_proof == ''){
+
+        alert("address proof not uploaded");
+      }
+      else if (this.documents.food_registration_letter == "")
+      {alert("food_registration letter not uploaded");}
+      else if (this.documents.fhrs_letter == "")
+      {alert("fhrs_letter not uploaded");}
+      else{
+          this.$router.push("/caterers/register/step-four");
+      }
+
+
+  },
+  next2(){
+    this.$router.push("/caterers/register/step-two");
+  }
+
+
   },
 
-  created() {
-    this.user = this.$store.state.user;
-  },
+
 };
 </script>

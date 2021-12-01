@@ -245,28 +245,10 @@
           type="button"
           @click="onSubmit"
         >
-          Update Detail
+          Submit and GoToNext
         </button>
       </div>
-      <div>
-        <button
-          class="
-            w-full
-            px-4
-            py-2
-            font-bold
-            text-white
-            bg-purple-500
-            rounded-full
-            hover:bg-purple-700
-            focus:outline-none focus:shadow-outline
-          "
-          type="button"
-          @click="next2"
-        >
-          Next
-        </button>
-      </div>
+
     </div>
     <Loading v-if="loading" />
   </div>
@@ -279,6 +261,7 @@ import Multiselect from 'vue-multiselect'
 import { UPDATE_CATERER, UPDATE_CATERER_PROFILE } from "@/graphql/query";
 export default {
    layout:'register',
+   middleware: 'auth',
   data() {
     return {
       profile: null,
@@ -314,8 +297,17 @@ export default {
       }
     },
 
+
     async onSubmit() {
       this.loading = true;
+      var category=[]
+
+        this.selectedRole.forEach(element => {
+          category.push({name:element.name,value:element.value})
+
+        });
+
+
       var formData = {
         first_name: this.user.first_name,
         last_name: this.user.last_name,
@@ -324,7 +316,7 @@ export default {
         bio: this.user.bio,
         gender: this.user.gender,
         business_name: this.user.business_name,
-        business_category: this.selectedRole,
+        business_category: category,
         business_email: this.user.business_email,
       };
       console.log("submit form", formData)
@@ -336,8 +328,10 @@ export default {
           },
         });
         console.log(res.data.result);
+        this.$router.push("/caterers/register/step-two");
       } catch (error) {
         console.log(error);
+        alert(error)
       }
       this.loading = false;
     },
@@ -358,9 +352,7 @@ export default {
          this.loading = false;
       }
     },
-     next2(){
-            this.$router.push("/caterers/register/step-two");
-        }
+
   },
 
   created() {

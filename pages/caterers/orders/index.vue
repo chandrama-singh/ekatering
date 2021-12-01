@@ -40,7 +40,7 @@
 
   export default {
     layout:'user',
-    //middleware: 'authAdmin',
+    middleware: 'authUser',
     data() {
       return {
         columnDefs: null,
