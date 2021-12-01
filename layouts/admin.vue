@@ -51,6 +51,12 @@
              icon: 'fas fa-utensils'
 
           },
+           {
+            href: '/admin/pending_caterers',
+            title: 'Registration',
+             icon: 'fas fa-utensils'
+
+          },
           // {
           //  href: '/admin/payments',
           //   title: 'Payments',

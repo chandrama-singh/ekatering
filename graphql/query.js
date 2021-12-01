@@ -49,6 +49,8 @@ mutation LoginCatererMutation($password: String!, $email: String!) {
         isVerified
         isEmailVerified
         isRegistered
+        status
+        remark
         createdAt
         updatedAt
         address{
@@ -96,6 +98,8 @@ export const GET_ME = graphql`
       isVerified
       isEmailVerified
       isRegistered
+      status
+      remark
       createdAt
       updatedAt
       address{
@@ -132,6 +136,7 @@ export const GET_ALL_CATERER = graphql`
       instagram
       twitter
       mobile
+      status
       role
       business_name
       business_category{
@@ -142,6 +147,7 @@ export const GET_ALL_CATERER = graphql`
       isVerified
       isEmailVerified
       isRegistered
+      remark
       createdAt
       updatedAt
       address{
@@ -184,10 +190,12 @@ export const GET_CATERER_BY_ID = graphql`
         name
         value
       }
+      status
       business_email
       isVerified
       isEmailVerified
       isRegistered
+      remark
       createdAt
       updatedAt
       address{
@@ -313,8 +321,14 @@ export const CHANGE_PASSWORD = graphql`
 
 
 export const VERIFY_CATERER = graphql`
-mutation verifyCaterer($id: ID!) {
-    verifyCaterer(id: $id)
+mutation verifyCaterer($id: ID!, $remark: String) {
+  verifyCaterer(id: $id, remark: $remark)
+  }
+  `;
+
+  export const DECLINE_CATERER = graphql`
+mutation declineCaterer($id: ID!, $remark: String) {
+  declineCaterer(id: $id, remark: $remark)
   }
   `;
 
