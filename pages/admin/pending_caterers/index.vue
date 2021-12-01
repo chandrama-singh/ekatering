@@ -107,10 +107,23 @@
           filter: true,
           maxWidth: 140,
           cellRenderer: (cell) => {
-            if (cell.data.status="ACTIVE" ) {
-              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Active</span>';
+            if (cell.data.status=="ACTIVE" ) {
+              return '<span class=" badge bg-green-700 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Active</span>';
             }
-            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Not Active</span>';
+             else if (cell.data.status=="ENDED" ) {
+              return '<span class=" badge bg-purple-900 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Canceled</span>';
+            }
+             else if (cell.data.status=="DECLINED" ) {
+              return '<span class=" badge bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Declined</span>';
+            }
+             else if (cell.data.status=="CANCELED" ) {
+              return '<span class=" badge bg-red-500 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Canceled</span>';
+            }
+             else if (cell.data.status=="ARCHIVED" ) {
+              return '<span class=" badge bg-gray-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Archived</span>';
+            }
+            else
+            return `<span class="badge  bg-yellow-500 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Not Active</span>`;
           },
         },
 
