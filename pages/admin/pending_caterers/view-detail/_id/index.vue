@@ -118,10 +118,24 @@
            <p>
              {{caterer.address.postcode}}
            </p>
-
           </div>
         </dd>
       </div>
+
+        <div class="bg-gray-50 px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">
+          FHRS Next Inspection Due Date
+        </dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+          <div v-if="caterer.address" class="flex flex-col justify-start">
+           <p>
+             21/12/2030
+           </p>
+          </div>
+        </dd>
+      </div>
+
+
       <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt class="text-sm font-medium text-gray-500">
           Documents
@@ -184,10 +198,10 @@
 </div>
 <div class="pb-12 mb-20 bg-gray-50">
   <div v-if="caterer.isVerified==false" class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-    <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> Verify or Decline this registration? <br> <span class="text-indigo-600">mention the reson in remark field.</span> </h3>
+    <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> Verify or Decline this registration? <br> <span class="text-indigo-600">Mention the reson in remark field.</span> </h3>
     <div class="text-lg w-1/3">
-      <label for="message" class="text-sm font-medium text-gray-900 block mb-2">Your remark</label>
-<textarea v-model="remark" id="rmark" name="remark" rows="5" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full" placeholder="Leave a comment..."></textarea>
+      <label for="message" class="text-lg font-medium text-gray-900 block mb-2">Your remark</label>
+<textarea v-model="remark" id="rmark" name="remark" rows="5" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full" placeholder="Leave reasion for decline..."></textarea>
 
     </div>
     <div class="flex mt-8 lg:flex-shrink-0 lg:mt-0">
@@ -200,7 +214,7 @@
         <div class="inline-flex ml-3 shadow rounded-md">
 
     <button @click="declineRegistration()" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-80">
-        Decline
+        Decline!
     </button>
         </div>
       </div>

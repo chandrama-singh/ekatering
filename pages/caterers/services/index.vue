@@ -1,8 +1,8 @@
 <template>
   <div>
-    <PageHeader pageTitle="Services">
+  <PageHeader pageTitle="Services">
       <template v-slot:action>
-        <div class="p-1 bg-white flex border border-gray-400 rounded">
+        <div class="p-1 mb-4 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
           <input
             id="filter-text-box"
@@ -80,12 +80,15 @@
         </button></Nuxt-Link>
       </template>
     </PageHeader>
+<Servicecard/>
 
-<div class="mx-6">
+  
+
+<!-- <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
         :rowData="products" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
-    </div>
+    </div> -->
 
 
   </div>
@@ -93,12 +96,14 @@
 
 
 <script>
+
   import {
     GET_ALL_PRODUCT
   } from '@/graphql/query'
   import moment from "moment-timezone";
   import PaymentAction from '@/components/ListActions/PaymentAction';
   import UserProfile from '@/components/User/UserProfile';
+  import Servicecard from '@/components/cateres/Servicecard.vue';
 
   export default {
     layout:'user',
@@ -110,6 +115,9 @@
         context: null,
         gridOptions: {},
       };
+    },
+    components:{
+      Servicecard,
     },
     apollo: {
       products: {
@@ -199,8 +207,8 @@
     },
 
     methods: {
-        addProduct(){
-      this.$router.push('/caterers/products/add-product');
+        addService(){
+      this.$router.push('/caterers/services/add-services');
     },
       onFilterTextChange() {
         this.gridOptions.api.setQuickFilter(

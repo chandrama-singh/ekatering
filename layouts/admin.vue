@@ -46,17 +46,17 @@
 
           },
           {
+            href: '/admin/pending_caterers',
+            title: 'Pending Application',
+             icon: 'far fa-clock'
+
+          },
+          {
             href: '/admin/caterers',
             title: 'Caterers',
              icon: 'fas fa-utensils'
-
           },
-           {
-            href: '/admin/pending_caterers',
-            title: 'Registration',
-             icon: 'fas fa-utensils'
-
-          },
+           
           // {
           //  href: '/admin/payments',
           //   title: 'Payments',

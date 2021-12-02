@@ -13,7 +13,7 @@
     >
       <div class="flex items-center">
         <t-button
-          to="/caterers/products/"
+          to="/caterers/services/"
           type="button"
           variant="secoundry"
           class="py-3 border-r focus:ring-0 focus:bg-green-400"
@@ -28,7 +28,7 @@
         <div class="w-full flex flex-col md:flex-row overflow-hidden shadow-xl">
           <div class="w-full">
             <div class="w-full px-5 py-3">
-              <!--------------------------Products--------------------------------->
+              <!--------------------------Services--------------------------------->
               <div class="">
                 <section class="container-fluid mx-auto font-mono">
                   <div class="w-full mb-8 overflow-hidden">
@@ -330,7 +330,7 @@
                                 </div>
                               </div>
                               <!------------------------Info Value-------------------------------->
-                              <div v-if="step == 1">
+                               <div v-if="step == 1">
                                 <div
                                   class="
                                     flex flex-col
@@ -343,12 +343,12 @@
                                 >
                                   <div class="w-full sm:w-1/2">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      Product Name
+                                      Menu Title
                                     </p>
                                     <input
                                       type="text"
                                       name=""
-                                      placeholder="Product Name"
+                                      placeholder="Menu Name"
                                       class="
                                         w-full
                                         p-1
@@ -359,7 +359,7 @@
                                         shadow-sm
                                         appearance-none
                                       "
-                                      id="product-name"
+                                      id="service-name"
                                       v-model="formData.name"
                                     />
                                   </div>
@@ -381,7 +381,7 @@
                                         shadow-sm
                                         appearance-none
                                       "
-                                      id="product-category"
+                                      id="service-category"
                                       v-model="formData.category"
                                     />
                                   </div>
@@ -393,7 +393,7 @@
                                 <input
                                   type="textbox"
                                   name=""
-                                  placeholder="Enter Product Description"
+                                  placeholder="Describe your service"
                                   class="
                                     py-6
                                     px-2
@@ -404,12 +404,12 @@
                                     shadow-sm
                                     w-full
                                   "
-                                  id="product-description"
+                                  id="service-description"
                                   v-model="formData.description"
                                 />
 
-                                <!-- File Upload Section -->
-
+                               
+<center>
                                 <div
                                   class="
                                     sm:max-w-lg
@@ -420,15 +420,16 @@
                                     z-10
                                   "
                                 >
-                                  <div class="grid grid-cols-1 space-y-2">
+                                  <div class="grid grid-cols-1 space-y-2 ">
                                     <label
                                       class="
                                         text-sm
+                                        
                                         font-bold
                                         text-gray-500
                                         tracking-wide
                                       "
-                                      >Upload Menu Details</label
+                                      >Upload Menu Details (PDF only)</label
                                     >
                                     <div
                                       class="
@@ -533,10 +534,8 @@
                                     </button>
                                   </div>
                                 </div>
-
-                                <!-- File Upload Section End -->
-
-                                <!------------------------Buttons-------------------------------->
+</center>
+                                
                                 <div
                                   class="
                                     flex
@@ -561,13 +560,12 @@
                                     Next
                                   </button>
                                 </div>
-                                <!------------------------Buttons END-------------------------------->
-                              </div>
-                              <!------------------------Info Value-------------------------------->
-                              <!------------------------Banner -------------------------------->
+                               
+                              </div> 
+                        
                               <div v-if="step == 2">
                                 <p class="font-semibold text-gray-700">
-                                  Product Banner
+                                 Upload Banner Image
                                 </p>
                                 <div class="flex flex-wrap justify-center">
                                   <input
@@ -593,7 +591,7 @@
                                     />
                                     <img
                                       v-else
-                                      src="https://mdbootstrap.com/img/new/standard/city/026.jpg"
+                                      src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                                       alt="..."
                                       class="
                                         rounded
@@ -604,11 +602,11 @@
                                       "
                                       @click="selectBanner"
                                     />
-                                    <p>Click to change banner</p>
+                                    <p>Click on Image to change banner</p>
                                   </div>
                                 </div>
 
-                                <!------------------------Buttons-------------------------------->
+                               
                                 <div
                                   class="
                                     flex
@@ -656,6 +654,7 @@
                                   class="
                                     flex flex-col
                                     sm:flex-row
+                                    justify-center
                                     items-center
                                     mb-2
                                     sm:space-x-5
@@ -663,12 +662,12 @@
                                 >
                                   <div class="w-full sm:w-1/2">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      MRP
+                                      Enter Your Price/Person
                                     </p>
                                     <input
                                       type="text"
                                       name=""
-                                      placeholder="MRP"
+                                      placeholder="Price per person"
                                       class="
                                         w-full
                                         p-1
@@ -678,11 +677,11 @@
                                         shadow-sm
                                         appearance-none
                                       "
-                                      id="product-mrp"
+                                      id="service-mrp"
                                       v-model="priceData.mrp"
                                     />
                                   </div>
-                                  <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
+                                  <!-- <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
                                     <p class="mb-2 font-semibold text-gray-700">
                                       Product Price
                                     </p>
@@ -702,52 +701,9 @@
                                       id="product-price"
                                       v-model="priceData.price"
                                     />
-                                  </div>
+                                  </div> -->
                                 </div>
 
-                                <div class="flex justify-start">
-                                  <label
-                                    for="toogleButton"
-                                    class="flex items-center cursor-pointer"
-                                  >
-                                    <div class="px-2 text-xl font-bold">
-                                      Will you deliver
-                                    </div>
-                                    <!-- toggle -->
-                                    <div class="relative">
-                                      <input
-                                        id="toogleButton"
-                                        type="checkbox"
-                                        class="hidden"
-                                      />
-                                      <!-- path -->
-                                      <div
-                                        class="
-                                          toggle-path
-                                          bg-gray-200
-                                          w-9
-                                          h-5
-                                          rounded-full
-                                          shadow-inner
-                                        "
-                                      ></div>
-                                      <!-- crcle -->
-                                      <div
-                                        class="
-                                          toggle-circle
-                                          absolute
-                                          w-3.5
-                                          h-3.5
-                                          bg-white
-                                          rounded-full
-                                          shadow
-                                          inset-y-0
-                                          left-0
-                                        "
-                                      ></div>
-                                    </div>
-                                  </label>
-                                </div>
 
                                 <!------------------------Buttons-------------------------------->
                                 <div
@@ -806,7 +762,6 @@
   </section>
 </template>
 
-
 <script>
 import {
   ADD_NEW_PRODUCT,
@@ -815,7 +770,7 @@ import {
 } from "@/graphql/query";
 export default {
   layout: "user",
-  middleware: 'authUser',
+  middleware: "authUser",
   data() {
     return {
       openTab: 1,
