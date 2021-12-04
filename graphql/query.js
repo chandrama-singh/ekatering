@@ -341,6 +341,12 @@ export const VERIFY_CATERER_EMAIL = graphql`
   }
 `;
 
+export const VERIFY_USER_EMAIL = graphql`
+  mutation verifyUserEmail($id: ID!) {
+    verifyUserEmail(id: $id)
+  }
+`;
+
 export const DELETE_CATERER = graphql`
   mutation deleteCaterer($id: ID!) {
     result: deleteCaterer(id: $id)

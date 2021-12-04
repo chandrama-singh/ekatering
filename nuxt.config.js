@@ -99,8 +99,8 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        //httpEndpoint: 'http://ekatering.co.uk:4000/graphql',
-         httpEndpoint: 'http://localhost:4000/graphql',
+        httpEndpoint: 'http://167.99.86.174:4000/graphql',
+         //httpEndpoint: 'http://localhost:4000/graphql',
       }
     },
     /**

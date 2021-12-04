@@ -408,7 +408,7 @@
                                   v-model="formData.description"
                                 />
 
-                               
+
 <center>
                                 <div
                                   class="
@@ -424,7 +424,7 @@
                                     <label
                                       class="
                                         text-sm
-                                        
+
                                         font-bold
                                         text-gray-500
                                         tracking-wide
@@ -535,7 +535,7 @@
                                   </div>
                                 </div>
 </center>
-                                
+
                                 <div
                                   class="
                                     flex
@@ -560,9 +560,9 @@
                                     Next
                                   </button>
                                 </div>
-                               
-                              </div> 
-                        
+
+                              </div>
+
                               <div v-if="step == 2">
                                 <p class="font-semibold text-gray-700">
                                  Upload Banner Image
@@ -606,7 +606,7 @@
                                   </div>
                                 </div>
 
-                               
+
                                 <div
                                   class="
                                     flex
