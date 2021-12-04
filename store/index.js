@@ -30,7 +30,7 @@ export const mutations = {
       }
       else{
         if(param.user.isRegistered){
-          this.$router.push({path: `/${param.user.role}/waiting_verification`})
+          this.$router.push({path: `/${param.user.role}/just-wait`})
         }
         else{
 
