@@ -4,7 +4,13 @@
       v-if="myself"
       class="top h-64 w-full bg-blue-600 overflow-hidden relative"
     >
+     <img
+          v-if="myself.banner"
+          :src="myself.banner"
+          class="bg w-full h-full object-cover object-center absolute z-0"
+        />
       <img
+      v-else
         src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
         alt=""
         class="bg w-full h-full object-cover object-center absolute z-0"

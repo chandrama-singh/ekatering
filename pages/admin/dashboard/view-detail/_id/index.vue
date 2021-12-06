@@ -127,9 +127,9 @@
           FHRS Next Inspection Due Date
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-          <div v-if="caterer.address" class="flex flex-col justify-start">
+          <div class="flex flex-col justify-start">
            <p>
-             21/12/2030
+            {{caterer.fhrs_date}}
            </p>
           </div>
         </dd>
@@ -198,6 +198,10 @@
 </div>
 <div class="pb-12 mb-20 bg-gray-50">
   <div v-if="caterer.isVerified==false" class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+     <div v-if="caterer.status=='DECLINED'" class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> This application  is {{caterer.status}} <br> <span v-if="caterer.isVerified" class="text-indigo-600">Registration is Already Verified</span><span v-else class="text-indigo-600">Registration is Declined</span> </h3>
+    </div>
+    <div v-else class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
     <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> Verify or Decline this registration? <br> <span class="text-indigo-600">Mention the reson in remark field.</span> </h3>
     <div class="text-lg w-1/3">
       <label for="message" class="text-lg font-medium text-gray-900 block mb-2">Your remark</label>
@@ -218,8 +222,14 @@
     </button>
         </div>
       </div>
+  </div>
+
+
+
     </div>
-    <div v-else class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+
+
+     <div v-else class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
       <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> This application  is {{caterer.status}} <br> <span v-if="caterer.isVerified" class="text-indigo-600">Registration is Already Verified</span><span v-else class="text-indigo-600">Registration is not Verified</span> </h3>
     </div>
   </div>

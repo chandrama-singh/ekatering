@@ -1,6 +1,112 @@
 <template>
-  <div>
-    <PageHeader pageTitle="Caterers">
+  <div class="container mx-auto">
+     <!-- Start Content -->
+    <div class="grid grid-cols-1 gap-5 mt-6 sm:grid-cols-2 lg:grid-cols-4 ">
+      <template>
+        <div
+          class="
+            p-4
+            transition-shadow
+            bg-gradient-to-r
+            from-purple-600
+            to-indigo-300
+            border
+            rounded-lg
+            shadow-sm
+            hover:shadow-lg
+          "
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col space-y-2">
+              <span class="text-gray-50"
+                >Total number of Registered caterers:</span
+              >
+              <span class="text-lg text-white font-semibold">100</span>
+            </div>
+            <div class="bg-gray-50 rounded-full p-4">
+              <i class="fas fa-utensils"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            p-4
+            transition-shadow
+            bg-gradient-to-r
+            from-purple-600
+            to-indigo-300
+            border
+            rounded-lg
+            shadow-sm
+            hover:shadow-lg
+          "
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col space-y-2">
+              <span class="text-gray-50"
+                >Total Training courses purchased:</span
+              >
+              <span class="text-lg text-white font-semibold">100</span>
+            </div>
+            <div class="bg-gray-50 rounded-full p-4">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            p-4
+            transition-shadow
+            bg-gradient-to-r
+            from-purple-600
+            to-indigo-300
+            border
+            rounded-lg
+            shadow-sm
+            hover:shadow-lg
+          "
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col space-y-2">
+              <span class="text-gray-50">Total consultations purchased:</span>
+              <span class="text-lg text-white font-semibold">100</span>
+            </div>
+            <div class="bg-gray-50 rounded-full p-4">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            p-4
+            transition-shadow
+            bg-gradient-to-r
+            from-purple-600
+            to-indigo-300
+            border
+            rounded-lg
+            shadow-sm
+            hover:shadow-lg
+          "
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col space-y-2">
+              <span class="text-gray-50">Total customer users:</span>
+              <span class="text-lg text-white font-semibold">100</span>
+            </div>
+            <div class="bg-gray-50 rounded-full p-4">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- Table see (https://tailwindui.com/components/application-ui/lists/tables) -->
+    <PageHeader pageTitle="New Registraitons">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
@@ -24,9 +130,10 @@
       </template>
     </PageHeader>
 
+
     <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
-        :rowData="caterers" :context="context" :gridOptions="gridOptions"  rowHeight=100>
+        :rowData="pendingCaterers" :context="context" :gridOptions="gridOptions"  rowHeight=100>
       </ag-grid-vue>
     </div>
   </div>
@@ -34,7 +141,7 @@
 
 <script>
   import {
-    GET_ALL_CATERER
+    GET_PENDING_CATERER
   } from '@/graphql/query'
   import PendingCatererAction from '@/components/ListActions/PendingCatererAction';
   import Catererprofile from '@/components/grid/Catererprofile';
@@ -61,8 +168,8 @@
 
     },
     apollo: {
-      caterers: {
-        query: GET_ALL_CATERER,
+      pendingCaterers: {
+        query: GET_PENDING_CATERER,
         error(error) {
           console.log(error)
         }
@@ -107,6 +214,7 @@
           filter: true,
           maxWidth: 140,
           cellRenderer: (cell) => {
+            console.log("renderer",cell.data.status)
             if (cell.data.status=="ACTIVE" ) {
               return '<span class=" badge bg-green-700 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Active</span>';
             }
@@ -121,6 +229,9 @@
             }
              else if (cell.data.status=="ARCHIVED" ) {
               return '<span class=" badge bg-gray-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Archived</span>';
+            }
+             else if (cell.data.status=="PENDING" ) {
+              return '<span class=" badge bg-yellow-500 rounded-full px-2 py-1 text-center text-white text-sm mr-1 ">Pending</span>';
             }
             else
             return `<span class="badge  bg-yellow-500 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Not Active</span>`;
@@ -137,21 +248,18 @@
     },
 
     methods: {
-       AddCategory(){
-      this.$router.push('/caterers/categories/add-category');
-    },
       onFilterTextChange() {
-        console.log(this.caterers)
+        console.log(this.pendingCaterers)
         this.gridOptions.api.setQuickFilter(
           document.getElementById("filter-text-box").value
         );
       },
       refetchData() {
-        this.$apollo.queries.caterers.refetch()
+        this.$apollo.queries.pendingCaterers.refetch()
       }
     },
     created() {
-      this.$apollo.queries.caterers.refetch()
+      this.$apollo.queries.pendingCaterers.refetch()
     },
   };
 

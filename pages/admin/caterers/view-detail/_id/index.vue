@@ -118,10 +118,24 @@
            <p>
              {{caterer.address.postcode}}
            </p>
-
           </div>
         </dd>
       </div>
+
+        <div class="bg-gray-50 px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">
+          FHRS Next Inspection Due Date
+        </dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+          <div  class="flex flex-col justify-start">
+           <p>
+             {{caterer.fhrs_date}}
+           </p>
+          </div>
+        </dd>
+      </div>
+
+
       <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt class="text-sm font-medium text-gray-500">
           Documents
@@ -182,35 +196,44 @@
     </dl>
   </div>
 </div>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-      <div class="w-full sm:p-4 px-4 mb-6">
-        <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Moon hashtag pop-up try-hard offal truffaut</h1>
-        <div class="leading-relaxed">Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter.</div>
-      </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-        <p class="leading-relaxed">Users</p>
-      </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-gray-900">1.8K</h2>
-        <p class="leading-relaxed">Subscribes</p>
-      </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
-        <p class="leading-relaxed">Downloads</p>
-      </div>
-      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
-        <p class="leading-relaxed">Products</p>
-      </div>
+<div class="pb-12 mb-20 bg-gray-50">
+  <div v-if="caterer.isVerified==false" class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+     <div v-if="caterer.status=='DECLINED'" class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> This application  is {{caterer.status}} <br> <span v-if="caterer.isVerified" class="text-indigo-600">Registration is Already Verified</span><span v-else class="text-indigo-600">Registration is Declined</span> </h3>
     </div>
-    <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-      <img class="object-cover object-center w-full h-full" src="https://dummyimage.com/600x300" alt="stats">
+    <div v-else>
+    <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> Verify or Decline this registration? <br> <span class="text-indigo-600">Mention the reson in remark field.</span> </h3>
+    <div class="text-lg w-1/3">
+      <label for="message" class="text-lg font-medium text-gray-900 block mb-2">Your remark</label>
+<textarea v-model="remark" id="rmark" name="remark" rows="5" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full" placeholder="Leave reasion for decline..."></textarea>
+
+    </div>
+    <div class="flex mt-8 lg:flex-shrink-0 lg:mt-0">
+      <div class="inline-flex shadow rounded-md">
+
+    <button @click="verifyRegistration()" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-600 rounded-md hover:bg-purple-500 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-80">
+       Verify
+    </button>
+        </div>
+        <div class="inline-flex ml-3 shadow rounded-md">
+
+    <button @click="declineRegistration()" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-80">
+        Decline!
+    </button>
+        </div>
+      </div>
+  </div>
+
+
+
+    </div>
+
+
+     <div v-else class="container px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h3 class="text-xl font-extrabold tracking-tight text-gray-900 leading-9 sm:text-2xl sm:leading-10"> This application  is {{caterer.status}} <br> <span v-if="caterer.isVerified" class="text-indigo-600">Registration is Already Verified</span><span v-else class="text-indigo-600">Registration is not Verified</span> </h3>
     </div>
   </div>
-</section>
+
 
   </div>
   </div>
@@ -218,7 +241,7 @@
 
 <script>
  import {
-    GET_CATERER_BY_ID,
+    GET_CATERER_BY_ID, VERIFY_CATERER, DECLINE_CATERER
 
   } from "@/graphql/query";
 export default {
@@ -226,11 +249,12 @@ export default {
    //middleware: 'authAdmin',
    data() {
       return {
+        remark:'',
         message: "",
         showAlert: false,
         type: "",
         error: null,
-        serviceId:'',
+        loading:false,
       }
    },
 
@@ -258,28 +282,52 @@ export default {
       },
 
 
-      async onSubmit() {
+      async verifyRegistration() {
         this.loading = true;
-        let formData={
-          heading:this.service.heading,
-          description:this.service.description
-        }
+
         try {
-          // const {data} = await this.$apollo.mutate({
-          //   mutation:  UPDATE_SERVICE_DETAIL,
-          //   variables: {
-          //     data: formData,
-          //     id:this.service.id
-          //   },
-          // })
+          const {data} = await this.$apollo.mutate({
+            mutation:  VERIFY_CATERER,
+            variables: {
+              remark: this.remark,
+              id:this.$route.params.id
+            },
+          })
           console.log(data)
+          this.refetchData();
         } catch (error) {
           this.message = error.message;
           this.showAlert = true;
           this.type = "danger";
            console.log(error);
         }
+           this.loading = false;
+      },
+
+         async declineRegistration() {
+        this.loading = true;
+
+        try {
+          const {data} = await this.$apollo.mutate({
+            mutation:  DECLINE_CATERER,
+            variables: {
+              remark: this.remark,
+              id:this.$route.params.id
+            },
+          })
+          console.log(data)
+          this.refetchData();
+        } catch (error) {
+          this.message = error.message;
+          this.showAlert = true;
+          this.type = "danger";
+           console.log(error);
+        }
+
         this.loading = false;
+      },
+       refetchData() {
+        this.$apollo.queries.caterer.refetch()
       }
 
      }

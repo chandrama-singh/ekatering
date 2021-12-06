@@ -35,8 +35,7 @@
     VERIFY_REGISTRATION_PAYMENT
   } from '@/graphql/query';
   export default {
-    layout:'register',
-    middleware: 'auth',
+    layout:'none',
     async asyncData(context) {
       let client = context.app.apolloProvider.defaultClient
       try {

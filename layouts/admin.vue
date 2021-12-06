@@ -39,24 +39,24 @@
           //   icon: 'fas fa-user-shield',
 
           // },
-            {
-            href: '/admin/plans',
-            title: 'Plans',
-            icon: 'fas fa-hands-helping',
+          //   {
+          //   href: '/admin/plans',
+          //   title: 'Plans',
+          //   icon: 'fas fa-hands-helping',
 
-          },
-          {
-            href: '/admin/pending_caterers',
-            title: 'Pending Application',
-             icon: 'far fa-clock'
+          // },
+          // {
+          //   href: '/admin/pending_caterers',
+          //   title: 'Pending Application',
+          //    icon: 'far fa-clock'
 
-          },
+          // },
           {
             href: '/admin/caterers',
             title: 'Caterers',
              icon: 'fas fa-utensils'
           },
-           
+
           // {
           //  href: '/admin/payments',
           //   title: 'Payments',

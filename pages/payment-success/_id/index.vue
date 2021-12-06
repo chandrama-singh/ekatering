@@ -13,10 +13,8 @@
             <div class="flex flex-col mx-auto content-center justify-center">
               <p class="my-3 text-lg ">Take screenshot for future reference</p>
 
-               <span class=" font-bold flex p-3">planId: <p class="mx-3"> {{response.planId}} </p> </span>
                  <span class=" font-bold flex p-3">mode: <p class="mx-3">  {{response.mode}} </p> </span>
                <span class=" font-bold flex p-3">subscription: <p class="mx-3"> {{response.subscription}} </p> </span>
-                <span class=" font-bold flex p-3">payment_intent: <p class="mx-3">  {{response.payment_intent}} </p> </span>
               <span class=" font-bold flex p-3">status: <p class="mx-3">  {{response.status}} </p> </span>
               <span class=" font-bold flex p-3">customer: <p class="mx-3">  {{response.customer}} </p> </span>
 
@@ -33,7 +31,7 @@
 </template>
 <script>
   import {
-    VERIFY_PLAN_PAYMENT
+    VERIFY_SUBSCRIPTION_PAYMENT
   } from '@/graphql/query';
   export default {
     layout: 'main',
@@ -43,7 +41,7 @@
         const {
           data
         } = await client.mutate({
-          mutation: VERIFY_PLAN_PAYMENT,
+          mutation: VERIFY_SUBSCRIPTION_PAYMENT,
           variables: {
             id: context.route.params.id
           }
@@ -51,7 +49,7 @@
         return {
           isVerified: true,
           error: null,
-          response: data.verifyPlanPayment
+          response: data.result
         };
       } catch (err) {
         console.log(err)

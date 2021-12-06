@@ -828,7 +828,7 @@
 <script>
 export default {
    layout:'register',
-    middleware: 'authUser',
+
 
 }
 </script>

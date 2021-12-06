@@ -12,20 +12,15 @@
         </div>
 
       </div>
-      <div v-if="plan" class="flex flex-wrap bg-blue-50 rounded shadow">
+      <div  class="flex flex-wrap bg-blue-50 rounded shadow">
         <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11">
-          <h2 v-if="plan" class="mb-2 justify-center text-3xl lg:text-4xl font-bold font-heading">{{plan.name}}</h2>
+          <h2  class="mb-2 justify-center text-3xl lg:text-4xl font-bold font-heading">Subscription</h2>
            <div class="flex flex-wrap justify-center">
           <label class="md:mr-4 w-full sm:w-auto flex items-center mr-8 mb-2">
-            <input v-model="interval" type="radio" name="billing" :value=true>
             <span class="mx-2 font-semibold">Monthly Billing</span>
-            <span class="inline-flex items-center justify-center w-16 h-10 bg-purple-600 text-white font-semibold rounded-lg">£{{plan.monthlyPrice/100}}</span>
+            <span class="inline-flex items-center justify-center w-16 h-10 bg-purple-600 text-white font-semibold rounded-lg">£19.99</span>
           </label>
-          <label class="flex w-full sm:w-auto items-center mb-2">
-            <input v-model="interval" type="radio" name="billing" :value=false>
-            <span class="mx-2 font-semibold">One time Payment</span>
-            <span class="inline-flex items-center justify-center w-16 h-10 bg-purple-600 text-white font-semibold rounded-lg">£{{plan.price/100}}</span>
-          </label>
+
         </div>
         <div class="flex justify-center ">
 
@@ -61,34 +56,22 @@
 <script>
 import PaymentUs from '@/components/PaymentUs.vue'
 import { StripeCheckout } from '@vue-stripe/vue-stripe'
-import {GET_PLAN_BY_ID, SUBSCRIBE_PLAN} from "@/graphql/query";
+import { SUBSCRIBE_CATERER} from "@/graphql/query";
 export default {
     name: 'payment',
-     layout:"default",
+     layout:"none",
      data () {
 
     return {
       interval:'',
-       publishableKey : "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",
+    publishableKey : "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",
      sessionId: '',
       loading: false,
       showAlert:false,
       lineItems: [ ],
     };
   },
-   apollo: {
-      plan: {
-        query: GET_PLAN_BY_ID,
-        variables() {
-          return {
-            id: this.$route.params.id
-          };
-        },
-        error(error) {
-          console.log(error);
-        }
-      }
-    },
+
 
 
     components:{
@@ -97,32 +80,9 @@ export default {
     },
     methods: {
     async makePayment () {
-
-      this.$store.commit('setCurrentProgram', this.plan.id);
-      console.log(typeof( this.interval));
-      if(this.interval){
-      this.lineItems=[{
-          price: this.plan.recurringPriceID, // The id of the recurring price you created in your Stripe dashboard
-          quantity: 1,
-        },]
-         }
-         else{
-           this.lineItems=[{
-          price: this.plan.oneTimePriceID, // The id of the recurring price you created in your Stripe dashboard
-          quantity: 1,
-        },
-        ]
-
-         }
-
-      console.log(this.plan.id);
       try {
           const {data} = await this.$apollo.mutate({
-            mutation: SUBSCRIBE_PLAN,
-            variables: {
-              id:this.plan.id,
-              interval:this.interval
-            },
+            mutation: SUBSCRIBE_CATERER
           })
 
           console.log(data);

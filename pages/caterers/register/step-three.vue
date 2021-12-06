@@ -57,7 +57,7 @@
 <!---------------------------Form-------------------------------->
 <div>
   <div class="flex flex-col  space-y-6 justify-center">
-            <table class="min-w-full table-auto">
+            <table class="min-w-full table-auto mb-12">
               <thead class="justify-between">
                 <tr class="bg-gray-800">
 
@@ -84,7 +84,7 @@
                       >Proof of address</span
                     >
                   </td>
-                  <td class="px-10  py-2">
+                  <td class="px-4 py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -217,7 +217,64 @@
                 </tr>
               </tbody>
             </table>
-             <div class="justify-center items-center pl-10">
+
+             <div class="bg-gray-50 my-12">
+
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center shadow-lg lg:justify-between" my-10>
+      <h2 class="text-lg font-bold tracking-tight text-gray-900 sm:text-xl">
+        <span class="block text-indigo-600">FHRS Next Inspection Due Date </span>
+                      <span class="block text-indigo-600"> (call your local authority
+                      to get this date):</span>
+      </h2>
+
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+
+           <div class="w-full flex flex-col mb-3">
+
+                    <div class="flex items-center py-6">
+                      <!-- <div
+                        class="
+                          w-12
+                          h-12
+                          mr-4
+                          flex-none
+                          rounded-xl
+                          border
+                          overflow-hidden
+                        "
+                      >
+                        <img
+                          class="w-12 h-12 mr-4 object-cover"
+                          src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                          alt="Avatar Upload"
+                        />
+                      </div> -->
+
+
+                        <input
+                          placeholder="DD/MM/YYYY"
+                          v-model="dueDate"
+                      class="
+                        appearance-none
+                        block
+                        w-full
+                        bg-grey-lighter
+                        text-grey-darker
+                        border border-grey-lighter
+                        rounded-lg
+                        px-4
+                      "
+                      type="date"
+
+                      id="datetime"
+                        />
+
+                    </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+             <div class="justify-center items-center my-12 py-8 pl-10">
         <button
           class="
             w-full
@@ -236,7 +293,7 @@
           Save and GoNext
         </button>
       </div>
-      <div class="justify-center items-center pl-10">
+      <div class="justify-center items-center pl-10 mb-20">
         <button
           class="
             w-full
@@ -263,7 +320,7 @@
   </section>
 </template>
 <script>
-import {  UPDATE_CATERER_ADDRESS_PROOF,UPDATE_CATERER_FOOD_REGISTRATION,UPDATE_CATERER_FHRS_LETTER  } from "@/graphql/query";
+import {  UPDATE_CATERER_ADDRESS_PROOF,UPDATE_CATERER_FOOD_REGISTRATION,UPDATE_CATERER_FHRS_LETTER, UPDATE_FHRS_DATE  } from "@/graphql/query";
 export default {
    layout:'register',
    middleware: 'auth',
@@ -276,6 +333,7 @@ export default {
       address_uploaded:false,
       food_uploaded:false,
       fhrs_uploaded:false,
+      dueDate:''
 
     };
   },
@@ -384,6 +442,28 @@ export default {
          this.loading = false;
       }
     },
+
+     async updateFhrsDate() {
+      console.log(this.dueDate);
+      var mydate = new Date(this.dueDate);
+console.log(mydate.toDateString());
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_FHRS_DATE,
+          variables: {
+            dueDate: mydate,
+          },
+        });
+        this.loading = false;
+        console.log(res.data.result);
+       this.$router.push("/caterers/register/step-four");
+      } catch (error) {
+        console.log(error);
+         this.loading = false;
+      }
+    },
+
+
     next4() {
       if (this.documents.address_proof == ''){
 
@@ -393,8 +473,11 @@ export default {
       {alert("food_registration letter not uploaded");}
       else if (this.documents.fhrs_letter == "")
       {alert("fhrs_letter not uploaded");}
+       else if (this.dueDate == "")
+      {alert("fhrs date is not selected");}
       else{
-          this.$router.push("/caterers/register/step-four");
+        this.updateFhrsDate();
+
       }
 
 

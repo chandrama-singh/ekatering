@@ -26,7 +26,14 @@ export const mutations = {
 
     if(param.isLogin){
       if(param.user.isVerified){
-        this.$router.push({path: `/${param.user.role}/dashboard`})
+        if(param.user.isSubscribed){
+          this.$router.push({path: `/${param.user.role}/dashboard`})
+
+        }
+        else{
+
+          this.$router.push({path: `/${param.user.role}/subscription-payment`})
+        }
       }
       else{
         if(param.user.isRegistered){
@@ -41,10 +48,6 @@ export const mutations = {
     }else{
       this.$router.push('/')
     }
-  },
-
-  setCurrentPlan(state, payload) {
-    state.currentPlan = payload;
   },
 
 

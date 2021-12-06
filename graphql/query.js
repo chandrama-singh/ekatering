@@ -34,6 +34,7 @@ mutation LoginCatererMutation($password: String!, $email: String!) {
         last_name
         email
         photo
+        banner
         bio
         facebook
         instagram
@@ -49,6 +50,9 @@ mutation LoginCatererMutation($password: String!, $email: String!) {
         isVerified
         isEmailVerified
         isRegistered
+        isSubscribed
+        isAvailable
+        fhrs_date
         status
         remark
         createdAt
@@ -77,45 +81,49 @@ export const GET_ME = graphql`
   query mySelf {
     mySelf {
       id
-      email
-      fullName
-      first_name
-      last_name
-      email
-      photo
-      bio
-      facebook
-      instagram
-      twitter
-      mobile
-      role
-      business_name
-      business_category{
-        name
-        value
-      }
-      business_email
-      isVerified
-      isEmailVerified
-      isRegistered
-      status
-      remark
-      createdAt
-      updatedAt
-      address{
-        address_line_1
-        address_line_2
-        country
-        town
-        latitude
-        longitude
-        postcode
-      }
-      documents{
-        address_proof
-        food_registration_letter
-        fhrs_letter
-      }
+        email
+        fullName
+        first_name
+        last_name
+        email
+        photo
+        banner
+        bio
+        facebook
+        instagram
+        twitter
+        mobile
+        role
+        business_name
+        business_category{
+          name
+          value
+        }
+        business_email
+        isVerified
+        isEmailVerified
+        isRegistered
+        isSubscribed
+        isAvailable
+        fhrs_date
+        status
+        remark
+        createdAt
+        updatedAt
+        address{
+          address_line_1
+          address_line_2
+          country
+          town
+          latitude
+          longitude
+          postcode
+        }
+        documents{
+          address_proof
+          food_registration_letter
+          fhrs_letter
+        }
     }
   }
 `;
@@ -125,48 +133,105 @@ export const GET_ALL_CATERER = graphql`
   query caterers {
     caterers {
       id
-      email
-      fullName
-      first_name
-      last_name
-      email
-      photo
-      bio
-      facebook
-      instagram
-      twitter
-      mobile
-      status
-      role
-      business_name
-      business_category{
-        name
-        value
-      }
-      business_email
-      isVerified
-      isEmailVerified
-      isRegistered
-      remark
-      createdAt
-      updatedAt
-      address{
-        address_line_1
-        address_line_2
-        country
-        town
-        latitude
-        longitude
-        postcode
-      }
-      documents{
-        address_proof
-        food_registration_letter
-        fhrs_letter
-      }
+        email
+        fullName
+        first_name
+        last_name
+        email
+        photo
+        banner
+        bio
+        facebook
+        instagram
+        twitter
+        mobile
+        role
+        business_name
+        business_category{
+          name
+          value
+        }
+        business_email
+        isVerified
+        isEmailVerified
+        isRegistered
+        isSubscribed
+        isAvailable
+        fhrs_date
+        status
+        remark
+        createdAt
+        updatedAt
+        address{
+          address_line_1
+          address_line_2
+          country
+          town
+          latitude
+          longitude
+          postcode
+        }
+        documents{
+          address_proof
+          food_registration_letter
+          fhrs_letter
+        }
     }
   }
 `;
+
+
+export const GET_PENDING_CATERER = graphql`
+  query pendingCaterers {
+    pendingCaterers {
+        id
+        email
+        fullName
+        first_name
+        last_name
+        email
+        photo
+        banner
+        bio
+        facebook
+        instagram
+        twitter
+        mobile
+        role
+        business_name
+        business_category{
+          name
+          value
+        }
+        business_email
+        isVerified
+        isEmailVerified
+        isRegistered
+        isSubscribed
+        isAvailable
+        fhrs_date
+        status
+        remark
+        createdAt
+        updatedAt
+        address{
+          address_line_1
+          address_line_2
+          country
+          town
+          latitude
+          longitude
+          postcode
+        }
+        documents{
+          address_proof
+          food_registration_letter
+          fhrs_letter
+        }
+    }
+  }
+`;
+
 
 
 export const GET_CATERER_BY_ID = graphql`
@@ -179,6 +244,7 @@ export const GET_CATERER_BY_ID = graphql`
       last_name
       email
       photo
+      banner
       bio
       facebook
       instagram
@@ -190,11 +256,14 @@ export const GET_CATERER_BY_ID = graphql`
         name
         value
       }
-      status
       business_email
       isVerified
       isEmailVerified
       isRegistered
+      isSubscribed
+      isAvailable
+      fhrs_date
+      status
       remark
       createdAt
       updatedAt
@@ -288,6 +357,12 @@ export const UPDATE_CATERER_PROFILE = graphql`
   }
 `;
 
+export const UPDATE_CATERER_BANNER = graphql`
+  mutation uploadCatererBanner($file: Upload!) {
+    result: uploadCatererBanner(file: $file)
+  }
+`;
+
 export const UPDATE_CATERER_ADDRESS_PROOF = graphql`
   mutation uploadCatererAddressProof($file: Upload!) {
     result: uploadCatererAddressProof(file: $file)
@@ -302,6 +377,12 @@ export const UPDATE_CATERER_FOOD_REGISTRATION = graphql`
 export const UPDATE_CATERER_FHRS_LETTER = graphql`
   mutation uploadCatererFHRSLetter($file: Upload!) {
     result: uploadCatererFHRSLetter(file: $file)
+  }
+`;
+
+export const UPDATE_FHRS_DATE = graphql`
+  mutation updateCatererFhrsDate($dueDate: DateTime!) {
+    result: updateCatererFhrsDate(dueDate: $dueDate)
   }
 `;
 
@@ -694,62 +775,24 @@ export const GET_PAYMENT_BY_ID = graphql`
   }
 `;
 
-export const GET_ALL_PLAN = graphql`
-  query plans {
-    plans {
-      id
-      name
-      price
-      monthlyPrice
-      banner
-      description
-      productID
-      recurringPriceID
-      oneTimePriceID
-      isRecommended
-      status
-      createdAt
-      updatedAt
-    }
-  }
-`;
 
-export const GET_PLAN_BY_ID = graphql`
-  query plan($id: ID!) {
-    plan(id: $id) {
-      id
-      name
-      price
-      monthlyPrice
-      banner
-      description
-      productID
-      recurringPriceID
-      oneTimePriceID
-      isRecommended
-      status
-      createdAt
-      updatedAt
-    }
-  }
-`;
 
-export const SUBSCRIBE_PLAN = graphql`
-  mutation subscribeCatererPlan($id: ID!,$interval: Boolean!,) {
-    result: subscribeCatererPlan(id: $id, interval: $interval)
+
+
+export const SUBSCRIBE_CATERER = graphql`
+  mutation subscribeCaterer {
+    result: subscribeCaterer
   }
 `;
 
 
-export const VERIFY_PLAN_PAYMENT = graphql`
-  mutation verifyPlanPayment($id: ID!) {
-    verifyPlanPayment(id: $id){
-      planId
+export const VERIFY_SUBSCRIPTION_PAYMENT = graphql`
+  mutation verifySubscriptionPayment($id: ID!) {
+   result: verifySubscriptionPayment(id: $id){
       subscription
       status
       mode
       customer
-      payment_intent
     }
   }
 `;

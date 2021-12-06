@@ -99,11 +99,7 @@ export default {
           title: "My Training",
           icon: "fa fa-graduation-cap",
         },
-        {
-          href: "/caterers/subscription",
-          title: "Subscription",
-          icon: "fas fa-user-clock",
-        },
+
         {
           title: "Products",
           href: "/caterers/products",

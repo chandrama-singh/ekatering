@@ -1,5 +1,7 @@
 <template>
-  <div
+ <div class=" max-w-4xl mx-auto py-10 space-y-6">
+<!---------------------------Form-------------------------------->
+ <div
     v-if="user"
     class="
       bg-white
@@ -14,6 +16,8 @@
       shadow-sm
     "
   >
+  <div>
+    <div>
     <div
       class="
         relative
@@ -54,22 +58,67 @@
         click to change profile photo
       </p>
     </div>
+    </div>
+     <div>
+    <div
+      class="
+        relative
+        shadow
+        mx-auto
+        mt-6
+        h-64
+        w-2/3
+        -my-12
+        border-white
+
+        overflow-hidden
+        border-4
+      "
+    >
+      <input
+        type="file"
+        ref="banner"
+        accept="image/*"
+        v-show="false"
+        @change="previewBanner"
+      />
+      <img
+        v-if="user.banner"
+        class="object-cover w-full h-full"
+        :src="user.banner"
+        @click="selectBanner"
+      />
+      <img
+        v-else
+        class="object-cover w-full h-full"
+        src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        @click="selectBanner"
+      />
+    </div>
+    <div class="mt-16">
+      <p class="text-sm text-gray-600 text-center">
+        click to change banner image
+      </p>
+    </div>
+    </div>
+    </div>
 
 
     <div class="flex flex-col items-start justify-start mb-4">
         <div class="flex flex-col">
           <label class="block text-lg mb-2" for="name">Choose Your Role</label>
-            <label class="inline-flex items-center mt-3">
-                <input type="checkbox" class="form-checkbox h-5 w-5 text-gray-600" checked><span class="ml-2 text-gray-700">Home Chef</span>
-            </label>
+          <multiselect
+                                      v-model="selectedRole"
+                                      :multiple="true"
+                                      class="mb-3"
+                                      track-by="name"
+                                      label="name"
+                                      placeholder="Select"
+                                      :options="roles"
+                                      :searchable="false"
+                                      :allow-empty="false">
+                              </multiselect>
 
-            <label class="inline-flex items-center mt-3">
-                <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600" checked><span class="ml-2 text-gray-700">Event Caterers</span>
-            </label>
-
-            <label class="inline-flex items-center mt-3">
-                <input type="checkbox" class="form-checkbox h-5 w-5 text-pink-600" checked><span class="ml-2 text-gray-700">Private Chef</span>
-            </label>
         </div>
     </div>
 
@@ -149,7 +198,7 @@
         <label class="block text-lg mb-2">Gender</label>
        <div class="flex">
   <label class="flex items-center">
-    <t-radio name="gender" v-model="user.gender" value="Male" checked />
+    <t-radio name="gender" v-model="user.gender" value="Male"  />
     <span class="ml-3 text-sm">Male</span>
   </label>
   <label class="flex items-center ml-3">
@@ -188,22 +237,37 @@
           type="button"
           @click="onSubmit"
         >
-          Update Detail
+          Save
         </button>
       </div>
+
     </div>
     <Loading v-if="loading" />
   </div>
+        <!------------------------------------Button----------------------------------->
+</div>
 </template>
 <script>
-import { UPDATE_CATERER, UPDATE_CATERER_PROFILE } from "@/graphql/query";
+import Multiselect from 'vue-multiselect'
+import { UPDATE_CATERER, UPDATE_CATERER_PROFILE, UPDATE_CATERER_BANNER } from "@/graphql/query";
 export default {
+   layout:'register',
+   middleware: 'auth',
   data() {
     return {
       profile: null,
+      banner: null,
       loading: false,
+      selectedRole:null,
+      roles:[
+        {name:"Home Chef", value:"home_chef"},
+        {name:"Event Caterer", value:"event_caterer"},
+        {name:"Private Chef", value:"private_chef"},
+
+      ]
     };
   },
+   components: { Multiselect  },
   computed:{
     user(){
       return {...this.$store.state.user};
@@ -213,6 +277,9 @@ export default {
   methods: {
     selectProfile() {
       this.$refs.profile.click();
+    },
+    selectBanner() {
+      this.$refs.banner.click();
     },
     previewProfile(event) {
       this.profile = event.target.files[0];
@@ -225,8 +292,28 @@ export default {
       }
     },
 
+     previewBanner(event) {
+      this.banner = event.target.files[0];
+      if (this.banner.size > 1024 * 1024) {
+        alert("File too big (> 1MB)");
+      } else {
+        this.user.banner = URL.createObjectURL(this.banner);
+        this.loading = true;
+        this.updateBanner();
+      }
+    },
+
+
     async onSubmit() {
       this.loading = true;
+      var category=[]
+
+        this.selectedRole.forEach(element => {
+          category.push({name:element.name,value:element.value})
+
+        });
+
+
       var formData = {
         first_name: this.user.first_name,
         last_name: this.user.last_name,
@@ -235,6 +322,7 @@ export default {
         bio: this.user.bio,
         gender: this.user.gender,
         business_name: this.user.business_name,
+        business_category: category,
         business_email: this.user.business_email,
       };
       console.log("submit form", formData)
@@ -246,8 +334,10 @@ export default {
           },
         });
         console.log(res.data.result);
+
       } catch (error) {
         console.log(error);
+        alert(error)
       }
       this.loading = false;
     },
@@ -268,10 +358,29 @@ export default {
          this.loading = false;
       }
     },
+
+     async updateBanner() {
+      console.log(this.banner);
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_CATERER_BANNER,
+          variables: {
+            file: this.banner,
+          },
+        });
+        this.loading = false;
+        console.log(res.data.result);
+      } catch (error) {
+        console.log(error);
+         this.loading = false;
+      }
+    },
+
   },
 
   created() {
     this.user = this.$store.state.user;
+    this.selectedRole=this.user.business_category
   },
 };
 </script>

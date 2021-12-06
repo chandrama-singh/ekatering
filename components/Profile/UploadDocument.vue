@@ -1,37 +1,36 @@
 <template>
+<div class=" max-w-4xl mx-auto py-10 space-y-6">
+<!---------------------------Form-------------------------------->
 <div>
-  <div class="px-6">
-            <table class="min-w-full table-auto">
+  <div class="flex flex-col  space-y-6 justify-center">
+            <table class="min-w-full table-auto mb-12">
               <thead class="justify-between">
                 <tr class="bg-gray-800">
 
-                  <th class="px-16 py-2">
+                  <th class="px-10 py-2">
                     <span class="text-gray-300">Document Name</span>
                   </th>
-                  <th class="px-16 py-2">
+                  <th class="px-10 py-2">
                     <span class="text-gray-300">Upload</span>
                   </th>
-                  <th class="px-16 py-2">
+                  <th class="px-10 py-2">
                     <span class="text-gray-300"></span>
                   </th>
-                   <th class="px-16 py-2">
+                   <th class="px-10 py-2">
                     <span class="text-gray-300">Link</span>
                   </th>
 
-
-
-
                 </tr>
               </thead>
-              <tbody class="bg-gray-200">
+              <tbody class="bg-gray-200 px-4">
                 <tr class="bg-white border-4 border-gray-200">
 
                   <td>
-                    <span class="text-center ml-2 font-semibold"
+                    <span class="text-center pl-4 font-semibold"
                       >Proof of address</span
                     >
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-4 py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -47,7 +46,8 @@
                       Upload File
                     </button>
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
+                    <div v-if="address_uploaded">Uploaded</div>
                    <input
         type="file"
         ref="address_proof"
@@ -58,7 +58,7 @@
                   </td>
 
 
-                 <td class="px-16 py-2">
+                 <td class="px-10 py-2">
                    <a :href="documents.address_proof" target="_blank" class="border-gray-400" v-if="documents">
     <div class="select-none cursor-pointer bg-white rounded-md flex  md:flex-row flex-col md:text-left text-center items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1">
       <div class="py-2 md:mr-16">
@@ -69,14 +69,14 @@
   </a>
                   </td>
                 </tr>
-                <tr class="bg-white border-4 border-gray-200">
+                <tr class="bg-white border-4 border-gray-200 px-2">
 
-                  <td>
-                    <span class="text-center ml-2 font-semibold"
+                  <td class="pl-4">
+                    <span class="text-left font-semibold"
                       >Local Authority Food Registration Letter</span
                     >
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-4 py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -92,7 +92,8 @@
                       Upload File
                     </button>
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
+                    <div v-if="food_uploaded">Uploaded</div>
                      <input
         type="file"
         ref="food_registration"
@@ -103,7 +104,7 @@
                   </td>
 
 
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
                    <a :href="documents.food_registration_letter" target="_blank" class="border-gray-400" v-if="documents">
     <div class="select-none cursor-pointer bg-white rounded-md flex  md:flex-row flex-col md:text-left text-center items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1">
       <div class="py-2 md:mr-16">
@@ -116,12 +117,12 @@
                 </tr>
                 <tr class="bg-white border-4 border-gray-200">
 
-                  <td>
-                    <span class="text-center ml-2 font-semibold"
+                  <td class="pl-4">
+                    <span class="text-center font-semibold"
                       >Food Hygiene Rating Scheme (FHRS) award letter</span
                     >
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-4 py-2">
                     <button
                       class="
                         bg-indigo-500
@@ -137,7 +138,8 @@
                       Upload file
                     </button>
                   </td>
-                  <td class="px-16 py-2">
+                  <td class="px-10 py-2">
+                    <div v-if="fhrs_uploaded">Uploaded</div>
                     <input
         type="file"
         ref="fhrs_letter"
@@ -147,7 +149,7 @@
       />
                   </td>
 
-                 <td class="px-16 py-2">
+                 <td class="px-10 py-2">
 
                    <a :href="documents.fhrs_letter" target="_blank" class="border-gray-400" v-if="documents">
     <div class="select-none cursor-pointer bg-white rounded-md flex  md:flex-row flex-col md:text-left text-center items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1">
@@ -161,20 +163,106 @@
                 </tr>
               </tbody>
             </table>
+
+             <div class="bg-gray-50 my-12">
+
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center shadow-lg lg:justify-between" my-10>
+      <h2 class="text-lg font-bold tracking-tight text-gray-900 sm:text-xl">
+        <span class="block text-indigo-600">FHRS Next Inspection Due Date </span>
+                      <span class="block text-indigo-600"> (call your local authority
+                      to get this date):</span>
+      </h2>
+
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+
+           <div class="w-full flex flex-col mb-3">
+
+                    <div class="flex items-center py-6">
+                      <!-- <div
+                        class="
+                          w-12
+                          h-12
+                          mr-4
+                          flex-none
+                          rounded-xl
+                          border
+                          overflow-hidden
+                        "
+                      >
+                        <img
+                          class="w-12 h-12 mr-4 object-cover"
+                          src="https://images.unsplash.com/photo-1611867967135-0faab97d1530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80"
+                          alt="Avatar Upload"
+                        />
+                      </div> -->
+
+
+                        <input
+                          placeholder="DD/MM/YYYY"
+                          v-model="dueDate"
+                      class="
+                        appearance-none
+                        block
+                        w-full
+                        bg-grey-lighter
+                        text-grey-darker
+                        border border-grey-lighter
+                        rounded-lg
+                        px-4
+                      "
+                      type="date"
+
+                      id="datetime"
+                        />
+
+                    </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+             <div class="justify-center items-center my-12 py-8 pl-10">
+        <button
+          class="
+            w-full
+            px-4
+            py-2
+            font-bold
+            text-white
+            bg-purple-500
+            rounded-full
+            hover:bg-purple-700
+            focus:outline-none focus:shadow-outline
+          "
+          type="button"
+          @click="next4"
+        >
+          Save
+        </button>
+      </div>
+
           </div>
            <Loading v-if="loading" />
   </div>
+        <!------------------------------------Button----------------------------------->
+</div>
 </template>
 
 <script>
-import {  UPDATE_CATERER_ADDRESS_PROOF,UPDATE_CATERER_FOOD_REGISTRATION,UPDATE_CATERER_FHRS_LETTER  } from "@/graphql/query";
+import {  UPDATE_CATERER_ADDRESS_PROOF,UPDATE_CATERER_FOOD_REGISTRATION,UPDATE_CATERER_FHRS_LETTER, UPDATE_FHRS_DATE  } from "@/graphql/query";
 export default {
+   layout:'register',
+   middleware: 'auth',
   data() {
     return {
       address_proof: null,
       food_registration: null,
       fhrs_letter: null,
       loading: false,
+      address_uploaded:false,
+      food_uploaded:false,
+      fhrs_uploaded:false,
+      dueDate:''
+
     };
   },
   computed:{
@@ -182,6 +270,7 @@ export default {
       return {...this.$store.state.user.documents};
     }
   },
+
 
   methods: {
     selectAddressProof() {
@@ -239,6 +328,7 @@ export default {
         });
         this.loading = false;
         console.log(res.data.result);
+        this.address_uploaded=true;
       } catch (error) {
         console.log(error);
          this.loading = false;
@@ -256,6 +346,8 @@ export default {
         });
         this.loading = false;
         console.log(res.data.result);
+        this.food_uploaded=true;
+
       } catch (error) {
         console.log(error);
          this.loading = false;
@@ -272,20 +364,57 @@ export default {
         });
         this.loading = false;
         console.log(res.data.result);
+        this.fhrs_uploaded=true;
       } catch (error) {
         console.log(error);
          this.loading = false;
       }
     },
+
+     async updateFhrsDate() {
+      console.log(this.dueDate);
+      var mydate = new Date(this.dueDate);
+console.log(mydate.toDateString());
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_FHRS_DATE,
+          variables: {
+            dueDate: mydate,
+          },
+        });
+        this.loading = false;
+        console.log(res.data.result);
+
+      } catch (error) {
+        console.log(error);
+         this.loading = false;
+      }
+    },
+
+
+    next4() {
+      if (this.documents.address_proof == ''){
+
+        alert("address proof not uploaded");
+      }
+      else if (this.documents.food_registration_letter == "")
+      {alert("food_registration letter not uploaded");}
+      else if (this.documents.fhrs_letter == "")
+      {alert("fhrs_letter not uploaded");}
+       else if (this.dueDate == "")
+      {alert("fhrs date is not selected");}
+      else{
+        this.updateFhrsDate();
+
+      }
+
+
   },
 
-  created() {
-    this.user = this.$store.state.user;
+
+
   },
+
+
 };
 </script>
-
-
-<style>
-
-</style>

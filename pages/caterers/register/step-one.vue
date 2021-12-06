@@ -70,6 +70,8 @@
       shadow-sm
     "
   >
+  <div>
+    <div>
     <div
       class="
         relative
@@ -109,6 +111,50 @@
       <p class="text-sm text-gray-600 text-center">
         click to change profile photo
       </p>
+    </div>
+    </div>
+     <div>
+    <div
+      class="
+        relative
+        shadow
+        mx-auto
+        mt-6
+        h-64
+        w-2/3
+        -my-12
+        border-white
+
+        overflow-hidden
+        border-4
+      "
+    >
+      <input
+        type="file"
+        ref="banner"
+        accept="image/*"
+        v-show="false"
+        @change="previewBanner"
+      />
+      <img
+        v-if="user.banner"
+        class="object-cover w-full h-full"
+        :src="user.banner"
+        @click="selectBanner"
+      />
+      <img
+        v-else
+        class="object-cover w-full h-full"
+        src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        @click="selectBanner"
+      />
+    </div>
+    <div class="mt-16">
+      <p class="text-sm text-gray-600 text-center">
+        click to change banner image
+      </p>
+    </div>
+    </div>
     </div>
 
 
@@ -258,13 +304,14 @@
 </template>
 <script>
 import Multiselect from 'vue-multiselect'
-import { UPDATE_CATERER, UPDATE_CATERER_PROFILE } from "@/graphql/query";
+import { UPDATE_CATERER, UPDATE_CATERER_PROFILE, UPDATE_CATERER_BANNER } from "@/graphql/query";
 export default {
    layout:'register',
    middleware: 'auth',
   data() {
     return {
       profile: null,
+      banner: null,
       loading: false,
       selectedRole:null,
       roles:[
@@ -286,6 +333,9 @@ export default {
     selectProfile() {
       this.$refs.profile.click();
     },
+    selectBanner() {
+      this.$refs.banner.click();
+    },
     previewProfile(event) {
       this.profile = event.target.files[0];
       if (this.profile.size > 1024 * 1024) {
@@ -294,6 +344,17 @@ export default {
         this.user.photo = URL.createObjectURL(this.profile);
         this.loading = true;
         this.updateProfile();
+      }
+    },
+
+     previewBanner(event) {
+      this.banner = event.target.files[0];
+      if (this.banner.size > 1024 * 1024) {
+        alert("File too big (> 1MB)");
+      } else {
+        this.user.banner = URL.createObjectURL(this.banner);
+        this.loading = true;
+        this.updateBanner();
       }
     },
 
@@ -343,6 +404,23 @@ export default {
           mutation: UPDATE_CATERER_PROFILE,
           variables: {
             file: this.profile,
+          },
+        });
+        this.loading = false;
+        console.log(res.data.result);
+      } catch (error) {
+        console.log(error);
+         this.loading = false;
+      }
+    },
+
+     async updateBanner() {
+      console.log(this.banner);
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_CATERER_BANNER,
+          variables: {
+            file: this.banner,
           },
         });
         this.loading = false;
