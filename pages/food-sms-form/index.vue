@@ -45,16 +45,17 @@
                         block
                         w-full
                         bg-grey-lighter
-                        text-grey-darker
+                         text-gray-darker
                         border border-grey-lighter
                         rounded-lg
                         h-10
                         px-4
+                        
                       "
                       required="required"
-                      type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      type="date"
+                      
+                      id="datetime"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -243,7 +244,7 @@
                     />
             </div>
             <!--------------------------------------------------------------------------------------->
-            <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
+            <div class="p-3 border-b flex justify-between bg-purple-500 text-white">
             <h2 class="text-lg font-bold">
                 Scope of Business (in 50 words or less): Who do you supply to; amount; locality
             </h2>
@@ -267,7 +268,7 @@
                      rows="10"
                     ></textarea>
             </div>
-            <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
+            <div class="p-3 border-b flex justify-between bg-purple-500 text-white">
             <h2 class="text-lg ">
                 <b>Product(s) description and intended use:</b> Please describe each product range in 150 words or less. We consider a “range of products” to be similar in flavour and similar process.
             </h2>
@@ -292,7 +293,7 @@
                     ></textarea>
             </div>
         <!--------------------------------------->
-        <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
+        <div class="p-3 border-b flex justify-between bg-purple-500 text-white">
             <h2 class="text-lg ">
                 <b>Is the product manufactured in accordance with an ISO standard?</b> Yes/No <br/><b>If no, how is quality managed? E.g.,</b> Quality is managed with an in-house quality program.
             </h2>
