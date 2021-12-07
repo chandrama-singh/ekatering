@@ -30,8 +30,8 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.name"
+
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -53,8 +53,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                       v-model="formData.email"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -76,11 +75,10 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                       v-model="formData.contact_number"
                     />
             </div>
-            
+
          <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
               <p class="text-gray-600 ">
                     Message
@@ -101,59 +99,12 @@
                       required="required"
                       type="text"
                      rows="8"
+                      v-model="formData.message"
                     ></textarea>
             </div>
-            
+
         <!--------------------------------------->
-    
-             <!-- <div class="p-4 border-b flex justify-center py-6">
-                        <button type="submit"
-                            class="inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
-                            Submit
-                        </button>
-        </div> -->
-        </div>
-    </div>
-  
-</div>
-<!-- Payment Section  --><!-- Payment Section  --><!-- Payment Section  -->
-    <!-- Payment Section  --><!-- Payment Section  --><!-- Payment Section  -->
-<section class="py-1 bg-blueGray-100">
-    <div class="w-full lg:w-8/12 px-4 mx-auto mt-4">
-      <div
-        class="
-          relative
-          flex flex-col
-          min-w-0
-          break-words
-          w-full
-          mb-6
-          shadow-lg
-          rounded-lg
-          bg-blue-50
-          border-2
-          border-purple-400
-        "
-      >
-        <div class="rounded-t bg-purple-500 mb-0 px-6 py-6">
-          <div class="text-center flex justify-center text-white">
-            <h6 class="text-blueGray-700 text-xl font-bold">CHECKOUT</h6>
-          </div>
-        </div>
-       <div class="text-center flex justify-center mt-3">
-           <ul class="flex">
-            <li class="mx-2">
-              <img class="w-24" src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/computop.png" alt="" />
-            </li>
-            <li class="mx-2">
-              <img class="w-24" src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/verified-by-visa.png" alt="" />
-            </li>
-            <li class="ml-5">
-              <img class="w-14" src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/mastercard-id-check.png" alt="" />
-            </li>
-          </ul>
-        </div>
-        <div
+         <div
           class="
             flex flex-wrap
             text-center
@@ -223,204 +174,85 @@
           </div>
         </div>
 
-        <div class="flex-auto px-4 lg:px-10 py-10 pt-6">
-          <form>
-            <div class="flex flex-wrap">
-              <div class="w-full lg:w-12/12 px-4">
-                <div class="relative w-full mb-3 text-left">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-blueGray-600 text-sm
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    Cardholder Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Name on the Card"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    rows="4"
-                  />
-                </div>
-
-                <div class="relative w-full mb-3 text-left">
-                  <label
-                    class="
-                      block
-                      uppercase
-                      text-blueGray-600 text-sm
-                      font-bold
-                      mb-2
-                    "
-                    htmlfor="grid-password"
-                  >
-                    Card Details
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Card Number"
-                    class="
-                      border-0
-                      px-3
-                      py-3
-                      placeholder-blueGray-300
-                      text-blueGray-600
-                      bg-white
-                      rounded
-                      text-sm
-                      shadow
-                      focus:outline-none focus:ring
-                      w-full
-                      ease-linear
-                      transition-all
-                      duration-150
-                    "
-                    rows="4"
-                  />
-                </div>
-
-                <div class="flex flex-wrap">
-                  <div class="w-full lg:w-6/12">
-                    <div class="relative w-full mb-3">
-                      <label
-                        class="
-                          block
-                          uppercase
-                          text-blueGray-600 text-xs
-                          font-bold
-                          mb-2
-                        "
-                        htmlfor="grid-password"
-                      >
-                        MM / YY
-                      </label>
-                      <span class="flex">
-                       <select
-                  name=""
-                  id=""
-                  class="form-select appearance-none block w-full px-5 py-2 border rounded-lg bg-white shadow-lg placeholder-gray-400 text-gray-700 focus:ring focus:outline-none"
-                  x-model="expired.month"
-                >
-                  <option value="" selected disabled>MM</option>
-                  <option value="01">01</option>
-                  <option value="02">02</option>
-                  <option value="03">03</option>
-                  <option value="04">04</option>
-                  <option value="05">05</option>
-                  <option value="06">06</option>
-                  <option value="07">07</option>
-                  <option value="08">08</option>
-                  <option value="09">09</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="form-select appearance-none block w-full px-5 py-2 border rounded-lg bg-white shadow-lg placeholder-gray-400 text-gray-700 focus:ring focus:outline-none"
-                  x-model="expired.year"
-                >
-                  <option value="" selected disabled>YY</option>
-                  <option value="2021">2021</option>
-                  <option value="2022">2022</option>
-                  <option value="2023">2023</option>
-                  <option value="2024">2024</option>
-                  <option value="2025">2025</option>
-                  <option value="2026">2026</option>
-                </select>
-                </span>
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-6/12 px-4">
-                    <div class="relative w-full mb-3">
-                      <label
-                        class="
-                          block
-                          uppercase
-                          text-blueGray-600 text-xs
-                          font-bold
-                          mb-2
-                        "
-                        htmlfor="grid-password"
-                      >
-                        CVV
-                      </label>
-                      <input
-                        type="cvv"
-                        class="
-                          border-0
-                          px-3
-                          py-3
-                          placeholder-blueGray-300
-                          text-blueGray-600
-                          bg-white
-                          rounded
-                          text-sm
-                          shadow
-                          focus:outline-none focus:ring
-                          w-full
-                          ease-linear
-                          transition-all
-                          duration-150
-                        "
-                      />
-                    </div>
-                  </div>
-                </div>
-                <input type="checkbox" class="mr-2" />I have read, understood
-                and agree to the Terms and Conditions
-                <button
-                  class="
-                    inline-block
-                    py-4
-                    px-8
-                    mt-4
-                    w-full
-                    leading-none
-                    text-white
-                    bg-purple-600
-                    hover:bg-purple-700
-                    font-semibold
-                    rounded
-                    md:rounded-lg
-                  "
-                >
-                  Make payment and submit application
-                </button>
-              </div>
-            </div>
-          </form>
+             <div class="p-4 border-b flex justify-center py-6">
+                        <button
+                        @click="onSubmit"
+                            class="inline-flex justify-center w-48 py-3 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
+                            Submit Application
+                        </button>
         </div>
-      </div>
+           <stripe-checkout
+      ref="checkoutRef"
+      :pk="publishableKey"
+      :session-id="sessionId"
+    />
+        </div>
     </div>
-  </section>
+
+</div>
+
   </section>
 
 </template>
 
 <script>
+import {
+  ADD_LOCALFORM,
+} from "@/graphql/query";
+import { StripeCheckout } from '@vue-stripe/vue-stripe'
 export default {
+
+  data(){
+    return{
+      loading: false,
+      message: null,
+      showAlert: false,
+      publishableKey : "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",
+     sessionId: '',
+      formData:{
+        name:'',
+        email:'',
+        contact_number: '',
+        message: ''
+      }
+
+    }
+  },
+   components:{
+         StripeCheckout,
+    },
+  methods:{
+    async onSubmit() {
+      this.loading = true;
+      console.log(this.formData);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: ADD_LOCALFORM,
+          variables: {
+            data: this.formData,
+          },
+        });
+        console.log(data);
+         if(data.result!=null)
+          {
+          this.sessionId=data.result;
+          this.$refs.checkoutRef.redirectToCheckout();
+           }
+           else{
+             alert(" getting some error")
+
+           }
+
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+    },
+
+  }
 
 }
 </script>

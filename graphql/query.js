@@ -798,6 +798,24 @@ export const VERIFY_SUBSCRIPTION_PAYMENT = graphql`
 `;
 
 
+export const ADD_LOCALFORM = graphql`
+  mutation addLocalForm($data: LocalFormInput!) {
+    result: addLocalForm(data: $data)
+  }
+`;
+
+export const VERIFY_LOCALFORM_PAYMENT = graphql`
+mutation verifyLocalFormPayment($id: String!) {
+ response: verifyLocalFormPayment(id: $id){
+    status
+    customer
+    mode
+    payment_intent
+  }
+}
+`;
+
+
 
 
 
