@@ -31,8 +31,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.amount"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -54,8 +53,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.name"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -77,8 +75,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.email"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -100,8 +97,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.number"
                     />
             </div>
             
@@ -125,13 +121,14 @@
                       required="required"
                       type="text"
                      rows="8"
+                     v-model="formData.message"
                     ></textarea>
             </div>
             
         <!--------------------------------------->
     
              <div class="p-4 border-b flex justify-center py-6">
-                        <button type="submit"
+                        <button type="submit" @click="onSubmit"
                             class="inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
                             Submit
                         </button>
@@ -146,6 +143,24 @@
 
 <script>
 export default {
+  
+  data(){
+    return{
+    formData:{
+      amount:'',
+      name:'',
+      email:'',
+      number:'',
+      message:''
+
+    }
+    }
+  },
+  methods:{
+    onSubmit(){
+      console.log(this.formData);
+    }
+  }
 
 }
 </script>

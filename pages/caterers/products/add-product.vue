@@ -119,7 +119,7 @@
                                           <div
                                             class="
                                               w-0
-                                              bg-green-300
+                                              bg-gray-300
                                               py-1
                                               rounded
                                             "
@@ -133,7 +133,8 @@
                                           w-10
                                           h-10
                                           mx-auto
-                                          bg-green-500
+                                          bg-white
+                                          border-2 border-gray-200
                                           rounded-full
                                           text-lg text-white
                                           flex
@@ -196,7 +197,7 @@
                                           <div
                                             class="
                                               w-0
-                                              bg-green-300
+                                              bg-gray-300
                                               py-1
                                               rounded
                                             "

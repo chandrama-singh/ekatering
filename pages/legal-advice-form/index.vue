@@ -55,8 +55,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.name"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -78,26 +77,25 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.email"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
                     I Need Help With :
                 </p>
-                 <select
+                 <select v-model="formData.needhelp"
                   name=""
                   id=""
                   class="form-select appearance-none block w-full px-5 py-2 border rounded-lg bg-white shadow-lg  placeholder-blueGray-300
                           text-blueGray-600 focus:ring focus:outline-none"
                   x-model="expired.month"
                 >
-                  <option value="" selected disabled>A food safety report</option>
-                  <option value="01">Improvement notice</option>
-                  <option value="02">Prohibition notice</option>
-                  <option value="03">Closure of my business</option>
-                  <option value="04">Other</option>
+                  <option value="" selected="selected" disabled>A food safety report</option>
+                  <option value="Improvement notice">Improvement notice</option>
+                  <option value="Prohibition notice">Prohibition notice</option>
+                  <option value="Closure of my business">Closure of my business</option>
+                  <option value="Other">Other</option>
                  
                 </select>
             </div>
@@ -122,13 +120,14 @@
                       required="required"
                       type="text"
                      rows="8"
+                     v-model="formData.message"
                     ></textarea>
             </div>
             
         <!--------------------------------------->
     
              <div class="p-4 border-b flex justify-center py-6">
-                        <button type="submit"
+                        <button type="submit" @click="onSubmit"
                             class="inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
                             Submit
                         </button>
@@ -143,6 +142,23 @@
 
 <script>
 export default {
+
+  data(){
+    return{
+      formData:{
+        name:'',
+        email:'',
+        needhelp:'',
+        message:''
+      }
+    }
+  },
+
+  methods:{
+    onSubmit(){
+      console.log(this.formData);
+    }
+  }
 
 }
 </script>

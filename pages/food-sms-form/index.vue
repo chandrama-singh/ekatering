@@ -31,7 +31,7 @@
                       "
                       required="required"
                       type="text"
-                     
+                      v-model="formData.reference"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -56,6 +56,7 @@
                       type="date"
                       
                       id="datetime"
+                      v-model="formData.date"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -77,8 +78,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                     v-model="formData.name"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -100,8 +100,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.jobtitle"
                     />
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -124,8 +123,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.number"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -147,8 +145,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.email"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -170,8 +167,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.companyName"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -193,8 +189,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.businessName"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -216,8 +211,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.regNumber"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-3 border-b">
@@ -239,8 +233,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.businessAddress"
                     />
             </div>
             <!--------------------------------------------------------------------------------------->
@@ -266,6 +259,7 @@
                       required="required"
                       type="text"
                      rows="10"
+                     v-model="formData.scope"
                     ></textarea>
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-500 text-white">
@@ -290,6 +284,7 @@
                       required="required"
                       type="text"
                      rows="8"
+                     v-model="formData.productDesc"
                     ></textarea>
             </div>
         <!--------------------------------------->
@@ -315,6 +310,7 @@
                       required="required"
                       type="text"
                      rows="8"
+                     v-model="formData.manufacture"
                     ></textarea>
             </div>
              <div class="p-4 border-b flex justify-center py-6">
@@ -322,7 +318,7 @@
                             class="mr-4 inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md   text-white bg-gray-600 hover:bg-gray-700 ">
                             Cancel
                         </button>
-                        <button type="submit"
+                        <button type="submit" @click="onSubmit"
                             class="inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
                             Submit
                         </button>
@@ -337,6 +333,31 @@
 
 <script>
 export default {
+  data(){
+    return{
+      formData:{
+        reference:'',
+        date:'',
+        name:'',
+        jobtitle:'',
+        number:'',
+        email:'',
+        companyName:'',
+        businessName:'',
+        regNumber:'',
+        businessAddress:'',
+        scope:'',
+        productDesc:'',
+        manufacture:''
+      }
+    }
+  },
+
+  methods:{
+    onSubmit(){
+      console.log(this.formData);
+    }
+  }
 
 }
 </script>
