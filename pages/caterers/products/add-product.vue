@@ -133,8 +133,7 @@
                                           w-10
                                           h-10
                                           mx-auto
-                                          bg-white
-                                          border-2 border-gray-200
+                                          bg-gray-400
                                           rounded-full
                                           text-lg text-white
                                           flex
