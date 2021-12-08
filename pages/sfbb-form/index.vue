@@ -71,7 +71,7 @@
               "
               required="required"
               type="text"
-             v-model="businessAddress"
+             v-model="formData.businessAddress"
             />
           </div>
           <div
@@ -149,7 +149,7 @@
           >
             <p class="text-gray-600">Home caterer</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.businessType" value="Home caterer"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -177,7 +177,7 @@
           >
             <p class="text-gray-600">Private Chef</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.businessType" value="Private Chef"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -205,7 +205,7 @@
           >
             <p class="text-gray-600">Event Caterer</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.businessType" value="Event caterer"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -233,7 +233,7 @@
           >
             <p class="text-gray-600">Take away</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.businessType" value="Take away"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -261,7 +261,7 @@
           >
             <p class="text-gray-600">Restaurant</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.businessType" value="Restuarant"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -310,6 +310,7 @@
               required="required"
               type="text"
               rows="8"
+              v-model="formData.cuisineType"
             ></textarea>
           </div>
           <div
@@ -345,6 +346,7 @@
               required="required"
               type="text"
               rows="8"
+              v-model="formData.menu"
             ></textarea>
           </div>
           <!--------------------------------------->
@@ -365,7 +367,8 @@
           >
             <p class="text-gray-600">Frozen only</p>
             <div class="flex items-center h-5">
-              <input v-modal="fromData.delivery" value="Frozen only" :checked="fromData.delivery === 'Frozen only'"
+              <t-radio name="frozen" v-model="formData.delivery" value="Frozen only"  />
+              <!-- <input 
                 id="remember"
                 aria-describedby="remember"
                 type="radio"
@@ -378,7 +381,7 @@
                   rounded
                 "
                 
-              />
+              /> -->
             </div>
           </div>
           <div
@@ -393,20 +396,7 @@
           >
             <p class="text-gray-600">Chilled only</p>
             <div class="flex items-center h-5">
-              <input v-modal="fromData.delivery" value="Chilled only" :checked="fromData.delivery === 'Chilled only'"
-                id="remember"
-                aria-describedby="remember"
-                type="radio"
-                class="
-                  bg-gray-50
-                  border-gray-300
-                  focus:ring-3 focus:ring-blue-300
-                  h-4
-                  w-4
-                  rounded
-                "
-               
-              />
+              <t-radio name="chilled" v-model="formData.delivery" value="Chilled only"  />
             </div>
           </div>
           <div
@@ -421,20 +411,7 @@
           >
             <p class="text-gray-600">Hot only</p>
             <div class="flex items-center h-5">
-              <input v-modal="fromData.delivery" value="Hot only" :checked="fromData.delivery === 'Hot only'"
-                id="remember"
-                aria-describedby="remember"
-                type="radio"
-                class="
-                  bg-gray-50
-                  border-gray-300
-                  focus:ring-3 focus:ring-blue-300
-                  h-4
-                  w-4
-                  rounded
-                "
-               
-              />
+              <t-radio name="hot" v-model="formData.delivery" value="Hot only"  />
             </div>
           </div>
           <div
@@ -449,20 +426,7 @@
           >
             <p class="text-gray-600">Ambient</p>
             <div class="flex items-center h-5">
-              <input v-modal="fromData.delivery" value="Ambient" :checked="fromData.delivery === 'Ambient'"
-                id="remember"
-                aria-describedby="remember"
-                type="radio"
-                class="
-                  bg-gray-50
-                  border-gray-300
-                  focus:ring-3 focus:ring-blue-300
-                  h-4
-                  w-4
-                  rounded
-                "
-               
-              />
+              <t-radio name="ambient" v-model="formData.delivery" value="Ambient"  />
             </div>
           </div>
           <div
@@ -475,22 +439,10 @@
               border-b
             "
           >
+         
             <p class="text-gray-600">All</p>
             <div class="flex items-center h-5">
-              <input v-modal="fromData.delivery" value="All" :checked="fromData.delivery === 'All'"
-                id="remember"
-                aria-describedby="remember"
-                type="radio"
-                class="
-                  bg-gray-50
-                  border-gray-300
-                  focus:ring-3 focus:ring-blue-300
-                  h-4
-                  w-4
-                  rounded
-                "
-              
-              />
+              <t-radio name="all" v-model="formData.delivery" value="All"  />
             </div>
           </div>
           <div
@@ -512,7 +464,8 @@
           >
             <p class="text-gray-600">Cold display service</p>
             <div class="flex items-center h-5">
-              <input
+               
+              <input  v-model="formData.selected" value="Cold display service"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -540,7 +493,7 @@
           >
             <p class="text-gray-600">Hot holding service</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.selected" value="Hot holding service"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -568,7 +521,7 @@
           >
             <p class="text-gray-600">Plating</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.selected" value="Plating"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -596,7 +549,7 @@
           >
             <p class="text-gray-600">Delivery</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.selected" value="Delivery"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -624,7 +577,7 @@
           >
             <p class="text-gray-600">All</p>
             <div class="flex items-center h-5">
-              <input
+              <input v-model="formData.selected" value="All"
                 id="remember"
                 aria-describedby="remember"
                 type="checkbox"
@@ -695,10 +648,16 @@ export default {
         return{
             formData:{
                 businessName:'',
+                 businessEmail:'',
+                  businessNumber:'',
                 businessAddress:'',
-                businessNumber:'',
-                businessEmail:'',
-                delivery:''
+               
+               
+                delivery:'',
+                businessType:[],
+                cuisineType:'',
+                menu:'',
+                selected:[]
             }
         }
     },
