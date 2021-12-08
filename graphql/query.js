@@ -339,6 +339,12 @@ export const UPDATE_CATERER_ADDRESS = graphql`
   }
 `;
 
+export const UPDATE_CATERER_AVAILABILITY = graphql`
+  mutation changeCatererAvailability($availability: Boolean!) {
+    result: changeCatererAvailability(availability: $availability)
+  }
+`;
+
 export const UPDATE_CATERER_EMAIL = graphql`
   mutation updateCatererEmail($id: ID!, $email: String!) {
     result: updateCatererEmail(id: $id, email: $email )

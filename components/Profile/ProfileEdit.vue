@@ -17,16 +17,18 @@
     "
   >
   <div>
-    <div>
+    <div class=" mx-auto flex flex-row justify-center">
+
+<div class="mb-12">
     <div
       class="
         relative
         shadow
-        mx-auto
+
         mt-6
         h-48
         w-48
-        -my-12
+
         border-white
         rounded-full
         overflow-hidden
@@ -42,22 +44,30 @@
       />
       <img
         v-if="user.photo"
-        class="object-cover w-full h-full"
+        class="object-cover relative w-full h-full"
         :src="user.photo"
         @click="selectProfile"
       />
       <img
         v-else
-        class="object-cover w-full h-full"
+        class="object-cover relative w-full h-full"
         src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80"
         @click="selectProfile"
       />
+
     </div>
-    <div class="mt-16">
+      <div class=" absolute z-20">
       <p class="text-sm text-gray-600 text-center">
         click to change profile photo
       </p>
     </div>
+    </div>
+     <div class="float-right pl-12">
+<t-toggle v-model="user.isAvailable" @change="changeAvailability()"  checked />
+ <p class="my-2">Change Availability</p>
+      </div>
+
+
     </div>
      <div>
     <div
@@ -249,7 +259,7 @@
 </template>
 <script>
 import Multiselect from 'vue-multiselect'
-import { UPDATE_CATERER, UPDATE_CATERER_PROFILE, UPDATE_CATERER_BANNER } from "@/graphql/query";
+import { UPDATE_CATERER, UPDATE_CATERER_PROFILE, UPDATE_CATERER_BANNER, UPDATE_CATERER_AVAILABILITY } from "@/graphql/query";
 export default {
    layout:'register',
    middleware: 'auth',
@@ -259,6 +269,7 @@ export default {
       banner: null,
       loading: false,
       selectedRole:null,
+
       roles:[
         {name:"Home Chef", value:"home_chef"},
         {name:"Event Caterer", value:"event_caterer"},
@@ -359,6 +370,7 @@ export default {
       }
     },
 
+
      async updateBanner() {
       console.log(this.banner);
       try {
@@ -366,6 +378,23 @@ export default {
           mutation: UPDATE_CATERER_BANNER,
           variables: {
             file: this.banner,
+          },
+        });
+        this.loading = false;
+        console.log(res.data.result);
+      } catch (error) {
+        console.log(error);
+         this.loading = false;
+      }
+    },
+
+      async changeAvailability() {
+      console.log(this.user.isAvailable);
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_CATERER_AVAILABILITY,
+          variables: {
+            availability: this.user.isAvailable,
           },
         });
         this.loading = false;
