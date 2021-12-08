@@ -557,14 +557,24 @@ export const GET_ALL_PRODUCT = graphql`
       name
       slug
       banner
-      images
       description
       price
       mrp
-      category{
-        title
-        description
+      willDeliver
+      caterer{
+      id
+      first_name
+      business_name
       }
+      category{
+        id
+        title
+      }
+      cuisine{
+      id
+      name
+      }
+      images
       status
       createdAt
       updatedAt
@@ -573,20 +583,30 @@ export const GET_ALL_PRODUCT = graphql`
 `;
 
 export const GET_PUBLISHED_PRODUCT = graphql`
-  query publishedCategories {
-    publishedCategories {
+  query publishedProducts {
+    publishedProducts {
       id
       name
       slug
       banner
-      images
       description
       price
       mrp
-      category{
-        title
-        description
+      willDeliver
+      caterer{
+      id
+      first_name
+      business_name
       }
+      category{
+        id
+        title
+      }
+      cuisine{
+      id
+      name
+      }
+      images
       status
       createdAt
       updatedAt
@@ -595,20 +615,30 @@ export const GET_PUBLISHED_PRODUCT = graphql`
 `;
 
 export const GET_PRODUCT_BY_ID = graphql`
-  query category($id: ID!) {
-    category(id: $id) {
+  query product($id: ID!) {
+    product(id: $id) {
       id
       name
       slug
       banner
-      images
       description
       price
       mrp
-      category{
-        title
-        description
+      willDeliver
+      caterer{
+      id
+      first_name
+      business_name
       }
+      category{
+        id
+        title
+      }
+      cuisine{
+      id
+      name
+      }
+      images
       status
       createdAt
       updatedAt
@@ -617,20 +647,30 @@ export const GET_PRODUCT_BY_ID = graphql`
 `;
 
 export const GET_PRODUCT_BY_SLUG = graphql`
-  query categoryBySlug($id: ID!) {
-    categoryBySlug(id: $id) {
+  query productBySlug($id: ID!) {
+    productBySlug(id: $id) {
       id
       name
       slug
       banner
-      images
       description
       price
       mrp
-      category{
-        title
-        description
+      willDeliver
+      caterer{
+      id
+      first_name
+      business_name
       }
+      category{
+        id
+        title
+      }
+      cuisine{
+      id
+      name
+      }
+      images
       status
       createdAt
       updatedAt
@@ -647,9 +687,15 @@ export const ADD_NEW_PRODUCT = graphql`
   }
 `;
 
-export const UPDATE_PRODUCT_STATUS = graphql`
+export const CHANGE_PRODUCT_STATUS = graphql`
   mutation changeProductStatus($id: ID!, $status: String!) {
     result: changeProductStatus(id: $id, status: $status)
+  }
+`;
+
+export const CHANGE_PRODUCT_WILLDELIVER = graphql`
+  mutation changeProductWillDeliver($id: ID!, $status: Boolean!) {
+    result: changeProductWillDeliver(id: $id, status: $status)
   }
 `;
 
@@ -814,6 +860,36 @@ mutation verifyLocalFormPayment($id: String!) {
   }
 }
 `;
+
+export const GET_ALL_ACTIVE_CUSINE = graphql`
+  query activeCuisines {
+    activeCuisines {
+      id
+      name
+      image
+      status
+    }
+  }
+`;
+
+
+export const GET_ALL_CUSINE = graphql`
+  query cuisines {
+    cuisines {
+      id
+      name
+      image
+      status
+      added_by{
+          id
+          business_name
+      }
+    }
+  }
+`;
+
+
+
 
 
 

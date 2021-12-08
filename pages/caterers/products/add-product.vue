@@ -384,6 +384,17 @@
                                     </multiselect>
                                   </div>
                                 </div>
+                                 <div
+                                  class="
+                                    flex flex-col
+                                    sm:flex-row
+                                    items-center
+                                    mb-2
+                                    sm:space-x-5
+                                    py-4
+                                  "
+                                >
+                                <div class="w-full sm:w-1/2">
 
                                 <p class="mb-1 font-semibold text-gray-700">
                                   Product Description
@@ -405,6 +416,28 @@
                                   id="product-description"
                                   v-model="formData.description"
                                 />
+                                </div>
+                                 <div
+                                    v-if="activeCuisines"
+                                    class="w-full sm:w-1/2 mt-2 sm:mt-0"
+                                  >
+                                    <p class="mb-2 font-semibold text-gray-700">
+                                      Select Cuisine
+                                    </p>
+                                    <multiselect
+                                      v-model="selectedCusine"
+                                      class="mb-3"
+                                      track-by="name"
+                                      label="name"
+                                      placeholder="Select one"
+                                      :options="activeCuisines"
+                                      :searchable="false"
+                                      :allow-empty="false"
+                                    >
+                                    </multiselect>
+                                  </div>
+
+                                </div>
                                 <!------------------------Buttons-------------------------------->
                                 <div
                                   class="
@@ -462,7 +495,7 @@
                                     />
                                     <img
                                       v-else
-                                      src="https://mdbootstrap.com/img/new/standard/city/026.jpg"
+                                      src="/noImage.jpg"
                                       alt="..."
                                       class="
                                         rounded
@@ -604,7 +637,7 @@
                                     Back
                                   </button>
                                   <button
-                                    v-on:click="onSubmit()"
+                                    v-on:click="goToPrice()"
                                     class="
                                       px-4
                                       py-2
@@ -676,7 +709,7 @@
                                 </div>
 
                                 <!-- Toggle option -->
-                                <div class="flex justify-start">
+                                <div class="flex justify-start p-4">
                                   <label
                                     for="toogleButton"
                                     class="flex items-center cursor-pointer"
@@ -685,38 +718,7 @@
                                       Will you deliver
                                     </div>
                                     <!-- toggle -->
-                                    <div class="relative">
-                                      <input
-                                        id="toogleButton"
-                                        type="checkbox"
-                                        class="hidden"
-                                      />
-                                      <!-- path -->
-                                      <div
-                                        class="
-                                          toggle-path
-                                          bg-gray-200
-                                          w-9
-                                          h-5
-                                          rounded-full
-                                          shadow-inner
-                                        "
-                                      ></div>
-                                      <!-- crcle -->
-                                      <div
-                                        class="
-                                          toggle-circle
-                                          absolute
-                                          w-3.5
-                                          h-3.5
-                                          bg-white
-                                          rounded-full
-                                          shadow
-                                          inset-y-0
-                                          left-0
-                                        "
-                                      ></div>
-                                    </div>
+                                   <t-toggle @change="changeWillDeliver" v-model="willDeliver"  />
                                   </label>
                                 </div>
                                 <!------------------------Buttons-------------------------------->
@@ -784,6 +786,8 @@ import {
   UPDATE_PRODUCT_BANNER,
   UPDATE_PRODUCT_IMAGES,
   UPDATE_PRODUCT_PRICE,
+  GET_ALL_ACTIVE_CUSINE,
+  CHANGE_PRODUCT_WILLDELIVER
 } from "@/graphql/query";
 import Multiselect from "vue-multiselect";
 export default {
@@ -797,13 +801,17 @@ export default {
       showAlert: false,
       step: 1,
       selectedCategory: "",
+      selectedCusine: "",
+      willDeliver:null,
       product: { id: null, name: "" },
       type: null,
       formData: {
         name: "",
         description: "",
         category: "",
+        cuisine:'',
         status: "DRAFT",
+
       },
       priceData: {
         price: 0,
@@ -821,6 +829,12 @@ export default {
   apollo: {
     categories: {
       query: GET_ALL_CATEGORY,
+      error(error) {
+        console.log(error);
+      },
+    },
+    activeCuisines: {
+      query: GET_ALL_ACTIVE_CUSINE,
       error(error) {
         console.log(error);
       },
@@ -851,7 +865,7 @@ export default {
           },
         });
         this.loading = false;
-        this.step = 3;
+
         console.log(res.data.result);
       } catch (error) {
         console.log(error);
@@ -899,6 +913,7 @@ export default {
     async onSubmit() {
       this.loading = true;
       this.formData.category = this.selectedCategory.id;
+      this.formData.cuisine = this.selectedCusine.id;
       // this.formData.price = parseInt(this.formData.price);
       console.log(this.formData);
       try {
@@ -926,6 +941,7 @@ export default {
       this.priceData.mrp = parseInt(this.priceData.mrp);
       this.priceData.price = parseInt(this.priceData.price);
       console.log(this.priceData);
+      console.log(this.product.id);
       try {
         const { data } = await this.$apollo.mutate({
           mutation: UPDATE_PRODUCT_PRICE,
@@ -935,7 +951,7 @@ export default {
           },
         });
         console.log(data);
-        this.product = data.result;
+
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
@@ -946,14 +962,40 @@ export default {
       }
       this.loading = false;
     },
+
+     async changeWillDeliver() {
+      this.loading = true;
+      console.log(this.willDeliver);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: CHANGE_PRODUCT_WILLDELIVER,
+          variables: {
+            status: this.willDeliver,
+            id: this.product.id,
+          },
+        });
+        console.log(data);
+
+
+        // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+    },
+
+    goToPrice(){
+      this.step = 3;
+    }
   },
 };
 </script>
 
 <style>
-.toggle-path {
-  transition: background 0.3s ease-in-out;
-}
+
 .toggle-circle {
   top: 0.2rem;
   left: 0.25rem;
