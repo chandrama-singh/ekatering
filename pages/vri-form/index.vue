@@ -31,8 +31,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.businessName"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -54,8 +53,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.businessAddress"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -77,8 +75,7 @@
                       "
                       required="required"
                       type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.number"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -100,8 +97,7 @@
                       "
                       required="required"
                       type="email"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
+                      v-model="formData.businessEmail"
                     />
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
@@ -114,7 +110,7 @@
                     Home caterer
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.businessType" value="Home caterer" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -122,7 +118,7 @@
                     Private Chef
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.businessType" value="Private Chef" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -130,7 +126,7 @@
                     Event Caterer
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.businessType" value="Event caterer" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -138,7 +134,7 @@
                    Take away
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input  v-model="formData.businessType" value="Take away" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -146,7 +142,7 @@
                    Restaurant
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.businessType" value="Restuarant" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
@@ -171,6 +167,7 @@
                       required="required"
                       type="text"
                      rows="8"
+                     v-model="formData.cuisineType"
                     ></textarea>
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
@@ -195,6 +192,7 @@
                       required="required"
                       type="text"
                      rows="8"
+                      v-model="formData.menu"
                     ></textarea>
             </div>
         <!--------------------------------------->
@@ -208,40 +206,35 @@
                     Frozen only
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="radio" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
+           <t-radio name="Frozen" v-model="formData.delivery" value="Frozen only"  /></div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
                     Chilled only
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="radio" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
+           <t-radio name="chilled" v-model="formData.delivery" value="Chilled only"  /></div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
                     Hot only
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="radio" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
+            <t-radio name="hot" v-model="formData.delivery" value="Hot only"  /></div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
                    Ambient
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="radio" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
+            <t-radio name="ambient" v-model="formData.delivery" value="Ambient"  /></div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
                 <p class="text-gray-600 ">
                    All
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="radio" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
+           <t-radio name="all" v-model="formData.delivery" value="All"  /> </div>
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
             <h2 class="text-xl ">
@@ -253,7 +246,7 @@
                     Cold display service
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.selected" value="Cold display service" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -261,7 +254,7 @@
                     Hot holding service
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.selected" value="Hot holding service" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -269,7 +262,7 @@
                     Plating 
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.selected" value="Plating" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -277,7 +270,7 @@
                    Delivery
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.selected" value="Delivery" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b-2 border-purple-400">
@@ -285,7 +278,7 @@
                    All
                 </p>
                 <div class="flex items-center h-5">
-            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+            <input v-model="formData.selected" value="All" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
             </div>
             </div>
              <div class="p-4 border-b flex justify-center py-6">
@@ -293,7 +286,7 @@
                             class="mr-4 inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md   text-white bg-gray-600 hover:bg-gray-700 ">
                             Reset
                         </button>
-                        <button type="submit"
+                        <button type="submit" @click="onSubmit"
                             class="inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md  bg-indigo-600 hover:bg-indigo-700 text-white">
                             Submit
                         </button>
@@ -308,6 +301,29 @@
 
 <script>
 export default {
+    data(){
+        return{
+            formData:{
+                businessName:'',
+                 businessEmail:'',
+                  businessNumber:'',
+                businessAddress:'',
+               
+               
+                delivery:'',
+                businessType:[],
+                cuisineType:'',
+                menu:'',
+                selected:[]
+            }
+        }
+    },
+    methods:{
+        onSubmit(){
+            console.log(this.formData);
+        }
+        
+    }
 
 }
 </script>

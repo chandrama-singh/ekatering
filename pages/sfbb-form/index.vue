@@ -367,7 +367,7 @@
           >
             <p class="text-gray-600">Frozen only</p>
             <div class="flex items-center h-5">
-              <t-radio name="delivery" v-model="formData.delivery" value="Frozen only"  />
+              <t-radio name="frozen" v-model="formData.delivery" value="Frozen only"  />
               <!-- <input 
                 id="remember"
                 aria-describedby="remember"
@@ -396,7 +396,7 @@
           >
             <p class="text-gray-600">Chilled only</p>
             <div class="flex items-center h-5">
-              <t-radio name="delivery" v-model="formData.delivery" value="Chilled only"  />
+              <t-radio name="chilled" v-model="formData.delivery" value="Chilled only"  />
             </div>
           </div>
           <div
@@ -411,7 +411,7 @@
           >
             <p class="text-gray-600">Hot only</p>
             <div class="flex items-center h-5">
-              <t-radio name="delivery" v-model="formData.delivery" value="Hot only"  />
+              <t-radio name="hot" v-model="formData.delivery" value="Hot only"  />
             </div>
           </div>
           <div
@@ -426,7 +426,7 @@
           >
             <p class="text-gray-600">Ambient</p>
             <div class="flex items-center h-5">
-              <t-radio name="delivery" v-model="formData.delivery" value="Ambient"  />
+              <t-radio name="ambient" v-model="formData.delivery" value="Ambient"  />
             </div>
           </div>
           <div
@@ -442,7 +442,7 @@
          
             <p class="text-gray-600">All</p>
             <div class="flex items-center h-5">
-              <t-radio name="delivery" v-model="formData.delivery" value="All"  />
+              <t-radio name="all" v-model="formData.delivery" value="All"  />
             </div>
           </div>
           <div
