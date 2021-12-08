@@ -725,6 +725,21 @@ export const UPDATE_PRODUCT_IMAGES = graphql`
 `;
 
 
+
+export const REMOVE_PRODUCT_IMAGE = graphql`
+  mutation removeProductImages($url: String!,$id: ID!,) {
+    result: removeProductImages(url: $url, id: $id)
+  }
+`;
+
+export const DELETE_PRODUCT = graphql`
+  mutation deleteProduct($id: ID!) {
+    result: deleteProduct(id: $id)
+  }
+`;
+
+
+
 export const GENERATE_PAYMENT = graphql`mutation generatePayment($packageId: String!, $coupon:String){
 	response: generatePayment(packageId: $packageId, coupon: $coupon){
 		id

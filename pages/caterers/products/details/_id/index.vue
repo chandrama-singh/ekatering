@@ -13,7 +13,7 @@
     >
       <div class="flex items-center">
         <t-button
-          to="/caterers/products/"
+          @click="goBack()"
           type="button"
           variant="secoundry"
           class="py-3 border-r focus:ring-0 focus:bg-green-400"
@@ -21,6 +21,59 @@
           <span class="fas fa-arrow-left"> Go Back</span>
         </t-button>
         <h2 class="text-lg font-semibold mx-6">Edit Product</h2>
+      </div>
+      <div
+        class="
+          flex
+          text-lg
+          flex-row
+          items-center
+          justify-center
+          p-4
+          rounded-bl-lg rounded-br-lg
+        "
+      >
+        <button
+          class="
+            px-4
+            py-2
+            mx-2
+            text-white
+            bg-purple-500
+            rounded
+          "
+          v-if="product.status=='DRAFT'"
+          @click="changeStatus('PUBLISHED')"
+        >
+          Publish
+        </button>
+         <button
+          class="
+            px-4
+            py-2
+            mx-2
+            text-white
+            bg-purple-500
+            rounded
+          "
+          v-else
+          @click="changeStatus('DRAFT')"
+        >
+          Draft
+        </button>
+         <button
+          class="
+            px-4
+            mx-3
+            py-2
+            text-white
+            bg-red-500
+            rounded
+          "
+          @click="deleteProduct"
+        >
+          Delete
+        </button>
       </div>
     </div>
     <div class="w-full flex justify-center max-h-screen">
@@ -313,28 +366,27 @@
 
                                   <ul
                                     id="gallery"
-                                    class="flex flex-1 flex-wrap -m-1"
+                                   class="flex  flex-wrap -m-1 justify-center"
                                   >
                                     <li
                                       v-for="(item, index) in product.images"
                                       :key="index"
                                       class="
                                         h-full
-                                        w-full
                                         text-center
-                                        flex flex-col
+                                        flex
+                                        m-4
                                         justify-center
                                         items-center
                                       "
                                     >
                                       <img
-                                        class="mx-auto w-32"
+                                        class=" w-32 relative"
                                         :src="item"
                                         alt="no data"
                                       />
-                                      <span class="text-small text-gray-500"
-                                        >No files selected</span
-                                      >
+                                      <img @click="removeImage(item)" class="absolute center z-20 w-12" src="@/assets/remove.svg"/>
+
                                     </li>
                                   </ul>
                                 </section>
@@ -462,7 +514,11 @@ import {
   UPDATE_PRODUCT_IMAGES,
   UPDATE_PRODUCT_PRICE,
   GET_ALL_ACTIVE_CUSINE,
-  CHANGE_PRODUCT_WILLDELIVER
+  REMOVE_PRODUCT_IMAGE,
+  CHANGE_PRODUCT_WILLDELIVER,
+  CHANGE_PRODUCT_STATUS ,
+  DELETE_PRODUCT
+
 } from "@/graphql/query";
 import Multiselect from "vue-multiselect";
 export default {
@@ -662,7 +718,7 @@ export default {
           mutation: CHANGE_PRODUCT_WILLDELIVER,
           variables: {
             status: this.willDeliver,
-            id: "61b0129475c6260d48e56d93",
+            id: this.product.id,
           },
         });
         console.log(data);
@@ -682,6 +738,89 @@ export default {
         this.$apollo.queries.product.refetch()
 
       },
+
+     async removeImage(url){
+        this.loading = true;
+      console.log(this.willDeliver);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: REMOVE_PRODUCT_IMAGE,
+          variables: {
+            url: url,
+             id: this.product.id,
+          },
+        });
+        console.log(data);
+        this.refetchData();
+
+
+        // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+
+      },
+    async deleteProduct(){
+
+         this.loading = true;
+
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: DELETE_PRODUCT,
+          variables: {
+             id: this.product.id,
+          },
+        });
+        console.log(data);
+
+        this.$router.push('/caterers/products/')
+
+
+
+        // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+
+      },
+
+   async changeStatus(val){
+
+         this.loading = true;
+      console.log(this.willDeliver);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: CHANGE_PRODUCT_STATUS ,
+          variables: {
+            status: val,
+             id: this.product.id,
+          },
+        });
+        console.log(data);
+        this.refetchData();
+
+
+        // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+
+      },
+       goBack(){
+      this.$router.push('/caterers/products/')
+    }
 
 
   },

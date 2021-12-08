@@ -47,7 +47,7 @@
                           <div class="flex-auto py-2 rounded-lg">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
                               <!-- component -->
-                             
+
                               <!------------------------Info Value-------------------------------->
                               <div v-if="step == 1">
                                 <!-- component -->
@@ -251,7 +251,7 @@
                                     </div>
                                   </div>
 
-                                 
+
                                 </div>
                               </div>
                               <!-- component -->
@@ -592,7 +592,7 @@
                                     </div>
                                   </div>
 
-                                 
+
                                 </div>
                               </div>
                               <!-- component -->
@@ -713,28 +713,28 @@
 
                                   <ul
                                     id="gallery"
-                                    class="flex flex-1 flex-wrap -m-1"
+                                    class="flex  flex-wrap -m-1 justify-center"
                                   >
                                     <li
                                       v-for="(item, index) in productImage"
                                       :key="index"
                                       class="
                                         h-full
-                                        w-full
+
                                         text-center
-                                        flex flex-col
+                                        flex flex-wrap
                                         justify-center
                                         items-center
+                                        m-4
                                       "
                                     >
-                                      <img
-                                        class="mx-auto w-32"
+                                       <img
+                                        class=" w-32 relative"
                                         :src="item"
                                         alt="no data"
                                       />
-                                      <span class="text-small text-gray-500"
-                                        >No files selected</span
-                                      >
+                                      <img @click="removeImage(item)" class="absolute center z-20 w-12" src="@/assets/remove.svg"/>
+
                                     </li>
                                   </ul>
                                 </section>
@@ -984,7 +984,7 @@
                                     </div>
                                   </div>
 
-                                 
+
                                 </div>
                               </div>
                               <!-- component -->
@@ -1120,6 +1120,7 @@ import {
   UPDATE_PRODUCT_IMAGES,
   UPDATE_PRODUCT_PRICE,
   GET_ALL_ACTIVE_CUSINE,
+  REMOVE_PRODUCT_IMAGE,
   CHANGE_PRODUCT_WILLDELIVER
 } from "@/graphql/query";
 import Multiselect from "vue-multiselect";
@@ -1319,6 +1320,33 @@ export default {
       }
       this.loading = false;
     },
+      async removeImage(url){
+        this.loading = true;
+      console.log(this.willDeliver);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: REMOVE_PRODUCT_IMAGE,
+          variables: {
+            url: url,
+             id: this.product.id,
+          },
+        });
+        console.log(data);
+        const index = this.productImage.indexOf(url);
+        if (index > -1) {
+          this.productImage.splice(index, 1);
+        }
+
+        // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+
+      },
 
     goToPrice(){
       this.step = 3;

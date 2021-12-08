@@ -122,9 +122,12 @@
           maxWidth: 140,
           cellRenderer: (cell) => {
             if (cell.data.status == "DRAFT") {
-              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">DRAFT</span>';
+              return '<span class=" badge bg-red-600 rounded-full px-2 py-1 text-center text-white text-sm mr-1">DRAFT</span>';
             }
-            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">UnPaid</span>';
+            if (cell.data.status == "PUBLISHED") {
+              return '<span class=" badge bg-green-600 rounded-full px-2 py-1 text-center text-white text-sm mr-1">PUBLISHED</span>';
+            }
+
           },
         },
 
