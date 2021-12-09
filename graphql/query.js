@@ -910,6 +910,23 @@ export const GET_ALL_CUSINE = graphql`
 `;
 
 
+export const ADD_CATERER_SERVICE = graphql`
+  mutation addService($data: ServiceInput!) {
+    result: addService(data: $data){
+      id
+      name
+    description
+    price
+    banner
+    catalogue
+    slug
+    createdAt
+    updatedAt
+    }
+  }
+`;
+
+
 
 
 

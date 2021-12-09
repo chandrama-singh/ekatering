@@ -94,10 +94,10 @@ export default {
           title: "Profile",
           icon: "far fa-id-badge",
         },
-        {
-          href: "/caterers/my-training",
-          title: "My Training",
-          icon: "fa fa-graduation-cap",
+         {
+          title: "Categories",
+          href: "/caterers/categories",
+          icon: "fas fa-th-large",
         },
 
         {
@@ -112,21 +112,21 @@ export default {
           href: "/caterers/services",
         },
 
-        {
-          title: "Categories",
-          href: "/caterers/categories",
-          icon: "fas fa-th-large",
-        },
-        {
-          title: "Coupons",
-          href: "/caterers/coupons",
-          icon: "fas fa-cut",
-        },
+        // {
+        //   title: "Coupons",
+        //   href: "/caterers/coupons",
+        //   icon: "fas fa-cut",
+        // },
 
         {
           href: "/caterers/orders",
           title: "Orders",
           icon: "fas fa-hands-helping",
+        },
+          {
+          href: "/caterers/my-training",
+          title: "My Training",
+          icon: "fa fa-graduation-cap",
         },
       ],
       collapsed: false,

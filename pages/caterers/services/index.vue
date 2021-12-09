@@ -55,7 +55,7 @@
             </button>
           </div>
         </div>
-        <Nuxt-Link to="services/add-services"> <button
+       <button
           @click="addService"
           class="
             px-4
@@ -77,12 +77,12 @@
           "
         >
           Add Service
-        </button></Nuxt-Link>
+        </button>
       </template>
     </PageHeader>
 <Servicecard/>
 
-  
+
 
 <!-- <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
