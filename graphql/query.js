@@ -927,6 +927,24 @@ export const ADD_CATERER_SERVICE = graphql`
 `;
 
 
+export const ADD_CONSULTATION = graphql`
+  mutation addConsultation($form_name:FormType!, $data: ConsultationInput!) {
+    result: addConsultation(form_name:$form_name, data: $data)
+  }
+`;
+
+export const VERIFY_CONSULTATION_PAYMENT = graphql`
+mutation verifyConsultationPayment($id: String!) {
+ response: verifyConsultationPayment(id: $id){
+    status
+    customer
+    mode
+    payment_intent
+  }
+}
+`;
+
+
 
 
 

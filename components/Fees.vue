@@ -45,7 +45,7 @@
             Virtual/remote (VRI) <br />inspection with an inspection report.
           </td>
           <td class="px-4 py-3">£60</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/vri-form">Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/VRI_FORM">Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -55,7 +55,7 @@
             and completion.
           </td>
           <td class="px-4 py-3">£60</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/sfbb-form">Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/SAFER_FOOD_FORM">Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -65,7 +65,7 @@
             Better Business Pack coaching and completion.
           </td>
           <td class="px-4 py-3">£110</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/vri-form">Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/VRI_FORM2">Purchase</Nuxt-Link></td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">

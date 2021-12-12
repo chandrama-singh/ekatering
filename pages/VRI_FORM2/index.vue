@@ -1,7 +1,7 @@
 <template>
   <section class="py-10 bg-white">
       <div class="min-h-screen flex items-center justify-center px-4">
-    
+
     <div class="max-w-4xl  bg-blue-50 w-full rounded-lg shadow-xl border-2 border-purple-400">
         <div class="p-4 border-b flex justify-between bg-purple-500 text-white">
             <h2 class="text-2xl font-semibold">
@@ -31,7 +31,7 @@
                       "
                       required="required"
                       type="text"
-                      v-model="formData.businessName"
+                      v-model="formData.name"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -53,7 +53,7 @@
                       "
                       required="required"
                       type="text"
-                      v-model="formData.businessAddress"
+                      v-model="formData.address"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -75,7 +75,7 @@
                       "
                       required="required"
                       type="text"
-                      v-model="formData.number"
+                      v-model="formData.contact_number"
                     />
             </div>
              <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
@@ -97,7 +97,7 @@
                       "
                       required="required"
                       type="email"
-                      v-model="formData.businessEmail"
+                      v-model="formData.email"
                     />
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
@@ -106,45 +106,18 @@
             </h2>
         </div>
         <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Home caterer
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.businessType" value="Home caterer" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+              <multiselect
+                                      v-model="selectedBusiness"
+                                       :multiple="true"
+                                      class="mb-3"
+                                      placeholder="Select one"
+                                      :options="business_types"
+                                      :searchable="false"
+                                      :allow-empty="false"
+                                      >
+                              </multiselect>
             </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Private Chef
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.businessType" value="Private Chef" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Event Caterer
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.businessType" value="Event caterer" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                   Take away
-                </p>
-                <div class="flex items-center h-5">
-            <input  v-model="formData.businessType" value="Take away" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                   Restaurant
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.businessType" value="Restuarant" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
+
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
             <h2 class="text-xl ">
                 Type of cuisine(e.g. English,  Asian, Chinese, African)
@@ -167,7 +140,7 @@
                       required="required"
                       type="text"
                      rows="8"
-                     v-model="formData.cuisineType"
+                     v-model="formData.type_of_cuisine"
                     ></textarea>
             </div>
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
@@ -202,85 +175,35 @@
             </h2>
         </div>
         <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Frozen only
-                </p>
-                <div class="flex items-center h-5">
-           <t-radio name="Frozen" v-model="formData.delivery" value="Frozen only"  /></div>
+             <multiselect
+                                      v-model="selectedOption"
+                                      class="mb-3"
+                                      placeholder="Select one"
+                                      :options="delivery_options"
+                                      :searchable="false"
+                                      :allow-empty="false"
+                                      >
+                              </multiselect>
             </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Chilled only
-                </p>
-                <div class="flex items-center h-5">
-           <t-radio name="chilled" v-model="formData.delivery" value="Chilled only"  /></div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Hot only
-                </p>
-                <div class="flex items-center h-5">
-            <t-radio name="hot" v-model="formData.delivery" value="Hot only"  /></div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                   Ambient
-                </p>
-                <div class="flex items-center h-5">
-            <t-radio name="ambient" v-model="formData.delivery" value="Ambient"  /></div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                   All
-                </p>
-                <div class="flex items-center h-5">
-           <t-radio name="all" v-model="formData.delivery" value="All"  /> </div>
-            </div>
+
             <div class="p-3 border-b flex justify-between bg-purple-400 text-white">
             <h2 class="text-xl ">
                 Private chefs/ Event Caterers/ Restaurants/Take away only
             </h2>
         </div>
         <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Cold display service
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.selected" value="Cold display service" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
+                 <multiselect
+                                      v-model="selectedService"
+                                       :multiple="true"
+                                      class="mb-3"
+                                      placeholder="Select one"
+                                      :options="service_options"
+                                      :searchable="false"
+                                      :allow-empty="false"
+                                      >
+                              </multiselect>
             </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Hot holding service
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.selected" value="Hot holding service" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Plating 
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.selected" value="Plating" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                   Delivery
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.selected" value="Delivery" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b-2 border-purple-400">
-                <p class="text-gray-600 ">
-                   All
-                </p>
-                <div class="flex items-center h-5">
-            <input v-model="formData.selected" value="All" id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
-            </div>
-            </div>
+
              <div class="p-4 border-b flex justify-center py-6">
             <button type="submit"
                             class="mr-4 inline-flex justify-center w-24 py-2 px-4 border border-transparent shadow-sm text-sm font-semibold rounded-md   text-white bg-gray-600 hover:bg-gray-700 ">
@@ -292,6 +215,11 @@
                         </button>
         </div>
         </div>
+           <stripe-checkout
+      ref="checkoutRef"
+      :pk="publishableKey"
+      :session-id="sessionId"
+    />
     </div>
 
 </div>
@@ -299,31 +227,95 @@
 
 </template>
 
+
 <script>
+import {
+  ADD_CONSULTATION,
+} from "@/graphql/query";
+import { StripeCheckout } from '@vue-stripe/vue-stripe'
+ import Multiselect from 'vue-multiselect'
 export default {
-    data(){
-        return{
-            formData:{
-                businessName:'',
-                 businessEmail:'',
-                  businessNumber:'',
-                businessAddress:'',
-               
-               
-                delivery:'',
-                businessType:[],
-                cuisineType:'',
-                menu:'',
-                selected:[]
-            }
-        }
-    },
-    methods:{
-        onSubmit(){
-            console.log(this.formData);
-        }
-        
+
+  data(){
+    return{
+      loading: false,
+      message: null,
+      showAlert: false,
+      selectedBusiness:[],
+      selectedOption:null,
+      selectedService:null,
+      delivery_options:[
+        "Frozen only",
+      "Chilled only",
+      "Hot only",
+      "Ambient",
+      "All"
+],
+service_options:[
+"Cold display service",
+"Hot holding service",
+"Plating",
+"Delivery",
+"All"
+],
+       business_types:["Home caterer","Private Chef","Event Caterer","Take away","Restaurant"],
+      publishableKey : "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",
+     sessionId: '',
+      formData:{
+                name: '',
+                email: '',
+                contact_number: '',
+                address:'',
+                business_types: [],
+                type_of_cuisine: '',
+                menu: '',
+                delivery_option:'',
+                delivery_service: [],
+      }
+
     }
+  },
+   components:{
+         StripeCheckout,
+         Multiselect
+    },
+  methods:{
+    async onSubmit() {
+      this.loading = true;
+       console.log(this.selectedOption);
+      this.formData.business_types=this.selectedBusiness;
+       this.formData.delivery_option=this.selectedOption;
+       this.formData.delivery_service=this.selectedService;
+      console.log(this.formData);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: ADD_CONSULTATION,
+          variables: {
+            form_name:'VRI_FORM2',
+            data: this.formData,
+          },
+        });
+        console.log(data);
+         if(data.result!=null)
+          {
+          this.sessionId=data.result;
+          this.$refs.checkoutRef.redirectToCheckout();
+           }
+           else{
+             alert(" getting some error")
+
+           }
+
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
+    },
+
+  }
 
 }
 </script>
