@@ -34,10 +34,10 @@
           <div class="flex items-start justify-between">
             <div class="flex flex-col space-y-2">
               <span class="text-gray-50">Total Sales:</span>
-              <span class="text-lg text-white font-semibold"> €1,00,000</span>
+              <span class="text-lg text-white font-semibold"> £1,00,000</span>
             </div>
             <div class="bg-gray-50 rounded-full p-4">
-              <i class="fas fa-euro-sign"></i>
+              <i class="fas fa-pound-sign"></i>
             </div>
           </div>
         </div>

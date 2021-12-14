@@ -123,7 +123,27 @@
               >Contact</nuxt-link
             >
           </li>
-          <li>
+
+         <!-- <div class="flex text-sm items-center" v-if="user">
+            <button @click="goToDashboard">DASHBOARD</button>
+          </div>
+          <div class="flex text-sm items-center" v-if="!user">
+            <button to="/signin">LOGIN</button>
+          </div> -->
+
+<div class="flex text-sm items-center" v-if="user">
+            <button @click="goToDashboard" class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300">Profile</button>
+          </div>
+
+          <!-- <li v-if="user">
+            <button @click="gotoDashboard"
+              class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300"
+              
+            >Dashboard
+            </button>
+          </li> -->
+
+          <li v-if="!user">
             <button
               class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300"
               type="login"
@@ -133,6 +153,7 @@
         </ul>
       </nav>
     </div>
+
     <div  v-if="openMenu" class="navbar-menu lg:hidden relative z-50">
       <div
         class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"
@@ -273,6 +294,13 @@ export default {
     ClickOutside
   },
   methods: {
+    goToDashboard(){
+      if(this.user.role == 'user'){
+        this.$router.push('/user/dashboard')
+      }else{
+        this.$router.push('/admin/dashboard')
+      }
+    },
     changeMenu() {
       console.log("clicked change menu");
       this.openMenu = true;
@@ -290,7 +318,14 @@ export default {
 
     }
   },
-  computed: {}
+  computed: {
+    isLoggedIn(){
+      return this.$store.state.isAuthenticated;
+    },
+    user(){
+      return this.$store.state.user;
+    }
+  }
 };
 </script>
 
