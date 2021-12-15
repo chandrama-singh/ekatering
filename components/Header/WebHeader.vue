@@ -126,9 +126,9 @@
 
 
 
-<div class="flex text-sm items-center" v-if="user">
+<!-- <div class="flex text-sm items-center" v-if="user">
             <button @click="goToDashboard" class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300">Profile</button>
-          </div>
+          </div> -->
 
 
           <li v-if="!user">

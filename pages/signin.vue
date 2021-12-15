@@ -130,6 +130,7 @@
           })
 
           console.log(data)
+          this.$toast.success("Logged in Successfully!");
 
           await this.$apolloHelpers.onLogin(data.result.token, undefined, {
             expires: 7

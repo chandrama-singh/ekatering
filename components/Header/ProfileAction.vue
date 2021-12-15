@@ -159,6 +159,7 @@ export default {
     logout() {
       this.$apolloHelpers.onLogout();
       this.$store.commit("logoutUser");
+      this.$toast.success("Logged Out!");
     },
   },
 };

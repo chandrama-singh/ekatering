@@ -299,6 +299,7 @@
 export default {
   layout: "user",
 };
+
 </script>
 
 <style>
