@@ -926,6 +926,58 @@ export const ADD_CATERER_SERVICE = graphql`
   }
 `;
 
+export const UPDATE_SERVICE_BANNER = graphql`
+  mutation uploadServiceBanner($file: Upload!,$id: ID!,) {
+    result: uploadServiceBanner(file: $file, id: $id)
+  }
+`;
+
+export const CHANGE_SERVICE_STATUS = graphql`
+  mutation changeServiceStatus($id: ID!, $status: String!) {
+    result: changeServiceStatus(id: $id, status: $status)
+  }
+`;
+
+export const CHANGE_SERVICE_WILLDELIVER = graphql`
+  mutation changeServiceWillDeliver($id: ID!, $status: Boolean!) {
+    result: changeServiceWillDeliver(id: $id, status: $status)
+  }
+`;
+
+export const UPDATE_SERVICE = graphql`
+  mutation updateService($id: ID!, $data: ProductInput!) {
+    result: updateService(id: $id, data: $data)
+  }
+`;
+
+export const UPDATE_SERVICE_PRICE = graphql`
+  mutation updateServicePrice($id: ID!, $data: PriceInput!) {
+    result: updateServicePrice(id: $id, data: $data)
+  }
+`;
+
+
+export const UPDATE_SERVICE_CATALOGUE = graphql`
+  mutation uploadServiceCatalogue($file: Upload!,$id: ID!,) {
+    result: uploadServiceCatalogue(file: $file, id: $id)
+  }
+`;
+
+
+
+export const REMOVE_SERVICECATALOGUE = graphql`
+  mutation deleteServiceCatalogue($url: String!,$id: ID!,) {
+    result: deleteServiceCatalogue(url: $url, id: $id)
+  }
+`;
+
+export const DELETE_SERVICE = graphql`
+  mutation deleteService($id: ID!) {
+    result: deleteService(id: $id)
+  }
+`;
+
+
 
 export const ADD_CONSULTATION = graphql`
   mutation addConsultation($form_name:FormType!, $data: ConsultationInput!) {

@@ -1,5 +1,5 @@
 <template>
-  
+
 		<!-- Container -->
 		<div class="container mx-auto">
 			<div class="flex justify-center px-6 my-12">
@@ -44,7 +44,7 @@
 							<div class="text-center">
 								<Nuxt-Link to="/signup"
 									class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-									
+
 								>
 									Create an Account!
 								</Nuxt-Link>
@@ -58,14 +58,14 @@
 								</Nuxt-Link>
 							</div>
 						</form>
-						    <t-alert :variant="type" :show="showAlert">
+						    <t-alert :variant="type" :show="isSent">
               {{ message }}
             </t-alert>
 					</div>
 				</div>
 			</div>
 		</div>
-	
+
 </template>
 
 <script>
@@ -102,6 +102,7 @@
 
             this.message = data.result
             this.isSent = true;
+            console.log(data);
 
           } catch (error) {
             console.log(error)

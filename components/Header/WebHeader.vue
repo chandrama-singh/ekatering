@@ -124,7 +124,7 @@
             >
           </li>
 
-         
+
 
 <div class="flex text-sm items-center" v-if="user">
             <button @click="goToDashboard" class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300">Profile</button>
@@ -136,6 +136,14 @@
               class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300"
               type="login"
             ><nuxt-link to="/signin">Login</nuxt-link>
+            </button>
+          </li>
+           <li v-else>
+            <button
+            @click="goToDashboard()"
+              class="px-4 py-2 rounded-md text-sm font-medium border focus:outline-none focus:ring transition text-purple-600 border-purple-600 hover:text-white hover:bg-purple-600 active:bg-purple-700 focus:ring-purple-300"
+              type="login"
+            >Dashboard
             </button>
           </li>
         </ul>
@@ -166,8 +174,8 @@
                 >About Us</nuxt-link
               >
             </li>
-           
-           
+
+
             <li class="mb-1">
               <nuxt-link
                 to="/training"
@@ -283,9 +291,9 @@ export default {
   },
   methods: {
     goToDashboard(){
-      if(this.user.role == 'caterer'){
+      if(this.user.role == 'caterers'){
         this.$router.push('/caterers/dashboard')
-      }else{
+      }else if(this.user.role == 'admin'){
         this.$router.push('/admin/dashboard')
       }
     },

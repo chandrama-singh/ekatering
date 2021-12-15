@@ -1080,8 +1080,8 @@
 <script>
 import {
   ADD_CATERER_SERVICE,
-  UPDATE_PRODUCT_BANNER,
-  UPDATE_PRODUCT_PRICE,
+  UPDATE_SERVICE_BANNER,
+  UPDATE_SERVICE_PRICE,
 } from "@/graphql/query";
 export default {
   layout: "user",
@@ -1132,14 +1132,14 @@ export default {
       console.log(this.banner);
       try {
         const res = await this.$apollo.mutate({
-          mutation: UPDATE_PRODUCT_BANNER,
+          mutation: UPDATE_SERVICE_BANNER,
           variables: {
             file: this.banner,
-            id: this.product.id,
+            id: this.service.id,
           },
         });
         this.loading = false;
-        this.step = 3;
+        //this.step = 3;
         console.log(res.data.result);
       } catch (error) {
         console.log(error);
@@ -1160,7 +1160,7 @@ export default {
         });
         console.log(data);
         this.service = data.result.id;
-        // this.step = 2;
+         this.step = 2;
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
         this.message = error.message;
@@ -1178,7 +1178,7 @@ export default {
       console.log(this.priceData);
       try {
         const { data } = await this.$apollo.mutate({
-          mutation: UPDATE_PRODUCT_PRICE,
+          mutation: UPDATE_SERVICE_PRICE,
           variables: {
             data: this.priceData,
             id: this.product.id,

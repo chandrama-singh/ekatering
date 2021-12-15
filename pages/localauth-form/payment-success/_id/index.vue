@@ -24,7 +24,7 @@
 
             <div class="py-10 text-center">
                 <h2>Thanks for Payment! We will review your application soon</h2>
-                <p>After Verification a verification email will be sent to you.</p>
+
             </div>
         </div>
     </div>
