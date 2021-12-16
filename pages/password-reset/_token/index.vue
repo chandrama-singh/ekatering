@@ -70,6 +70,7 @@
                 password: this.password
               },
             });
+          
             this.isSent = true;
             this.response = data;
           } catch (error) {
@@ -78,6 +79,7 @@
             console.log(error);
           }
           this.loading = false;
+          
         }
       }
     },

@@ -275,6 +275,7 @@ export default {
   methods: {
     selectAddressProof() {
       this.$refs.address_proof.click();
+      
     },
 
     selectFoodRegistration() {
@@ -293,6 +294,7 @@ export default {
 
         this.loading = true;
         this.updateAddressProof();
+        this.$toast.success("Address proof updated Successfully!");
       }
     },
 
@@ -304,6 +306,7 @@ export default {
 
         this.loading = true;
         this.updateFoodRegistratione();
+        this.$toast.success("Fodd registration letter updated Successfully!");
       }
     },
     previewFHRS(event) {
@@ -314,6 +317,7 @@ export default {
 
         this.loading = true;
         this.updateFhrs();
+        this.$toast.success("FHRD Award letter updated Successfully!");
       }
     },
 
@@ -405,6 +409,7 @@ console.log(mydate.toDateString());
       {alert("fhrs date is not selected");}
       else{
         this.updateFhrsDate();
+        this.$toast.success("Profile updated Successfully!");
 
       }
 

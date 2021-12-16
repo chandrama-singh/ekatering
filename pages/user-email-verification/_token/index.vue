@@ -53,6 +53,7 @@
     methods: {
       onNext() {
         this.$router.push("/")
+      
       }
     }
   }

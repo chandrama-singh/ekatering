@@ -288,7 +288,9 @@ export default {
   methods: {
     selectProfile() {
       this.$refs.profile.click();
+      
     },
+    
     selectBanner() {
       this.$refs.banner.click();
     },
@@ -300,6 +302,7 @@ export default {
         this.user.photo = URL.createObjectURL(this.profile);
         this.loading = true;
         this.updateProfile();
+        this.$toast.success("Profile photo updated Successfully!");
       }
     },
 
@@ -311,6 +314,7 @@ export default {
         this.user.banner = URL.createObjectURL(this.banner);
         this.loading = true;
         this.updateBanner();
+        this.$toast.success("Banner image updated Successfully");
       }
     },
 
@@ -345,6 +349,8 @@ export default {
           },
         });
         console.log(res.data.result);
+        this.$toast.success("Profile updated Successfully!");
+
 
       } catch (error) {
         console.log(error);

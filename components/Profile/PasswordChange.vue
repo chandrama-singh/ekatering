@@ -103,7 +103,7 @@
             console.log(error);
           }
           this.loading = false;
-          
+          this.$toast.success("Password Changed Successfully!");
         }
         
       }

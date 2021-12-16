@@ -110,6 +110,7 @@
             },
           })
           console.log(data);
+          this.$toast.success("Category Added Successfully!");
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
 
         } catch (error) {

@@ -70,6 +70,7 @@ export default {
                 mutation: UPDATE_CATERER_SOCIAL,
                 variables: this.links
             });
+            this.$toast.success("Social link updated Successfully!");
             this.loading = false;
         } catch (error) {
             this.loading = false;

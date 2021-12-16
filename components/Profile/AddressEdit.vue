@@ -146,6 +146,7 @@ export default {
           },
         });
         console.log(res.data.result);
+        this.$toast.success("Address updated Successfully!");
       } catch (error) {
         console.log(error);
       }
