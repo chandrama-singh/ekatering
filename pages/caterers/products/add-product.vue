@@ -320,7 +320,7 @@
                                 <div class="w-full sm:w-1/2">
 
                                 <p class="mb-1 font-semibold text-gray-700">
-                                  Product Description
+                                  Product Description (note all ingredients, food allergen)
                                 </p>
                                 <input
                                   type="textbox"

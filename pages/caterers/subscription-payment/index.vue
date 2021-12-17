@@ -14,7 +14,7 @@
       </div>
       <div  class="flex flex-wrap bg-blue-50 rounded shadow">
         <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11">
-          <h2  class="mb-2 justify-center text-3xl lg:text-4xl font-bold font-heading">Subscription</h2>
+          <h2  class="mb-2 justify-center text-center text-3xl lg:text-4xl font-bold font-heading">Subscription</h2>
            <div class="flex flex-wrap justify-center">
           <label class="md:mr-4 w-full sm:w-auto flex items-center mr-8 mb-2">
             <span class="mx-2 font-semibold">Monthly Billing</span>
@@ -29,11 +29,11 @@
         </div>
         <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">
           <img class="w-full md:max-w-xs mx-auto my-auto" src="~assets/why-img.png" alt="">
-          <h3 class="mb-4 max-w-sm mx-auto text-center text-xl text-white">
+          <!-- <h3 class="mb-4 max-w-sm mx-auto text-center text-xl text-white">
             Best for
             <span class="font-bold">freelance developers</span>
             who need to save their time.
-          </h3>
+          </h3> -->
           <!-- <div class="text-center">
             <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>
             <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>

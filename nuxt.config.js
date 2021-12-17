@@ -100,8 +100,8 @@ export default {
     clientConfigs: {
       default: {
         // httpEndpoint: 'https://api.ekatering.co.uk/graphql',
-        httpEndpoint: 'http://167.99.86.174:4000/graphql',
-        // httpEndpoint: 'http://localhost:4000/graphql',
+        // httpEndpoint: 'http://167.99.86.174:4000/graphql',
+        httpEndpoint: 'http://localhost:4000/graphql',
         
         
       }
