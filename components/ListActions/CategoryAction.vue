@@ -20,7 +20,7 @@ export default Vue.extend({
   methods: {
     preview() {
 	this.$root.$router.push({
-    path: `/caterers/categories/details/${this.CategoryId }`
+    path: `/admin/categories/details/${this.CategoryId }`
 })
 
     },

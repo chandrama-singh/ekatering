@@ -15,7 +15,7 @@
       >
         <div class="flex items-center">
           <t-button
-            to="/caterers/categories/"
+            to="/admin/categories/"
             type="button"
             variant="secoundry"
             class="py-3 border-r focus:ring-0 focus:bg-green-400"
@@ -200,8 +200,8 @@
 import { GET_CATEGORY_BY_ID, UPDATE_CATEGORY_STATUS,UPDATE_CATEGORY } from "@/graphql/query";
 
 export default {
-  layout: "user",
-  middleware: 'authUser',
+  layout: "admin",
+  middleware: 'authAdmin',
 
   data() {
     return {

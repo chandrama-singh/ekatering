@@ -2,7 +2,7 @@
   <div>
       <div class="bg-white p-2 border-b border-gray-300 pr-4 flex items-center justify-between">
         <div class="flex items-center">
-          <t-button to="/caterers/categories/" type="button" variant="secoundry"
+          <t-button to="/admin/categories/" type="button" variant="secoundry"
             class="py-3 border-r focus:ring-0 focus:bg-green-400 ">
             <span class="fas fa-arrow-left"> Go Back</span>
           </t-button>
@@ -48,7 +48,7 @@
                   </div>
 
                   <div class="text-center mt-6">
-                     <button  class="bg-red-800 text-white active:bg-red-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                     <button to="/admin/categories/" class="bg-red-800 text-white active:bg-red-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                       Back
                     </button>
                     <button @click="onSubmit" class="bg-blue-800 text-white active:bg-blue-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
@@ -78,8 +78,8 @@
   import {
     ADD_NEW_CATEGORY } from '@/graphql/query'
   export default {
-    layout: "user",
-    middleware: 'authUser',
+    layout: "admin",
+    middleware: 'authAdmin',
     data() {
       return {
         openTab: 1,

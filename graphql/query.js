@@ -997,6 +997,13 @@ mutation verifyConsultationPayment($id: String!) {
 `;
 
 
+export const ADD_NEW_CONTACT = graphql`
+  mutation addContact($data: ContactInput!) {
+    result: addContact(data: $data)
+  }
+`;
+
+
 
 
 

@@ -94,11 +94,7 @@ export default {
           title: "Profile",
           icon: "far fa-id-badge",
         },
-         {
-          title: "Categories",
-          href: "/caterers/categories",
-          icon: "fas fa-th-large",
-        },
+       
 
         {
           title: "Products",

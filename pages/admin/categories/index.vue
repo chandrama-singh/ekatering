@@ -40,8 +40,8 @@
 
 
   export default {
-    layout:'user',
-    middleware: 'authUser',
+    layout:'admin',
+    middleware: 'authAdmin',
     data() {
       return {
         columnDefs: null,
@@ -103,7 +103,7 @@
 
     methods: {
        AddCategory(){
-      this.$router.push('/caterers/categories/add-category');
+      this.$router.push('/admin/categories/add-category');
     },
       onFilterTextChange() {
         console.log(this.categories)

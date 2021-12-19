@@ -32,12 +32,13 @@
 			<span class="text-gray-500 font-normal">OR</span>
 			<span class="h-px w-16 bg-gray-300"></span>
 		</div> -->
-                <form class="mt-8 space-y-6" action="#" method="POST">
+                <div class="mt-8 space-y-6">
                   <div class="relative">
                     <label class="text-sm font-bold text-gray-700 tracking-wide"
                       >Name<span class="text-red-500"> *</span></label
                     >
                     <input
+                    v-model="formData.name"
                       class="
                         w-full
                         text-base
@@ -46,7 +47,8 @@
                         border border-gray-300
                         focus:outline-none focus:border-indigo-500
                       "
-                      type=""
+                      type="text"
+                      required
                       placeholder="Your Full Name"
                     />
                   </div>
@@ -55,6 +57,7 @@
                       >Email<span class="text-red-500"> *</span></label
                     >
                     <input
+                    v-model="formData.email"
                       class="
                         w-full
                         text-base
@@ -63,7 +66,8 @@
                         border border-gray-300
                         focus:outline-none focus:border-indigo-500
                       "
-                      type=""
+                      type="email"
+                      required
                       placeholder="mail@gmail.com"
                     />
                   </div>
@@ -74,6 +78,7 @@
                       Contact Number<span class="text-red-500"> *</span>
                     </label>
                     <input
+                    v-model="formData.contact_number"
                       class="
                         w-full
                         content-center
@@ -95,6 +100,7 @@
                       Reason for Contact
                     </label>
                     <select
+                    v-model="formData.reason"
                       class="
                         w-full
                         content-center
@@ -122,6 +128,7 @@
                       >NAME OF BUSINESS/ESTABLISHMENT<span class="text-red-500"> *</span></label
                     >
                     <input
+                    v-model="formData.business_name"
                       class="
                         w-full
                         text-base
@@ -138,6 +145,7 @@
 
                   <div class="mt-4 content-center">
                     <textarea
+                    v-model="formData.message"
                       class="
                         w-full
                         content-center
@@ -154,7 +162,7 @@
 
                   <div>
                     <button
-                      type="submit"
+                      @click="onSubmit"
                       class="
                         w-full
                         flex
@@ -177,7 +185,7 @@
                       Submit
                     </button>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -255,11 +263,58 @@
 
 <script>
 import Passion from "@/components/training/Passion.vue";
+import { ADD_NEW_CONTACT } from "@/graphql/query";
 export default {
+  layout: "user",
+  data() {
+    return {
+      openTab: 1,
+      loading: false,
+      message: null,
+      showAlert: false,
+      type: null,
+      formData: {
+      name:"",
+      email:"",
+      reason:"",
+      message:"",
+      contact_number:"",
+      business_name:""
+      },
+    };
+  },
   components: {
     Passion,
   },
+  methods: {
+    toggleTabs: function (tabNumber) {
+      this.openTab = tabNumber;
+    },
+    GoBack() {
+      this.$rounter.push("/caterers/products");
+    },
+    async onSubmit() {
+      this.loading = true;
+      console.log(this.formData);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: ADD_NEW_CONTACT,
+          variables: {
+            data: this.formData,
+          },
+        });
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+      }
+      this.loading = false;
+    },
+  },
 };
 </script>
+<style>
+</style>
 
-<style></style>

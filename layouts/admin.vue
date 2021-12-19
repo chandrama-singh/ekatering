@@ -33,18 +33,18 @@
             title: 'Dashboard',
             icon: 'fa fa-tachometer-alt'
           },
-          // {
-          //   href: '/admin/list-admin',
-          //   title: 'Admin Users',
-          //   icon: 'fas fa-user-shield',
+          {
+            href: '/admin/cuisines',
+            title: 'Cuisines',
+            icon: 'fas fa-user-shield',
 
-          // },
-          //   {
-          //   href: '/admin/plans',
-          //   title: 'Plans',
-          //   icon: 'fas fa-hands-helping',
-
-          // },
+          },
+          {
+          title: "Categories",
+          href: "/admin/categories",
+          icon: "fas fa-hands-helping",
+        },
+          
           // {
           //   href: '/admin/pending_caterers',
           //   title: 'Pending Application',
