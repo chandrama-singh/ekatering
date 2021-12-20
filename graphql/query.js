@@ -966,7 +966,7 @@ export const GET_ALL_ACTIVE_CUSINE = graphql`
 `;
 
 
-export const GET_ALL_CUSINE = graphql`
+export const GET_ALL_CUISINE = graphql`
   query cuisines {
     cuisines {
       id
