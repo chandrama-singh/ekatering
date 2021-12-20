@@ -882,6 +882,78 @@ mutation verifyLocalFormPayment($id: String!) {
 }
 `;
 
+// Cuisine 
+
+export const ADD_NEW_CUISINE = graphql`
+  mutation addCuisine($data: CuisineInput!) {
+    result: addCuisine(data: $data)
+  }
+`;
+
+export const GET_CUISINE_BY_ID = graphql`
+  query caterer($id: ID!) {
+    caterer(id: $id) {
+      id
+      email
+      fullName
+      first_name
+      last_name
+      email
+      photo
+      banner
+      bio
+      facebook
+      instagram
+      twitter
+      mobile
+      role
+      business_name
+      business_category{
+        name
+        value
+      }
+      business_email
+      isVerified
+      isEmailVerified
+      isRegistered
+      isSubscribed
+      isAvailable
+      fhrs_date
+      status
+      remark
+      createdAt
+      updatedAt
+      address{
+        address_line_1
+        address_line_2
+        country
+        town
+        latitude
+        longitude
+        postcode
+      }
+      documents{
+        address_proof
+        food_registration_letter
+        fhrs_letter
+      }
+    }
+  }
+`;
+
+export const UPDATE_CUISINE = graphql`
+  mutation updateCuisine($id: ID!, $data: CuisineInput!) {
+    result: updateCuisine(id: $id, data: $data)
+  }
+`;
+
+export const UPDATE_CUISINE_STATUS = graphql`
+  mutation changeCuisineStatus($id: ID!, $status: Boolean!) {
+    result: changeCuisineStatus(id: $id, status: $status)
+  }
+`;
+
+
 export const GET_ALL_ACTIVE_CUSINE = graphql`
   query activeCuisines {
     activeCuisines {

@@ -15,7 +15,7 @@
       >
         <div class="flex items-center">
           <t-button
-            to="/admin/categories/"
+            to="/admin/cuisine/"
             type="button"
             variant="secoundry"
             class="py-3 border-r focus:ring-0 focus:bg-green-400"
@@ -23,10 +23,10 @@
             <span class="fas fa-arrow-left"> Go Back</span>
           </t-button>
           <h2 class="text-lg font-semibold mx-6">
-            Category: {{ category.title }}
+            Cuisine: {{ cuisine.title }}
           </h2>
 
-          <div class="text-left" v-if="category.status">
+          <div class="text-left" v-if="cuisine.status">
             <span
               class="
                 inline-block
@@ -63,7 +63,7 @@
         <t-button
           type="button"
           variant="error"
-           v-if="category.status"
+           v-if="cuisine.status"
 
           v-on:click="changeStatus(false)"
         >
@@ -94,7 +94,7 @@
                             >Title</label
                           >
                           <input
-                            v-model="category.title"
+                            v-model="cuisine.title"
                             type="text"
                             class="
                               border-0
@@ -127,7 +127,7 @@
                             >Description</label
                           >
                           <textarea
-                            v-model="category.description"
+                            v-model="cuisine.description"
                             type="text"
                             class="
                               border-0
@@ -149,7 +149,7 @@
                           >
                           </textarea>
 
-    <button @click="updateCategory" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+    <button @click="updateCuisine" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
         Update
     </button>
 
@@ -197,7 +197,7 @@
 
 
 <script>
-import { GET_CATEGORY_BY_ID, UPDATE_CATEGORY_STATUS,UPDATE_CATEGORY } from "@/graphql/query";
+import { GET_CUISINE_BY_ID, UPDATE_CUISINE_STATUS,UPDATE_CUISINE } from "@/graphql/query";
 
 export default {
   layout: "admin",
@@ -213,8 +213,8 @@ export default {
   },
 
   apollo: {
-    category: {
-      query: GET_CATEGORY_BY_ID,
+    cuisine: {
+      query: GET_CUISINE_BY_ID,
       variables() {
         return {
           id: this.$route.params.id,
@@ -227,10 +227,10 @@ export default {
   },
   computed: {
     statusClass() {
-      if (this.category.status === "PUBLISHED") {
+      if (this.cuisine.status === "PUBLISHED") {
         return "bg-green-500";
       }
-      if (this.category.status === "DELETED") {
+      if (this.cuisine.status === "DELETED") {
         return "bg-red-500";
       }
       return "bg-orange-500";
@@ -241,13 +241,13 @@ export default {
     toggle(val) {
       this.component = val;
     },
-    // refetch category on each changes in the category
-    reloadCategory() {
+    // refetch cuisine on each changes in the cuisine
+    reloadCuisine() {
       console.log("reload calls");
-      this.$apollo.queries.category.refetch();
+      this.$apollo.queries.cuisine.refetch();
     },
     changeStatus(value) {
-      let message = `<strong>Are you sure want to change status of this category?</strong>`;
+      let message = `<strong>Are you sure want to change status of this cuisine?</strong>`;
       let options = {
         html: true, // set to true if your message contains HTML tags. eg: "Delete <b>Foo</b> ?"
         loader: false, // set to true if you want the dailog to show a loader after click on "proceed"
@@ -269,14 +269,14 @@ export default {
           console.log("data",value)
           try {
             const res = await self.$apollo.mutate({
-              mutation: UPDATE_CATEGORY_STATUS,
+              mutation: UPDATE_CUISINE_STATUS,
               variables: {
-                id: self.category.id,
+                id: self.cuisine.id,
                 status: value,
               },
             });
             console.log(res);
-            self.reloadCategory(); // reload category from parent
+            self.reloadCuisine(); // reload cuisine from parent
             //show success by notification
             self.message = res.data.result;
             self.showAlert = true;
@@ -292,19 +292,19 @@ export default {
           console.log(error);
         });
     },
-    async updateCategory(){
-          let formData={title:this.category.title,description:this.category.description}
+    async updateCuisine(){
+          let formData={title:this.cuisine.title,description:this.cuisine.description}
       try {
         console.log(formData);
             const res = await this.$apollo.mutate({
-              mutation: UPDATE_CATEGORY,
+              mutation: UPDATE_CUISINE,
               variables: {
-                id: this.category.id,
+                id: this.cuisine.id,
                 data: formData,
               },
             });
             console.log(res);
-            this.reloadCategory(); // reload category from parent
+            this.reloadCuisine(); // reload cuisine from parent
             //show success by notification
             this.message = res.data.result;
             this.showAlert = true;
@@ -315,6 +315,7 @@ export default {
             this.showAlert = true;
             this.type = "danger";
           }
+
 
     }
   },

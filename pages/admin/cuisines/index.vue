@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader pageTitle="Categories">
+    <PageHeader pageTitle="Cuisines">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
@@ -18,15 +18,15 @@
           </div>
         </div>
 
-         <button @click="AddCategory" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
-        Add Category
+         <button @click="AddCuisine" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+        Add Cuisine
     </button>
       </template>
     </PageHeader>
 
     <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
-        :rowData="categories" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+        :rowData="cuisine" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
     </div>
   </div>
@@ -34,9 +34,9 @@
 
 <script>
   import {
-    GET_ALL_CATEGORY
+    GET_ALL_CUISINE
   } from '@/graphql/query'
-  import CategoryAction from '@/components/ListActions/CategoryAction';
+  import CuisineAction from '@/components/ListActions/CuisineAction';
 
 
   export default {
@@ -51,8 +51,8 @@
       };
     },
     apollo: {
-      categories: {
-        query: GET_ALL_CATEGORY,
+      cuisine: {
+        query: GET_ALL_CUISINE,
         error(error) {
           console.log(error)
         }
@@ -95,28 +95,28 @@
         {
           headerName: 'Actions',
           field: 'action',
-          cellRendererFramework: CategoryAction,
+          cellRendererFramework: CuisineAction,
           minWidth: 100,
         },
       ];
     },
 
     methods: {
-       AddCategory(){
-      this.$router.push('/admin/categories/add-category');
+       AddCuisine(){
+      this.$router.push('/admin/cuisine/add-cuisine');
     },
       onFilterTextChange() {
-        console.log(this.categories)
+        console.log(this.cuisine)
         this.gridOptions.api.setQuickFilter(
           document.getElementById("filter-text-box").value
         );
       },
       refetchData() {
-        this.$apollo.queries.categories.refetch()
+        this.$apollo.queries.cuisines.refetch()
       }
     },
     created() {
-      this.$apollo.queries.categories.refetch()
+      this.$apollo.queries.cuisines.refetch()
     },
   };
 

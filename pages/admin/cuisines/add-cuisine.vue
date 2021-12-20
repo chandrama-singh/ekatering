@@ -2,11 +2,11 @@
   <div>
       <div class="bg-white p-2 border-b border-gray-300 pr-4 flex items-center justify-between">
         <div class="flex items-center">
-          <t-button to="/admin/categories/" type="button" variant="secoundry"
+          <t-button to="/admin/cuisine/" type="button" variant="secoundry"
             class="py-3 border-r focus:ring-0 focus:bg-green-400 ">
             <span class="fas fa-arrow-left"> Go Back</span>
           </t-button>
-          <h2 class="text-lg font-semibold mx-6">Add New Category
+          <h2 class="text-lg font-semibold mx-6">Add New cuisine
           </h2>
         </div>
 
@@ -18,7 +18,7 @@
                 <!-- <div class="w-full md:w-1/5 h-auto max-h-screen border-r-2">
                     <div class="bg-gray-300 w-full h-full sm:flex md:block">
                         <button id="button-1" v-on:click="toggleTabs(1)" v-bind:class="{' bg-purple-200': openTab !== 1, 'text-white bg-purple-600': openTab === 1}"  class="w-full border-b-2 flex justify-between items-center px-5 py-2 hover:bg-purple-500 hover:text-white cursor-pointer focus:outline-none">
-                            <span>New Category</span>
+                            <span>New Cuisine</span>
                         </button>
 
                     </div>
@@ -48,7 +48,7 @@
                   </div>
 
                   <div class="text-center mt-6">
-                     <button to="/admin/categories/" class="bg-red-800 text-white active:bg-red-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                     <button to="/admin/cuisine/" class="bg-red-800 text-white active:bg-red-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                       Back
                     </button>
                     <button @click="onSubmit" class="bg-blue-800 text-white active:bg-blue-600 text-sm font-bold  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
@@ -62,7 +62,7 @@
   </div>
 </section>
                         </div>
-                        <!--------------------------Categories--------------------------------->
+                        <!--------------------------Cuisine--------------------------------->
 
                     </div>
                 </div>
@@ -76,7 +76,7 @@
 
 <script>
   import {
-    ADD_NEW_CATEGORY } from '@/graphql/query'
+    ADD_NEW_CUISINE } from '@/graphql/query'
   export default {
     layout: "admin",
     middleware: 'authAdmin',
@@ -104,13 +104,13 @@
         this.loading = true;
         try {
           const {data} = await this.$apollo.mutate({
-            mutation: ADD_NEW_CATEGORY,
+            mutation: ADD_NEW_CUISINE,
             variables: {
               data: this.formData
             },
           })
           console.log(data);
-          this.$toast.success("Category Added Successfully!");
+          this.$toast.success("Cuisine Added Successfully!");
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
 
         } catch (error) {
