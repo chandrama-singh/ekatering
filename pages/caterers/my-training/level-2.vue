@@ -35,8 +35,8 @@
               <span class="">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-1/story_html5.html"
-                  width="75%"
-                  height="300"
+                  width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -48,8 +48,8 @@
               <span class="">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-2/story_html5.html"
-                  width="75%"
-                  height="300"
+                  width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -62,8 +62,8 @@
               <span>
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-3/story_html5.html"
-                  width="75%"
-                  height="300"
+                  width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -78,8 +78,8 @@
               <span class="py-2">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-4/story_html5.html"
-                  width="75%"
-                  height="300"
+                  width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -92,8 +92,8 @@
               <span class="py-2">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-5/story_html5.html"
-                  width="75%"
-                  height="300"
+                 width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -106,8 +106,8 @@
               <span class="py-2">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-6/story_html5.html"
-                  width="75%"
-                  height="300"
+                 width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -121,8 +121,8 @@
               <span class="py-2">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Module-7/story_html5.html"
-                  width="75%"
-                  height="300"
+                  width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
@@ -136,8 +136,8 @@
               <span class="py-2">
                 <iframe
                   src="https://training.ekatering.co.uk/level-2/Test/story_html5.html"
-                  width="75%"
-                  height="300"
+                  width="100%"
+                  height="500"
                 >
                 </iframe>
               </span>
