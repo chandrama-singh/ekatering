@@ -26,7 +26,7 @@
 
     <div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
-        :rowData="cuisine" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+        :rowData="cuisines" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
     </div>
   </div>
@@ -41,7 +41,7 @@
 
   export default {
     layout:'admin',
-    middleware: 'authAdmin',
+
     data() {
       return {
         columnDefs: null,
@@ -51,7 +51,7 @@
       };
     },
     apollo: {
-      cuisine: {
+      cuisines: {
         query: GET_ALL_CUISINE,
         error(error) {
           console.log(error)
@@ -65,17 +65,11 @@
       this.columnDefs = [
         {
           headerName: 'Name',
-          field: 'title',
+          field: 'name',
           sortable: true,
           filter: true,
           minWidth: 300,
 
-        },
-        {
-          headerName: 'Description',
-          field: 'description',
-          sortable: true,
-          filter: true,
         },
 
         {

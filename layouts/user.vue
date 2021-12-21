@@ -94,7 +94,7 @@ export default {
           title: "Profile",
           icon: "far fa-id-badge",
         },
-       
+
 
         {
           title: "Products",
@@ -108,11 +108,11 @@ export default {
           href: "/caterers/services",
         },
 
-        // {
-        //   title: "Coupons",
-        //   href: "/caterers/coupons",
-        //   icon: "fas fa-cut",
-        // },
+        {
+          title: "Coupons",
+          href: "/caterers/coupons",
+          icon: "fas fa-cut",
+        },
 
         {
           href: "/caterers/orders",
