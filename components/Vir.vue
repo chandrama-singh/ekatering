@@ -109,7 +109,7 @@
     <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         
-        <Nuxt-Link to="/fees">
+        <Nuxt-Link to="/VRI_FORM">
           <button
             class="
               inline-block

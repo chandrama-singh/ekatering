@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="AUTHORITY FOOD"/>
+      <TBanner title="LOCAL AUTHORITY FOOD REGISTRATION"/>
       <AuthorityFood/>
       <Passion/>
     </section>

@@ -27,7 +27,7 @@
       </p>
     </div>
 
-    <div class="container mx-auto px-4 bottom-0 p-4 ">
+    <div class="container mx-auto px-4 bottom-0 p-4">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         Why do I need Legal Advice?
       </h2>
@@ -51,22 +51,25 @@
     </div>
     <!---------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 ">
+    <div class="container mx-auto px-4 bottom-0 p-4">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         How much does it Cost?
       </h2>
       <p class="mb-2 text-gray-800 leading-relaxed">
-        All our Fee are noted in <nuxt-link to="/fees" class="text-purple-800"
-          >Fees</nuxt-link>. Select Option 8.
+        All our Fee are noted in
+        <nuxt-link to="/fees" class="text-purple-800">Fees</nuxt-link>. Select
+        Option 8.
       </p>
       <p class="text-gray-800 leading-relaxed">
-        If you require further assistance or advice, do not hesitate to <nuxt-link to="/contactus" class="text-purple-800"
+        If you require further assistance or advice, do not hesitate to
+        <nuxt-link to="/contactus" class="text-purple-800"
           >contact us</nuxt-link
-        > with your enquiry.
+        >
+        with your enquiry.
       </p>
     </div>
     <div class="flex justify-center">
-      <Nuxt-Link to="/fees"
+      <Nuxt-Link to="/legal-advice-form"
         ><button
           class="
             inline-block
