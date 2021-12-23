@@ -36,7 +36,9 @@
             Local authority food <br />registration form advise and completion.
           </td>
           <td class="px-4 py-3">£20</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/localauth-form"> Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600">
+            <Nuxt-Link to="/localauth-form"> Purchase</Nuxt-Link>
+          </td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -45,7 +47,9 @@
             Virtual/remote (VRI) <br />inspection with an inspection report.
           </td>
           <td class="px-4 py-3">£60</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/VRI_FORM">Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600">
+            <Nuxt-Link to="/VRI_FORM">Purchase</Nuxt-Link>
+          </td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -55,7 +59,9 @@
             and completion.
           </td>
           <td class="px-4 py-3">£60</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/SAFER_FOOD_FORM">Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600">
+            <Nuxt-Link to="/SAFER_FOOD_FORM">Purchase</Nuxt-Link>
+          </td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -65,7 +71,9 @@
             Better Business Pack coaching and completion.
           </td>
           <td class="px-4 py-3">£110</td>
-          <td class="px-4 py-3 text-purple-600"><Nuxt-Link to="/VRI_FORM2">Purchase</Nuxt-Link></td>
+          <td class="px-4 py-3 text-purple-600">
+            <Nuxt-Link to="/VRI_FORM2">Purchase</Nuxt-Link>
+          </td>
         </tr>
         <!-- each row -->
         <tr class="bg-white border-b border-gray-500">
@@ -195,7 +203,7 @@
             Full review, assessment <br />and advice on documentation
             <br />procedure.
           </td>
-          <td class="px-4 py-3">From £50</td>
+          <td class="px-4 py-3">From £250</td>
           <td class="px-4 py-3">
             <nuxt-link to="/food-standard-form" class="text-purple-600"
               >Contact us</nuxt-link

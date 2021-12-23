@@ -100,6 +100,7 @@
               </li>
               <li><nuxt-link to="/foodstandard">Food Standard</nuxt-link></li>
               <li><nuxt-link to="/legal">Legal Advice</nuxt-link></li>
+              <li><nuxt-link to="/fees">All Fees</nuxt-link></li>
             </ul>
           </li>
           <li>
