@@ -135,14 +135,27 @@
           </li>
         </ul>
       </div>
-      <p class="text-gray-600 leading-relaxed">
-        Price mention on our
-        <span class="text-purple-600"
-          ><Nuxt-Link to="/fees">Fees</Nuxt-Link></span
+    </div>
+
+<div class="container mx-auto px-4 bottom-0 p-4 mt-3">
+      <h2 class="text-3xl mb-2 font-semibold font-heading">
+        How much does it cost?
+      </h2>
+      <p class="mb-2 text-gray-800 leading-relaxed">
+        All our Fee are noted in
+        <nuxt-link to="/fees" class="text-purple-800">Fees</nuxt-link>. Select
+        Option 5 or 9.
+      </p>
+      <p class="text-gray-800 leading-relaxed">
+        If you require further assistance or advice, do not hesitate to
+        <nuxt-link to="/contactus" class="text-purple-800"
+          >contact us</nuxt-link
         >
-        page. Select option 9.
+        with your enquiry.
       </p>
     </div>
+
+
     <!---------------------------------------------------------------------------->
 
     <!---------------------------------------------------------------------------->

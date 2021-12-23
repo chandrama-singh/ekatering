@@ -80,6 +80,26 @@
         </ul>
       </div>
     </div>
+
+
+<div class="container mx-auto px-4 bottom-0 p-4 mt-3">
+      <h2 class="text-3xl mb-2 font-semibold font-heading">
+        How much does it cost?
+      </h2>
+      <p class="mb-2 text-gray-800 leading-relaxed">
+        All our Fee are noted in
+        <nuxt-link to="/fees" class="text-purple-800">Fees</nuxt-link>. Select
+        Option 6 or 7.
+      </p>
+      <p class="text-gray-800 leading-relaxed">
+        If you require further assistance or advice, do not hesitate to
+        <nuxt-link to="/contactus" class="text-purple-800"
+          >contact us</nuxt-link
+        >
+        with your enquiry.
+      </p>
+    </div>
+
     <!---------------------------------------------------------------------------->
     <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
