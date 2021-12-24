@@ -4,12 +4,12 @@
 
     <div class="max-w-4xl  bg-blue-50 w-full rounded-lg shadow-xl border-2 border-purple-400">
         <div class="p-4 border-b flex justify-between bg-purple-500 text-white">
-            <h2 class="text-2xl font-semibold">
+            <!-- <h2 class="text-2xl font-semibold">
                 Office Use only
             </h2>
             <p class="text-sm text-white">
                 Ref: #025/2020
-            </p>
+            </p> -->
         </div>
         <div>
             <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">

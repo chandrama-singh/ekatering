@@ -12,8 +12,8 @@
         "
       >
         <div class="p-4 border-b flex justify-between bg-purple-500 text-white">
-          <h2 class="text-2xl font-semibold">Office Use only</h2>
-          <p class="text-sm text-white">Ref: #025/2020</p>
+          <!-- <h2 class="text-2xl font-semibold">Office Use only</h2>
+          <p class="text-sm text-white">Ref: #025/2020</p> -->
         </div>
         <div>
           <div
@@ -286,7 +286,7 @@
             >
             </multiselect>
           </div>
-
+ <!-- Video Upload Area  -->
           <div
             class="p-3 border-b flex justify-between bg-purple-400 text-white"
           >
@@ -304,6 +304,25 @@
           >
             <label>Please Upload Only video file </label>
             <input type="file" placeholder="Please Upload video file" />
+          </div>
+
+          <div class="p-3">
+            <p class="">
+              Please ensure the following are covered in your recording:
+            </p>
+
+            <ul class="list-disc">
+              <li>
+                A readily accessible wash hand basin for hand washing only
+              </li>
+              <li>Sinks for cleaning equipment and washing food</li>
+              <li>Worktops and work areas</li>
+              <li>Equipment- utensils, chopping boards, etc.</li>
+              <li>Fridges and freezers</li>
+              <li>Storage – cupboards use to store food and equipment</li>
+              <li>Cooking appliances and areas</li>
+              <li>Hot holding appliances</li>
+            </ul>
           </div>
 
           <div class="p-4 border-b flex justify-center py-6">

@@ -86,14 +86,14 @@
 
     <!---------------------------------------------------------------------------->
 
-    <!-- <section class="py-4 px-2">
+    <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
-          Safer Food Better Business Pack completion coaching
+          Safer Food Better Business coaching & completion
         </h2>
        
-        <button
+        <Nuxt-Link to="/SAFER_FOOD_FORM"
           class="
             inline-block
             mt-6
@@ -108,17 +108,21 @@
             md:rounded-lg
           "
         >
-          Purchase for £ 60.00
-        </button>
+          Purchase for £60
+        </Nuxt-Link>
       </div>
-    </section> -->
+    </section>
 
     <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
+          VRI inspection and Safer Food Better Business Pack coaching
+        </h2>
         <Nuxt-Link to="/SAFER_FOOD_FORM">
           <button
             class="
               inline-block
+              mt-6
               py-4
               px-8
               leading-none
@@ -130,7 +134,7 @@
               md:rounded-lg
             "
           >
-            Purchase
+            Purchase for £110
           </button>
         </Nuxt-Link>
       </div>

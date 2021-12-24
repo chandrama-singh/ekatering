@@ -85,7 +85,7 @@
             md:rounded-lg
           "
         >
-          Contact us
+         Purchase for £50
         </button></Nuxt-Link
       >
     </div>

@@ -20,12 +20,12 @@
     </div>
     <!------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 ">
+    <div class="container mx-auto px-4 bottom-0 p-4">
       <div class="flex">
         <table class="text-left w-full">
           <thead class="flex text-gray-800 w-full font-bold">
             <tr class="flex w-full mb-2">
-              <th class=" w-1/2 text-gray-400 leading-relaxed">
+              <th class="w-1/2 text-gray-400 leading-relaxed">
                 There are 7 modules in total, this:
               </th>
               <!-- <th class="p-4 w-1/2">(Duration in hr/mins)</th> -->
@@ -44,44 +44,65 @@
           >
             <tr class="flex w-full">
               <td class="px-2 w-full mb-2">
-                <span class="w-1/3"><b>Module 1</b></span> <span class="w-1/3"> -</span> <span class="w-1/3"> Food Safety</span></td>
+                <span class="w-1/3"><b>Module 1</b></span>
+                <span class="w-1/3"> -</span>
+                <span class="w-1/3"> Food Safety</span>
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">4:37</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-               <span class="w-1/3"><b>Module 2</b> </span> <span class="w-1/3">-</span>  <span class="w-1/3">General Food Hygiene</span></td>
+                <span class="w-1/3"><b>Module 2</b> </span>
+                <span class="w-1/3">-</span>
+                <span class="w-1/3">General Food Hygiene</span>
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">5:39</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-               <span class="w-1/3"><b>Module 3</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Kitchen Practises</span></td>
+                <span class="w-1/3"><b>Module 3</b> </span>
+                <span class="w-1/3">- </span>
+                <span class="w-1/3">Kitchen Practises</span>
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">15:45</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-                 <span class="w-1/3"><b>Module 4</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Food Handlers – Personal Hygiene</span>
+                <span class="w-1/3"><b>Module 4</b> </span>
+                <span class="w-1/3">- </span>
+                <span class="w-1/3">Food Handlers – Personal Hygiene</span>
               </td>
               <!-- <td class="p-4 w-1/2 text-black">3:22</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-                 <span class="w-1/3"><b>Module 5</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Cleaning and Disinfection</span>
+                <span class="w-1/3"><b>Module 5</b> </span>
+                <span class="w-1/3">- </span>
+                <span class="w-1/3">Cleaning and Disinfection</span>
               </td>
               <!-- <td class="p-4 w-1/2 text-black">3:49</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-               <span class="w-1/3"><b>Module 6</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">Food Safety Hazards</span></td>
+                <span class="w-1/3"><b>Module 6</b> </span>
+                <span class="w-1/3">- </span>
+                <span class="w-1/3">Food Safety Hazards</span>
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">9:11</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-               <span class="w-1/3"><b>Module 7</b> </span> <span class="w-1/3">- </span> <span class="w-1/3">The Law</span></td>
+                <span class="w-1/3"><b>Module 7</b> </span>
+                <span class="w-1/3">- </span> <span class="w-1/3">The Law</span>
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">4:09</td> -->
             </tr>
             <tr class="flex w-full mb-2">
               <td class="px-2 w-1/2">
-               <span class="w-1/3"><b>TEST</b></span>  <span class="w-1/3">- </span> <span class="w-1/3">Multiple choice</span></td>
+                <span class="w-1/3"><b>TEST</b></span>
+                <span class="w-1/3">- </span>
+                <span class="w-1/3">Multiple choice</span>
+              </td>
               <!-- <td class="p-4 w-1/2 text-black">9:16</td> -->
             </tr>
           </tbody>
@@ -133,31 +154,6 @@
       </div>
     </section>
 
-    <section class="py-4 px-2">
-      <div class="w-full max-w-5xl mx-auto text-center">
-        <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
-        <!-- <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
-          <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/contactus">
-          <button
-            class="
-              inline-block
-              py-4
-              px-8
-              leading-none
-              text-white
-              bg-purple-600
-              hover:bg-purple-700
-              font-semibold
-              rounded
-              md:rounded-lg
-            "
-          >
-            Contact Us
-          </button>
-        </Nuxt-Link>
-      </div>
-    </section>
     <!---------------------------------------------------------------------------->
   </section>
 </template>

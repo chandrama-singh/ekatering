@@ -38,40 +38,55 @@
           >
             <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-              <span class="w-1/3"> Module 1 </span><span class="w-1/3">-</span><span class="w-1/3"> Your responsibility</span></td>
+                <span class="w-1/3"> Module 1 </span><span class="w-1/3">-</span
+                ><span class="w-1/3"> Your responsibility</span>
+              </td>
               <!-- <td class="px-4 w-1/2 text-black">1:46</td> -->
             </tr>
-            <tr class="flex w-full mb-1 ">
+            <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-              <span class="w-1/3">Module 2</span> <span class="w-1/3">- </span><span class="w-1/3">The Allergens</span></td>
+                <span class="w-1/3">Module 2</span> <span class="w-1/3">- </span
+                ><span class="w-1/3">The Allergens</span>
+              </td>
               <!-- <td class="px-4 w-1/2 text-black">3:45</td> -->
             </tr>
-            <tr class="flex w-full mb-1 ">
+            <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-              <span class="w-1/3">Module 3</span> <span class="w-1/3">-</span> <span class="w-1/3">Allergen labelling</span>
+                <span class="w-1/3">Module 3</span>
+                <span class="w-1/3">-</span>
+                <span class="w-1/3">Allergen labelling</span>
               </td>
               <!-- <td class="px-4 w-1/2 text-black">3:51</td> -->
             </tr>
-            <tr class="flex w-full mb-1 ">
+            <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-                <span class="w-1/3">Module 4</span> <span class="w-1/3">- </span><span class="w-1/3">Allergen information for your business</span>
+                <span class="w-1/3">Module 4</span> <span class="w-1/3">- </span
+                ><span class="w-1/3"
+                  >Allergen information for your business</span
+                >
               </td>
               <!-- <td class="px-4 w-1/2 text-black">2:21</td> -->
             </tr>
-            <tr class="flex w-full mb-1 ">
+            <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-                <span class="w-1/3">Module 5 </span><span class="w-1/3">- </span><span class="w-1/3">Allergen requirements and best practices</span>
+                <span class="w-1/3">Module 5 </span><span class="w-1/3">- </span
+                ><span class="w-1/3"
+                  >Allergen requirements and best practices</span
+                >
               </td>
               <!-- <td class="px-4 w-1/2 text-black">1:29</td> -->
             </tr>
-            <tr class="flex w-full mb-1 ">
+            <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-              <span class="w-1/3">Module 6</span> <span class="w-1/3">- </span><span class="w-1/3">Enforcement and Penalty</span></td>
+                <span class="w-1/3">Module 6</span> <span class="w-1/3">- </span
+                ><span class="w-1/3">Enforcement and Penalty</span>
+              </td>
               <!-- <td class="px-4 w-1/2 text-black">1:20</td> -->
             </tr>
-            <tr class="flex w-full mb-1 ">
+            <tr class="flex w-full mb-1">
               <td class="px-4 w-full">
-              <span class="w-1/3">TEST </span><span class="w-1/3">- </span><span class="w-1/3">Multiple choice</span>
+                <span class="w-1/3">TEST </span><span class="w-1/3">- </span
+                ><span class="w-1/3">Multiple choice</span>
               </td>
               <!-- <td class="px-4 w-1/2 text-black">3:52</td> -->
             </tr>
@@ -124,11 +139,9 @@
       </div>
     </section>
     <!---------------------------------------------------------------------------->
-    <section class="py-4 px-2">
+    
+    <!-- <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
-        <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
-        <!-- <h2 class="text-3xl mt-4  leading-tight font-semibold font-heading">TURN YOUR PASSION INTO CASH!</h2>
-          <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
         <Nuxt-Link to="/contactus">
           <button
             class="
@@ -148,7 +161,8 @@
           </button>
         </Nuxt-Link>
       </div>
-    </section>
+    </section> -->
+
     <!---------------------------------------------------------------------------->
   </section>
 </template>

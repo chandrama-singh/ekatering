@@ -116,15 +116,19 @@
     
   
     
-    <section class="py-4 px-2">
-      <div class="w-full max-w-5xl mx-auto text-center">
-        
-        <Nuxt-Link to="/VRI_FORM">
-          <button
+    <section>
+      <div class="w-full max-w-5xl mx-auto text-center px-2 py-4">
+        <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
+        <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
+         VRI inspection with inspection report 
+        </h2>
+        <Nuxt-Link to="/localauth-form"
+          ><button
             class="
               inline-block
+              mt-6
               py-4
-              px-8
+              px-16
               leading-none
               text-white
               bg-purple-600
@@ -134,9 +138,37 @@
               md:rounded-lg
             "
           >
-            Purchase
-          </button>
-        </Nuxt-Link>
+            Purchase for £60
+          </button></Nuxt-Link
+        >
+      </div>
+    </section>
+
+     <section>
+      <div class="w-full max-w-5xl mx-auto text-center px-2 py-4">
+        <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
+        <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
+          VRI inspection and Safer Food Better Business Pack coaching
+        </h2>
+        <Nuxt-Link to="/localauth-form"
+          ><button
+            class="
+              inline-block
+              mt-6
+              py-4
+              px-16
+              leading-none
+              text-white
+              bg-purple-600
+              hover:bg-purple-700
+              font-semibold
+              rounded
+              md:rounded-lg
+            "
+          >
+           Purchase for £110
+          </button></Nuxt-Link
+        >
       </div>
     </section>
     
