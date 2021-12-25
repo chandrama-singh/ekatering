@@ -122,7 +122,7 @@
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
          VRI inspection with inspection report 
         </h2>
-        <Nuxt-Link to="/localauth-form"
+        <Nuxt-Link to="/VRI_FORM"
           ><button
             class="
               inline-block
@@ -150,7 +150,7 @@
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
           VRI inspection and Safer Food Better Business Pack coaching
         </h2>
-        <Nuxt-Link to="/localauth-form"
+        <Nuxt-Link to="/VRI_FORM2"
           ><button
             class="
               inline-block

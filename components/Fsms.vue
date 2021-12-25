@@ -108,7 +108,7 @@
           Full HACCP documentation and monitoring template forms
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/food-standard-form">
+        <Nuxt-Link to="/food-sms-form">
           <button
             class="
               inline-block
@@ -137,7 +137,7 @@
           Visit with full HACCP documentation with monitoring template form.
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/food-standard-form">
+        <Nuxt-Link to="/food-sms-form">
           <button
             class="
               inline-block
