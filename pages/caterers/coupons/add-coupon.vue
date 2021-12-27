@@ -117,6 +117,8 @@
             },
           })
           console.log(data);
+          this.$toast.success("Coupon Added Successfully!");
+         this.$router.push({ path: `/caterers/coupons/` })
           
         } catch (error) {
           console.log(error);

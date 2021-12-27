@@ -80,15 +80,15 @@
         </button>
       </template>
     </PageHeader>
-<Servicecard/>
+<!-- <Servicecard/> -->
 
 
 
-<!-- <div class="mx-6">
+<div class="mx-6">
       <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
-        :rowData="products" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+        :rowData="services" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
-    </div> -->
+    </div>
 
 
   </div>
@@ -98,10 +98,10 @@
 <script>
 
   import {
-    GET_ALL_PRODUCT
+    GET_ALL_SERVICE
   } from '@/graphql/query'
   import moment from "moment-timezone";
-  import PaymentAction from '@/components/ListActions/PaymentAction';
+  import ServicePaymentAction from '@/components/ListActions/ServicePaymentAction';
   import UserProfile from '@/components/User/UserProfile';
   import Servicecard from '@/components/cateres/Servicecard.vue';
 
@@ -120,8 +120,8 @@
       Servicecard,
     },
     apollo: {
-      products: {
-        query: GET_ALL_PRODUCT,
+      services: {
+        query: GET_ALL_SERVICE,
         error(error) {
           console.log(error)
         }
@@ -200,7 +200,7 @@
         {
           headerName: 'Actions',
           field: 'action',
-          cellRendererFramework: PaymentAction,
+          cellRendererFramework: ServicePaymentAction,
           minWidth: 100,
         },
       ];
@@ -216,11 +216,11 @@
         );
       },
       refetchData() {
-        this.$apollo.queries.products.refetch()
+        this.$apollo.queries.services.refetch()
       }
     },
     created() {
-      this.$apollo.queries.products.refetch()
+      this.$apollo.queries.services.refetch()
     },
   };
 

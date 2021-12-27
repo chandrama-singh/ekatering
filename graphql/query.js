@@ -989,6 +989,24 @@ export const ADD_CATERER_SERVICE = graphql`
       name
     description
     price
+      mrp
+    banner
+    catalogue
+    slug
+    createdAt
+    updatedAt
+    }
+  }
+`;
+
+export const GET_ALL_SERVICE = graphql`
+  query services {
+    services {
+      id
+      name
+    description
+    price
+      mrp
     banner
     catalogue
     slug

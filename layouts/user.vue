@@ -120,7 +120,7 @@ export default {
           icon: "fas fa-hands-helping",
         },
           {
-          href: "/caterers/my-training",
+          href: "/my-training",
           title: "My Training",
           icon: "fa fa-graduation-cap",
         },

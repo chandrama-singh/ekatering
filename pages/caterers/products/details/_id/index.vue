@@ -698,6 +698,8 @@ export default {
           },
         });
         console.log(data);
+         this.$toast.success("Product Updated Successfully!");
+        this.$router.push('/caterers/products/')
 
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
@@ -722,7 +724,7 @@ export default {
           },
         });
         console.log(data);
-
+       
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
@@ -776,7 +778,7 @@ export default {
           },
         });
         console.log(data);
-
+        this.$toast.success("Product Deleted Successfully!");
         this.$router.push('/caterers/products/')
 
 

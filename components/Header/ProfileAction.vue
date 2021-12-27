@@ -113,7 +113,7 @@
         </nuxt-link>
 
         <div>
-            <Nuxt-Link to="/caterers/my-training" class="flex
+            <Nuxt-Link to="/my-training" class="flex
             items-center
             px-4
             py-2
