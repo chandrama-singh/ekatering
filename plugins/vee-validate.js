@@ -1,13 +1,4 @@
-import Vue from 'vue'
-import {extend, ValidationObserver, ValidationProvider} from 'vee-validate';
-import * as rules from "vee-validate/dist/rules";
+import Vue from 'vue';
+import VeeValidate from 'vee-validate';
 
-Vue.component('ValidationProvider', ValidationProvider);
-Vue.component("ValidationObserver", ValidationObserver);
-    
-for (let [rule, validation] of Object.entries(rules)) {
-  // noinspection TypeScriptValidateTypes
-  extend(rule, {
-    ...validation
-  });
-}
+Vue.use(VeeValidate);

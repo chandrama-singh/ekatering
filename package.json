@@ -20,7 +20,7 @@
     "moment-timezone": "^0.5.33",
     "nuxt": "^2.15.7",
     "nuxt-fontawesome": "^0.4.0",
-    "vee-validate": "^3.4.14",
+    "vee-validate": "^2.2.15",
     "vue-class-component": "^7.2.6",
     "vue-click-outside": "^1.1.0",
     "vue-file-agent": "^1.7.3",
