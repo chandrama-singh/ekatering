@@ -957,11 +957,10 @@
                                 </div>
                               </div>
                               <!-- component -->
-                                <div
+                                 <div
                                   class="
                                     flex flex-col
                                     sm:flex-row
-                                    justify-center
                                     items-center
                                     mb-2
                                     sm:space-x-5
@@ -969,12 +968,12 @@
                                 >
                                   <div class="w-full sm:w-1/2">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      Enter Your Price/Person
+                                      MRP
                                     </p>
                                     <input
                                       type="text"
                                       name=""
-                                      placeholder="Price per person"
+                                      placeholder="MRP"
                                       class="
                                         w-full
                                         p-1
@@ -984,11 +983,11 @@
                                         shadow-sm
                                         appearance-none
                                       "
-                                      id="service-mrp"
+                                      id="product-mrp"
                                       v-model="priceData.mrp"
                                     />
                                   </div>
-                                  <!-- <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
+                                  <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
                                     <p class="mb-2 font-semibold text-gray-700">
                                       Product Price
                                     </p>
@@ -1008,7 +1007,7 @@
                                       id="product-price"
                                       v-model="priceData.price"
                                     />
-                                  </div> -->
+                                  </div>
                                 </div>
 
 
@@ -1220,11 +1219,14 @@ export default {
           mutation: UPDATE_SERVICE_PRICE,
           variables: {
             data: this.priceData,
-            id: this.product.id,
+            id: this.service.id,
           },
         });
         console.log(data);
-        this.product = data.result;
+       // this.product = data.result;
+        this.$toast.success("Services Added Successfully!");
+       
+         this.$router.push({ path: `/caterers/services/` })
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {

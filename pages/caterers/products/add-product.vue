@@ -1286,7 +1286,7 @@ export default {
         });
         console.log(data);
         this.$toast.success("Product Added Successfully!");
-
+ this.$router.push({ path: `/caterers/products/` })
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
