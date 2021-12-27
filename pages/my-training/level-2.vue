@@ -19,7 +19,7 @@
               mb-4
             "
           >
-            Training level-1
+            Training level-2
           </h1>
           <!-- <p class="text-base leading-relaxed xl:w-2/3 lg:w-3/4 mx-auto">
             He legged it plastered cheeky loo what a plonker some dodgy chav a
@@ -34,7 +34,7 @@
               </summary>
               <span class="">
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Module%201/story_html5.html"
+                  src="https://training.ekatering.co.uk/level-2/Module-1/story_html5.html"
                   width="100%"
                   height="500"
                 >
@@ -47,7 +47,7 @@
               </summary>
               <span class="">
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Module%202/story_html5.html"
+                  src="https://training.ekatering.co.uk/level-2/Module-2/story_html5.html"
                   width="100%"
                   height="500"
                 >
@@ -61,7 +61,7 @@
 
               <span>
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Module%203/story_html5.html"
+                  src="https://training.ekatering.co.uk/level-2/Module-3/story_html5.html"
                   width="100%"
                   height="500"
                 >
@@ -77,8 +77,8 @@
 
               <span class="py-2">
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Module%204/story_html5.html"
-                 width="100%"
+                  src="https://training.ekatering.co.uk/level-2/Module-4/story_html5.html"
+                  width="100%"
                   height="500"
                 >
                 </iframe>
@@ -91,7 +91,7 @@
 
               <span class="py-2">
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Module%205/story_html5.html"
+                  src="https://training.ekatering.co.uk/level-2/Module-5/story_html5.html"
                  width="100%"
                   height="500"
                 >
@@ -105,13 +105,29 @@
 
               <span class="py-2">
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Module%206/story_html5.html"
+                  src="https://training.ekatering.co.uk/level-2/Module-6/story_html5.html"
                  width="100%"
                   height="500"
                 >
                 </iframe>
               </span>
             </details>
+
+<details class="mb-4 cursor-pointer">
+              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                Module 7
+              </summary>
+
+              <span class="py-2">
+                <iframe
+                  src="https://training.ekatering.co.uk/level-2/Module-7/story_html5.html"
+                  width="100%"
+                  height="500"
+                >
+                </iframe>
+              </span>
+            </details>
+
             <details class="mb-4 cursor-pointer">
               <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
                 Test
@@ -119,8 +135,8 @@
 
               <span class="py-2">
                 <iframe
-                  src="https://training.ekatering.co.uk/level-1/Test/story_html5.html"
-                 width="100%"
+                  src="https://training.ekatering.co.uk/level-2/Test/story_html5.html"
+                  width="100%"
                   height="500"
                 >
                 </iframe>
@@ -135,7 +151,7 @@
 
 <script>
 export default {
-  layout: "user",
+  layout: "default",
 };
 </script>
 

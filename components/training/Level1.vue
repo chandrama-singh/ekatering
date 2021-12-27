@@ -119,7 +119,7 @@
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
           Food Allergen for Caterers and Private Chefs Level 1
         </h2>
-        <button
+        <Nuxt-Link to="/training-form"> <button
           class="
             inline-block
             mt-6
@@ -135,7 +135,7 @@
           "
         >
           Purchase for £ 15.00
-        </button>
+        </button></Nuxt-Link>
       </div>
     </section>
     <!---------------------------------------------------------------------------->

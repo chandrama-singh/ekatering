@@ -134,7 +134,7 @@
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
           Food Safety for Caterers and Private Chefs Level 2
         </h2>
-        <button
+        <Nuxt-Link to="/training-form"> <button
           class="
             inline-block
             mt-6
@@ -150,7 +150,7 @@
           "
         >
           Purchase for £ 30.00
-        </button>
+        </button></Nuxt-Link>
       </div>
     </section>
 

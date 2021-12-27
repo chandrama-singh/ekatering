@@ -76,7 +76,7 @@
 
             <ul class="sub-menu">
               <li>
-                <nuxt-link to="consultation/consultancy"
+                <nuxt-link to="/consultation"
                   >eKatering consultancy Services</nuxt-link
                 >
               </li>
@@ -205,7 +205,7 @@
             </li>
             <li class="mb-1">
               <nuxt-link
-                to="/consultations"
+                to="/consultation"
                 class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600"
                 >Consultations</nuxt-link
               >

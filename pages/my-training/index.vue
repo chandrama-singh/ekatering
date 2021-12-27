@@ -82,7 +82,7 @@
             </span>
             <p>TEST - Multiple Choice</p>
           </div>
-          <Nuxt-Link to="/caterers/my-training/level-1"
+          <Nuxt-Link to="/my-training/level-1"
           >
             <button
               class="
@@ -174,7 +174,7 @@
             </span>
             <p>TEST - Multiple Choice</p>
           </div>
-          <Nuxt-Link to="/caterers/my-training/level-2"
+          <Nuxt-Link to="/my-training/level-2"
             ><button
               class="
                 mt-4
@@ -295,7 +295,7 @@
 
 <script>
 export default {
-  layout: "user",
+  layout: "default",
 };
 
 </script>

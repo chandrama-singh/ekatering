@@ -229,7 +229,7 @@
               xl:my-2 xl:px-2 xl:w-1/2
             "
           >
-            Local Authority Food Registration
+            Food Allergen for Caterers and Private Chefs - Level 1
           </div>
 
           <div
@@ -243,7 +243,7 @@
               xl:my-2 xl:px-2 xl:w-1/2
             "
           >
-            £ 20.00
+            £ 15.00
           </div>
         </div>
 
@@ -430,7 +430,7 @@
                     md:rounded-lg
                   "
                 >
-                  Make payment and submit application
+                  Make payment and submit
                 </button>
               </div>
             </div>
