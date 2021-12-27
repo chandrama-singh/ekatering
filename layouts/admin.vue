@@ -44,7 +44,7 @@
           href: "/admin/categories",
           icon: "fas fa-hands-helping",
         },
-          
+
           // {
           //   href: '/admin/pending_caterers',
           //   title: 'Pending Application',
@@ -64,14 +64,21 @@
           // },
 
           {
-            href: '/admin/consultation-orders',
+            href: '/admin/consultations',
             title: 'Consultation Orders',
             icon: 'fas fa-hands-helping',
 
           },
 
+           {
+            href: '/admin/contacts',
+            title: 'Contacts',
+            icon: 'fas fa-hands-helping',
+
+          },
+
           {
-             href: '/admin/training-orders',
+             href: '/admin/trainings',
             title: 'Training Orders',
             icon: 'fas fa-chalkboard-teacher',
 

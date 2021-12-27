@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader pageTitle="Cuisines">
+    <PageHeader pageTitle="Training Orders">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
@@ -18,15 +18,13 @@
           </div>
         </div>
 
-         <button @click="AddCuisine" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
-        Add Cuisine
-    </button>
+
       </template>
     </PageHeader>
 
     <div class="mx-6">
-      <ag-grid-vue style="width: 100%; height: calc(100vh - 200px);" class="ag-theme-alpine mt-6  " :columnDefs="columnDefs"
-        :rowData="cuisines" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
+      <ag-grid-vue style="width: 100%; height: 560px" class="ag-theme-alpine mt-6" :columnDefs="columnDefs"
+        :rowData="consultations" :context="context" :gridOptions="gridOptions" rowSelection="multiple">
       </ag-grid-vue>
     </div>
   </div>
@@ -34,14 +32,14 @@
 
 <script>
   import {
-    GET_ALL_CUISINE
+    GET_ALL_CONSULTATION
   } from '@/graphql/query'
-  import CuisineAction from '@/components/ListActions/CuisineAction';
+  import CategoryAction from '@/components/ListActions/CategoryAction';
 
 
   export default {
     layout:'admin',
-
+    middleware: 'authAdmin',
     data() {
       return {
         columnDefs: null,
@@ -51,8 +49,8 @@
       };
     },
     apollo: {
-      cuisines: {
-        query: GET_ALL_CUISINE,
+      consultations: {
+        query: GET_ALL_CONSULTATION,
         error(error) {
           console.log(error)
         }
@@ -71,46 +69,44 @@
           minWidth: 300,
 
         },
-
         {
-          headerName: 'Status',
-          field: 'status',
+          headerName: 'Email',
+          field: 'email',
           sortable: true,
           filter: true,
-          maxWidth: 140,
-          cellRenderer: (cell) => {
-            if (cell.data.status ) {
-              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Enable</span>';
-            }
-            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Disable</span>';
-          },
         },
+         {
+          headerName: 'Contact',
+          field: ' contact_number',
+          sortable: true,
+          filter: true,
+        },
+
+
 
         {
           headerName: 'Actions',
           field: 'action',
-          cellRendererFramework: CuisineAction,
+          cellRendererFramework: CategoryAction,
           minWidth: 100,
         },
       ];
     },
 
     methods: {
-       AddCuisine(){
-      this.$router.push('/admin/cuisine/add-cuisine');
-    },
+
       onFilterTextChange() {
-        console.log(this.cuisine)
+        console.log(this.consultations)
         this.gridOptions.api.setQuickFilter(
           document.getElementById("filter-text-box").value
         );
       },
       refetchData() {
-        this.$apollo.queries.cuisines.refetch()
+        this.$apollo.queries.consultations.refetch()
       }
     },
     created() {
-      this.$apollo.queries.cuisines.refetch()
+      this.$apollo.queries.consultations.refetch()
     },
   };
 

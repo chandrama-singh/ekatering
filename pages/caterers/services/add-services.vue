@@ -651,6 +651,7 @@
                                             "
                                           >
                                             <img
+                                             @click="selectCatalogue"
                                               class="
                                                 has-mask
                                                 h-36
@@ -660,36 +661,27 @@
                                               alt="freepik image"
                                             />
                                           </div>
-                                          <p class="pointer-none text-gray-500">
-                                            <span class="text-sm"
-                                              >Drag and drop</span
-                                            >
-                                            files here <br />
-                                            or
-                                            <a
-                                              href=""
-                                              id=""
-                                              class="
-                                                text-blue-600
-                                                hover:underline
-                                              "
-                                              >select a file</a
-                                            >
-                                            from your computer
-                                          </p>
+
                                         </div>
-                                        <input type="file" class="hidden" />
+                                        <input
+                                    type="file"
+                                    ref="catalogue"
+                                    accept="doc/*"
+                                    hidden="true"
+                                    v-show="false"
+                                    @change="previewCatalogue"
+                                  />
                                       </label>
                                     </div>
                                   </div>
                                   <p class="text-sm text-gray-300">
                                     <span
-                                      >File type: doc,pdf,types of images</span
+                                      >{{catalogueImage}}</span
                                     >
                                   </p>
                                   <div>
                                     <button
-                                      type="submit"
+                                      @click="updateCatalogue"
                                       class="
                                         my-5
                                         w-full
@@ -742,7 +734,7 @@
                                     Back
                                   </button>
                                   <button
-                                    v-on:click="onSubmit()"
+                                    v-on:click="GoToPrice()"
                                     class="
                                       px-4
                                       py-2
@@ -1082,6 +1074,7 @@ import {
   ADD_CATERER_SERVICE,
   UPDATE_SERVICE_BANNER,
   UPDATE_SERVICE_PRICE,
+  UPDATE_SERVICE_CATALOGUE,
 } from "@/graphql/query";
 export default {
   layout: "user",
@@ -1105,6 +1098,8 @@ export default {
       },
       banner: "",
       bannerImage: "",
+      catalogue:'',
+      catalogueImage:''
     };
   },
 
@@ -1115,6 +1110,11 @@ export default {
     GoBack() {
       this.$rounter.push("/caterers/services");
     },
+
+     GoToPrice() {
+      this.step = 3;
+    },
+
     selectBanner() {
       this.$refs.banner.click();
     },
@@ -1130,6 +1130,7 @@ export default {
     },
     async updateBanner() {
       console.log(this.banner);
+      console.log(this.service.id);
       try {
         const res = await this.$apollo.mutate({
           mutation: UPDATE_SERVICE_BANNER,
@@ -1141,11 +1142,49 @@ export default {
         this.loading = false;
         //this.step = 3;
         console.log(res.data.result);
+
       } catch (error) {
         console.log(error);
         this.loading = false;
       }
     },
+
+     selectCatalogue() {
+      this.$refs.catalogue.click();
+    },
+
+     previewCatalogue(event) {
+      this.catalogue = event.target.files[0];
+      if (this.catalogue.size > 1024 * 1024) {
+        alert("File too big (> 1MB)");
+      } else {
+        this.catalogueImage = URL.createObjectURL(this.catalogue);
+        this.loading = true;
+
+      }
+    },
+
+      async updateCatalogue() {
+      console.log(this.banner);
+      console.log(this.service.id);
+      try {
+        const res = await this.$apollo.mutate({
+          mutation: UPDATE_SERVICE_CATALOGUE,
+          variables: {
+            file: this.catalogue,
+            id: this.service.id,
+          },
+        });
+        this.loading = false;
+        //this.step = 3;
+        console.log(res.data.result);
+
+      } catch (error) {
+        console.log(error);
+        this.loading = false;
+      }
+    },
+
     async onSubmit() {
       this.loading = true;
       // this.formData.mrp = parseInt(this.formData.mrp);
@@ -1159,7 +1198,7 @@ export default {
           },
         });
         console.log(data);
-        this.service = data.result.id;
+        this.service = data.result;
          this.step = 2;
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {

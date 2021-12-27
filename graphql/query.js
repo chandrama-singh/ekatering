@@ -882,7 +882,7 @@ mutation verifyLocalFormPayment($id: String!) {
 }
 `;
 
-// Cuisine 
+// Cuisine
 
 export const ADD_NEW_CUISINE = graphql`
   mutation addCuisine($data: CuisineInput!) {
@@ -973,7 +973,7 @@ export const GET_ALL_CUISINE = graphql`
       name
       image
       status
-      added_by{
+      recommendedBy{
           id
           business_name
       }
@@ -1066,6 +1066,51 @@ mutation verifyConsultationPayment($id: String!) {
     payment_intent
   }
 }
+`;
+
+
+export const GET_ALL_CONSULTATION = graphql`
+  query consultations {
+    consultations {
+      id
+      name
+      email
+      contact_number
+      address
+      business_types
+      type_of_cuisine
+      menu
+      delivery_option
+      delivery_service
+      customer
+      mode
+      payment_intent
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_CONSULTATION_BY_ID = graphql`
+  query consultation($id: ID!) {
+    consultation(id: $id) {
+      id
+      name
+      email
+      contact_number
+      address
+      business_types
+      type_of_cuisine
+      menu
+      delivery_option
+      delivery_service
+      customer
+      mode
+      payment_intent
+      createdAt
+      updatedAt
+    }
+  }
 `;
 
 
