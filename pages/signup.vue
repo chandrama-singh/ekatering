@@ -17,153 +17,165 @@
                 lg:px-8
               "
             >
-
               <div
                 v-if="done"
                 class="max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10"
               >
-              <form @submit.prevent="validateBeforeSubmit">
-                <div>
-                <div class="text-center mb-10">
-                  <h2 class="mt-6 text-3xl font-bold text-gray-900 fontpoppin">
-                    Welcome !
-                  </h2>
-                  <!-- <p class="mt-2 text-sm text-gray-600">Please sign in to your account</p> -->
-                </div>
+                <form @submit.prevent="validateBeforeSubmit">
+                  <div>
+                    <div class="text-center mb-10">
+                      <h2
+                        class="mt-6 text-3xl font-bold text-gray-900 fontpoppin"
+                      >
+                        Welcome !
+                      </h2>
+                      <!-- <p class="mt-2 text-sm text-gray-600">Please sign in to your account</p> -->
+                    </div>
 
-                <!-- <div class="flex items-center justify-center space-x-2">
+                    <!-- <div class="flex items-center justify-center space-x-2">
 			<span class="h-px w-16 bg-gray-300"></span>
 			<span class="text-gray-500 font-normal">OR</span>
 			<span class="h-px w-16 bg-gray-300"></span>
 		</div> -->
-    
-                <div class="mt-8 space-y-6" >
-                  
-                  <input type="hidden" name="remember" value="true" />
-                  
-                  <div class="relative"></div>
-                  
-                  <div class="mt-8 content-center">
-                    <label
-                      class="text-sm font-bold text-gray-700 tracking-wide"
-                    >
-                      Email
-                    </label>
-                    <input
-                      v-model="formData.email" id="email" name="email" v-validate="'required|email'" type="email"
-                      placeholder="mail@gmail.com"
-                      class="
-                        w-full
-                        content-center
-                        text-base
-                        py-2
-                        px-2
-                        border border-gray-300
-                        focus:outline-none focus:border-indigo-500
-                      "
-                   :class="{ 'is-danger': errors.has('email') }">
-                  <small v-if="errors.has('email')" class="danger">{{ errors.first('email') }}</small>
-                   
+
+                    <div class="mt-8 space-y-6">
+                      <input type="hidden" name="remember" value="true" />
+
+                      <div class="relative"></div>
+
+                      <div class="mt-8 content-center">
+                        <label
+                          class="text-sm font-bold text-gray-700 tracking-wide"
+                        >
+                          Email
+                        </label>
+                        <input
+                          v-model="formData.email"
+                          id="email"
+                          name="email"
+                          v-validate="'required|email'"
+                          type="email"
+                          placeholder="mail@gmail.com"
+                          class="
+                            w-full
+                            content-center
+                            text-base
+                            py-2
+                            px-2
+                            border border-gray-300
+                            focus:outline-none focus:border-indigo-500
+                          "
+                          :class="{ 'is-danger': errors.has('email') }"
+                        />
+                        <small v-if="errors.has('email')" class="danger">{{
+                          errors.first("email")
+                        }}</small>
+                      </div>
+
+                      <div class="mt-8 content-center">
+                        <label
+                          class="text-sm font-bold text-gray-700 tracking-wide"
+                        >
+                          Password
+                        </label>
+                        <input
+                          v-model="formData.password"
+                          id="password"
+                          name="password"
+                          v-validate="'required'"
+                          class="
+                            w-full
+                            content-center
+                            text-base
+                            py-2
+                            px-2
+                            border border-gray-300
+                            focus:outline-none focus:border-indigo-500
+                          "
+                          type="password"
+                          placeholder="Enter your password"
+                        />
+                        <small v-if="errors.has('password')" class="danger">{{
+                          errors.first("password")
+                        }}</small>
+                      </div>
+                      <div class="mt-8 content-center">
+                        <label
+                          class="text-sm font-bold text-gray-700 tracking-wide"
+                        >
+                          Confirm Password
+                        </label>
+                        <input
+                          v-model="confirmPassword"
+                          class="
+                            w-full
+                            content-center
+                            text-base
+                            py-2
+                            px-2
+                            border border-gray-300
+                            focus:outline-none focus:border-indigo-500
+                          "
+                          type="password"
+                          placeholder="Re-Enter password"
+                        />
+                      </div>
+                      <p v-if="!isPasswordMatch" class="text-red-500 my-2">
+                        Password is not matched
+                      </p>
+                      <div>
+                        <button
+                          type="submit"
+                          class="
+                            w-full
+                            flex
+                            justify-center
+                            bg-indigo-500
+                            text-gray-100
+                            p-4
+                            rounded-lg
+                            tracking-wide
+                            font-semibold
+                            focus:outline-none focus:shadow-outline
+                            hover:bg-indigo-600
+                            shadow-lg
+                            cursor-pointer
+                            transition
+                            ease-in
+                            duration-300
+                          "
+                        >
+                          Sign Up
+                        </button>
+                      </div>
+                      <p
+                        class="
+                          flex flex-col
+                          items-center
+                          justify-center
+                          mt-10
+                          text-center text-md text-gray-500
+                        "
+                      >
+                        <span>Already have an account?</span>
+                        <Nuxt-Link
+                          to="/signin"
+                          class="
+                            text-indigo-500
+                            hover:text-indigo-500no-underline hover:underline
+                            cursor-pointer
+                            transition
+                            ease-in
+                            duration-300
+                          "
+                          >Sign In</Nuxt-Link
+                        >
+                      </p>
+                      <t-alert :variant="type" :show="showAlert">
+                        {{ message }}
+                      </t-alert>
+                    </div>
                   </div>
-                   
-                  <div class="mt-8 content-center">
-                    <label
-                      class="text-sm font-bold text-gray-700 tracking-wide"
-                    >
-                      Password
-                    </label>
-                    <input
-                      v-model="formData.password"
-                      class="
-                        w-full
-                        content-center
-                        text-base
-                        py-2
-                        px-2
-                        border border-gray-300
-                        focus:outline-none focus:border-indigo-500
-                      "
-                      type="password"
-                      placeholder="Enter your password"
-                    />
-                  </div>
-                  <div class="mt-8 content-center">
-                    <label
-                      class="text-sm font-bold text-gray-700 tracking-wide"
-                    >
-                      Confirm Password
-                    </label>
-                    <input
-                      v-model="confirmPassword"
-                      class="
-                        w-full
-                        content-center
-                        text-base
-                        py-2
-                        px-2
-                        border border-gray-300
-                        focus:outline-none focus:border-indigo-500
-                      "
-                      type="password"
-                      placeholder="Re-Enter password"
-                    />
-                  </div>
-                  <p v-if="!isPasswordMatch" class="text-red-500 my-2">
-                    Password is not matched
-                  </p>
-                  <div>
-                    <button
-                     type="submit"
-                      class="
-                        w-full
-                        flex
-                        justify-center
-                        bg-indigo-500
-                        text-gray-100
-                        p-4
-                        rounded-lg
-                        tracking-wide
-                        font-semibold
-                        focus:outline-none focus:shadow-outline
-                        hover:bg-indigo-600
-                        shadow-lg
-                        cursor-pointer
-                        transition
-                        ease-in
-                        duration-300
-                      "
-                    >
-                      Sign Up
-                    </button>
-                  </div>
-                  <p
-                    class="
-                      flex flex-col
-                      items-center
-                      justify-center
-                      mt-10
-                      text-center text-md text-gray-500
-                    "
-                  >
-                    <span>Already have an account?</span>
-                    <Nuxt-Link
-                      to="/signin"
-                      class="
-                        text-indigo-500
-                        hover:text-indigo-500no-underline hover:underline
-                        cursor-pointer
-                        transition
-                        ease-in
-                        duration-300
-                      "
-                      >Sign In</Nuxt-Link
-                    >
-                  </p>
-                  <t-alert :variant="type" :show="showAlert">
-                    {{ message }}
-                  </t-alert>
-                </div>
-</div>
                 </form>
               </div>
               <div v-else class="m-2 p-4 lg:m-0 lg:p-8 bg-white shadow-lg">
@@ -587,15 +599,14 @@ export default {
   },
 
   methods: {
-validateBeforeSubmit() {
-      
+    validateBeforeSubmit() {
       this.$validator.validateAll().then((result) => {
         if (result) {
-         this.onRegister();
-         return
+          this.onRegister();
+          return;
         }
 
-        alert('Fill all the fields correct!');
+        alert("Fill all the fields correct!");
       });
     },
 
@@ -628,7 +639,7 @@ validateBeforeSubmit() {
 .fontpoppin {
   font-family: poppins;
 }
-.danger{
+.danger {
   color: red;
 }
 </style>

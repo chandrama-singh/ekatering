@@ -141,6 +141,7 @@ export default {
     methods:{
     ProgramForm(){
       this.$router.push("/caterers/register/step-one");
+      this.$toast.success("Now Your Registration steps start!");
     },
 
   }
