@@ -1002,7 +1002,7 @@ export const ADD_CATERER_SERVICE = graphql`
 
 
 export const GET_ALL_SERVICE = graphql`
-  query services {
+query services {
     services {
       id
       name
@@ -1011,8 +1011,8 @@ export const GET_ALL_SERVICE = graphql`
       description
       price
       mrp
-      
       catalogue
+      
       status
       createdAt
       updatedAt
@@ -1030,13 +1030,14 @@ export const GET_PUBLISHED_SERVICE = graphql`
   description
   price
   mrp
+ 
+  catalogue
   caterer{
     id
     first_name
     business_name
     
   }
-  catalogue
   status
   createdAt
   updatedAt
