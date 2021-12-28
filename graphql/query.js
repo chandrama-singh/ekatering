@@ -999,19 +999,95 @@ export const ADD_CATERER_SERVICE = graphql`
   }
 `;
 
+
+
 export const GET_ALL_SERVICE = graphql`
   query services {
     services {
       id
       name
-    description
-    price
+      slug
+      banner
+      description
+      price
       mrp
-    banner
-    catalogue
-    slug
-    createdAt
-    updatedAt
+      
+      catalogue
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_PUBLISHED_SERVICE = graphql`
+  query publishedServices {
+    publishedServices{
+      id
+  name
+  slug
+  banner
+  description
+  price
+  mrp
+  caterer{
+    id
+    first_name
+    business_name
+    
+  }
+  catalogue
+  status
+  createdAt
+  updatedAt
+    }
+  }
+`;
+
+export const GET_SERVICE_BY_ID = graphql`
+  query service($id: ID!) {
+    service(id: $id) {
+      id
+      name
+      slug
+      banner
+      description
+      price
+      mrp
+      caterer{
+        id
+        first_name
+        business_name
+        
+      }
+      catalogue
+      status
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const GET_SERVICE_BY_SLUG = graphql`
+  query serviceBySlug($id: ID!) {
+    serviceBySlug(id: $id) {
+      id
+  name
+  slug
+  banner
+  description
+  price
+  mrp
+  caterer{
+    id
+    first_name
+    business_name
+    
+  }
+  catalogue
+  status
+  createdAt
+  updatedAt
     }
   }
 `;
