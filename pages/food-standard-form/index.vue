@@ -17,7 +17,7 @@
                 Ref: #025/2020
             </p> -->
         </div>
-        <div>
+        <div @submit.prevent="validateBeforeSubmit">
         
           <div
             class="
@@ -30,6 +30,7 @@
             "
           >
             <p class="text-gray-600">Name<span class="text-red-500">*</span></p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Enter Name"
               class="
@@ -46,7 +47,10 @@
               required="required"
               type="text"
               v-model="formData.name"
+              id="name" name="name" v-validate="'required'"
             />
+            <small v-if="errors.has('name')" class="danger">{{ errors.first('name') }}</small>
+             </span>
           </div>
           <div
             class="
@@ -61,6 +65,7 @@
             <p class="text-gray-600">
               Email<span class="text-red-500">*</span>
             </p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Email"
               class="
@@ -77,7 +82,10 @@
               required="required"
               type="email"
               v-model="formData.email"
-            />
+             id="email" name="email" v-validate="'required|email'"
+                      :class="{ 'is-danger': errors.has('email') }">
+                      <small v-if="errors.has('email')" class="danger">{{ errors.first('email') }}</small>
+             </span>
           </div>
           <div
             class="
@@ -90,6 +98,7 @@
             "
           >
             <p class="text-gray-600">Contact Number</p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Contact Number"
               class="
@@ -106,7 +115,10 @@
               required="required"
               type="email"
               v-model="formData.number"
+              id="mobile" name="mobile" v-validate="'required|numeric'"
             />
+             <small v-if="errors.has('mobile')" class="danger">{{ errors.first('mobile') }}</small>
+             </span>
           </div>
 
           <div
@@ -185,6 +197,16 @@ export default {
     };
   },
   methods: {
+    validateBeforeSubmit() {
+      this.$validator.validateAll().then((result) => {
+        if (result) {
+         this.onSubmit();
+         return
+        }
+
+        alert('Correct the errors!');
+      });
+    },
     onSubmit() {
       console.log(this.formData);
     },

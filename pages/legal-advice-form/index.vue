@@ -20,30 +20,8 @@
                 Ref: #025/2020
             </p> -->
         </div>
-        <div>
-          <!-- <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
-                <p class="text-gray-600 ">
-                    Select the amount of product assessments required: 
-                </p>
-                 <input
-                      placeholder=""
-                      class="
-                        appearance-none
-                        block
-                        w-full
-                        bg-grey-lighter
-                        text-grey-darker
-                        border border-grey-lighter
-                        rounded-lg
-                        h-10
-                        px-4
-                      "
-                      required="required"
-                      type="text"
-                      name="integration[shop_name]"
-                      id="integration_shop_name"
-                    />
-            </div> -->
+        <div @submit.prevent="validateBeforeSubmit">
+         
           <div
             class="
               md:grid md:grid-cols-2
@@ -55,6 +33,7 @@
             "
           >
             <p class="text-gray-600">Name<span class="text-red-500">*</span></p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Enter Name"
               class="
@@ -71,9 +50,12 @@
               required="required"
               type="text"
               v-model="formData.name"
+              id="name" name="name" v-validate="'required'"
             />
+             <small v-if="errors.has('name')" class="danger">{{ errors.first('name') }}</small>
+             </span>
           </div>
-
+         
           <div
             class="
               md:grid md:grid-cols-2
@@ -87,6 +69,7 @@
             <p class="text-gray-600">
               Email<span class="text-red-500">*</span>
             </p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Email"
               class="
@@ -103,9 +86,12 @@
               required="required"
               type="email"
               v-model="formData.email"
-            />
+            id="email" name="email" v-validate="'required|email'"
+                      :class="{ 'is-danger': errors.has('email') }">
+                      <small v-if="errors.has('email')" class="danger">{{ errors.first('email') }}</small>
+             </span>
           </div>
-
+          
           <div
             class="
               md:grid md:grid-cols-2
@@ -119,6 +105,7 @@
             <p class="text-gray-600">
               Phone<span class="text-red-500">*</span>
             </p>
+            <span class="float-right text-right w-full">
             <input
               placeholder="Phone Number"
               class="
@@ -135,9 +122,13 @@
               required="required"
               type="phone"
               v-model="formData.phone"
+               id="mobile" name="mobile" v-validate="'required|numeric'"
             />
+            
+            <small v-if="errors.has('mobile')" class="danger">{{ errors.first('mobile') }}</small>
+            </span>
           </div>
-
+           
           <div
             class="
               md:grid md:grid-cols-2
@@ -261,6 +252,16 @@ export default {
   },
 
   methods: {
+    validateBeforeSubmit() {
+      this.$validator.validateAll().then((result) => {
+        if (result) {
+         this.onSubmit();
+         return
+        }
+
+        alert('Correct the errors!');
+      });
+    },
     onSubmit() {
       console.log(this.formData);
     },

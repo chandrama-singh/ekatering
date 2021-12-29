@@ -15,7 +15,7 @@
           <!-- <h2 class="text-2xl font-semibold">Office Use only</h2>
           <p class="text-sm text-white">Ref: #025/2020</p> -->
         </div>
-        <div>
+        <div @submit.prevent="validateBeforeSubmit">
           <div
             class="
               md:grid md:grid-cols-2
@@ -27,6 +27,7 @@
             "
           >
             <p class="text-gray-600">Business Name</p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Business Name"
               class="
@@ -43,7 +44,10 @@
               required="required"
               type="text"
               v-model="formData.name"
+            id="name" name="name" v-validate="'required'"
             />
+             <small v-if="errors.has('name')" class="danger">{{ errors.first('name') }}</small>
+             </span>
           </div>
           <div
             class="
@@ -85,6 +89,7 @@
             "
           >
             <p class="text-gray-600">Food Business Owner contact number</p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Food Business Owner contact number"
               class="
@@ -101,7 +106,10 @@
               required="required"
               type="text"
               v-model="formData.contact_number"
+           id="contact_number" name="contact_number" v-validate="'required|numeric'"
             />
+            <small v-if="errors.has('contact_number')" class="danger">{{ errors.first('contact_number') }}</small>
+             </span>
           </div>
           <div
             class="
@@ -114,6 +122,7 @@
             "
           >
             <p class="text-gray-600">Food Business Email</p>
+             <span class="float-right text-right w-full">
             <input
               placeholder="Food Business Email"
               class="
@@ -130,7 +139,10 @@
               required="required"
               type="email"
               v-model="formData.email"
-            />
+            id="email" name="email" v-validate="'required|email'"
+                      :class="{ 'is-danger': errors.has('email') }">
+                      <small v-if="errors.has('email')" class="danger">{{ errors.first('email') }}</small>
+             </span>
           </div>
           <div
             class="p-3 border-b flex justify-between bg-purple-400 text-white"
@@ -193,7 +205,9 @@
               type="text"
               rows="8"
               v-model="formData.type_of_cuisine"
+               id="type_of_cuisine" name="type_of_cuisine" v-validate="'required'"
             ></textarea>
+            <small v-if="errors.has('type_of_cuisine')" class="danger">{{ errors.first('type_of_cuisine') }}</small>
           </div>
           <div
             class="p-3 border-b flex justify-between bg-purple-400 text-white"
@@ -229,7 +243,9 @@
               type="text"
               rows="8"
               v-model="formData.menu"
+              id="menu" name="menu" v-validate="'required'"
             ></textarea>
+             <small v-if="errors.has('menu')" class="danger">{{ errors.first('menu') }}</small>
           </div>
           <!--------------------------------------->
           <div
@@ -436,6 +452,16 @@ export default {
     Multiselect,
   },
   methods: {
+     validateBeforeSubmit() {
+      this.$validator.validateAll().then((result) => {
+        if (result) {
+         this.onSubmit();
+         return
+        }
+
+        alert('Correct the errors!');
+      });
+    },
     async onSubmit() {
       this.loading = true;
       console.log(this.selectedOption);
