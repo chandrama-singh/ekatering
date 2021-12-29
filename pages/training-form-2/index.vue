@@ -283,7 +283,7 @@
                 xl:my-2 xl:px-2 xl:w-1/2
               "
             >
-              Food Allergen for Caterers and Private Chefs - Level 1
+              Food Safety for Caterers and Private Chefs - Level 2
             </div>
 
             <div
@@ -297,7 +297,7 @@
                 xl:my-2 xl:px-2 xl:w-1/2
               "
             >
-              £ 15.00
+              £ 30.00
             </div>
           </div>
 

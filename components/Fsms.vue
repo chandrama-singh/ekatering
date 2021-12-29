@@ -100,8 +100,8 @@
     </div>
 
     <!---------------------------------------------------------------------------->
-    
- <section class="py-4 px-2">
+
+    <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
@@ -124,20 +124,20 @@
               md:rounded-lg
             "
           >
-           Purchase from £450
+            Purchase from £450
           </button></Nuxt-Link
         >
       </div>
     </section>
 
-     <section class="py-4 px-2">
+    <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
-          Visit with full HACCP documentation with monitoring template form.
+          Visit with full HACCP documentation and monitoring template form.
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/food-sms-form">
+        <Nuxt-Link to="/food-sms-form-2">
           <button
             class="
               inline-block
@@ -153,7 +153,7 @@
               md:rounded-lg
             "
           >
-            Purchase from £450
+            Purchase from £750
           </button></Nuxt-Link
         >
       </div>

@@ -286,7 +286,7 @@
             >
             </multiselect>
           </div>
- <!-- Video Upload Area  -->
+          <!-- Video Upload Area  -->
           <div
             class="p-3 border-b flex justify-between bg-purple-400 text-white"
           >
@@ -311,7 +311,7 @@
               Please ensure the following are covered in your recording:
             </p>
 
-            <ul class="list-disc">
+            <ul class="list-disc ml-4">
               <li>
                 A readily accessible wash hand basin for hand washing only
               </li>
@@ -413,6 +413,7 @@ export default {
         "Event Caterer",
         "Take away",
         "Restaurant",
+        
       ],
       publishableKey:
         "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",

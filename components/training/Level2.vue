@@ -134,7 +134,7 @@
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
           Food Safety for Caterers and Private Chefs Level 2
         </h2>
-        <Nuxt-Link to="/training-form"> <button
+        <Nuxt-Link to="/training-form-2"> <button
           class="
             inline-block
             mt-6

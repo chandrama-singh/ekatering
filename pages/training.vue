@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="bgcolor">
-      <TBanner title="eKatering ONLINE TRAINING " />
+      <Tbanner />
       <TrainingAbout />
       <TwhyKetring />
       <Cost />
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import TBanner from "../components/training/TBanner.vue";
+import Tbanner from "@/components/Tbanner.vue";
 import TrainingAbout from "@/components/training/TrainingAbout.vue";
 import TwhyKetring from "@/components/training/TwhyKetring.vue";
 import Cost from "@/components/training/Cost.vue";
@@ -48,7 +48,7 @@ export default {
     return {};
   },
   components: {
-    TBanner,
+    Tbanner,
     TrainingAbout,
     TwhyKetring,
     Cost,

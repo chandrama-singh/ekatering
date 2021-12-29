@@ -85,7 +85,7 @@
             md:rounded-lg
           "
         >
-         Purchase for £50
+          Purchase from £50
         </button></Nuxt-Link
       >
     </div>

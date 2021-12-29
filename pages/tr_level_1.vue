@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="eKatering ONLINE TRAINING LEVEL 1"/>
+      <Tbanner1/>
       <Level1/>
       <Passion/>
     </section>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import TBanner from '../components/training/TBanner.vue'
+
 import Level1 from '@/components/training/Level1.vue'
 import Passion from '@/components/training/Passion.vue'
 export default {
@@ -17,7 +17,7 @@ export default {
      layout:"default",
 
     components:{
-        TBanner,
+       
         Level1,
         Passion,
     }

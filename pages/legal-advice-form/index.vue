@@ -73,6 +73,7 @@
               v-model="formData.name"
             />
           </div>
+
           <div
             class="
               md:grid md:grid-cols-2
@@ -105,6 +106,37 @@
             />
           </div>
 
+          <div
+            class="
+              md:grid md:grid-cols-2
+              hover:bg-gray-50
+              md:space-y-0
+              space-y-1
+              p-4
+              border-b
+            "
+          >
+            <p class="text-gray-600">
+              Phone<span class="text-red-500">*</span>
+            </p>
+            <input
+              placeholder="Phone Number"
+              class="
+                appearance-none
+                block
+                w-full
+                bg-grey-lighter
+                text-grey-darker
+                border border-grey-lighter
+                rounded-lg
+                h-10
+                px-4
+              "
+              required="required"
+              type="phone"
+              v-model="formData.phone"
+            />
+          </div>
 
           <div
             class="
@@ -139,8 +171,9 @@
               x-model="expired.month"
             >
               <option value="" selected="selected" disabled>
-                A food safety report
+                Choose an option
               </option>
+              <option value="A food safety report">A food safety report</option>
               <option value="Improvement notice">Improvement notice</option>
               <option value="Prohibition notice">Prohibition notice</option>
               <option value="Closure of my business">
@@ -149,8 +182,6 @@
               <option value="Other">Other</option>
             </select>
           </div>
-
-
 
           <div
             class="
@@ -221,6 +252,7 @@ export default {
       formData: {
         name: "",
         email: "",
+        phone: "",
         needhelp: "",
         message: "",
       },

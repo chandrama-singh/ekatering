@@ -4,16 +4,26 @@
       <h2 class="text-3xl mb-4 font-semibold font-heading">
         Virtual Remote Inspection (VRI)
       </h2>
-      <p class="text-gray-400 leading-relaxed mb-2">Welcome to eKatering Food Safety Consultancy. </p>
+      <p class="text-gray-400 leading-relaxed mb-2">
+        Welcome to eKatering Food Safety Consultancy.
+      </p>
       <p class="text-gray-400 leading-relaxed">
-        VRI is the way forward in this changing world that we live in. This service applies to small catering kitchens such as those used by home/event caterers and private chefs. However, if you sell food from a commercial catering establishment, such as a small restaurant or takeaway, this service could also apply to you.
+        VRI is the way forward in this changing world that we live in. This
+        service applies to small catering kitchens such as those used by
+        home/event caterers and private chefs. However, if you sell food from a
+        commercial catering establishment, such as a small restaurant or
+        takeaway, this service could also apply to you.
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-1 font-semibold font-heading">What is VRI ?</h2>
       <p class="text-gray-400 leading-relaxed">
-        A VRI, Virtual Remote Inspection, is simply a food safety inspection completed online by qualified food safety officers. It requires you to take a video of specific elements of your kitchen and upload the information, with all requested documentation. The video and documentation will be reviewed and an inspection report emailed to you.
+        A VRI, Virtual Remote Inspection, is simply a food safety inspection
+        completed online by qualified food safety officers. It requires you to
+        take a video of specific elements of your kitchen and upload the
+        information, with all requested documentation. The video and
+        documentation will be reviewed and an inspection report emailed to you.
       </p>
     </div>
     <!------------------------------------------------------------------------------------------------------>
@@ -66,7 +76,7 @@
         </button>
       </div>
     </section> -->
-   
+
     <!-- <section class="py-4 px-2">
       <div class="w-full max-w-5xl mx-auto text-center">
         
@@ -94,7 +104,6 @@
         </button>
       </div>
     </section> -->
-    
 
     <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
@@ -113,14 +122,12 @@
         with your enquiry.
       </p>
     </div>
-    
-  
-    
+
     <section>
       <div class="w-full max-w-5xl mx-auto text-center px-2 py-4">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
-         VRI inspection with inspection report 
+          VRI inspection with inspection report
         </h2>
         <Nuxt-Link to="/VRI_FORM"
           ><button
@@ -144,7 +151,7 @@
       </div>
     </section>
 
-     <section>
+    <section>
       <div class="w-full max-w-5xl mx-auto text-center px-2 py-4">
         <!-- <span class="text-sm font-semibold">TAGLINE</span> -->
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
@@ -166,12 +173,11 @@
               md:rounded-lg
             "
           >
-           Purchase for £110
+            Purchase for £110
           </button></Nuxt-Link
         >
       </div>
     </section>
-    
   </section>
 </template>
 

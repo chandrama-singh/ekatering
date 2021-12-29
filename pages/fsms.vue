@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="DOCUMENTED FOOD SAFETY MANAGEMENT SYSTEM"/>
+      <FSbanner/>
       <Fsms/>
       <Passion/>
     </section>
@@ -10,17 +10,25 @@
 </template>
 
 <script>
-import TBanner from '../components/training/TBanner.vue'
-import Fsms from '@/components/Fsms.vue'
 
+import Fsms from '@/components/Fsms.vue'
+import FSbanner from "@/components/FSbanner";
 import Passion from '@/components/training/Passion.vue'
 
 export default {
-    name: 'training',
+
+// props: {
+//         title: {
+//         this.title("title")
+//         }
+//       },
+
+
+    // name: 'training',
      layout:"default",
 
     components:{
-        TBanner,
+        FSbanner,
         Fsms,
         Passion,
     }

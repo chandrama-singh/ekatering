@@ -118,7 +118,7 @@
         <h2 class="text-3xl mt-4 leading-tight font-semibold font-heading">
           VRI inspection and Safer Food Better Business Pack coaching
         </h2>
-        <Nuxt-Link to="/SAFER_FOOD_FORM">
+        <Nuxt-Link to="/SAFER_FOOD_FORM_2">
           <button
             class="
               inline-block

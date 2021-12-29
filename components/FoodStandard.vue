@@ -137,7 +137,7 @@
       </div>
     </div>
 
-<div class="container mx-auto px-4 bottom-0 p-4 mt-3">
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
         How much does it cost?
       </h2>
@@ -154,7 +154,6 @@
         with your enquiry.
       </p>
     </div>
-
 
     <!---------------------------------------------------------------------------->
 
@@ -182,7 +181,7 @@
               md:rounded-lg
             "
           >
-            From £ 5.00 per product , Contact us
+            From £5.00 per product
           </button></Nuxt-Link
         >
       </div>
@@ -196,7 +195,7 @@
           Documentation and Procedure
         </h2>
         <!-- <span class="text-sm">If you are a Home/Event Caterer or a Private Chef, help us kickstart your digital journey.</span><br/> -->
-        <Nuxt-Link to="/food-standard-form"
+        <Nuxt-Link to="/food-standard-form-2"
           ><button
             class="
               inline-block
@@ -212,7 +211,7 @@
               md:rounded-lg
             "
           >
-            From £ 250.00 per product , Contact us
+            From £250.00 per product
           </button>
         </Nuxt-Link>
       </div>
