@@ -101,7 +101,7 @@
     GET_ALL_SERVICE
   } from '@/graphql/query'
   import moment from "moment-timezone";
-  import ServicePaymentAction from '@/components/ListActions/ServicePaymentAction';
+  import ServiceAction from '@/components/ListActions/ServiceAction';
   import UserProfile from '@/components/User/UserProfile';
   import Servicecard from '@/components/cateres/Servicecard.vue';
 
@@ -118,6 +118,7 @@
     },
     components:{
       Servicecard,
+      ServiceAction
     },
     apollo: {
       services: {
@@ -190,17 +191,17 @@
           filter: true,
           maxWidth: 140,
           cellRenderer: (cell) => {
-            if (cell.data.status == "DRAFT") {
-              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">DRAFT</span>';
+            if (cell.data.status ) {
+              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Published</span>';
             }
-            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">UnPaid</span>';
+            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Draft</span>';
           },
         },
 
         {
           headerName: 'Actions',
           field: 'action',
-          cellRendererFramework: ServicePaymentAction,
+          cellRendererFramework: ServiceAction,
           minWidth: 100,
         },
       ];

@@ -20,7 +20,48 @@
         >
           <span class="fas fa-arrow-left"> Go Back</span>
         </t-button>
-        <h2 class="text-lg font-semibold mx-6">Add New Service</h2>
+        <h2 class="text-lg font-semibold mx-6">Edit Service</h2>
+      </div>
+       <div
+        class="
+          flex
+          text-lg
+          flex-row
+          items-center
+          justify-center
+          p-4
+          rounded-bl-lg rounded-br-lg
+        "
+      >
+        <button
+          class="
+            px-4
+            py-2
+            mx-2
+            text-white
+            bg-purple-500
+            rounded
+          "
+          v-if="service.status"
+          @click="changeStatus(false)"
+        >
+          Publish
+        </button>
+         <button
+          class="
+            px-4
+            py-2
+            mx-2
+            text-white
+            bg-purple-500
+            rounded
+          "
+          v-else
+          @click="changeStatus(true)"
+        >
+          Draft
+        </button>
+
       </div>
     </div>
     <div class="w-full flex justify-center max-h-screen">
@@ -48,8 +89,7 @@
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
 
                               <!------------------------Info Value-------------------------------->
-                               <div v-if="step == 1">
-                                  <!-- component -->
+
                               <div class="w-full py-6">
                                 <div class="flex">
                                   <div class="w-1/4">
@@ -283,7 +323,7 @@
                                         appearance-none
                                       "
                                       id="service-name"
-                                      v-model="formData.name"
+                                      v-model="service.name"
                                     />
                                   </div>
 
@@ -307,11 +347,8 @@
                                     w-full
                                   "
                                   id="service-description"
-                                  v-model="formData.description"
+                                  v-model="service.description"
                                 />
-
-
-
 
                                 <div
                                   class="
@@ -338,9 +375,6 @@
                                   </button>
                                 </div>
 
-                              </div>
-
-                              <div v-if="step == 2">
                                  <!-- component -->
                               <div class="w-full py-6">
                                 <div class="flex">
@@ -587,8 +621,6 @@
                                     <p>Click on Image to change banner</p>
                                   </div>
                                 </div>
-
-
                                 <center>
                                 <div
                                   class="
@@ -708,7 +740,6 @@
                                 </div>
 </center>
 
-
                                 <div
                                   class="
                                     flex
@@ -746,12 +777,8 @@
                                     Next
                                   </button>
                                 </div>
-                              </div>
-                              <!------------------------Buttons END-------------------------------->
-                              <!------------------------Banner END-------------------------------->
 
-                              <!------------------------Price -------------------------------->
-                              <div v-if="step == 3">
+
                                   <!-- component -->
                               <div class="w-full py-6">
                                 <div class="flex">
@@ -984,7 +1011,7 @@
                                         appearance-none
                                       "
                                       id="product-mrp"
-                                      v-model="priceData.mrp"
+                                      v-model="service.mrp"
                                     />
                                   </div>
                                   <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
@@ -1005,13 +1032,10 @@
                                         appearance-none
                                       "
                                       id="product-price"
-                                      v-model="priceData.price"
+                                      v-model="service.price"
                                     />
                                   </div>
                                 </div>
-
-
-                                <!------------------------Buttons-------------------------------->
                                 <div
                                   class="
                                     flex
@@ -1024,7 +1048,7 @@
                                   "
                                 >
                                   <button
-                                    v-on:click="step == 2"
+
                                     class="
                                       px-4
                                       py-2
@@ -1049,8 +1073,7 @@
                                     Save
                                   </button>
                                 </div>
-                              </div>
-                              <!------------------------Buttons END-------------------------------->
+
                             </div>
                             <!------------------------Price END-------------------------------->
                           </div>
@@ -1070,14 +1093,13 @@
 
 <script>
 import {
-  ADD_CATERER_SERVICE,
+  GET_SERVICE_BY_ID,
   UPDATE_SERVICE_BANNER,
   UPDATE_SERVICE_PRICE,
   UPDATE_SERVICE_CATALOGUE,
 } from "@/graphql/query";
 export default {
   layout: "user",
-  middleware: "authUser",
   data() {
     return {
       openTab: 1,
@@ -1087,19 +1109,27 @@ export default {
       step: 1,
       service: '',
       type: null,
-      formData: {
-        name: "",
-        description: "",
-      },
-      priceData: {
-        price: 0,
-        mrp: 0,
-      },
+
       banner: "",
       bannerImage: "",
       catalogue:'',
       catalogueImage:''
     };
+  },
+
+    apollo: {
+     service: {
+        query: GET_SERVICE_BY_ID,
+        variables() {
+          return {
+            id: this.$route.params.id
+          };
+        },
+        error(error) {
+          console.log(error);
+        }
+      },
+
   },
 
   methods: {
@@ -1188,14 +1218,14 @@ export default {
 
     async onSubmit() {
       this.loading = true;
-      // this.formData.mrp = parseInt(this.formData.mrp);
-      // this.formData.price = parseInt(this.formData.price);
-      console.log(this.formData);
+      // this.service.mrp = parseInt(this.service.mrp);
+      // this.service.price = parseInt(this.service.price);
+      console.log(this.service);
       try {
         const { data } = await this.$apollo.mutate({
           mutation: ADD_CATERER_SERVICE,
           variables: {
-            data: this.formData,
+            data: this.service,
           },
         });
         console.log(data);
@@ -1214,14 +1244,14 @@ export default {
 
     async updatePrice() {
       this.loading = true;
-      this.priceData.mrp = parseInt(this.priceData.mrp);
-      this.priceData.price = parseInt(this.priceData.price);
-      console.log(this.priceData);
+      this.price.mrp = parseInt(this.price.mrp);
+      this.price.price = parseInt(this.price.price);
+      console.log(this.price);
       try {
         const { data } = await this.$apollo.mutate({
           mutation: UPDATE_SERVICE_PRICE,
           variables: {
-            data: this.priceData,
+            data: this.price,
             id: this.service.id,
           },
         });
