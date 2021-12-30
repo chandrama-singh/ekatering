@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Are you starting a UK home catering business to improve your income? Download eKatering app – a one-stop shop for home/event caterers and private chefs in the UK.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -54,39 +54,25 @@ export default {
   components: {
     dirs: [
       '~/components',
-      {
-        path: '~/components/Content/'
-      },
-      {
-        path: '~/components/Coupon/'
-      },
-      {
-        path: '~/components/Course/'
-      },
-      {
-        path: '~/components/Footer/'
-      },
+      
+      
+     
+      
       {
         path: '~/components/Header/'
       },
-      {
-        path: '~/components/HomePage/'
-      },
+      
       {
         path: '~/components/ListActions/'
       },
       {
         path: '~/components/Loader/'
       },
-      {
-        path: '~/components/Package/'
-      },
+      
       {
         path: '~/components/Profile/'
       },
-      {
-        path: '~/components/Setting/'
-      },
+      
 
       {
         path: '~/components/User/'
