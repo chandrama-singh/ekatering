@@ -136,7 +136,7 @@
             From £450 for any additional product
           </td>
           <td class="px-4 py-3">
-            <nuxt-link to="/food-sms-form" class="text-purple-600"
+            <nuxt-link to="/food-sms-form-2" class="text-purple-600"
               >Contact us</nuxt-link
             >
           </td>

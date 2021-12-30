@@ -249,7 +249,7 @@
               name="agree"
               v-validate="'required'"
               required="required"
-            />I have read, understood and agree to the Terms and Conditions
+            />I have read, understood and agree to the <Nuxt-Link to="/training-tc" class="text-indigo-500"> Terms and Conditions </Nuxt-Link>
             <br />
             <small v-if="errors.has('agree')" class="danger pl-4">{{
               errors.first("agree")

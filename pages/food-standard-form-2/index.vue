@@ -17,7 +17,7 @@
                 Ref: #025/2020
             </p> -->
         </div>
-        <div @submit.prevent="validateBeforeSubmit">
+        <div @onSubmit.prevent="validateBeforeSubmit">
         
            <div
             class="
@@ -113,7 +113,7 @@
                 px-4
               "
               required="required"
-              type="email"
+              type="mobile"
               v-model="formData.number"
               id="mobile" name="mobile" v-validate="'required|numeric'"
             />
@@ -152,7 +152,20 @@
             ></textarea>
           </div>
 
-          <!--------------------------------------->
+        <span class="pl-4 w-full">
+            <input
+              type="checkbox"
+              class="mr-2"
+              id="agree"
+              name="agree"
+              v-validate="'required'"
+              required="required"
+            />I have read, understood and agree to the <Nuxt-Link to="/training-tc" class="text-indigo-500"> Terms and Conditions </Nuxt-Link>
+            <br />
+            <small v-if="errors.has('agree')" class="danger pl-4">{{
+              errors.first("agree")
+            }}</small>
+          </span>
 
           <div class="p-4 border-b flex justify-center py-6">
             <button
@@ -197,6 +210,7 @@ export default {
     };
   },
   methods: {
+
     validateBeforeSubmit() {
       this.$validator.validateAll().then((result) => {
         if (result) {
@@ -207,9 +221,11 @@ export default {
         alert('Correct the errors!');
       });
     },
+    
     onSubmit() {
       console.log(this.formData);
     },
+
   },
 };
 </script>

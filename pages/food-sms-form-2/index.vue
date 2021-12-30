@@ -281,7 +281,7 @@
               "
               required="required"
               type="email"
-              v-model="formData.businessName"
+              v-model="formData.tradingName"
             />
           </div>
           <div
@@ -460,6 +460,25 @@
               v-model="formData.manufacture"
             ></textarea>
           </div>
+
+          <span class="pl-4 w-full">
+            <input
+              type="checkbox"
+              class="mr-2"
+              id="agree"
+              name="agree"
+              v-validate="'required'"
+              required="required"
+            />I have read, understood and agree to the
+            <Nuxt-Link to="/training-tc" class="text-indigo-500">
+              Terms and Conditions
+            </Nuxt-Link>
+            <br />
+            <small v-if="errors.has('agree')" class="danger pl-4">{{
+              errors.first("agree")
+            }}</small>
+          </span>
+
           <div class="p-4 border-b flex justify-center py-6">
             <button
               type="submit"
@@ -522,7 +541,7 @@ export default {
         number: "",
         email: "",
         companyName: "",
-        businessName: "",
+        tradingName: "",
         regNumber: "",
         businessAddress: "",
         scope: "",
