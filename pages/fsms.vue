@@ -17,11 +17,11 @@ import Passion from '@/components/training/Passion.vue'
 
 export default {
 
-// props: {
-//         title: {
-//         this.title("title")
-//         }
-//       },
+  head: {
+    meta: [
+      { hid: 'description', name: 'description', content: 'Control food safety hazards with food safety management system and maintain a positive brand image by delivering only high-quality and safe food.'},
+    ],
+  },
 
 
     // name: 'training',

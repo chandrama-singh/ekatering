@@ -42,6 +42,12 @@ import TwhyKetring from "@/components/training/TwhyKetring.vue";
 import Cost from "@/components/training/Cost.vue";
 import Passion from "@/components/training/Passion.vue";
 export default {
+head: {
+    meta: [
+      { hid: 'description', name: 'description', content: 'Get food safety training with eKatering and run your food business legally. With us, you’ll learn at your own pace and be in control of your training. You’ll also receive PDF certificates that will strengthen your credibility in the market!'},
+    ],
+  },
+
   name: "training",
   layout: "default",
   data() {

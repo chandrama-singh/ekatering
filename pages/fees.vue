@@ -16,6 +16,13 @@ import Fsms from '@/components/Fsms.vue'
 import Passion from '@/components/training/Passion.vue'
 
 export default {
+
+head: {
+    meta: [
+      { hid: 'description', name: 'description', content: 'Do you want to acquire our food safety training and consulting services? Please take a look at this table to get an in-depth understanding of the fee we charge. '},
+    ],
+  },
+
     name: 'training',
      layout:"default",
 

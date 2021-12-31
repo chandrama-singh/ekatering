@@ -31,6 +31,17 @@ import Servicesview from '../components/Servicesview.vue'
 import FooterContact from '../components/FooterContact.vue'
 
 export default {
+
+  head: {
+    
+    meta: [
+      
+      { hid: 'description', name: 'description', content: 'Are you starting a UK home catering business to improve your income? Download eKatering app – a one-stop shop for home/event caterers and private chefs in the UK.' },
+    
+    ],
+    
+  },
+
    layout:"default",
   components: {
     Subscribe,
