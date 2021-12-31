@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
      <!-- Start Content -->
-    <div class="grid grid-cols-1 gap-5 mt-6 sm:grid-cols-2 lg:grid-cols-4 ">
+    <div class="grid grid-cols-1 gap-5 ml-8 mr-8 mt-6 sm:grid-cols-2 lg:grid-cols-3 ">
       <template>
         <div
           class="
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
           class="
             p-4
             transition-shadow
@@ -101,7 +101,8 @@
               <i class="fas fa-users"></i>
             </div>
           </div>
-        </div>
+        </div> -->
+     
       </template>
     </div>
 
