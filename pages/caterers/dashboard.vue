@@ -316,7 +316,7 @@
                             Showing 1 to 4 of 50 Entries
                         </span> -->
 
-          <Nuxt-Link to="/caterers/payments">
+          <Nuxt-Link to="/caterers/orders">
             <button
               class="
                 text-sm

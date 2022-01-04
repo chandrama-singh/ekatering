@@ -292,9 +292,8 @@
                                 <p class="mb-1 font-semibold text-gray-700">
                                   Description
                                 </p>
-                                <input
-                                  type="textbox"
-                                  name=""
+
+<textarea rows="8" name=""
                                   placeholder="Describe your service"
                                   class="
                                     py-6
@@ -307,8 +306,9 @@
                                     w-full
                                   "
                                   id="service-description"
-                                  v-model="formData.description"
-                                />
+                                  v-model="formData.description">
+
+</textarea>
 
 
 
@@ -968,7 +968,7 @@
                                 >
                                   <div class="w-full sm:w-1/2">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      MRP
+                                      MRP (£) optional - Normal price
                                     </p>
                                     <input
                                       type="text"
@@ -989,7 +989,7 @@
                                   </div>
                                   <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      Product Price
+                                      Product Price(£)- will be seen by customers
                                     </p>
                                     <input
                                       type="text"

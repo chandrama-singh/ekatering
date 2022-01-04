@@ -174,9 +174,8 @@
                                 <p class="mb-1 font-semibold text-gray-700">
                                   Product Description
                                 </p>
-                                <input
-                                  type="textbox"
-                                  name=""
+
+<textarea name=""
                                   placeholder="Enter Product Description"
                                   class="
                                     py-6
@@ -189,8 +188,10 @@
                                     w-full
                                   "
                                   id="product-description"
-                                  v-model="product.description"
-                                />
+                                  v-model="product.description">
+                                </textarea>
+
+                                
                                 </div>
                                  <div
                                     v-if="activeCuisines"
@@ -405,7 +406,7 @@
                                 >
                                   <div class="w-full sm:w-1/2">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      MRP
+                                     MRP(£) optional Normal price
                                     </p>
                                     <input
                                       type="text"
@@ -426,7 +427,7 @@
                                   </div>
                                   <div class="w-full sm:w-1/2 mt-2 sm:mt-0">
                                     <p class="mb-2 font-semibold text-gray-700">
-                                      Product Price
+                                      Product Price(£)- will be seen by customers
                                     </p>
                                     <input
                                       type="text"

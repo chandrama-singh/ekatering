@@ -332,9 +332,7 @@
                                 <p class="mb-1 font-semibold text-gray-700">
                                   Description
                                 </p>
-                                <input
-                                  type="textbox"
-                                  name=""
+<textarea rows="8" name=""
                                   placeholder="Describe your service"
                                   class="
                                     py-6
@@ -347,8 +345,9 @@
                                     w-full
                                   "
                                   id="service-description"
-                                  v-model="service.description"
-                                />
+                                  v-model="service.description">
+
+</textarea>
 
                                 <div
                                   class="

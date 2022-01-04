@@ -139,22 +139,23 @@
           filter: true,
           checkboxSelection: true,
           cellRendererFramework: UserProfile,
-          minWidth: 300,
+          minWidth: 250,
 
         },
         {
-          headerName: 'MRP',
+          headerName: 'MRP ( £ )',
           field: 'mrp',
           sortable: true,
           filter: true,
-          minWidth: 300,
+          maxWidth: 150,
 
         },
         {
-          headerName: 'Price',
+          headerName: 'Price ( £ )',
           field: 'price',
           sortable: true,
           filter: true,
+          maxWidth: 150,
         },
         {
           headerName: 'Date',
@@ -202,7 +203,7 @@
           headerName: 'Actions',
           field: 'action',
           cellRendererFramework: ServiceAction,
-          minWidth: 100,
+          maxWidth: 90,
         },
       ];
     },

@@ -82,7 +82,7 @@
             </span>
             <p>TEST - Multiple Choice</p>
           </div>
-          <Nuxt-Link to="/my-training/level-1"
+          <!-- <Nuxt-Link to="/my-training/level-1"
           >
             <button
               class="
@@ -98,7 +98,7 @@
             >
               Start
             </button></Nuxt-Link
-          >
+          > -->
         </div>
       </div>
       <div
@@ -174,7 +174,7 @@
             </span>
             <p>TEST - Multiple Choice</p>
           </div>
-          <Nuxt-Link to="/my-training/level-2"
+          <!-- <Nuxt-Link to="/my-training/level-2"
             ><button
               class="
                 mt-4
@@ -189,7 +189,7 @@
             >
               Start
             </button></Nuxt-Link
-          >
+          > -->
         </div>
       </div>
     </div>
