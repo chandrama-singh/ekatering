@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader pageTitle="Cuisines">
+    <PageHeader pageTitle="Cuisine">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>

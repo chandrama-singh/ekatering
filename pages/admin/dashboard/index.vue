@@ -107,7 +107,7 @@
     </div>
 
     <!-- Table see (https://tailwindui.com/components/application-ui/lists/tables) -->
-    <PageHeader pageTitle="New Registraitons">
+    <PageHeader pageTitle="New Registrations">
       <template v-slot:action>
         <div class="p-1 bg-white flex border border-gray-400 rounded">
           <div class="flex flex-auto flex-wrap"></div>
