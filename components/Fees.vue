@@ -24,10 +24,10 @@
         class="w-5/6 mx-auto bg-gray-200 text-gray-800 border border-gray-500"
       >
         <tr class="text-left border-b-2 border-gray-500">
-          <th class="px-4 py-3 font-bold">Option</th>
-          <th class="px-4 py-3 font-bold">Service</th>
-          <th class="px-4 py-3 font-bold">Fee (£)</th>
-          <th class="px-4 py-3 font-bold"></th>
+          <th class="px-4 py-3 font-bold w-1/12">Option</th>
+          <th class="px-4 py-3 font-bold w-5/12">Service</th>
+          <th class="px-4 py-3 font-bold w-3/12">Fee (£)</th>
+          <th class="px-4 py-3 font-bold w-3/12"></th>
         </tr>
 
         <tr class="bg-white border-b border-gray-500">
@@ -110,15 +110,15 @@
         class="w-5/6 mx-auto bg-gray-200 text-gray-800 border border-gray-500"
       >
         <tr class="bg-white border-b border-gray-500">
-          <td class="px-4 py-3">6</td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 w-1/12">6</td>
+          <td class="px-4 py-3 w-5/12">
             Full HACCP documentation <br />with monitoring template forms.
           </td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 w-3/12">
             From £450 for one product<br />
             From £800 for two products
           </td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 w-3/12">
             <nuxt-link to="/food-sms-form" class="text-purple-600"
               >Contact us</nuxt-link
             >
@@ -164,13 +164,13 @@
         class="w-5/6 mx-auto bg-gray-200 text-gray-800 border border-gray-500"
       >
         <tr class="bg-white border-b border-gray-500">
-          <td class="px-4 py-3">8</td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 1/12">8</td>
+          <td class="px-4 py-3 5/12">
             Food safety and <br />standard legal advice concerning
             <br />enforcement letters/ notices and actions.
           </td>
-          <td class="px-4 py-3">From £50</td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 3/12">From £50</td>
+          <td class="px-4 py-3 3/12">
             <nuxt-link to="/legal-advice-form" class="text-purple-600"
               >Contact us</nuxt-link
             >
@@ -198,13 +198,13 @@
         class="w-5/6 mx-auto bg-gray-200 text-gray-800 border border-gray-500"
       >
         <tr class="bg-white border-b border-gray-500">
-          <td class="px-4 py-3">9</td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 1/12">9</td>
+          <td class="px-4 py-3 5/12">
             Full review, assessment <br />and advice on documentation
             <br />procedure.
           </td>
-          <td class="px-4 py-3">From £250</td>
-          <td class="px-4 py-3">
+          <td class="px-4 py-3 3/12">From £250</td>
+          <td class="px-4 py-3 3/12">
             <nuxt-link to="/food-standard-form" class="text-purple-600"
               >Contact us</nuxt-link
             >
