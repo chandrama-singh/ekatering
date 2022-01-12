@@ -8,7 +8,8 @@
     <section class="text-gray-700">
       <div class="container px-5 py-14 mx-auto">
         <div class="text-center mb-20">
-          <h1
+         
+          <!-- <h1
             class="
               sm:text-3xl
               text-2xl
@@ -20,11 +21,8 @@
             "
           >
             Frequently Asked Questions
-          </h1>
-          <!-- <p class="text-base leading-relaxed xl:w-2/3 lg:w-3/4 mx-auto">
-            He legged it plastered cheeky loo what a plonker some dodgy chav a
-            barney wellies, gutted mate quaint.
-          </p> -->
+          </h1> -->
+          
         </div>
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div class="w-full">
@@ -33,7 +31,7 @@
                 What is eKatering?
               </summary>
               <span class="">
-                eKatering is the first mobile app designed for home/ event and private chef catering businesses. The eKatering app reassures customers that food purchased from home/ event and private chef has been prepared in a clean and safe kitchen that complies with current food safety regulations.
+                eKatering is the first mobile app designed for home/event and private chef catering businesses. The eKatering app reassures customers that food purchased from home/event and private chef has been prepared in a clean and safe kitchen that complies with current food safety regulations.
                 <br />
                 It also provides a one-stop online shop offering food safety and food standard consultation and training services for all catering and manufacturing food businesses. It is a holistic business that focuses on food safety and standard to ensure food purchased is safe for human consumption.
               </span>
@@ -142,7 +140,7 @@
               </summary>
 
               <span class=" py-2">
-                Yes, you can. But you must pay for a remote inspection in the consultation service and comply with all report requirements and achieve an eKatering award of 3 before you can join the platform. This will also give you an indication of what FHRS award you may be given by your local authority inspector. Remember, eKatering cannot guarantee this, as ratings are awarded based on findings at the time of the inspection.
+                Yes, you can. But you must pay for a <Nuxt-Link to="/vir" class="text-purple-600">remote inspection</Nuxt-Link> in the <Nuxt-Link to="/consultation" class="text-purple-600">consultation</Nuxt-Link> service and comply with all report requirements and achieve an eKatering award of 3 before you can join the platform. This will also give you an indication of what FHRS award you may be given by your local authority inspector. Remember, eKatering cannot guarantee this, as ratings are awarded based on findings at the time of the inspection.
               </span>
             </details>
             <details class="mb-4 cursor-pointer">
@@ -205,7 +203,7 @@
             </details>
             <details class="mb-4 cursor-pointer">
               <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                Do I need to be a home/ event caterer or a private chef to use the consultation and training services provided by eKatering?
+                Do I need to be a home/event caterer or a private chef to use the consultation and training services provided by eKatering?
               </summary>
 
               <span class="py-2">

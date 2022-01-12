@@ -1,14 +1,13 @@
 <template>
   <div class="">
-    <h2
+    <!-- <h2
       class="pl-10 pt-10 text-black mb-4 text-4xl lg:text-4xl font-bold font-heading"
     >
       Consultancy Services
-    </h2>
-    <!-- <p class="text-black text-2xl max-w-full p-4 text-center">
-      Full Suite of Consultations and Training<br />
-      Start Your Learning with our Training and Consultations Services
-    </p> -->
+    </h2> -->
+
+
+    
     <section class="pb-10 relative block bg-blueGray-800">
         <div class="container mx-auto px-4 lg:pt-12 lg:pb-20">
           <!-- <div class="flex flex-wrap text-center justify-center">
@@ -50,7 +49,7 @@
              
 
               </div>
-              <Nuxt-Link to="/vir"><h5 class="text-xl mt-5 font-semibold text-purple-600">Virtual/Remote Inspection
+              <Nuxt-Link to="/vir"><h5 class="text-xl mt-5 font-semibold text-purple-600">Virtual Remote Inspection
 </h5></Nuxt-Link>
               
             </div>

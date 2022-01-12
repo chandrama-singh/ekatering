@@ -77,7 +77,7 @@
             <ul class="sub-menu">
               <li>
                 <nuxt-link to="/consultation"
-                  >eKatering consultancy Services</nuxt-link
+                  >eKatering Consultancy Services</nuxt-link
                 >
               </li>
               <li>

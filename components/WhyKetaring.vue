@@ -38,7 +38,7 @@
             </li>
 
             <li class="px-2 text-gray-900 text-justify">
-          Makes food ordering easy for your customers and allow customers to review your food and service.
+          Make food ordering easy for your customers and allow customers to review your food and service.
             </li>
 
             <li class="px-2 text-gray-900 text-justify">

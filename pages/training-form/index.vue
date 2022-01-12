@@ -28,7 +28,7 @@
               border-b
             "
           >
-            <p class="text-gray-600">First Name</p>
+            <p class="text-gray-600">First Name<span class="text-red-500">*</span></p>
             <input
               placeholder="Enter First Name"
               class="
@@ -58,7 +58,7 @@
               border-b
             "
           >
-            <p class="text-gray-600">Last Name</p>
+            <p class="text-gray-600">Last Name<span class="text-red-500">*</span></p>
             <input
               placeholder="Enter Last Name"
               class="

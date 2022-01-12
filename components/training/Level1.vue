@@ -2,11 +2,8 @@
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Food Allergen for Caterers and Private Chefs - Level 1
+         Welcome to eKatering online training.
       </h2>
-      <p class="mb-2 text-gray-400 leading-relaxed">
-        Welcome to eKatering online training.
-      </p>
 
       <p class="text-gray-400 leading-relaxed">
         This course is an introductory course specifically designed for caterers

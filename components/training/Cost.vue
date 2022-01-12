@@ -15,36 +15,7 @@
             >
               How much does it cost?
             </h2>
-            <p class="max-w-6xl ml-4 text-gray-900 text-justify">
-              All our fees are noted in <Nuxt-Link to="/fees" class="text-purple-800">fees</Nuxt-Link> page.
-            </p>
-
-
-            <!-- <p
-              class="ml-4 text-justify text-purple-900 font-bold cursor-pointer"
-            >
-              <Nuxt-Link to="/tr_level_2"
-                >Food Safety for Caterers and Private Chefs - Level 2</Nuxt-Link
-              >
-            </p>
-            <p
-              class="ml-4 text-justify text-purple-900 font-bold cursor-pointer"
-            >
-              <Nuxt-Link to="/tr_level_1">
-                Food Allergen for Caterers and Private Chefs - Level
-                1</Nuxt-Link
-              >
-            </p> -->
-
-
-            <p class="ml-4 mt-2 max-w-6xl text-gray-900 text-justify">
-              If you require further assistance or advice, do not hesitate to
-              <Nuxt-Link to="/contactus" class="text-purple-800"
-                >contact us</Nuxt-Link
-              >
-              with your enquiry.
-            </p>
-
+          
             <div
               class="
                 mt-4
@@ -117,6 +88,13 @@
                   </Nuxt-Link>
                 </center>
               </div>
+               <p class="ml-4 mt-4 max-w-6xl text-gray-900 text-justify">
+              If you require further assistance or advice, do not hesitate to
+              <Nuxt-Link to="/contactus" class="text-purple-800"
+                >contact us</Nuxt-Link
+              >
+              with your enquiry.
+            </p>
             </div>
           </div>
         </div>

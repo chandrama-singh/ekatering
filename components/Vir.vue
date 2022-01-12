@@ -2,11 +2,9 @@
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-4 font-semibold font-heading">
-        Virtual Remote Inspection (VRI)
-      </h2>
-      <p class="text-gray-400 leading-relaxed mb-2">
         Welcome to eKatering Food Safety Consultancy.
-      </p>
+      </h2>
+     
       <p class="text-gray-400 leading-relaxed">
         VRI is the way forward in this changing world that we live in. This
         service applies to small catering kitchens such as those used by

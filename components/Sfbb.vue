@@ -35,6 +35,7 @@
           <li class="font-bold">Restaurants</li>
           <li class="font-bold">Takeaways</li>
           <li class="font-bold">Childminders</li>
+          <li class="font-bold">Retail</li>
         </ul>
       </div>
       <p class="mt-6 text-gray-400 leading-relaxed">

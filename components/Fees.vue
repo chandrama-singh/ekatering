@@ -44,7 +44,7 @@
         <tr class="bg-white border-b border-gray-500">
           <td class="px-4 py-3">2</td>
           <td class="px-4 py-3">
-            Virtual/remote (VRI) <br />inspection with an inspection report.
+            Virtual remote (VRI) <br />inspection with an inspection report.
           </td>
           <td class="px-4 py-3">£60</td>
           <td class="px-4 py-3 text-purple-600">

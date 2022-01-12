@@ -2,12 +2,10 @@
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-1 font-semibold font-heading">
-        Documented Food Safety Management System (FSMS)
+        Welcome to eKatering Food Safety Consultancy.
       </h2>
       <p class="text-gray-400 leading-relaxed">
-        Welcome to eKatering Food Safety Consultancy. A documented Food Safety
-        Management System (FSMS) is a systematic approach to controlling food
-        safety hazards within a food business to ensure that food is safe to
+        A documented Food Safety Management System (FSMS) is a systematic approach to controlling food safety hazards within a food business to ensure that food is safe to
         eat. All businesses are required to put in place, implement and maintain
         a documented FSMS based on the principles of "Hazard Analysis Critical
         Control Point" (HACCP).<br />
@@ -28,7 +26,7 @@
       <p class="text-gray-400 leading-relaxed">
         eKatering experienced staff will talk you through your process and
         provide a documented food safety management system for your catering and
-        manufacturing business and home/ event caterers who wish to sell food to
+        manufacturing business and home/event caterers who wish to sell food to
         another business. Depending on the size of your event catering business,
         you may be required to have a HACCP.
       </p>
@@ -54,8 +52,10 @@
       </div>
     </div>
     <!---------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4">
+    
+    
+    
+    <!-- <div class="container mx-auto px-4 bottom-0 p-4">
       <h2 class="text-3xl mb-1 font-semibold font-heading capitalize">
         Full HACCP documentation with monitoring template forms
       </h2>
@@ -65,10 +65,15 @@
           <li>From £800 for 2 products</li>
         </ul>
       </div>
-    </div>
-    <!---------------------------------------------------------------------------->
+    </div> -->
+
+
+   
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4">
+   
+   
+   
+    <!-- <div class="container mx-auto px-4 bottom-0 p-4">
       <h2 class="text-3xl mb-1 font-semibold font-heading">
         Visit to manufacturing site and full HACCP documentation with monitoring
         template forms
@@ -79,7 +84,9 @@
           <li>From £700 for one product</li>
         </ul>
       </div>
-    </div>
+    </div> -->
+
+
 
     <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
@@ -124,7 +131,7 @@
               md:rounded-lg
             "
           >
-            Purchase from £450
+            Purchase forms £450
           </button></Nuxt-Link
         >
       </div>
@@ -153,7 +160,7 @@
               md:rounded-lg
             "
           >
-            Purchase from £750
+            Purchase forms £750
           </button></Nuxt-Link
         >
       </div>

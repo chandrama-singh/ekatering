@@ -1,9 +1,7 @@
 <template>
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Local Authority Food Registration
-      </h2>
+      
       <p class="text-gray-400 leading-relaxed">
         Before you can trade as a home/event caterer or a private chef, you must
         register with your local authority. Ideally, this should be done at
@@ -64,11 +62,11 @@
         >
         with your enquiry.
       </p>
-      <p class="mb-2 text-gray-800 leading-relaxed">
+      <!-- <p class="mb-2 text-gray-800 leading-relaxed">
         All our Fee are noted in
         <nuxt-link to="/fees" class="text-purple-800">Fees</nuxt-link>. Select
         Option 1.
-      </p>
+      </p> -->
     </div>
     <!---------------------------------------------------------------------------->
     <section>

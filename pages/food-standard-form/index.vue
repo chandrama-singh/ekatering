@@ -105,7 +105,7 @@
               border-b
             "
           >
-            <p class="text-gray-600">Contact Number</p>
+            <p class="text-gray-600">Contact Number<span class="text-red-500">*</span></p>
             <span class="float-right text-right w-full">
               <input
                 placeholder="Contact Number"

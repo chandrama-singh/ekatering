@@ -2,11 +2,9 @@
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Food Safety for Caterers and Private Chefs - Level 2
+       Welcome to eKatering online training.
       </h2>
-      <p class="mb-4 text-gray-400 leading-relaxed">
-        Welcome to eKatering online training.
-      </p>
+     
       <p class="mb-2 text-gray-400 leading-relaxed">
         This course offers all caterers, including private chefs the knowledge
         to ensure that they store, prepare, cook and deliver or serve food

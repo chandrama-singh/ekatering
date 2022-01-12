@@ -2,9 +2,6 @@
   <section>
     <!------------------------------------------------------------------------------------------------------>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
-      <h2 class="text-3xl mb-6 font-semibold font-heading">
-        eKatering Features
-      </h2>
        <h4 class="text-2xl mb-2  font-semibold font-heading">
         eKatering Mobile App
       </h4>
@@ -69,7 +66,7 @@
       <div class="flex">
         <ul class="ml-6 text-gray-400 text-justify list-disc">
           <li>Be in charge of your training programme.</li>
-          <li>Get trained on food safety and food allergen specifically tailored for home/event caterers and private chefs..</li>
+          <li>Get trained on food safety and food allergen specifically tailored for home/event caterers and private chefs.</li>
           <li>Be confident in your food safety and food allergen knowledge.</li>
           <li>Know what to expect from your local authority food inspector.</li>
           <li>Be confident during your food safety and standard inspection.</li>

@@ -81,16 +81,16 @@
                 <!-- <h3 class="mb-3 text-xl font-semibold font-heading">Outstanding look</h3> -->
                 <p class="text-blueGray-400 leading-loose text-justify">
                   The eKatering mobile app is the first app designed
-                  specifically for home/ event caterers and private chefs to
+                  specifically for home/event caterers and private chefs to
                   sell their food and services. The app promotes home catering
                   businesses while giving assurance to customers that their food
                   has been prepared in a clean and safe kitchen. eKatering
-                  provides professional and technical knowledge to home/ event
-                  catering and private chef businesses about how to comply with
+                  provides professional and technical knowledge to home/event
+                  catering and private chef businesses on how to comply with
                   current regulations and promote food safety. The consultancy
                   and training team is operated by highly experienced and
                   qualified individuals, who will work with new and existing
-                  home/ event and private chef catering businesses to improve
+                  home/event and private chef catering businesses to improve
                   food safety and food standard.
                 </p>
               </div>

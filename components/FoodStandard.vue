@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-3xl mb-2 font-semibold font-heading">Food Standard</h2>
+      <h2 class="text-3xl mb-2 font-semibold font-heading">Welcome to eKatering Consultancy</h2>
       <p class="text-gray-400 leading-relaxed">
         All food businesses must comply with food standard regulations. This is
         usually assessed during a food safety inspection.

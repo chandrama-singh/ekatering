@@ -110,9 +110,11 @@
                         border border-gray-300
                         focus:outline-none focus:border-indigo-500
                       "
-                      type="text"
-                      placeholder=""
+                      
+                      placeholder="select one"
                     >
+                    <option value="" disabled selected>Select your option</option>
+                   
                       <option>Home/event caterer – join us</option>
                       <option>Private Chef –join us</option>
                       <option>Food Safety Consultancy</option>
@@ -125,7 +127,7 @@
 
                   <div class="relative">
                     <label class="text-sm font-bold text-gray-700 tracking-wide"
-                      >NAME OF BUSINESS/ESTABLISHMENT<span class="text-red-500"> *</span></label
+                      >NAME OF BUSINESS/ESTABLISHMENT</label
                     >
                     <input
                     v-model="formData.business_name"

@@ -2,7 +2,7 @@
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
       <h2 class="text-3xl mb-2 font-semibold font-heading">
-        Legal Advice - Food Safety and Food Standard
+        Welcome to eKatering Consultancy
       </h2>
       <p class="mb-4 mt-4 text-gray-400 leading-relaxed">
         Once your food business is operating and trading, you cannot avoid food

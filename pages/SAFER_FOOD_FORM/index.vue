@@ -410,7 +410,7 @@ export default {
         "Event Caterer",
         "Take away",
         "Restaurant",
-        "Reatil",
+        "Retail",
       ],
       publishableKey:
         "pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",

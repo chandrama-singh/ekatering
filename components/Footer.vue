@@ -11,8 +11,7 @@
             <!-- <span class="text-purple-900 text-6xl">eKatering</span> -->
           </div>
           <p class="mb-10 text-white align-justify">
-            ekatering is a systematic approach to controlling food safety
-            hazards within a food business to ensure that food is safe to eat.
+            eKatering is a step-by-step solution to Home/Event Caterer and Private Chef businesses.
           </p>
           <!-- <div>
             <nuxt-link

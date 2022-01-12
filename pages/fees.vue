@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="FEES"/>
+      <TBanner title="Fees"/>
       <Fees/>
       <Passion/>
     </section>

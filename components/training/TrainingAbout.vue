@@ -1,9 +1,11 @@
 <template>
   <section>
     <div class="container mx-auto px-4 bottom-0 p-4 mt-6">
-      <h2 class="text-3xl mb-2 font-semibold font-heading">
+      <!-- <h2 class="text-3xl mb-2 font-semibold font-heading">
         Food Allergen for Caterers and Private Chefs Level 1
-      </h2>
+      </h2> -->
+
+
       <!-- <p class="mb-4 text-gray-400 leading-relaxed">
         We offer a step-by-step solution to Home/Events Caterers and Private
         Chefs to open and run their food business online while complying with

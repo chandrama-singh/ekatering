@@ -27,7 +27,7 @@
             "
           >
             <p class="text-gray-600">Business Name</p>
-             <span class="float-right text-right w-full">
+             
             <input
               placeholder="Business Name"
               class="
@@ -41,13 +41,12 @@
                 h-10
                 px-4
               "
-              required="required"
+              
               type="text"
               v-model="formData.name"
-            id="name" name="name" v-validate="'required'"
+            id="name" name="name" 
             />
-             <small v-if="errors.has('name')" class="danger">{{ errors.first('name') }}</small>
-             </span>
+             
           </div>
           <div
             class="
@@ -88,7 +87,7 @@
               border-b
             "
           >
-            <p class="text-gray-600">Food Business Owner contact number</p>
+            <p class="text-gray-600">Food Business Owner contact number<span class="text-red-500">*</span></p>
              <span class="float-right text-right w-full">
             <input
               placeholder="Food Business Owner contact number"
@@ -121,7 +120,7 @@
               border-b
             "
           >
-            <p class="text-gray-600">Food Business Email</p>
+            <p class="text-gray-600">Food Business Email<span class="text-red-500">*</span></p>
              <span class="float-right text-right w-full">
             <input
               placeholder="Food Business Email"
@@ -444,6 +443,7 @@ export default {
         "Event Caterer",
         "Take away",
         "Restaurant",
+        "Retail",
         
       ],
       publishableKey:

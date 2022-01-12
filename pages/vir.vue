@@ -1,7 +1,7 @@
 <template>
 <div>
   <section class="bgcolor">
-      <TBanner title="VIRTUAL REMOTE INSPECTION"/>
+      <TBanner title="Virtual Remote Inspection (VRI)"/>
       <Vir/>
       <Passion/>
     </section>
