@@ -151,12 +151,12 @@
       </nav>
     </div>
 
-    <div  v-if="openMenu" class="navbar-menu lg:hidden relative z-50">
+    <div  v-if="openMenu" class="navbar-menu lg:hidden relative z-50 w-full overflow-hidden">
       <div
-        class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"
+        class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25 w-full"
       ></div>
       <nav
-        class=" fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6  border-r overflow-y-auto"
+        class=" fixed top-0 left-0  flex flex-col w-full  py-6 px-6  border-r overflow-hidden"
       >
 
         <div v-click-outside="hide" class="bg-purple-600 left-0">
@@ -179,24 +179,24 @@
 
             <li class="mb-1">
               <nuxt-link
-                to="/training"
+                to="#"
                 class="block p-4 text-sm text-white hover:bg-blue-50 hover:text-blue-600"
                 >Training
               </nuxt-link>
               <ul class="sub-menu">
                 <li>
-                  <nuxt-link to="training/onlinetraining"
+                  <nuxt-link to="/training"
                     >eKatering Online Training</nuxt-link
                   >
                 </li>
                 <li>
-                  <nuxt-link to="training/foodallergen"
+                  <nuxt-link to="/tr_level_1"
                     >Food Allergen for Caterers and Private Chefs Level
                     1</nuxt-link
                   >
                 </li>
                 <li>
-                  <nuxt-link to="training/foodsafety"
+                  <nuxt-link to="/tr_level_2"
                     >Food Safety for Caterers and Private Chefs - Level
                     2</nuxt-link
                   >

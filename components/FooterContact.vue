@@ -1,15 +1,15 @@
 <template>
   <section class="bg-cover titlebg1">
-    <div class="flex items-right py-32 px-10">
+    <div class="flex  md:py-32 py-10 md:px-10 px-4">
       <div class="opacity-50"></div>
-      <div class="flex flex-wrap mb-16 lg:mb-28">
-        <div class="w-full lg:w-3/5 mb-16 lg:mb-0 pl-16">
-          <div class="max-w-6xl">
+      <div class="flex flex-wrap mb-16 md:mb-28">
+        <div class="w-full md:w-3/5 mb-16 lg:mb-0 md:pl-16 pl-0">
+         
             <h2
               class="
                 mb-6
-                text-black text-3xl
-                lg:text-4xl
+                text-black text-2xl
+                md:text-4xl
                 font-bold font-heading
                 
               "
@@ -35,12 +35,13 @@
               "
               >Get Started</Nuxt-Link
             ></div>
-          </div>
+          
         </div>
         <div
-          class="
+          class="items-right
             relative
-            lg:w-2/5
+            w-full
+            md:w-2/5
             transform
             transition
             duration-500

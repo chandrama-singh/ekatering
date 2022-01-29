@@ -1,12 +1,12 @@
 <template>
-      <section class="py-52 overflow-hidden bg-img">
+      <section class="md:py-52 py-10 overflow-hidden bg-img">
         <img class="left-img absolute mx-auto left-0 -mt-80 h-54 z-10" src="@/assets/h1.png" alt="">
-        <div class="container px-4 lg:px-16 mx-auto">
+        <div class="container px-4 md:px-16 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">
-              <div class="py-20 ">
+              <div class="md:py-20 py-5 ">
                 <div class="mb-4">
-                  <h2 class="text-4xl mt-3 font-bold font-heading mb-4">eKaterers in Your Pocket</h2>
+                  <h2 class="text-4xl md:mt-3 mt-0 font-bold font-heading mb-4">eKaterers in Your Pocket</h2>
                   <p class="text-gray-700 leading-relaxed">
                     
                     See menus and photos for nearby eKaterers and bookmark your favorite places on the go!

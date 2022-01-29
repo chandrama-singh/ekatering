@@ -1,6 +1,6 @@
 <template>
    <section class="pb-8 bg-top bg-cover bg-no-repeat bgimage " >
-        <div class="py-10 lg:px-20 xl:px-28 mx-auto flex flex-wrap"> 
+        <div class="py-10 md:px-20 px-4 mx-auto flex flex-wrap"> 
           <div class="text-left lg:w-2/3 sm:full">
             <div class=" mx-auto mb-4">
               <h2 class="text-3xl max-w-3xl pt-16 mb-2 text-white font-semibold font-heading py-2 uppercase ">
