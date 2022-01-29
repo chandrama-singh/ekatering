@@ -29,6 +29,7 @@
             "
           >
             <p class="text-gray-600">First Name<span class="text-red-500">*</span></p>
+            <span class="float-right text-right w-full">
             <input
               placeholder="Enter First Name"
               class="
@@ -42,11 +43,17 @@
                 h-10
                 px-4
               "
-              required="required"
-              type="text"
-              name="integration[shop_name]"
-              id="integration_shop_name"
+               id="first_name"
+                name="first_name"
+                v-validate="'required'"
+                required="required"
+                type="text"
+                v-model="formData.first_name"
             />
+            <small class="danger text-red-600" v-if="errors.has('first_name')">{{
+                errors.first("first_name")
+              }}</small>
+            </span>
           </div>
           <div
             class="
@@ -59,6 +66,7 @@
             "
           >
             <p class="text-gray-600">Last Name<span class="text-red-500">*</span></p>
+            <span class="float-right text-right w-full">
             <input
               placeholder="Enter Last Name"
               class="
@@ -72,11 +80,17 @@
                 h-10
                 px-4
               "
-              required="required"
-              type="text"
-              name="integration[shop_name]"
-              id="integration_shop_name"
+              id="last_name"
+                name="last_name"
+                v-validate="'required'"
+                required="required"
+                type="text"
+                v-model="formData.last_name"
             />
+             <small v-if="errors.has('last_name')" class="danger text-red-600">{{
+                errors.first("last_name")
+              }}</small>
+            </span>
           </div>
           <div
             class="
@@ -91,6 +105,7 @@
             <p class="text-gray-600">
               Email<span class="text-red-500">*</span>
             </p>
+            <span class="float-right text-right w-full">
             <input
               placeholder="Email"
               class="
@@ -104,11 +119,18 @@
                 h-10
                 px-4
               "
-              required="required"
-              type="email"
-              name="integration[shop_name]"
-              id="integration_shop_name"
+             id="email"
+                name="email"
+                v-validate="'required|email'"
+                required="required"
+                type="email"
+                v-model="formData.email"
+                :class="{ 'is-danger': errors.has('email') }"
             />
+             <small v-if="errors.has('email')" class="danger text-red-600">{{
+                errors.first("email")
+              }}</small>
+            </span>
           </div>
           <div
             class="
@@ -136,8 +158,8 @@
               "
               required="required"
               type="password"
-              name="integration[shop_name]"
-              id="integration_shop_name"
+              name="password"
+              id="password"
             />
           </div>
 
@@ -545,7 +567,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data()
+  {
+    return{
+      formData: {
+        first_name: "",
+        last_name:"",
+        email: "",
+        
+      },
+    }
+  }
+};
 </script>
 
 <style></style>
