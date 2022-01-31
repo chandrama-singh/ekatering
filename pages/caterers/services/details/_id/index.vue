@@ -22,7 +22,7 @@
         </t-button>
         <h2 class="text-lg font-semibold mx-6">Edit Service</h2>
       </div>
-       <div
+      <div
         class="
           flex
           text-lg
@@ -34,34 +34,19 @@
         "
       >
         <button
-          class="
-            px-4
-            py-2
-            mx-2
-            text-white
-            bg-purple-500
-            rounded
-          "
+          class="px-4 py-2 mx-2 text-white bg-purple-500 rounded"
           v-if="service.status"
           @click="changeStatus(false)"
         >
           Publish
         </button>
-         <button
-          class="
-            px-4
-            py-2
-            mx-2
-            text-white
-            bg-purple-500
-            rounded
-          "
+        <button
+          class="px-4 py-2 mx-2 text-white bg-purple-500 rounded"
           v-else
           @click="changeStatus(true)"
         >
           Draft
         </button>
-
       </div>
     </div>
     <div class="w-full flex justify-center max-h-screen">
@@ -74,22 +59,84 @@
                 <section class="container-fluid mx-auto font-mono">
                   <div class="w-full mb-8 overflow-hidden">
                     <div class="w-full overflow-y-auto">
-                      <div class="w-full px-4">
+                      <div class="w-full px-4 flex">
+                        <div class="w-1/3 px-2
+          py-6
+          justify-center
+          flex
+          space-x-2
+          border-b border-solid
+          md:space-x-0 md:space-y-2 md:flex-col md:col-span-2 md:justify-start">
+                         <a
+          v-on:click="toggleTabs(1)"
+          v-bind:class="{
+            ' bg-gray-800': openTab !== 1,
+            'text-white bg-pink-600': openTab === 1,
+          }"
+          class="
+            text-sm
+            p-2
+            bg-indigo-200
+            text-center
+            rounded
+            font-semibold
+            hover:bg-indigo-700 hover:text-gray-200
+          "
+          >Add Basic Details</a
+        >
+
+        <a
+          v-on:click="toggleTabs(2)"
+          v-bind:class="{
+            ' bg-gray-800': openTab !== 2,
+            'text-white bg-pink-600': openTab === 2,
+          }"
+          class="
+            text-sm
+            p-2
+            bg-indigo-200
+            text-center
+            rounded
+            font-semibold
+            hover:bg-indigo-700 hover:text-gray-200
+          "
+          >Upload Banner</a
+        >
+
+        <a
+          v-on:click="toggleTabs(3)"
+          v-bind:class="{
+            ' bg-gray-800': openTab !== 3,
+            'text-white bg-pink-600': openTab === 3,
+          }"
+          class="
+            text-sm
+            p-2
+            bg-indigo-200
+            text-center
+            rounded
+            font-semibold
+            hover:bg-indigo-700 hover:text-gray-200
+          "
+          > Price</a
+        >
+
+       
+                        </div>
                         <div
                           class="
                             relative
                             flex flex-col
                             min-w-0
                             break-words
-                            w-full
+                            w-2/3
                             mb-4
                           "
                         >
                           <div class="flex-auto py-2 rounded-lg">
                             <div class="flex flex-col px-6 bg-gray-50 text-sm">
-
                               <!------------------------Info Value-------------------------------->
-
+                              <div  v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }">
                               <div class="w-full py-6">
                                 <div class="flex">
                                   <div class="w-1/4">
@@ -160,12 +207,7 @@
                                           "
                                         >
                                           <div
-                                            class="
-                                              w-0
-                                              bg-gray-300
-                                              py-1
-                                              rounded
-                                            "
+                                            class="w-0 bg-gray-300 py-1 rounded"
                                             style="width: 100%"
                                           ></div>
                                         </div>
@@ -237,12 +279,7 @@
                                           "
                                         >
                                           <div
-                                            class="
-                                              w-0
-                                              bg-gray-300
-                                              py-1
-                                              rounded
-                                            "
+                                            class="w-0 bg-gray-300 py-1 rounded"
                                             style="width: 33%"
                                           ></div>
                                         </div>
@@ -289,11 +326,11 @@
                                       Set Pricing
                                     </div>
                                   </div>
-
-
                                 </div>
                               </div>
-                              <!-- component -->
+                              <!-------------- component --------------->
+                              <!---------------ADD BASIC DETAILS------------------------->
+                              
                                 <div
                                   class="
                                     flex flex-col
@@ -326,13 +363,14 @@
                                       v-model="service.name"
                                     />
                                   </div>
-
                                 </div>
 
                                 <p class="mb-1 font-semibold text-gray-700">
                                   Description
                                 </p>
-<textarea rows="8" name=""
+                                <textarea
+                                  rows="8"
+                                  name=""
                                   placeholder="Describe your service"
                                   class="
                                     py-6
@@ -345,9 +383,9 @@
                                     w-full
                                   "
                                   id="service-description"
-                                  v-model="service.description">
-
-</textarea>
+                                  v-model="service.description"
+                                >
+                                </textarea>
 
                                 <div
                                   class="
@@ -373,8 +411,10 @@
                                     Next
                                   </button>
                                 </div>
-
-                                 <!-- component -->
+                              </div>
+                              <!-------------- component --------------->
+                              <!---------------------------------------->
+                             <div  v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }">
                               <div class="w-full py-6">
                                 <div class="flex">
                                   <div class="w-1/4">
@@ -522,12 +562,7 @@
                                           "
                                         >
                                           <div
-                                            class="
-                                              w-0
-                                              bg-gray-300
-                                              py-1
-                                              rounded
-                                            "
+                                            class="w-0 bg-gray-300 py-1 rounded"
                                             style="width: 33%"
                                           ></div>
                                         </div>
@@ -574,13 +609,13 @@
                                       Set Pricing
                                     </div>
                                   </div>
-
-
                                 </div>
                               </div>
-                              <!-- component -->
+                              <!-------------- component --------------->
+                              <!----------------UPLOAD BANNER IMAGE------------------------>
+                              
                                 <p class="font-semibold text-gray-700">
-                                 Upload Banner Image
+                                  Upload Banner Image
                                 </p>
                                 <div class="flex flex-wrap justify-center">
                                   <input
@@ -621,123 +656,120 @@
                                   </div>
                                 </div>
                                 <center>
-                                <div
-                                  class="
-                                    sm:max-w-lg
-                                    w-full
-                                    p-10
-                                    bg-white
-                                    rounded-xl
-                                    z-10
-                                  "
-                                >
-                                  <div class="grid grid-cols-1 space-y-2 ">
-                                    <label
-                                      class="
-                                        text-sm
-
-                                        font-bold
-                                        text-gray-500
-                                        tracking-wide
-                                      "
-                                      >Upload Menu Details (PDF only)</label
-                                    >
-                                    <div
-                                      class="
-                                        flex
-                                        items-center
-                                        justify-center
-                                        w-full
-                                      "
-                                    >
+                                  <div
+                                    class="
+                                      sm:max-w-lg
+                                      w-full
+                                      p-10
+                                      bg-white
+                                      rounded-xl
+                                      z-10
+                                    "
+                                  >
+                                    <div class="grid grid-cols-1 space-y-2">
                                       <label
                                         class="
-                                          flex flex-col
-                                          rounded-lg
-                                          border-4 border-dashed
+                                          text-sm
+                                          font-bold
+                                          text-gray-500
+                                          tracking-wide
+                                        "
+                                        >Upload Menu Details (PDF only)</label
+                                      >
+                                      <div
+                                        class="
+                                          flex
+                                          items-center
+                                          justify-center
                                           w-full
-                                          h-60
-                                          p-10
-                                          group
-                                          text-center
                                         "
                                       >
-                                        <div
+                                        <label
                                           class="
-                                            h-full
-                                            w-full
-                                            text-center
                                             flex flex-col
-                                            items-center
-                                            justify-center
+                                            rounded-lg
+                                            border-4 border-dashed
+                                            w-full
+                                            h-60
+                                            p-10
+                                            group
+                                            text-center
                                           "
                                         >
                                           <div
                                             class="
-                                              flex flex-auto
-                                              max-h-48
-                                              w-2/5
-                                              mx-auto
-                                              -mt-10
+                                              h-full
+                                              w-full
+                                              text-center
+                                              flex flex-col
+                                              items-center
+                                              justify-center
                                             "
                                           >
-                                            <img
-                                             @click="selectCatalogue"
+                                            <div
                                               class="
-                                                has-mask
-                                                h-36
-                                                object-center
+                                                flex flex-auto
+                                                max-h-48
+                                                w-2/5
+                                                mx-auto
+                                                -mt-10
                                               "
-                                              src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
-                                              alt="freepik image"
-                                            />
+                                            >
+                                              <img
+                                                @click="selectCatalogue"
+                                                class="
+                                                  has-mask
+                                                  h-36
+                                                  object-center
+                                                "
+                                                src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
+                                                alt="freepik image"
+                                              />
+                                            </div>
                                           </div>
-
-                                        </div>
-                                        <input
-                                    type="file"
-                                    ref="catalogue"
-                                    accept="doc/*"
-                                    hidden="true"
-                                    v-show="false"
-                                    @change="previewCatalogue"
-                                  />
-                                      </label>
+                                          <input
+                                            type="file"
+                                            ref="catalogue"
+                                            accept="doc/*"
+                                            hidden="true"
+                                            v-show="false"
+                                            @change="previewCatalogue"
+                                          />
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <p class="text-sm text-gray-300">
+                                      <span>{{ catalogueImage }}</span>
+                                    </p>
+                                    <div>
+                                      <button
+                                        @click="updateCatalogue"
+                                        class="
+                                          my-5
+                                          w-full
+                                          flex
+                                          justify-center
+                                          bg-blue-500
+                                          text-gray-100
+                                          p-4
+                                          rounded-full
+                                          tracking-wide
+                                          font-semibold
+                                          focus:outline-none
+                                          focus:shadow-outline
+                                          hover:bg-blue-600
+                                          shadow-lg
+                                          cursor-pointer
+                                          transition
+                                          ease-in
+                                          duration-300
+                                        "
+                                      >
+                                        Upload
+                                      </button>
                                     </div>
                                   </div>
-                                  <p class="text-sm text-gray-300">
-                                    <span
-                                      >{{catalogueImage}}</span
-                                    >
-                                  </p>
-                                  <div>
-                                    <button
-                                      @click="updateCatalogue"
-                                      class="
-                                        my-5
-                                        w-full
-                                        flex
-                                        justify-center
-                                        bg-blue-500
-                                        text-gray-100
-                                        p-4
-                                        rounded-full
-                                        tracking-wide
-                                        font-semibold
-                                        focus:outline-none focus:shadow-outline
-                                        hover:bg-blue-600
-                                        shadow-lg
-                                        cursor-pointer
-                                        transition
-                                        ease-in
-                                        duration-300
-                                      "
-                                    >
-                                      Upload
-                                    </button>
-                                  </div>
-                                </div>
-</center>
+                                </center>
 
                                 <div
                                   class="
@@ -776,9 +808,11 @@
                                     Next
                                   </button>
                                 </div>
+                              </div>
 
-
-                                  <!-- component -->
+                              <!-------------- component --------------->
+                              <!---------------------------------------->
+                              <div  v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }">
                               <div class="w-full py-6">
                                 <div class="flex">
                                   <div class="w-1/4">
@@ -978,12 +1012,12 @@
                                       Set Pricing
                                     </div>
                                   </div>
-
-
                                 </div>
                               </div>
-                              <!-- component -->
-                                 <div
+                              <!-------------- component --------------->
+                              <!---------------UPLOAD PRICE------------------------->
+                             
+                                <div
                                   class="
                                     flex flex-col
                                     sm:flex-row
@@ -1047,7 +1081,6 @@
                                   "
                                 >
                                   <button
-
                                     class="
                                       px-4
                                       py-2
@@ -1072,7 +1105,7 @@
                                     Save
                                   </button>
                                 </div>
-
+                              </div>
                             </div>
                             <!------------------------Price END-------------------------------->
                           </div>
@@ -1100,46 +1133,49 @@ import {
 export default {
   layout: "user",
   data() {
+   
     return {
       openTab: 1,
       loading: false,
       message: null,
       showAlert: false,
       step: 1,
-      service: '',
+      service: "",
       type: null,
 
       banner: "",
       bannerImage: "",
-      catalogue:'',
-      catalogueImage:''
+      catalogue: "",
+      catalogueImage: "",
     };
   },
 
-    apollo: {
-     service: {
-        query: GET_SERVICE_BY_ID,
-        variables() {
-          return {
-            id: this.$route.params.id
-          };
-        },
-        error(error) {
-          console.log(error);
-        }
+  apollo: {
+    service: {
+      query: GET_SERVICE_BY_ID,
+      variables() {
+        return {
+          id: this.$route.params.id,
+        };
       },
-
+      error(error) {
+        console.log(error);
+      },
+    },
   },
 
   methods: {
-    toggleTabs: function () {
-      this.$parent.toggleTabs(1);
+    toggleTabs: function (tabNumber) {
+      this.openTab = tabNumber;
     },
+    // toggleTabs: function () {
+    //   this.$parent.toggleTabs(1);
+    // },
     GoBack() {
       this.$rounter.push("/caterers/services");
     },
 
-     GoToPrice() {
+    GoToPrice() {
       this.step = 3;
     },
 
@@ -1170,7 +1206,7 @@ export default {
         this.loading = false;
         //this.step = 3;
         console.log(res.data.result);
-     this.$toast.success("Banner uploaded successfully!!");
+        this.$toast.success("Banner uploaded successfully!!");
       } catch (error) {
         this.$toast.error(error.message);
         console.log(error);
@@ -1178,22 +1214,21 @@ export default {
       }
     },
 
-     selectCatalogue() {
+    selectCatalogue() {
       this.$refs.catalogue.click();
     },
 
-     previewCatalogue(event) {
+    previewCatalogue(event) {
       this.catalogue = event.target.files[0];
       if (this.catalogue.size > 1024 * 1024) {
         alert("File too big (> 1MB)");
       } else {
         this.catalogueImage = URL.createObjectURL(this.catalogue);
         this.loading = true;
-
       }
     },
 
-      async updateCatalogue() {
+    async updateCatalogue() {
       console.log(this.banner);
       console.log(this.service.id);
       try {
@@ -1207,9 +1242,9 @@ export default {
         this.loading = false;
         //this.step = 3;
         console.log(res.data.result);
-      this.$toast.success("Catalague updated successfully!!");
+        this.$toast.success("Catalague updated successfully!!");
       } catch (error) {
-         this.$toast.error(error.message);
+        this.$toast.error(error.message);
         console.log(error);
         this.loading = false;
       }
@@ -1230,7 +1265,7 @@ export default {
         console.log(data);
         this.$toast.success("Basic service detail Successfully added ");
         this.service = data.result;
-         this.step = 2;
+        this.step = 2;
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
         this.message = error.message;
@@ -1255,14 +1290,14 @@ export default {
           },
         });
         console.log(data);
-       // this.product = data.result;
+        // this.product = data.result;
         this.$toast.success("Services Added Successfully!");
 
-         this.$router.push({ path: `/caterers/services/` })
+        this.$router.push({ path: `/caterers/services/` });
 
         // this.$router.push(`/packages/manage/${this.data.addPackage.id}`)
       } catch (error) {
-         this.$toast.error(error.message);
+        this.$toast.error(error.message);
         this.message = error.message;
         this.showAlert = true;
         this.type = "danger";
