@@ -1,25 +1,25 @@
 <template>
   <section class="relative pt-10 pb-5 2xl:pb-40 bg-gray-200 overflow-hidden">
-    <p></p>
+    
     <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap mb-16 lg:mb-28">
-        <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
+      <div class="flex flex-wrap md:mb-16 mb-0 lg:mb-28">
+        <div class="w-full lg:w-3/5 md:mb-16 mb-0 lg:mb-0">
           <div class="max-w-7xl">
             <div
               class="
                 relative
-                min-h-screen
+                
                 flex flex-wrap
                 justify-center
                 py-8
-                px-4
-                sm:px-6
-                lg:px-8
+                px-2
+                
+                md:px-8
               "
             >
               <div class="absolute opacity-60 inset-0 z-0"></div>
               <div
-                class="max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10"
+                class="max-w-md w-full  p-4 bg-white rounded-xl z-10"
               >
                 <div class="text-center mb-10">
                   <h2 class="mt-6 text-3xl font-bold text-gray-900">Log In</h2>
@@ -188,12 +188,7 @@
             </div>
           </div>
         </div>
-        <!-- <img
-          class="lg:absolute top-0 right-5 lg:w-2/5 pr-22 pl-4  lg:h-100 object-cover "
-          src="@/assets/signin img.svg"
-          alt=""
-        /> -->
-
+        
         <div
           class="
             lg:absolute

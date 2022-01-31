@@ -2,11 +2,11 @@
   <section class="bg-cover titlebg1">
     <div class="flex  md:py-32 py-10 md:px-10 px-4">
       <div class="opacity-50"></div>
-      <div class="flex flex-wrap mb-16 md:mb-28">
-        <div class="w-full md:w-3/5 mb-16 lg:mb-0 md:pl-16 pl-0">
+      <div class="md:flex flex-wrap mb-16 md:mb-28">
+        <div class="w-full md:w-3/5 mb-16 lg:mb-0 md:pl-16 pl-0 md:px-4 px-28">
          
             <h2
-              class="
+              class="w-full
                 mb-6
                 text-black text-2xl
                 md:text-4xl

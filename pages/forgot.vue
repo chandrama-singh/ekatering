@@ -12,7 +12,7 @@
 					></div>
 					<!-- Col -->
 					<div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
-						<div class="px-8 mb-4 text-center">
+						<div class="px-8 mb-4 text-center fontpoppin">
 							<h3 class="pt-4 mb-2 text-2xl">Forgot Your Password?</h3>
 							<p class="mb-4 text-sm text-gray-700">
 								We get it, stuff happens. Just enter your email address below and we'll send you a

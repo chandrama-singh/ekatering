@@ -105,7 +105,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="absolute right-5 mt-10">
+        <div class="absolute right-5 mt-10 icon">
           <img
             class="lg:relative lg:w-4/5 lg:h-100"
             src="@/assets/icon_top.png"
@@ -160,4 +160,10 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+@media (max-width: 640px) {
+  .icon {
+    visibility: hidden;
+  }
+}
+</style>

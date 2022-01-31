@@ -2,7 +2,7 @@
   <section class="relative pt-10 pb-5 2xl:pb-40 overflow-hidden">
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap mb-6 lg:mb-6">
-        <div class="w-full lg:w-3/5 mb-16 lg:mb-0">
+        <div class="w-full md:w-3/5 md:mb-16 lg:mb-0 mb-0">
           <div class="max-w-7xl">
             <div
               class="
@@ -11,9 +11,8 @@
                 flex flex-wrap
                 justify-center
                 py-8
-                px-4
-                sm:px-6
-                lg:px-8
+                px-2
+                md:px-8
               "
             >
               <div class="absolute opacity-60 inset-0 z-0"></div>
@@ -38,7 +37,7 @@
                       >Name<span class="text-red-500"> *</span></label
                     >
                     <input
-                    v-model="formData.name"
+                      v-model="formData.name"
                       class="
                         w-full
                         text-base
@@ -57,7 +56,7 @@
                       >Email<span class="text-red-500"> *</span></label
                     >
                     <input
-                    v-model="formData.email"
+                      v-model="formData.email"
                       class="
                         w-full
                         text-base
@@ -78,7 +77,7 @@
                       Contact Number<span class="text-red-500"> *</span>
                     </label>
                     <input
-                    v-model="formData.contact_number"
+                      v-model="formData.contact_number"
                       class="
                         w-full
                         content-center
@@ -100,7 +99,7 @@
                       Reason for Contact
                     </label>
                     <select
-                    v-model="formData.reason"
+                      v-model="formData.reason"
                       class="
                         w-full
                         content-center
@@ -110,11 +109,12 @@
                         border border-gray-300
                         focus:outline-none focus:border-indigo-500
                       "
-                      
                       placeholder="select one"
                     >
-                    <option value="" disabled selected>Select your option</option>
-                   
+                      <option value="" disabled selected>
+                        Select your option
+                      </option>
+
                       <option>Home/event caterer – join us</option>
                       <option>Private Chef –join us</option>
                       <option>Food Safety Consultancy</option>
@@ -124,13 +124,12 @@
                     </select>
                   </div>
 
-
                   <div class="relative">
                     <label class="text-sm font-bold text-gray-700 tracking-wide"
                       >NAME OF BUSINESS/ESTABLISHMENT</label
                     >
                     <input
-                    v-model="formData.business_name"
+                      v-model="formData.business_name"
                       class="
                         w-full
                         text-base
@@ -144,10 +143,9 @@
                     />
                   </div>
 
-
                   <div class="mt-4 content-center">
                     <textarea
-                    v-model="formData.message"
+                      v-model="formData.message"
                       class="
                         w-full
                         content-center
@@ -211,8 +209,9 @@
           class="
             lg:absolute
             top-0
+            w-full
             right-5
-            lg:w-2/5
+            md:w-2/5
             pr-22
             pl-4
             lg:h-100
@@ -276,12 +275,12 @@ export default {
       showAlert: false,
       type: null,
       formData: {
-      name:"",
-      email:"",
-      reason:"",
-      message:"",
-      contact_number:"",
-      business_name:""
+        name: "",
+        email: "",
+        reason: "",
+        message: "",
+        contact_number: "",
+        business_name: "",
       },
     };
   },
@@ -317,6 +316,4 @@ export default {
   },
 };
 </script>
-<style>
-</style>
-
+<style></style>

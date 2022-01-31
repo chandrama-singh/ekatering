@@ -8,13 +8,12 @@
             <div
               class="
                 relative
-                min-h-screen
+                
                 flex flex-wrap
                 justify-center
                 py-8
-                px-4
-                sm:px-6
-                lg:px-8
+                px-2
+                md:px-8
               "
             >
               <div

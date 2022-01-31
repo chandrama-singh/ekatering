@@ -1,8 +1,8 @@
 <template>
   <section>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="container mx-auto px-4 bottom-0 p-4 mt-3">
-      <h2 class="text-3xl mb-8 font-semibold font-heading text-center">Fees</h2>
+    <div class="container mx-auto px-4 bottom-0 p-4 mt-3 overflow-x-scroll">
+      <h2 class="md:text-3xl text-2xl mb-8 font-semibold font-heading text-center">Fees</h2>
       <!-- <p class="text-xl text-center font-bold m-5">Fees</p> -->
       <div
         class="
@@ -21,7 +21,7 @@
         Food Business, Event/Home caterers and Private chefs to customers
       </div>
       <table
-        class="w-5/6 mx-auto bg-gray-200 text-gray-800 border border-gray-500"
+        class="w-5/6 mx-auto bg-gray-200 text-gray-800 border border-gray-500 "
       >
         <tr class="text-left border-b-2 border-gray-500">
           <th class="px-4 py-3 font-bold w-1/12">Option</th>
