@@ -2,7 +2,7 @@
   <section class="pt-10 bg-gray-800">
     <div class=" px-4 mx-auto">
       <div class="flex flex-wrap  border-b border-gray-400">
-        <div class="lg:w-2/6 px-4 mb-16 lg:mb-0">
+        <div class="lg:w-2/6 px-4 md:mb-16 mb-8 lg:mb-0">
           <!-- <span class="text-md text-purple-400 font-bold">We&apos;re Zospace</span> -->
           <div class="sizelogo">
             <nuxt-link to="/">

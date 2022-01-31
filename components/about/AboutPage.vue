@@ -4,7 +4,7 @@
       <div class=" px-8 mx-auto">
         <div class="flex flex-wrap -mx-3">
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-            <div class="flex items-start">
+            <div class="md:flex items-start">
               <div class="w-1/5 mt-2">
                 <img src="~assets/ab1.png" class="h-24 w-30" />
               </div>
@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-            <div class="flex flex-wrap items-start">
+            <div class="md:flex flex-wrap items-start">
               <div class="w-1/5 mt-2">
                 <img src="~assets/ab3.png" class="h-24 w-30" />
               </div>
@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-            <div class="flex flex-wrap items-start">
+            <div class="md:flex flex-wrap items-start">
               <div class="w-1/5 mt-2">
                 <img src="~assets/ab5.png" class="h-24 w-30" />
               </div>
@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-12">
-            <div class="flex flex-wrap items-start">
+            <div class="md:flex flex-wrap items-start">
               <div class="w-1/5 pl-4 mt-2">
                 <img src="~assets/ab2.png" class="h-24 w-31" />
               </div>

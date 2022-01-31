@@ -105,7 +105,7 @@
             right-5
             lg:w-2/5
             pr-22
-            pl-12
+            md:pl-12 pl-6
             lg:h-100
             object-cover
           "

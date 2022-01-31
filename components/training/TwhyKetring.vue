@@ -11,7 +11,7 @@
         industry. Furthermore, the courses offer all catering businesses the
         following:
       </p>
-      <div class="flex">
+      <div class="md:flex">
         <ul class="ml-6 text-gray-400 text-justify list-disc">
           <li>
             To learn at your own pace, within <b>1 month</b> from the purchase
@@ -37,7 +37,7 @@
         </ul>
         <div class="lg:absolute sm:relative right-16 mt-10">
           <img
-            class="lg:relative lg:w-1/2  w-24 h-24"
+            class="lg:relative lg:w-1/2  md:w-24 w-full h-24"
             src="@/assets/f1.png"
             alt=""
           />
