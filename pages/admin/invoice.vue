@@ -125,8 +125,7 @@
                   <td class="px-6 py-4 text-sm text-gray-500">£20</td>
                   <td class="px-6 py-4">£30</td>
                 </tr>
-               
-                
+
                 <!-- <tr class="">
                   <td colspan="3"></td>
                   <td class="text-sm font-bold">Sub Total</td>
@@ -202,5 +201,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

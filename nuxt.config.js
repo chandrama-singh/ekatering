@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ekatering',
+    title: 'eKatering',
     htmlAttrs: {
       lang: 'en'
     },
@@ -85,8 +85,8 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://api.ekatering.co.uk/graphql',
-          // httpEndpoint: 'http://localhost:4000/graphql',
+        // httpEndpoint: 'https://api.ekatering.co.uk/graphql',
+          httpEndpoint: 'http://localhost:4000/graphql',
 
 
       }

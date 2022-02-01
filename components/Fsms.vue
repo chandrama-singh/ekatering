@@ -131,7 +131,7 @@
               md:rounded-lg
             "
           >
-            Purchase forms £450
+            Purchase form £450
           </button></Nuxt-Link
         >
       </div>
@@ -160,7 +160,7 @@
               md:rounded-lg
             "
           >
-            Purchase forms £750
+            Purchase form £750
           </button></Nuxt-Link
         >
       </div>

@@ -31,16 +31,7 @@
           </div> -->
         <div class="flex flex-wrap mt-12 justify-center">
           <div class="w-full lg:w-3/12 px-4 text-center">
-            <div
-              class="
-                text-blueGray-800
-                w-24
-                h-24
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
+            <div class="w-24 h-24 inline-flex items-center justify-center">
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
@@ -1018,16 +1009,7 @@
             </h6>
           </div>
           <div class="w-full lg:w-3/12 px-4 text-center">
-            <div
-              class="
-                text-blueGray-800
-                w-24
-                h-24
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
+            <div class="w-24 h-24 inline-flex items-center justify-center">
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
@@ -9678,16 +9660,7 @@
             </h5>
           </div>
           <div class="w-full lg:w-3/12 px-4 text-center">
-            <div
-              class="
-                text-blueGray-800
-                w-24
-                h-24
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
+            <div class="w-24 h-24 inline-flex items-center justify-center">
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
@@ -11197,16 +11170,7 @@
         <!----------------------------------------------------->
         <div class="flex flex-wrap mt-12 justify-center">
           <div class="w-full lg:w-3/12 px-4 text-center">
-            <div
-              class="
-                text-blueGray-800
-                w-24
-                h-24
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
+            <div class="w-24 h-24 inline-flex items-center justify-center">
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
@@ -14188,16 +14152,7 @@
             </h6>
           </div>
           <div class="w-full lg:w-3/12 px-4 text-center">
-            <div
-              class="
-                text-blueGray-800
-                w-24
-                h-24
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
+            <div class="w-24 h-24 inline-flex items-center justify-center">
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
@@ -39938,16 +39893,7 @@
             </h5>
           </div>
           <div class="w-full lg:w-3/12 px-4 text-center">
-            <div
-              class="
-                text-blueGray-800
-                w-24
-                h-24
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
+            <div class="w-24 h-24 inline-flex items-center justify-center">
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:cc="http://creativecommons.org/ns#"
