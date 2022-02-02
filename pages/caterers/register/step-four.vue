@@ -71,7 +71,9 @@
       <div  class="flex flex-wrap bg-blue-50 rounded shadow">
         <div class="w-full md:w-1/2 mb-8 md:mb-0 pt-11 text-center">
           <h2  class="mb-2 justify-center text-3xl lg:text-4xl font-bold font-heading text-center">Registration</h2>
-          <h2  class="mb-2 mt-2 justify-center text-2xl lg:text-3xl font-semibold font-heading text-center">£49.99</h2>
+<h2  class="mb-2 mt-2 justify-center text-2xl lg:text-3xl font-semibold font-heading text-center">£0</h2>
+
+          <!-- <h2  class="mb-2 mt-2 justify-center text-2xl lg:text-3xl font-semibold font-heading text-center">£49.99</h2> -->
 
         <div class="flex justify-center ">
 
@@ -80,11 +82,13 @@
         </div>
         <div class="py-10 w-full md:w-1/2 bg-purple-600 lg:rounded-r overflow-hidden flex flex-col">
           <img class="w-full md:max-w-xs mx-auto my-auto" src="~assets/why-img.png" alt="">
-          <h3 class="mb-4 max-w-sm mx-auto text-center text-xl text-white">
+
+          <!-- <h3 class="mb-4 max-w-sm mx-auto text-center text-xl text-white">
             Best for
             <span class="font-bold">freelance developers</span>
             who need to save their time.
-          </h3>
+          </h3> -->
+
           <!-- <div class="text-center">
             <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>
             <button class="inline-block mr-2 w-2 h-2 bg-purple-400 rounded-full"></button>

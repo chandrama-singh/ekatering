@@ -18,9 +18,9 @@
           </div>
         </div>
 
-         <button @click="AddCuisine" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+         <!-- <button @click="AddCuisine" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
         Add Cuisine
-    </button>
+    </button> -->
       </template>
     </PageHeader>
 
@@ -68,30 +68,30 @@
           field: 'name',
           sortable: true,
           filter: true,
-          minWidth: 300,
+          minWidth: screen,
 
         },
 
-        {
-          headerName: 'Status',
-          field: 'status',
-          sortable: true,
-          filter: true,
-          maxWidth: 140,
-          cellRenderer: (cell) => {
-            if (cell.data.status ) {
-              return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Enable</span>';
-            }
-            return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Disable</span>';
-          },
-        },
+        // {
+        //   headerName: 'Status',
+        //   field: 'status',
+        //   sortable: true,
+        //   filter: true,
+        //   maxWidth: 140,
+        //   cellRenderer: (cell) => {
+        //     if (cell.data.status ) {
+        //       return '<span class=" badge bg-green-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Enable</span>';
+        //     }
+        //     return '<span class="badge  bg-red-800 rounded-full px-2 py-1 text-center text-white text-sm mr-1">Disable</span>';
+        //   },
+        // },
 
-        {
-          headerName: 'Actions',
-          field: 'action',
-          cellRendererFramework: CuisineAction,
-          minWidth: 100,
-        },
+        // {
+        //   headerName: 'Actions',
+        //   field: 'action',
+        //   cellRendererFramework: CuisineAction,
+        //   minWidth: 100,
+        // },
       ];
     },
 
