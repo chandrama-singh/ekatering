@@ -153,8 +153,8 @@
                 </span>
               </div>
               <div class="ml-4 flex-shrink-0">
-                <a :href="caterer.documents.address_proof" class="font-medium text-indigo-600 hover:text-indigo-500">
-                  Download
+                <a :href="caterer.documents.address_proof" target="_Blank" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  View
                 </a>
               </div>
             </li>
@@ -169,8 +169,8 @@
                 </span>
               </div>
               <div class="ml-4 flex-shrink-0">
-                <a :href="caterer.documents.food_registration_letter" class="font-medium text-indigo-600 hover:text-indigo-500">
-                  Download
+                <a :href="caterer.documents.food_registration_letter" target="_Blank" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  View
                 </a>
               </div>
             </li>
@@ -185,8 +185,8 @@
                 </span>
               </div>
               <div class="ml-4 flex-shrink-0">
-                <a :href="caterer.documents.fhrs_letter" class="font-medium text-indigo-600 hover:text-indigo-500">
-                  Download
+                <a :href="caterer.documents.fhrs_letter" target="_Blank" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  View
                 </a>
               </div>
             </li>

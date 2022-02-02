@@ -27,6 +27,25 @@
                 <h2>Thanks for Payment! We will review your application soon</h2>
                 <p>After Verification a verification email will be sent to you.</p>
             </div>
+            <center class="py-6">
+               <button
+            class="
+              w-full
+              px-4
+              py-2
+              font-bold
+              text-white
+              bg-purple-500
+              rounded-full
+              hover:bg-purple-700
+              focus:outline-none focus:shadow-outline
+            "
+            type="button"
+           @click="GotoHome()"
+          >
+            Back To Home
+          </button>
+            </center>
             
         </div>
     </div>
@@ -67,6 +86,9 @@
 
     methods: {
       onNext() {
+        this.$router.push("/")
+      },
+      GotoHome(){
         this.$router.push("/")
       }
     }

@@ -62,8 +62,7 @@
                 Module 3
               </summary>
             </details>
-          </div>
-          <div class="w-full">
+          
             <details  v-on:click="toggleTabs(4)"
           v-bind:class="{
             ' bg-gray-200': openTab !== 4,

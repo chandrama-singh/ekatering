@@ -59,8 +59,7 @@
               </summary>
 
             </details>
-          </div>
-          <div class="w-full">
+          
             <details class="mb-4 cursor-pointer rounded-md" v-on:click="toggleTabs(4)"
           v-bind:class="{
             ' bg-gray-200': openTab !== 4,

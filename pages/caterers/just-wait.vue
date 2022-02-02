@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 space-y-36 container mx-auto">
+  <div class="bg-white  container mx-auto rounded-md -mt-20">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between my-64">
       <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         <span class="block p-2">Ready to dive in?</span>
@@ -11,7 +11,6 @@
             Go Back
           </a>
         </div>
-
       </div>
     </div>
   </div>
