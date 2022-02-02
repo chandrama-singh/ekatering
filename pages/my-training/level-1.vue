@@ -5,7 +5,7 @@
       src="@/assets/h3.png"
       alt=""
     /> -->
-    <section class="text-gray-700">
+    <section class="text-gray-700 bg-blue-50">
       <div class="container px-5 py-14 mx-auto">
         <div class="text-center mb-20">
           <h1
@@ -26,7 +26,8 @@
             barney wellies, gutted mate quaint.
           </p> -->
         </div>
-        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="w-full flex">
+        <div class="flex flex-wrap w-2/5 sm:mx-auto sm:mb-2 px-2 ">
           <div class="w-full">
             <details class="mb-4 cursor-pointer">
               <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
@@ -128,6 +129,17 @@
             </details>
           </div>
         </div>
+         <div class="flex flex-wrap w-3/5 sm:mx-auto sm:mb-2 px-4 ">
+          <span class="py-2 w-full">
+                <iframe
+                  src="https://training.ekatering.co.uk/level-1/Module%204/story_html5.html"
+                 width="100%"
+                  height="500"
+                >
+                </iframe>
+              </span>
+         </div>
+         </div>
       </div>
     </section>
   </section>
