@@ -1278,14 +1278,17 @@ export default {
 
     async updatePrice() {
       this.loading = true;
-      this.price.mrp = parseInt(this.price.mrp);
-      this.price.price = parseInt(this.price.price);
-      console.log(this.price);
+      let priceData={
+          mrp : parseInt(this.service.mrp),
+          price : parseInt(this.service.price),
+      }
+
+      console.log(priceData);
       try {
         const { data } = await this.$apollo.mutate({
           mutation: UPDATE_SERVICE_PRICE,
           variables: {
-            data: this.price,
+            data: this.priceData,
             id: this.service.id,
           },
         });

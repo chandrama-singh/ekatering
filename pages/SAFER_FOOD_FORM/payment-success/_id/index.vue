@@ -35,7 +35,7 @@
     VERIFY_LOCALFORM_PAYMENT
   } from '@/graphql/query';
   export default {
-    layout:'none',
+   layout:"default",
     async asyncData(context) {
       let client = context.app.apolloProvider.defaultClient
       try {

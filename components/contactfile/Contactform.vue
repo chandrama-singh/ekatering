@@ -304,8 +304,10 @@ export default {
             data: this.formData,
           },
         });
+          this.$toast.success('Message is sent successfully!')
         console.log(data);
       } catch (error) {
+          this.$toast.error('oops something wrong!')
         console.log(error);
         this.message = error.message;
         this.showAlert = true;

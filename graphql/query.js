@@ -871,9 +871,26 @@ export const ADD_LOCALFORM = graphql`
   }
 `;
 
+export const ADD_FOOD_SAFETY_FORM = graphql`
+mutation AddFoodSafetyForm($data: FoodSafetyFormInput!) {
+  result:addFoodSafetyForm(data: $data)
+}
+`;
+
 export const VERIFY_LOCALFORM_PAYMENT = graphql`
 mutation verifyLocalFormPayment($id: String!) {
  response: verifyLocalFormPayment(id: $id){
+    status
+    customer
+    mode
+    payment_intent
+  }
+}
+`;
+
+export const VERIFY_FOOD_SAFETY_PAYMENT = graphql`
+mutation verifyFoodSafetyPayment($id: String!) {
+ response: verifyFoodSafetyPayment(id: $id){
     status
     customer
     mode
@@ -1012,7 +1029,7 @@ query services {
       price
       mrp
       catalogue
-      
+
       status
       createdAt
       updatedAt
@@ -1030,13 +1047,13 @@ export const GET_PUBLISHED_SERVICE = graphql`
   description
   price
   mrp
- 
+
   catalogue
   caterer{
     id
     first_name
     business_name
-    
+
   }
   status
   createdAt
@@ -1059,7 +1076,7 @@ export const GET_SERVICE_BY_ID = graphql`
         id
         first_name
         business_name
-        
+
       }
       catalogue
       status
@@ -1083,7 +1100,7 @@ export const GET_SERVICE_BY_SLUG = graphql`
     id
     first_name
     business_name
-    
+
   }
   catalogue
   status

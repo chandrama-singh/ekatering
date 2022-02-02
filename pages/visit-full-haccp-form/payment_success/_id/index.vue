@@ -32,10 +32,10 @@
 </template>
 <script>
   import {
-    VERIFY_LOCALFORM_PAYMENT
+    VERIFY_FOOD_SAFETY_PAYMENT
   } from '@/graphql/query';
   export default {
-    layout:"default",
+     layout:"default",
     async asyncData(context) {
       let client = context.app.apolloProvider.defaultClient
       try {
@@ -43,7 +43,7 @@
         const {
           data
         } = await client.mutate({
-          mutation: VERIFY_LOCALFORM_PAYMENT,
+          mutation: VERIFY_FOOD_SAFETY_PAYMENT,
           variables: {
             id: context.route.params.id
           }

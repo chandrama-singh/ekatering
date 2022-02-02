@@ -13,42 +13,14 @@
       >
         <div class="p-4 border-b flex justify-between bg-purple-500 text-white">
           <!-- <h2 class="text-2xl font-semibold">
-                Office Use 
+                Office Use
             </h2>
             <p class="text-sm text-white">
                 Ref: #025/2020
             </p> -->
         </div>
         <div @submit.prevent="validateBeforeSubmit">
-          <div
-            class="
-              md:grid md:grid-cols-2
-              hover:bg-gray-50
-              md:space-y-0
-              space-y-1
-              p-3
-              border-b
-            "
-          >
-            <p class="text-gray-600">Ref:(Office Use)</p>
-            <input
-              placeholder="Reference Number"
-              class="
-                appearance-none
-                block
-                w-full
-                bg-grey-lighter
-                text-grey-darker
-                border border-grey-lighter
-                rounded-lg
-                h-10
-                px-4
-              "
-              required="required"
-              type="text"
-              v-model="formData.reference"
-            />
-          </div>
+
           <div
             class="
               md:grid md:grid-cols-2
@@ -523,6 +495,11 @@
               Submit
             </button>
           </div>
+            <stripe-checkout
+            ref="checkoutRef"
+            :pk="publishableKey"
+            :session-id="sessionId"
+          />
         </div>
       </div>
     </div>
@@ -530,11 +507,17 @@
 </template>
 
 <script>
+import { ADD_FOOD_SAFETY_FORM } from "@/graphql/query";
+import { StripeCheckout } from "@vue-stripe/vue-stripe";
 export default {
   data() {
     return {
+       loading: false,
+      message: null,
+      showAlert: false,
+      publishableKey:"pk_test_51JwHpkBIQ7NOZ6okDluA6xP6CnAd2mfF70QFO4ZCfqBSHUdzE5qSNrXWVy4qjlXeosy68dbkSjBN9dRsmEDzWduE00WPUwEucO",
+      sessionId: "",
       formData: {
-        reference: "",
         date: "",
         name: "",
         jobtitle: "",
@@ -563,8 +546,31 @@ export default {
       });
     },
 
-    onSubmit() {
+    async onSubmit() {
+      this.loading = true;
+      this.formData.date=new Date(this.formData.date);
       console.log(this.formData);
+      try {
+        const { data } = await this.$apollo.mutate({
+          mutation: ADD_FOOD_SAFETY_FORM,
+          variables: {
+            data: this.formData,
+          },
+        });
+        console.log(data);
+        if (data.result != null) {
+          this.sessionId = data.result;
+          this.$refs.checkoutRef.redirectToCheckout();
+        } else {
+          alert(" getting some error");
+        }
+      } catch (error) {
+        this.message = error.message;
+        this.showAlert = true;
+        this.type = "danger";
+        console.log(error);
+      }
+      this.loading = false;
     },
   },
 };
