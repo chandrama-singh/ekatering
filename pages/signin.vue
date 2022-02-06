@@ -1,6 +1,6 @@
 <template>
   <section class="relative pt-10 pb-5 2xl:pb-40 bg-gray-200 overflow-hidden">
-    
+
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap md:mb-16 mb-0 lg:mb-28">
         <div class="w-full lg:w-3/5 md:mb-16 mb-0 lg:mb-0">
@@ -8,12 +8,12 @@
             <div
               class="
                 relative
-                
+
                 flex flex-wrap
                 justify-center
                 py-8
                 px-2
-                
+
                 md:px-8
               "
             >
@@ -188,7 +188,7 @@
             </div>
           </div>
         </div>
-        
+
         <div
           class="
             lg:absolute
@@ -255,7 +255,7 @@ export default {
       message: null,
       showAlert: false,
       type: null,
-      email: "insided04@gmail.com",
+      email: "",
       password: "12345678",
     };
   },
